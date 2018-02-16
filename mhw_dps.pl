@@ -56,7 +56,9 @@ sub process_start
 			"awakened" => 0,
 			"elements" => {},
 			"statuses" => {},
-			"phial" => {},
+			"phial" => "no_phial",
+			"phial_elements" => {},
+			"phial_statuses" => {},
 			"sharpness" => [ 0, 0, 0, 0, 0, 0, 0 ],
 			"sharpness_plus" => 0
 		};
@@ -91,7 +93,7 @@ sub process_start
 	} elsif ($xml_stack[0] eq "part") {
 		$cur_part = {
 			"name" => "no_name",
-			"state" => "*",
+			"states" => {},
 			"cut" => 0,
 			"impact" => 0,
 			"bullet" => 0,
@@ -166,16 +168,22 @@ sub process_val
 		if ($xml_stack[0] eq "impact" ||
 		    $xml_stack[0] eq "element" ||
 		    $xml_stack[0] eq "power") {
-			$cur_weapon->{"phial"}{$xml_stack[0]} = 1;
-		} else {
-			$cur_weapon->{"phial"}{$xml_stack[0]} = $val;
+			$cur_weapon->{"phial"} = $xml_stack[0];
+		} elsif (defined $element_codes{$xml_stack[0]}) {
+			$cur_weapon->{"phial_elements"}{$xml_stack[0]} = $val;
+		} elsif (defined $status_codes{$xml_stack[0]}) {
+			$cur_weapon->{"phial_statuses"}{$xml_stack[0]} = $val;
 		}
 	} elsif (@xml_stack >= 2 &&
 	         $xml_stack[1] eq "monster" &&
 	         $xml_stack[0] eq "name") {
 		$cur_monster->{"name"} = $val;
 	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "part") {
-		$cur_part->{$xml_stack[0]} = $val;
+		if ($xml_stack[0] eq "state") {
+			$cur_part->{"states"}{$val} = 1;
+		} else {
+			$cur_part->{$xml_stack[0]} = $val;
+		}
 	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "tolerance") {
 		$cur_tolerance->{$xml_stack[0]} = $val;
 	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "weapon_profile") {
@@ -268,8 +276,12 @@ my $constants = {
 	"feeble_hit_multiplier" => 0.75,
 	"status_attack_rate" => (1.0 / 3.0),
 	"phial_power_boost" => 1.2,
-	"phial_element_boost" => 1.25
+	"phial_element_boost" => 1.25,
+	"weakness_threshold" => 45,
+	"piercing_factor" => 0.72
 };
+
+my @damages = ();
 
 # don't forget powercharm/powertalon
 for my $profile (@profiles) {
@@ -282,7 +294,10 @@ for my $profile (@profiles) {
 			"damage" => {}
 		};
 
-		for my $state ("normal", "enraged") {
+		for my $state ([ "!enraged", "normal" ],
+		               [ "enraged", "normal" ],
+		               [ "!enraged", "weak_point" ],
+		               [ "enraged", "weak_point" ]) {
 			my $state_damage = {
 				"cut" => 0.0,
 				"impact" => 0.0,
@@ -298,10 +313,9 @@ for my $profile (@profiles) {
 				"attack" => $weapon->{"attack"},
 				"elements" => $weapon->{"elements"},
 				"statuses" => $weapon->{"statuses"},
-				"phial_elements" => {},
-				"phial_statuses" => {}
+				"phial_elements" => $weapon->{"phial_elements"},
+				"phial_statuses" => $weapon->{"phial_statuses"}
 			};
-
 
 			my $affinity_multiplier = 1.0;
 			my $total_affinity = $buffed_weapon->{"affinity"};
@@ -316,12 +330,15 @@ for my $profile (@profiles) {
 				$affinity_multiplier = (1.0 + ($total_affinity / 100.0)) -
 					(($total_affinity / 100.0) * $constants->{"feeble_hit_multiplier"});
 			}
+
+			my $element_affinity_multiplier = 1.0;
+
 			my $sharp = get_sharp_bonus($weapon, 0, $profile->{"sharpness_use"},
 			                            $constants->{"raw_sharpness_multipiler"});
 
 			my $raw_attack = $buffed_weapon->{"attack"} * $affinity_multiplier * $sharp;
 
-			if ($weapon->{"phial"}{"power"}) {
+			if ($weapon->{"phial"} eq "power") {
 				$raw_attack *= (1.0 - $profile->{"phial_attack_rate"}) +
 					($profile->{"phial_attack_rate"} * $constants->{"phial_power_boost"});
 			}
@@ -332,60 +349,107 @@ for my $profile (@profiles) {
 
 			my $esharp = get_sharp_bonus($weapon, 0, $profile->{"sharpness_use"},
 			                             $constants->{"element_sharpness_multipiler"});
+			my $element_multiplier =
+				$element_affinity_multiplier * $esharp;
+			my $status_multiplier =
+				$constants->{"status_attack_rate"} * $affinity_multiplier;
 
 			my $element_count = scalar(keys %{$buffed_weapon->{"elements"}});
 			for my $element (keys %{$buffed_weapon->{"elements"}}) {
-				my $element_attack = $buffed_weapon->{"elements"}{$element} * $esharp;
-				if ($weapon->{"phial"}{"element"}) {
+				my $element_attack = $buffed_weapon->{"elements"}{$element} * $element_multiplier;
+				if ($weapon->{"phial"} eq "element") {
 					$element_attack *= (1.0 - $profile->{"phial_element_rate"}) +
 						($profile->{"phial_element_rate"} * $constants->{"phial_element_boost"});
 				} elsif ($buffed_weapon->{"phial_elements"}{$element}) {
 					$element_attack *= 1.0 - $profile->{"phial_element_rate"};
 				}
-				$state_damage->{"element"}{$element} +=
+				$state_damage->{"elements"}{$element} +=
 					($element_attack * $profile->{"element"}) / $element_count;
 			}
 			my $status_count = scalar(keys %{$buffed_weapon->{"statuses"}});
 			for my $status (keys %{$buffed_weapon->{"statuses"}}) {
-				my $status_attack = $buffed_weapon->{"statuses"}{$status} * $constants->{"status_attack_rate"};
+				my $status_attack = $buffed_weapon->{"statuses"}{$status} * $status_multiplier;
 				if ($buffed_weapon->{"phial_statuses"}{$status}) {
 					$status_attack *= 1.0 - $profile->{"phial_element_rate"};
 				}
-				$state_damage->{"status"}{$status} +=
+				$state_damage->{"statuses"}{$status} +=
 					($status_attack * $profile->{"element"}) / $status_count;
 			}
 
 			for my $element (keys %{$buffed_weapon->{"phial_elements"}}) {
-				$state_damage->{"element"}{$element} +=
-					$buffed_weapon->{"phial_elements"}{$element} * $esharp *
+				$state_damage->{"elements"}{$element} +=
+					$buffed_weapon->{"phial_elements"}{$element} * $element_multiplier *
 					$profile->{"phial_element_rate"} * $profile->{"element"};
 			}
 			for my $status (keys %{$buffed_weapon->{"phial_statuses"}}) {
-				$state_damage->{"status"}{$status} +=
-					$buffed_weapon->{"phial_statuses"}{$status} *
-					$constants->{"status_attack_rate"} *
+				$state_damage->{"statuses"}{$status} +=
+					$buffed_weapon->{"phial_statuses"}{$status} * $status_multiplier *
 					$profile->{"phial_element_rate"} * $profile->{"element"};
 			}
 
-			if ($weapon->{"phial"}{"element"}) {
+			if ($weapon->{"phial"} eq "element") {
 				for my $element (keys %{$buffed_weapon->{"elements"}}) {
-					$state_damage->{"element"}{$element} +=
+					$state_damage->{"elements"}{$element} +=
 						($buffed_weapon->{"elements"}{$element} * $profile->{"phial_element_attack"}) / $element_count;
 				}
 			}
 
 			$state_damage->{"stun"} += $profile->{"stun"};
 
-			if ($weapon->{"phial"}{"impact"}) {
+			if ($weapon->{"phial"} eq "impact") {
 				$state_damage->{"stun"} += $profile->{"phial_impact_stun"};
 				$state_damage->{"fixed"} += $weapon->{"attack"} * $profile->{"phial_impact_attack"};
 			}
 
-			$damage->{"damage"}{$state} = $state_damage;
+			$damage->{"damage"}{$state->[0]} ||= {};
+			$damage->{"damage"}{$state->[0]}{$state->[1]} = $state_damage;
 		}
-		print Dumper($damage);
+#		print Dumper($damage);
+		push @damages, $damage;
 	}
 }
 
+for my $monster (@monsters) {
+	for my $state ("!enraged", "enraged") {
+		my $anti_state = "!$state";
+		$anti_state =~ s/^!!//;
+		for my $part (@{$monster->{"parts"}}) {
+			next if ($part->{"state"}{$anti_state});
+			for my $damage (@damages) {
+				my $dps_raw = 0.0;
+				my $dps_element = 0.0;
+				my $state_damage = $damage->{"damage"}{$state};
+
+				my %hit_types = ("cut" => $part->{"cut"}, "impact" => $part->{"impact"});
+				$hit_types{"piercing"} = $part->{"impact"} * $constants->{"piercing_factor"};
+				$hit_types{"piercing"} = $part->{"cut"} if $hit_types{"piercing"} < $part->{"cut"};
+				my $weak_sum = 0.0;
+				my $weak_divider = 0.0;
+				for my $hit_type (keys %hit_types) {
+					if ($hit_types{$hit_type} >= $constants->{"weakness_threshold"}) {
+						$weak_sum += $state_damage->{"weak_point"}{$hit_type};
+						$weak_divider += $state_damage->{"weak_point"}{$hit_type};
+						$dps_raw += $state_damage->{"weak_point"}{$hit_type} * $hit_types{$hit_type} / 100.0;
+					} else {
+						$dps_raw += $state_damage->{"normal"}{$hit_type} * $hit_types{$hit_type} / 100.0;
+						$weak_divider += $state_damage->{"normal"}{$hit_type};
+					}
+				}
+				my $weak_ratio = $weak_divider > 0.0 ? ($weak_sum / $weak_divider) : 0.0;
+				for my $weakness ("normal", "weak_point") {
+					my $ratio = ($weakness eq "normal") ? 1.0 - $weak_ratio : $weak_ratio;
+					for my $element (keys %{$state_damage->{$weakness}{"elements"}}) {
+						$dps_element += $state_damage->{$weakness}{"elements"}{$element} *
+							$part->{$element} * $ratio / 100.0;
+					}
+				}
+
+				my $dps = $dps_raw + $dps_element;
+
+				print "$dps :: $dps_raw :: $dps_element :: $monster->{name} / $state / $part->{name} / $damage->{weapon}{name} / $damage->{profile}{name} / $weak_ratio\n";
+			}
+		}
+	}
+}
 
 # print Dumper(@weapons);
