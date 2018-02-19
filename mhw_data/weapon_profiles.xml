@@ -1,0 +1,47 @@
+<!-- TODO: ranged, gunlance -->
+<data><!--
+	<weapon_profile>
+		<name>S&amp;S basic</name>
+		<type>sword_and_shield</type>
+		<cut>0.149</cut>
+		<impact>0</impact>
+		<piercing>0</piercing>
+		<sharpness_use>25</sharpness_use>
+		<element>1.097</element>
+		<stun>2.1</stun>
+		<exhaust>2.1</exhaust>
+		<phial>0</phial>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Charge Blade basic</name>
+		<type>charge_blade</type>
+		<cut>0.149</cut>
+		<impact>0</impact>
+		<piercing>0</piercing>
+		<sharpness_use>15</sharpness_use>
+		<element>1.097</element>
+		<stun>2.1</stun>
+		<exhaust>2.1</exhaust>
+		<phial>0</phial>
+	</weapon_profile>-->
+	<weapon_profile>
+		<name>Charge Blade [one]</name>
+		<type>charge_blade</type>
+		<sharpness_use>15</sharpness_use>
+		<pattern>
+			<rate>1.0</rate>
+			<cut>1</cut>
+			<impact>0.5</impact>
+			<piercing>0</piercing>
+			<element>1</element>
+			<stun>1</stun>
+			<exhaust>1</exhaust>
+			<phial_impact_attack>0.1</phial_impact_attack>
+			<phial_impact_stun>1</phial_impact_stun>
+			<phial_element_attack>1</phial_element_attack>
+			<phial_attack_rate>0</phial_attack_rate>
+			<phial_element_rate>0</phial_element_rate>
+			<unsheathe_rate>0.1</unsheathe_rate>
+		</pattern>
+	</weapon_profile>
+</data>
