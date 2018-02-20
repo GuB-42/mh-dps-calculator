@@ -39,9 +39,10 @@
 			<phial_impact_attack>0.1</phial_impact_attack>
 			<phial_impact_stun>1</phial_impact_stun>
 			<phial_element_attack>1</phial_element_attack>
-			<phial_attack_rate>0</phial_attack_rate>
-			<phial_element_rate>0</phial_element_rate>
-			<unsheathe_rate>0.1</unsheathe_rate>
+			<phial_ratio>0</phial_ratio>
+			<punishing_draw_stun>0.0</punishing_draw_stun>
+			<draw_attack_ratio>0.1</draw_attack_ratio>
+			<airborne_ratio>0.1</airborne_ratio>
 		</pattern>
 	</weapon_profile>
 </data>

@@ -129,9 +129,8 @@ sub process_start
 			"phial_impact_attack" => 0.0,
 			"phial_impact_stun" => 0.0,
 			"phial_element_attack" => 0.0,
-			"phial_attack_rate" => 0.0,
-			"phial_element_rate" => 0.0,
-			"unsheathe_rate" => 0.0
+			"phial_ratio" => 0.0,
+			"punishing_draw_stun" => 0.0
 		}
 	}
 }
@@ -306,14 +305,249 @@ my $constants = {
 	"phial_element_boost" => 1.25,
 	"weakness_threshold" => 45,
 	"piercing_factor" => 0.72,
-	"enraged_ratio" => 0.4
+
+	"enraged_ratio" => 0.4,
+	"sharpness_use" => 15,
+	"buff_ratios" => {
+		"draw_attack" => 0.1,
+		"airborne" => 0.1,
+		"red_life" => 0.2,
+		"full_life" => 0.7,
+		"death_1" => 0.0,
+		"death_2" => 0.0,
+		"full_stamina" => 0.6,
+		"sliding" => 0.1,
+		"low_life" => 0.05,
+	}
 };
 
 my @damages = ();
 
-sub compute_damage
+sub fold_conditions_add
+{
+	my ($data, $conditions) = @_;
+	my $ret = 0.0;
+	if (defined $data) {
+		for my $key (keys %{$data}) {
+			$ret += $data->{$key} * $conditions->{$key};
+		}
+	}
+	return $ret;
+}
+sub fold_conditions_multiply
+{
+	my ($data, $conditions) = @_;
+	my $ret = 1.0;
+	if (defined $data) {
+		for my $key (keys %{$data}) {
+			$ret *= (1.0 - $conditions->{$key}) +
+				($data->{$key} * $conditions->{$key});
+		}
+	}
+	return $ret;
+}
+sub fold_conditions_affinity
+{
+	my ($data, $conditions, $start_affinity) = @_;
+	my $ret = $start_affinity;
+	if (defined $data) {
+		for my $key (sort { $data->{$1} <=> $data->{$2} } (keys %{$data})) {
+			my $add_ret = $ret + $data->{$key};
+			$add_ret = 100 if ($add_ret > 100);
+			$add_ret = -100 if ($add_ret < -100);
+			$ret += ($add_ret - $ret) * $conditions->{$key};
+		}
+	}
+	return $ret - $start_affinity;
+}
+sub fold_conditions_buff_data
+{
+	my ($buff_data, $conditions, $start_affinity) = @_;
+	my $res = {};
+	$res->{"attack_plus"} =
+		fold_conditions_add($buff_data->{"attack_plus"}, $conditions);
+	$res->{"attack_multiplier"} =
+		fold_conditions_multiply($buff_data->{"attack_multiplier"}, $conditions);
+	$res->{"affinity_plus"} =
+		fold_conditions_affinity($buff_data->{"affinity_plus"}, $conditions, $start_affinity);
+	$res->{"element_plus"} = {};
+	if (defined $buff_data->{"element_plus"}) {
+		for my $element (keys %{$buff_data->{"element_plus"}}) {
+			$res->{"element_plus"}{$element} =
+				fold_conditions_add($buff_data->{"element_plus"}{$element}, $conditions);
+		}
+	}
+	$res->{"element_multiplier"} = {};
+	if (defined $buff_data->{"element_multiplier"}) {
+		for my $element (keys %{$buff_data->{"element_multiplier"}}) {
+			$res->{"element_multiplier"}{$element} =
+				fold_conditions_multiply($buff_data->{"element_multiplier"}{$element}, $conditions);
+		}
+	}
+	$res->{"status_plus"} = {};
+	if (defined $buff_data->{"status_plus"}) {
+		for my $status (keys %{$buff_data->{"status_plus"}}) {
+			$res->{"status_plus"}{$status} =
+				fold_conditions_add($buff_data->{"status_plus"}{$status}, $conditions);
+		}
+	}
+	$res->{"status_multiplier"} = {};
+	if (defined $buff_data->{"status_multiplier"}) {
+		for my $status (keys %{$buff_data->{"status_multiplier"}}) {
+			$res->{"status_multiplier"}{$status} =
+				fold_conditions_multiply($buff_data->{"status_multiplier"}{$status}, $conditions);
+		}
+	}
+	$res->{"awakening"} =
+		fold_conditions_add($buff_data->{"awakening"}, $conditions);
+	$res->{"sharpness_plus"} =
+		fold_conditions_add($buff_data->{"sharpness_plus"}, $conditions);
+	$res->{"sharpness_use"} =
+		fold_conditions_multiply($buff_data->{"sharpness_use"}, $conditions);
+	$res->{"punishing_draw_stun"} =
+		fold_conditions_add($buff_data->{"stun"}, $conditions);
+	$res->{"stun_multiplier"} =
+		fold_conditions_multiply($buff_data->{"stun_multiplier"}, $conditions);
+	if (defined $buff_data->{"raw_critical_hit_multiplier"}) {
+		$res->{"raw_critical_hit_multiplier"} =
+			fold_conditions_multiply($buff_data->{"raw_critical_hit_multiplier"}, $conditions);
+	} else {
+		$res->{"raw_critical_hit_multiplier"} = $constants->{"critical_hit_multiplier"};
+	}
+	$res->{"element_critical_hit_multiplier"} =
+		fold_conditions_multiply($buff_data->{"element_critical_hit_multiplier"}, $conditions);
+	$res->{"status_critical_hit_multiplier"} =
+		fold_conditions_multiply($buff_data->{"status_critical_hit_multiplier"}, $conditions);
+	return $res;
+}
+
+sub compute_buffed_weapon
 {
 	my ($profile, $pattern, $weapon, $state) = @_;
+
+	my $buff = {
+#		"attack_plus" => {
+#			"always" => 10,
+#			"enraged" => 10
+#		},
+#		"attack_multiplier" => {
+#			"low_life" => 1.35
+#		},
+#		"element_multiplier" => {
+#			"fire" => { "always" => 1.1 },
+#		}
+	};
+
+	my $conditions = {
+		"always" => 1.0,
+		"enraged" => ($state->[0] eq "enraged" ? 1.0 : 0.0),
+		"weak_spot" => ($state->[1] eq "weak_spot" ? 1.0 : 0.0),
+		"raw_weapon" => 0.0
+	};
+	foreach my $key (keys %{$constants->{"buff_ratios"}}) {
+		$conditions->{$key} = $constants->{"buff_ratios"}{$key};
+		$conditions->{$key} = $profile->{"${key}_ratio"} if (defined $profile->{"${key}_ratio"});
+		$conditions->{$key} = $pattern->{"${key}_ratio"} if (defined $pattern->{"${key}_ratio"});
+	}
+	if (!%{$weapon->{"elements"}} && !%{$weapon->{"statuses"}}) {
+		$conditions->{"raw_weapon"} = 1.0;
+	} elsif ($weapon->{"awakened"} && (!(defined $buff->{"awakening"}) || !%{$buff->{"awakening"}})) {
+		$conditions->{"raw_weapon"} = 1.0;
+	}
+	my $buff_data = fold_conditions_buff_data($buff, $conditions, $weapon->{"affinity"});
+
+#	print Dumper($conditions);
+
+	my $buffed_weapon = {
+		"affinity" => $weapon->{"affinity"},
+		"attack" => $weapon->{"attack"},
+		"elements" => {},
+		"statuses" => {},
+		"phial_elements" => {},
+		"phial_statuses" => {},
+		"phial" => $weapon->{"phial"},
+		"raw_critical_hit_multiplier" => $buff_data->{"raw_critical_hit_multiplier"},
+		"element_critical_hit_multiplier" => $buff_data->{"element_critical_hit_multiplier"},
+		"status_critical_hit_multiplier" => $buff_data->{"status_critical_hit_multiplier"},
+		"punishing_draw_stun" => $buff_data->{"punishing_draw_stun"},
+		"stun_multiplier" => $buff_data->{"stun_multiplier"}
+	};
+
+	my $sharpness_use = $profile->{"sharpness_use"};
+	$sharpness_use = $profile->{"sharpness_use"} if (defined $profile->{"sharpness_use"});
+	$sharpness_use = $pattern->{"sharpness_use"} if (defined $pattern->{"sharpness_use"});
+	$sharpness_use *= $buff_data->{"sharpness_use"};
+
+	$buffed_weapon->{"sharp"} =
+		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
+		                $constants->{"raw_sharpness_multipiler"});
+	$buffed_weapon->{"esharp"} =
+		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
+		                $constants->{"element_sharpness_multipiler"});
+
+	$buffed_weapon->{"affinity"} += $buff_data->{"affinity_plus"};
+	$buffed_weapon->{"attack"} += $buff_data->{"attack_plus"};
+	$buffed_weapon->{"attack"} *= $buff_data->{"attack_multiplier"};
+
+	for my $element (keys %{$weapon->{"elements"}}) {
+		my $power = $weapon->{"elements"}{$element};
+		if ($weapon->{"awakened"}) {
+			$power *= $buff_data->{"awakening"};
+		}
+		if ($power > 0) {
+			if (defined $buff_data->{"element_plus"}{$element}) {
+				$power += $buff_data->{"element_plus"}{$element};
+			}
+			if (defined $buff_data->{"element_multiplier"}{$element}) {
+				$power *= $buff_data->{"element_multiplier"}{$element};
+			}
+			$buffed_weapon->{"elements"}{$element} = $power;
+		}
+	}
+	for my $status (keys %{$weapon->{"statuses"}}) {
+		my $power = $weapon->{"statuses"}{$status};
+		if ($weapon->{"awakened"}) {
+			$power *= $buff_data->{"awakening"};
+		}
+		if ($power > 0) {
+			if (defined $buff_data->{"status_plus"}{$status}) {
+				$power += $buff_data->{"status_plus"}{$status};
+			}
+			if (defined $buff_data->{"status_multiplier"}{$status}) {
+				$power *= $buff_data->{"status_multiplier"}{$status};
+			}
+			$buffed_weapon->{"statuses"}{$status} = $power;
+		}
+	}
+	for my $element (keys %{$weapon->{"phial_elements"}}) {
+		my $power = $weapon->{"phial_elements"}{$element};
+		if (defined $buff_data->{"element_plus"}{$element}) {
+			$power += $buff_data->{"element_plus"}{$element};
+		}
+		if (defined $buff_data->{"element_multiplier"}{$element}) {
+			$power *= $buff_data->{"element_multiplier"}{$element};
+		}
+		$buffed_weapon->{"phial_elements"}{$element} = $power;
+	}
+	for my $status (keys %{$weapon->{"phial_statuses"}}) {
+		my $power = $weapon->{"phial_statuses"}{$status};
+		if (defined $buff_data->{"status_plus"}{$status}) {
+			$power += $buff_data->{"status_plus"}{$status};
+		}
+		if (defined $buff_data->{"status_multiplier"}{$status}) {
+			$power *= $buff_data->{"status_multiplier"}{$status};
+		}
+		$buffed_weapon->{"phial_statuses"}{$status} = $power;
+	}
+
+#	print Dumper($buffed_weapon);
+
+	return $buffed_weapon;
+}
+
+sub compute_damage
+{
+	my ($profile, $pattern, $buffed_weapon) = @_;
 
 	my $damage = {
 		"cut" => 0.0,
@@ -325,62 +559,47 @@ sub compute_damage
 		"stun" => 0.0
 	};
 
-	my $buffed_weapon = {
-		"affinity" => $weapon->{"affinity"},
-		"attack" => $weapon->{"attack"},
-		"elements" => $weapon->{"elements"},
-		"statuses" => $weapon->{"statuses"},
-		"phial_elements" => $weapon->{"phial_elements"},
-		"phial_statuses" => $weapon->{"phial_statuses"}
-	};
+	my $raw_affinity_multiplier = 1.0;
+	my $element_affinity_multiplier = 1.0;
+	my $status_affinity_multiplier = 1.0;
 
-#			$buffed_weapon->{"attack"} += 10 if ($state->[0] eq "enraged");
-#
-	my $affinity_multiplier = 1.0;
-	my $total_affinity = $buffed_weapon->{"affinity"};
-	if ($total_affinity > 100) {
-		$affinity_multiplier = $constants->{"critical_hit_multiplier"};
-	} elsif ($total_affinity < -100) {
-		$affinity_multiplier = $constants->{"feeble_hit_multiplier"};
-	} elsif ($total_affinity > 0) {
-		$affinity_multiplier = (1.0 - ($total_affinity / 100.0)) +
-			(($total_affinity / 100.0) * $constants->{"critical_hit_multiplier"});
-	} else {
-		$affinity_multiplier = (1.0 + ($total_affinity / 100.0)) -
-			(($total_affinity / 100.0) * $constants->{"feeble_hit_multiplier"});
+	if ($buffed_weapon->{"affinity"} > 0) {
+		$raw_affinity_multiplier = (1.0 - ($buffed_weapon->{"affinity"} / 100.0)) +
+			(($buffed_weapon->{"affinity"} / 100.0) * $buffed_weapon->{"raw_critical_hit_multiplier"});
+		$element_affinity_multiplier = (1.0 - ($buffed_weapon->{"affinity"} / 100.0)) +
+			(($buffed_weapon->{"affinity"} / 100.0) * $buffed_weapon->{"element_critical_hit_multiplier"});
+		$status_affinity_multiplier = (1.0 - ($buffed_weapon->{"affinity"} / 100.0)) +
+			(($buffed_weapon->{"affinity"} / 100.0) * $buffed_weapon->{"status_critical_hit_multiplier"});
+	} elsif ($buffed_weapon->{"affinity"} < 0) {
+		$raw_affinity_multiplier = (1.0 + ($buffed_weapon->{"affinity"} / 100.0)) -
+			(($buffed_weapon->{"affinity"} / 100.0) * $constants->{"feeble_hit_multiplier"});
 	}
 
-	my $element_affinity_multiplier = 1.0;
+	my $raw_attack = $buffed_weapon->{"attack"} *
+		$raw_affinity_multiplier * $buffed_weapon->{"sharp"};
 
-	my $sharp = get_sharp_bonus($weapon, 0, $profile->{"sharpness_use"},
-	                            $constants->{"raw_sharpness_multipiler"});
-
-	my $raw_attack = $buffed_weapon->{"attack"} * $affinity_multiplier * $sharp;
-
-	if ($weapon->{"phial"} eq "power") {
-		$raw_attack *= (1.0 - $pattern->{"phial_attack_rate"}) +
-			($pattern->{"phial_attack_rate"} * $constants->{"phial_power_boost"});
+	if ($buffed_weapon->{"phial"} eq "power") {
+		$raw_attack *= (1.0 - $pattern->{"phial_ratio"}) +
+			($pattern->{"phial_ratio"} * $constants->{"phial_power_boost"});
 	}
 
 	$damage->{"cut"} += $raw_attack * $pattern->{"cut"};
 	$damage->{"impact"} += $raw_attack * $pattern->{"impact"};
 	$damage->{"piercing"} += $raw_attack * $pattern->{"piercing"};
 
-	my $esharp = get_sharp_bonus($weapon, 0, $profile->{"sharpness_use"},
-	                             $constants->{"element_sharpness_multipiler"});
 	my $element_multiplier =
-		$element_affinity_multiplier * $esharp;
+		$element_affinity_multiplier * $buffed_weapon->{"esharp"};
 	my $status_multiplier =
-		$constants->{"status_attack_rate"} * $affinity_multiplier;
+		$status_affinity_multiplier * $constants->{"status_attack_rate"};
 
 	my $element_count = scalar(keys %{$buffed_weapon->{"elements"}});
 	for my $element (keys %{$buffed_weapon->{"elements"}}) {
 		my $element_attack = $buffed_weapon->{"elements"}{$element} * $element_multiplier;
-		if ($weapon->{"phial"} eq "element") {
-			$element_attack *= (1.0 - $pattern->{"phial_element_rate"}) +
-				($pattern->{"phial_element_rate"} * $constants->{"phial_element_boost"});
+		if ($buffed_weapon->{"phial"} eq "element") {
+			$element_attack *= (1.0 - $pattern->{"phial_ratio"}) +
+				($pattern->{"phial_ratio"} * $constants->{"phial_element_boost"});
 		} elsif ($buffed_weapon->{"phial_elements"}{$element}) {
-			$element_attack *= 1.0 - $pattern->{"phial_element_rate"};
+			$element_attack *= 1.0 - $pattern->{"phial_ratio"};
 		}
 		$damage->{"elements"}{$element} +=
 			($element_attack * $pattern->{"element"}) / $element_count;
@@ -389,7 +608,7 @@ sub compute_damage
 	for my $status (keys %{$buffed_weapon->{"statuses"}}) {
 		my $status_attack = $buffed_weapon->{"statuses"}{$status} * $status_multiplier;
 		if ($buffed_weapon->{"phial_statuses"}{$status}) {
-			$status_attack *= 1.0 - $pattern->{"phial_element_rate"};
+			$status_attack *= 1.0 - $pattern->{"phial_ratio"};
 		}
 		$damage->{"statuses"}{$status} +=
 			($status_attack * $pattern->{"element"}) / $status_count;
@@ -398,15 +617,15 @@ sub compute_damage
 	for my $element (keys %{$buffed_weapon->{"phial_elements"}}) {
 		$damage->{"elements"}{$element} +=
 			$buffed_weapon->{"phial_elements"}{$element} * $element_multiplier *
-			$pattern->{"phial_element_rate"} * $pattern->{"element"};
+			$pattern->{"phial_ratio"} * $pattern->{"element"};
 	}
 	for my $status (keys %{$buffed_weapon->{"phial_statuses"}}) {
 		$damage->{"statuses"}{$status} +=
 			$buffed_weapon->{"phial_statuses"}{$status} * $status_multiplier *
-			$pattern->{"phial_element_rate"} * $pattern->{"element"};
+			$pattern->{"phial_ratio"} * $pattern->{"element"};
 	}
 
-	if ($weapon->{"phial"} eq "element") {
+	if ($buffed_weapon->{"phial"} eq "element") {
 		for my $element (keys %{$buffed_weapon->{"elements"}}) {
 			$damage->{"elements"}{$element} +=
 				($buffed_weapon->{"elements"}{$element} * $pattern->{"phial_element_attack"}) / $element_count;
@@ -414,11 +633,16 @@ sub compute_damage
 	}
 
 	$damage->{"stun"} += $pattern->{"stun"};
+	$damage->{"stun"} += $pattern->{"punishing_draw_stun"} * $buffed_weapon->{"punishing_draw_stun"};
 
-	if ($weapon->{"phial"} eq "impact") {
+	if ($buffed_weapon->{"phial"} eq "impact") {
 		$damage->{"stun"} += $pattern->{"phial_impact_stun"};
 		$damage->{"fixed"} += $buffed_weapon->{"attack"} * $pattern->{"phial_impact_attack"};
 	}
+
+	$damage->{"stun"} *= $buffed_weapon->{"stun_multiplier"};
+
+#	print Dumper($damage);
 
 	return $damage;
 }
@@ -439,7 +663,8 @@ for my $profile (@profiles) {
 		               [ "!enraged", "weak_point" ],
 		               [ "enraged", "weak_point" ]) {
 			for my $pattern (@{$profile->{"patterns"}}) {
-				my $state_damage = compute_damage($profile, $pattern, $weapon, $state);
+				my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state);
+				my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
 
 				$damage->{"damage"}{$state->[0]} ||= {};
 				$damage->{"damage"}{$state->[0]}{$state->[1]} ||= {};
@@ -527,7 +752,9 @@ for my $monster (@monsters) {
 					}
 				}
 			}
-			print "$dps->{total} :: $dps->{raw} :: $dps->{element} :: $monster->{name} / $part->{name} / $damage->{weapon}{name} / $damage->{profile}{name}\n";
+			printf "%6.2f :: %6.2f :: %6.2f :: %s / %s / %s / %s\n",
+				($dps->{total}, $dps->{raw}, $dps->{element}, $monster->{name}, $part->{name}, $damage->{weapon}{name}, $damage->{profile}{name});
+		#			print "$dps->{total} :: $dps->{raw} :: $dps->{element} :: $monster->{name} / $part->{name} / $damage->{weapon}{name} / $damage->{profile}{name}\n";
 		}
 	}
 }
