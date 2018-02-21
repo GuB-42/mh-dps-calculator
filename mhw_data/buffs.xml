@@ -1,66 +1,66 @@
 <data>
-	<buff>
+	<buff id="attack_boost_1">
 		<name>Attack Boost</name>
 		<level>1</level>
 		<attack_plus>3</attack_plus>
 	</buff>
-	<buff>
+	<buff id="attack_boost_2">
 		<name>Attack Boost</name>
 		<level>2</level>
 		<attack_plus>6</attack_plus>
 	</buff>
-	<buff>
+	<buff id="attack_boost_3">
 		<name>Attack Boost</name>
 		<level>3</level>
 		<attack_plus>9</attack_plus>
 	</buff>
-	<buff>
+	<buff id="attack_boost_4">
 		<name>Attack Boost</name>
 		<level>4</level>
 		<attack_plus>12</attack_plus>
 		<affinity_plus>5</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="attack_boost_5">
 		<name>Attack Boost</name>
 		<level>5</level>
 		<attack_plus>15</attack_plus>
 		<affinity_plus>5</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="attack_boost_6">
 		<name>Attack Boost</name>
 		<level>6</level>
 		<attack_plus>18</attack_plus>
 		<affinity_plus>5</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="attack_boost_7">
 		<name>Attack Boost</name>
 		<level>7</level>
 		<attack_plus>21</attack_plus>
 		<affinity_plus>5</affinity_plus>
 	</buff>
 
-	<buff>
+	<buff id="fire_attack_1">
 		<name>Fire Attack</name>
 		<level>1</level>
 		<element_plus>
 			<fire>3</fire>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="fire_attack_2">
 		<name>Fire Attack</name>
 		<level>2</level>
 		<element_plus>
 			<fire>6</fire>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="fire_attack_3">
 		<name>Fire Attack</name>
 		<level>3</level>
 		<element_plus>
 			<fire>10</fire>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="fire_attack_4">
 		<name>Fire Attack</name>
 		<level>4</level>
 		<element_plus>
@@ -70,7 +70,7 @@
 			<fire>1.05</fire>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="fire_attack_5">
 		<name>Fire Attack</name>
 		<level>5</level>
 		<element_plus>
@@ -82,28 +82,28 @@
 	</buff>
 
 
-	<buff>
+	<buff id="water_attack_1">
 		<name>Water Attack</name>
 		<level>1</level>
 		<element_plus>
 			<water>3</water>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="water_attack_2">
 		<name>Water Attack</name>
 		<level>2</level>
 		<element_plus>
 			<water>6</water>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="water_attack_3">
 		<name>Water Attack</name>
 		<level>3</level>
 		<element_plus>
 			<water>10</water>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="water_attack_4">
 		<name>Water Attack</name>
 		<level>4</level>
 		<element_plus>
@@ -113,7 +113,7 @@
 			<water>1.05</water>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="water_attack_5">
 		<name>Water Attack</name>
 		<level>5</level>
 		<element_plus>
@@ -125,28 +125,28 @@
 	</buff>
 
 
-	<buff>
+	<buff id="ice_attack_1">
 		<name>Ice Attack</name>
 		<level>1</level>
 		<element_plus>
 			<ice>3</ice>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="ice_attack_2">
 		<name>Ice Attack</name>
 		<level>2</level>
 		<element_plus>
 			<ice>6</ice>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="ice_attack_3">
 		<name>Ice Attack</name>
 		<level>3</level>
 		<element_plus>
 			<ice>10</ice>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="ice_attack_4">
 		<name>Ice Attack</name>
 		<level>4</level>
 		<element_plus>
@@ -156,7 +156,7 @@
 			<ice>1.05</ice>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="ice_attack_5">
 		<name>Ice Attack</name>
 		<level>5</level>
 		<element_plus>
@@ -167,28 +167,28 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="thunder_attack_1">
 		<name>Thunder Attack</name>
 		<level>1</level>
 		<element_plus>
 			<thunder>3</thunder>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="thunder_attack_2">
 		<name>Thunder Attack</name>
 		<level>2</level>
 		<element_plus>
 			<thunder>6</thunder>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="thunder_attack_3">
 		<name>Thunder Attack</name>
 		<level>3</level>
 		<element_plus>
 			<thunder>10</thunder>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="thunder_attack_4">
 		<name>Thunder Attack</name>
 		<level>4</level>
 		<element_plus>
@@ -198,7 +198,7 @@
 			<thunder>1.05</thunder>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="thunder_attack_5">
 		<name>Thunder Attack</name>
 		<level>5</level>
 		<element_plus>
@@ -209,28 +209,28 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="dragon_attack_1">
 		<name>Dragon Attack</name>
 		<level>1</level>
 		<element_plus>
 			<dragon>3</dragon>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="dragon_attack_2">
 		<name>Dragon Attack</name>
 		<level>2</level>
 		<element_plus>
 			<dragon>6</dragon>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="dragon_attack_3">
 		<name>Dragon Attack</name>
 		<level>3</level>
 		<element_plus>
 			<dragon>10</dragon>
 		</element_plus>
 	</buff>
-	<buff>
+	<buff id="dragon_attack_4">
 		<name>Dragon Attack</name>
 		<level>4</level>
 		<element_plus>
@@ -240,7 +240,7 @@
 			<dragon>1.05</dragon>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="dragon_attack_5">
 		<name>Dragon Attack</name>
 		<level>5</level>
 		<element_plus>
@@ -251,7 +251,7 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="poison_attack_1">
 		<name>Poison Attack</name>
 		<level>1</level>
 		<element_plus>
@@ -261,7 +261,7 @@
 			<poison>1.05</poison>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="poison_attack_2">
 		<name>Poison Attack</name>
 		<level>2</level>
 		<element_plus>
@@ -271,7 +271,7 @@
 			<poison>1.1</poison>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="poison_attack_3">
 		<name>Poison Attack</name>
 		<level>3</level>
 		<element_plus>
@@ -282,7 +282,7 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="paralysis_attack_1">
 		<name>Paralysis Attack</name>
 		<level>1</level>
 		<element_plus>
@@ -292,7 +292,7 @@
 			<paralysis>1.05</paralysis>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="paralysis_attack_2">
 		<name>Paralysis Attack</name>
 		<level>2</level>
 		<element_plus>
@@ -302,7 +302,7 @@
 			<paralysis>1.1</paralysis>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="paralysis_attack_3">
 		<name>Paralysis Attack</name>
 		<level>3</level>
 		<element_plus>
@@ -313,7 +313,7 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="sleep_attack_1">
 		<name>Sleep Attack</name>
 		<level>1</level>
 		<element_plus>
@@ -323,7 +323,7 @@
 			<sleep>1.05</sleep>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="sleep_attack_2">
 		<name>Sleep Attack</name>
 		<level>2</level>
 		<element_plus>
@@ -333,7 +333,7 @@
 			<sleep>1.1</sleep>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="sleep_attack_3">
 		<name>Sleep Attack</name>
 		<level>3</level>
 		<element_plus>
@@ -344,7 +344,7 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="blast_attack_1">
 		<name>Blast Attack</name>
 		<level>1</level>
 		<element_plus>
@@ -354,7 +354,7 @@
 			<blast>1.05</blast>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="blast_attack_2">
 		<name>Blast Attack</name>
 		<level>2</level>
 		<element_plus>
@@ -364,7 +364,7 @@
 			<blast>1.1</blast>
 		</element_multiplier>
 	</buff>
-	<buff>
+	<buff id="blast_attack_3">
 		<name>Blast Attack</name>
 		<level>3</level>
 		<element_plus>
@@ -375,89 +375,89 @@
 		</element_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="free_elem_ammo_up_1">
 		<name>Free Elem/Ammo Up</name>
 		<level>1</level>
 		<awakening>0.33</awakening>
 	</buff>
-	<buff>
+	<buff id="free_elem_ammo_up_2">
 		<name>Free Elem/Ammo Up</name>
 		<level>2</level>
 		<awakening>0.66</awakening>
 	</buff>
-	<buff>
+	<buff id="free_elem_ammo_up_3">
 		<name>Free Elem/Ammo Up</name>
 		<level>3</level>
 		<awakening>1.0</awakening>
 	</buff>
 
-	<buff>
+	<buff id="critical_eye_1">
 		<name>Critical Eye</name>
 		<level>1</level>
 		<affinity_plus>3</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="critical_eye_2">
 		<name>Critical Eye</name>
 		<level>2</level>
 		<affinity_plus>6</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="critical_eye_3">
 		<name>Critical Eye</name>
 		<level>3</level>
 		<affinity_plus>10</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="critical_eye_4">
 		<name>Critical Eye</name>
 		<level>4</level>
 		<affinity_plus>15</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="critical_eye_5">
 		<name>Critical Eye</name>
 		<level>5</level>
 		<affinity_plus>20</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="critical_eye_6">
 		<name>Critical Eye</name>
 		<level>6</level>
 		<affinity_plus>25</affinity_plus>
 	</buff>
-	<buff>
+	<buff id="critical_eye_7">
 		<name>Critical Eye</name>
 		<level>7</level>
 		<affinity_plus>30</affinity_plus>
 	</buff>
 
-	<buff>
+	<buff id="critical_boost_1">
 		<name>Critical Boost</name>
 		<level>1</level>
 		<raw_critical_hit_multiplier>1.3</raw_critical_hit_multiplier>
 	</buff>
-	<buff>
+	<buff id="critical_boost_2">
 		<name>Critical Boost</name>
 		<level>2</level>
 		<raw_critical_hit_multiplier>1.35</raw_critical_hit_multiplier>
 	</buff>
-	<buff>
+	<buff id="critical_boost_3">
 		<name>Critical Boost</name>
 		<level>3</level>
 		<raw_critical_hit_multiplier>1.40</raw_critical_hit_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="weakness_exploit_1">
 		<name>Weakness Exploit</name>
 		<level>1</level>
 		<weak_spot>
 			<affinity_plus>15</affinity_plus>
 		</weak_spot>
 	</buff>
-	<buff>
+	<buff id="weakness_exploit_2">
 		<name>Weakness Exploit</name>
 		<level>2</level>
 		<weak_spot>
 			<affinity_plus>30</affinity_plus>
 		</weak_spot>
 	</buff>
-	<buff>
+	<buff id="weakness_exploit_3">
 		<name>Weakness Exploit</name>
 		<level>3</level>
 		<weak_spot>
@@ -465,47 +465,47 @@
 		</weak_spot>
 	</buff>
 
-	<buff>
+	<buff id="handicraft_1">
 		<name>Handicraft</name>
 		<level>1</level>
 		<sharpness_plus>10</sharpness_plus>
 	</buff>
-	<buff>
+	<buff id="handicraft_2">
 		<name>Handicraft</name>
 		<level>2</level>
 		<sharpness_plus>20</sharpness_plus>
 	</buff>
-	<buff>
+	<buff id="handicraft_3">
 		<name>Handicraft</name>
 		<level>3</level>
 		<sharpness_plus>30</sharpness_plus>
 	</buff>
-	<buff>
+	<buff id="handicraft_4">
 		<name>Handicraft</name>
 		<level>4</level>
 		<sharpness_plus>40</sharpness_plus>
 	</buff>
-	<buff>
+	<buff id="handicraft_5">
 		<name>Handicraft</name>
 		<level>5</level>
 		<sharpness_plus>50</sharpness_plus>
 	</buff>
 
-	<buff>
+	<buff id="critical_draw_1">
 		<name>Critical Draw</name>
 		<level>1</level>
 		<draw_attack>
 			<affinity_plus>30</affinity_plus>
 		</draw_attack>
 	</buff>
-	<buff>
+	<buff id="critical_draw_2">
 		<name>Critical Draw</name>
 		<level>2</level>
 		<draw_attack>
 			<affinity_plus>60</affinity_plus>
 		</draw_attack>
 	</buff>
-	<buff>
+	<buff id="critical_draw_3">
 		<name>Critical Draw</name>
 		<level>3</level>
 		<draw_attack>
@@ -513,39 +513,39 @@
 		</draw_attack>
 	</buff>
 
-	<buff>
+	<buff id="slugger_1">
 		<name>Slugger</name>
 		<level>1</level>
 		<stun_multiplier>1.1</stun_multiplier>
 	</buff>
-	<buff>
+	<buff id="slugger_2">
 		<name>Slugger</name>
 		<level>2</level>
 		<stun_multiplier>1.2</stun_multiplier>
 	</buff>
-	<buff>
+	<buff id="slugger_3">
 		<name>Slugger</name>
 		<level>3</level>
 		<stun_multiplier>1.3</stun_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="stamina_thief_1">
 		<name>Stamina Thief</name>
 		<level>1</level>
 		<exhaust_multiplier>1.1</exhaust_multiplier>
 	</buff>
-	<buff>
+	<buff id="stamina_thief_2">
 		<name>Stamina Thief</name>
 		<level>2</level>
 		<exhaust_multiplier>1.2</exhaust_multiplier>
 	</buff>
-	<buff>
+	<buff id="stamina_thief_3">
 		<name>Stamina Thief</name>
 		<level>3</level>
 		<exhaust_multiplier>1.3</exhaust_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="airborne_1">
 		<name>Airborne</name>
 		<level>1</level>
 		<airborne>
@@ -553,35 +553,35 @@
 		</airborne>
 	</buff>
 
-	<buff>
+	<buff id="latent_power_1">
 		<name>Latent Power</name>
 		<level>1</level>
 		<received_damage>
 			<affinity_plus>10</affinity_plus>
 		</received_damage>
 	</buff>
-	<buff>
+	<buff id="latent_power_2">
 		<name>Latent Power</name>
 		<level>2</level>
 		<received_damage>
 			<affinity_plus>20</affinity_plus>
 		</received_damage>
 	</buff>
-	<buff>
+	<buff id="latent_power_3">
 		<name>Latent Power</name>
 		<level>3</level>
 		<received_damage>
 			<affinity_plus>30</affinity_plus>
 		</received_damage>
 	</buff>
-	<buff>
+	<buff id="latent_power_4">
 		<name>Latent Power</name>
 		<level>4</level>
 		<received_damage>
 			<affinity_plus>40</affinity_plus>
 		</received_damage>
 	</buff>
-	<buff>
+	<buff id="latent_power_5">
 		<name>Latent Power</name>
 		<level>5</level>
 		<received_damage>
@@ -589,7 +589,7 @@
 		</received_damage>
 	</buff>
 
-	<buff>
+	<buff id="agitator_1">
 		<name>Agitator</name>
 		<level>1</level>
 		<enraged>
@@ -597,7 +597,7 @@
 			<affinity_plus>3</affinity_plus>
 		</enraged>
 	</buff>
-	<buff>
+	<buff id="agitator_2">
 		<name>Agitator</name>
 		<level>2</level>
 		<enraged>
@@ -605,7 +605,7 @@
 			<affinity_plus>6</affinity_plus>
 		</enraged>
 	</buff>
-	<buff>
+	<buff id="agitator_3">
 		<name>Agitator</name>
 		<level>3</level>
 		<enraged>
@@ -613,7 +613,7 @@
 			<affinity_plus>9</affinity_plus>
 		</enraged>
 	</buff>
-	<buff>
+	<buff id="agitator_4">
 		<name>Agitator</name>
 		<level>4</level>
 		<enraged>
@@ -621,7 +621,7 @@
 			<affinity_plus>12</affinity_plus>
 		</enraged>
 	</buff>
-	<buff>
+	<buff id="agitator_5">
 		<name>Agitator</name>
 		<level>5</level>
 		<enraged>
@@ -630,21 +630,21 @@
 		</enraged>
 	</buff>
 
-	<buff>
+	<buff id="peak_performance_1">
 		<name>Peak Performance</name>
 		<level>1</level>
 		<full_life>
 			<attack_plus>5</attack_plus>
 		</full_life>
 	</buff>
-	<buff>
+	<buff id="peak_performance_2">
 		<name>Peak Performance</name>
 		<level>2</level>
 		<full_life>
 			<attack_plus>10</attack_plus>
 		</full_life>
 	</buff>
-	<buff>
+	<buff id="peak_performance_3">
 		<name>Peak Performance</name>
 		<level>3</level>
 		<full_life>
@@ -652,35 +652,35 @@
 		</full_life>
 	</buff>
 
-	<buff>
+	<buff id="heroics_1">
 		<name>Heroics</name>
 		<level>1</level>
 		<low_life>
 			<attack_multiplier>1.05</attack_multiplier>
 		</low_life>
 	</buff>
-	<buff>
+	<buff id="heroics_2">
 		<name>Heroics</name>
 		<level>2</level>
 		<low_life>
 			<attack_multiplier>1.1</attack_multiplier>
 		</low_life>
 	</buff>
-	<buff>
+	<buff id="heroics_3">
 		<name>Heroics</name>
 		<level>3</level>
 		<low_life>
 			<attack_multiplier>1.15</attack_multiplier>
 		</low_life>
 	</buff>
-	<buff>
+	<buff id="heroics_4">
 		<name>Heroics</name>
 		<level>4</level>
 		<low_life>
 			<attack_multiplier>1.20</attack_multiplier>
 		</low_life>
 	</buff>
-	<buff>
+	<buff id="heroics_5">
 		<name>Heroics</name>
 		<level>5</level>
 		<low_life>
@@ -688,7 +688,7 @@
 		</low_life>
 	</buff>
 
-	<buff>
+	<buff id="fortify_1">
 		<name>Fortify</name>
 		<level>1</level>
 		<death_1>
@@ -699,35 +699,35 @@
 		</death_2>
 	</buff>
 
-	<buff>
+	<buff id="resentment_1">
 		<name>Resentment</name>
 		<level>1</level>
 		<red_life>
 			<attack_plus>5</attack_plus>
 		</red_life>
 	</buff>
-	<buff>
+	<buff id="resentment_2">
 		<name>Resentment</name>
 		<level>2</level>
 		<red_life>
 			<attack_plus>10</attack_plus>
 		</red_life>
 	</buff>
-	<buff>
+	<buff id="resentment_3">
 		<name>Resentment</name>
 		<level>3</level>
 		<red_life>
 			<attack_plus>15</attack_plus>
 		</red_life>
 	</buff>
-	<buff>
+	<buff id="resentment_4">
 		<name>Resentment</name>
 		<level>4</level>
 		<red_life>
 			<attack_plus>20</attack_plus>
 		</red_life>
 	</buff>
-	<buff>
+	<buff id="resentment_5">
 		<name>Resentment</name>
 		<level>5</level>
 		<red_life>
@@ -735,37 +735,37 @@
 		</red_life>
 	</buff>
 
-	<buff>
+	<buff id="artillery_1">
 		<name>Artillery</name>
 		<level>1</level>
 		<artillery_multiplier>1.1</artillery_multiplier>
 	</buff>
-	<buff>
+	<buff id="artillery_2">
 		<name>Artillery</name>
 		<level>2</level>
 		<artillery_multiplier>1.2</artillery_multiplier>
 	</buff>
-	<buff>
+	<buff id="artillery_3">
 		<name>Artillery</name>
 		<level>3</level>
 		<artillery_multiplier>1.3</artillery_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="maximum_might_1">
 		<name>Maximum Might</name>
 		<level>1</level>
 		<full_stamina>
 			<affinity_plus>10</affinity_plus>
 		</full_stamina>
 	</buff>
-	<buff>
+	<buff id="maximum_might_2">
 		<name>Maximum Might</name>
 		<level>2</level>
 		<full_stamina>
 			<affinity_plus>20</affinity_plus>
 		</full_stamina>
 	</buff>
-	<buff>
+	<buff id="maximum_might_3">
 		<name>Maximum Might</name>
 		<level>3</level>
 		<full_stamina>
@@ -773,7 +773,7 @@
 		</full_stamina>
 	</buff>
 
-	<buff>
+	<buff id="affinity_sliding_1">
 		<name>Affinity Sliding</name>
 		<level>1</level>
 		<sliding>
@@ -781,34 +781,34 @@
 		</sliding>
 	</buff>
 
-	<buff>
+	<buff id="critical_element">
 		<name>Critical Element</name>
 		<element_critical_hit_multiplier>1.25</element_critical_hit_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="non_elemental_boost">
 		<name>Non-elemental Boost</name>
 		<raw_weapon>
 			<attack_multiplier>1.1</attack_multiplier>
 		</raw_weapon>
 	</buff>
 
-	<buff>
+	<buff id="masters_touch">
 		<name>Master's Touch</name>
 		<sharpness_use_critical_multiplier>0.0</sharpness_use_critical_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="razor_sharp_spare_shot">
 		<name>Razor Sharp/Spare Shot</name>
 		<sharpness_use_multiplier>0.5</sharpness_use_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="critical_status">
 		<name>Critical Status</name>
 		<status_critical_hit_multiplier>1.25</status_critical_hit_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="punishing_draw">
 		<name>Punishing Draw</name>
 		<draw_attack_stun>30</draw_attack_stun>
 		<draw_attack_exhaust>30</draw_attack_exhaust>
@@ -817,66 +817,66 @@
 		</draw_attack>
 	</buff>
 
-	<buff>
+	<buff id="protective_polish">
 		<name>Protective Polish</name>
 		<max_sharpness_time>1.0</max_sharpness_time>
 	</buff>
 
-	<buff>
+	<buff id="demondrug">
 		<name>Demondrug</name>
 		<attack_multiplier>1.03</attack_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="mega_demondrug">
 		<name>Mega Demondrug</name>
 		<attack_multiplier>1.04</attack_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="might_seed">
 		<name>Might Seed</name>
 		<might_seed_use>
 			<attack_multiplier>1.06</attack_multiplier>
 		</might_seed_use>
 	</buff>
 
-	<buff>
+	<buff id="demon_powder">
 		<name>Demon Powder</name>
 		<demon_powder_use>
 			<attack_multiplier>1.09</attack_multiplier>
 		</demon_powder_use>
 	</buff>
 
-	<buff>
+	<buff id="might_pill">
 		<name>Might Pill</name>
 		<might_pill_use>
 			<attack_multiplier>1.13</attack_multiplier>
 		</might_pill_use>
 	</buff>
 
-	<buff>
+	<buff id="attack_up_s">
 		<name>Attack Up</name>
 		<level>S</level>
 		<attack_multiplier>1.03</attack_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="attack_up_m">
 		<name>Attack Up</name>
 		<level>M</level>
 		<attack_multiplier>1.06</attack_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="attack_up_l">
 		<name>Attack Up</name>
 		<level>L</level>
 		<attack_multiplier>1.08</attack_multiplier>
 	</buff>
 
-	<buff>
+	<buff id="powercharm">
 		<name>Powercharm</name>
 		<attack_plus>6</attack_plus>
 	</buff>
 
-	<buff>
+	<buff id="powertalon">
 		<name>Powertalon</name>
 		<attack_plus>9</attack_plus>
 	</buff>
