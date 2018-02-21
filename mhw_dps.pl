@@ -12,6 +12,7 @@ my @xml_string_stack;
 my @weapons;
 my @monsters;
 my @profiles;
+my @buffs;
 
 my $cur_weapon = {};
 my $cur_part = {};
@@ -20,6 +21,8 @@ my $cur_tolerance = {};
 my $cur_monster = {};
 my $cur_profile = {};
 my $cur_pattern = {};
+my $cur_buff = {};
+my $cur_buff_condition = "always";
 
 my %element_codes = (
 	"fire" => 0,
@@ -45,6 +48,50 @@ my %sharpness_levels = (
 	"blue" => 4,
 	"white" => 5,
 	"purple" => 6
+);
+
+my %buff_conditions = (
+	"always" => 0,
+	"weak_spot" => 1,
+	"enraged" => 2,
+	"raw_weapon" => 3,
+	"draw_attack" => 4,
+	"airborne" => 5,
+	"red_life" => 6,
+	"full_life" => 7,
+	"death_1" => 8,
+	"death_2" => 9,
+	"full_stamina" => 10,
+	"sliding" => 11,
+	"low_life" => 12,
+	"received_damage" => 13,
+	"might_seed_use" => 14,
+	"demon_powder_use" => 15,
+	"might_pill_use" => 16
+);
+
+# special cases for elements and statuses
+my %buff_codes = (
+	"attack_plus" => 0,
+	"attack_multiplier" => 1,
+	"affinity_plus" => 2,
+	"all_elements_plus" => 3,
+	"all_elements_multiplier" => 4,
+	"all_statuses_plus" => 5,
+	"all_statuses_multiplier" => 6,
+	"awakening" => 7,
+	"sharpness_plus" => 8,
+	"max_sharpness_time" => 9,
+	"sharpness_use_multiplier" => 10,
+	"sharpness_use_critical_multiplier" => 11,
+	"draw_attack_stun" => 12,
+	"draw_attack_exhaust" => 13,
+	"stun_multiplier" => 14,
+	"exhaust_multiplier" => 15,
+	"artillery_multiplier" => 16,
+	"raw_critical_hit_multiplier" => 17,
+	"element_critical_hit_multiplier" => 18,
+	"status_critical_hit_multiplier" => 19,
 );
 
 sub process_start
@@ -128,10 +175,19 @@ sub process_start
 			"exhaust" => 0.0,
 			"phial_impact_attack" => 0.0,
 			"phial_impact_stun" => 0.0,
+			"phial_impact_exhaust" => 0.0,
 			"phial_element_attack" => 0.0,
 			"phial_ratio" => 0.0,
-			"punishing_draw_stun" => 0.0
+			"draw_attack" => 0.0
 		}
+	} elsif ($xml_stack[0] eq "buff") {
+		$cur_buff = {
+			"name" => "no_name",
+			"data" => {}
+		};
+		$cur_buff_condition = "always";
+	} elsif ($xml_stack[1] eq "buff" && defined $buff_conditions{$xml_stack[0]}) {
+		$cur_buff_condition = $xml_stack[0];
 	}
 }
 
@@ -142,19 +198,7 @@ sub process_val
 
 	if ($xml_stack[0] eq "weapon") {
 		push @weapons, $cur_weapon;
-	} elsif ($xml_stack[0] eq "monster") {
-		push @monsters, $cur_monster;
-	} elsif ($xml_stack[0] eq "tolerance") {
-		my $tol_type = $cur_tolerance->{"type"};
-		delete $cur_tolerance->{"type"};
-		$cur_monster->{"tolerances"}{$tol_type} = $cur_tolerance;
-	} elsif ($xml_stack[0] eq "part") {
-		push @{$cur_monster->{"parts"}}, $cur_part;
-	} elsif ($xml_stack[0] eq "hit_data") {
-		push @{$cur_part->{"hit_data"}}, $cur_hit_data;
-	} elsif ($xml_stack[0] eq "weapon_profile") {
-		push @profiles, $cur_profile;
-	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "weapon") {
+	} elsif ($xml_stack[1] eq "weapon") {
 		if ($xml_stack[0] eq "name" ||
 		    $xml_stack[0] eq "type" ||
 		    $xml_stack[0] eq "attack" ||
@@ -165,23 +209,17 @@ sub process_val
 				$cur_weapon->{"awakened"} = 1;
 			}
 		}
-	} elsif (@xml_stack >= 3 &&
-	    $xml_stack[2] eq "weapon" &&
-	    $xml_stack[1] eq "element") {
+	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "element") {
 		if (defined $element_codes{$xml_stack[0]}) {
 			$cur_weapon->{"elements"}{$xml_stack[0]} = $val;
 		} elsif (defined $status_codes{$xml_stack[0]}) {
 			$cur_weapon->{"statuses"}{$xml_stack[0]} = $val;
 		}
-	} elsif (@xml_stack >= 3 &&
-	    $xml_stack[2] eq "weapon" &&
-	    $xml_stack[1] eq "sharpness") {
+	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "sharpness") {
 		if (defined $sharpness_levels{$xml_stack[0]}) {
 			$cur_weapon->{"sharpness"}[$sharpness_levels{$xml_stack[0]}] = $val;
 		}
-	} elsif (@xml_stack >= 3 &&
-	    $xml_stack[2] eq "weapon" &&
-	    $xml_stack[1] eq "phial") {
+	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "phial") {
 		if ($xml_stack[0] eq "impact" ||
 		    $xml_stack[0] eq "element" ||
 		    $xml_stack[0] eq "power") {
@@ -191,29 +229,78 @@ sub process_val
 		} elsif (defined $status_codes{$xml_stack[0]}) {
 			$cur_weapon->{"phial_statuses"}{$xml_stack[0]} = $val;
 		}
-	} elsif (@xml_stack >= 2 &&
-	         $xml_stack[1] eq "monster" &&
-	         $xml_stack[0] eq "name") {
-		$cur_monster->{"name"} = $val;
-	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "part" &&
-	         $xml_stack[0] eq "name") {
-		$cur_part->{"name"} = $val;
-	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "hit_data") {
+	} elsif ($xml_stack[0] eq "monster") {
+		push @monsters, $cur_monster;
+	} elsif ($xml_stack[1] eq "monster") {
+		if ($xml_stack[0] eq "name") {
+			$cur_monster->{"name"} = $val;
+		} elsif ($xml_stack[0] eq "part") {
+			push @{$cur_monster->{"parts"}}, $cur_part;
+		} elsif ($xml_stack[0] eq "tolerance") {
+			my $tol_type = $cur_tolerance->{"type"};
+			delete $cur_tolerance->{"type"};
+			$cur_monster->{"tolerances"}{$tol_type} = $cur_tolerance;
+		}
+	} elsif ($xml_stack[1] eq "part") {
+		if ($xml_stack[0] eq "name") {
+			$cur_part->{"name"} = $val;
+		} elsif ($xml_stack[0] eq "hit_data") {
+			push @{$cur_part->{"hit_data"}}, $cur_hit_data;
+		}
+	} elsif ($xml_stack[1] eq "hit_data") {
 		if ($xml_stack[0] eq "state") {
 			$cur_hit_data->{"states"}{$val} = 1;
 		} else {
 			$cur_hit_data->{$xml_stack[0]} = $val;
 		}
-	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "tolerance") {
+	} elsif ($xml_stack[1] eq "tolerance") {
 		$cur_tolerance->{$xml_stack[0]} = $val;
-	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "weapon_profile") {
+	} elsif ($xml_stack[0] eq "weapon_profile") {
+		push @profiles, $cur_profile;
+	} elsif ($xml_stack[1] eq "weapon_profile") {
 		if ($xml_stack[0] eq "pattern") {
 			push @{$cur_profile->{"patterns"}}, $cur_pattern;
 		} else {
 			$cur_profile->{$xml_stack[0]} = $val;
 		}
-	} elsif (@xml_stack >= 2 && $xml_stack[1] eq "pattern") {
+	} elsif ($xml_stack[1] eq "pattern") {
 		$cur_pattern->{$xml_stack[0]} = $val;
+	} elsif ($xml_stack[0] eq "buff") {
+		push @buffs, $cur_buff;
+	} elsif (($xml_stack[2] eq "buff" && defined $buff_conditions{$xml_stack[1]}) ||
+	         ($xml_stack[1] eq "buff")) {
+		if ($xml_stack[0] eq "name") {
+			$cur_buff->{"name"} = $val;
+		} elsif ($xml_stack[0] eq "level") {
+			$cur_buff->{"level"} = $val;
+		} elsif (defined $buff_conditions{$xml_stack[0]}) {
+			$cur_buff_condition = "always";
+		} elsif (defined $buff_codes{$xml_stack[0]}) {
+			$cur_buff->{"data"}{$xml_stack[0]} ||= {};
+			$cur_buff->{"data"}{$xml_stack[0]}{$cur_buff_condition} = $val;
+		}
+	} elsif (($xml_stack[3] eq "buff" && defined $buff_conditions{$xml_stack[2]} && $xml_stack[1] eq "element_plus") ||
+	         ($xml_stack[2] eq "buff" && $xml_stack[1] eq "element_plus")) {
+		if (defined $element_codes{$xml_stack[0]}) {
+			$cur_buff->{"data"}{"element_plus"} ||= {};
+			$cur_buff->{"data"}{"element_plus"}{$xml_stack[0]} ||= {};
+			$cur_buff->{"data"}{"element_plus"}{$xml_stack[0]}{$cur_buff_condition} = $val;
+		} elsif (defined $status_codes{$xml_stack[0]}) {
+			$cur_buff->{"data"}{"status_plus"} ||= {};
+			$cur_buff->{"data"}{"status_plus"}{$xml_stack[0]} ||= {};
+			$cur_buff->{"data"}{"status_plus"}{$xml_stack[0]}{$cur_buff_condition} = $val;
+		}
+	} elsif (($xml_stack[3] eq "buff" && defined $buff_conditions{$xml_stack[2]} && $xml_stack[1] eq "element_multiplier") ||
+	         ($xml_stack[2] eq "buff" && $xml_stack[1] eq "element_multiplier")) {
+		if (defined $element_codes{$xml_stack[0]}) {
+			$cur_buff->{"data"}{"element_multiplier"} ||= {};
+			$cur_buff->{"data"}{"element_multiplier"}{$xml_stack[0]} ||= {};
+			$cur_buff->{"data"}{"element_multiplier"}{$xml_stack[0]}{$cur_buff_condition} = $val;
+		} elsif (defined $status_codes{$xml_stack[0]}) {
+			$cur_buff->{"data"}{"status_multiplier"} ||= {};
+			$cur_buff->{"data"}{"status_multiplier"}{$xml_stack[0]} ||= {};
+			$cur_buff->{"data"}{"status_multiplier"}{$xml_stack[0]}{$cur_buff_condition} = $val;
+		}
 	}
 }
 
@@ -245,16 +332,18 @@ sub parse_file
 		Start => \&handle_start,
 		End => \&handle_end,
 		Char => \&handle_char });
+	@xml_stack = ("null", "null", "null");
 	$p->parsefile($file);
 }
 
+push @buffs, { "name" => "No buff", "data" => {} };
 for my $file (@ARGV) {
 	parse_file($file);
 }
 
 sub get_sharp_bonus
 {
-	my ($weapon, $plus, $use, $mods) = @_;
+	my ($weapon, $plus, $use, $max_ratio, $mods) = @_;
 
 	my $wasted = $weapon->{"sharpness_plus"} - $plus;
 	my @levels = @{$weapon->{"sharpness"}};
@@ -273,8 +362,10 @@ sub get_sharp_bonus
 		--$i while ($i >= 0 && $levels[$i] == 0);
 	}
 
-	if ($use <= 0) {
-		return ($i >= 0 ? $levels[$i] : 0);
+	my $max_bonus = ($i >= 0 ? $mods->[$i] : 0);
+	$use *= (1.0 - $max_ratio);
+	if ($use <= 0 || $max_ratio >= 1.0) {
+		return $max_bonus;
 	} else {
 		my $sum = 0;
 		my $remaining_use = $use;
@@ -290,7 +381,7 @@ sub get_sharp_bonus
 			}
 			--$i while ($i >= 0 && $levels[$i] == 0);
 		}
-		return $sum / $use;
+		return (($sum / $use) * (1.0 - $max_ratio)) + ($max_bonus * $max_ratio);
 	}
 
 }
@@ -298,7 +389,9 @@ sub get_sharp_bonus
 my $constants = {
 	"raw_sharpness_multipiler" => [ 0.5, 0.75, 1.0, 1.05, 1.2, 1.32, 1.44 ],
 	"element_sharpness_multipiler" => [ 0.25, 0.5, 0.75, 1.0, 1.0625, 1.125, 1.2 ],
-	"critical_hit_multiplier" => 1.25,
+	"raw_critical_hit_multiplier" => 1.25,
+	"element_critical_hit_multiplier" => 1.0,
+	"status_critical_hit_multiplier" => 1.0,
 	"feeble_hit_multiplier" => 0.75,
 	"status_attack_rate" => (1.0 / 3.0),
 	"phial_power_boost" => 1.2,
@@ -308,6 +401,7 @@ my $constants = {
 
 	"enraged_ratio" => 0.4,
 	"sharpness_use" => 15,
+	"sharpen_period" => 5.0,
 	"buff_ratios" => {
 		"draw_attack" => 0.1,
 		"airborne" => 0.1,
@@ -318,125 +412,147 @@ my $constants = {
 		"full_stamina" => 0.6,
 		"sliding" => 0.1,
 		"low_life" => 0.05,
+		"received_damage" => 0.5,
+		"might_seed_use" => 0.5,
+		"demon_powder_use" => 0.5,
+		"might_pill_use" => 0.1
 	}
 };
 
-my @damages = ();
-
-sub fold_conditions_add
+sub buff_combine_add
 {
-	my ($data, $conditions) = @_;
-	my $ret = 0.0;
-	if (defined $data) {
-		for my $key (keys %{$data}) {
-			$ret += $data->{$key} * $conditions->{$key};
-		}
-	}
-	return $ret;
+	my ($acu, $value, $ratio, $min, $max) = @_;
+	$acu = 0.0 if (!defined $acu);
+	$value = 0.0 if (!defined $value);
+	$ratio = 1.0 if (!defined $ratio);
+	my $add_ret = $acu + $value;
+	$add_ret = $max if (defined $max && $add_ret > $max);
+	$add_ret = $min if (defined $min && $add_ret < $min);
+	return $acu + ($add_ret - $acu) * $ratio;
 }
-sub fold_conditions_multiply
+sub buff_combine_multiply
 {
-	my ($data, $conditions) = @_;
-	my $ret = 1.0;
-	if (defined $data) {
-		for my $key (keys %{$data}) {
-			$ret *= (1.0 - $conditions->{$key}) +
-				($data->{$key} * $conditions->{$key});
-		}
-	}
-	return $ret;
+	my ($acu, $value, $ratio, $min, $max) = @_;
+	$acu = 1.0 if (!defined $acu);
+	$value = 1.0 if (!defined $value);
+	$ratio = 1.0 if (!defined $ratio);
+	my $mult_ret = $acu * $value;
+	$mult_ret = $max if (defined $max && $mult_ret > $max);
+	$mult_ret = $min if (defined $min && $mult_ret < $min);
+	return $acu + ($mult_ret - $acu) * $ratio;
 }
-sub fold_conditions_affinity
+sub buff_combine_max
 {
-	my ($data, $conditions, $start_affinity) = @_;
-	my $ret = $start_affinity;
+	my ($acu, $value, $ratio) = @_;
+	$acu = 0.0 if (!defined $acu);
+	$value = 0.0 if (!defined $value);
+	$ratio = 1.0 if (!defined $ratio);
+	my $max_ret = $acu > $value ? $acu : $value;
+	return $acu + ($max_ret - $acu) * $ratio;
+}
+my %buff_combiners = (
+	"attack_plus" => \&buff_combine_add,
+	"attack_multiplier" => \&buff_combine_multiply,
+	"affinity_plus" => \&buff_combine_add,
+	"element_plus" => \&buff_combine_add,
+	"element_multiplier" => \&buff_combine_multiply,
+	"status_plus" => \&buff_combine_add,
+	"status_multiplier" => \&buff_combine_multiply,
+	"all_elements_plus" => \&buff_combine_add,
+	"all_elements_multiplier" => \&buff_combine_multiply,
+	"all_statuses_plus" => \&buff_combine_add,
+	"all_statuses_multiplier" => \&buff_combine_multiply,
+	"awakening" => \&buff_combine_add,
+	"sharpness_plus" => \&buff_combine_add,
+	"max_sharpness_time" => \&buff_combine_add,
+	"sharpness_use_multiplier" => \&buff_combine_multiply,
+	"sharpness_use_critical_multiplier" => \&buff_combine_multiply,
+	"draw_attack_stun" => \&buff_combine_add,
+	"draw_attack_exhaust" => \&buff_combine_add,
+	"stun_multiplier" => \&buff_combine_multiply,
+	"exhaust_multiplier" => \&buff_combine_multiply,
+	"artillery_multiplier" => \&buff_combine_multiply,
+	"raw_critical_hit_multiplier" => \&buff_combine_max,
+	"element_critical_hit_multiplier" => \&buff_combine_max,
+	"status_critical_hit_multiplier" => \&buff_combine_max
+);
+sub fold_conditions
+{
+	my ($start, $data, $conditions, $combiner, $min, $max) = @_;
+	my $ret = $start;
 	if (defined $data) {
-		for my $key (sort { $data->{$1} <=> $data->{$2} } (keys %{$data})) {
-			my $add_ret = $ret + $data->{$key};
-			$add_ret = 100 if ($add_ret > 100);
-			$add_ret = -100 if ($add_ret < -100);
-			$ret += ($add_ret - $ret) * $conditions->{$key};
+		for my $key (sort { $data->{$a} <=> $data->{$b} } (keys %{$data})) {
+			$ret = $combiner->($ret, $data->{$key}, $conditions->{$key}, $min, $max);
 		}
 	}
-	return $ret - $start_affinity;
+	return defined $ret ? $ret : $combiner->();
 }
 sub fold_conditions_buff_data
 {
 	my ($buff_data, $conditions, $start_affinity) = @_;
-	my $res = {};
-	$res->{"attack_plus"} =
-		fold_conditions_add($buff_data->{"attack_plus"}, $conditions);
-	$res->{"attack_multiplier"} =
-		fold_conditions_multiply($buff_data->{"attack_multiplier"}, $conditions);
-	$res->{"affinity_plus"} =
-		fold_conditions_affinity($buff_data->{"affinity_plus"}, $conditions, $start_affinity);
-	$res->{"element_plus"} = {};
-	if (defined $buff_data->{"element_plus"}) {
-		for my $element (keys %{$buff_data->{"element_plus"}}) {
-			$res->{"element_plus"}{$element} =
-				fold_conditions_add($buff_data->{"element_plus"}{$element}, $conditions);
+	my $res = {
+		"element_plus" => {},
+		"element_multiplier" => {},
+		"status_plus" => {},
+		"status_multiplier" => {},
+		"raw_critical_hit_multiplier" => $constants->{"raw_critical_hit_multiplier"},
+		"element_critical_hit_multiplier" => $constants->{"element_critical_hit_multiplier"},
+		"status_critical_hit_multiplier" => $constants->{"status_critical_hit_multiplier"}
+	};
+	for my $buff_key (keys %buff_combiners) {
+		if ($buff_key eq "affinity_plus") {
+			$res->{$buff_key} =
+				fold_conditions($res->{$buff_key},
+				                $buff_data->{$buff_key},
+				                $conditions,
+				                $buff_combiners{$buff_key},
+				                -100 - $start_affinity,
+				                100 - $start_affinity);
+		} elsif ($buff_key =~ /^(element|status)_(plus|multiplier)$/) {
+			for my $elt_key (keys %{$buff_data->{$buff_key}}) {
+				$res->{$buff_key}{$elt_key} =
+					fold_conditions($res->{$buff_key}{$elt_key},
+					                $buff_data->{$buff_key}{$elt_key},
+					                $conditions,
+					                $buff_combiners{$buff_key});
+			}
+		} else {
+			$res->{$buff_key} =
+				fold_conditions($res->{$buff_key},
+				                $buff_data->{$buff_key},
+				                $conditions,
+				                $buff_combiners{$buff_key});
 		}
 	}
-	$res->{"element_multiplier"} = {};
-	if (defined $buff_data->{"element_multiplier"}) {
-		for my $element (keys %{$buff_data->{"element_multiplier"}}) {
-			$res->{"element_multiplier"}{$element} =
-				fold_conditions_multiply($buff_data->{"element_multiplier"}{$element}, $conditions);
-		}
-	}
-	$res->{"status_plus"} = {};
-	if (defined $buff_data->{"status_plus"}) {
-		for my $status (keys %{$buff_data->{"status_plus"}}) {
-			$res->{"status_plus"}{$status} =
-				fold_conditions_add($buff_data->{"status_plus"}{$status}, $conditions);
-		}
-	}
-	$res->{"status_multiplier"} = {};
-	if (defined $buff_data->{"status_multiplier"}) {
-		for my $status (keys %{$buff_data->{"status_multiplier"}}) {
-			$res->{"status_multiplier"}{$status} =
-				fold_conditions_multiply($buff_data->{"status_multiplier"}{$status}, $conditions);
-		}
-	}
-	$res->{"awakening"} =
-		fold_conditions_add($buff_data->{"awakening"}, $conditions);
-	$res->{"sharpness_plus"} =
-		fold_conditions_add($buff_data->{"sharpness_plus"}, $conditions);
-	$res->{"sharpness_use"} =
-		fold_conditions_multiply($buff_data->{"sharpness_use"}, $conditions);
-	$res->{"punishing_draw_stun"} =
-		fold_conditions_add($buff_data->{"stun"}, $conditions);
-	$res->{"stun_multiplier"} =
-		fold_conditions_multiply($buff_data->{"stun_multiplier"}, $conditions);
-	if (defined $buff_data->{"raw_critical_hit_multiplier"}) {
-		$res->{"raw_critical_hit_multiplier"} =
-			fold_conditions_multiply($buff_data->{"raw_critical_hit_multiplier"}, $conditions);
-	} else {
-		$res->{"raw_critical_hit_multiplier"} = $constants->{"critical_hit_multiplier"};
-	}
-	$res->{"element_critical_hit_multiplier"} =
-		fold_conditions_multiply($buff_data->{"element_critical_hit_multiplier"}, $conditions);
-	$res->{"status_critical_hit_multiplier"} =
-		fold_conditions_multiply($buff_data->{"status_critical_hit_multiplier"}, $conditions);
 	return $res;
 }
+sub all_buff_combine {
+	my ($acu, $other) = @_;
+	for my $buff_key (keys %{$other}) {
+		$acu->{$buff_key} ||= {};
+		if ($buff_key =~ /^(element|status)_(plus|multiplier)$/) {
+			for my $elt_key (keys %{$other->{$buff_key}}) {
+				$acu->{$buff_key}{$elt_key} ||= {};
+				for my $condition_key (keys %{$other->{$buff_key}{$elt_key}}) {
+					$acu->{$buff_key}{$elt_key}{$condition_key} =
+						buff_combiners{$buff_key}->($acu->{$buff_key}{$elt_key}{$condition_key},
+					                                $other->{$buff_key}{$elt_key}{$condition_key});
+				}
+			}
+		} else {
+			for my $condition_key (keys %{$other->{$buff_key}}) {
+				$acu->{$buff_key}{$condition_key} =
+					buff_combiners{$buff_key}->($acu->{$buff_key}{$condition_key},
+				                                $other->{$buff_key}{$condition_key});
+			}
+		}
+	}
+}
+
 
 sub compute_buffed_weapon
 {
-	my ($profile, $pattern, $weapon, $state) = @_;
-
-	my $buff = {
-#		"attack_plus" => {
-#			"always" => 10,
-#			"enraged" => 10
-#		},
-#		"attack_multiplier" => {
-#			"low_life" => 1.35
-#		},
-#		"element_multiplier" => {
-#			"fire" => { "always" => 1.1 },
-#		}
-	};
+	my ($profile, $pattern, $weapon, $state, $buff) = @_;
 
 	my $conditions = {
 		"always" => 1.0,
@@ -456,8 +572,6 @@ sub compute_buffed_weapon
 	}
 	my $buff_data = fold_conditions_buff_data($buff, $conditions, $weapon->{"affinity"});
 
-#	print Dumper($conditions);
-
 	my $buffed_weapon = {
 		"affinity" => $weapon->{"affinity"},
 		"attack" => $weapon->{"attack"},
@@ -469,35 +583,55 @@ sub compute_buffed_weapon
 		"raw_critical_hit_multiplier" => $buff_data->{"raw_critical_hit_multiplier"},
 		"element_critical_hit_multiplier" => $buff_data->{"element_critical_hit_multiplier"},
 		"status_critical_hit_multiplier" => $buff_data->{"status_critical_hit_multiplier"},
-		"punishing_draw_stun" => $buff_data->{"punishing_draw_stun"},
-		"stun_multiplier" => $buff_data->{"stun_multiplier"}
+		"draw_attack_stun" => $buff_data->{"draw_attack_stun"},
+		"draw_attack_exhaust" => $buff_data->{"draw_attack_exhaust"},
+		"stun_multiplier" => $buff_data->{"stun_multiplier"},
+		"exhaust_multiplier" => $buff_data->{"exhaust_multiplier"},
+		"artillery_multiplier" => $buff_data->{"artillery_multiplier"}
 	};
-
-	my $sharpness_use = $profile->{"sharpness_use"};
-	$sharpness_use = $profile->{"sharpness_use"} if (defined $profile->{"sharpness_use"});
-	$sharpness_use = $pattern->{"sharpness_use"} if (defined $pattern->{"sharpness_use"});
-	$sharpness_use *= $buff_data->{"sharpness_use"};
-
-	$buffed_weapon->{"sharp"} =
-		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
-		                $constants->{"raw_sharpness_multipiler"});
-	$buffed_weapon->{"esharp"} =
-		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
-		                $constants->{"element_sharpness_multipiler"});
 
 	$buffed_weapon->{"affinity"} += $buff_data->{"affinity_plus"};
 	$buffed_weapon->{"attack"} += $buff_data->{"attack_plus"};
 	$buffed_weapon->{"attack"} *= $buff_data->{"attack_multiplier"};
 
+	my $sharpness_use = $profile->{"sharpness_use"};
+	$sharpness_use = $profile->{"sharpness_use"} if (defined $profile->{"sharpness_use"});
+	$sharpness_use = $pattern->{"sharpness_use"} if (defined $pattern->{"sharpness_use"});
+	$sharpness_use *= $buff_data->{"sharpness_use_multiplier"};
+	if ($buffed_weapon->{"affinity"} > 0) {
+		$sharpness_use +=
+			($buff_data->{"sharpness_use_critical_multiplier"} - 1.0) *
+			$sharpness_use * $buffed_weapon->{"affinity"} / 100.0;
+	}
+
+	my $sharpen_period = $profile->{"sharpen_period"};
+	$sharpen_period = $profile->{"sharpen_period"} if (defined $profile->{"sharpen_period"});
+	$sharpen_period = $pattern->{"sharpen_period"} if (defined $pattern->{"sharpen_period"});
+
+	my $max_sharpness_ratio = 1.0;
+	$buffed_weapon->{"sharp"} =
+		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
+		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
+		                $constants->{"raw_sharpness_multipiler"});
+	$buffed_weapon->{"esharp"} =
+		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
+		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
+		                $constants->{"element_sharpness_multipiler"});
+
+	my $multi_divider =
+		scalar(%{$weapon->{"elements"}}) + scalar(%{$weapon->{"statuses"}});
+
 	for my $element (keys %{$weapon->{"elements"}}) {
-		my $power = $weapon->{"elements"}{$element};
+		my $power = $weapon->{"elements"}{$element} / $multi_divider;
 		if ($weapon->{"awakened"}) {
 			$power *= $buff_data->{"awakening"};
 		}
 		if ($power > 0) {
+			$power += $buff_data->{"all_elements_plus"};
 			if (defined $buff_data->{"element_plus"}{$element}) {
 				$power += $buff_data->{"element_plus"}{$element};
 			}
+			$power *= $buff_data->{"all_elements_multiplier"};
 			if (defined $buff_data->{"element_multiplier"}{$element}) {
 				$power *= $buff_data->{"element_multiplier"}{$element};
 			}
@@ -505,14 +639,16 @@ sub compute_buffed_weapon
 		}
 	}
 	for my $status (keys %{$weapon->{"statuses"}}) {
-		my $power = $weapon->{"statuses"}{$status};
+		my $power = $weapon->{"statuses"}{$status} / $multi_divider;
 		if ($weapon->{"awakened"}) {
 			$power *= $buff_data->{"awakening"};
 		}
 		if ($power > 0) {
+			$power += $buff_data->{"all_statuses_plus"};
 			if (defined $buff_data->{"status_plus"}{$status}) {
 				$power += $buff_data->{"status_plus"}{$status};
 			}
+			$power += $buff_data->{"all_statuses_multiplier"};
 			if (defined $buff_data->{"status_multiplier"}{$status}) {
 				$power *= $buff_data->{"status_multiplier"}{$status};
 			}
@@ -520,27 +656,29 @@ sub compute_buffed_weapon
 		}
 	}
 	for my $element (keys %{$weapon->{"phial_elements"}}) {
-		my $power = $weapon->{"phial_elements"}{$element};
+		my $power = $weapon->{"phial_elements"}{$element} / $multi_divider;
+		$power += $buff_data->{"all_elements_plus"};
 		if (defined $buff_data->{"element_plus"}{$element}) {
 			$power += $buff_data->{"element_plus"}{$element};
 		}
+		$power *= $buff_data->{"all_elements_multiplier"};
 		if (defined $buff_data->{"element_multiplier"}{$element}) {
 			$power *= $buff_data->{"element_multiplier"}{$element};
 		}
 		$buffed_weapon->{"phial_elements"}{$element} = $power;
 	}
 	for my $status (keys %{$weapon->{"phial_statuses"}}) {
-		my $power = $weapon->{"phial_statuses"}{$status};
+		my $power = $weapon->{"phial_statuses"}{$status} / $multi_divider;
+		$power += $buff_data->{"all_statuses_plus"};
 		if (defined $buff_data->{"status_plus"}{$status}) {
 			$power += $buff_data->{"status_plus"}{$status};
 		}
+		$power += $buff_data->{"all_statuses_multiplier"};
 		if (defined $buff_data->{"status_multiplier"}{$status}) {
 			$power *= $buff_data->{"status_multiplier"}{$status};
 		}
 		$buffed_weapon->{"phial_statuses"}{$status} = $power;
 	}
-
-#	print Dumper($buffed_weapon);
 
 	return $buffed_weapon;
 }
@@ -554,8 +692,8 @@ sub compute_damage
 		"impact" => 0.0,
 		"piercing" => 0.0,
 		"fixed" => 0.0,
-		"element" => {},
-		"status" => {},
+		"elements" => {},
+		"statuses" => {},
 		"stun" => 0.0
 	};
 
@@ -592,7 +730,6 @@ sub compute_damage
 	my $status_multiplier =
 		$status_affinity_multiplier * $constants->{"status_attack_rate"};
 
-	my $element_count = scalar(keys %{$buffed_weapon->{"elements"}});
 	for my $element (keys %{$buffed_weapon->{"elements"}}) {
 		my $element_attack = $buffed_weapon->{"elements"}{$element} * $element_multiplier;
 		if ($buffed_weapon->{"phial"} eq "element") {
@@ -601,17 +738,14 @@ sub compute_damage
 		} elsif ($buffed_weapon->{"phial_elements"}{$element}) {
 			$element_attack *= 1.0 - $pattern->{"phial_ratio"};
 		}
-		$damage->{"elements"}{$element} +=
-			($element_attack * $pattern->{"element"}) / $element_count;
+		$damage->{"elements"}{$element} += $element_attack * $pattern->{"element"};
 	}
-	my $status_count = scalar(keys %{$buffed_weapon->{"statuses"}});
 	for my $status (keys %{$buffed_weapon->{"statuses"}}) {
 		my $status_attack = $buffed_weapon->{"statuses"}{$status} * $status_multiplier;
 		if ($buffed_weapon->{"phial_statuses"}{$status}) {
 			$status_attack *= 1.0 - $pattern->{"phial_ratio"};
 		}
-		$damage->{"statuses"}{$status} +=
-			($status_attack * $pattern->{"element"}) / $status_count;
+		$damage->{"statuses"}{$status} += $status_attack * $pattern->{"element"};
 	}
 
 	for my $element (keys %{$buffed_weapon->{"phial_elements"}}) {
@@ -628,73 +762,80 @@ sub compute_damage
 	if ($buffed_weapon->{"phial"} eq "element") {
 		for my $element (keys %{$buffed_weapon->{"elements"}}) {
 			$damage->{"elements"}{$element} +=
-				($buffed_weapon->{"elements"}{$element} * $pattern->{"phial_element_attack"}) / $element_count;
+				$buffed_weapon->{"elements"}{$element} * $pattern->{"phial_element_attack"};
 		}
 	}
 
 	$damage->{"stun"} += $pattern->{"stun"};
-	$damage->{"stun"} += $pattern->{"punishing_draw_stun"} * $buffed_weapon->{"punishing_draw_stun"};
+	$damage->{"stun"} += $pattern->{"draw_attack"} * $buffed_weapon->{"draw_attack_stun"};
+	$damage->{"statuses"}{"exhaust"} += $pattern->{"exhaust"};
+	$damage->{"statuses"}{"exhaust"} += $pattern->{"draw_attack"} * $buffed_weapon->{"draw_attack_exhaust"};
 
 	if ($buffed_weapon->{"phial"} eq "impact") {
 		$damage->{"stun"} += $pattern->{"phial_impact_stun"};
-		$damage->{"fixed"} += $buffed_weapon->{"attack"} * $pattern->{"phial_impact_attack"};
+		$damage->{"statuses"}{"exhaust"} += $pattern->{"phial_impact_exhaust"};
+		$damage->{"fixed"} += $buffed_weapon->{"attack"} * $buffed_weapon->{"artillery_multiplier"} *
+			$pattern->{"phial_impact_attack"};
 	}
 
 	$damage->{"stun"} *= $buffed_weapon->{"stun_multiplier"};
-
-#	print Dumper($damage);
+	$damage->{"statuses"}{"exhaust"} *= $buffed_weapon->{"exhaust_multiplier"};
 
 	return $damage;
 }
 
-# don't forget powercharm/powertalon
+my @damages = ();
+
 for my $profile (@profiles) {
 	for my $weapon (@weapons) {
 		next if ($weapon->{"type"} ne $profile->{"type"});
+		for my $buff (@buffs) {
 
-		my $damage = {
-			"weapon" => $weapon,
-			"profile" => $profile,
-			"damage" => {}
-		};
+			my $damage = {
+				"weapon" => $weapon,
+				"profile" => $profile,
+				"buff" => $buff,
+				"damage" => {}
+			};
 
-		for my $state ([ "!enraged", "normal" ],
-		               [ "enraged", "normal" ],
-		               [ "!enraged", "weak_point" ],
-		               [ "enraged", "weak_point" ]) {
-			for my $pattern (@{$profile->{"patterns"}}) {
-				my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state);
-				my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
+			for my $state ([ "!enraged", "normal" ],
+			               [ "enraged", "normal" ],
+			               [ "!enraged", "weak_spot" ],
+			               [ "enraged", "weak_spot" ]) {
+				for my $pattern (@{$profile->{"patterns"}}) {
+					my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state, $buff->{"data"});
+					my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
 
-				$damage->{"damage"}{$state->[0]} ||= {};
-				$damage->{"damage"}{$state->[0]}{$state->[1]} ||= {};
-				my $total_state_damage = $damage->{"damage"}{$state->[0]}{$state->[1]};
+					$damage->{"damage"}{$state->[0]} ||= {};
+					$damage->{"damage"}{$state->[0]}{$state->[1]} ||= {};
+					my $total_state_damage = $damage->{"damage"}{$state->[0]}{$state->[1]};
 
-				$total_state_damage->{"cut"} ||= 0.0;
-				$total_state_damage->{"cut"} += $state_damage->{"cut"} * $pattern->{"rate"};
-				$total_state_damage->{"impact"} ||= 0.0;
-				$total_state_damage->{"impact"} += $state_damage->{"impact"} * $pattern->{"rate"};
-				$total_state_damage->{"piercing"} ||= 0.0;
-				$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $pattern->{"rate"};
-				$total_state_damage->{"fixed"} ||= 0.0;
-				$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $pattern->{"rate"};
-				$total_state_damage->{"stun"} ||= 0.0;
-				$total_state_damage->{"stun"} += $state_damage->{"stun"} * $pattern->{"rate"};
-				$total_state_damage->{"elements"} ||= {};
-				for my $element (keys %{$state_damage->{"elements"}}) {
-					$total_state_damage->{"elements"}{$element} ||= 0.0;
-					$total_state_damage->{"elements"}{$element} +=
-						$state_damage->{"elements"}{$element} *= $pattern->{"rate"};
-				}
-				$total_state_damage->{"statuses"} ||= {};
-				for my $status (keys %{$state_damage->{"statuses"}}) {
-					$total_state_damage->{"statuses"}{$status} ||= 0.0;
-					$total_state_damage->{"statuses"}{$status} +=
-						$state_damage->{"statuses"}{$status} *= $pattern->{"rate"};
+					$total_state_damage->{"cut"} ||= 0.0;
+					$total_state_damage->{"cut"} += $state_damage->{"cut"} * $pattern->{"rate"};
+					$total_state_damage->{"impact"} ||= 0.0;
+					$total_state_damage->{"impact"} += $state_damage->{"impact"} * $pattern->{"rate"};
+					$total_state_damage->{"piercing"} ||= 0.0;
+					$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $pattern->{"rate"};
+					$total_state_damage->{"fixed"} ||= 0.0;
+					$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $pattern->{"rate"};
+					$total_state_damage->{"stun"} ||= 0.0;
+					$total_state_damage->{"stun"} += $state_damage->{"stun"} * $pattern->{"rate"};
+					$total_state_damage->{"elements"} ||= {};
+					for my $element (keys %{$state_damage->{"elements"}}) {
+						$total_state_damage->{"elements"}{$element} ||= 0.0;
+						$total_state_damage->{"elements"}{$element} +=
+							$state_damage->{"elements"}{$element} *= $pattern->{"rate"};
+					}
+					$total_state_damage->{"statuses"} ||= {};
+					for my $status (keys %{$state_damage->{"statuses"}}) {
+						$total_state_damage->{"statuses"}{$status} ||= 0.0;
+						$total_state_damage->{"statuses"}{$status} +=
+							$state_damage->{"statuses"}{$status} *= $pattern->{"rate"};
+					}
 				}
 			}
+			push @damages, $damage;
 		}
-		push @damages, $damage;
 	}
 }
 
@@ -713,9 +854,9 @@ for my $monster (@monsters) {
 				}
 				for my $hit_data (@{$part->{"hit_data"}}) {
 					next if ($hit_data->{"states"}{$not_enraged_state});
-					my $state_dps = { "raw" => 0.0, "element" => 0.0, "status" => 0.0 } ;
+					my $state_dps = { "raw" => 0.0, "element" => 0.0, "status" => 0.0, "fixed" => 0.0 } ;
 					my $state_damage_normal = $damage->{"damage"}{$enraged_state}{"normal"};
-					my $state_damage_weak = $damage->{"damage"}{$enraged_state}{"weak_point"};
+					my $state_damage_weak = $damage->{"damage"}{$enraged_state}{"weak_spot"};
 
 					my %hit_types = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
 					$hit_types{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
@@ -732,7 +873,9 @@ for my $monster (@monsters) {
 							$state_dps->{"raw"} += $state_damage_normal->{$hit_type} * $hit_types{$hit_type} / 100.0;
 						}
 					}
+
 					my $weak_ratio = $weak_divider > 0.0 ? ($weak_sum / $weak_divider) : 0.0;
+
 					for my $element (keys %{$state_damage_weak->{"elements"}}) {
 						$state_dps->{"element"} += $state_damage_weak->{"elements"}{$element} *
 							$hit_data->{$element} * $weak_ratio / 100.0;
@@ -742,7 +885,11 @@ for my $monster (@monsters) {
 							$hit_data->{$element} * (1.0 - $weak_ratio) / 100.0;
 					}
 
-					$state_dps->{"total"} = $state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"};
+					$state_dps->{"fixed"} += $state_damage_weak->{"fixed"} * $weak_ratio;
+					$state_dps->{"fixed"} += $state_damage_normal->{"fixed"} * (1.0 - $weak_ratio);
+
+					$state_dps->{"total"} =
+						$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
 
 					my $ratio = $constants->{"enraged_ratio"};
 					$ratio = 1.0 - $ratio if ($enraged_state eq "!enraged");
@@ -752,11 +899,11 @@ for my $monster (@monsters) {
 					}
 				}
 			}
-			printf "%6.2f :: %6.2f :: %6.2f :: %s / %s / %s / %s\n",
-				($dps->{total}, $dps->{raw}, $dps->{element}, $monster->{name}, $part->{name}, $damage->{weapon}{name}, $damage->{profile}{name});
-		#			print "$dps->{total} :: $dps->{raw} :: $dps->{element} :: $monster->{name} / $part->{name} / $damage->{weapon}{name} / $damage->{profile}{name}\n";
+			printf "%6.2f :: %6.2f :: %6.2f :: %6.2f :: %6.2f :: %s / %s / %s / %s / %s\n",
+				($dps->{total}, $dps->{raw}, $dps->{element},, $dps->{status}, $dps->{fixed},
+				 $monster->{name}, $part->{name},
+				 $damage->{weapon}{name}, $damage->{profile}{name},
+				 ("$damage->{buff}{name}" . (defined $damage->{buff}{level} ? " [$damage->{buff}{level}]" : "")));
 		}
 	}
 }
-
-#print Dumper(@monsters);
