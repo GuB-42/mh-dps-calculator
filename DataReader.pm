@@ -97,6 +97,7 @@ my %buff_codes = (
 	"raw_critical_hit_multiplier" => 17,
 	"element_critical_hit_multiplier" => 18,
 	"status_critical_hit_multiplier" => 19,
+	"minds_eye" => 20
 );
 
 sub process_start
@@ -178,6 +179,7 @@ sub process_start
 			"element" => 0.0,
 			"stun" => 0.0,
 			"exhaust" => 0.0,
+			"sharpness_multiplier" => 1.0,
 			"phial_impact_attack" => 0.0,
 			"phial_impact_stun" => 0.0,
 			"phial_impact_exhaust" => 0.0,

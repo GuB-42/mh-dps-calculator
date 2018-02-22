@@ -10,9 +10,12 @@ use DataReader;
 use Data::Dumper;
 $Data::Dumper::Sortkeys = 1;
 
+# maximum element buff = +20%
+# elemental crit adjustment (M:1.2/L:?/XL:1.35)
+
 my $constants = {
-	"raw_sharpness_multipiler" => [ 0.5, 0.75, 1.0, 1.05, 1.2, 1.32, 1.44 ],
-	"element_sharpness_multipiler" => [ 0.25, 0.5, 0.75, 1.0, 1.0625, 1.125, 1.2 ],
+	"raw_sharpness_multipilers" => [ 0.5, 0.75, 1.0, 1.05, 1.2, 1.32, 1.44 ],
+	"element_sharpness_multipilers" => [ 0.25, 0.5, 0.75, 1.0, 1.0625, 1.125, 1.2 ],
 	"raw_critical_hit_multiplier" => 1.25,
 	"element_critical_hit_multiplier" => 1.0,
 	"status_critical_hit_multiplier" => 1.0,
@@ -21,7 +24,9 @@ my $constants = {
 	"phial_power_boost" => 1.2,
 	"phial_element_boost" => 1.25,
 	"weakness_threshold" => 45,
+	"element_weakness_threshold" => 20,
 	"piercing_factor" => 0.72,
+	"bounce_threshold" => 25,
 
 	"enraged_ratio" => 0.4,
 	"sharpness_use" => 15,
@@ -43,7 +48,7 @@ my $constants = {
 	}
 };
 
-sub get_sharp_bonus
+sub get_sharp_bonus_array
 {
 	my ($weapon, $plus, $use, $max_ratio, $mods) = @_;
 
@@ -65,27 +70,37 @@ sub get_sharp_bonus
 	}
 
 	my $max_bonus = ($i >= 0 ? $mods->[$i] : 0);
-	$use *= (1.0 - $max_ratio);
-	if ($use <= 0 || $max_ratio >= 1.0) {
-		return $max_bonus;
+	if ($i < 0) {
+		return [ [1.0, ($mods->[0] || 0.0)] ];
+	} elsif ($use <= 0 || $max_ratio >= 1.0 || $i < 0) {
+		return [ [1.0, $mods->[$i]] ];
 	} else {
-		my $sum = 0;
-		my $remaining_use = $use;
+		my $res = [];
+		my $remaining_use = $use * (1.0 - $max_ratio);
 		while ($remaining_use > 0 && $i >= 0) {
 			if ($remaining_use > $levels[$i]) {
-				$sum += $mods->[$i] * $levels[$i];
+				push @{$res}, [$levels[$i] / $use, $mods->[$i]];
 				$remaining_use -= $levels[$i];
 				$levels[$i] = 0;
 			} else {
-				$sum += $mods->[$i] * $remaining_use;
+				push @{$res}, [$remaining_use / $use, $mods->[$i]];
 				$levels[$i] -= $remaining_use;
 				$remaining_use = 0;
 			}
 			--$i while ($i >= 0 && $levels[$i] == 0);
 		}
-		return (($sum / $use) * (1.0 - $max_ratio)) + ($max_bonus * $max_ratio);
+		$res->[0][0] += $max_ratio;
+		return $res;
 	}
-
+}
+sub get_sharp_bonus
+{
+	my $ret = 0.0;
+	my $a = get_sharp_bonus_array(@_);
+	for my $v (@{$a}) {
+		$ret += $v->[0] * $v->[1];
+	}
+	return $ret;
 }
 
 sub buff_combine_add
@@ -143,7 +158,8 @@ my %buff_combiners = (
 	"artillery_multiplier" => \&buff_combine_multiply,
 	"raw_critical_hit_multiplier" => \&buff_combine_max,
 	"element_critical_hit_multiplier" => \&buff_combine_max,
-	"status_critical_hit_multiplier" => \&buff_combine_max
+	"status_critical_hit_multiplier" => \&buff_combine_max,
+	"minds_eye" => \&buff_combine_add
 );
 sub fold_conditions
 {
@@ -256,7 +272,8 @@ sub compute_buffed_weapon
 		"draw_attack_exhaust" => $buff_data->{"draw_attack_exhaust"},
 		"stun_multiplier" => $buff_data->{"stun_multiplier"},
 		"exhaust_multiplier" => $buff_data->{"exhaust_multiplier"},
-		"artillery_multiplier" => $buff_data->{"artillery_multiplier"}
+		"artillery_multiplier" => $buff_data->{"artillery_multiplier"},
+		"bounce_sharpness" => []
 	};
 
 	$buffed_weapon->{"affinity"} += $buff_data->{"affinity_plus"};
@@ -277,15 +294,29 @@ sub compute_buffed_weapon
 	$sharpen_period = $profile->{"sharpen_period"} if (defined $profile->{"sharpen_period"});
 	$sharpen_period = $pattern->{"sharpen_period"} if (defined $pattern->{"sharpen_period"});
 
-	my $max_sharpness_ratio = 1.0;
 	$buffed_weapon->{"sharp"} =
 		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
 		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
-		                $constants->{"raw_sharpness_multipiler"});
+		                $constants->{"raw_sharpness_multipilers"});
 	$buffed_weapon->{"esharp"} =
 		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
 		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
-		                $constants->{"element_sharpness_multipiler"});
+		                $constants->{"element_sharpness_multipilers"});
+
+	if ($buff_data->{"minds_eye"} < 1.0) {
+		$buffed_weapon->{"bounce_sharpness"} =
+			get_sharp_bonus_array($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
+			                      $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
+			                      $constants->{"raw_sharpness_multipilers"});
+		if ($buff_data->{"minds_eye"} > 0.0) {
+			for my $v (@{$buffed_weapon->{"bounce_sharpness"}}) {
+				$v->[1] *= 1.0 - $buff_data->{"minds_eye"};
+			}
+			push @{$buffed_weapon->{"bounce_sharpness"}}, [$buff_data->{"minds_eye"}, 999];
+		}
+	} else {
+		push @{$buffed_weapon->{"bounce_sharpness"}}, [1.0, 999];
+	}
 
 	my $multi_divider =
 		scalar(%{$weapon->{"elements"}}) + scalar(%{$weapon->{"statuses"}});
@@ -363,7 +394,8 @@ sub compute_damage
 		"fixed" => 0.0,
 		"elements" => {},
 		"statuses" => {},
-		"stun" => 0.0
+		"stun" => 0.0,
+		"bounce_sharpness" => [],
 	};
 
 	my $raw_affinity_multiplier = 1.0;
@@ -383,7 +415,7 @@ sub compute_damage
 	}
 
 	my $raw_attack = $buffed_weapon->{"attack"} *
-		$raw_affinity_multiplier * $buffed_weapon->{"sharp"};
+		$raw_affinity_multiplier * $buffed_weapon->{"sharp"} * $pattern->{"sharpness_multiplier"};
 
 	if ($buffed_weapon->{"phial"} eq "power") {
 		$raw_attack *= (1.0 - $pattern->{"phial_ratio"}) +
@@ -450,6 +482,11 @@ sub compute_damage
 	$damage->{"stun"} *= $buffed_weapon->{"stun_multiplier"};
 	$damage->{"statuses"}{"exhaust"} *= $buffed_weapon->{"exhaust_multiplier"};
 
+	for my $v (@{$buffed_weapon->{"bounce_sharpness"}}) {
+		push @{$damage->{"bounce_sharpness"}},
+			[$v->[0], $v->[1] * $pattern->{"sharpness_multiplier"}];
+	}
+
 	return $damage;
 }
 
@@ -476,6 +513,10 @@ for my $profile (@{$data->{"profiles"}}) {
 			               [ "enraged", "normal" ],
 			               [ "!enraged", "weak_spot" ],
 			               [ "enraged", "weak_spot" ]) {
+				my $total_rate = 0.0;
+				for my $pattern (@{$profile->{"patterns"}}) {
+					$total_rate += $pattern->{"rate"};
+				}
 				for my $pattern (@{$profile->{"patterns"}}) {
 					my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state, $buff->{"data"});
 					my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
@@ -506,6 +547,23 @@ for my $profile (@{$data->{"profiles"}}) {
 						$total_state_damage->{"statuses"}{$status} +=
 							$state_damage->{"statuses"}{$status} *= $pattern->{"rate"};
 					}
+
+					for my $v (@{$state_damage->{"bounce_sharpness"}}) {
+						my $rate_proportion =
+							($total_rate > 0.0 ? $pattern->{"rate"} / $total_rate : 1.0);
+						push @{$total_state_damage->{"bounce_sharpness"}},
+							[($v->[0] > 900 ? 999 : $v->[0] * $rate_proportion), $v->[1]];
+					}
+					my $new_bounce_sharpness = [];
+					for my $v (sort { $b->[1] <=> $a->[1] } (@{$total_state_damage->{"bounce_sharpness"}})) {
+						my $i = (scalar @{$new_bounce_sharpness}) - 1;
+						if ($i >= 0 && $new_bounce_sharpness->[$i][1] == $v->[1]) {
+							$new_bounce_sharpness->[$i][0] += $v->[0];
+						} else {
+							push @{$new_bounce_sharpness}, [$v->[0], $v->[1]];
+						}
+					}
+					$total_state_damage->{"bounce_sharpness"} = $new_bounce_sharpness;
 				}
 			}
 			push @damages, $damage;
@@ -528,39 +586,45 @@ for my $monster (@{$data->{"monsters"}}) {
 				}
 				for my $hit_data (@{$part->{"hit_data"}}) {
 					next if ($hit_data->{"states"}{$not_enraged_state});
-					my $state_dps = { "raw" => 0.0, "element" => 0.0, "status" => 0.0, "fixed" => 0.0 } ;
+					my $state_dps = {
+						"raw" => 0.0,
+						"element" => 0.0,
+						"status" => 0.0,
+						"fixed" => 0.0,
+						"bounce_rate" => 0.0 } ;
 					my $state_damage_normal = $damage->{"damage"}{$enraged_state}{"normal"};
 					my $state_damage_weak = $damage->{"damage"}{$enraged_state}{"weak_spot"};
 
-					my %hit_types = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
-					$hit_types{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
-					$hit_types{"piercing"} = $hit_data->{"cut"} if $hit_types{"piercing"} < $hit_data->{"cut"};
-					my $weak_sum = 0.0;
-					my $weak_divider = 0.0;
-					for my $hit_type (keys %hit_types) {
-						if ($hit_types{$hit_type} >= $constants->{"weakness_threshold"}) {
-							$weak_sum += $state_damage_weak->{$hit_type};
-							$weak_divider += $state_damage_weak->{$hit_type};
-							$state_dps->{"raw"} += $state_damage_weak->{$hit_type} * $hit_types{$hit_type} / 100.0;
-						} else {
-							$weak_divider += $state_damage_normal->{$hit_type};
-							$state_dps->{"raw"} += $state_damage_normal->{$hit_type} * $hit_types{$hit_type} / 100.0;
+					my %hit_data_p = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
+					$hit_data_p{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
+					$hit_data_p{"piercing"} = $hit_data->{"cut"} if $hit_data_p{"piercing"} < $hit_data->{"cut"};
+
+					my $state_damage_total = 0.0;
+					for my $hit_type (keys %hit_data_p) {
+						my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
+							$state_damage_weak : $state_damage_normal;
+						$state_damage_total += $state_damage->{$hit_type};
+					}
+					for my $hit_type (keys %hit_data_p) {
+						my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
+							$state_damage_weak : $state_damage_normal;
+						$state_dps->{"raw"} += $state_damage->{$hit_type} * $hit_data_p{$hit_type} / 100.0;
+						for my $v (@{$state_damage->{"bounce_sharpness"}}) {
+							if ($v->[1] * $hit_data_p{$hit_type} < $constants->{"bounce_threshold"}) {
+								$state_dps->{"bounce_rate"} +=
+									$v->[0] * $state_damage->{$hit_type} / $state_damage_total;
+							}
 						}
 					}
 
-					my $weak_ratio = $weak_divider > 0.0 ? ($weak_sum / $weak_divider) : 0.0;
-
 					for my $element (keys %{$state_damage_weak->{"elements"}}) {
-						$state_dps->{"element"} += $state_damage_weak->{"elements"}{$element} *
-							$hit_data->{$element} * $weak_ratio / 100.0;
-					}
-					for my $element (keys %{$state_damage_normal->{"elements"}}) {
-						$state_dps->{"element"} += $state_damage_normal->{"elements"}{$element} *
-							$hit_data->{$element} * (1.0 - $weak_ratio) / 100.0;
+						my $state_damage = $hit_data->{$element} >= $constants->{"element_weakness_threshold"} ?
+							$state_damage_weak : $state_damage_normal;
+						$state_dps->{"element"} +=
+							$state_damage->{"elements"}{$element} * $hit_data->{$element} / 100.0;
 					}
 
-					$state_dps->{"fixed"} += $state_damage_weak->{"fixed"} * $weak_ratio;
-					$state_dps->{"fixed"} += $state_damage_normal->{"fixed"} * (1.0 - $weak_ratio);
+					$state_dps->{"fixed"} += $state_damage_weak->{"fixed"};
 
 					$state_dps->{"total"} =
 						$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
@@ -573,8 +637,8 @@ for my $monster (@{$data->{"monsters"}}) {
 					}
 				}
 			}
-			printf "%6.2f :: %6.2f :: %6.2f :: %6.2f :: %6.2f :: %s / %s / %s / %s / %s\n",
-				($dps->{total}, $dps->{raw}, $dps->{element},, $dps->{status}, $dps->{fixed},
+			printf "%6.2f :: R %6.2f :: E %6.2f :: S %6.2f :: F %6.2f :: B %4.2f :: %s / %s / %s / %s / %s\n",
+				($dps->{total}, $dps->{raw}, $dps->{element},, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
 				 $monster->{name}, $part->{name},
 				 $damage->{weapon}{name}, $damage->{profile}{name},
 				 ("$damage->{buff}{name}" . (defined $damage->{buff}{level} ? " [$damage->{buff}{level}]" : "")));
