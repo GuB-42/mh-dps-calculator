@@ -10,6 +10,9 @@ use DataReader;
 use Data::Dumper;
 $Data::Dumper::Sortkeys = 1;
 
+# time is in seconds
+
+# TODO
 # maximum element buff = +20%
 # elemental crit adjustment (M:1.2/L:?/XL:1.35)
 
@@ -30,7 +33,9 @@ my $constants = {
 
 	"enraged_ratio" => 0.4,
 	"sharpness_use" => 15,
-	"sharpen_period" => 5.0,
+	"sharpen_period" => 300.0,
+	"monster_hit_points" => 6000.0,
+
 	"buff_ratios" => {
 		"draw_attack" => 0.1,
 		"airborne" => 0.1,
@@ -394,7 +399,6 @@ sub compute_damage
 		"fixed" => 0.0,
 		"elements" => {},
 		"statuses" => {},
-		"stun" => 0.0,
 		"bounce_sharpness" => [],
 	};
 
@@ -467,27 +471,65 @@ sub compute_damage
 		}
 	}
 
-	$damage->{"stun"} += $pattern->{"stun"};
-	$damage->{"stun"} += $pattern->{"draw_attack"} * $buffed_weapon->{"draw_attack_stun"};
-	$damage->{"statuses"}{"exhaust"} += $pattern->{"exhaust"};
-	$damage->{"statuses"}{"exhaust"} += $pattern->{"draw_attack"} * $buffed_weapon->{"draw_attack_exhaust"};
+	my $stun = $damage->{"statuses"}{"stun"} || 0.0;
+	my $exhaust = $damage->{"statuses"}{"exhaust"} || 0.0;
+
+	$stun += $pattern->{"stun"};
+	$stun += $pattern->{"draw_attack"} * $buffed_weapon->{"draw_attack_stun"};
+	$exhaust += $pattern->{"exhaust"};
+	$exhaust += $pattern->{"draw_attack"} * $buffed_weapon->{"draw_attack_exhaust"};
 
 	if ($buffed_weapon->{"phial"} eq "impact") {
-		$damage->{"stun"} += $pattern->{"phial_impact_stun"};
-		$damage->{"statuses"}{"exhaust"} += $pattern->{"phial_impact_exhaust"};
+		$stun += $pattern->{"phial_impact_stun"};
+		$exhaust += $pattern->{"phial_impact_exhaust"};
 		$damage->{"fixed"} += $buffed_weapon->{"attack"} * $buffed_weapon->{"artillery_multiplier"} *
 			$pattern->{"phial_impact_attack"};
 	}
 
-	$damage->{"stun"} *= $buffed_weapon->{"stun_multiplier"};
-	$damage->{"statuses"}{"exhaust"} *= $buffed_weapon->{"exhaust_multiplier"};
+	$stun *= $buffed_weapon->{"stun_multiplier"};
+	$exhaust *= $buffed_weapon->{"exhaust_multiplier"};
 
 	for my $v (@{$buffed_weapon->{"bounce_sharpness"}}) {
 		push @{$damage->{"bounce_sharpness"}},
 			[$v->[0], $v->[1] * $pattern->{"sharpness_multiplier"}];
 	}
 
+	$damage->{"statuses"}{"exhaust"} += $exhaust if ($exhaust > 0.0);
+	$damage->{"statuses"}{"stun"} += $stun if ($stun > 0.0);
+
 	return $damage;
+}
+
+sub get_status_hits
+{
+	my ($status_attack, $tolerance, $period, $overbuild) = @_;
+
+	if ($tolerance->{"regen_value"} > 0.0) {
+		$status_attack -=
+			$tolerance->{"regen_value"} / $tolerance->{"regen_tick"};
+	}
+	return 0 if ($status_attack <= 0);
+	my $duration = 0.0;
+	my $hits = 0.0;
+	for (1..3) {
+		$hits = 0.0;
+		my $dmg = $status_attack * ($period - $duration);
+		my $tol = $tolerance->{"initial"};
+		while ($tol < $tolerance->{"max"} && $dmg > 0) {
+			if ($dmg > $tol) {
+				$dmg -= $tol;
+				$tol += $tolerance->{"plus"};
+				$hits += 1.0;
+			} else {
+				$hits += $dmg / $tol;
+				$dmg = 0;
+			}
+		}
+		$hits += $dmg / $tolerance->{"max"} if $tolerance->{"max"} > 0;
+		$duration = $hits * $tolerance->{"duration"};
+		last unless ($overbuild && $duration > 0.0);
+	}
+	return $hits / $period;
 }
 
 my $data = {
@@ -515,9 +557,10 @@ for my $profile (@{$data->{"profiles"}}) {
 			               [ "enraged", "weak_spot" ]) {
 				my $total_rate = 0.0;
 				for my $pattern (@{$profile->{"patterns"}}) {
-					$total_rate += $pattern->{"rate"};
+					$total_rate += $pattern->{"rate"} / $pattern->{"period"};
 				}
 				for my $pattern (@{$profile->{"patterns"}}) {
+					my $rate = $pattern->{"rate"} / $pattern->{"period"};
 					my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state, $buff->{"data"});
 					my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
 
@@ -526,31 +569,28 @@ for my $profile (@{$data->{"profiles"}}) {
 					my $total_state_damage = $damage->{"damage"}{$state->[0]}{$state->[1]};
 
 					$total_state_damage->{"cut"} ||= 0.0;
-					$total_state_damage->{"cut"} += $state_damage->{"cut"} * $pattern->{"rate"};
+					$total_state_damage->{"cut"} += $state_damage->{"cut"} * $rate;
 					$total_state_damage->{"impact"} ||= 0.0;
-					$total_state_damage->{"impact"} += $state_damage->{"impact"} * $pattern->{"rate"};
+					$total_state_damage->{"impact"} += $state_damage->{"impact"} * $rate;
 					$total_state_damage->{"piercing"} ||= 0.0;
-					$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $pattern->{"rate"};
+					$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $rate;
 					$total_state_damage->{"fixed"} ||= 0.0;
-					$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $pattern->{"rate"};
-					$total_state_damage->{"stun"} ||= 0.0;
-					$total_state_damage->{"stun"} += $state_damage->{"stun"} * $pattern->{"rate"};
+					$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $rate;
 					$total_state_damage->{"elements"} ||= {};
 					for my $element (keys %{$state_damage->{"elements"}}) {
 						$total_state_damage->{"elements"}{$element} ||= 0.0;
 						$total_state_damage->{"elements"}{$element} +=
-							$state_damage->{"elements"}{$element} *= $pattern->{"rate"};
+							$state_damage->{"elements"}{$element} *= $rate;
 					}
 					$total_state_damage->{"statuses"} ||= {};
 					for my $status (keys %{$state_damage->{"statuses"}}) {
 						$total_state_damage->{"statuses"}{$status} ||= 0.0;
 						$total_state_damage->{"statuses"}{$status} +=
-							$state_damage->{"statuses"}{$status} *= $pattern->{"rate"};
+							$state_damage->{"statuses"}{$status} *= $rate;
 					}
 
 					for my $v (@{$state_damage->{"bounce_sharpness"}}) {
-						my $rate_proportion =
-							($total_rate > 0.0 ? $pattern->{"rate"} / $total_rate : 1.0);
+						my $rate_proportion = ($total_rate > 0.0 ? $rate / $total_rate : 1.0);
 						push @{$total_state_damage->{"bounce_sharpness"}},
 							[($v->[0] > 900 ? 999 : $v->[0] * $rate_proportion), $v->[1]];
 					}
@@ -626,8 +666,28 @@ for my $monster (@{$data->{"monsters"}}) {
 
 					$state_dps->{"fixed"} += $state_damage_weak->{"fixed"};
 
-					$state_dps->{"total"} =
-						$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
+					for (1..1) {
+						$state_dps->{"total"} =
+							$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
+						$state_dps->{"kill_freq"} = $state_dps->{"total"} / $constants->{"monster_hit_points"};
+						if ($state_dps->{"kill_freq"} > 0) {
+							for my $status (keys %{$state_damage_weak->{"statuses"}}) {
+								my $status_attack = $state_damage_weak->{"statuses"}{$status};
+								if (defined $hit_data->{$status}) {
+									$status_attack *= $hit_data->{$status} / 100.0;
+								}
+								my $hits =
+									get_status_hits($status_attack,
+									                $monster->{"tolerances"}{$status},
+									                1.0 / $state_dps->{"kill_freq"},
+									                ($status ne "poison"));
+								if ($hits > 0.0) {
+									$state_dps->{"status"} += $hits * $monster->{"tolerances"}{$status}{"damage"};
+									$state_dps->{"proc_rate"}{$status} = $hits;
+								}
+							}
+						}
+					}
 
 					my $ratio = $constants->{"enraged_ratio"};
 					$ratio = 1.0 - $ratio if ($enraged_state eq "!enraged");
@@ -637,9 +697,9 @@ for my $monster (@{$data->{"monsters"}}) {
 					}
 				}
 			}
-			printf "%6.2f :: R %6.2f :: E %6.2f :: S %6.2f :: F %6.2f :: B %4.2f :: %s / %s / %s / %s / %s\n",
-				($dps->{total}, $dps->{raw}, $dps->{element},, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
-				 $monster->{name}, $part->{name},
+			printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s / %s / %s\n",
+				($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
+				 (1.0 / $dps->{kill_freq}), $monster->{name}, $part->{name},
 				 $damage->{weapon}{name}, $damage->{profile}{name},
 				 ("$damage->{buff}{name}" . (defined $damage->{buff}{level} ? " [$damage->{buff}{level}]" : "")));
 		}

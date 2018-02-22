@@ -123,9 +123,9 @@ sub process_start
 			"parts" => [],
 			"tolerances" => {}
 		};
-		for my $tol ("poison", "sleep", "paralysis", "stun", "exhaust", "blast") {
+		for my $tol ("poison", "sleep", "paralysis", "stun", "exhaust", "blast", "mount", "jump") {
 			$cur_monster->{"tolerances"}{$tol} = {
-				"init" => 0,
+				"initial" => 0,
 				"plus" => 0,
 				"max" => 0,
 				"regen_value" => 0,
@@ -173,6 +173,7 @@ sub process_start
 	} elsif ($xml_stack[0] eq "pattern") {
 		$cur_pattern = {
 			"rate" => 1.0,
+			"period" => 1.0,
 			"cut" => 0.0,
 			"impact" => 0.0,
 			"piercing" => 0.0,

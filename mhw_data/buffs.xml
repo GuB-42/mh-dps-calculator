@@ -819,7 +819,7 @@
 
 	<buff id="protective_polish">
 		<name>Protective Polish</name>
-		<max_sharpness_time>1.0</max_sharpness_time>
+		<max_sharpness_time>60.0</max_sharpness_time>
 	</buff>
 
 	<buff id="demondrug">
