@@ -2,6 +2,8 @@
 	<buff id="attack_boost_1">
 		<name>Attack Boost</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<attack_plus>3</attack_plus>
 	</buff>
 	<buff id="attack_boost_2">
@@ -42,6 +44,8 @@
 	<buff id="fire_attack_1">
 		<name>Fire Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<fire>3</fire>
 		</element_plus>
@@ -85,6 +89,8 @@
 	<buff id="water_attack_1">
 		<name>Water Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<water>3</water>
 		</element_plus>
@@ -128,6 +134,8 @@
 	<buff id="ice_attack_1">
 		<name>Ice Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<ice>3</ice>
 		</element_plus>
@@ -170,6 +178,8 @@
 	<buff id="thunder_attack_1">
 		<name>Thunder Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<thunder>3</thunder>
 		</element_plus>
@@ -212,6 +222,8 @@
 	<buff id="dragon_attack_1">
 		<name>Dragon Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<dragon>3</dragon>
 		</element_plus>
@@ -254,6 +266,8 @@
 	<buff id="poison_attack_1">
 		<name>Poison Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<poison>3</poison>
 		</element_plus>
@@ -285,6 +299,8 @@
 	<buff id="paralysis_attack_1">
 		<name>Paralysis Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<paralysis>3</paralysis>
 		</element_plus>
@@ -316,6 +332,8 @@
 	<buff id="sleep_attack_1">
 		<name>Sleep Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<sleep>3</sleep>
 		</element_plus>
@@ -347,6 +365,8 @@
 	<buff id="blast_attack_1">
 		<name>Blast Attack</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<element_plus>
 			<blast>3</blast>
 		</element_plus>
@@ -378,6 +398,8 @@
 	<buff id="free_elem_ammo_up_1">
 		<name>Free Elem/Ammo Up</name>
 		<level>1</level>
+		<decoration_level>3</decoration_level>
+		<decoration_rarity>8</decoration_rarity>
 		<awakening>0.33</awakening>
 	</buff>
 	<buff id="free_elem_ammo_up_2">
@@ -394,6 +416,8 @@
 	<buff id="critical_eye_1">
 		<name>Critical Eye</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<affinity_plus>3</affinity_plus>
 	</buff>
 	<buff id="critical_eye_2">
@@ -430,6 +454,8 @@
 	<buff id="critical_boost_1">
 		<name>Critical Boost</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>8</decoration_rarity>
 		<raw_critical_hit_multiplier>1.3</raw_critical_hit_multiplier>
 	</buff>
 	<buff id="critical_boost_2">
@@ -446,6 +472,8 @@
 	<buff id="weakness_exploit_1">
 		<name>Weakness Exploit</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<weak_spot>
 			<affinity_plus>15</affinity_plus>
 		</weak_spot>
@@ -468,6 +496,8 @@
 	<buff id="handicraft_1">
 		<name>Handicraft</name>
 		<level>1</level>
+		<decoration_level>3</decoration_level>
+		<decoration_rarity>8</decoration_rarity>
 		<sharpness_plus>10</sharpness_plus>
 	</buff>
 	<buff id="handicraft_2">
@@ -494,6 +524,8 @@
 	<buff id="critical_draw_1">
 		<name>Critical Draw</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>8</decoration_rarity>
 		<draw_attack>
 			<affinity_plus>30</affinity_plus>
 		</draw_attack>
@@ -516,6 +548,8 @@
 	<buff id="slugger_1">
 		<name>Slugger</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<stun_multiplier>1.1</stun_multiplier>
 	</buff>
 	<buff id="slugger_2">
@@ -532,6 +566,8 @@
 	<buff id="stamina_thief_1">
 		<name>Stamina Thief</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<exhaust_multiplier>1.1</exhaust_multiplier>
 	</buff>
 	<buff id="stamina_thief_2">
@@ -548,6 +584,8 @@
 	<buff id="airborne_1">
 		<name>Airborne</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>5</decoration_rarity>
 		<airborne>
 			<attack_multiplier>1.1</attack_multiplier>
 		</airborne>
@@ -556,6 +594,8 @@
 	<buff id="latent_power_1">
 		<name>Latent Power</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<received_damage>
 			<affinity_plus>10</affinity_plus>
 		</received_damage>
@@ -592,6 +632,8 @@
 	<buff id="agitator_1">
 		<name>Agitator</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<enraged>
 			<attack_plus>4</attack_plus>
 			<affinity_plus>3</affinity_plus>
@@ -633,6 +675,8 @@
 	<buff id="peak_performance_1">
 		<name>Peak Performance</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<full_life>
 			<attack_plus>5</attack_plus>
 		</full_life>
@@ -655,6 +699,8 @@
 	<buff id="heroics_1">
 		<name>Heroics</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<low_life>
 			<attack_multiplier>1.05</attack_multiplier>
 		</low_life>
@@ -691,6 +737,8 @@
 	<buff id="fortify_1">
 		<name>Fortify</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>5</decoration_rarity>
 		<death_1>
 			<attack_multiplier>1.1</attack_multiplier>
 		</death_1>
@@ -702,6 +750,8 @@
 	<buff id="resentment_1">
 		<name>Resentment</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<red_life>
 			<attack_plus>5</attack_plus>
 		</red_life>
@@ -738,6 +788,8 @@
 	<buff id="artillery_1">
 		<name>Artillery</name>
 		<level>1</level>
+		<decoration_level>1</decoration_level>
+		<decoration_rarity>8</decoration_rarity>
 		<artillery_multiplier>1.1</artillery_multiplier>
 	</buff>
 	<buff id="artillery_2">
@@ -754,6 +806,8 @@
 	<buff id="maximum_might_1">
 		<name>Maximum Might</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<full_stamina>
 			<affinity_plus>10</affinity_plus>
 		</full_stamina>
@@ -776,6 +830,8 @@
 	<buff id="affinity_sliding_1">
 		<name>Affinity Sliding</name>
 		<level>1</level>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<sliding>
 			<affinity_plus>30</affinity_plus>
 		</sliding>
@@ -788,6 +844,8 @@
 
 	<buff id="non_elemental_boost">
 		<name>Non-elemental Boost</name>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>6</decoration_rarity>
 		<raw_weapon>
 			<attack_multiplier>1.1</attack_multiplier>
 		</raw_weapon>
@@ -819,6 +877,8 @@
 
 	<buff id="protective_polish">
 		<name>Protective Polish</name>
+		<decoration_level>2</decoration_level>
+		<decoration_rarity>7</decoration_rarity>
 		<max_sharpness_time>60.0</max_sharpness_time>
 	</buff>
 
