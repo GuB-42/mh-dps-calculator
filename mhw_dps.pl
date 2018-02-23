@@ -225,15 +225,15 @@ sub all_buff_combine {
 				$acu->{$buff_key}{$elt_key} ||= {};
 				for my $condition_key (keys %{$other->{$buff_key}{$elt_key}}) {
 					$acu->{$buff_key}{$elt_key}{$condition_key} =
-						buff_combiners{$buff_key}->($acu->{$buff_key}{$elt_key}{$condition_key},
-					                                $other->{$buff_key}{$elt_key}{$condition_key});
+						$buff_combiners{$buff_key}->($acu->{$buff_key}{$elt_key}{$condition_key},
+					                                 $other->{$buff_key}{$elt_key}{$condition_key});
 				}
 			}
 		} else {
 			for my $condition_key (keys %{$other->{$buff_key}}) {
 				$acu->{$buff_key}{$condition_key} =
-					buff_combiners{$buff_key}->($acu->{$buff_key}{$condition_key},
-				                                $other->{$buff_key}{$condition_key});
+					$buff_combiners{$buff_key}->($acu->{$buff_key}{$condition_key},
+				                                 $other->{$buff_key}{$condition_key});
 			}
 		}
 	}
@@ -500,6 +500,70 @@ sub compute_damage
 	return $damage;
 }
 
+sub get_damage_data
+{
+	my ($profile, $weapon, $buff_data) = @_;
+
+	my $damage_data = {};
+
+	for my $state ([ "!enraged", "normal" ],
+	               [ "enraged", "normal" ],
+	               [ "!enraged", "weak_spot" ],
+	               [ "enraged", "weak_spot" ]) {
+		my $total_rate = 0.0;
+		for my $pattern (@{$profile->{"patterns"}}) {
+			$total_rate += $pattern->{"rate"} / $pattern->{"period"};
+		}
+		for my $pattern (@{$profile->{"patterns"}}) {
+			my $rate = $pattern->{"rate"} / $pattern->{"period"};
+			my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state, $buff_data);
+			my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
+
+			$damage_data->{$state->[0]} ||= {};
+			$damage_data->{$state->[0]}{$state->[1]} ||= {};
+			my $total_state_damage = $damage_data->{$state->[0]}{$state->[1]};
+
+			$total_state_damage->{"cut"} ||= 0.0;
+			$total_state_damage->{"cut"} += $state_damage->{"cut"} * $rate;
+			$total_state_damage->{"impact"} ||= 0.0;
+			$total_state_damage->{"impact"} += $state_damage->{"impact"} * $rate;
+			$total_state_damage->{"piercing"} ||= 0.0;
+			$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $rate;
+			$total_state_damage->{"fixed"} ||= 0.0;
+			$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $rate;
+			$total_state_damage->{"elements"} ||= {};
+			for my $element (keys %{$state_damage->{"elements"}}) {
+				$total_state_damage->{"elements"}{$element} ||= 0.0;
+				$total_state_damage->{"elements"}{$element} +=
+					$state_damage->{"elements"}{$element} *= $rate;
+			}
+			$total_state_damage->{"statuses"} ||= {};
+			for my $status (keys %{$state_damage->{"statuses"}}) {
+				$total_state_damage->{"statuses"}{$status} ||= 0.0;
+				$total_state_damage->{"statuses"}{$status} +=
+					$state_damage->{"statuses"}{$status} *= $rate;
+			}
+
+			for my $v (@{$state_damage->{"bounce_sharpness"}}) {
+				my $rate_proportion = ($total_rate > 0.0 ? $rate / $total_rate : 1.0);
+				push @{$total_state_damage->{"bounce_sharpness"}},
+					[($v->[0] > 900 ? 999 : $v->[0] * $rate_proportion), $v->[1]];
+			}
+			my $new_bounce_sharpness = [];
+			for my $v (sort { $b->[1] <=> $a->[1] } (@{$total_state_damage->{"bounce_sharpness"}})) {
+				my $i = (scalar @{$new_bounce_sharpness}) - 1;
+				if ($i >= 0 && $new_bounce_sharpness->[$i][1] == $v->[1]) {
+					$new_bounce_sharpness->[$i][0] += $v->[0];
+				} else {
+					push @{$new_bounce_sharpness}, [$v->[0], $v->[1]];
+				}
+			}
+			$total_state_damage->{"bounce_sharpness"} = $new_bounce_sharpness;
+		}
+	}
+	return $damage_data;
+}
+
 sub get_status_hits
 {
 	my ($status_attack, $tolerance, $period, $overbuild) = @_;
@@ -532,80 +596,134 @@ sub get_status_hits
 	return $hits / $period;
 }
 
-my $data = {
-	"buffs" => [ { "name" => "No buff", "data" => {} } ]
-};
+sub get_dps
+{
+	my ($monster, $part, $damage_data) = @_;
+
+	my $dps = {};
+
+	for my $enraged_state ("!enraged", "enraged") {
+		my $not_enraged_state = "!$enraged_state";
+		$not_enraged_state =~ s/^!!//;
+		my $nb_hit_data = 0;
+		for my $hit_data (@{$part->{"hit_data"}}) {
+			next if ($hit_data->{"states"}{$not_enraged_state});
+			++$nb_hit_data;
+		}
+		for my $hit_data (@{$part->{"hit_data"}}) {
+			next if ($hit_data->{"states"}{$not_enraged_state});
+			my $state_dps = {
+				"raw" => 0.0,
+				"element" => 0.0,
+				"status" => 0.0,
+				"fixed" => 0.0,
+				"bounce_rate" => 0.0 } ;
+			my $state_damage_normal = $damage_data->{$enraged_state}{"normal"};
+			my $state_damage_weak = $damage_data->{$enraged_state}{"weak_spot"};
+
+			my %hit_data_p = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
+			$hit_data_p{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
+			$hit_data_p{"piercing"} = $hit_data->{"cut"} if $hit_data_p{"piercing"} < $hit_data->{"cut"};
+
+			my $state_damage_total = 0.0;
+			for my $hit_type (keys %hit_data_p) {
+				my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
+					$state_damage_weak : $state_damage_normal;
+				$state_damage_total += $state_damage->{$hit_type};
+			}
+			for my $hit_type (keys %hit_data_p) {
+				my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
+					$state_damage_weak : $state_damage_normal;
+				$state_dps->{"raw"} += $state_damage->{$hit_type} * $hit_data_p{$hit_type} / 100.0;
+				for my $v (@{$state_damage->{"bounce_sharpness"}}) {
+					if ($v->[1] * $hit_data_p{$hit_type} < $constants->{"bounce_threshold"}) {
+						$state_dps->{"bounce_rate"} +=
+							$v->[0] * $state_damage->{$hit_type} / $state_damage_total;
+					}
+				}
+			}
+
+			for my $element (keys %{$state_damage_weak->{"elements"}}) {
+				my $state_damage = $hit_data->{$element} >= $constants->{"element_weakness_threshold"} ?
+					$state_damage_weak : $state_damage_normal;
+				$state_dps->{"element"} +=
+					$state_damage->{"elements"}{$element} * $hit_data->{$element} / 100.0;
+			}
+
+			$state_dps->{"fixed"} += $state_damage_weak->{"fixed"};
+
+			for (1..1) {
+				$state_dps->{"total"} =
+					$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
+				$state_dps->{"kill_freq"} = $state_dps->{"total"} / $constants->{"monster_hit_points"};
+				if ($state_dps->{"kill_freq"} > 0) {
+					for my $status (keys %{$state_damage_weak->{"statuses"}}) {
+						my $status_attack = $state_damage_weak->{"statuses"}{$status};
+						if (defined $hit_data->{$status}) {
+							$status_attack *= $hit_data->{$status} / 100.0;
+						}
+						my $hits =
+							get_status_hits($status_attack,
+							                $monster->{"tolerances"}{$status},
+							                1.0 / $state_dps->{"kill_freq"},
+							                ($status ne "poison"));
+						if ($hits > 0.0) {
+							$state_dps->{"status"} += $hits * $monster->{"tolerances"}{$status}{"damage"};
+							$state_dps->{"proc_rate"}{$status} = $hits;
+						}
+					}
+				}
+			}
+
+			my $ratio = $constants->{"enraged_ratio"};
+			$ratio = 1.0 - $ratio if ($enraged_state eq "!enraged");
+			$ratio /= $nb_hit_data;
+			for my $key (keys %{$state_dps}) {
+				$dps->{$key} += $state_dps->{$key} * $ratio;
+			}
+		}
+	}
+	return $dps;
+}
+
+sub combine_buff_list
+{
+	my ($buff_group_map, $buff_refs) = @_;
+
+	my %levels;
+	for my $buff_ref (@{$buff_refs}) {
+		my $group_id = $buff_ref->{"id"};
+		my $level = $buff_ref->{"level"};
+		$level += $levels{$group_id} if ($levels{$group_id});
+		if ($level >= @{$buff_group_map->{$group_id}}) {
+			$level = @{$buff_group_map->{$group_id}} - 1;
+		}
+		$levels{$group_id} = $level;
+	}
+	my $data = {};
+	for my $group_id (keys %levels) {
+		all_buff_combine($data, $buff_group_map->{$group_id}[$levels{$group_id}]{"data"});
+	}
+	return $data;
+}
+
+my $data = {};
 parse_data_files($data, @ARGV);
 
 my @damages = ();
-
 for my $profile (@{$data->{"profiles"}}) {
 	for my $weapon (@{$data->{"weapons"}}) {
 		next if ($weapon->{"type"} ne $profile->{"type"});
-		for my $buff (@{$data->{"buffs"}}) {
+
+		for my $item (@{$data->{"items"}}) {
+			my $buff_data = combine_buff_list($data->{"buff_group_map"}, $item->{"buff_refs"});
 
 			my $damage = {
-				"weapon" => $weapon,
-				"profile" => $profile,
-				"buff" => $buff,
-				"damage" => {}
+				"weapon_name" => $weapon->{"name"},
+				"profile_name" => $profile->{"name"},
+				"item_name" => $item->{"name"},
+				"damage" => get_damage_data($profile, $weapon, $buff_data)
 			};
-
-			for my $state ([ "!enraged", "normal" ],
-			               [ "enraged", "normal" ],
-			               [ "!enraged", "weak_spot" ],
-			               [ "enraged", "weak_spot" ]) {
-				my $total_rate = 0.0;
-				for my $pattern (@{$profile->{"patterns"}}) {
-					$total_rate += $pattern->{"rate"} / $pattern->{"period"};
-				}
-				for my $pattern (@{$profile->{"patterns"}}) {
-					my $rate = $pattern->{"rate"} / $pattern->{"period"};
-					my $buffed_weapon = compute_buffed_weapon($profile, $pattern, $weapon, $state, $buff->{"data"});
-					my $state_damage = compute_damage($profile, $pattern, $buffed_weapon);
-
-					$damage->{"damage"}{$state->[0]} ||= {};
-					$damage->{"damage"}{$state->[0]}{$state->[1]} ||= {};
-					my $total_state_damage = $damage->{"damage"}{$state->[0]}{$state->[1]};
-
-					$total_state_damage->{"cut"} ||= 0.0;
-					$total_state_damage->{"cut"} += $state_damage->{"cut"} * $rate;
-					$total_state_damage->{"impact"} ||= 0.0;
-					$total_state_damage->{"impact"} += $state_damage->{"impact"} * $rate;
-					$total_state_damage->{"piercing"} ||= 0.0;
-					$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $rate;
-					$total_state_damage->{"fixed"} ||= 0.0;
-					$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $rate;
-					$total_state_damage->{"elements"} ||= {};
-					for my $element (keys %{$state_damage->{"elements"}}) {
-						$total_state_damage->{"elements"}{$element} ||= 0.0;
-						$total_state_damage->{"elements"}{$element} +=
-							$state_damage->{"elements"}{$element} *= $rate;
-					}
-					$total_state_damage->{"statuses"} ||= {};
-					for my $status (keys %{$state_damage->{"statuses"}}) {
-						$total_state_damage->{"statuses"}{$status} ||= 0.0;
-						$total_state_damage->{"statuses"}{$status} +=
-							$state_damage->{"statuses"}{$status} *= $rate;
-					}
-
-					for my $v (@{$state_damage->{"bounce_sharpness"}}) {
-						my $rate_proportion = ($total_rate > 0.0 ? $rate / $total_rate : 1.0);
-						push @{$total_state_damage->{"bounce_sharpness"}},
-							[($v->[0] > 900 ? 999 : $v->[0] * $rate_proportion), $v->[1]];
-					}
-					my $new_bounce_sharpness = [];
-					for my $v (sort { $b->[1] <=> $a->[1] } (@{$total_state_damage->{"bounce_sharpness"}})) {
-						my $i = (scalar @{$new_bounce_sharpness}) - 1;
-						if ($i >= 0 && $new_bounce_sharpness->[$i][1] == $v->[1]) {
-							$new_bounce_sharpness->[$i][0] += $v->[0];
-						} else {
-							push @{$new_bounce_sharpness}, [$v->[0], $v->[1]];
-						}
-					}
-					$total_state_damage->{"bounce_sharpness"} = $new_bounce_sharpness;
-				}
-			}
 			push @damages, $damage;
 		}
 	}
@@ -614,94 +732,11 @@ for my $profile (@{$data->{"profiles"}}) {
 for my $monster (@{$data->{"monsters"}}) {
 	for my $part (@{$monster->{"parts"}}) {
 		for my $damage (@damages) {
-			my $dps = {};
-
-			for my $enraged_state ("!enraged", "enraged") {
-				my $not_enraged_state = "!$enraged_state";
-				$not_enraged_state =~ s/^!!//;
-				my $nb_hit_data = 0;
-				for my $hit_data (@{$part->{"hit_data"}}) {
-					next if ($hit_data->{"states"}{$not_enraged_state});
-					++$nb_hit_data;
-				}
-				for my $hit_data (@{$part->{"hit_data"}}) {
-					next if ($hit_data->{"states"}{$not_enraged_state});
-					my $state_dps = {
-						"raw" => 0.0,
-						"element" => 0.0,
-						"status" => 0.0,
-						"fixed" => 0.0,
-						"bounce_rate" => 0.0 } ;
-					my $state_damage_normal = $damage->{"damage"}{$enraged_state}{"normal"};
-					my $state_damage_weak = $damage->{"damage"}{$enraged_state}{"weak_spot"};
-
-					my %hit_data_p = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
-					$hit_data_p{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
-					$hit_data_p{"piercing"} = $hit_data->{"cut"} if $hit_data_p{"piercing"} < $hit_data->{"cut"};
-
-					my $state_damage_total = 0.0;
-					for my $hit_type (keys %hit_data_p) {
-						my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
-							$state_damage_weak : $state_damage_normal;
-						$state_damage_total += $state_damage->{$hit_type};
-					}
-					for my $hit_type (keys %hit_data_p) {
-						my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
-							$state_damage_weak : $state_damage_normal;
-						$state_dps->{"raw"} += $state_damage->{$hit_type} * $hit_data_p{$hit_type} / 100.0;
-						for my $v (@{$state_damage->{"bounce_sharpness"}}) {
-							if ($v->[1] * $hit_data_p{$hit_type} < $constants->{"bounce_threshold"}) {
-								$state_dps->{"bounce_rate"} +=
-									$v->[0] * $state_damage->{$hit_type} / $state_damage_total;
-							}
-						}
-					}
-
-					for my $element (keys %{$state_damage_weak->{"elements"}}) {
-						my $state_damage = $hit_data->{$element} >= $constants->{"element_weakness_threshold"} ?
-							$state_damage_weak : $state_damage_normal;
-						$state_dps->{"element"} +=
-							$state_damage->{"elements"}{$element} * $hit_data->{$element} / 100.0;
-					}
-
-					$state_dps->{"fixed"} += $state_damage_weak->{"fixed"};
-
-					for (1..1) {
-						$state_dps->{"total"} =
-							$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
-						$state_dps->{"kill_freq"} = $state_dps->{"total"} / $constants->{"monster_hit_points"};
-						if ($state_dps->{"kill_freq"} > 0) {
-							for my $status (keys %{$state_damage_weak->{"statuses"}}) {
-								my $status_attack = $state_damage_weak->{"statuses"}{$status};
-								if (defined $hit_data->{$status}) {
-									$status_attack *= $hit_data->{$status} / 100.0;
-								}
-								my $hits =
-									get_status_hits($status_attack,
-									                $monster->{"tolerances"}{$status},
-									                1.0 / $state_dps->{"kill_freq"},
-									                ($status ne "poison"));
-								if ($hits > 0.0) {
-									$state_dps->{"status"} += $hits * $monster->{"tolerances"}{$status}{"damage"};
-									$state_dps->{"proc_rate"}{$status} = $hits;
-								}
-							}
-						}
-					}
-
-					my $ratio = $constants->{"enraged_ratio"};
-					$ratio = 1.0 - $ratio if ($enraged_state eq "!enraged");
-					$ratio /= $nb_hit_data;
-					for my $key (keys %{$state_dps}) {
-						$dps->{$key} += $state_dps->{$key} * $ratio;
-					}
-				}
-			}
+			my $dps = get_dps($monster, $part, $damage->{"damage"});
 			printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s / %s / %s\n",
 				($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
 				 (1.0 / $dps->{kill_freq}), $monster->{name}, $part->{name},
-				 $damage->{weapon}{name}, $damage->{profile}{name},
-				 ("$damage->{buff}{name}" . (defined $damage->{buff}{level} ? " [$damage->{buff}{level}]" : "")));
+				 $damage->{weapon_name}, $damage->{profile_name}, $damage->{item_name});
 		}
 	}
 }
