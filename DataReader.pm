@@ -120,7 +120,8 @@ sub process_start
 			"phial_statuses" => {},
 			"sharpness" => [ 0, 0, 0, 0, 0, 0, 0 ],
 			"sharpness_plus" => 0,
-			"slots" => []
+			"slots" => [],
+			"rare" => 0
 		};
 	} elsif ($xml_stack[0] eq "monster") {
 		$cur_monster = {
@@ -223,6 +224,7 @@ sub process_val
 		if ($xml_stack[0] eq "name" ||
 		    $xml_stack[0] eq "type" ||
 		    $xml_stack[0] eq "attack" ||
+		    $xml_stack[0] eq "rare" ||
 		    $xml_stack[0] eq "affinity") {
 			$cur_weapon->{$xml_stack[0]} = $val;
 		} elsif ($xml_stack[0] eq "awakened") {

@@ -707,6 +707,97 @@ sub combine_buff_list
 	return $data;
 }
 
+sub clean_buff_data
+{
+	my ($buff_data, $weapon) = @_;
+
+	my $res = {};
+
+	for my $key (keys %{$buff_data}) {
+		if ($key eq "element_plus" || $key eq "element_multiplier") {
+			for my $element (keys %{$buff_data->{$key}}) {
+				if ($weapon->{"elements"}{$element} || $weapon->{"phial_elements"}{$element}) {
+					$res->{$key} ||= {};
+					$res->{$key}{$element} = $buff_data->{$key}{$element};
+				}
+			}
+		} elsif ($key eq "status_plus" || $key eq "status_multiplier") {
+			for my $status (keys %{$buff_data->{$key}}) {
+				if ($weapon->{"statuses"}{$status} || $weapon->{"phial_statuses"}{$status}) {
+					$res->{$key} ||= {};
+					$res->{$key}{$status} = $buff_data->{$key}{$status};
+				}
+			}
+		} elsif ($key eq "all_elements_plus" || $key eq "all_elements_multiplier" ||
+		         $key eq "element_critical_hit_multiplier") {
+			if (%{$weapon->{"elements"}} || %{$weapon->{"phial_elements"}}) {
+				$res->{$key} = $buff_data->{$key};
+			}
+		} elsif ($key eq "all_statuses_plus" || $key eq "all_statuses_multiplier" ||
+		         $key eq "status_critical_hit_multiplier") {
+			if (%{$weapon->{"statuses"}} || %{$weapon->{"phial_statuses"}}) {
+				$res->{$key} = $buff_data->{$key};
+			}
+		} elsif ($key eq "awakening") {
+			$res->{$key} = $buff_data->{$key} if ($weapon->{"awakened"});
+		} elsif ($key eq "sharpness_plus") {
+			$res->{$key} = $buff_data->{$key} if ($weapon->{"sharpness_plus"});
+		} elsif ($key eq "artillery_multiplier") {
+			# TODO: gunlance
+			$res->{$key} = $buff_data->{$key} if ($weapon->{"phial"} eq "impact");
+		} else {
+			$res->{$key} = $buff_data->{$key};
+		}
+	}
+	return $res;
+}
+
+sub get_useful_buff_groups
+{
+	my ($buff_group_map, $weapon) = @_;
+
+	my $res = {};
+	for my $key (%{$buff_group_map}) {
+		for my $buff (@{$buff_group_map->{$key}}) {
+			my $d = clean_buff_data($buff->{"data"}, $weapon);
+			if (%{$d}) {
+				$res->{$key} = $buff_group_map->{$key};
+				last;
+			}
+		}
+	}
+	return $res;
+}
+
+sub make_decoration_list
+{
+	my ($list, $items, $useful_buffs, $slots, $cancel, @istack) = @_;
+	$cancel ||= {};
+	if (@{$slots}) {
+		my $l_cancel = { %{$cancel} };
+		my $l_slots = [ @{$slots} ];
+		my $slot_level = shift @{$l_slots};
+		my $idx = 0;
+		for my $item (@{$items}) {
+			if (!$l_cancel->{$idx} &&
+			    $item->{"decoration_level"} &&
+			    $item->{"decoration_level"} <= $slot_level) {
+				for my $buff_ref (@{$item->{"buff_refs"}}) {
+					if ($useful_buffs->{$buff_ref->{"id"}}) {
+						push @istack, $item;
+						make_decoration_list($list, $items, $useful_buffs, $l_slots, $l_cancel, @istack);
+						pop @istack;
+						last;
+					}
+				}
+				$l_cancel->{$idx} = 1;
+			}
+			++$idx;
+		}
+	}
+	push @{$list}, [ @istack ];
+}
+
 my $data = {};
 parse_data_files($data, @ARGV);
 
@@ -715,7 +806,23 @@ for my $profile (@{$data->{"profiles"}}) {
 	for my $weapon (@{$data->{"weapons"}}) {
 		next if ($weapon->{"type"} ne $profile->{"type"});
 
-		for my $item (@{$data->{"items"}}) {
+		my $useful_buffs = get_useful_buff_groups($data->{"buff_group_map"}, $weapon);
+		my @ilist = ();
+		my @slots = (sort { $a <=> $b } @{$weapon->{"slots"}});
+		make_decoration_list(\@ilist, $data->{"items"}, $useful_buffs, \@slots);
+		my @blist = ();
+		for my $v (@ilist) {
+			my $elt = {
+				"name" => join(', ', map { $_->{"name"} } @{$v}),
+				"buff_refs" => []
+			};
+			for my $item (@{$v}) {
+				push @{$elt->{"buff_refs"}}, @{$item->{"buff_refs"}};
+			}
+			push @blist, $elt;
+		}
+
+		for my $item (@blist) {
 			my $buff_data = combine_buff_list($data->{"buff_group_map"}, $item->{"buff_refs"});
 
 			my $damage = {
