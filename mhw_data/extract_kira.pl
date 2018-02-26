@@ -101,7 +101,7 @@ sub process_data_row {
 				$xml_writer->startTag("sharpness");
 				$has_sharpness = 1;
 			}
-			$xml_writer->dataElement($sharpness_color, int($sharpness{$sharpness_color} * 0.4) * 10);
+			$xml_writer->dataElement($sharpness_color, int($sharpness{$sharpness_color} * 0.4 + 0.5) * 10);
 		}
 	}
 	$xml_writer->endTag() if ($has_sharpness);
