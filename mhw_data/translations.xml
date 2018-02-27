@@ -1,0 +1,5749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+<translation>
+	<name>Buster Sword I</name>
+	<name_fr>Espadon</name_fr>
+	<name_jp>バスターソードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Buster Sword II</name>
+	<name_fr>Espadon II</name_fr>
+	<name_jp>バスターソードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Buster Sword III</name>
+	<name_fr>Espadon III</name_fr>
+	<name_jp>バスターソードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Buster Blade I</name>
+	<name_fr>Claymore</name_fr>
+	<name_jp>バスターブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Buster Blade II</name>
+	<name_fr>Claymore II</name_fr>
+	<name_jp>バスターブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Buster Blade III</name>
+	<name_fr>Claymore III</name_fr>
+	<name_jp>バスターブレイドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Razor I</name>
+	<name_fr>Zweihänder</name_fr>
+	<name_jp>クロームレイザーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Razor II</name>
+	<name_fr>Zweihänder II</name_fr>
+	<name_jp>クロームレイザーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Judicator</name>
+	<name_fr>Jugement Nergal</name_fr>
+	<name_jp>ネルガルジャッジ</name_jp>
+</translation>
+<translation>
+	<name>Purgation's Atrocity</name>
+	<name_fr>Atrocité du Purgatoire</name_fr>
+	<name_jp>滅鬼の凶器</name_jp>
+</translation>
+<translation>
+	<name>Thunder Blade I</name>
+	<name_fr>Estramaçon de l'orage</name_fr>
+	<name_jp>サンダーブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Blade II</name>
+	<name_fr>Estramaçon de l'orage II</name_fr>
+	<name_jp>サンダーブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Punisher I</name>
+	<name_fr>Vengeur de foudre</name_fr>
+	<name_jp>ライトニングパニッシュⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Punisher II</name>
+	<name_fr>Vengeur de foudre II</name_fr>
+	<name_jp>ライトニングパニッシュⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Punisher III</name>
+	<name_fr>Vengeur de foudre III</name_fr>
+	<name_jp>ライトニングパニッシュⅢ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Blade I</name>
+	<name_fr>Lame de glace</name_fr>
+	<name_jp>フリーズブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Blade II</name>
+	<name_fr>Lame de glace II</name_fr>
+	<name_jp>フリーズブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Frost Blaze I</name>
+	<name_fr>Croc de givre</name_fr>
+	<name_jp>フロストブレイズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Frost Blaze II</name>
+	<name_fr>Croc de givre II</name_fr>
+	<name_jp>フロストブレイズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Blade I</name>
+	<name_fr>Lame Jagras</name_fr>
+	<name_jp>ジャグラスブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Blade II</name>
+	<name_fr>Lame Jagras II</name_fr>
+	<name_jp>ジャグラスブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Blade III</name>
+	<name_fr>Lame Jagras III</name_fr>
+	<name_jp>ジャグラスブレイドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Hacker I</name>
+	<name_fr>Faucheur Jagras</name_fr>
+	<name_jp>ジャグラスハッカーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Hacker II</name>
+	<name_fr>Faucheur Jagras II</name_fr>
+	<name_jp>ジャグラスハッカーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Hacker III</name>
+	<name_fr>Faucheur Jagras III</name_fr>
+	<name_jp>ジャグラスハッカーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Girros Blade I</name>
+	<name_fr>Décapiteur Girros</name_fr>
+	<name_jp>ギルオスブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Girros Blade II</name>
+	<name_fr>Décapiteur Girros II</name_fr>
+	<name_jp>ギルオスブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Kiss I</name>
+	<name_fr>Baiser de la mort</name_fr>
+	<name_jp>マラドハディードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Kiss II</name>
+	<name_fr>Baiser de la mort II</name_fr>
+	<name_jp>マラドハディードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Kiss III</name>
+	<name_fr>Baiser de la mort III</name_fr>
+	<name_jp>マラドハディードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Lava Blaze I</name>
+	<name_fr>Lame volcanique</name_fr>
+	<name_jp>ラヴァブレイズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lava Blaze II</name>
+	<name_fr>Lame volcanique II</name_fr>
+	<name_jp>ラヴァブレイズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Blade I</name>
+	<name_fr>Lame du tourment</name_fr>
+	<name_jp>ブルームブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Blade II</name>
+	<name_fr>Lame du tourment II</name_fr>
+	<name_jp>ブルームブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Blade III</name>
+	<name_fr>Lame du tourment III</name_fr>
+	<name_jp>ブルームブレイドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blaze I</name>
+	<name_fr>Herbe du diable</name_fr>
+	<name_jp>ダチュラブレイズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blaze II</name>
+	<name_fr>Herbe du diable II</name_fr>
+	<name_jp>ダチュラブレイズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blaze III</name>
+	<name_fr>Herbe du diable III</name_fr>
+	<name_jp>ダチュラブレイズⅢ</name_jp>
+</translation>
+<translation>
+	<name>Flame Blade I</name>
+	<name_fr>Lame de feu</name_fr>
+	<name_jp>フレイムブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Flame Blade II</name>
+	<name_fr>Lame de feu II</name_fr>
+	<name_jp>フレイムブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Red Wing</name>
+	<name_fr>Aile ardente</name_fr>
+	<name_jp>レッドウィング</name_jp>
+</translation>
+<translation>
+	<name>Blue Wing</name>
+	<name_fr>Aile d'azur</name_fr>
+	<name_jp>ブルーウィング</name_jp>
+</translation>
+<translation>
+	<name>Rathalos Glinsword</name>
+	<name_fr>colère du Rathalos</name_fr>
+	<name_jp>煌剣リオレウス</name_jp>
+</translation>
+<translation>
+	<name>Bone Blade I</name>
+	<name_fr>Lame en os</name_fr>
+	<name_jp>ボーンブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Blade II</name>
+	<name_fr>Lame en os II</name_fr>
+	<name_jp>ボーンブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Blade III</name>
+	<name_fr>Lame en os III</name_fr>
+	<name_jp>ボーンブレイドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bone Slasher I</name>
+	<name_fr>Déchireur en os</name_fr>
+	<name_jp>ボーンスラッシャーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Slasher II</name>
+	<name_fr>Déchireur en os II</name_fr>
+	<name_jp>ボーンスラッシャーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Slasher III</name>
+	<name_fr>Déchireur en os III</name_fr>
+	<name_jp>ボーンスラッシャーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Giant Jawblade I</name>
+	<name_fr>Mâchoire d'os</name_fr>
+	<name_jp>オオアギトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Giant Jawblade II</name>
+	<name_fr>Mâchoire d'os II</name_fr>
+	<name_jp>オオアギトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Kys</name>
+	<name_fr>Hazak Kys</name_fr>
+	<name_jp>ハザクラキス</name_jp>
+</translation>
+<translation>
+	<name>Leviathan's Fury</name>
+	<name_fr>Furie du Léviathan</name_fr>
+	<name_jp>モンストロの憤怒</name_jp>
+</translation>
+<translation>
+	<name>Flammenzahn</name>
+	<name_fr>Flammenzahn</name_fr>
+	<name_jp>フラムエルヘレヴ</name_jp>
+</translation>
+<translation>
+	<name>Flammenzahn+</name>
+	<name_fr>Flammenzahn Mk 2</name_fr>
+	<name_jp>フラムエルヘレヴ改</name_jp>
+</translation>
+<translation>
+	<name>Gnshing Flammenzahn</name>
+	<name_fr>Flamberge croc-de-feu</name_fr>
+	<name_jp>蛮顎大剣フラムヘレヴ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Slasher I</name>
+	<name_fr>Fendoir aquatique</name_fr>
+	<name_jp>アクアスラッシャーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Slasher II</name>
+	<name_fr>Fendoir aquatique II</name_fr>
+	<name_jp>アクアスラッシャーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Slasher III</name>
+	<name_fr>Fendoir aquatique III</name_fr>
+	<name_jp>アクアスラッシャーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Golum I</name>
+	<name_fr>Golem d'eau</name_fr>
+	<name_jp>ウォーターゴーレムⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Golum II</name>
+	<name_fr>Golem d'eau II</name_fr>
+	<name_jp>ウォーターゴーレムⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Golum III</name>
+	<name_fr>Golem d'eau III</name_fr>
+	<name_jp>ウォーターゴーレムⅢ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Buster I</name>
+	<name_fr>Brise-carapace</name_fr>
+	<name_jp>ドラグロバスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Buster II</name>
+	<name_fr>Brise-carapace II</name_fr>
+	<name_jp>ドラグロバスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Buster III</name>
+	<name_fr>Brise-carapace III</name_fr>
+	<name_jp>ドラグロバスターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Shredder I</name>
+	<name_fr>Déchiqueteuse Barroth</name_fr>
+	<name_jp>ボルボシュレッダーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Shredder II</name>
+	<name_fr>Déchiqueteuse Barroth II</name_fr>
+	<name_jp>ボルボシュレッダーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Shredder III</name>
+	<name_fr>Déchiqueteuse Barroth III</name_fr>
+	<name_jp>ボルボシュレッダーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Blade I</name>
+	<name_fr>Grand écorcheur</name_fr>
+	<name_jp>スパイクブレイドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Blade II</name>
+	<name_fr>Grand écorcheur II</name_fr>
+	<name_jp>スパイクブレイドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Radobaan Slab I</name>
+	<name_fr>Lamineur Radobaan</name_fr>
+	<name_jp>塊剣ラドバルクⅠ</name_jp>
+</translation>
+<translation>
+	<name>Radobaan Slab II</name>
+	<name_fr>Lamineur Radobaan II</name_fr>
+	<name_jp>塊剣ラドバルクⅡ</name_jp>
+</translation>
+<translation>
+	<name>Radobaan Slab III</name>
+	<name_fr>Lamineur Radobaan III</name_fr>
+	<name_jp>塊剣ラドバルクⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cleaver I</name>
+	<name_fr>Hachoir draconique</name_fr>
+	<name_jp>龍骨大剣Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cleaver II</name>
+	<name_fr>Hachoir draconique II</name_fr>
+	<name_jp>龍骨大剣Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cleaver III</name>
+	<name_fr>Hachoir draconique III</name_fr>
+	<name_jp>龍骨大剣Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Thundersword</name>
+	<name_fr>Foudre hurlante</name_fr>
+	<name_jp>召雷剣</name_jp>
+</translation>
+<translation>
+	<name>Kirin Thundersword</name>
+	<name_fr>Tonnerre-de-feu Kirin</name_fr>
+	<name_jp>召雷剣【麒麟】</name_jp>
+</translation>
+<translation>
+	<name>King Thundersword</name>
+	<name_fr>Roi de la foudre</name_fr>
+	<name_jp>召雷剣【麒麟王】</name_jp>
+</translation>
+<translation>
+	<name>Magda Potestas I</name>
+	<name_fr>Magda Potestas</name_fr>
+	<name_jp>マグダ・ポテスタスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Magda Potestas II</name>
+	<name_fr>Magda Potestas II</name_fr>
+	<name_jp>マグダ・ポテスタスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Chopper I</name>
+	<name_fr>Décapiteur sombracier</name_fr>
+	<name_jp>黒鋼の大剣Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Chopper II</name>
+	<name_fr>Décapiteur sombracier II</name_fr>
+	<name_jp>黒鋼の大剣Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Icesteel Edge</name>
+	<name_fr>Lame inexorable</name_fr>
+	<name_jp>鋼氷大剣</name_jp>
+</translation>
+<translation>
+	<name>Daora's Decimator</name>
+	<name_fr>Décimeur Daora</name_fr>
+	<name_jp>ダオラ＝デグニダル</name_jp>
+</translation>
+<translation>
+	<name>Xeno Maliq</name>
+	<name_fr>Xeno Maliq</name_fr>
+	<name_jp>ゼノ＝マーリク</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Jawblade</name>
+	<name_fr>Mâchoire wyverne</name_fr>
+	<name_jp>リュウノアギト</name_jp>
+</translation>
+<translation>
+	<name>Great Wyvern Jawblade</name>
+	<name_fr>Grande mâchoire wyverne</name_fr>
+	<name_jp>リュウノアギト【大牙】</name_jp>
+</translation>
+<translation>
+	<name>Iron Katana I</name>
+	<name_fr>Katana de fer</name_fr>
+	<name_jp>鉄刀Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Iron Katana II</name>
+	<name_fr>Katana de fer II</name_fr>
+	<name_jp>鉄刀Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Iron Katana III</name>
+	<name_fr>Katana de fer III</name_fr>
+	<name_jp>鉄刀Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Iron Grace I</name>
+	<name_fr>Katana "Kagura"</name_fr>
+	<name_jp>鉄刀【禊】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Iron Grace II</name>
+	<name_fr>Katana "Kagura" II</name_fr>
+	<name_jp>鉄刀【禊】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Iron Grace III</name>
+	<name_fr>Katana "Kagura" III</name_fr>
+	<name_jp>鉄刀【禊】Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Iron Gospel I</name>
+	<name_fr>Katana "Misogi"</name_fr>
+	<name_jp>鉄刀【神楽】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Iron Gospel II</name>
+	<name_fr>Katana "Misogi" II</name_fr>
+	<name_jp>鉄刀【神楽】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Reaver</name>
+	<name_fr>Ravageur Nergal</name_fr>
+	<name_jp>ネルガルリーヴェ</name_jp>
+</translation>
+<translation>
+	<name>Extermination's Edge</name>
+	<name_fr>Exterminateur</name_fr>
+	<name_jp>滅尽の一刀</name_jp>
+</translation>
+<translation>
+	<name>Flickering Glow I</name>
+	<name_fr>Lumière sacrée</name_fr>
+	<name_jp>眩刀【揺】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Flickering Glow II</name>
+	<name_fr>Lumière sacrée II</name_fr>
+	<name_jp>眩刀【揺】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dazzling Flash I</name>
+	<name_fr>Lame aveuglante</name_fr>
+	<name_jp>眩惑刀【閃】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dazzling Flash II</name>
+	<name_fr>Lame aveuglante II</name_fr>
+	<name_jp>眩惑刀【閃】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dazzling Flash III</name>
+	<name_fr>Lame aveuglante III</name_fr>
+	<name_jp>眩惑刀【閃】Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>First Dance I</name>
+	<name_fr>Danse mortelle</name_fr>
+	<name_jp>アルリーシャⅠ</name_jp>
+</translation>
+<translation>
+	<name>First Dance II</name>
+	<name_fr>Danse mortelle II</name_fr>
+	<name_jp>アルリーシャⅡ</name_jp>
+</translation>
+<translation>
+	<name>First Dance III</name>
+	<name_fr>Danse mortelle III</name_fr>
+	<name_jp>アルリーシャⅢ</name_jp>
+</translation>
+<translation>
+	<name>Last Dance I</name>
+	<name_fr>Marche funèbre</name_fr>
+	<name_jp>アルダジャージュⅠ</name_jp>
+</translation>
+<translation>
+	<name>Last Dance II</name>
+	<name_fr>Marche funèbre II</name_fr>
+	<name_jp>アルダジャージュⅡ</name_jp>
+</translation>
+<translation>
+	<name>Last Dance III</name>
+	<name_fr>Marche funèbre III</name_fr>
+	<name_jp>アルダジャージュⅢ</name_jp>
+</translation>
+<translation>
+	<name>Brazenridge I</name>
+	<name_fr>Épée du maraudeur</name_fr>
+	<name_jp>ブラスリッジⅠ</name_jp>
+</translation>
+<translation>
+	<name>Brazenridge II</name>
+	<name_fr>Épée du maraudeur II</name_fr>
+	<name_jp>ブラスリッジⅡ</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Leaf"</name>
+	<name_fr>Lame wyverne "Feuille"</name_fr>
+	<name_jp>飛竜刀【青葉】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Verde"</name>
+	<name_fr>Lame wyverne "Verde"</name_fr>
+	<name_jp>飛竜刀【翠】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Holly"</name>
+	<name_fr>Lame wyverne "Houx"</name_fr>
+	<name_jp>飛竜刀【葵】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Fall"</name>
+	<name_fr>Lame wyverne "Automne"</name_fr>
+	<name_jp>飛竜刀【紅葉】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Blood"</name>
+	<name_fr>Lame wyverne "Sang"</name_fr>
+	<name_jp>飛竜刀【朱】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Azure"</name>
+	<name_fr>Lame wyverne "Azur"</name_fr>
+	<name_jp>飛竜刀【蒼】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Blade "Indigo"</name>
+	<name_fr>Lame wyverne "Indigo"</name_fr>
+	<name_jp>飛竜刀【藍染】</name_jp>
+</translation>
+<translation>
+	<name>Bone Shotel I</name>
+	<name_fr>Shotel en os</name_fr>
+	<name_jp>ボーンショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Shotel II</name>
+	<name_fr>Shotel en os II</name_fr>
+	<name_jp>ボーンショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Shotel III</name>
+	<name_fr>Shotel en os III</name_fr>
+	<name_jp>ボーンショテルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Shotel I</name>
+	<name_fr>Shotel barbare</name_fr>
+	<name_jp>ハードボーンショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Shotel II</name>
+	<name_fr>Shotel barbare II</name_fr>
+	<name_jp>ハードボーンショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Shotel III</name>
+	<name_fr>Shotel barbare III</name_fr>
+	<name_jp>ハードボーンショテルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bone Reaper I</name>
+	<name_fr>La Faucheuse</name_fr>
+	<name_jp>ボーンリーパーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Reaper II</name>
+	<name_fr>La Faucheuse II</name_fr>
+	<name_jp>ボーンリーパーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rookslayer Long Sword</name>
+	<name_fr>Fauchon explosif</name_fr>
+	<name_jp>爆鱗の大刀</name_jp>
+</translation>
+<translation>
+	<name>Bazel Varga Rookslayer</name>
+	<name_fr>Bazel Varga</name_fr>
+	<name_jp>爆鱗刀バゼルバルガー</name_jp>
+</translation>
+<translation>
+	<name>Blazing Shotel I</name>
+	<name_fr>Shotel flamboyant</name_fr>
+	<name_jp>ブレイズショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Shotel II</name>
+	<name_fr>Shotel flamboyant II</name_fr>
+	<name_jp>ブレイズショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Scimitar I</name>
+	<name_fr>Cimeterre Anja</name_fr>
+	<name_jp>ジャナフシミターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Scimitar II</name>
+	<name_fr>Cimeterre Anja II</name_fr>
+	<name_jp>ジャナフシミターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Scimitar III</name>
+	<name_fr>Cimeterre Anja III</name_fr>
+	<name_jp>ジャナフシミターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Shotel I</name>
+	<name_fr>Shotel Jyura</name_fr>
+	<name_jp>シュラムショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Shotel II</name>
+	<name_fr>Shotel Jyura II</name_fr>
+	<name_jp>シュラムショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Shotel III</name>
+	<name_fr>Shotel Jyura III</name_fr>
+	<name_jp>シュラムショテルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dipterus I</name>
+	<name_fr>Dipterus</name_fr>
+	<name_jp>ディプテルスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dipterus II</name>
+	<name_fr>Dipterus II</name_fr>
+	<name_jp>ディプテルスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dipterus III</name>
+	<name_fr>Dipterus III</name_fr>
+	<name_jp>ディプテルスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Grosser I</name>
+	<name_fr>Hazak Grosser</name_fr>
+	<name_jp>ハザクグローサⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Grosser II</name>
+	<name_fr>Hazak Grosser II</name_fr>
+	<name_jp>ハザクグローサⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Shotel I</name>
+	<name_fr>Shotel pulsar</name_fr>
+	<name_jp>パルサーショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Shotel II</name>
+	<name_fr>Shotel pulsar II</name_fr>
+	<name_jp>パルサーショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Shotel III</name>
+	<name_fr>Shotel pulsar III</name_fr>
+	<name_jp>パルサーショテルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Fang I</name>
+	<name_fr>Croc Kadachi</name_fr>
+	<name_jp>カガチノキバⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Fang II</name>
+	<name_fr>Croc Kadachi II</name_fr>
+	<name_jp>カガチノキバⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Fang III</name>
+	<name_fr>Croc Kadachi III</name_fr>
+	<name_jp>カガチノキバⅢ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Shotel I</name>
+	<name_fr>Shotel polaire</name_fr>
+	<name_jp>グレイスショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Shotel II</name>
+	<name_fr>Shotel polaire II</name_fr>
+	<name_jp>グレイスショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Stealer</name>
+	<name_fr>Voleur d'âmes</name_fr>
+	<name_jp>スティーラー</name_jp>
+</translation>
+<translation>
+	<name>Legia Stealer</name>
+	<name_fr>Voleur d'âmes II</name_fr>
+	<name_jp>レイ＝スティーラー</name_jp>
+</translation>
+<translation>
+	<name>Dark Shotel I</name>
+	<name_fr>Shotel de l'ombre</name_fr>
+	<name_jp>ダークショテルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dark Shotel II</name>
+	<name_fr>Shotel de l'ombre II</name_fr>
+	<name_jp>ダークショテルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dark Scimitar I</name>
+	<name_fr>Cimeterre de l'ombre</name_fr>
+	<name_jp>ダークシミターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dark Scimitar II</name>
+	<name_fr>Cimeterre de l'ombre II</name_fr>
+	<name_jp>ダークシミターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dark Scimitar III</name>
+	<name_fr>Cimeterre de l'ombre III</name_fr>
+	<name_jp>ダークシミターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Stabber I</name>
+	<name_fr>Poignard draconique</name_fr>
+	<name_jp>龍骨刀Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Stabber II</name>
+	<name_fr>Poignard draconique II</name_fr>
+	<name_jp>龍骨刀Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Stabber III</name>
+	<name_fr>Poignard draconique III</name_fr>
+	<name_jp>龍骨刀Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Magda Facultas I</name>
+	<name_fr>Magda Facultas</name_fr>
+	<name_jp>マグダ・ファクルタスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Magda Facultas II</name>
+	<name_fr>Magda Facultas II</name_fr>
+	<name_jp>マグダ・ファクルタスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Long Sword I</name>
+	<name_fr>Épée longue sombracier</name_fr>
+	<name_jp>黒鋼の太刀Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Long Sword II</name>
+	<name_fr>Épée longue sombracier II</name_fr>
+	<name_jp>黒鋼の太刀Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Imperial Saber</name>
+	<name_fr>Sabre impérial</name_fr>
+	<name_jp>帝王刀</name_jp>
+</translation>
+<translation>
+	<name>Imperial Shimmer</name>
+	<name_fr>Sabre impérial II</name_fr>
+	<name_jp>帝王刀【陽炎】</name_jp>
+</translation>
+<translation>
+	<name>Xeno Cypher</name>
+	<name_fr>Xeno Cypher</name_fr>
+	<name_jp>ゼノ＝サイファ</name_jp>
+</translation>
+<translation>
+	<name>Supermacy Blade</name>
+	<name_fr>Lames de la suprématie</name_fr>
+	<name_jp>天下無双刀</name_jp>
+</translation>
+<translation>
+	<name>Divine Slasher</name>
+	<name_fr>Guillotine divine</name_fr>
+	<name_jp>天上天下無双刀</name_jp>
+</translation>
+<translation>
+	<name>Azure Star Blade</name>
+	<name_fr>Azure Star Blade</name_fr>
+	<name_jp>蒼星ノ太刀</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Knife I</name>
+	<name_fr>Épée du chasseur</name_fr>
+	<name_jp>ハンターナイフⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Knife II</name>
+	<name_fr>Épée du chasseur II</name_fr>
+	<name_jp>ハンターナイフⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Knife III</name>
+	<name_fr>Épée du chasseur III</name_fr>
+	<name_jp>ハンターナイフⅢ</name_jp>
+</translation>
+<translation>
+	<name>Steel Knife I</name>
+	<name_fr>Épée en acier</name_fr>
+	<name_jp>スティールナイフⅠ</name_jp>
+</translation>
+<translation>
+	<name>Steel Knife II</name>
+	<name_fr>Épée en acier II</name_fr>
+	<name_jp>スティールナイフⅡ</name_jp>
+</translation>
+<translation>
+	<name>Steel Knife III</name>
+	<name_fr>Épée en acier III</name_fr>
+	<name_jp>スティールナイフⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Slicer I</name>
+	<name_fr>Épée chromée</name_fr>
+	<name_jp>クロムスライサーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Slicer II</name>
+	<name_fr>Épée chromée II</name_fr>
+	<name_jp>クロムスライサーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Jack</name>
+	<name_fr>Punition Nergal</name_fr>
+	<name_jp>ネルガルジャック</name_jp>
+</translation>
+<translation>
+	<name>Eradication Vanguard</name>
+	<name_fr>Le Purificateur</name_fr>
+	<name_jp>討滅の尖兵</name_jp>
+</translation>
+<translation>
+	<name>Flame Knife I</name>
+	<name_fr>Lame de feu</name_fr>
+	<name_jp>フレイムナイフⅠ</name_jp>
+</translation>
+<translation>
+	<name>Flame Knife II</name>
+	<name_fr>Lame de feu II</name_fr>
+	<name_jp>フレイムナイフⅡ</name_jp>
+</translation>
+<translation>
+	<name>Heat Edge</name>
+	<name_fr>Feu éternel</name_fr>
+	<name_jp>ヒートエッジ</name_jp>
+</translation>
+<translation>
+	<name>Corona</name>
+	<name_fr>Corona</name_fr>
+	<name_jp>コロナ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Bang</name>
+	<name_fr>Sabre lourd</name_fr>
+	<name_jp>ヘビィバング</name_jp>
+</translation>
+<translation>
+	<name>Heavy Bang+</name>
+	<name_fr>Sabre lourd II</name_fr>
+	<name_jp>ヘビィバング改</name_jp>
+</translation>
+<translation>
+	<name>Master Bang</name>
+	<name_fr>Sabre de maître</name_fr>
+	<name_jp>マスターバング</name_jp>
+</translation>
+<translation>
+	<name>Aqua Messer I</name>
+	<name_fr>Messer aquatique</name_fr>
+	<name_jp>アクアメッサーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Messer II</name>
+	<name_fr>Messer aquatique II</name_fr>
+	<name_jp>アクアメッサーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Messer III</name>
+	<name_fr>Messer aquatique III</name_fr>
+	<name_jp>アクアメッサーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Rogue Wave I</name>
+	<name_fr>Bain de sang</name_fr>
+	<name_jp>フラッドウェイブⅠ</name_jp>
+</translation>
+<translation>
+	<name>Rogue Wave II</name>
+	<name_fr>Bain de sang II</name_fr>
+	<name_jp>フラッドウェイブⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rogue Wave III</name>
+	<name_fr>Bain de sang III</name_fr>
+	<name_jp>フラッドウェイブⅢ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Grace I</name>
+	<name_fr>Grâce polaire</name_fr>
+	<name_jp>グレイスファイターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Grace II</name>
+	<name_fr>Grâce polaire II</name_fr>
+	<name_jp>グレイスファイターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rimespire</name>
+	<name_fr>Carnage arctique</name_fr>
+	<name_jp>トリアングラー</name_jp>
+</translation>
+<translation>
+	<name>Legia Rimespire</name>
+	<name_fr>Carnage arctique II</name_fr>
+	<name_jp>レイ＝トリアングラー</name_jp>
+</translation>
+<translation>
+	<name>Princess Rapier</name>
+	<name_fr>Son Altesse Royale</name_fr>
+	<name_jp>プリンセスレイピア</name_jp>
+</translation>
+<translation>
+	<name>Queen Rapier</name>
+	<name_fr>Rapière de la reine</name_fr>
+	<name_jp>クイーンレイピア</name_jp>
+</translation>
+<translation>
+	<name>Queen Rose</name>
+	<name_fr>Rose de la reine</name_fr>
+	<name_jp>クイーンローズ</name_jp>
+</translation>
+<translation>
+	<name>Royal Rose</name>
+	<name_fr>Rose royale</name_fr>
+	<name_jp>ロイヤルローズ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Knife I</name>
+	<name_fr>Couteau Lumu</name_fr>
+	<name_jp>ウルムーナイフⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Knife II</name>
+	<name_fr>Couteau Lumu II</name_fr>
+	<name_jp>ウルムーナイフⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Tabar I</name>
+	<name_fr>Tabarzin Lumu</name_fr>
+	<name_jp>ウルムータバールⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Tabar II</name>
+	<name_fr>Tabarzin Lumu II</name_fr>
+	<name_jp>ウルムータバールⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Tabar III</name>
+	<name_fr>Tabarzin Lumu III</name_fr>
+	<name_jp>ウルムータバールⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Knife I</name>
+	<name_fr>Couteau du tourment</name_fr>
+	<name_jp>ブルームナイフⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Knife II</name>
+	<name_fr>Couteau du tourment II</name_fr>
+	<name_jp>ブルームナイフⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Knife III</name>
+	<name_fr>Couteau du tourment III</name_fr>
+	<name_jp>ブルームナイフⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blossom I</name>
+	<name_fr>Haine du diable</name_fr>
+	<name_jp>ダチュラブロッサムⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blossom II</name>
+	<name_fr>Haine du diable II</name_fr>
+	<name_jp>ダチュラブロッサムⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blossom III</name>
+	<name_fr>Haine du diable III</name_fr>
+	<name_jp>ダチュラブロッサムⅢ</name_jp>
+</translation>
+<translation>
+	<name>Girros Knife I</name>
+	<name_fr>Couteau Girros</name_fr>
+	<name_jp>ギルオスナイフⅠ</name_jp>
+</translation>
+<translation>
+	<name>Girros Knife II</name>
+	<name_fr>Couteau Girros II</name_fr>
+	<name_jp>ギルオスナイフⅡ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Tabar I</name>
+	<name_fr>Tabar de la mort</name_fr>
+	<name_jp>マラドタバールⅠ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Tabar II</name>
+	<name_fr>Tabar de la mort II</name_fr>
+	<name_jp>マラドタバールⅡ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Tabar III</name>
+	<name_fr>Tabar de la mort III</name_fr>
+	<name_jp>マラドタバールⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bone Kukri I</name>
+	<name_fr>Kukri en os</name_fr>
+	<name_jp>ボーンククリⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Kukri II</name>
+	<name_fr>Kukri en os II</name_fr>
+	<name_jp>ボーンククリⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Kukri III</name>
+	<name_fr>Kukri en os III</name_fr>
+	<name_jp>ボーンククリⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chief Kukri I</name>
+	<name_fr>Kukri de chef</name_fr>
+	<name_jp>チーフククリⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chief Kukri II</name>
+	<name_fr>Kukri de chef II</name_fr>
+	<name_jp>チーフククリⅡ</name_jp>
+</translation>
+<translation>
+	<name>Chief Kukri III</name>
+	<name_fr>Kukri de chef III</name_fr>
+	<name_jp>チーフククリⅢ</name_jp>
+</translation>
+<translation>
+	<name>Grand Barong I</name>
+	<name_fr>Grand Barong</name_fr>
+	<name_jp>グランドバロングⅠ</name_jp>
+</translation>
+<translation>
+	<name>Grand Barong II</name>
+	<name_fr>Grand Barong II</name_fr>
+	<name_jp>グランドバロングⅡ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Edge I</name>
+	<name_fr>Étripeur</name_fr>
+	<name_jp>スパイクエッジⅠ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Edge II</name>
+	<name_fr>Étripeur II</name_fr>
+	<name_jp>スパイクエッジⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Claw I</name>
+	<name_fr>Griffe Baan</name_fr>
+	<name_jp>バルキンガロテⅠ</name_jp>
+</translation>
+<translation>
+	<name>Baan Claw II</name>
+	<name_fr>Griffe Baan II</name_fr>
+	<name_jp>バルキンガロテⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Claw III</name>
+	<name_fr>Griffe Baan III</name_fr>
+	<name_jp>バルキンガロテⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Edge I</name>
+	<name_fr>Lame Jagras</name_fr>
+	<name_jp>ジャグラスエッジⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Edge II</name>
+	<name_fr>Lame Jagras II</name_fr>
+	<name_jp>ジャグラスエッジⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Edge III</name>
+	<name_fr>Lame Jagras III</name_fr>
+	<name_jp>ジャグラスエッジⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Garotte I</name>
+	<name_fr>Garrot Jagras</name_fr>
+	<name_jp>ジャグラスガロテⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Garotte II</name>
+	<name_fr>Garrot Jagras II</name_fr>
+	<name_jp>ジャグラスガロテⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Garotte III</name>
+	<name_fr>Garrot Jagras III</name_fr>
+	<name_jp>ジャグラスガロテⅢ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Edge I</name>
+	<name_fr>Sabre de l'orage</name_fr>
+	<name_jp>サンダーエッジⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Edge II</name>
+	<name_fr>Sabre de l'orage II</name_fr>
+	<name_jp>サンダーエッジⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Nemesis I</name>
+	<name_fr>Électro-némésis</name_fr>
+	<name_jp>ライトニングバトラーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Nemesis II</name>
+	<name_fr>Électro-némésis II</name_fr>
+	<name_jp>ライトニングバトラーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Nemesis III</name>
+	<name_fr>Électro-némésis III</name_fr>
+	<name_jp>ライトニングバトラーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Edge I</name>
+	<name_fr>Lame primitive</name_fr>
+	<name_jp>ドラグロエッジⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Edge II</name>
+	<name_fr>Lame primitive II</name_fr>
+	<name_jp>ドラグロエッジⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Edge III</name>
+	<name_fr>Lame primitive III</name_fr>
+	<name_jp>ドラグロエッジⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Club I</name>
+	<name_fr>Gourdin Barroth</name_fr>
+	<name_jp>ボルボクラブⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Club II</name>
+	<name_fr>Gourdin Barroth II</name_fr>
+	<name_jp>ボルボクラブⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Club III</name>
+	<name_fr>Gourdin Barroth III</name_fr>
+	<name_jp>ボルボクラブⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Edge I</name>
+	<name_fr>Lame flamboyante</name_fr>
+	<name_jp>ブレイズエッジⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Edge II</name>
+	<name_fr>Lame flamboyante II</name_fr>
+	<name_jp>ブレイズエッジⅡ</name_jp>
+</translation>
+<translation>
+	<name>Flammensucher</name>
+	<name_fr>Flammensucher</name_fr>
+	<name_jp>フラムエルシーカ</name_jp>
+</translation>
+<translation>
+	<name>Gnashing Flammensucher</name>
+	<name_fr>Estoc croc-de-feu</name_fr>
+	<name_jp>蛮顎剣フラムシーカ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Sword I</name>
+	<name_fr>Épée draconique</name_fr>
+	<name_jp>龍骨剣Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Sword II</name>
+	<name_fr>Épée draconique II</name_fr>
+	<name_jp>龍骨剣Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Sword III</name>
+	<name_fr>Épée draconique III 00</name_fr>
+	<name_jp>龍骨剣Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Fulminator</name>
+	<name_fr>Fulminator</name_fr>
+	<name_jp>雷刃</name_jp>
+</translation>
+<translation>
+	<name>Thunderbolt Sword I</name>
+	<name_fr>Épée du tonnerre</name_fr>
+	<name_jp>雷光刃Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Thunderbolt Sword II</name>
+	<name_fr>Épée du tonnerre II</name_fr>
+	<name_jp>雷光刃Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Sword I</name>
+	<name_fr>Épée sombracier</name_fr>
+	<name_jp>黒鋼の剣Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Sword II</name>
+	<name_fr>Épée sombracier II</name_fr>
+	<name_jp>黒鋼の剣Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Spada</name>
+	<name_fr>Spada Teostra</name_fr>
+	<name_jp>テオ＝スパーダ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Emblem</name>
+	<name_fr>Emblème Teostra</name_fr>
+	<name_jp>テオ＝エンブレム</name_jp>
+</translation>
+<translation>
+	<name>Xeno Mabura</name>
+	<name_fr>Xeno Mabura</name_fr>
+	<name_jp>ゼノ＝マブーラー</name_jp>
+</translation>
+<translation>
+	<name>Matched Slicers I</name>
+	<name_fr>Dagues jumelles</name_fr>
+	<name_jp>ツインダガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Matched Slicers II</name>
+	<name_fr>Dagues jumelles II</name_fr>
+	<name_jp>ツインダガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Matched Slicers III</name>
+	<name_fr>Dagues jumelles III</name_fr>
+	<name_jp>ツインダガーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dual Slicers I</name>
+	<name_fr>Les Découpeurs</name_fr>
+	<name_jp>デュエルツインダガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dual Slicers II</name>
+	<name_fr>Les Découpeurs II</name_fr>
+	<name_jp>デュエルツインダガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dual Slicers III</name>
+	<name_fr>Les Découpeurs III</name_fr>
+	<name_jp>デュエルツインダガーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Slicers I</name>
+	<name_fr>Trancheurs chromés</name_fr>
+	<name_jp>クロムツインダガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Slicers II</name>
+	<name_fr>Trancheurs chromés II</name_fr>
+	<name_jp>クロムツインダガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Gouge</name>
+	<name_fr>Catastrophe Nergal</name_fr>
+	<name_jp>ネルガルガウジ</name_jp>
+</translation>
+<translation>
+	<name>Decimation Claws</name>
+	<name_fr>Griffes de la décimation</name_fr>
+	<name_jp>残滅の爪</name_jp>
+</translation>
+<translation>
+	<name>Luminous Daggers I</name>
+	<name_fr>Dagues de lumière</name_fr>
+	<name_jp>イルミナルダガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Luminous Daggers II</name>
+	<name_fr>Dagues de lumière II</name_fr>
+	<name_jp>イルミナルダガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dual Destroyers I</name>
+	<name_fr>Les Destructeurs</name_fr>
+	<name_jp>デュエルデステリオⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dual Destroyers II</name>
+	<name_fr>Les Destructeurs II</name_fr>
+	<name_jp>デュエルデステリオⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dual Destroyers III</name>
+	<name_fr>Les Destructeurs III</name_fr>
+	<name_jp>デュエルデステリオⅢ</name_jp>
+</translation>
+<translation>
+	<name>Rookslayer Handaxes</name>
+	<name_fr>Francisques explosives</name_fr>
+	<name_jp>爆鱗の手斧</name_jp>
+</translation>
+<translation>
+	<name>Bazelhawk Rookslayer</name>
+	<name_fr>Bazel Hawk</name_fr>
+	<name_jp>爆鱗双斧バゼルホーク</name_jp>
+</translation>
+<translation>
+	<name>Freeze Daggers I</name>
+	<name_fr>Dagues de glace</name_fr>
+	<name_jp>フリーズダガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Daggers II</name>
+	<name_fr>Dagues de glace II</name_fr>
+	<name_jp>フリーズダガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Chain I</name>
+	<name_fr>Tronçonneuse de glace</name_fr>
+	<name_jp>フリーズチェーンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Chain II</name>
+	<name_fr>Tronçonneuse de glace II</name_fr>
+	<name_jp>フリーズチェーンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rending Beaks I</name>
+	<name_fr>Coutelas farouches</name_fr>
+	<name_jp>ビークダガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Rending Beaks II</name>
+	<name_fr>Coutelas farouches II</name_fr>
+	<name_jp>ビークダガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rending Beaks III</name>
+	<name_fr>Coutelas farouches III</name_fr>
+	<name_jp>ビークダガーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Arcanaria I</name>
+	<name_fr>Arcanaria</name_fr>
+	<name_jp>アルカナリアⅠ</name_jp>
+</translation>
+<translation>
+	<name>Arcanaria II</name>
+	<name_fr>Arcanaria II</name_fr>
+	<name_jp>アルカナリアⅡ</name_jp>
+</translation>
+<translation>
+	<name>Arcanaria III</name>
+	<name_fr>Arcanaria III</name_fr>
+	<name_jp>アルカナリアⅢ</name_jp>
+</translation>
+<translation>
+	<name>Sworn Rapiers</name>
+	<name_fr>Rapières de la justice</name_fr>
+	<name_jp>オーダーレイピア</name_jp>
+</translation>
+<translation>
+	<name>Sworn Rapiers+</name>
+	<name_fr>Rapières de la justice II</name_fr>
+	<name_jp>オーダーレイピア改</name_jp>
+</translation>
+<translation>
+	<name>Holy Sabers</name>
+	<name_fr>Sabres sacrés</name_fr>
+	<name_jp>ホーリーセーバー</name_jp>
+</translation>
+<translation>
+	<name>Bone Hachets I</name>
+	<name_fr>Hachettes en os</name_fr>
+	<name_jp>ボーンハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Hachets II</name>
+	<name_fr>Hachettes en os II</name_fr>
+	<name_jp>ボーンハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Hachets III</name>
+	<name_fr>Hachettes en os III</name_fr>
+	<name_jp>ボーンハチェットⅢ</name_jp>
+</translation>
+<translation>
+	<name>Wild Hachets I</name>
+	<name_fr>Hachettes sauvages</name_fr>
+	<name_jp>ワイルドハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Wild Hachets II</name>
+	<name_fr>Hachettes sauvages II</name_fr>
+	<name_jp>ワイルドハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Wild Hachets III</name>
+	<name_fr>Hachettes sauvages III</name_fr>
+	<name_jp>ワイルドハチェットⅢ</name_jp>
+</translation>
+<translation>
+	<name>Strong Hatchets I</name>
+	<name_fr>Haches de force</name_fr>
+	<name_jp>ストロングハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Strong Hatchets II</name>
+	<name_fr>Haches de force II</name_fr>
+	<name_jp>ストロングハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Hachets I</name>
+	<name_fr>Hachettes flamboyantes</name_fr>
+	<name_jp>ブレイズハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Hachets II</name>
+	<name_fr>Hachettes flamboyantes II</name_fr>
+	<name_jp>ブレイズハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Cyclone I</name>
+	<name_fr>Cyclone Anja</name_fr>
+	<name_jp>ジャナフサイクロンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Cyclone II</name>
+	<name_fr>Cyclone Anja II</name_fr>
+	<name_jp>ジャナフサイクロンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Cyclone III</name>
+	<name_fr>Cyclone Anja III</name_fr>
+	<name_jp>ジャナフサイクロンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Hachets I</name>
+	<name_fr>Hachettes Diablos</name_fr>
+	<name_jp>ブロスハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Hachets II</name>
+	<name_fr>Hachettes Diablos II</name_fr>
+	<name_jp>ブロスハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Clubs I</name>
+	<name_fr>Massues Diablos</name_fr>
+	<name_jp>ブロスクラブⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Clubs II</name>
+	<name_fr>Massues Diablos II</name_fr>
+	<name_jp>ブロスクラブⅡ</name_jp>
+</translation>
+<translation>
+	<name>Madness Pangas I</name>
+	<name_fr>Pangas du berserker</name_fr>
+	<name_jp>マッドバンガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Madness Pangas II</name>
+	<name_fr>Pangas du berserker II</name_fr>
+	<name_jp>マッドバンガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Madness Pangas III</name>
+	<name_fr>Pangas du berserker III</name_fr>
+	<name_jp>マッドバンガーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Hatchets I</name>
+	<name_fr>Hachettes Jyura</name_fr>
+	<name_jp>シュラムハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Hatchets II</name>
+	<name_fr>Hachettes Jyura II</name_fr>
+	<name_jp>シュラムハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Hatchets III</name>
+	<name_fr>Hachettes Jyura III</name_fr>
+	<name_jp>シュラムハチェットⅢ</name_jp>
+</translation>
+<translation>
+	<name>Lava Cyclone I</name>
+	<name_fr>Cyclone de lave</name_fr>
+	<name_jp>ラヴァサイクロンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lava Cyclone II</name>
+	<name_fr>Cyclone de lave II</name_fr>
+	<name_jp>ラヴァサイクロンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Taurus Pangas I</name>
+	<name_fr>Pangas Taurus</name_fr>
+	<name_jp>タロスバンガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Taurus Pangas II</name>
+	<name_fr>Pangas Taurus II</name_fr>
+	<name_jp>タロスバンガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dark Ripper I</name>
+	<name_fr>Éventreurs de l'ombre</name_fr>
+	<name_jp>ダークリッパーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dark Ripper II</name>
+	<name_fr>Éventreurs de l'ombre II</name_fr>
+	<name_jp>ダークリッパーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dark Ripper III</name>
+	<name_fr>Éventreurs de l'ombre III</name_fr>
+	<name_jp>ダークリッパーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Hachets I</name>
+	<name_fr>Hachettes pulsar</name_fr>
+	<name_jp>パルサーハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Hachets II</name>
+	<name_fr>Hachettes pulsar II</name_fr>
+	<name_jp>パルサーハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Hachets III</name>
+	<name_fr>Hachettes pulsar III</name_fr>
+	<name_jp>パルサーハチェットⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Claws I</name>
+	<name_fr>Griffes Kadachi</name_fr>
+	<name_jp>カガチノツメⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Claws II</name>
+	<name_fr>Griffes Kadachi II</name_fr>
+	<name_jp>カガチノツメⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Claws III</name>
+	<name_fr>Griffes Kadachi III</name_fr>
+	<name_jp>カガチノツメⅢ</name_jp>
+</translation>
+<translation>
+	<name>Garon Hatchets I</name>
+	<name_fr>Hachettes Garon</name_fr>
+	<name_jp>ガロンハチェットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Garon Hatchets II</name>
+	<name_fr>Hachettes Garon II</name_fr>
+	<name_jp>ガロンハチェットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blood-drinker Chainblade</name>
+	<name_fr>Kusarigama de sang</name_fr>
+	<name_jp>血吸いの鎖鎌</name_jp>
+</translation>
+<translation>
+	<name>Sin</name>
+	<name_fr>Crime et Châtiment</name_fr>
+	<name_jp>罪【シン】</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Twinblades I</name>
+	<name_fr>Lames doubles draconiques</name_fr>
+	<name_jp>龍骨双刃Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Twinblades II</name>
+	<name_fr>Lames doubles draconiques II</name_fr>
+	<name_jp>龍骨双刃Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Enduring Schism</name>
+	<name_fr>Schisme immuable</name_fr>
+	<name_jp>封龍剣【超絶一門】</name_jp>
+</translation>
+<translation>
+	<name>Kirin Bolts</name>
+	<name_fr>Éclairs Kirin</name_fr>
+	<name_jp>双雷剣キリン</name_jp>
+</translation>
+<translation>
+	<name>Kirin Bolts+</name>
+	<name_fr>Éclairs divins Kirin</name_fr>
+	<name_jp>双雷剣キリン改</name_jp>
+</translation>
+<translation>
+	<name>Monarch</name>
+	<name_fr>Le Monarque</name_fr>
+	<name_jp>迅雷</name_jp>
+</translation>
+<translation>
+	<name>Magda Ungulae I</name>
+	<name_fr>Magda Ungulae</name_fr>
+	<name_jp>マグダ・ウングラⅠ</name_jp>
+</translation>
+<translation>
+	<name>Magda Ungulae II</name>
+	<name_fr>Magda Ungulae II</name_fr>
+	<name_jp>マグダ・ウングラⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Twins I</name>
+	<name_fr>Jumeaux sombracier</name_fr>
+	<name_jp>黒鋼の双剣Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Twins II</name>
+	<name_fr>Jumeaux sombracier II</name_fr>
+	<name_jp>黒鋼の双剣Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Twin Nails</name>
+	<name_fr>Arrache-tripes</name_fr>
+	<name_jp>ツインネイル</name_jp>
+</translation>
+<translation>
+	<name>Fire and Ice</name>
+	<name_fr>Le Feu et la Glace</name_fr>
+	<name_jp>氷炎剣ヴィルマフレア</name_jp>
+</translation>
+<translation>
+	<name>Xeno Raqs</name>
+	<name_fr>Xeno Raqs</name_fr>
+	<name_jp>ゼノ＝ラクス</name_jp>
+</translation>
+<translation>
+	<name>Iron Hammer I</name>
+	<name_fr>Marteau de fer</name_fr>
+	<name_jp>アイアンハンマーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Iron Hammer II</name>
+	<name_fr>Marteau de fer II</name_fr>
+	<name_jp>アイアンハンマーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Iron Hammer III</name>
+	<name_fr>Marteau de fer III</name_fr>
+	<name_jp>アイアンハンマーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Iron Demon I</name>
+	<name_fr>Démon de métal</name_fr>
+	<name_jp>鬼鉄Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Iron Demon II</name>
+	<name_fr>Démon de métal II</name_fr>
+	<name_jp>鬼鉄Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Iron Demon III</name>
+	<name_fr>Démon de métal III</name_fr>
+	<name_jp>鬼鉄Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Iron Archdemon I</name>
+	<name_fr>Archidémon de métal</name_fr>
+	<name_jp>大鬼鉄Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Iron Archdemon II</name>
+	<name_fr>Archidémon de métal II</name_fr>
+	<name_jp>大鬼鉄Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Crusher</name>
+	<name_fr>Écraseur Nergal</name_fr>
+	<name_jp>ネルガルクラッシュ</name_jp>
+</translation>
+<translation>
+	<name>Obliteration's Footfall</name>
+	<name_fr>Destruction massive</name_fr>
+	<name_jp>潰滅の一撃</name_jp>
+</translation>
+<translation>
+	<name>Frozen Core</name>
+	<name_fr>Nova de glace</name_fr>
+	<name_jp>フローズンコア</name_jp>
+</translation>
+<translation>
+	<name>Frozen Core+</name>
+	<name_fr>Nova de glace II</name_fr>
+	<name_jp>フローズンコア改</name_jp>
+</translation>
+<translation>
+	<name>Cocytus</name>
+	<name_fr>Cocytus</name_fr>
+	<name_jp>コキュートス</name_jp>
+</translation>
+<translation>
+	<name>Aqua Hammer I</name>
+	<name_fr>Marteau aquatique</name_fr>
+	<name_jp>アクアハンマーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Hammer II</name>
+	<name_fr>Marteau aquatique II</name_fr>
+	<name_jp>アクアハンマーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Hammer III</name>
+	<name_fr>Marteau aquatique III</name_fr>
+	<name_jp>アクアハンマーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Basher I</name>
+	<name_fr>Hydro-marteau</name_fr>
+	<name_jp>ウォーターバッシュⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Basher II</name>
+	<name_fr>Hydro-marteau II</name_fr>
+	<name_jp>ウォーターバッシュⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Basher III</name>
+	<name_fr>Hydro-marteau III</name_fr>
+	<name_jp>ウォーターバッシュⅢ</name_jp>
+</translation>
+<translation>
+	<name>Girros Hammer I</name>
+	<name_fr>Marteau Girros</name_fr>
+	<name_jp>ギルオスハンマーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Girros Hammer II</name>
+	<name_fr>Marteau Girros II</name_fr>
+	<name_jp>ギルオスハンマーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Fist I</name>
+	<name_fr>Poing de la mort</name_fr>
+	<name_jp>マラドマトラカⅠ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Fist II</name>
+	<name_fr>Poing de la mort II</name_fr>
+	<name_jp>マラドマトラカⅡ</name_jp>
+</translation>
+<translation>
+	<name>Malady's Fist III</name>
+	<name_fr>Poing de la mort III</name_fr>
+	<name_jp>マラドマトラカⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Hammer I</name>
+	<name_fr>Marteau du tourment</name_fr>
+	<name_jp>ブルームハンマーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Hammer II</name>
+	<name_fr>Marteau du tourment II</name_fr>
+	<name_jp>ブルームハンマーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Hammer III</name>
+	<name_fr>Marteau du tourment III</name_fr>
+	<name_jp>ブルームハンマーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Buon Fiore</name>
+	<name_fr>Buon Fiore</name_fr>
+	<name_jp>ベネ・フロル</name_jp>
+</translation>
+<translation>
+	<name>Buona Flora</name>
+	<name_fr>Buona Flora</name_fr>
+	<name_jp>ベネ・フローラ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Hammer I</name>
+	<name_fr>Marteau de l'orage</name_fr>
+	<name_jp>サンダーハンマーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Hammer II</name>
+	<name_fr>Marteau de l'orage II</name_fr>
+	<name_jp>サンダーハンマーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Bash I</name>
+	<name_fr>Électro-marteau</name_fr>
+	<name_jp>ライトニングバッシュⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Bash II</name>
+	<name_fr>Électro-marteau II</name_fr>
+	<name_jp>ライトニングバッシュⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Bash III</name>
+	<name_fr>Électro-marteau III</name_fr>
+	<name_jp>ライトニングバッシュⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bone Bludgeon I</name>
+	<name_fr>Massue en os</name_fr>
+	<name_jp>ロックボーンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Bludgeon II</name>
+	<name_fr>Massue en os II</name_fr>
+	<name_jp>ロックボーンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Bludgeon III</name>
+	<name_fr>Massue en os III</name_fr>
+	<name_jp>ロックボーンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Fossil Bludgeon I</name>
+	<name_fr>Matraque en fossile</name_fr>
+	<name_jp>ヘヴィロックボーンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Fossil Bludgeon II</name>
+	<name_fr>Matraque en fossile II</name_fr>
+	<name_jp>ヘヴィロックボーンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Fossil Bludgeon III</name>
+	<name_fr>Matraque en fossile III</name_fr>
+	<name_jp>ヘヴィロックボーンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Grandrock I</name>
+	<name_fr>Gros rocher</name_fr>
+	<name_jp>グランドロックⅠ</name_jp>
+</translation>
+<translation>
+	<name>Grandrock II</name>
+	<name_fr>Gros rocher II</name_fr>
+	<name_jp>グランドロックⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Vlafos</name>
+	<name_fr>Hazak Vlafos</name_fr>
+	<name_jp>ハザクヴラフォス</name_jp>
+</translation>
+<translation>
+	<name>Pandemonium's Root</name>
+	<name_fr>Pandémonium</name_fr>
+	<name_jp>デモナスの禍根</name_jp>
+</translation>
+<translation>
+	<name>Bone Spike I</name>
+	<name_fr>Pique en os</name_fr>
+	<name_jp>ボーンスパイクⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Spike II</name>
+	<name_fr>Pique en os II</name_fr>
+	<name_jp>ボーンスパイクⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Strike I</name>
+	<name_fr>Frappe Baan</name_fr>
+	<name_jp>バルキンストライクⅠ</name_jp>
+</translation>
+<translation>
+	<name>Baan Strike II</name>
+	<name_fr>Frappe Baan II</name_fr>
+	<name_jp>バルキンストライクⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Strike III</name>
+	<name_fr>Frappe Baan III</name_fr>
+	<name_jp>バルキンストライクⅢ</name_jp>
+</translation>
+<translation>
+	<name>Brazenbreak I</name>
+	<name_fr>Marteau du maraudeur</name_fr>
+	<name_jp>ブラスブレイカーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Brazenbreak II</name>
+	<name_fr>Marteau du maraudeur II</name_fr>
+	<name_jp>ブラスブレイカーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Beak I</name>
+	<name_fr>Bec Kulu</name_fr>
+	<name_jp>クルルビークⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Beak II</name>
+	<name_fr>Bec Kulu II</name_fr>
+	<name_jp>クルルビークⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Beak III</name>
+	<name_fr>Bec Kulu III</name_fr>
+	<name_jp>クルルビークⅢ</name_jp>
+</translation>
+<translation>
+	<name>Crushing Beak I</name>
+	<name_fr>Bec dévastateur</name_fr>
+	<name_jp>ビークインパクトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Crushing Beak II</name>
+	<name_fr>Bec dévastateur II</name_fr>
+	<name_jp>ビークインパクトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Crushing Beak III</name>
+	<name_fr>Bec dévastateur III</name_fr>
+	<name_jp>ビークインパクトⅢ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Sledge I</name>
+	<name_fr>Masse Diablos</name_fr>
+	<name_jp>ブロスヘッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Sledge II</name>
+	<name_fr>Masse Diablos II</name_fr>
+	<name_jp>ブロスヘッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Shatterer I</name>
+	<name_fr>Briseur Diablos</name_fr>
+	<name_jp>ブロスシャッターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Shatterer II</name>
+	<name_fr>Briseur Diablos II</name_fr>
+	<name_jp>ブロスシャッターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Sledge I</name>
+	<name_fr>Marteau primitif</name_fr>
+	<name_jp>ドラグロフレームⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Sledge II</name>
+	<name_fr>Marteau primitif II</name_fr>
+	<name_jp>ドラグロフレームⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Sledge III</name>
+	<name_fr>Marteau primitif III</name_fr>
+	<name_jp>ドラグロフレームⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Breaker I</name>
+	<name_fr>Briseur Barroth</name_fr>
+	<name_jp>ボルボブレイカーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Breaker II</name>
+	<name_fr>Briseur Barroth II</name_fr>
+	<name_jp>ボルボブレイカーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Breaker III</name>
+	<name_fr>Briseur Barroth III</name_fr>
+	<name_jp>ボルボブレイカーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Hammer I</name>
+	<name_fr>Marteau flamboyant</name_fr>
+	<name_jp>ブレイズハンマーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Hammer II</name>
+	<name_fr>Marteau flamboyant II</name_fr>
+	<name_jp>ブレイズハンマーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Striker I</name>
+	<name_fr>Frappeur Anja</name_fr>
+	<name_jp>ジャナフストライクⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Striker II</name>
+	<name_fr>Frappeur Anja II</name_fr>
+	<name_jp>ジャナフストライクⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Striker III</name>
+	<name_fr>Frappeur Anja III</name_fr>
+	<name_jp>ジャナフストライクⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Basher I</name>
+	<name_fr>Cogneur draconique</name_fr>
+	<name_jp>龍骨大槌Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Basher II</name>
+	<name_fr>Cogneur draconique II</name_fr>
+	<name_jp>龍骨大槌Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Basher III</name>
+	<name_fr>Cogneur draconique III</name_fr>
+	<name_jp>龍骨大槌Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Magda Floga</name>
+	<name_fr>Magda Floga</name_fr>
+	<name_jp>マグダ・フロガ</name_jp>
+</translation>
+<translation>
+	<name>Ragefire Magda Floga</name>
+	<name_fr>Hurlenfer Magda Floga</name_fr>
+	<name_jp>活火激発マグフロガ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Hammer I</name>
+	<name_fr>Marteau sombracier</name_fr>
+	<name_jp>黒鋼の鎚Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Hammer II</name>
+	<name_fr>Marteau sombracier II</name_fr>
+	<name_jp>黒鋼の鎚Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Icesteel Hammer</name>
+	<name_fr>Marteau inexorable</name_fr>
+	<name_jp>鋼氷棍</name_jp>
+</translation>
+<translation>
+	<name>Daora's Colossus</name>
+	<name_fr>Colossus Doara</name_fr>
+	<name_jp>コロサル＝ダオラ</name_jp>
+</translation>
+<translation>
+	<name>Xeno Maph'agarna</name>
+	<name_fr>Xeno Maph'agarna</name_fr>
+	<name_jp>ゼノ＝マファガルナ</name_jp>
+</translation>
+<translation>
+	<name>Jail Hammer</name>
+	<name_fr>Masse à protons</name_fr>
+	<name_jp>ジェイルハンマー</name_jp>
+</translation>
+<translation>
+	<name>Binder Mace</name>
+	<name_fr>Masse à protons II</name_fr>
+	<name_jp>バインドキューブ</name_jp>
+</translation>
+<translation>
+	<name>Metal Bagpipe I</name>
+	<name_fr>Cornemuse de métal</name_fr>
+	<name_jp>メタルバグパイプⅠ</name_jp>
+</translation>
+<translation>
+	<name>Metal Bagpipe II</name>
+	<name_fr>Cornemuse de métal II</name_fr>
+	<name_jp>メタルバグパイプⅡ</name_jp>
+</translation>
+<translation>
+	<name>Metal Bagpipe III</name>
+	<name_fr>Cornemuse de métal III</name_fr>
+	<name_jp>メタルバグパイプⅢ</name_jp>
+</translation>
+<translation>
+	<name>Great Bagpipe I</name>
+	<name_fr>Grande cornemuse</name_fr>
+	<name_jp>グレードバグパイプⅠ</name_jp>
+</translation>
+<translation>
+	<name>Great Bagpipe II</name>
+	<name_fr>Grande cornemuse II</name_fr>
+	<name_jp>グレードバグパイプⅡ</name_jp>
+</translation>
+<translation>
+	<name>Great Bagpipe III</name>
+	<name_fr>Grande cornemuse III</name_fr>
+	<name_jp>グレードバグパイプⅢ</name_jp>
+</translation>
+<translation>
+	<name>Fortissimo I</name>
+	<name_fr>Fortissimo</name_fr>
+	<name_jp>フォルティッシモⅠ</name_jp>
+</translation>
+<translation>
+	<name>Fortissimo II</name>
+	<name_fr>Fortissimo II</name_fr>
+	<name_jp>フォルティッシモⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Groove</name>
+	<name_fr>Malédiction Nergal</name_fr>
+	<name_jp>ネルガルグルーヴ</name_jp>
+</translation>
+<translation>
+	<name>Desolation's Overture</name>
+	<name_fr>ouverture de la Désolation</name_fr>
+	<name_jp>寂滅の一節</name_jp>
+</translation>
+<translation>
+	<name>Thunder Gaida I</name>
+	<name_fr>Gaïta de l'orage</name_fr>
+	<name_jp>サンダーガイダⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Gaida II</name>
+	<name_fr>Gaïta de l'orage II</name_fr>
+	<name_jp>サンダーガイダⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Drum I</name>
+	<name_fr>Électro-tambour</name_fr>
+	<name_jp>ライトニングドラムⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Drum II</name>
+	<name_fr>Électro-tambour II</name_fr>
+	<name_jp>ライトニングドラムⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Drum III</name>
+	<name_fr>Électro-tambour III</name_fr>
+	<name_jp>ライトニングドラムⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Duda I</name>
+	<name_fr>Duda Kulu</name_fr>
+	<name_jp>クルルドゥダⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Duda II</name>
+	<name_fr>Duda Kulu II</name_fr>
+	<name_jp>クルルドゥダⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Duda III</name>
+	<name_fr>Duda Kulu III</name_fr>
+	<name_jp>クルルドゥダⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dancing Davul I</name>
+	<name_fr>Danse du Diable</name_fr>
+	<name_jp>リーシャタブルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dancing Davul II</name>
+	<name_fr>Danse du Diable II</name_fr>
+	<name_jp>リーシャタブルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dancing Davul III</name>
+	<name_fr>Danse du Diable III</name_fr>
+	<name_jp>リーシャタブルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Valkyrie Chordmaker</name>
+	<name_fr>Chevauchée des Walkyries</name_fr>
+	<name_jp>ヴァルキリコーダー</name_jp>
+</translation>
+<translation>
+	<name>Queen Chordmaker</name>
+	<name_fr>Clochette de la reine</name_fr>
+	<name_jp>クイーンリコーダー</name_jp>
+</translation>
+<translation>
+	<name>Coral Chordmaker</name>
+	<name_fr>Cloche sakura</name_fr>
+	<name_jp>サクラノリコーダー</name_jp>
+</translation>
+<translation>
+	<name>Royal Chordmaker</name>
+	<name_fr>Carillon royal</name_fr>
+	<name_jp>ロイヤルリコーダー</name_jp>
+</translation>
+<translation>
+	<name>Aqua Bagpipe I</name>
+	<name_fr>Cornemuse aquatique</name_fr>
+	<name_jp>アクアバグパイプⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Bagpipe II</name>
+	<name_fr>Cornemuse aquatique II</name_fr>
+	<name_jp>アクアバグパイプⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Bagpipe III</name>
+	<name_fr>Cornemuse aquatique III</name_fr>
+	<name_jp>アクアバグパイプⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Tamtam I</name>
+	<name_fr>Hydro-bongo</name_fr>
+	<name_jp>ウォータータムタムⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Tamtam II</name>
+	<name_fr>Hydro-bongo II</name_fr>
+	<name_jp>ウォータータムタムⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Tamtam III</name>
+	<name_fr>Hydro-bongo III</name_fr>
+	<name_jp>ウォータータムタムⅢ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Bagpipe I</name>
+	<name_fr>Cornemuse polaire</name_fr>
+	<name_jp>グレイスパグパイプⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Bagpipe II</name>
+	<name_fr>Cornemuse polaire II</name_fr>
+	<name_jp>グレイスパグパイプⅡ</name_jp>
+</translation>
+<translation>
+	<name>Sectored</name>
+	<name_fr>Luth de givre II</name_fr>
+	<name_jp>セクタード</name_jp>
+</translation>
+<translation>
+	<name>Legia Sectored</name>
+	<name_fr>Luth de givre</name_fr>
+	<name_jp>レイ＝セクタード</name_jp>
+</translation>
+<translation>
+	<name>Bone Horn I</name>
+	<name_fr>Corne en os</name_fr>
+	<name_jp>ボーンホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Horn II</name>
+	<name_fr>Corne en os II</name_fr>
+	<name_jp>ボーンホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Horn III</name>
+	<name_fr>Corne en os III</name_fr>
+	<name_jp>ボーンホルンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Horn I</name>
+	<name_fr>Corne barbare</name_fr>
+	<name_jp>ハードボーンホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Horn II</name>
+	<name_fr>Corne barbare II</name_fr>
+	<name_jp>ハードボーンホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Horn III</name>
+	<name_fr>Corne barbare III</name_fr>
+	<name_jp>ハードボーンホルンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Bone Horn I</name>
+	<name_fr>Corne cannibale</name_fr>
+	<name_jp>ヘビィボーンホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Bone Horn II</name>
+	<name_fr>Corne cannibale II</name_fr>
+	<name_jp>ヘビィボーンホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Gama Horn I</name>
+	<name_fr>Corne Gama</name_fr>
+	<name_jp>ガマルホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Gama Horn II</name>
+	<name_fr>Corne Gama II</name_fr>
+	<name_jp>ガマルホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Horn I</name>
+	<name_fr>Corne flamboyante</name_fr>
+	<name_jp>ブレイズホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Horn II</name>
+	<name_fr>Corne flamboyante II</name_fr>
+	<name_jp>ブレイズホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Barone I</name>
+	<name_fr>Baron Anja</name_fr>
+	<name_jp>ジャナフバローネⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Barone II</name>
+	<name_fr>Baron Anja II</name_fr>
+	<name_jp>ジャナフバローネⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Barone III</name>
+	<name_fr>Baron Anja III</name_fr>
+	<name_jp>ジャナフバローネⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Horn I</name>
+	<name_fr>Corne du tourment</name_fr>
+	<name_jp>ブルームホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Horn II</name>
+	<name_fr>Corne du tourment II</name_fr>
+	<name_jp>ブルームホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Horn III</name>
+	<name_fr>Corne du tourment III</name_fr>
+	<name_jp>ブルームホルンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura Horn I</name>
+	<name_fr>Corne du diable</name_fr>
+	<name_jp>ダチュラホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura Horn II</name>
+	<name_fr>Corne du diable II</name_fr>
+	<name_jp>ダチュラホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura Horn III</name>
+	<name_fr>Corne du diable III</name_fr>
+	<name_jp>ダチュラホルンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Horn I</name>
+	<name_fr>Corne Lumu</name_fr>
+	<name_jp>ウルムーホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Horn II</name>
+	<name_fr>Corne Lumu II</name_fr>
+	<name_jp>ウルムーホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Barone I</name>
+	<name_fr>Barone Lumu</name_fr>
+	<name_jp>ウルムーバローネⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Barone II</name>
+	<name_fr>Barone Lumu II</name_fr>
+	<name_jp>ウルムーバローネⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Barone III</name>
+	<name_fr>Barone Lumu III</name_fr>
+	<name_jp>ウルムーバローネⅢ</name_jp>
+</translation>
+<translation>
+	<name>Rookslayer Drum</name>
+	<name_fr>Tam-tam explosif</name_fr>
+	<name_jp>爆鱗の太鼓</name_jp>
+</translation>
+<translation>
+	<name>Bazelreid Rookslayer</name>
+	<name_fr>Bazel Reid</name_fr>
+	<name_jp>爆鱗鼓バゼルライド</name_jp>
+</translation>
+<translation>
+	<name>Sonic Horn I</name>
+	<name_fr>Corne sonique</name_fr>
+	<name_jp>ソニックホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Sonic Horn II</name>
+	<name_fr>Corne sonique II</name_fr>
+	<name_jp>ソニックホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Sonic Horn III</name>
+	<name_fr>Corne sonique III</name_fr>
+	<name_jp>ソニックホルンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Glass Royale</name>
+	<name_fr>Fanfare royal</name_fr>
+	<name_jp>ロイヤルビードロー</name_jp>
+</translation>
+<translation>
+	<name>Glass Royale+</name>
+	<name_fr>Fanfare royal remix</name_fr>
+	<name_jp>ロイヤルビードロー改</name_jp>
+</translation>
+<translation>
+	<name>Queen Vespoid Horn</name>
+	<name_fr>Corne de la reine insecte</name_fr>
+	<name_jp>女王笛ランゴスタ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Horn I</name>
+	<name_fr>Corne brutale</name_fr>
+	<name_jp>スパイクホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Horn II</name>
+	<name_fr>Corne brutale II</name_fr>
+	<name_jp>スパイクホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Horn I</name>
+	<name_fr>Corne Baan</name_fr>
+	<name_jp>バルキンホルンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Baan Horn II</name>
+	<name_fr>Corne Baan II</name_fr>
+	<name_jp>バルキンホルンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Horn III</name>
+	<name_fr>Corne Baan III</name_fr>
+	<name_jp>バルキンホルンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Auldhorn I</name>
+	<name_fr>Corne draconique</name_fr>
+	<name_jp>龍骨古笛Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Auldhorn II</name>
+	<name_fr>Corne draconique II</name_fr>
+	<name_jp>龍骨古笛Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Auldhorn III</name>
+	<name_fr>Corne draconique III</name_fr>
+	<name_jp>龍骨古笛Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Thundercry Horn</name>
+	<name_fr>Ceur-de-tonnerre</name_fr>
+	<name_jp>雷鳴ノ笛</name_jp>
+</translation>
+<translation>
+	<name>Thunderbolt Horn I</name>
+	<name_fr>Corne du tonnerre</name_fr>
+	<name_jp>雷光ノ笛Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Thunderbolt Horn II</name>
+	<name_fr>Corne du tonnerre II</name_fr>
+	<name_jp>雷光ノ笛Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Dragonhorn I</name>
+	<name_fr>Corne-dragon sombracier</name_fr>
+	<name_jp>黒鋼の龍笛Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Dragonhorn II</name>
+	<name_fr>Corne-dragon sombracier II</name_fr>
+	<name_jp>黒鋼の龍笛Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Tiple</name>
+	<name_fr>Tiple Teostra</name_fr>
+	<name_jp>テオ＝クエルダ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Orphée</name>
+	<name_fr>Orphée Teostra</name_fr>
+	<name_jp>テオ＝オルフェス</name_jp>
+</translation>
+<translation>
+	<name>Xeno Manasheena</name>
+	<name_fr>Xeno Manasheena</name_fr>
+	<name_jp>ゼノ＝マナシーナ</name_jp>
+</translation>
+<translation>
+	<name>Iron Lance I</name>
+	<name_fr>Lance de fer</name_fr>
+	<name_jp>アイアンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Iron Lance II</name>
+	<name_fr>Lance de fer II</name_fr>
+	<name_jp>アイアンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Iron Lance III</name>
+	<name_fr>Lance de fer III</name_fr>
+	<name_jp>アイアンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Steel Lance I</name>
+	<name_fr>Lance en acier</name_fr>
+	<name_jp>スティールランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Steel Lance II</name>
+	<name_fr>Lance en acier II</name_fr>
+	<name_jp>スティールランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Steel Lance III</name>
+	<name_fr>Lance en acier III</name_fr>
+	<name_jp>スティールランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Lance I</name>
+	<name_fr>Lance chromée</name_fr>
+	<name_jp>クロムランツェⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Lance II</name>
+	<name_fr>Lance chromée II</name_fr>
+	<name_jp>クロムランツェⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Impaler</name>
+	<name_fr>Empaleur Nergal</name_fr>
+	<name_jp>ネルガルカルガ</name_jp>
+</translation>
+<translation>
+	<name>Perdition's Hand</name>
+	<name_fr>Le Sentier de la Perdition</name_fr>
+	<name_jp>亡滅の腕</name_jp>
+</translation>
+<translation>
+	<name>Glacial Lance I</name>
+	<name_fr>Lance polaire</name_fr>
+	<name_jp>グレイスランサーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Lance II</name>
+	<name_fr>Lance polaire II</name_fr>
+	<name_jp>グレイスランサーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Legiana Halberd I</name>
+	<name_fr>Hallebarde Legiana</name_fr>
+	<name_jp>ギエナハルバⅠ</name_jp>
+</translation>
+<translation>
+	<name>Legiana Halberd II</name>
+	<name_fr>Hallebarde Legiana II</name_fr>
+	<name_jp>ギエナハルバⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Lance I</name>
+	<name_fr>Lance Kulu</name_fr>
+	<name_jp>クルルランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Lance II</name>
+	<name_fr>Lance Kulu II</name_fr>
+	<name_jp>クルルランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Lance III</name>
+	<name_fr>Lance Kulu III</name_fr>
+	<name_jp>クルルランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Hasta I</name>
+	<name_fr>Hasta Kulu</name_fr>
+	<name_jp>クルルハスタ―Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Hasta II</name>
+	<name_fr>Hasta Kulu II</name_fr>
+	<name_jp>クルルハスタ―Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Hasta III</name>
+	<name_fr>Hasta Kulu III</name_fr>
+	<name_jp>クルルハスタ―Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Gama Pilebunker I</name>
+	<name_fr>Ruineur Gama</name_fr>
+	<name_jp>ガマルパイルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Gama Pilebunker II</name>
+	<name_fr>Ruineur Gama II</name_fr>
+	<name_jp>ガマルパイルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Lance I</name>
+	<name_fr>Lance de l'orage</name_fr>
+	<name_jp>サンダーランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Lance II</name>
+	<name_fr>Lance de l'orage II</name_fr>
+	<name_jp>サンダーランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Spire I</name>
+	<name_fr>Électro-tambour</name_fr>
+	<name_jp>ライトニングパイルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Spire II</name>
+	<name_fr>Électro-tambour II</name_fr>
+	<name_jp>ライトニングパイルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Spire III</name>
+	<name_fr>Électro-tambour III</name_fr>
+	<name_jp>ライトニングパイルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Lance I</name>
+	<name_fr>Lance du tourment</name_fr>
+	<name_jp>ブルームランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Lance II</name>
+	<name_fr>Lance du tourment II</name_fr>
+	<name_jp>ブルームランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Lance III</name>
+	<name_fr>Lance du tourment III</name_fr>
+	<name_jp>ブルームランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura Pike I</name>
+	<name_fr>Fourche du diable</name_fr>
+	<name_jp>ダチュラパイクⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura Pike II</name>
+	<name_fr>Fourche du diable II</name_fr>
+	<name_jp>ダチュラパイクⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura Pike III</name>
+	<name_fr>Fourche du diable III</name_fr>
+	<name_jp>ダチュラパイクⅢ</name_jp>
+</translation>
+<translation>
+	<name>Flame Lance I</name>
+	<name_fr>Lance de feu</name_fr>
+	<name_jp>フレイムランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Flame Lance II</name>
+	<name_fr>Lance de feu II</name_fr>
+	<name_jp>フレイムランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Red Tail</name>
+	<name_fr>Queue ardente</name_fr>
+	<name_jp>レッドテイル</name_jp>
+</translation>
+<translation>
+	<name>Blue Tail</name>
+	<name_fr>Queue d'azur</name_fr>
+	<name_jp>ブルーテイル</name_jp>
+</translation>
+<translation>
+	<name>Blue Prominence</name>
+	<name_fr>Sérénité d'azur</name_fr>
+	<name_jp>ブループロミネンス</name_jp>
+</translation>
+<translation>
+	<name>Bone Lance I</name>
+	<name_fr>Lance en os</name_fr>
+	<name_jp>ボーンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Lance II</name>
+	<name_fr>Lance en os II</name_fr>
+	<name_jp>ボーンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Lance III</name>
+	<name_fr>Lance en os III</name_fr>
+	<name_jp>ボーンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Lance I</name>
+	<name_fr>Lance barbare</name_fr>
+	<name_jp>ハードボーンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Lance II</name>
+	<name_fr>Lance barbare II</name_fr>
+	<name_jp>ハードボーンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Lance III</name>
+	<name_fr>Lance barbare III</name_fr>
+	<name_jp>ハードボーンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Bone Lance I</name>
+	<name_fr>Lance cannibale</name_fr>
+	<name_jp>ヘビィボーンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Bone Lance II</name>
+	<name_fr>Lance cannibale II</name_fr>
+	<name_jp>ヘビィボーンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Wächter</name>
+	<name_fr>Hazak Wächter</name_fr>
+	<name_jp>ハザクヴェヒター</name_jp>
+</translation>
+<translation>
+	<name>Love's Sorrow</name>
+	<name_fr>Chagrin d'Amour</name_fr>
+	<name_jp>ラ・モールの哀愁</name_jp>
+</translation>
+<translation>
+	<name>Taurus Lance I</name>
+	<name_fr>Lance Taurus</name_fr>
+	<name_jp>タロスランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Taurus Lance II</name>
+	<name_fr>Lance Taurus II</name_fr>
+	<name_jp>タロスランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dark Stinger I</name>
+	<name_fr>Javelot de l'ombre</name_fr>
+	<name_jp>ダークスティンガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Dark Stinger II</name>
+	<name_fr>Javelot de l'ombre II</name_fr>
+	<name_jp>ダークスティンガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dark Stinger III</name>
+	<name_fr>Javelot de l'ombre III</name_fr>
+	<name_jp>ダークスティンガーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Lance I</name>
+	<name_fr>Lance primitive</name_fr>
+	<name_jp>ドラグロランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Lance II</name>
+	<name_fr>Lance primitive II</name_fr>
+	<name_jp>ドラグロランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Lance III</name>
+	<name_fr>Lance primitive III</name_fr>
+	<name_jp>ドラグロランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Stinger I</name>
+	<name_fr>Piqûre Barroth</name_fr>
+	<name_jp>ボロススティンガーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Stinger II</name>
+	<name_fr>Piqûre Barroth II</name_fr>
+	<name_jp>ボロススティンガーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Stinger III</name>
+	<name_fr>Piqûre Barroth III</name_fr>
+	<name_jp>ボロススティンガーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Garon Lance I</name>
+	<name_fr>Lance Garon</name_fr>
+	<name_jp>ガロンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Garon Lance II</name>
+	<name_fr>Lance Garon II</name_fr>
+	<name_jp>ガロンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Garon Dhara I</name>
+	<name_fr>Dhara Garon</name_fr>
+	<name_jp>ガロンダーラⅠ</name_jp>
+</translation>
+<translation>
+	<name>Garon Dhara II</name>
+	<name_fr>Dhara Garon II</name_fr>
+	<name_jp>ガロンダーラⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Horn I</name>
+	<name_fr>Corne aquatique</name_fr>
+	<name_jp>アクアホーンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Horn II</name>
+	<name_fr>Corne aquatique II</name_fr>
+	<name_jp>アクアホーンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Horn III</name>
+	<name_fr>Corne aquatique III</name_fr>
+	<name_jp>アクアホーンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Spike I</name>
+	<name_fr>Hydro-lance</name_fr>
+	<name_jp>ウォータースパイクⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Spike II</name>
+	<name_fr>Hydro-lance II</name_fr>
+	<name_jp>ウォータースパイクⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Spike III</name>
+	<name_fr>Hydro-lance III</name_fr>
+	<name_jp>ウォータースパイクⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Lance I</name>
+	<name_fr>Lance draconique</name_fr>
+	<name_jp>龍骨槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Lance II</name>
+	<name_fr>Lance draconique II</name_fr>
+	<name_jp>龍骨槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Lance III</name>
+	<name_fr>Lance draconique III</name_fr>
+	<name_jp>龍骨槍Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Rookslayer Lance</name>
+	<name_fr>Lance explosive</name_fr>
+	<name_jp>爆鱗の突撃槍</name_jp>
+</translation>
+<translation>
+	<name>Bazel Myniad Rookslayer</name>
+	<name_fr>Bazel Myniad</name_fr>
+	<name_jp>爆鱗槍バゼルミニアド</name_jp>
+</translation>
+<translation>
+	<name>Thunderpike</name>
+	<name_fr>Gae Bolga II</name_fr>
+	<name_jp>雷槍</name_jp>
+</translation>
+<translation>
+	<name>Thunderspear</name>
+	<name_fr>Gae Bolga III</name_fr>
+	<name_jp>雷槍【イカズチ】</name_jp>
+</translation>
+<translation>
+	<name>Thunderpiercer</name>
+	<name_fr>Gae Bolga</name_fr>
+	<name_jp>雷槍【タケミカヅチ】</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Lance I</name>
+	<name_fr>Lance sombracier</name_fr>
+	<name_jp>黒鋼の槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Lance II</name>
+	<name_fr>Lance sombracier II</name_fr>
+	<name_jp>黒鋼の槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Icesteel Spear</name>
+	<name_fr>Lance inexorable</name_fr>
+	<name_jp>鋼氷槍</name_jp>
+</translation>
+<translation>
+	<name>Daora's Fang</name>
+	<name_fr>Croc Daora</name_fr>
+	<name_jp>テリオス＝ダオラ</name_jp>
+</translation>
+<translation>
+	<name>Xeno Zauta</name>
+	<name_fr>Xeno Zauta</name_fr>
+	<name_jp>ゼノ＝ザウータ</name_jp>
+</translation>
+<translation>
+	<name>Babel Spear</name>
+	<name_fr>Lance de Babel</name_fr>
+	<name_jp>バベル</name_jp>
+</translation>
+<translation>
+	<name>Elder Babel Spear</name>
+	<name_fr>Vieille lance de Babel</name_fr>
+	<name_jp>エルダーバベル</name_jp>
+</translation>
+<translation>
+	<name>Iron Gunlance I</name>
+	<name_fr>Lancecanon de fer</name_fr>
+	<name_jp>アイアンガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Iron Gunlance II</name>
+	<name_fr>Lancecanon de fer II</name_fr>
+	<name_jp>アイアンガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Iron Gunlance III</name>
+	<name_fr>Lancecanon de fer III</name_fr>
+	<name_jp>アイアンガンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Steel Gunlance I</name>
+	<name_fr>Lancecanon d'acier</name_fr>
+	<name_jp>スティールガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Steel Gunlance II</name>
+	<name_fr>Lancecanon d'acier II</name_fr>
+	<name_jp>スティールガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Steel Gunlance III</name>
+	<name_fr>Lancecanon d'acier III</name_fr>
+	<name_jp>スティールガンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Gunlance I</name>
+	<name_fr>Lancecanon chromée</name_fr>
+	<name_jp>クロムガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Gunlance II</name>
+	<name_fr>Lancecanon chromée II</name_fr>
+	<name_jp>クロムガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Ram</name>
+	<name_fr>Bélier Nergal</name_fr>
+	<name_jp>ネルガルクランブル</name_jp>
+</translation>
+<translation>
+	<name>Eradication Flame</name>
+	<name_fr>Flamme de l'éradication</name_fr>
+	<name_jp>焼滅の種火</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Gunlance I</name>
+	<name_fr>Lancecanon pulsar</name_fr>
+	<name_jp>パルサーガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Gunlance II</name>
+	<name_fr>Lancecanon pulsar II</name_fr>
+	<name_jp>パルサーガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Gunlance III</name>
+	<name_fr>Lancecanon pulsar III</name_fr>
+	<name_jp>パルサーガンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Striker</name>
+	<name_fr>Destructeur Kadachi</name_fr>
+	<name_jp>飛雷銃槍テツカガチ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Striker+</name>
+	<name_fr>Destructeur Kadachi II</name_fr>
+	<name_jp>飛雷銃槍テツカガチ改</name_jp>
+</translation>
+<translation>
+	<name>Mythic Kadachi Striker</name>
+	<name_fr>Oblitérateur Kadachi</name_fr>
+	<name_jp>飛雷銃槍【蜻蛉切】</name_jp>
+</translation>
+<translation>
+	<name>Rath Gunlance I</name>
+	<name_fr>Lancecanon Rathalos</name_fr>
+	<name_jp>火竜銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Rath Gunlance II</name>
+	<name_fr>Lancecanon Rathalos II</name_fr>
+	<name_jp>火竜銃槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Red Rook</name>
+	<name_fr>Cri ardent</name_fr>
+	<name_jp>レッドルーク</name_jp>
+</translation>
+<translation>
+	<name>Blue Rook</name>
+	<name_fr>Cri d'azur</name_fr>
+	<name_jp>ブルールーク</name_jp>
+</translation>
+<translation>
+	<name>Blue Chariot</name>
+	<name_fr>Brûlure d'azur</name_fr>
+	<name_jp>ブルーチャリオット</name_jp>
+</translation>
+<translation>
+	<name>Princess Panoply</name>
+	<name_fr>Mépris de la princesse</name_fr>
+	<name_jp>プリンセスバースト</name_jp>
+</translation>
+<translation>
+	<name>Princess Panoply+</name>
+	<name_fr>Mépris de la princesse II</name_fr>
+	<name_jp>プリンセスバースト改</name_jp>
+</translation>
+<translation>
+	<name>Rose Burst</name>
+	<name_fr>Rose de sang</name_fr>
+	<name_jp>ローゼスバースト</name_jp>
+</translation>
+<translation>
+	<name>Royal Burst</name>
+	<name_fr>Imperatrix Furiosa</name_fr>
+	<name_jp>ロイヤルバースト</name_jp>
+</translation>
+<translation>
+	<name>Madness Gunlance I</name>
+	<name_fr>Lancecanon du berserker</name_fr>
+	<name_jp>マッドガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Madness Gunlance II</name>
+	<name_fr>Lancecanon du berserker II</name_fr>
+	<name_jp>マッドガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Madness Gunlance III</name>
+	<name_fr>Lancecanon du berserker III</name_fr>
+	<name_jp>マッドガンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Blaster I</name>
+	<name_fr>Destructeur Jyura</name_fr>
+	<name_jp>シュラムバスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Blaster II</name>
+	<name_fr>Destructeur Jyura II</name_fr>
+	<name_jp>シュラムバスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Blaster III</name>
+	<name_fr>Destructeur Jyura III</name_fr>
+	<name_jp>シュラムバスターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Gunlance I</name>
+	<name_fr>Lancecanon polaire</name_fr>
+	<name_jp>グレイスガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Gunlance II</name>
+	<name_fr>Lancecanon polaire II</name_fr>
+	<name_jp>グレイスガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Legiana Cannon I</name>
+	<name_fr>Canon Legiana</name_fr>
+	<name_jp>ギエナキャノンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Legiana Cannon II</name>
+	<name_fr>Canon Legiana II</name_fr>
+	<name_jp>ギエナキャノンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Gunlance I</name>
+	<name_fr>Lancecanon en os</name_fr>
+	<name_jp>骨銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Bone Gunlance II</name>
+	<name_fr>Lancecanon en os II</name_fr>
+	<name_jp>骨銃槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Bone Gunlance III</name>
+	<name_fr>Lancecanon en os III</name_fr>
+	<name_jp>骨銃槍Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Bone Cannon I</name>
+	<name_fr>Canon en os</name_fr>
+	<name_jp>大骨銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Bone Cannon II</name>
+	<name_fr>Canon en os II</name_fr>
+	<name_jp>大骨銃槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Bone Cannon III</name>
+	<name_fr>Canon en os III</name_fr>
+	<name_jp>大骨銃槍Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Great Bone Gunlance I</name>
+	<name_fr>Lancecanon en ivoire</name_fr>
+	<name_jp>大骨銃槍【竜尾】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Great Bone Gunlance II</name>
+	<name_fr>Lancecanon en ivoire II</name_fr>
+	<name_jp>大骨銃槍【竜尾】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Bazel Buster I</name>
+	<name_fr>Casseur Bazel</name_fr>
+	<name_jp>バゼルバスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bazel Buster II</name>
+	<name_fr>Casseur Bazel II</name_fr>
+	<name_jp>バゼルバスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Gunlance I</name>
+	<name_fr>Lancecanon Jagras</name_fr>
+	<name_jp>牙竜銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Gunlance II</name>
+	<name_fr>Lancecanon Jagras II</name_fr>
+	<name_jp>牙竜銃槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Gunlance III</name>
+	<name_fr>Lancecanon Jagras III</name_fr>
+	<name_jp>牙竜銃槍Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Glutton Gunlance I</name>
+	<name_fr>Lancecanon glouton</name_fr>
+	<name_jp>牙竜銃槍【大喰】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Glutton Gunlance II</name>
+	<name_fr>Lancecanon glouton II</name_fr>
+	<name_jp>牙竜銃槍【大喰】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Glutton Gunlance III</name>
+	<name_fr>Lancecanon glouton III</name_fr>
+	<name_jp>牙竜銃槍【大喰】Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Girros Gunlance I</name>
+	<name_fr>Lancecanon Girros</name_fr>
+	<name_jp>牙竜銃槍【黄牙】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Girros Gunlance II</name>
+	<name_fr>Lancecanon Girros II</name_fr>
+	<name_jp>牙竜銃槍【黄牙】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Deathfang Gunlance I</name>
+	<name_fr>Croc-de-la-Mort</name_fr>
+	<name_jp>牙竜銃槍【黒頭巾】Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Deathfang Gunlance II</name>
+	<name_fr>Croc-de-la-Mort II</name_fr>
+	<name_jp>牙竜銃槍【黒頭巾】Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Deathfang Gunlance III</name>
+	<name_fr>Croc-de-la-Mort III</name_fr>
+	<name_jp>牙竜銃槍【黒頭巾】Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Spysa I</name>
+	<name_fr>Hazak Spysa</name_fr>
+	<name_jp>ハザクスピサⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Spysa II</name>
+	<name_fr>Hazak Spysa II</name_fr>
+	<name_jp>ハザクスピサⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Cannon I</name>
+	<name_fr>Canon primitif</name_fr>
+	<name_jp>ドラグロガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Cannon II</name>
+	<name_fr>Canon primitif II</name_fr>
+	<name_jp>ドラグロガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Cannon III</name>
+	<name_fr>Canon primitif III</name_fr>
+	<name_jp>ドラグロガンランスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Blaster I</name>
+	<name_fr>Blaster Barroth</name_fr>
+	<name_jp>ボルボバスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Blaster II</name>
+	<name_fr>Blaster Barroth II</name_fr>
+	<name_jp>ボルボバスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Blaster III</name>
+	<name_fr>Blaster Barroth III</name_fr>
+	<name_jp>ボルボバスターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Gunlance I</name>
+	<name_fr>Lancecanon flamboyant</name_fr>
+	<name_jp>ブレイズガンランスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Gunlance II</name>
+	<name_fr>Lancecanon flamboyant II</name_fr>
+	<name_jp>ブレイズガンランスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Cannon I</name>
+	<name_fr>Canon Anja</name_fr>
+	<name_jp>ジャナフキャノンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Cannon II</name>
+	<name_fr>Canon Anja II</name_fr>
+	<name_jp>ジャナフキャノンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Cannon III</name>
+	<name_fr>Canon Anja III</name_fr>
+	<name_jp>ジャナフキャノンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Gunlance I</name>
+	<name_fr>Lancecanon draconique</name_fr>
+	<name_jp>龍骨銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Gunlance II</name>
+	<name_fr>Lancecanon draconique II</name_fr>
+	<name_jp>龍骨銃槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Gunlance III</name>
+	<name_fr>Lancecanon draconique III</name_fr>
+	<name_jp>龍骨銃槍Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Magda Lahat</name>
+	<name_fr>Magda Lahat</name_fr>
+	<name_jp>マグダ・ラハト</name_jp>
+</translation>
+<translation>
+	<name>Earthshaker Magda Lahat</name>
+	<name_fr>Magda Lahat Trembleterre</name_fr>
+	<name_jp>驚天動地マグラハト</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Gunlance I</name>
+	<name_fr>Lancecanon sombracier</name_fr>
+	<name_jp>黒鋼の銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Gunlance II</name>
+	<name_fr>Lancecanon sombracier II</name_fr>
+	<name_jp>黒鋼の銃槍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Icesteel Gunlance</name>
+	<name_fr>Lancecanon inexorable</name_fr>
+	<name_jp>鋼氷銃槍</name_jp>
+</translation>
+<translation>
+	<name>Daora's Brigia</name>
+	<name_fr>Brigia Daora</name_fr>
+	<name_jp>ダオラ＝ブリジア</name_jp>
+</translation>
+<translation>
+	<name>Xeno Hemta</name>
+	<name_fr>Xeno Hemta</name_fr>
+	<name_jp>ゼノ＝ヘムタ</name_jp>
+</translation>
+<translation>
+	<name>Proto Iron Axe I</name>
+	<name_fr>Hache bestiale</name_fr>
+	<name_jp>鉄製試作剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Proto Iron Axe II</name>
+	<name_fr>Hache bestiale II</name_fr>
+	<name_jp>鉄製試作剣斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Proto Iron Axe III</name>
+	<name_fr>Hache bestiale III</name_fr>
+	<name_jp>鉄製試作剣斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Improved Steel Axe I</name>
+	<name_fr>Hache d'acier pur</name_fr>
+	<name_jp>鋼鉄製改良剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Improved Steel Axe II</name>
+	<name_fr>Hache d'acier pur II</name_fr>
+	<name_jp>鋼鉄製改良剣斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Improved Steel Axe III</name>
+	<name_fr>Hache d'acier pur III</name_fr>
+	<name_jp>鋼鉄製改良剣斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Perfected Alloy Axe I</name>
+	<name_fr>Éventreur en titane</name_fr>
+	<name_jp>合金製完成剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Perfected Alloy Axe II</name>
+	<name_fr>Éventreur en titane II</name_fr>
+	<name_jp>合金製完成剣斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Gash</name>
+	<name_fr>Balafreur Nergal</name_fr>
+	<name_jp>ネルガルガッシュ</name_jp>
+</translation>
+<translation>
+	<name>Dying Light</name>
+	<name_fr>Crépuscule</name_fr>
+	<name_jp>断滅の一閃</name_jp>
+</translation>
+<translation>
+	<name>Glacial Axe I</name>
+	<name_fr>Hache polaire</name_fr>
+	<name_jp>グレイスアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Axe II</name>
+	<name_fr>Hache polaire II</name_fr>
+	<name_jp>グレイスアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Frostreaver</name>
+	<name_fr>Ravageur du néant</name_fr>
+	<name_jp>ホロウコラム</name_jp>
+</translation>
+<translation>
+	<name>Legia Frostreaver</name>
+	<name_fr>Ravageur du néant II</name_fr>
+	<name_jp>レイ＝ホロウコラム</name_jp>
+</translation>
+<translation>
+	<name>Thunder Axe I</name>
+	<name_fr>Hache de l'orage</name_fr>
+	<name_jp>サンダーアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Axe II</name>
+	<name_fr>Hache de l'orage II</name_fr>
+	<name_jp>サンダーアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Chopper I</name>
+	<name_fr>Électro-hache</name_fr>
+	<name_jp>ライトニングアクセルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Chopper II</name>
+	<name_fr>Électro-hache II</name_fr>
+	<name_jp>ライトニングアクセルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Chopper III</name>
+	<name_fr>Électro-hache III</name_fr>
+	<name_jp>ライトニングアクセルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Motor Chopper I</name>
+	<name_fr>Hache de la destruction</name_fr>
+	<name_jp>モーターアクセルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Motor Chopper II</name>
+	<name_fr>Hache de la destruction II</name_fr>
+	<name_jp>モーターアクセルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Axe I</name>
+	<name_fr>Hache Jagras</name_fr>
+	<name_jp>ジャグラスアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Axe II</name>
+	<name_fr>Hache Jagras II</name_fr>
+	<name_jp>ジャグラスアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Axe III</name>
+	<name_fr>Hache Jagras III</name_fr>
+	<name_jp>ジャグラスアックスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Rider I</name>
+	<name_fr>Prédateur Jagras</name_fr>
+	<name_jp>ジャグラスレイダーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Rider II</name>
+	<name_fr>Prédateur Jagras II</name_fr>
+	<name_jp>ジャグラスレイダーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Rider III</name>
+	<name_fr>Prédateur Jagras III</name_fr>
+	<name_jp>ジャグラスレイダーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bazel Rider I</name>
+	<name_fr>Prédateur Bazel</name_fr>
+	<name_jp>バゼルレイダーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bazel Rider II</name>
+	<name_fr>Prédateur Bazel II</name_fr>
+	<name_jp>バゼルレイダーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rathalos Axe I</name>
+	<name_fr>Hache Rathalos</name_fr>
+	<name_jp>火竜の剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Rathalos Axe II</name>
+	<name_fr>Hache Rathalos II</name_fr>
+	<name_jp>火竜の剣斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Rathbringer Axe I</name>
+	<name_fr>Incarnation du Rathalos</name_fr>
+	<name_jp>火竜斧レウスギアⅠ</name_jp>
+</translation>
+<translation>
+	<name>Rathbringer Axe II</name>
+	<name_fr>Incarnation du Rathalos II</name_fr>
+	<name_jp>火竜斧レウスギアⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Axe I</name>
+	<name_fr>Hache en os</name_fr>
+	<name_jp>ボーンアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Axe II</name>
+	<name_fr>Hache en os II</name_fr>
+	<name_jp>ボーンアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Axe III</name>
+	<name_fr>Hache en os III</name_fr>
+	<name_jp>ボーンアックスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bone Smasher I</name>
+	<name_fr>Écraseur en os</name_fr>
+	<name_jp>ボーンスマッシャーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Smasher II</name>
+	<name_fr>Écraseur en os II</name_fr>
+	<name_jp>ボーンスマッシャーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Smasher III</name>
+	<name_fr>Écraseur en os III</name_fr>
+	<name_jp>ボーンスマッシャーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Power Smasher I</name>
+	<name_fr>Hache de puissance</name_fr>
+	<name_jp>パワースマッシャーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Power Smasher II</name>
+	<name_fr>Hache de puissance II</name_fr>
+	<name_jp>パワースマッシャーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Demios I</name>
+	<name_fr>Hazak Demios</name_fr>
+	<name_jp>ハザクデミオスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Demios II</name>
+	<name_fr>Hazak Demios II</name_fr>
+	<name_jp>ハザクデミオスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Madness Axe I</name>
+	<name_fr>Hache du berserker</name_fr>
+	<name_jp>マッドアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Madness Axe II</name>
+	<name_fr>Hache du berserker II</name_fr>
+	<name_jp>マッドアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Madness Axe III</name>
+	<name_fr>Hache du berserker III</name_fr>
+	<name_jp>マッドアックスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Drought I</name>
+	<name_fr>Assoiffeur Jyura</name_fr>
+	<name_jp>シュラムドラウトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Drought II</name>
+	<name_fr>Assoiffeur Jyura II</name_fr>
+	<name_jp>シュラムドラウトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Drought III</name>
+	<name_fr>Assoiffeur Jyura III</name_fr>
+	<name_jp>シュラムドラウトⅢ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Axe I</name>
+	<name_fr>Hache Lumu</name_fr>
+	<name_jp>ウルムーアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Axe II</name>
+	<name_fr>Hache Lumu II</name_fr>
+	<name_jp>ウルムーアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Smasher I</name>
+	<name_fr>Écraseur Lumu</name_fr>
+	<name_jp>ウルムースマッシャーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Smasher II</name>
+	<name_fr>Écraseur Lumu II</name_fr>
+	<name_jp>ウルムースマッシャーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Smasher III</name>
+	<name_fr>Écraseur Lumu III</name_fr>
+	<name_jp>ウルムースマッシャーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Axe I</name>
+	<name_fr>Hache primitive</name_fr>
+	<name_jp>ドラグロアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Axe II</name>
+	<name_fr>Hache primitive II</name_fr>
+	<name_jp>ドラグロアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Axe III</name>
+	<name_fr>Hache primitive III</name_fr>
+	<name_jp>ドラグロアックスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Grinder I</name>
+	<name_fr>Broyeur Barroth</name_fr>
+	<name_jp>ボルボグランダーⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Grinder II</name>
+	<name_fr>Broyeur Barroth II</name_fr>
+	<name_jp>ボルボグランダーⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Grinder III</name>
+	<name_fr>Broyeur Barroth III</name_fr>
+	<name_jp>ボルボグランダーⅢ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Axe I</name>
+	<name_fr>Hache Diablos</name_fr>
+	<name_jp>ブロスアックスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Axe II</name>
+	<name_fr>Hache Diablos II</name_fr>
+	<name_jp>ブロスアックスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Axe Semper Tyrannis</name>
+	<name_fr>Semper Tyrannis</name_fr>
+	<name_jp>タイラントアックス</name_jp>
+</translation>
+<translation>
+	<name>Axe of Thanatos</name>
+	<name_fr>Hache de Thanatos</name_fr>
+	<name_jp>タナトスアックス</name_jp>
+</translation>
+<translation>
+	<name>Axe of Demons</name>
+	<name_fr>Hache du démon</name_fr>
+	<name_jp>デモン</name_jp>
+</translation>
+<translation>
+	<name>Flammenbeil</name>
+	<name_fr>Flammenbeil</name_fr>
+	<name_jp>フラムエルシスカ</name_jp>
+</translation>
+<translation>
+	<name>Flammenbeil+</name>
+	<name_fr>Flammenbeil Mk 2</name_fr>
+	<name_jp>フラムエルシスカ改</name_jp>
+</translation>
+<translation>
+	<name>Gnashing Flammenbeil</name>
+	<name_fr>Fendoir croc-de-feu</name_fr>
+	<name_jp>蛮顎剣斧フラムシスカ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Slicer I</name>
+	<name_fr>Découpeur draconique</name_fr>
+	<name_jp>龍骨剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Slicer II</name>
+	<name_fr>Découpeur draconique II</name_fr>
+	<name_jp>龍骨剣斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Slicer III</name>
+	<name_fr>Découpeur draconique III</name_fr>
+	<name_jp>龍骨剣斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Peal</name>
+	<name_fr>L'Éplucheur</name_fr>
+	<name_jp>雷斧</name_jp>
+</translation>
+<translation>
+	<name>Peal+</name>
+	<name_fr>L'Écorcheur</name_fr>
+	<name_jp>雷斧改</name_jp>
+</translation>
+<translation>
+	<name>Kirin Thunderpeal</name>
+	<name_fr>Feu-du-ciel Kirin</name_fr>
+	<name_jp>断雷斧キリン</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Switch Axe I</name>
+	<name_fr>Morpho-hache sombracier</name_fr>
+	<name_jp>黒鋼の剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Switch Axe II</name>
+	<name_fr>Morpho-hache sombracier II</name_fr>
+	<name_jp>黒鋼の剣斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Arx</name>
+	<name_fr>Arx Teostra</name_fr>
+	<name_jp>テオ＝アルクス</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Castle</name>
+	<name_fr>Forteresse Teostra</name_fr>
+	<name_jp>テオ＝キャッスル</name_jp>
+</translation>
+<translation>
+	<name>Xeno Martshu</name>
+	<name_fr>Xeno Martshu</name_fr>
+	<name_jp>ゼノ＝マルトーシュ</name_jp>
+</translation>
+<translation>
+	<name>Proto Commision Axe I</name>
+	<name_fr>Hache primaire</name_fr>
+	<name_jp>調査団試作盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Proto Commision Axe II</name>
+	<name_fr>Hache primaire II</name_fr>
+	<name_jp>調査団試作盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Proto Commision Axe III</name>
+	<name_fr>Hache primaire III</name_fr>
+	<name_jp>調査団試作盾斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Elite Commision Axe I</name>
+	<name_fr>Hache de la Commission</name_fr>
+	<name_jp>精鋭調査団盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Elite Commision Axe II</name>
+	<name_fr>Hache de la Commission II</name_fr>
+	<name_jp>精鋭調査団盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Elite Commision Axe III</name>
+	<name_fr>Hache de la Commission III</name_fr>
+	<name_jp>精鋭調査団盾斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Guardian I</name>
+	<name_fr>Gardien chromé</name_fr>
+	<name_jp>クロムガーディアンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Guardian II</name>
+	<name_fr>Gardien chromé II</name_fr>
+	<name_jp>クロムガーディアンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Lacerator</name>
+	<name_fr>Fléau Nergal</name_fr>
+	<name_jp>ネルガルスイング</name_jp>
+</translation>
+<translation>
+	<name>Devastation's Thorns</name>
+	<name_fr>Épine de la dévastation</name_fr>
+	<name_jp>壊滅の一束</name_jp>
+</translation>
+<translation>
+	<name>Rathsblade I</name>
+	<name_fr>Volto-hache Rathalos</name_fr>
+	<name_jp>火竜の盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Rathsblade II</name>
+	<name_fr>Volto-hache Rathalos II</name_fr>
+	<name_jp>火竜の盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Axelion Blade</name>
+	<name_fr>Lame d'Axelion</name_fr>
+	<name_jp>炎斧アクセリオン</name_jp>
+</translation>
+<translation>
+	<name>Halberion Blade</name>
+	<name_fr>Lame d'Halberion</name_fr>
+	<name_jp>焔斧ハルバリオン</name_jp>
+</translation>
+<translation>
+	<name>Mudslide Blade I</name>
+	<name_fr>Hache de guerre</name_fr>
+	<name_jp>泥流の盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Mudslide Blade II</name>
+	<name_fr>Hache de guerre II</name_fr>
+	<name_jp>泥流の盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Mudslide Blade III</name>
+	<name_fr>Hache de guerre III</name_fr>
+	<name_jp>泥流の盾斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Depth I</name>
+	<name_fr>Abîme Jyura</name_fr>
+	<name_jp>ディープシュラムⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Depth II</name>
+	<name_fr>Abîme Jyura II</name_fr>
+	<name_jp>ディープシュラムⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Depth III</name>
+	<name_fr>Abîme Jyura III</name_fr>
+	<name_jp>ディープシュラムⅢ</name_jp>
+</translation>
+<translation>
+	<name>Everfrost Blade I</name>
+	<name_fr>Lame de givre éternel</name_fr>
+	<name_jp>氷結の盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Everfrost Blade II</name>
+	<name_fr>Lame de givre éternel II</name_fr>
+	<name_jp>氷結の盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Gigafrost I</name>
+	<name_fr>Géant du froid</name_fr>
+	<name_jp>ギガフロストⅠ</name_jp>
+</translation>
+<translation>
+	<name>Gigafrost II</name>
+	<name_fr>Géant du froid II</name_fr>
+	<name_jp>ギガフロストⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dear Lutemis</name>
+	<name_fr>Chère Lutemis</name_fr>
+	<name_jp>ディア＝ルテミス</name_jp>
+</translation>
+<translation>
+	<name>Dear Lutemia</name>
+	<name_fr>Chère Lutemia</name_fr>
+	<name_jp>ディア＝ルテミア</name_jp>
+</translation>
+<translation>
+	<name>Dear Hecatel</name>
+	<name_fr>Chère Hecatel</name_fr>
+	<name_jp>ディア＝ヘカテル</name_jp>
+</translation>
+<translation>
+	<name>Dear Hecatelia</name>
+	<name_fr>Chère Hecatelia</name_fr>
+	<name_jp>ディア＝ヘカテリア</name_jp>
+</translation>
+<translation>
+	<name>Bone Strongarm I</name>
+	<name_fr>Décapiteur en os</name_fr>
+	<name_jp>ボーンアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Strongarm II</name>
+	<name_fr>Décapiteur en os II</name_fr>
+	<name_jp>ボーンアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Strongarm III</name>
+	<name_fr>Décapiteur en os III</name_fr>
+	<name_jp>ボーンアームズⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Strongarm I</name>
+	<name_fr>Décapiteur barbare</name_fr>
+	<name_jp>ハードボーンアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Strongarm II</name>
+	<name_fr>Décapiteur barbare II</name_fr>
+	<name_jp>ハードボーンアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Strongarm III</name>
+	<name_fr>Décapiteur barbare III</name_fr>
+	<name_jp>ハードボーンアームズⅢ</name_jp>
+</translation>
+<translation>
+	<name>Mighty Strongarm I</name>
+	<name_fr>Décapiteur du gladiateur</name_fr>
+	<name_jp>ストロングアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Mighty Strongarm II</name>
+	<name_fr>Décapiteur du gladiateur II</name_fr>
+	<name_jp>ストロングアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Wall I</name>
+	<name_fr>Rempart Diablos</name_fr>
+	<name_jp>ブロスウォールⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Wall II</name>
+	<name_fr>Rempart Diablos II</name_fr>
+	<name_jp>ブロスウォールⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Tyrannis I</name>
+	<name_fr>Tyrannis Diablos</name_fr>
+	<name_jp>タイラントブロスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Tyrannis II</name>
+	<name_fr>Tyrannis Diablos II</name_fr>
+	<name_jp>タイラントブロスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Strongarm I</name>
+	<name_fr>Décapiteur Jagras</name_fr>
+	<name_jp>ジャグラスアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Strongarm II</name>
+	<name_fr>Décapiteur Jagras II</name_fr>
+	<name_jp>ジャグラスアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Strongarm III</name>
+	<name_fr>Décapiteur Jagras III</name_fr>
+	<name_jp>ジャグラスアームズⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Escudo I</name>
+	<name_fr>Escudo Jagras</name_fr>
+	<name_jp>ジャグラスエスクードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Escudo II</name>
+	<name_fr>Escudo Jagras II</name_fr>
+	<name_jp>ジャグラスエスクードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Escudo III</name>
+	<name_fr>Escudo Jagras III</name_fr>
+	<name_jp>ジャグラスエスクードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Gama Silt I</name>
+	<name_fr>Trancheur Gama</name_fr>
+	<name_jp>ガマルシルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Gama Silt II</name>
+	<name_fr>Trancheur Gama II</name_fr>
+	<name_jp>ガマルシルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Girros Strongarm I</name>
+	<name_fr>Décapiteur Girros</name_fr>
+	<name_jp>ギルオスアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Girros Strongarm II</name>
+	<name_fr>Décapiteur Girros II</name_fr>
+	<name_jp>ギルオスアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Girros Nadja I</name>
+	<name_fr>Nadja Girros</name_fr>
+	<name_jp>ギルオスナージャⅠ</name_jp>
+</translation>
+<translation>
+	<name>Girros Nadja II</name>
+	<name_fr>Nadja Girros II</name_fr>
+	<name_jp>ギルオスナージャⅡ</name_jp>
+</translation>
+<translation>
+	<name>Girros Nadja III</name>
+	<name_fr>Nadja Girros III</name_fr>
+	<name_jp>ギルオスナージャⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Aspida I</name>
+	<name_fr>Hazak Aspida</name_fr>
+	<name_jp>ハザクアスピダⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Aspida II</name>
+	<name_fr>Hazak Aspida II</name_fr>
+	<name_jp>ハザクアスピダⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Strongarm I</name>
+	<name_fr>Décapiteur pulsar</name_fr>
+	<name_jp>パルサーアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Strongarm II</name>
+	<name_fr>Décapiteur pulsar II</name_fr>
+	<name_jp>パルサーアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Strongarm III</name>
+	<name_fr>Décapiteur pulsar III</name_fr>
+	<name_jp>パルサーアームズⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Kaina I</name>
+	<name_fr>Kaina Kadachi</name_fr>
+	<name_jp>カガチノカイナⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Kaina II</name>
+	<name_fr>Kaina Kadachi II</name_fr>
+	<name_jp>カガチノカイナⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Kaina III</name>
+	<name_fr>Kaina Kadachi III</name_fr>
+	<name_jp>カガチノカイナⅢ</name_jp>
+</translation>
+<translation>
+	<name>Garon Strongarm I</name>
+	<name_fr>Décapiteur Garon</name_fr>
+	<name_jp>ガロンアームズⅠ</name_jp>
+</translation>
+<translation>
+	<name>Garon Strongarm II</name>
+	<name_fr>Décapiteur Garon II</name_fr>
+	<name_jp>ガロンアームズⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hate's Undying Flame</name>
+	<name_fr>Feu Immortel de la Haine</name_fr>
+	<name_jp>憎しみの炎</name_jp>
+</translation>
+<translation>
+	<name>Odium</name>
+	<name_fr>odium</name_fr>
+	<name_jp>憎【オディウム】</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cutter I</name>
+	<name_fr>Découpeur draconique</name_fr>
+	<name_jp>龍骨盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cutter II</name>
+	<name_fr>Découpeur draconique II</name_fr>
+	<name_jp>龍骨盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cutter III</name>
+	<name_fr>Découpeur draconique III</name_fr>
+	<name_jp>龍骨盾斧Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Magda Manus</name>
+	<name_fr>Magda Manus</name_fr>
+	<name_jp>マグダ・マヌス</name_jp>
+</translation>
+<translation>
+	<name>Avenging Magda Manus</name>
+	<name_fr>Magda Manus le Vengeur</name_fr>
+	<name_jp>捲土重来マグマヌス</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Charger I</name>
+	<name_fr>Chargeur sombracier</name_fr>
+	<name_jp>黒鋼の盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Charger II</name>
+	<name_fr>Chargeur sombracier II</name_fr>
+	<name_jp>黒鋼の盾斧Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Daora's Casca</name>
+	<name_fr>Casca Daora</name_fr>
+	<name_jp>ダオラ＝カスカ</name_jp>
+</translation>
+<translation>
+	<name>Daora's Thwartoise</name>
+	<name_fr>Tortue Daora</name_fr>
+	<name_jp>ダオラ＝ゲンム</name_jp>
+</translation>
+<translation>
+	<name>Xeno Ra'atz</name>
+	<name_fr>Xeno Ra'atz</name_fr>
+	<name_jp>ゼノ＝ラーツ</name_jp>
+</translation>
+<translation>
+	<name>Iron Blade I</name>
+	<name_fr>Glaive en fer</name_fr>
+	<name_jp>アイアンブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Iron Blade II</name>
+	<name_fr>Glaive en fer II</name_fr>
+	<name_jp>アイアンブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Iron Blade III</name>
+	<name_fr>Glaive en fer III</name_fr>
+	<name_jp>アイアンブレードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Steel Blade I</name>
+	<name_fr>Glaive d'acier</name_fr>
+	<name_jp>スティールブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Steel Blade II</name>
+	<name_fr>Glaive d'acier II</name_fr>
+	<name_jp>スティールブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Steel Blade III</name>
+	<name_fr>Glaive d'acier III</name_fr>
+	<name_jp>スティールブレードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Blade I</name>
+	<name_fr>Lame chromée</name_fr>
+	<name_jp>クロムブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Blade II</name>
+	<name_fr>Lame chromée II</name_fr>
+	<name_jp>クロムブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Reaper</name>
+	<name_fr>Fossoyeuse Nergal</name_fr>
+	<name_jp>ネルガルハッシュ</name_jp>
+</translation>
+<translation>
+	<name>Catastrophe's Light</name>
+	<name_fr>Catastrophe</name_fr>
+	<name_jp>撲滅の導灯</name_jp>
+</translation>
+<translation>
+	<name>Flame Glaive I</name>
+	<name_fr>Glaive de feu</name_fr>
+	<name_jp>フレイムブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Flame Glaive II</name>
+	<name_fr>Glaive de feu II</name_fr>
+	<name_jp>フレイムブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rathmaul</name>
+	<name_fr>Insectoglaive Rathalos</name_fr>
+	<name_jp>火竜棍</name_jp>
+</translation>
+<translation>
+	<name>Firedance Rathmaul</name>
+	<name_fr>La Danse du Feu</name_fr>
+	<name_jp>火竜棍【炎舞】</name_jp>
+</translation>
+<translation>
+	<name>Kulu Blade I</name>
+	<name_fr>Lame Kulu</name_fr>
+	<name_jp>クルルブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Blade II</name>
+	<name_fr>Lame Kulu II</name_fr>
+	<name_jp>クルルブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Blade III</name>
+	<name_fr>Lame Kulu III</name_fr>
+	<name_jp>クルルブレードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Ya-Ku Wrath I</name>
+	<name_fr>colère du Ya-Ku</name_fr>
+	<name_jp>アルノーラスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Ya-Ku Wrath II</name>
+	<name_fr>colère du Ya-Ku II</name_fr>
+	<name_jp>アルノーラスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Ya-Ku Wrath III</name>
+	<name_fr>colère du Ya-Ku III</name_fr>
+	<name_jp>アルノーラスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Luminous Blade I</name>
+	<name_fr>Glaive de lumière</name_fr>
+	<name_jp>イルミナルブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Luminous Blade II</name>
+	<name_fr>Glaive de lumière II</name_fr>
+	<name_jp>イルミナルブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Destroyer Bo I</name>
+	<name_fr>Canne du destructeur</name_fr>
+	<name_jp>デステリオバーラⅠ</name_jp>
+</translation>
+<translation>
+	<name>Destroyer Bo II</name>
+	<name_fr>Canne du destructeur II</name_fr>
+	<name_jp>デステリオバーラⅡ</name_jp>
+</translation>
+<translation>
+	<name>Destroyer Bo III</name>
+	<name_fr>Canne du destructeur III</name_fr>
+	<name_jp>デステリオバーラⅢ</name_jp>
+</translation>
+<translation>
+	<name>Frost Blade I</name>
+	<name_fr>Lame de givre</name_fr>
+	<name_jp>フロストブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Frost Blade II</name>
+	<name_fr>Lame de givre II</name_fr>
+	<name_jp>フロストブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Gale I</name>
+	<name_fr>Vent de glace</name_fr>
+	<name_jp>フリーズゲイルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Freeze Gale II</name>
+	<name_fr>Vent de glace II</name_fr>
+	<name_jp>フリーズゲイルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Glaive I</name>
+	<name_fr>Glaive du tourment</name_fr>
+	<name_jp>ブルームブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Glaive II</name>
+	<name_fr>Glaive du tourment II</name_fr>
+	<name_jp>ブルームブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Glaive III</name>
+	<name_fr>Glaive du tourment III</name_fr>
+	<name_jp>ブルームブレードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blade I</name>
+	<name_fr>Lame du diable</name_fr>
+	<name_jp>ダチュラブレードⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blade II</name>
+	<name_fr>Lame du diable II</name_fr>
+	<name_jp>ダチュラブレードⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blade III</name>
+	<name_fr>Lame du diable III</name_fr>
+	<name_jp>ダチュラブレードⅢ</name_jp>
+</translation>
+<translation>
+	<name>Gama Cane I</name>
+	<name_fr>Canne Gama</name_fr>
+	<name_jp>ガマルケインⅠ</name_jp>
+</translation>
+<translation>
+	<name>Gama Cane II</name>
+	<name_fr>Canne Gama II</name_fr>
+	<name_jp>ガマルケインⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Rod I</name>
+	<name_fr>Bâton en os</name_fr>
+	<name_jp>ボーンロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Rod II</name>
+	<name_fr>Bâton en os II</name_fr>
+	<name_jp>ボーンロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Rod III</name>
+	<name_fr>Bâton en os III</name_fr>
+	<name_jp>ボーンロッドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Rod I</name>
+	<name_fr>Bâton barbare</name_fr>
+	<name_jp>ハードボーンロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Rod II</name>
+	<name_fr>Bâton barbare II</name_fr>
+	<name_jp>ハードボーンロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hard Bone Rod III</name>
+	<name_fr>Bâton barbare III</name_fr>
+	<name_jp>ハードボーンロッドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Aerial Rod I</name>
+	<name_fr>Bâton de l'air</name_fr>
+	<name_jp>エアリアルロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aerial Rod II</name>
+	<name_fr>Bâton de l'air II</name_fr>
+	<name_jp>エアリアルロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Entoma I</name>
+	<name_fr>Hazak Entoma</name_fr>
+	<name_jp>ハザクエントマⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Entoma II</name>
+	<name_fr>Hazak Entoma II</name_fr>
+	<name_jp>ハザクエントマⅡ</name_jp>
+</translation>
+<translation>
+	<name>Flammenkaefer</name>
+	<name_fr>Flammenkaefer</name_fr>
+	<name_jp>フラムエルカラモス</name_jp>
+</translation>
+<translation>
+	<name>Flammenkaefer+</name>
+	<name_fr>Flammenkaefer Mk 2</name_fr>
+	<name_jp>フラムエルカラモス改</name_jp>
+</translation>
+<translation>
+	<name>Gnashing Flammenkaefer</name>
+	<name_fr>Bâton croc-de-feu</name_fr>
+	<name_jp>蛮顎棍フラムカラモス</name_jp>
+</translation>
+<translation>
+	<name>Aqua Rod I</name>
+	<name_fr>Bâton aquatique</name_fr>
+	<name_jp>アクアロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Rod II</name>
+	<name_fr>Bâton aquatique II</name_fr>
+	<name_jp>アクアロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Rod III</name>
+	<name_fr>Bâton aquatique III</name_fr>
+	<name_jp>アクアロッドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Glaive I</name>
+	<name_fr>Hydro-glaive</name_fr>
+	<name_jp>ウォーターグレイブⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Glaive II</name>
+	<name_fr>Hydro-glaive II</name_fr>
+	<name_jp>ウォーターグレイブⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Glaive III</name>
+	<name_fr>Hydro-glaive III</name_fr>
+	<name_jp>ウォーターグレイブⅢ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Rod I</name>
+	<name_fr>Bâton Diablos</name_fr>
+	<name_jp>ブロスロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Rod II</name>
+	<name_fr>Bâton Diablos II</name_fr>
+	<name_jp>ブロスロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Tyrannis Glaive I</name>
+	<name_fr>Glaive Tyrannis</name_fr>
+	<name_jp>タイラントグレイブⅠ</name_jp>
+</translation>
+<translation>
+	<name>Tyrannis Glaive II</name>
+	<name_fr>Glaive Tyrannis II</name_fr>
+	<name_jp>タイラントグレイブⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Rod I</name>
+	<name_fr>Bâton pulsar</name_fr>
+	<name_jp>パルサーロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Rod II</name>
+	<name_fr>Bâton pulsar II</name_fr>
+	<name_jp>パルサーロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Rod III</name>
+	<name_fr>Bâton pulsar III</name_fr>
+	<name_jp>パルサーロッドⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Pillar I</name>
+	<name_fr>Pilier Kadachi</name_fr>
+	<name_jp>カガチノハシラⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Pillar II</name>
+	<name_fr>Pilier Kadachi II</name_fr>
+	<name_jp>カガチノハシラⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Pillar III</name>
+	<name_fr>Pilier Kadachi III</name_fr>
+	<name_jp>カガチノハシラⅢ</name_jp>
+</translation>
+<translation>
+	<name>Garon Rod I</name>
+	<name_fr>Bâton Garon</name_fr>
+	<name_jp>ガロンロッドⅠ</name_jp>
+</translation>
+<translation>
+	<name>Garon Rod II</name>
+	<name_fr>Bâton Garon II</name_fr>
+	<name_jp>ガロンロッドⅡ</name_jp>
+</translation>
+<translation>
+	<name>Temptation's Trident</name>
+	<name_fr>Trident de la tentation</name_fr>
+	<name_jp>惑いの三鈷杵</name_jp>
+</translation>
+<translation>
+	<name>Vice</name>
+	<name_fr>Vice et Vertu</name_fr>
+	<name_jp>悪【ヴァイス】</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Glaive I</name>
+	<name_fr>Glaive draconique</name_fr>
+	<name_jp>龍骨棍Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Glaive II</name>
+	<name_fr>Glaive draconique II</name_fr>
+	<name_jp>龍骨棍Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Glaive III</name>
+	<name_fr>Glaive draconique III</name_fr>
+	<name_jp>龍骨棍Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Indigo Flash</name>
+	<name_fr>Foudre bleue</name_fr>
+	<name_jp>藍の稲光</name_jp>
+</translation>
+<translation>
+	<name>Azure Bolt</name>
+	<name_fr>Flèche d'azur</name_fr>
+	<name_jp>蒼の稲魂</name_jp>
+</translation>
+<translation>
+	<name>Verdant Levin</name>
+	<name_fr>Esprit ancestral</name_fr>
+	<name_jp>碧の神鳴</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Glaive I</name>
+	<name_fr>Glaive sombracier</name_fr>
+	<name_jp>黒鋼の長刀Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Glaive II</name>
+	<name_fr>Glaive sombracier II</name_fr>
+	<name_jp>黒鋼の長刀Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Daora's Entom</name>
+	<name_fr>Entom Daora</name_fr>
+	<name_jp>ウルス＝ダオラ</name_jp>
+</translation>
+<translation>
+	<name>Daora's Tethidine</name>
+	<name_fr>Tethidine Daora</name_fr>
+	<name_jp>クイド＝ダオラ</name_jp>
+</translation>
+<translation>
+	<name>Xeno Shmaena</name>
+	<name_fr>Xeno Shmaena</name_fr>
+	<name_jp>ゼノ＝シュマイナ</name_jp>
+</translation>
+<translation>
+	<name>Chain Blitz I</name>
+	<name_fr>Déchiqueteur de fer</name_fr>
+	<name_jp>チェーンブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chain Blitz II</name>
+	<name_fr>Déchiqueteur de fer II</name_fr>
+	<name_jp>チェーンブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Chain Blitz III</name>
+	<name_fr>Déchiqueteur de fer III</name_fr>
+	<name_jp>チェーンブリッツⅢ</name_jp>
+</translation>
+<translation>
+	<name>High Chain Blitz I</name>
+	<name_fr>Déchiqueteur de titane</name_fr>
+	<name_jp>ハイチェーンブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>High Chain Blitz II</name>
+	<name_fr>Déchiqueteur de titane II</name_fr>
+	<name_jp>ハイチェーンブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>High Chain Blitz III</name>
+	<name_fr>Déchiqueteur de titane III</name_fr>
+	<name_jp>ハイチェーンブリッツⅢ</name_jp>
+</translation>
+<translation>
+	<name>Cross Blitz I</name>
+	<name_fr>Déchiqueteur d'acier</name_fr>
+	<name_jp>クロスブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Cross Blitz II</name>
+	<name_fr>Déchiqueteur d'acier II</name_fr>
+	<name_jp>クロスブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Spitter</name>
+	<name_fr>Cracheur Nergal</name_fr>
+	<name_jp>ネルガルツィエル</name_jp>
+</translation>
+<translation>
+	<name>Cataclysm's Trigger</name>
+	<name_fr>Cataclysme</name_fr>
+	<name_jp>破滅の引金</name_jp>
+</translation>
+<translation>
+	<name>Lumu Blitz I</name>
+	<name_fr>Déchiqueteur Lumu</name_fr>
+	<name_jp>ウルムーブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Blitz II</name>
+	<name_fr>Déchiqueteur Lumu II</name_fr>
+	<name_jp>ウルムーブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Typhon I</name>
+	<name_fr>Typhon Lumu</name_fr>
+	<name_jp>ウルムーティフォンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Typhon II</name>
+	<name_fr>Typhon Lumu II</name_fr>
+	<name_jp>ウルムーティフォンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lumu Typhon III</name>
+	<name_fr>Typhon Lumu III</name_fr>
+	<name_jp>ウルムーティフォンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Bazel Typhoon I</name>
+	<name_fr>Typhon Bazel</name_fr>
+	<name_jp>バゼルタイフーンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bazel Typhoon II</name>
+	<name_fr>Typhon Bazel II</name_fr>
+	<name_jp>バゼルタイフーンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Blitz I</name>
+	<name_fr>Déchiqueteur Jagras</name_fr>
+	<name_jp>ジャグラスブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Blitz II</name>
+	<name_fr>Déchiqueteur Jagras II</name_fr>
+	<name_jp>ジャグラスブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Blitz III</name>
+	<name_fr>Déchiqueteur Jagras III</name_fr>
+	<name_jp>ジャグラスブリッツⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Fire I</name>
+	<name_fr>Feu de Jagras</name_fr>
+	<name_jp>ジャグラスファイアⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Fire II</name>
+	<name_fr>Feu de Jagras II</name_fr>
+	<name_jp>ジャグラスファイアⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Fire III</name>
+	<name_fr>Feu de Jagras III</name_fr>
+	<name_jp>ジャグラスファイアⅢ</name_jp>
+</translation>
+<translation>
+	<name>Flame Blitz I</name>
+	<name_fr>Déchiqueteur de feu</name_fr>
+	<name_jp>フレイムブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Flame Blitz II</name>
+	<name_fr>Déchiqueteur de feu II</name_fr>
+	<name_jp>フレイムブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Rathbuster I</name>
+	<name_fr>Souffle du Rathalos</name_fr>
+	<name_jp>レウスバスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Rathbuster II</name>
+	<name_fr>Souffle du Rathalos II</name_fr>
+	<name_jp>レウスバスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Blitz I</name>
+	<name_fr>Déchiqueteur de l'orage</name_fr>
+	<name_jp>サンダーブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Thunder Blitz II</name>
+	<name_fr>Déchiqueteur de l'orage II</name_fr>
+	<name_jp>サンダーブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Blitz I</name>
+	<name_fr>Déchiqueteur de foudre</name_fr>
+	<name_jp>ライトニングブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Blitz II</name>
+	<name_fr>Déchiqueteur de foudre II</name_fr>
+	<name_jp>ライトニングブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Lightning Blitz III</name>
+	<name_fr>Déchiqueteur de foudre III</name_fr>
+	<name_jp>ライトニングブリッツⅢ</name_jp>
+</translation>
+<translation>
+	<name>Snow Blitz I</name>
+	<name_fr>Déchiqueteur de neige</name_fr>
+	<name_jp>スノウブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Snow Blitz II</name>
+	<name_fr>Déchiqueteur de neige II</name_fr>
+	<name_jp>スノウブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Frost Blitz I</name>
+	<name_fr>Déchiqueteur de givre</name_fr>
+	<name_jp>フロストブリッツⅠ</name_jp>
+</translation>
+<translation>
+	<name>Frost Blitz II</name>
+	<name_fr>Déchiqueteur de givre II</name_fr>
+	<name_jp>フロストブリッツⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Rifle I</name>
+	<name_fr>Fusil du chasseur</name_fr>
+	<name_jp>ハンターライフルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Rifle II</name>
+	<name_fr>Fusil du chasseur II</name_fr>
+	<name_jp>ハンターライフルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Rifle III</name>
+	<name_fr>Fusil du chasseur III</name_fr>
+	<name_jp>ハンターライフルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Power Rifle I</name>
+	<name_fr>Fusil de puissance</name_fr>
+	<name_jp>パワーライフルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Power Rifle II</name>
+	<name_fr>Fusil de puissance II</name_fr>
+	<name_jp>パワーライフルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Power Rifle III</name>
+	<name_fr>Fusil de puissance III</name_fr>
+	<name_jp>パワーライフルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Sniper Shot I</name>
+	<name_fr>Fusil de sniper</name_fr>
+	<name_jp>スナイプシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Sniper Shot II</name>
+	<name_fr>Fusil de sniper II</name_fr>
+	<name_jp>スナイプシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Ereipia</name>
+	<name_fr>Hazak Ereipia</name_fr>
+	<name_jp>ハザクエリピア</name_jp>
+</translation>
+<translation>
+	<name>Gulgoleth's Wail</name>
+	<name_fr>Hurlement de Gulgoleth</name_fr>
+	<name_jp>グルゴレットの叫喚</name_jp>
+</translation>
+<translation>
+	<name>Blazing Rifle I</name>
+	<name_fr>Fusil flamboyant</name_fr>
+	<name_jp>ブレイズライフルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Rifle II</name>
+	<name_fr>Fusil flamboyant II</name_fr>
+	<name_jp>ブレイズライフルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Buster I</name>
+	<name_fr>Casseur Anja</name_fr>
+	<name_jp>ジャナフバスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Buster II</name>
+	<name_fr>Casseur Anja II</name_fr>
+	<name_jp>ジャナフバスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Buster III</name>
+	<name_fr>Casseur Anja III</name_fr>
+	<name_jp>ジャナフバスターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Madness Rifle I</name>
+	<name_fr>Fusil du berserker</name_fr>
+	<name_jp>マッドライフルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Madness Rifle II</name>
+	<name_fr>Fusil du berserker II</name_fr>
+	<name_jp>マッドライフルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Madness Rifle III</name>
+	<name_fr>Fusil du berserker III</name_fr>
+	<name_jp>マッドライフルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Bullet I</name>
+	<name_fr>Rafale Jyura</name_fr>
+	<name_jp>シュラムバレットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Bullet II</name>
+	<name_fr>Rafale Jyura II</name_fr>
+	<name_jp>シュラムバレットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jyura Bullet III</name>
+	<name_fr>Rafale Jyura III</name_fr>
+	<name_jp>シュラムバレットⅢ</name_jp>
+</translation>
+<translation>
+	<name>Lava Bullet I</name>
+	<name_fr>Tempête de lave</name_fr>
+	<name_jp>ラヴァバレットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Lava Bullet II</name>
+	<name_fr>Tempête de lave II</name_fr>
+	<name_jp>ラヴァバレットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Rifle I</name>
+	<name_fr>Fusil primitif</name_fr>
+	<name_jp>ドラグロライフルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Rifle II</name>
+	<name_fr>Fusil primitif II</name_fr>
+	<name_jp>ドラグロライフルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Carapace Rifle III</name>
+	<name_fr>Fusil primitif III</name_fr>
+	<name_jp>ドラグロライフルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Shot I</name>
+	<name_fr>Fusil Barroth</name_fr>
+	<name_jp>ボルボショットⅠ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Shot II</name>
+	<name_fr>Fusil Barroth II</name_fr>
+	<name_jp>ボルボショットⅡ</name_jp>
+</translation>
+<translation>
+	<name>Barroth Shot III</name>
+	<name_fr>Fusil Barroth III</name_fr>
+	<name_jp>ボルボショットⅢ</name_jp>
+</translation>
+<translation>
+	<name>Garon Rifle I</name>
+	<name_fr>Fusil Garon</name_fr>
+	<name_jp>ガロンライフルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Garon Rifle II</name>
+	<name_fr>Fusil Garon II</name_fr>
+	<name_jp>ガロンライフルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Fate's Ember</name>
+	<name_fr>Braise du Destin</name_fr>
+	<name_jp>宿命の火</name_jp>
+</translation>
+<translation>
+	<name>Karma</name>
+	<name_fr>Karma</name_fr>
+	<name_jp>業【カルマ】</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Bowgun I</name>
+	<name_fr>Fusarbalète draconique</name_fr>
+	<name_jp>龍骨弩Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Bowgun II</name>
+	<name_fr>Fusarbalète draconique II</name_fr>
+	<name_jp>龍骨弩Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Bowgun III</name>
+	<name_fr>Fusarbalète draconique III</name_fr>
+	<name_jp>龍骨弩Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Onigashima</name>
+	<name_fr>Île des démons</name_fr>
+	<name_jp>鬼ヶ島</name_jp>
+</translation>
+<translation>
+	<name>Dai-Onigashima</name>
+	<name_fr>Pays des démons</name_fr>
+	<name_jp>大鬼ヶ島</name_jp>
+</translation>
+<translation>
+	<name>Mythical Horn</name>
+	<name_fr>Corne mythique</name_fr>
+	<name_jp>幻獣筒</name_jp>
+</translation>
+<translation>
+	<name>Mythical Horn+</name>
+	<name_fr>Corne mythique II</name_fr>
+	<name_jp>幻獣筒改</name_jp>
+</translation>
+<translation>
+	<name>Mythical Three-Horn</name>
+	<name_fr>Tricorne mythique</name_fr>
+	<name_jp>幻獣筒【三ツ角】</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Crossbow I</name>
+	<name_fr>Arbalète sombracier</name_fr>
+	<name_jp>黒鋼の弩Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Crossbow II</name>
+	<name_fr>Arbalète sombracier II</name_fr>
+	<name_jp>黒鋼の弩Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Icesteel Wasp</name>
+	<name_fr>Frelon inexorable</name_fr>
+	<name_jp>鋼氷蜂弩</name_jp>
+</translation>
+<translation>
+	<name>Daora's Hornet</name>
+	<name_fr>Frelon Daora</name_fr>
+	<name_jp>ホーネス＝ダオラ</name_jp>
+</translation>
+<translation>
+	<name>Xeno Neqiina</name>
+	<name_fr>Xeno Neqiina</name_fr>
+	<name_jp>ゼノ＝ネキーナ</name_jp>
+</translation>
+<translation>
+	<name>Cross Bowgun</name>
+	<name_fr>Fusarbalète du traqueur</name_fr>
+	<name_jp>クロスボウガン</name_jp>
+</translation>
+<translation>
+	<name>Great Bowgun</name>
+	<name_fr>Grand fusarbalète</name_fr>
+	<name_jp>グレイトボウガン</name_jp>
+</translation>
+<translation>
+	<name>Iron Assault I</name>
+	<name_fr>Arbalète en fer</name_fr>
+	<name_jp>アイアンアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Iron Assault II</name>
+	<name_fr>Arbalète en fer II</name_fr>
+	<name_jp>アイアンアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Iron Assault III</name>
+	<name_fr>Arbalète en fer III</name_fr>
+	<name_jp>アイアンアサルトⅢ</name_jp>
+</translation>
+<translation>
+	<name>Steel Assault I</name>
+	<name_fr>Arbalète d'acier</name_fr>
+	<name_jp>スティールアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Steel Assault II</name>
+	<name_fr>Arbalète d'acier II</name_fr>
+	<name_jp>スティールアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Steel Assault III</name>
+	<name_fr>Arbalète d'acier III</name_fr>
+	<name_jp>スティールアサルトⅢ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Assault I</name>
+	<name_fr>Arbalète chromée</name_fr>
+	<name_jp>クロムアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Chrome Assault II</name>
+	<name_fr>Arbalète chromée II</name_fr>
+	<name_jp>クロムアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Roar</name>
+	<name_fr>Hurleur Nergal</name_fr>
+	<name_jp>ネルガルグレア</name_jp>
+</translation>
+<translation>
+	<name>Destruction's Fusillade</name>
+	<name_fr>Armageddon</name_fr>
+	<name_jp>撃滅の砲火</name_jp>
+</translation>
+<translation>
+	<name>Aqua Assault I</name>
+	<name_fr>Arbalète aquatique</name_fr>
+	<name_jp>アクアアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Assault II</name>
+	<name_fr>Arbalète aquatique II</name_fr>
+	<name_jp>アクアアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Assault III</name>
+	<name_fr>Arbalète aquatique III</name_fr>
+	<name_jp>アクアアサルトⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Cannon I</name>
+	<name_fr>Hydro-canon</name_fr>
+	<name_jp>ウォーターキャノンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Cannon II</name>
+	<name_fr>Hydro-canon II</name_fr>
+	<name_jp>ウォーターキャノンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Cannon III</name>
+	<name_fr>Hydro-canon III</name_fr>
+	<name_jp>ウォーターキャノンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Luminous Assault I</name>
+	<name_fr>Arbalète de lumière</name_fr>
+	<name_jp>イルミナルアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Luminous Assault II</name>
+	<name_fr>Arbalète de lumière II</name_fr>
+	<name_jp>イルミナルアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Arma Destroyer I</name>
+	<name_fr>Destructeur Arma</name_fr>
+	<name_jp>アルマデステリオⅠ</name_jp>
+</translation>
+<translation>
+	<name>Arma Destroyer II</name>
+	<name_fr>Destructeur Arma II</name_fr>
+	<name_jp>アルマデステリオⅡ</name_jp>
+</translation>
+<translation>
+	<name>Arma Destroyer III</name>
+	<name_fr>Destructeur Arma III</name_fr>
+	<name_jp>アルマデステリオⅢ</name_jp>
+</translation>
+<translation>
+	<name>Shattercryst</name>
+	<name_fr>Brise-cristal</name_fr>
+	<name_jp>ロゼッテス</name_jp>
+</translation>
+<translation>
+	<name>Shattercryst+</name>
+	<name_fr>Brise-cristal Mk II</name_fr>
+	<name_jp>ロゼッテス改</name_jp>
+</translation>
+<translation>
+	<name>Legia Shattercryst</name>
+	<name_fr>Brise-cristal Mk III</name_fr>
+	<name_jp>レイ＝ロゼッテス</name_jp>
+</translation>
+<translation>
+	<name>Jagras Assault I</name>
+	<name_fr>Arbalète Jagras</name_fr>
+	<name_jp>ジャグラスアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Assault II</name>
+	<name_fr>Arbalète Jagras II</name_fr>
+	<name_jp>ジャグラスアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Assault III</name>
+	<name_fr>Arbalète Jagras III</name_fr>
+	<name_jp>ジャグラスアサルトⅢ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Cannon I</name>
+	<name_fr>Canon Jagras</name_fr>
+	<name_jp>ジャグラスキャノンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Cannon II</name>
+	<name_fr>Canon Jagras II</name_fr>
+	<name_jp>ジャグラスキャノンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Jagras Cannon III</name>
+	<name_fr>Croc-canon le Vorace</name_fr>
+	<name_jp>牙竜重弩【暴食】</name_jp>
+</translation>
+<translation>
+	<name>Blazing Assault I</name>
+	<name_fr>Arbalète flamboyante</name_fr>
+	<name_jp>ブレイズアサルトⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Assault II</name>
+	<name_fr>Arbalète flamboyante II</name_fr>
+	<name_jp>ブレイズアサルトⅡ</name_jp>
+</translation>
+<translation>
+	<name>Flammenkanone</name>
+	<name_fr>Flammenkanone</name_fr>
+	<name_jp>フラムエルテルマ</name_jp>
+</translation>
+<translation>
+	<name>Gnashing Flammenkanone</name>
+	<name_fr>Canon croc-de-feu</name_fr>
+	<name_jp>蛮顎重弩フラムテルマ</name_jp>
+</translation>
+<translation>
+	<name>Bone Shooter I</name>
+	<name_fr>Fusil en os</name_fr>
+	<name_jp>ボーンシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Bone Shooter II</name>
+	<name_fr>Fusil en os II</name_fr>
+	<name_jp>ボーンシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Bone Shooter III</name>
+	<name_fr>Fusil en os III</name_fr>
+	<name_jp>ボーンシューターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Shooter I</name>
+	<name_fr>Pulvériseur</name_fr>
+	<name_jp>ヘビィシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Shooter II</name>
+	<name_fr>Pulvériseur II</name_fr>
+	<name_jp>ヘビィシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Heavy Shooter III</name>
+	<name_fr>Pulvériseur III</name_fr>
+	<name_jp>ヘビィシューターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Power Shooter I</name>
+	<name_fr>Canon de puissance</name_fr>
+	<name_jp>パワーシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Power Shooter II</name>
+	<name_fr>Canon de puissance II</name_fr>
+	<name_jp>パワーシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Shooter I</name>
+	<name_fr>Tireur Diablos</name_fr>
+	<name_jp>ディアシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Shooter II</name>
+	<name_fr>Tireur Diablos II</name_fr>
+	<name_jp>ディアシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Dual Threat</name>
+	<name_fr>Double menace</name_fr>
+	<name_jp>デュエルスタッブ</name_jp>
+</translation>
+<translation>
+	<name>Nero's Blazooka</name>
+	<name_fr>Bazooka de Nero</name_fr>
+	<name_jp>ネロディアーカ</name_jp>
+</translation>
+<translation>
+	<name>Griffon Blazooka</name>
+	<name_fr>Bazooka du griffon</name_fr>
+	<name_jp>カーディアーカ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Shooter I</name>
+	<name_fr>Fusil du tourment</name_fr>
+	<name_jp>ブルームシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Shooter II</name>
+	<name_fr>Fusil du tourment II</name_fr>
+	<name_jp>ブルームシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Shooter III</name>
+	<name_fr>Fusil du tourment III</name_fr>
+	<name_jp>ブルームシューターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blaster I</name>
+	<name_fr>Soufre du diable</name_fr>
+	<name_jp>ダチュラブラスターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blaster II</name>
+	<name_fr>Soufre du diable II</name_fr>
+	<name_jp>ダチュラブラスターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura Blaster III</name>
+	<name_fr>Soufre du diable III</name_fr>
+	<name_jp>ダチュラブラスターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Shooter I</name>
+	<name_fr>Canon brutal</name_fr>
+	<name_jp>スパイクシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Spiked Shooter II</name>
+	<name_fr>Canon brutal II</name_fr>
+	<name_jp>スパイクシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Roar I</name>
+	<name_fr>Rugissement Baan</name_fr>
+	<name_jp>バルキンキャノンⅠ</name_jp>
+</translation>
+<translation>
+	<name>Baan Roar II</name>
+	<name_fr>Rugissement Baan II</name_fr>
+	<name_jp>バルキンキャノンⅡ</name_jp>
+</translation>
+<translation>
+	<name>Baan Roar III</name>
+	<name_fr>Rugissement Baan III</name_fr>
+	<name_jp>バルキンキャノンⅢ</name_jp>
+</translation>
+<translation>
+	<name>Gama Cannon I</name>
+	<name_fr>Canon Gama</name_fr>
+	<name_jp>ガマル砲Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Gama Cannon II</name>
+	<name_fr>Canon Gama II</name_fr>
+	<name_jp>ガマル砲Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Shooter I</name>
+	<name_fr>Fusil pulsar</name_fr>
+	<name_jp>パルサーシューターⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Shooter II</name>
+	<name_fr>Fusil pulsar II</name_fr>
+	<name_jp>パルサーシューターⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Shooter III</name>
+	<name_fr>Fusil pulsar III</name_fr>
+	<name_jp>パルサーシューターⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Lion I</name>
+	<name_fr>Lion Kadachi</name_fr>
+	<name_jp>カガチノシシⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Lion II</name>
+	<name_fr>Lion Kadachi II</name_fr>
+	<name_jp>カガチノシシⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Lion III</name>
+	<name_fr>Lion Kadachi III</name_fr>
+	<name_jp>カガチノシシⅢ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cannon I</name>
+	<name_fr>Canon draconique</name_fr>
+	<name_jp>龍骨砲Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cannon II</name>
+	<name_fr>Canon draconique II</name_fr>
+	<name_jp>龍骨砲Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Cannon III</name>
+	<name_fr>Canon draconique III</name_fr>
+	<name_jp>龍骨砲Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Quickcaster</name>
+	<name_fr>Mousquet runique</name_fr>
+	<name_jp>クイックキャスト</name_jp>
+</translation>
+<translation>
+	<name>Quickcaster+</name>
+	<name_fr>Mousquet runique II</name_fr>
+	<name_jp>クイックキャスト改</name_jp>
+</translation>
+<translation>
+	<name>Quickquiver</name>
+	<name_fr>Mousquet céleste</name_fr>
+	<name_jp>クイックシャフト</name_jp>
+</translation>
+<translation>
+	<name>Magda Gemitus I</name>
+	<name_fr>Magda Gemitus</name_fr>
+	<name_jp>マグダ・ゲミトゥスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Magda Gemitus II</name>
+	<name_fr>Magda Gemitus II</name_fr>
+	<name_jp>マグダ・ゲミトゥスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Cannon I</name>
+	<name_fr>Canon sombracier</name_fr>
+	<name_jp>黒鋼の砲筒Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Cannon II</name>
+	<name_fr>Canon sombracier II</name_fr>
+	<name_jp>黒鋼の砲筒Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Artillery</name>
+	<name_fr>Artillerie Teostra</name_fr>
+	<name_jp>テオ＝アーティレリ</name_jp>
+</translation>
+<translation>
+	<name>Teostra's Flames</name>
+	<name_fr>Flammes Teostra</name_fr>
+	<name_jp>テオ＝フランマルス</name_jp>
+</translation>
+<translation>
+	<name>Xeno Jiiqa</name>
+	<name_fr>Xeno Jiiqa</name_fr>
+	<name_jp>ゼノ＝ジィカ</name_jp>
+</translation>
+<translation>
+	<name>Iron Bow I</name>
+	<name_fr>Arc en fer</name_fr>
+	<name_jp>鉄弓Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Iron Bow II</name>
+	<name_fr>Arc en fer II</name_fr>
+	<name_jp>鉄弓Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Iron Bow III</name>
+	<name_fr>Arc en fer III</name_fr>
+	<name_jp>鉄弓Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Steel Bow I</name>
+	<name_fr>Arc en acier</name_fr>
+	<name_jp>鋼鉄弓Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Steel Bow II</name>
+	<name_fr>Arc en acier II</name_fr>
+	<name_jp>鋼鉄弓Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Steel Bow III</name>
+	<name_fr>Arc en acier III</name_fr>
+	<name_jp>鋼鉄弓Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Alloy Bow I</name>
+	<name_fr>Arc en alliage</name_fr>
+	<name_jp>合金弓Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Alloy Bow II</name>
+	<name_fr>Arc en alliage II</name_fr>
+	<name_jp>合金弓Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Nergal Whisper</name>
+	<name_fr>Murmure Nergal</name_fr>
+	<name_jp>ネルガルファウル</name_jp>
+</translation>
+<translation>
+	<name>Doom's Shaft</name>
+	<name_fr>Destin tragique</name_fr>
+	<name_jp>必滅の一矢</name_jp>
+</translation>
+<translation>
+	<name>Kulu Arrow I</name>
+	<name_fr>Flèche Kulu</name_fr>
+	<name_jp>クルルアローⅠ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Arrow II</name>
+	<name_fr>Flèche Kulu |</name_fr>
+	<name_jp>クルルアローⅡ</name_jp>
+</translation>
+<translation>
+	<name>Kulu Arrow III</name>
+	<name_fr>Flèche Kulu III</name_fr>
+	<name_jp>クルルアローⅢ</name_jp>
+</translation>
+<translation>
+	<name>Archer's Dance I</name>
+	<name_fr>Danse de l'archer</name_fr>
+	<name_jp>リーシャアルサクルⅠ</name_jp>
+</translation>
+<translation>
+	<name>Archer's Dance II</name>
+	<name_fr>Danse de l'archer II</name_fr>
+	<name_jp>リーシャアルサクルⅡ</name_jp>
+</translation>
+<translation>
+	<name>Archer's Dance III</name>
+	<name_fr>Danse de l'archer III</name_fr>
+	<name_jp>リーシャアルサクルⅢ</name_jp>
+</translation>
+<translation>
+	<name>Brazencord</name>
+	<name_fr>Arc du maraudeur</name_fr>
+	<name_jp>ブラスコルダ</name_jp>
+</translation>
+<translation>
+	<name>Gigacles</name>
+	<name_fr>Gigaclès</name_fr>
+	<name_jp>重弓ヘラギガス</name_jp>
+</translation>
+<translation>
+	<name>Princess Arrow I</name>
+	<name_fr>Flèche de la dauphine</name_fr>
+	<name_jp>プリンセスアローⅠ</name_jp>
+</translation>
+<translation>
+	<name>Princess Arrow II</name>
+	<name_fr>Flèche de la dauphine II</name_fr>
+	<name_jp>プリンセスアローⅡ</name_jp>
+</translation>
+<translation>
+	<name>Princess Arrow III</name>
+	<name_fr>Flèche de la dauphine III</name_fr>
+	<name_jp>プリンセスアローⅢ</name_jp>
+</translation>
+<translation>
+	<name>Rathslinger I</name>
+	<name_fr>Arc Rathalos</name_fr>
+	<name_jp>火竜の強弓Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Rathslinger II</name>
+	<name_fr>Arc Rathalos II</name_fr>
+	<name_jp>火竜の強弓Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Rathslinger III</name>
+	<name_fr>Arc Rathalos III</name_fr>
+	<name_jp>火竜の強弓Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Arrow I</name>
+	<name_fr>Flèche aquatique</name_fr>
+	<name_jp>アクアアローⅠ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Arrow II</name>
+	<name_fr>Flèche aquatique II</name_fr>
+	<name_jp>アクアアローⅡ</name_jp>
+</translation>
+<translation>
+	<name>Aqua Arrow III</name>
+	<name_fr>Flèche aquatique III</name_fr>
+	<name_jp>アクアアローⅢ</name_jp>
+</translation>
+<translation>
+	<name>Water Shot I</name>
+	<name_fr>Hydro-arc</name_fr>
+	<name_jp>ウォーターシュートⅠ</name_jp>
+</translation>
+<translation>
+	<name>Water Shot II</name>
+	<name_fr>Hydro-arc II</name_fr>
+	<name_jp>ウォーターシュートⅡ</name_jp>
+</translation>
+<translation>
+	<name>Water Shot III</name>
+	<name_fr>Hydro-arc III</name_fr>
+	<name_jp>ウォーターシュートⅢ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Arrow I</name>
+	<name_fr>Flèche polaire</name_fr>
+	<name_jp>グレイスアローⅠ</name_jp>
+</translation>
+<translation>
+	<name>Glacial Arrow II</name>
+	<name_fr>Flèche polaire II</name_fr>
+	<name_jp>グレイスアローⅡ</name_jp>
+</translation>
+<translation>
+	<name>Snowfletcher</name>
+	<name_fr>Tempête de neige II</name_fr>
+	<name_jp>ファーンライク</name_jp>
+</translation>
+<translation>
+	<name>Legia Snowfletcher</name>
+	<name_fr>Tempête de neige</name_fr>
+	<name_jp>レイ＝ファーンライク</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Bow I</name>
+	<name_fr>Arc du chasseur</name_fr>
+	<name_jp>ハンターボウⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Bow II</name>
+	<name_fr>Arc du chasseur II</name_fr>
+	<name_jp>ハンターボウⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Bow III</name>
+	<name_fr>Arc du chasseur III</name_fr>
+	<name_jp>ハンターボウⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Stoutbow I</name>
+	<name_fr>Arc courbé du chasseur</name_fr>
+	<name_jp>パワーハンターボウⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Stoutbow II</name>
+	<name_fr>Arc courbé du chasseur II</name_fr>
+	<name_jp>パワーハンターボウⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Stoutbow III</name>
+	<name_fr>Arc courbé du chasseur III</name_fr>
+	<name_jp>パワーハンターボウⅢ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Proudbow I</name>
+	<name_fr>Arc long du chasseur</name_fr>
+	<name_jp>ブレイブハンターボウⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hunter's Proudbow II</name>
+	<name_fr>Arc long du chasseur II</name_fr>
+	<name_jp>ブレイブハンターボウⅡ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Velos I</name>
+	<name_fr>Hazak Velos I</name_fr>
+	<name_jp>ハザクヴェロスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Hazak Velos II</name>
+	<name_fr>Hazak Velos II</name_fr>
+	<name_jp>ハザクヴェロスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Bow I</name>
+	<name_fr>Arc Diablos</name_fr>
+	<name_jp>ブロスボウⅠ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Bow II</name>
+	<name_fr>Arc Diablos II</name_fr>
+	<name_jp>ブロスボウⅡ</name_jp>
+</translation>
+<translation>
+	<name>Diablos Coilbender</name>
+	<name_fr>Arc Diablos</name_fr>
+	<name_jp>ブロスホーンボウ</name_jp>
+</translation>
+<translation>
+	<name>Galebender</name>
+	<name_fr>Zéphyr</name_fr>
+	<name_jp>ゲイルホーンボウ</name_jp>
+</translation>
+<translation>
+	<name>Cera Coilbender</name>
+	<name_fr>Ouragan</name_fr>
+	<name_jp>角王弓ゲイルホーン</name_jp>
+</translation>
+<translation>
+	<name>Blooming Arch I</name>
+	<name_fr>Arc du tourment</name_fr>
+	<name_jp>ブルームアーチⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Arch II</name>
+	<name_fr>Arc du tourment II</name_fr>
+	<name_jp>ブルームアーチⅡ</name_jp>
+</translation>
+<translation>
+	<name>Blooming Arch III</name>
+	<name_fr>Arc du tourment III</name_fr>
+	<name_jp>ブルームアーチⅢ</name_jp>
+</translation>
+<translation>
+	<name>Datura String I</name>
+	<name_fr>Corde du diable</name_fr>
+	<name_jp>ダチュラストリングⅠ</name_jp>
+</translation>
+<translation>
+	<name>Datura String II</name>
+	<name_fr>Corde du diable II</name_fr>
+	<name_jp>ダチュラストリングⅡ</name_jp>
+</translation>
+<translation>
+	<name>Datura String III</name>
+	<name_fr>Corde du diable III</name_fr>
+	<name_jp>ダチュラストリングⅢ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Bow I</name>
+	<name_fr>Arc flamboyant</name_fr>
+	<name_jp>ブレイズボウⅠ</name_jp>
+</translation>
+<translation>
+	<name>Blazing Bow II</name>
+	<name_fr>Arc flamboyant II</name_fr>
+	<name_jp>ブレイズボウⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Arch I</name>
+	<name_fr>Arche Anja</name_fr>
+	<name_jp>ジャナフアルカウスⅠ</name_jp>
+</translation>
+<translation>
+	<name>Anja Arch II</name>
+	<name_fr>Arche Anja II</name_fr>
+	<name_jp>ジャナフアルカウスⅡ</name_jp>
+</translation>
+<translation>
+	<name>Anja Arch III</name>
+	<name_fr>Arche Anja III</name_fr>
+	<name_jp>ジャナフアルカウスⅢ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Bow I</name>
+	<name_fr>Arc pulsar</name_fr>
+	<name_jp>パルサーボウⅠ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Bow II</name>
+	<name_fr>Arc pulsar II</name_fr>
+	<name_jp>パルサーボウⅡ</name_jp>
+</translation>
+<translation>
+	<name>Pulsar Bow III</name>
+	<name_fr>Arc pulsar III</name_fr>
+	<name_jp>パルサーボウⅢ</name_jp>
+</translation>
+<translation>
+	<name>Kadachi Strikebow</name>
+	<name_fr>Perce-ceur Kadachi</name_fr>
+	<name_jp>飛雷弓イテカガチ</name_jp>
+</translation>
+<translation>
+	<name>Flying Kadachi Strikebow</name>
+	<name_fr>Crève-ceur Kadachi</name_fr>
+	<name_jp>飛雷弓【羽々矢】</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Bow I</name>
+	<name_fr>Arc draconique</name_fr>
+	<name_jp>龍骨弓Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Bow II</name>
+	<name_fr>Arc draconique II</name_fr>
+	<name_jp>龍骨弓Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Dragonbone Bow III</name>
+	<name_fr>Arc draconique III</name_fr>
+	<name_jp>龍骨弓Ⅲ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Bow I</name>
+	<name_fr>Arc sombracier</name_fr>
+	<name_jp>黒鋼の弓Ⅰ</name_jp>
+</translation>
+<translation>
+	<name>Blacksteel Bow II</name>
+	<name_fr>Arc sombracier II</name_fr>
+	<name_jp>黒鋼の弓Ⅱ</name_jp>
+</translation>
+<translation>
+	<name>Icesteel Bow</name>
+	<name_fr>Arc inexorable</name_fr>
+	<name_jp>鋼氷馬弓</name_jp>
+</translation>
+<translation>
+	<name>Daora's Sagittarii</name>
+	<name_fr>Sagittarii Daora</name_fr>
+	<name_jp>アルナス＝ダオラ</name_jp>
+</translation>
+<translation>
+	<name>Xeno Metora</name>
+	<name_fr>Xeno Metora</name_fr>
+	<name_jp>ゼノ＝メートラ</name_jp>
+</translation>
+<translation>
+	<name>Cross Hunter's Bow</name>
+	<name_fr>Arc du traqueur</name_fr>
+	<name_jp>クロスハンターボウ</name_jp>
+</translation>
+<translation>
+	<name>Great Hunter's Bow</name>
+	<name_fr>Grand arc de chasseur</name_fr>
+	<name_jp>グレイトハンターボウ</name_jp>
+</translation>
+</data>
