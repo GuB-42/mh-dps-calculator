@@ -893,14 +893,14 @@
 	<buff_group id="demondrug">
 		<buff>
 			<name>Demondrug</name>
-			<attack_multiplier>1.03</attack_multiplier>
+			<attack_plus>5</attack_plus>
 		</buff>
 	</buff_group>
 
 	<buff_group id="mega_demondrug">
 		<buff>
 			<name>Mega Demondrug</name>
-			<attack_multiplier>1.04</attack_multiplier>
+			<attack_plus>7</attack_plus>
 		</buff>
 	</buff_group>
 
@@ -908,7 +908,7 @@
 		<buff>
 			<name>Might Seed</name>
 			<might_seed_use>
-				<attack_multiplier>1.06</attack_multiplier>
+				<attack_plus>10</attack_plus>
 			</might_seed_use>
 		</buff>
 	</buff_group>
@@ -917,7 +917,7 @@
 		<buff>
 			<name>Demon Powder</name>
 			<demon_powder_use>
-				<attack_multiplier>1.09</attack_multiplier>
+				<attack_plus>10</attack_plus>
 			</demon_powder_use>
 		</buff>
 	</buff_group>
@@ -926,26 +926,26 @@
 		<buff>
 			<name>Might Pill</name>
 			<might_pill_use>
-				<attack_multiplier>1.13</attack_multiplier>
+				<attack_plus>25</attack_plus>
 			</might_pill_use>
 		</buff>
 	</buff_group>
 
-	<buff_group id="attack_up">
+	<buff_group id="meal_attack_up">
 		<buff>
 			<name>Attack Up (S)</name>
 			<level>1</level>
-			<attack_multiplier>1.03</attack_multiplier>
+			<attack_plus>5</attack_plus>
 		</buff>
 		<buff>
 			<name>Attack Up (M)</name>
 			<level>2</level>
-			<attack_multiplier>1.06</attack_multiplier>
+			<attack_plus>10</attack_plus>
 		</buff>
 		<buff>
 			<name>Attack Up (L)</name>
 			<level>3</level>
-			<attack_multiplier>1.08</attack_multiplier>
+			<attack_plus>15</attack_plus>
 		</buff>
 	</buff_group>
 
