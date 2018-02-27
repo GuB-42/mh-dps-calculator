@@ -11,6 +11,7 @@ my $xml_writer;
 
 my @data_row = ();
 my $weapon_type = "";
+my $name_key = "name";
 my %sharpness = ();
 my @slots = ();
 
@@ -24,7 +25,7 @@ sub process_data_row {
 		$name =~ s/\s*\(creatable\)//;
 		$creatable = 1;
 	}
-	$xml_writer->dataElement("name", $name);
+	$xml_writer->dataElement($name_key, $name);
 
 	$xml_writer->dataElement("inflated_attack", $data_row[1]);
 	$xml_writer->dataElement("attack", $data_row[2]);
@@ -37,7 +38,7 @@ sub process_data_row {
 	}
 
 	my $has_element = 0;
-	while ($data_row[3] =~ /(\d+)\s+(\w+)/g) {
+	while ($data_row[3] =~ /(\d+)\s+([a-zA-Z]+)/g) {
 		my %elt_map = (
 			"Water" => "water",
 			"Fire" => "fire",
@@ -198,6 +199,11 @@ for my $file (@ARGV) {
 	$weapon_type =~ s/.*\///;
 	$weapon_type =~ s/-/_/g;
 	$weapon_type = "sword_and_shield" if ($weapon_type eq "sword");
+	if ($file =~ /\/(\w\w)\//) {
+		$name_key = "name_$1";
+	} else {
+		$name_key = "name";
+	}
 	my $p = HTML::Parser->new(api_version => 3,
 	                          start_h => [ \&start, "self, tagname, attr, attrseq, text" ],
 	                          end_h => [ \&end, "self, tagname, text" ],
