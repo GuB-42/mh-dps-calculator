@@ -6,21 +6,21 @@
 		<sharpness_use>75</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
-			<period>10.0</period>
-			<cut>1.0</cut>
-			<impact>0.1</impact>
+			<period>150.0</period>
+			<cut>30</cut>
+			<impact>2</impact>
 			<piercing>0</piercing>
-			<element>3.0</element>
+			<element>80</element>
 			<stun>0</stun>
 			<exhaust>0</exhaust>
 			<sharpness_multiplier>1</sharpness_multiplier>
-			<phial_impact_attack>0.1</phial_impact_attack>
-			<phial_impact_stun>10</phial_impact_stun>
-			<phial_impact_exhaust>10</phial_impact_exhaust>
-			<phial_element_attack>1</phial_element_attack>
+			<phial_impact_attack>9</phial_impact_attack>
+			<phial_impact_stun>29</phial_impact_stun>
+			<phial_impact_exhaust>29</phial_impact_exhaust>
+			<phial_element_attack>42</phial_element_attack>
 			<phial_ratio>0</phial_ratio>
-			<draw_attack_ratio>0.5</draw_attack_ratio>
-			<airborne_ratio>0.2</airborne_ratio>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.01</airborne_ratio>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
@@ -64,7 +64,7 @@
 			<phial_element_attack>0</phial_element_attack>
 			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.5</draw_attack_ratio>
-			<airborne_ratio>0.2</airborne_ratio>
+			<airborne_ratio>0.05</airborne_ratio>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
@@ -86,7 +86,29 @@
 			<phial_element_attack>0</phial_element_attack>
 			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.1</draw_attack_ratio>
-			<airborne_ratio>0.2</airborne_ratio>
+			<airborne_ratio>0.05</airborne_ratio>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Insect Glaive</name>
+		<type>insect_glaive</type>
+		<sharpness_use>100</sharpness_use>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>1</cut>
+			<impact>0</impact>
+			<piercing>0</piercing>
+			<element>5</element>
+			<stun>0</stun>
+			<exhaust>0</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<phial_impact_attack>0</phial_impact_attack>
+			<phial_impact_stun>0</phial_impact_stun>
+			<phial_element_attack>0</phial_element_attack>
+			<phial_ratio>0</phial_ratio>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.5</airborne_ratio>
 		</pattern>
 	</weapon_profile>
 </data>

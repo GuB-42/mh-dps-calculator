@@ -1,5 +1,21 @@
 <data>
 
+<item id="powercharm">
+	<type>inventory_item</type>
+	<name>Powercharm</name>
+	<buff_refs>
+		<buff_ref id="powercharm"/>
+	</buff_refs>
+</item>
+
+<item id="powertalon">
+	<type>inventory_item</type>
+	<name>Powertalon</name>
+	<buff_refs>
+		<buff_ref id="powertalon"/>
+	</buff_refs>
+</item>
+
 <item id="attack_boost_jewel">
 	<type>decoration</type>
 	<name>Attack Boost Jewel</name>

@@ -809,7 +809,7 @@ for my $profile (@{$data->{"profiles"}}) {
 		my $useful_buffs = get_useful_buff_groups($data->{"buff_group_map"}, $weapon);
 		my @ilist = ();
 		my @slots = (sort { $a <=> $b } @{$weapon->{"slots"}});
-		make_decoration_list(\@ilist, $data->{"items"}, $useful_buffs, \@slots);
+		make_decoration_list(\@ilist, $data->{"items"}, $useful_buffs, \@slots, {});
 		my @blist = ();
 		for my $v (@ilist) {
 			my $elt = {
