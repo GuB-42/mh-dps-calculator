@@ -282,8 +282,8 @@ sub compute_buffed_weapon
 	};
 
 	$buffed_weapon->{"affinity"} += $buff_data->{"affinity_plus"};
-	$buffed_weapon->{"attack"} += $buff_data->{"attack_plus"};
 	$buffed_weapon->{"attack"} *= $buff_data->{"attack_multiplier"};
+	$buffed_weapon->{"attack"} += $buff_data->{"attack_plus"};
 
 	my $sharpness_use = $profile->{"sharpness_use"};
 	$sharpness_use = $profile->{"sharpness_use"} if (defined $profile->{"sharpness_use"});
