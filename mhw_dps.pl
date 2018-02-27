@@ -17,8 +17,8 @@ $Data::Dumper::Sortkeys = 1;
 # elemental crit adjustment (M:1.2/L:?/XL:1.35)
 
 my $constants = {
-	"raw_sharpness_multipilers" => [ 0.5, 0.75, 1.0, 1.05, 1.2, 1.32, 1.44 ],
-	"element_sharpness_multipilers" => [ 0.25, 0.5, 0.75, 1.0, 1.0625, 1.125, 1.2 ],
+	"raw_sharpness_multipliers" => [ 0.5, 0.75, 1.0, 1.05, 1.2, 1.32, 1.44 ],
+	"element_sharpness_multipliers" => [ 0.25, 0.5, 0.75, 1.0, 1.0625, 1.125, 1.2 ],
 	"raw_critical_hit_multiplier" => 1.25,
 	"element_critical_hit_multiplier" => 1.0,
 	"status_critical_hit_multiplier" => 1.0,
@@ -302,17 +302,17 @@ sub compute_buffed_weapon
 	$buffed_weapon->{"sharp"} =
 		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
 		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
-		                $constants->{"raw_sharpness_multipilers"});
+		                $constants->{"raw_sharpness_multipliers"});
 	$buffed_weapon->{"esharp"} =
 		get_sharp_bonus($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
 		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
-		                $constants->{"element_sharpness_multipilers"});
+		                $constants->{"element_sharpness_multipliers"});
 
 	if ($buff_data->{"minds_eye"} < 1.0) {
 		$buffed_weapon->{"bounce_sharpness"} =
 			get_sharp_bonus_array($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
 			                      $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
-			                      $constants->{"raw_sharpness_multipilers"});
+			                      $constants->{"raw_sharpness_multipliers"});
 		if ($buff_data->{"minds_eye"} > 0.0) {
 			for my $v (@{$buffed_weapon->{"bounce_sharpness"}}) {
 				$v->[1] *= 1.0 - $buff_data->{"minds_eye"};
