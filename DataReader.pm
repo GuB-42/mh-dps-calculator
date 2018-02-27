@@ -221,16 +221,17 @@ sub process_val
 	if ($xml_stack[0] eq "weapon") {
 		push @{$output_data->{"weapons"}}, $cur_weapon;
 	} elsif ($xml_stack[1] eq "weapon") {
-		if ($xml_stack[0] eq "name" ||
-		    $xml_stack[0] eq "type" ||
-		    $xml_stack[0] eq "attack" ||
-		    $xml_stack[0] eq "rare" ||
-		    $xml_stack[0] eq "affinity") {
-			$cur_weapon->{$xml_stack[0]} = $val;
+		if ($xml_stack[0] eq "element" ||
+		    $xml_stack[0] eq "sharpness" ||
+		    $xml_stack[0] eq "phial" ||
+		    $xml_stack[0] eq "slots") {
+		    ; #do nothing
 		} elsif ($xml_stack[0] eq "awakened") {
 			if (lc($val) eq "true" || $val >= 1) {
 				$cur_weapon->{"awakened"} = 1;
 			}
+		} else {
+			$cur_weapon->{$xml_stack[0]} = $val;
 		}
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "element") {
 		if (defined $element_codes{$xml_stack[0]}) {
@@ -241,6 +242,8 @@ sub process_val
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "sharpness") {
 		if (defined $sharpness_levels{$xml_stack[0]}) {
 			$cur_weapon->{"sharpness"}[$sharpness_levels{$xml_stack[0]}] = $val;
+		} elsif ($xml_stack[0] eq "plus") {
+			$cur_weapon->{"sharpness_plus"} = $val;
 		}
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "phial") {
 		if ($xml_stack[0] eq "impact" ||
