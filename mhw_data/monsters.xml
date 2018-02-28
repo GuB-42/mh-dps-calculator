@@ -6,30 +6,30 @@
     <monster>
         <name>Anjanath</name>
         <part>
+            <name>Nose</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>75</impact>
+                <bullet>90</bullet>
+                <fire>0</fire>
+                <water>30</water>
+                <thunder>15</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
             <name>Head</name>
             <hit_data>
                 <cut>70</cut>
                 <impact>70</impact>
-                <bullet>50</bullet>
+                <bullet>65</bullet>
                 <fire>0</fire>
                 <water>25</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
                 <dragon>5</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Nose</name>
-            <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
-                <fire>0</fire>
-                <water>25</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
-                <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -40,10 +40,24 @@
                 <impact>30</impact>
                 <bullet>10</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>5</thunder>
                 <ice>15</ice>
                 <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>45</impact>
+                <bullet>90</bullet>
+                <fire>0</fire>
+                <water>30</water>
+                <thunder>15</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -52,26 +66,12 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>40</bullet>
+                <bullet>45</bullet>
                 <fire>0</fire>
                 <water>15</water>
                 <thunder>5</thunder>
                 <ice>10</ice>
                 <dragon>0</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Wings</name>
-            <hit_data>
-                <cut>70</cut>
-                <impact>40</impact>
-                <bullet>70</bullet>
-                <fire>0</fire>
-                <water>25</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
-                <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -92,9 +92,9 @@
         <part>
             <name>Left Leg (Wounded)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>50</bullet>
                 <fire>0</fire>
                 <water>15</water>
                 <thunder>5</thunder>
@@ -120,9 +120,9 @@
         <part>
             <name>Right Leg (Wounded)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>50</bullet>
                 <fire>0</fire>
                 <water>15</water>
                 <thunder>5</thunder>
@@ -134,11 +134,11 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>70</bullet>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>75</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
                 <dragon>5</dragon>
@@ -154,6 +154,146 @@
     </monster>
     <monster>
         <name>Azure Rathalos</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>65</impact>
+                <bullet>55</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>15</thunder>
+                <ice>20</ice>
+                <dragon>30</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>35</impact>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>22</cut>
+                <impact>22</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>22</cut>
+                <impact>22</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Left Wing</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Right Wing</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Left Leg</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Right Leg</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Barnos</name>
@@ -163,10 +303,10 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>22</cut>
+                <impact>25</impact>
                 <bullet>10</bullet>
-                <fire>15</fire>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
@@ -178,10 +318,10 @@
             <name>Head (Mud)</name>
             <hit_data>
                 <cut>20</cut>
-                <impact>30</impact>
-                <bullet>10</bullet>
+                <impact>24</impact>
+                <bullet>9</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>80</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -191,10 +331,10 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
-                <fire>15</fire>
+                <cut>46</cut>
+                <impact>46</impact>
+                <bullet>50</bullet>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
@@ -205,11 +345,11 @@
         <part>
             <name>Body (Mud)</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>24</cut>
+                <impact>24</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>80</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -219,10 +359,10 @@
         <part>
             <name>Forearms</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
-                <fire>25</fire>
+                <cut>80</cut>
+                <impact>85</impact>
+                <bullet>75</bullet>
+                <fire>30</fire>
                 <water>0</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
@@ -233,11 +373,11 @@
         <part>
             <name>Forearms (Mud)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>38</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>80</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -248,9 +388,9 @@
             <name>Left Hindleg</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>30</bullet>
-                <fire>15</fire>
+                <impact>35</impact>
+                <bullet>25</bullet>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
@@ -261,11 +401,11 @@
         <part>
             <name>Left Hindleg (Mud)</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>24</cut>
+                <impact>24</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>80</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -276,9 +416,9 @@
             <name>Right Hindleg</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>30</bullet>
-                <fire>15</fire>
+                <impact>35</impact>
+                <bullet>25</bullet>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
@@ -289,11 +429,11 @@
         <part>
             <name>Right Hindleg (Mud)</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>24</cut>
+                <impact>24</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>80</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -303,8 +443,8 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
+                <cut>55</cut>
+                <impact>50</impact>
                 <bullet>40</bullet>
                 <fire>25</fire>
                 <water>0</water>
@@ -317,11 +457,11 @@
         <part>
             <name>Tail (Mud)</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
-                <bullet>30</bullet>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>22</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>80</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -331,36 +471,274 @@
     </monster>
     <monster>
         <name>Bazelgeuse</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>85</impact>
+                <bullet>60</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>25</thunder>
+                <ice>20</ice>
+                <dragon>20</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>35</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Legs</name>
+            <hit_data>
+                <cut>36</cut>
+                <impact>34</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>65</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>75</cut>
+                <impact>70</impact>
+                <bullet>55</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>20</thunder>
+                <ice>15</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Black Diablos</name>
-    </monster>
-    <monster>
-        <name>Diablos</name>
         <part>
             <name>Horn</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>40</impact>
-                <bullet>20</bullet>
+                <cut>19</cut>
+                <impact>37</impact>
+                <bullet>15</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>25</ice>
-                <dragon>15</dragon>
+                <dragon>0</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
         <part>
             <name>Head</name>
             <hit_data>
+                <cut>43</cut>
+                <impact>55</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>25</water>
+                <thunder>10</thunder>
+                <ice>30</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
                 <cut>40</cut>
-                <impact>50</impact>
+                <impact>40</impact>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>5</thunder>
+                <ice>20</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Stomach</name>
+            <hit_data>
+                <cut>63</cut>
+                <impact>68</impact>
+                <bullet>35</bullet>
+                <fire>0</fire>
+                <water>30</water>
+                <thunder>10</thunder>
+                <ice>35</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>24</cut>
+                <impact>42</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>10</thunder>
+                <ice>25</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Left Wing</name>
+            <hit_data>
+                <cut>40</cut>
+                <impact>30</impact>
+                <bullet>60</bullet>
+                <fire>0</fire>
+                <water>25</water>
+                <thunder>10</thunder>
+                <ice>30</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Right Wing</name>
+            <hit_data>
+                <cut>40</cut>
+                <impact>30</impact>
+                <bullet>60</bullet>
+                <fire>0</fire>
+                <water>25</water>
+                <thunder>10</thunder>
+                <ice>30</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Left Leg</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Right Leg</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>24</impact>
+                <bullet>45</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>24</impact>
+                <bullet>10</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>10</thunder>
+                <ice>25</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+    </monster>
+    <monster>
+        <name>Diablos</name>
+        <part>
+            <name>Horn</name>
+            <hit_data>
+                <cut>21</cut>
+                <impact>42</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>10</thunder>
+                <ice>25</ice>
+                <dragon>20</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>63</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>25</water>
                 <thunder>10</thunder>
-                <ice>25</ice>
+                <ice>30</ice>
                 <dragon>25</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -370,11 +748,11 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>15</water>
                 <thunder>5</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -382,28 +760,28 @@
         <part>
             <name>Stomach</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
+                <cut>73</cut>
+                <impact>78</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>30</water>
                 <thunder>10</thunder>
-                <ice>25</ice>
-                <dragon>25</dragon>
+                <ice>35</ice>
+                <dragon>30</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>24</cut>
+                <impact>42</impact>
+                <bullet>35</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>25</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -412,11 +790,11 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
-                <bullet>50</bullet>
+                <bullet>60</bullet>
                 <fire>0</fire>
                 <water>25</water>
                 <thunder>10</thunder>
-                <ice>25</ice>
+                <ice>30</ice>
                 <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -426,11 +804,11 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
-                <bullet>50</bullet>
+                <bullet>60</bullet>
                 <fire>0</fire>
                 <water>25</water>
                 <thunder>10</thunder>
-                <ice>25</ice>
+                <ice>30</ice>
                 <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -438,9 +816,9 @@
         <part>
             <name>Left Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>5</thunder>
@@ -452,9 +830,9 @@
         <part>
             <name>Right Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>5</thunder>
@@ -466,34 +844,188 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>30</impact>
-                <bullet>40</bullet>
+                <cut>50</cut>
+                <impact>24</impact>
+                <bullet>45</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Tail Tip</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>23</cut>
+                <impact>33</impact>
                 <bullet>10</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>25</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
     </monster>
     <monster>
         <name>Dodogama</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Rock 1)</name>
+            <hit_data>
+                <cut>75</cut>
+                <impact>75</impact>
+                <bullet>65</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Rock 2)</name>
+            <hit_data>
+                <cut>100</cut>
+                <impact>100</impact>
+                <bullet>90</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>25</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck (Rock 1)</name>
+            <hit_data>
+                <cut>65</cut>
+                <impact>65</impact>
+                <bullet>55</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>25</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck (Rock 2)</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>80</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>25</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Gajalaka</name>
@@ -512,13 +1044,13 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>80</cut>
+                <impact>85</impact>
+                <bullet>75</bullet>
                 <fire>15</fire>
-                <water>25</water>
+                <water>30</water>
                 <thunder>0</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -527,10 +1059,10 @@
             <name>Neck</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <impact>45</impact>
+                <bullet>35</bullet>
                 <fire>5</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
@@ -540,22 +1072,22 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
-                <fire>5</fire>
+                <fire>0</fire>
                 <water>15</water>
                 <thunder>0</thunder>
-                <ice>10</ice>
-                <dragon>5</dragon>
-                <stun>100</stun>
+                <ice>5</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>15</water>
@@ -568,9 +1100,9 @@
         <part>
             <name>Left Foreleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>10</fire>
                 <water>25</water>
                 <thunder>0</thunder>
@@ -582,9 +1114,9 @@
         <part>
             <name>Right Foreleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>10</fire>
                 <water>25</water>
                 <thunder>0</thunder>
@@ -598,7 +1130,7 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>15</water>
                 <thunder>0</thunder>
@@ -612,7 +1144,7 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>15</water>
                 <thunder>0</thunder>
@@ -624,11 +1156,11 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>5</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
@@ -641,12 +1173,12 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
-                <fire>25</fire>
+                <cut>80</cut>
+                <impact>85</impact>
+                <bullet>75</bullet>
+                <fire>30</fire>
                 <water>0</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
                 <stun>100</stun>
@@ -655,10 +1187,10 @@
         <part>
             <name>Neck</name>
             <hit_data>
-                <cut>50</cut>
+                <cut>65</cut>
                 <impact>70</impact>
-                <bullet>50</bullet>
-                <fire>15</fire>
+                <bullet>60</bullet>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
@@ -669,10 +1201,10 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
-                <fire>15</fire>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
@@ -681,11 +1213,25 @@
             </hit_data>
         </part>
         <part>
+            <name>Stomach (Inflated)</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>95</impact>
+                <bullet>85</bullet>
+                <fire>30</fire>
+                <water>0</water>
+                <thunder>20</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
             <name>Back</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -695,25 +1241,11 @@
             </hit_data>
         </part>
         <part>
-            <name>Stomach (Inflated)</name>
-            <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
-                <fire>25</fire>
-                <water>0</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
             <name>Left Foreleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>50</bullet>
+                <cut>65</cut>
+                <impact>60</impact>
+                <bullet>55</bullet>
                 <fire>25</fire>
                 <water>0</water>
                 <thunder>15</thunder>
@@ -725,9 +1257,9 @@
         <part>
             <name>Right Foreleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>50</bullet>
+                <cut>65</cut>
+                <impact>60</impact>
+                <bullet>55</bullet>
                 <fire>25</fire>
                 <water>0</water>
                 <thunder>15</thunder>
@@ -739,9 +1271,9 @@
         <part>
             <name>Left Hindleg</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -753,9 +1285,9 @@
         <part>
             <name>Right Hindleg</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -767,8 +1299,8 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>45</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>15</fire>
                 <water>0</water>
@@ -793,9 +1325,9 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>50</bullet>
+                <cut>63</cut>
+                <impact>63</impact>
+                <bullet>63</bullet>
                 <fire>5</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -805,24 +1337,10 @@
             </hit_data>
         </part>
         <part>
-            <name>Neck</name>
-            <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
-                <fire>5</fire>
-                <water>0</water>
-                <thunder>10</thunder>
-                <ice>5</ice>
-                <dragon>5</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
             <name>Head (Mud)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>50</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>25</water>
@@ -833,11 +1351,25 @@
             </hit_data>
         </part>
         <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>43</cut>
+                <impact>43</impact>
+                <bullet>43</bullet>
+                <fire>5</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
                 <fire>10</fire>
                 <water>0</water>
                 <thunder>25</thunder>
@@ -847,11 +1379,25 @@
             </hit_data>
         </part>
         <part>
-            <name>Back</name>
+            <name>Body (Mud)</name>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>25</water>
+                <thunder>0</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
                 <fire>5</fire>
                 <water>0</water>
                 <thunder>15</thunder>
@@ -863,26 +1409,12 @@
         <part>
             <name>Fin</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
-                <bullet>30</bullet>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
                 <fire>10</fire>
                 <water>0</water>
-                <thunder>15</thunder>
-                <ice>5</ice>
-                <dragon>5</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body (Mud)</name>
-            <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
-                <bullet>30</bullet>
-                <fire>0</fire>
-                <water>25</water>
-                <thunder>0</thunder>
+                <thunder>20</thunder>
                 <ice>5</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
@@ -893,10 +1425,10 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>15</fire>
                 <water>0</water>
-                <thunder>25</thunder>
+                <thunder>30</thunder>
                 <ice>5</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
@@ -905,8 +1437,8 @@
         <part>
             <name>Left Leg (Mud)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>25</water>
@@ -921,10 +1453,10 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>15</fire>
                 <water>0</water>
-                <thunder>25</thunder>
+                <thunder>30</thunder>
                 <ice>5</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
@@ -933,8 +1465,8 @@
         <part>
             <name>Right Leg (Mud)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>25</water>
@@ -947,9 +1479,9 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>5</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -961,8 +1493,8 @@
         <part>
             <name>Tail (Mud)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>50</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>25</water>
@@ -984,13 +1516,13 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>55</impact>
+                <bullet>45</bullet>
                 <fire>25</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -998,10 +1530,10 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
-                <bullet>30</bullet>
-                <fire>15</fire>
+                <cut>31</cut>
+                <impact>31</impact>
+                <bullet>22</bullet>
+                <fire>20</fire>
                 <water>15</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
@@ -1026,10 +1558,10 @@
         <part>
             <name>Lower Body</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>29</cut>
+                <impact>29</impact>
                 <bullet>20</bullet>
-                <fire>15</fire>
+                <fire>20</fire>
                 <water>15</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
@@ -1052,16 +1584,17 @@
             </hit_data>
         </part>
     </monster>
+    <monster></monster>
     <monster>
         <name>Kulu-Ya-Ku</name>
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>85</cut>
+                <impact>85</impact>
+                <bullet>75</bullet>
                 <fire>15</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>15</thunder>
                 <ice>15</ice>
                 <dragon>15</dragon>
@@ -1071,11 +1604,11 @@
         <part>
             <name>Forearms</name>
             <hit_data>
-                <cut>50</cut>
+                <cut>65</cut>
                 <impact>70</impact>
-                <bullet>50</bullet>
+                <bullet>55</bullet>
                 <fire>15</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>15</thunder>
                 <ice>15</ice>
                 <dragon>15</dragon>
@@ -1085,11 +1618,11 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>45</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>15</fire>
-                <water>15</water>
+                <water>2</water>
                 <thunder>15</thunder>
                 <ice>15</ice>
                 <dragon>15</dragon>
@@ -1099,11 +1632,11 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>35</bullet>
                 <fire>15</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>15</thunder>
                 <ice>15</ice>
                 <dragon>15</dragon>
@@ -1113,11 +1646,11 @@
         <part>
             <name>Rock</name>
             <hit_data>
-                <cut>10</cut>
-                <impact>10</impact>
-                <bullet>10</bullet>
+                <cut>5</cut>
+                <impact>5</impact>
+                <bullet>5</bullet>
                 <fire>5</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>5</thunder>
                 <ice>5</ice>
                 <dragon>5</dragon>
@@ -1127,19 +1660,271 @@
     </monster>
     <monster>
         <name>Kushala Daora</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>40</cut>
+                <impact>35</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>50</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>30</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>50</impact>
+                <bullet>30</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>15</impact>
+                <bullet>20</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>30</impact>
+                <bullet>55</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Lavasioth</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>15</cut>
+                <impact>20</impact>
+                <bullet>15</bullet>
+                <fire>50</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Wounded)</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>40</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>35</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>15</cut>
+                <impact>15</impact>
+                <bullet>15</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>20</impact>
+                <bullet>20</bullet>
+                <fire>10</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back (Wounded)</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>30</water>
+                <thunder>20</thunder>
+                <ice>20</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Fins</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>30</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Legs</name>
+            <hit_data>
+                <cut>15</cut>
+                <impact>15</impact>
+                <bullet>15</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Legs (Wounded)</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>30</bullet>
+                <fire>5</fire>
+                <water>25</water>
+                <thunder>5</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>15</impact>
+                <bullet>20</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Legiana</name>
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
+                <cut>65</cut>
                 <impact>70</impact>
-                <bullet>50</bullet>
-                <fire>15</fire>
+                <bullet>60</bullet>
+                <fire>20</fire>
                 <water>15</water>
                 <thunder>25</thunder>
                 <ice>0</ice>
@@ -1150,7 +1935,7 @@
         <part>
             <name>Neck</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>35</cut>
                 <impact>40</impact>
                 <bullet>30</bullet>
                 <fire>10</fire>
@@ -1164,8 +1949,8 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>10</fire>
                 <water>5</water>
@@ -1178,8 +1963,8 @@
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>10</fire>
                 <water>5</water>
@@ -1192,12 +1977,12 @@
         <part>
             <name>Left Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>15</fire>
                 <water>10</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>0</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
@@ -1206,12 +1991,12 @@
         <part>
             <name>Right Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>15</fire>
                 <water>10</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>0</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
@@ -1220,8 +2005,8 @@
         <part>
             <name>Left Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>5</fire>
                 <water>0</water>
@@ -1234,8 +2019,8 @@
         <part>
             <name>Right Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>5</fire>
                 <water>0</water>
@@ -1248,9 +2033,9 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>10</fire>
                 <water>5</water>
                 <thunder>15</thunder>
@@ -1268,6 +2053,314 @@
     </monster>
     <monster>
         <name>Nergigante</name>
+        <part>
+            <name>Horn</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>15</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Horn (Wounded)</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>40</impact>
+                <bullet>45</bullet>
+                <fire>5</fire>
+                <water>15</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>60</impact>
+                <bullet>40</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (White)</name>
+            <hit_data>
+                <cut>75</cut>
+                <impact>90</impact>
+                <bullet>70</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Black)</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>20</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Gloss Black)</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>20</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>30</impact>
+                <bullet>35</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>35</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forearms</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forearms (White)</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>60</impact>
+                <bullet>55</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forearms (Black)</name>
+            <hit_data>
+                <cut>10</cut>
+                <impact>15</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forearms (Gloss Black)</name>
+            <hit_data>
+                <cut>10</cut>
+                <impact>15</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>30</impact>
+                <bullet>35</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>40</cut>
+                <impact>30</impact>
+                <bullet>30</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings (White)</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings (Black)</name>
+            <hit_data>
+                <cut>28</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings (Gloss Black)</name>
+            <hit_data>
+                <cut>28</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>45</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>35</impact>
+                <bullet>25</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip (White)</name>
+            <hit_data>
+                <cut>65</cut>
+                <impact>55</impact>
+                <bullet>40</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip (Black)</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>20</impact>
+                <bullet>10</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip (Gloss Black)</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>20</impact>
+                <bullet>10</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Noios</name>
@@ -1278,12 +2371,12 @@
             <name>Head</name>
             <hit_data>
                 <cut>70</cut>
-                <impact>70</impact>
-                <bullet>50</bullet>
+                <impact>75</impact>
+                <bullet>65</bullet>
                 <fire>10</fire>
                 <water>15</water>
-                <thunder>15</thunder>
-                <ice>25</ice>
+                <thunder>20</thunder>
+                <ice>30</ice>
                 <dragon>0</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -1292,12 +2385,12 @@
             <name>Neck</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <impact>45</impact>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>0</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -1307,7 +2400,7 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -1321,7 +2414,7 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -1333,9 +2426,9 @@
         <part>
             <name>Left Foreleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>5</fire>
                 <water>10</water>
                 <thunder>15</thunder>
@@ -1347,9 +2440,9 @@
         <part>
             <name>Right Foreleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>5</fire>
                 <water>10</water>
                 <thunder>15</thunder>
@@ -1361,9 +2454,9 @@
         <part>
             <name>Left Hindleg</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>5</fire>
                 <water>10</water>
                 <thunder>15</thunder>
@@ -1375,9 +2468,9 @@
         <part>
             <name>Right Hindleg</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>5</fire>
                 <water>10</water>
                 <thunder>15</thunder>
@@ -1389,13 +2482,13 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>5</fire>
                 <water>5</water>
                 <thunder>10</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -1406,9 +2499,9 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>55</impact>
+                <bullet>45</bullet>
                 <fire>25</fire>
                 <water>0</water>
                 <thunder>15</thunder>
@@ -1423,7 +2516,7 @@
                 <cut>40</cut>
                 <impact>40</impact>
                 <bullet>30</bullet>
-                <fire>15</fire>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>15</thunder>
                 <ice>10</ice>
@@ -1434,9 +2527,9 @@
         <part>
             <name>Neck Pouch</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>50</bullet>
+                <cut>75</cut>
+                <impact>75</impact>
+                <bullet>60</bullet>
                 <fire>25</fire>
                 <water>0</water>
                 <thunder>15</thunder>
@@ -1448,9 +2541,9 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>46</cut>
+                <impact>46</impact>
+                <bullet>42</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -1463,8 +2556,8 @@
             <name>Left Leg</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>30</bullet>
+                <impact>35</impact>
+                <bullet>25</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -1477,8 +2570,8 @@
             <name>Right Leg</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>30</bullet>
+                <impact>35</impact>
+                <bullet>25</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -1490,9 +2583,9 @@
         <part>
             <name>Left Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>45</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -1504,9 +2597,9 @@
         <part>
             <name>Right Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>45</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>10</thunder>
@@ -1518,10 +2611,10 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
-                <bullet>20</bullet>
-                <fire>15</fire>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>20</fire>
                 <water>0</water>
                 <thunder>15</thunder>
                 <ice>10</ice>
@@ -1535,14 +2628,14 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>50</bullet>
+                <cut>60</cut>
+                <impact>65</impact>
+                <bullet>55</bullet>
                 <fire>0</fire>
                 <water>15</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>15</ice>
-                <dragon>25</dragon>
+                <dragon>30</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -1550,8 +2643,8 @@
             <name>Neck</name>
             <hit_data>
                 <cut>30</cut>
-                <impact>40</impact>
-                <bullet>30</bullet>
+                <impact>35</impact>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -1563,36 +2656,36 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>22</cut>
+                <impact>22</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>0</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>22</cut>
+                <impact>22</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>0</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -1605,8 +2698,8 @@
         <part>
             <name>Right Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -1621,7 +2714,7 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -1635,7 +2728,7 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -1648,27 +2741,27 @@
             <name>Tail</name>
             <hit_data>
                 <cut>20</cut>
-                <impact>30</impact>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Tail Tip</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -1678,13 +2771,13 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
+                <cut>75</cut>
+                <impact>80</impact>
                 <bullet>70</bullet>
                 <fire>15</fire>
                 <water>0</water>
-                <thunder>25</thunder>
-                <ice>15</ice>
+                <thunder>30</thunder>
+                <ice>20</ice>
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -1692,9 +2785,9 @@
         <part>
             <name>Tongue</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>75</bullet>
                 <fire>15</fire>
                 <water>0</water>
                 <thunder>25</thunder>
@@ -1707,11 +2800,11 @@
             <name>Neck</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>5</fire>
                 <water>0</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
@@ -1720,22 +2813,22 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
-                <water>0</water>
-                <thunder>15</thunder>
-                <ice>5</ice>
-                <dragon>5</dragon>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>10</fire>
                 <water>0</water>
@@ -1748,8 +2841,8 @@
         <part>
             <name>Right Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>10</fire>
                 <water>0</water>
@@ -1762,8 +2855,8 @@
         <part>
             <name>Left Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>45</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>0</water>
@@ -1776,8 +2869,8 @@
         <part>
             <name>Right Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>45</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>0</water>
@@ -1790,9 +2883,9 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>10</fire>
                 <water>0</water>
                 <thunder>25</thunder>
@@ -1807,14 +2900,28 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>40</bullet>
-                <fire>15</fire>
-                <water>15</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
-                <dragon>25</dragon>
+                <cut>80</cut>
+                <impact>90</impact>
+                <bullet>50</bullet>
+                <fire>20</fire>
+                <water>20</water>
+                <thunder>20</thunder>
+                <ice>20</ice>
+                <dragon>30</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head Bone</name>
+            <hit_data>
+                <cut>24</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>0</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -1823,91 +2930,63 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>10</fire>
                 <water>10</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Head Bone</name>
-            <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
-                <bullet>20</bullet>
-                <fire>0</fire>
-                <water>0</water>
-                <thunder>0</thunder>
-                <ice>0</ice>
-                <dragon>0</dragon>
-                <stun>100</stun>
             </hit_data>
         </part>
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>45</cut>
+                <impact>50</impact>
                 <bullet>30</bullet>
                 <fire>10</fire>
                 <water>10</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Back Bone</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
-                <fire>10</fire>
-                <water>10</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>15</dragon>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Hindleg</name>
             <hit_data>
-                <cut>20</cut>
-                <impact>30</impact>
-                <bullet>20</bullet>
-                <fire>0</fire>
-                <water>0</water>
-                <thunder>0</thunder>
-                <ice>0</ice>
-                <dragon>0</dragon>
+                <cut>55</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Hindleg Bone</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
-                <fire>10</fire>
-                <water>10</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>15</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Right Hindleg</name>
-            <hit_data>
                 <cut>20</cut>
-                <impact>30</impact>
-                <bullet>20</bullet>
+                <impact>25</impact>
+                <bullet>15</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>0</thunder>
@@ -1917,10 +2996,10 @@
             </hit_data>
         </part>
         <part>
-            <name>Right Hindleg Bone</name>
+            <name>Right Hindleg</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
+                <cut>55</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>10</fire>
                 <water>10</water>
@@ -1931,9 +3010,23 @@
             </hit_data>
         </part>
         <part>
+            <name>Right Hindleg Bone</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>30</impact>
                 <bullet>30</bullet>
                 <fire>15</fire>
@@ -1953,64 +3046,64 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
+                <cut>65</cut>
                 <impact>70</impact>
-                <bullet>50</bullet>
+                <bullet>60</bullet>
                 <fire>0</fire>
                 <water>15</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>15</ice>
-                <dragon>25</dragon>
+                <dragon>30</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
         <part>
             <name>Neck</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>35</cut>
                 <impact>40</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -2023,8 +3116,8 @@
         <part>
             <name>Right Wing</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -2037,8 +3130,8 @@
         <part>
             <name>Left Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>0</water>
@@ -2051,8 +3144,8 @@
         <part>
             <name>Right Leg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>0</water>
@@ -2065,14 +3158,14 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2083,13 +3176,13 @@
             <name>Head</name>
             <hit_data>
                 <cut>70</cut>
-                <impact>70</impact>
-                <bullet>50</bullet>
+                <impact>75</impact>
+                <bullet>65</bullet>
                 <fire>0</fire>
                 <water>15</water>
-                <thunder>15</thunder>
+                <thunder>20</thunder>
                 <ice>15</ice>
-                <dragon>25</dragon>
+                <dragon>30</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -2097,8 +3190,8 @@
             <name>Neck</name>
             <hit_data>
                 <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <impact>45</impact>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -2110,37 +3203,37 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>35</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>35</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Wing</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>15</thunder>
@@ -2152,9 +3245,9 @@
         <part>
             <name>Right Wing</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>15</thunder>
@@ -2168,7 +3261,7 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -2182,7 +3275,7 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>5</thunder>
@@ -2194,14 +3287,14 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>40</cut>
+                <cut>45</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>0</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>5</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2211,17 +3304,129 @@
     </monster>
     <monster>
         <name>Teostra</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
+                <fire>0</fire>
+                <water>30</water>
+                <thunder>10</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>33</cut>
+                <impact>38</impact>
+                <bullet>33</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>20</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>20</cut>
+                <impact>20</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs</name>
+            <hit_data>
+                <cut>38</cut>
+                <impact>38</impact>
+                <bullet>33</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>25</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>40</cut>
+                <impact>35</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>25</water>
+                <thunder>10</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>38</cut>
+                <impact>33</impact>
+                <bullet>28</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Tobi-Kadachi</name>
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
                 <fire>10</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
@@ -2231,23 +3436,23 @@
         <part>
             <name>Neck</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
                 <fire>10</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
-                <stun>80</stun>
+                <stun>50</stun>
             </hit_data>
         </part>
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>35</bullet>
                 <fire>5</fire>
                 <water>15</water>
                 <thunder>0</thunder>
@@ -2259,9 +3464,9 @@
         <part>
             <name>Back</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>50</bullet>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>60</bullet>
                 <fire>5</fire>
                 <water>15</water>
                 <thunder>0</thunder>
@@ -2273,9 +3478,9 @@
         <part>
             <name>Left Foreleg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>20</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>15</bullet>
                 <fire>5</fire>
                 <water>15</water>
                 <thunder>0</thunder>
@@ -2287,9 +3492,9 @@
         <part>
             <name>Right Foreleg</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>20</bullet>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>15</bullet>
                 <fire>5</fire>
                 <water>15</water>
                 <thunder>0</thunder>
@@ -2329,13 +3534,13 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
+                <cut>80</cut>
+                <impact>80</impact>
                 <bullet>70</bullet>
-                <fire>15</fire>
-                <water>25</water>
+                <fire>20</fire>
+                <water>30</water>
                 <thunder>0</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -2346,13 +3551,13 @@
         <part>
             <name>Antennae</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>50</impact>
+                <cut>75</cut>
+                <impact>65</impact>
                 <bullet>70</bullet>
                 <fire>15</fire>
                 <water>15</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
+                <thunder>20</thunder>
+                <ice>20</ice>
                 <dragon>15</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -2360,13 +3565,13 @@
         <part>
             <name>Head</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>50</bullet>
+                <cut>65</cut>
+                <impact>55</impact>
+                <bullet>55</bullet>
                 <fire>15</fire>
                 <water>15</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
+                <thunder>20</thunder>
+                <ice>20</ice>
                 <dragon>15</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -2374,13 +3579,13 @@
         <part>
             <name>Forearms</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>45</cut>
+                <impact>60</impact>
+                <bullet>35</bullet>
                 <fire>15</fire>
                 <water>15</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
+                <thunder>20</thunder>
+                <ice>20</ice>
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -2388,14 +3593,14 @@
         <part>
             <name>Body</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>45</cut>
+                <impact>60</impact>
+                <bullet>35</bullet>
                 <fire>15</fire>
                 <water>15</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
-                <dragon>15</dragon>
+                <thunder>20</thunder>
+                <ice>20</ice>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2404,11 +3609,11 @@
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
-                <bullet>40</bullet>
+                <bullet>35</bullet>
                 <fire>15</fire>
                 <water>15</water>
-                <thunder>15</thunder>
-                <ice>15</ice>
+                <thunder>20</thunder>
+                <ice>20</ice>
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -2416,15 +3621,645 @@
     </monster>
     <monster>
         <name>Uragaan</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>80</impact>
+                <bullet>50</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
+                <dragon>20</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Jaw</name>
+            <hit_data>
+                <cut>19</cut>
+                <impact>20</impact>
+                <bullet>10</bullet>
+                <fire>0</fire>
+                <water>40</water>
+                <thunder>5</thunder>
+                <ice>20</ice>
+                <dragon>30</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Jaw (Wounded)</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>60</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>20</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Upper Neck</name>
+            <hit_data>
+                <cut>22</cut>
+                <impact>24</impact>
+                <bullet>10</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Lower Neck</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>30</impact>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
+                <fire>0</fire>
+                <water>30</water>
+                <thunder>5</thunder>
+                <ice>15</ice>
+                <dragon>30</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>22</cut>
+                <impact>24</impact>
+                <bullet>10</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forearms</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>30</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Vaal Hazak</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>40</impact>
+                <bullet>50</bullet>
+                <fire>25</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Wounded)</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>80</impact>
+                <bullet>60</bullet>
+                <fire>25</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>80</impact>
+                <bullet>60</bullet>
+                <fire>25</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Chest</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Stomach</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>40</impact>
+                <bullet>45</bullet>
+                <fire>2</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Stomach (Wounded)</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>70</impact>
+                <bullet>40</bullet>
+                <fire>25</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>20</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Back (Wounded)</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>65</impact>
+                <bullet>40</bullet>
+                <fire>25</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>20</bullet>
+                <fire>5</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>35</bullet>
+                <fire>20</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs (Wounded)</name>
+            <hit_data>
+                <cut>55</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
+                <fire>20</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>24</cut>
+                <impact>23</impact>
+                <bullet>30</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>30</impact>
+                <bullet>30</bullet>
+                <fire>20</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>30</impact>
+                <bullet>50</bullet>
+                <fire>20</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Vespoid</name>
     </monster>
     <monster>
         <name>Xeno'jiiva</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>70</impact>
+                <bullet>55</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Wounded)</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>60</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head (Critical State)</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>100</impact>
+                <bullet>60</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck</name>
+            <hit_data>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>25</bullet>
+                <fire>15</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Neck (Critical State)</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>30</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>15</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body (Critical State)</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>40</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Chest</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>30</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Chest (Critical State)</name>
+            <hit_data>
+                <cut>100</cut>
+                <impact>80</impact>
+                <bullet>70</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs (Wounded)</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Forelegs (Critical State)</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>90</impact>
+                <bullet>60</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs</name>
+            <hit_data>
+                <cut>22</cut>
+                <impact>22</impact>
+                <bullet>15</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Hindlegs (Critical State)</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>40</bullet>
+                <fire>10</fire>
+                <water>20</water>
+                <thunder>20</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>30</bullet>
+                <fire>15</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings (Wounded)</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>40</bullet>
+                <fire>15</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Wings (Critical State)</name>
+            <hit_data>
+                <cut>100</cut>
+                <impact>80</impact>
+                <bullet>50</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail (Critical State)</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>30</bullet>
+                <fire>10</fire>
+                <water>20</water>
+                <thunder>20</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>70</impact>
+                <bullet>45</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Tail Tip (Critical State)</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>60</bullet>
+                <fire>15</fire>
+                <water>30</water>
+                <thunder>30</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
         <name>Zorah Magdaros</name>
@@ -2435,10 +4270,10 @@
                 <impact>40</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2447,7 +4282,7 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>5</thunder>
@@ -2459,13 +4294,13 @@
         <part>
             <name>Chest (Before Wounded)</name>
             <hit_data>
-                <cut>40</cut>
-                <impact>40</impact>
+                <cut>50</cut>
+                <impact>50</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>25</water>
                 <thunder>10</thunder>
-                <ice>15</ice>
+                <ice>20</ice>
                 <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -2473,14 +4308,14 @@
         <part>
             <name>Chest (After Wounded)</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>80</bullet>
                 <fire>0</fire>
-                <water>25</water>
+                <water>30</water>
                 <thunder>15</thunder>
                 <ice>25</ice>
-                <dragon>25</dragon>
+                <dragon>30</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2489,7 +4324,7 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>5</thunder>
@@ -2503,7 +4338,7 @@
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
-                <bullet>30</bullet>
+                <bullet>25</bullet>
                 <fire>0</fire>
                 <water>10</water>
                 <thunder>5</thunder>
@@ -2515,8 +4350,8 @@
         <part>
             <name>Left Hindleg</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -2529,8 +4364,8 @@
         <part>
             <name>Right Hindleg</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -2543,8 +4378,8 @@
         <part>
             <name>Tail</name>
             <hit_data>
-                <cut>30</cut>
-                <impact>30</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
                 <water>10</water>
@@ -2557,9 +4392,9 @@
         <part>
             <name>Shell</name>
             <hit_data>
-                <cut>10</cut>
-                <impact>10</impact>
-                <bullet>10</bullet>
+                <cut>1</cut>
+                <impact>1</impact>
+                <bullet>1</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>0</thunder>
@@ -2571,84 +4406,84 @@
         <part>
             <name>Exhaust Organ (Crater)</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>95</cut>
+                <impact>95</impact>
+                <bullet>90</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Exhaust Organ (Head)</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>95</cut>
+                <impact>95</impact>
+                <bullet>90</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Exhaust Organ (Central)</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>95</cut>
+                <impact>95</impact>
+                <bullet>90</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Exhaust Organ (Rear)</name>
             <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
+                <cut>95</cut>
+                <impact>95</impact>
+                <bullet>90</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Weak Shell</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Right Weak Shell</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>40</bullet>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
                 <fire>0</fire>
-                <water>15</water>
+                <water>20</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
-                <dragon>15</dragon>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
