@@ -1,4 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <data>
+	<buff_group id="poison_resistance">
+		<buff>
+			<name>Poison Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Poison Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Poison Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="paralysis_resistance">
+		<buff>
+			<name>Paralysis Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Paralysis Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Paralysis Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="sleep_resistance">
+		<buff>
+			<name>Sleep Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Sleep Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Sleep Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="stun_resistance">
+		<buff>
+			<name>Stun Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Stun Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Stun Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="muck_resistance">
+		<buff>
+			<name>Muck Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="blast_resistance">
+		<buff>
+			<name>Blast Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Blast Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Blast Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="bleeding_resistance">
+		<buff>
+			<name>Bleeding Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Bleeding Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Bleeding Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="iron_skin">
+		<buff>
+			<name>Iron Skin [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Iron Skin [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Iron Skin [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="earplugs">
+		<buff>
+			<name>Earplugs [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Earplugs [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Earplugs [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Earplugs [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Earplugs [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="windproof">
+		<buff>
+			<name>Windproof [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Windproof [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Windproof [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Windproof [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Windproof [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="tremor_resistance">
+		<buff>
+			<name>Tremor Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Tremor Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Tremor Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="dungmaster">
+		<buff>
+			<name>Dungmaster [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="effluvial_expert">
+		<buff>
+			<name>Effluvial Expert [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="heat_guard">
+		<buff>
+			<name>Heat Guard [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="attack_boost">
 		<buff>
 			<name>Attack Boost [1]</name>
@@ -38,6 +272,206 @@
 			<level>7</level>
 			<attack_plus>21</attack_plus>
 			<affinity_plus>5</affinity_plus>
+		</buff>
+	</buff_group>
+
+	<buff_group id="defense_boost">
+		<buff>
+			<name>Defense Boost [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Boost [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Boost [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Boost [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Boost [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Boost [6]</name>
+			<level>6</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Boost [7]</name>
+			<level>7</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="health_boost">
+		<buff>
+			<name>Health Boost [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Health Boost [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Health Boost [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="recovery_up">
+		<buff>
+			<name>Recovery Up [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Recovery Up [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Recovery Up [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="recovery_speed">
+		<buff>
+			<name>Recovery Speed [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Recovery Speed [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Recovery Speed [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="fire_resistance">
+		<buff>
+			<name>Fire Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Fire Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Fire Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="water_resistance">
+		<buff>
+			<name>Water Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Water Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Water Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="ice_resistance">
+		<buff>
+			<name>Ice Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Ice Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Ice Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="thunder_resistance">
+		<buff>
+			<name>Thunder Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Thunder Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Thunder Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="dragon_resistance">
+		<buff>
+			<name>Dragon Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Dragon Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Dragon Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="blight_resistance">
+		<buff>
+			<name>Blight Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Blight Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Blight Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
@@ -393,6 +827,30 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="normal_shots">
+		<buff>
+			<name>Normal Shots [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="piercing_shots">
+		<buff>
+			<name>Piercing Shots [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="spread_power_shots">
+		<buff>
+			<name>Spread/Power Shots [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="free_elem_ammo_up">
 		<buff>
 			<name>Free Elem/Ammo Up [1]</name>
@@ -491,6 +949,42 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="focus">
+		<buff>
+			<name>Focus [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Focus [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Focus [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="power_prolonger">
+		<buff>
+			<name>Power Prolonger [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Power Prolonger [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Power Prolonger [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="handicraft">
 		<buff>
 			<name>Handicraft [1]</name>
@@ -543,6 +1037,24 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="partbreaker">
+		<buff>
+			<name>Partbreaker [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Partbreaker [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Partbreaker [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="slugger">
 		<buff>
 			<name>Slugger [1]</name>
@@ -576,6 +1088,14 @@
 			<name>Stamina Thief [3]</name>
 			<level>3</level>
 			<exhaust_multiplier>1.3</exhaust_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="master_mounter">
+		<buff>
+			<name>Master Mounter [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
@@ -783,6 +1303,43 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="resuscitate">
+		<buff>
+			<name>Resuscitate [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="horn_maestro">
+		<buff>
+			<name>Horn Maestro [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="capacity_boost">
+		<buff>
+			<name>Capacity Boost [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="special_ammo_boost">
+		<buff>
+			<name>Special Ammo Boost [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Special Ammo Boost [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="artillery">
 		<buff>
 			<name>Artillery [1]</name>
@@ -798,6 +1355,454 @@
 			<name>Artillery [3]</name>
 			<level>3</level>
 			<artillery_multiplier>1.3</artillery_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="heavy_artillery">
+		<buff>
+			<name>Heavy Artillery [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Heavy Artillery [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="marathon_runner">
+		<buff>
+			<name>Marathon Runner [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Marathon Runner [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Marathon Runner [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="constitution">
+		<buff>
+			<name>Constitution [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Constitution [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Constitution [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Constitution [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Constitution [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="leap_of_faith">
+		<buff>
+			<name>Leap of Faith [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="stamina_surge">
+		<buff>
+			<name>Stamina Surge [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Stamina Surge [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Stamina Surge [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="hunger_resistance">
+		<buff>
+			<name>Hunger Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Hunger Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Hunger Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="evade_window">
+		<buff>
+			<name>Evade Window [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Evade Window [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Evade Window [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Evade Window [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Evade Window [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="evade_extender">
+		<buff>
+			<name>Evade Extender [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Evade Extender [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Evade Extender [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="guard">
+		<buff>
+			<name>Guard [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Guard [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Guard [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Guard [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Guard [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="quick_sheath">
+		<buff>
+			<name>Quick Sheath [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Quick Sheath [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Quick Sheath [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="wide_range">
+		<buff>
+			<name>Wide-Range [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Wide-Range [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Wide-Range [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Wide-Range [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Wide-Range [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="item_prolonger">
+		<buff>
+			<name>Item Prolonger [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Item Prolonger [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Item Prolonger [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="free_meal">
+		<buff>
+			<name>Free Meal [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="speed_eating">
+		<buff>
+			<name>Speed Eating [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Speed Eating [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Speed Eating [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="speed_sharpening">
+		<buff>
+			<name>Speed Sharpening [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Speed Sharpening [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Speed Sharpening [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="bombardier">
+		<buff>
+			<name>Bombardier [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Bombardier [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Bombardier [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="mushroomancer">
+		<buff>
+			<name>Mushroomancer [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Mushroomancer [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Mushroomancer [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="master_fisher">
+		<buff>
+			<name>Master Fisher [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="pro_transporter">
+		<buff>
+			<name>Pro Transporter [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="master_gatherer">
+		<buff>
+			<name>Master Gatherer [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="honey_hunter">
+		<buff>
+			<name>Honey Hunter [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="carving_pro">
+		<buff>
+			<name>Carving Pro [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="divine_blessing">
+		<buff>
+			<name>Divine Blessing [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Divine Blessing [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Divine Blessing [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="palico_rally">
+		<buff>
+			<name>Palico Rally [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Palico Rally [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Palico Rally [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Palico Rally [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Palico Rally [5]</name>
+			<level>5</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="botanist">
+		<buff>
+			<name>Botanist [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Botanist [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Botanist [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Botanist [4]</name>
+			<level>4</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="geologist">
+		<buff>
+			<name>Geologist [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Geologist [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Geologist [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
@@ -825,6 +1830,230 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="slinger_capacity">
+		<buff>
+			<name>Slinger Capacity [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Slinger Capacity [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Slinger Capacity [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="stealth">
+		<buff>
+			<name>Stealth [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Stealth [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Stealth [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="flinch_free">
+		<buff>
+			<name>Flinch Free [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Flinch Free [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Flinch Free [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="scoutfly_range_up">
+		<buff>
+			<name>Scoutfly Range Up [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="speed_crawler">
+		<buff>
+			<name>Speed Crawler [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="jump_master">
+		<buff>
+			<name>Jump Master [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="sporepuff_expert">
+		<buff>
+			<name>Sporepuff Expert [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Sporepuff Expert [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Sporepuff Expert [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="aquatic_expert">
+		<buff>
+			<name>Aquatic Expert [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Aquatic Expert [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Aquatic Expert [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="cliffhanger">
+		<buff>
+			<name>Cliffhanger [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="blindsider">
+		<buff>
+			<name>Blindsider [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="scholar">
+		<buff>
+			<name>Scholar [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="entomologist">
+		<buff>
+			<name>Entomologist [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Entomologist [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Entomologist [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="effluvia_resistance">
+		<buff>
+			<name>Effluvia Resistance [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Effluvia Resistance [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Effluvia Resistance [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="scenthound">
+		<buff>
+			<name>Scenthound [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="foragers_luck">
+		<buff>
+			<name>Forager's Luck [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="detector">
+		<buff>
+			<name>Detector [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="bbq_master">
+		<buff>
+			<name>BBQ Master [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="tool_specialist">
+		<buff>
+			<name>Tool Specialist [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Tool Specialist [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Tool Specialist [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="affinity_sliding">
 		<buff>
 			<name>Affinity Sliding [1]</name>
@@ -835,10 +2064,77 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="intimidator">
+		<buff>
+			<name>Intimidator [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Intimidator [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Intimidator [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="hasten_recovery">
+		<buff>
+			<name>Hasten Recovery</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="super_recovery">
+		<buff>
+			<name>Super Recovery</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="poison_duration_up">
+		<buff>
+			<name>Poison Duration Up</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="adrenaline">
+		<buff>
+			<name>Adrenaline</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="stamina_cap_up">
+		<buff>
+			<name>Stamina Cap Up</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="critical_element">
 		<buff>
 			<name>Critical Element</name>
 			<element_critical_hit_multiplier>1.25</element_critical_hit_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="minds_eye_ballistics">
+		<buff>
+			<name>Mind's Eye/Ballistics</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="bludgeoner">
+		<buff>
+			<name>Bludgeoner</name>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
@@ -851,10 +2147,38 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="capture_master">
+		<buff>
+			<name>Capture Master</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="guard_up">
+		<buff>
+			<name>Guard Up</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="guts">
+		<buff>
+			<name>Guts</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="masters_touch">
 		<buff>
 			<name>Master's Touch</name>
 			<sharpness_use_critical_multiplier>0.0</sharpness_use_critical_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="nullify_wind_pressure">
+		<buff>
+			<name>Nullify Wind Pressure</name>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
@@ -869,6 +2193,20 @@
 		<buff>
 			<name>Critical Status</name>
 			<status_critical_hit_multiplier>1.25</status_critical_hit_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="good_luck">
+		<buff>
+			<name>Good Luck</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="bow_charge_plus">
+		<buff>
+			<name>Bow Charge Plus</name>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
@@ -889,6 +2227,43 @@
 			<max_sharpness_time>60.0</max_sharpness_time>
 		</buff>
 	</buff_group>
+
+	<buff_group id = "poison_functionality">
+		<buff>
+			<name>Poison Functionality</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id = "para_functionality">
+		<buff>
+			<name>Para Functionality</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id = "sleep_functionality">
+		<buff>
+			<name>Sleep Functionality</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id = "blast_functionality">
+		<buff>
+			<name>Blast Functionality</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id = "elderseal_boost">
+		<buff>
+			<name>Elderseal Boost</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<!-- consumables -->
 
 	<buff_group id="demondrug">
 		<buff>
@@ -931,6 +2306,73 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="armorskin">
+		<buff>
+			<name>Armorskin</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="mega_armorskin">
+		<buff>
+			<name>Mega Armorskin</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="adamant_seed">
+		<buff>
+			<name>Adamant Seed</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="hardshell_powder">
+		<buff>
+			<name>Hardshell Powder</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="adamant_pill">
+		<buff>
+			<name>Adamant Pill</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<!-- charms/talons -->
+
+	<buff_group id="powercharm">
+		<buff>
+			<name>Powercharm</name>
+			<attack_plus>6</attack_plus>
+		</buff>
+	</buff_group>
+
+	<buff_group id="powertalon">
+		<buff>
+			<name>Powertalon</name>
+			<attack_plus>9</attack_plus>
+		</buff>
+	</buff_group>
+
+	<buff_group id="armorcharm">
+		<buff>
+			<name>Armorcharm</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="armortalon">
+		<buff>
+			<name>Armortalon</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<!-- canteen base skills -->
+
 	<buff_group id="meal_attack_up">
 		<buff>
 			<name>Attack Up (S)</name>
@@ -949,17 +2391,296 @@
 		</buff>
 	</buff_group>
 
-	<buff_group id="powercharm">
+	<buff_group id="meal_defense_up">
 		<buff>
-			<name>Powercharm</name>
-			<attack_plus>6</attack_plus>
+			<name>Defense Up (S)</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Up (M)</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Defense Up (L)</name>
+			<level>3</level>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
-	<buff_group id="powertalon">
+	<buff_group id="meal_elemental_resistance_up">
 		<buff>
-			<name>Powertalon</name>
-			<attack_plus>9</attack_plus>
+			<name>Elemental Res Up (S)</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Elemental Res Up (M)</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Elemental Res Up (L)</name>
+			<level>3</level>
+			<!-- not implemented -->
 		</buff>
 	</buff_group>
+
+	<!-- ingredient activated skills -->
+
+	<buff_group id="felyne_polisher">
+		<buff>
+			<name>Felyne Polisher</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_rider">
+		<buff>
+			<name>Felyne Rider</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_slugger">
+		<buff>
+			<name>Felyne Slugger</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_acrobat">
+		<buff>
+			<name>Felyne Acrobat</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_feet">
+		<buff>
+			<name>Felyne Feet</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_moxie">
+		<buff>
+			<name>Felyne Moxie</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_riser_hi">
+		<buff>
+			<name>Felyne Riser (Hi)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_black_belt">
+		<buff>
+			<name>Felyne Black Belt</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_heroics">
+		<buff>
+			<name>Felyne Heroics</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_groomer">
+		<buff>
+			<name>Felyne Groomer</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_medic">
+		<buff>
+			<name>Felyne Medic</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_specialist">
+		<buff>
+			<name>Felyne Specialist</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_sharpshooter">
+		<buff>
+			<name>Felyne Sharpshooter</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_bombardier">
+		<buff>
+			<name>Felyne Bombardier</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_pyro">
+		<buff>
+			<name>Felyne Pyro</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_iron_carver">
+		<buff>
+			<name>Felyne Iron Carver</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_exchanger">
+		<buff>
+			<name>Felyne Exchanger</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_carver_hi">
+		<buff>
+			<name>Felyne Carver (Hi)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_harvester">
+		<buff>
+			<name>Felyne Harvester</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_fat_cat">
+		<buff>
+			<name>Felyne Fat Cat</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="lucky_cat">
+		<buff>
+			<name>Lucky Cat</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<!-- daily skills -->
+
+	<buff_group id="felyne_cliffhanger">
+		<buff>
+			<name>Felyne Cliffhanger</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_fur_coating">
+		<buff>
+			<name>Felyne Fur Coating</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_booster">
+		<buff>
+			<name>Felyne Booster</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_backer">
+		<buff>
+			<name>Felyne Backer</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_provoker">
+		<buff>
+			<name>Felyne Provoker</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_researcher">
+		<buff>
+			<name>Felyne Researcher</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_defender_lo">
+		<buff>
+			<name>Felyne Defender (Lo)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_defender_hi">
+		<buff>
+			<name>Felyne Defender (Hi)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_temper">
+		<buff>
+			<name>Felyne Temper</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_escape_artist">
+		<buff>
+			<name>Felyne Escape Artist</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_weakener">
+		<buff>
+			<name>Felyne Weakener</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_insurance">
+		<buff>
+			<name>Felyne Insurance</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_deflector">
+		<buff>
+			<name>Felyne Deflector</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_bulldozer">
+		<buff>
+			<name>Felyne Bulldozer</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="felyne_trainer">
+		<buff>
+			<name>Felyne Trainer</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 </data>
