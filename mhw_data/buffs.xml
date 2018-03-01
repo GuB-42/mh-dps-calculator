@@ -2127,7 +2127,7 @@
 	<buff_group id="minds_eye_ballistics">
 		<buff>
 			<name>Mind's Eye/Ballistics</name>
-			<!-- not implemented -->
+			<minds_eye>1</minds_eye>
 		</buff>
 	</buff_group>
 

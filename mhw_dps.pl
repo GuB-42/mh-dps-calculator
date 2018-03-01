@@ -12,10 +12,6 @@ $Data::Dumper::Sortkeys = 1;
 
 # time is in seconds
 
-# TODO
-# maximum element buff = +20%
-# elemental crit adjustment (M:1.2/L:?/XL:1.35)
-
 my $constants = {
 	"raw_sharpness_multipliers" => [ 0.5, 0.75, 1.0, 1.05, 1.2, 1.32, 1.44 ],
 	"element_sharpness_multipliers" => [ 0.25, 0.5, 0.75, 1.0, 1.0625, 1.125, 1.2 ],
@@ -30,12 +26,23 @@ my $constants = {
 	"element_weakness_threshold" => 20,
 	"piercing_factor" => 0.72,
 	"bounce_threshold" => 25,
+	"element_status_plus_caps" => [
+		[  1,  4 ], [ 12,  4 ], [ 15,  5 ], [ 21,  6 ], [ 24,  7 ], [ 27,  8 ],
+		[ 30,  9 ], [ 33, 10 ], [ 36, 11 ], [ 39, 12 ], [ 42, 13 ], [ 48, 14 ],
+		[ 54, 15 ] ],
+	"element_status_crit_adjustment" => {
+		"great_sword" => 0.8, # 0.25 => 0.2
+		"sword_and_shield" => 1.4, # 0.25 => 0.35
+		"dual_blades" => 1.4,
+		"light_bowgun" => 1.4,
+		"heavy_bowgun" => 1.4,
+		"bow" => 1.4,
+	},
 
 	"enraged_ratio" => 0.4,
+	"monster_hit_points" => 6000.0,
 	"sharpness_use" => 15,
 	"sharpen_period" => 300.0,
-	"monster_hit_points" => 6000.0,
-
 	"buff_ratios" => {
 		"draw_attack" => 0.1,
 		"airborne" => 0.1,
@@ -239,6 +246,23 @@ sub all_buff_combine {
 	}
 }
 
+sub compute_buffed_element
+{
+	my ($base, $plus, $multiplier, $caps) = @_;
+
+	my $val = $base || 0;
+	$val += $plus if (defined $plus);
+	$val *= $multiplier if (defined $multiplier);
+	my $cap = 0;
+	for my $v (@{$caps}) {
+		if ($v->[0] <= $base) {
+			$cap = $v->[1];
+		} else {
+			last;
+		}
+	}
+	return $val > $base + $cap ? $base + $cap : $val;
+}
 
 sub compute_buffed_weapon
 {
@@ -284,6 +308,14 @@ sub compute_buffed_weapon
 	$buffed_weapon->{"affinity"} += $buff_data->{"affinity_plus"};
 	$buffed_weapon->{"attack"} *= $buff_data->{"attack_multiplier"};
 	$buffed_weapon->{"attack"} += $buff_data->{"attack_plus"};
+
+	if ($constants->{"element_status_crit_adjustment"}{$weapon->{"type"}}) {
+		my $mult = $constants->{"element_status_crit_adjustment"}{$weapon->{"type"}};
+		$buffed_weapon->{"element_critical_hit_multiplier"} =
+			(($buffed_weapon->{"element_critical_hit_multiplier"} - 1) * $mult) + 1;
+		$buffed_weapon->{"status_critical_hit_multiplier"} =
+			(($buffed_weapon->{"status_critical_hit_multiplier"} - 1) * $mult) + 1;
+	}
 
 	my $sharpness_use = $profile->{"sharpness_use"};
 	$sharpness_use = $profile->{"sharpness_use"} if (defined $profile->{"sharpness_use"});
@@ -332,14 +364,12 @@ sub compute_buffed_weapon
 			$power *= $buff_data->{"awakening"};
 		}
 		if ($power > 0) {
+			$power = compute_buffed_element($power,
+			                                $buff_data->{"element_plus"}{$element},
+			                                $buff_data->{"element_multiplier"}{$element},
+			                                $constants->{"element_status_plus_caps"});
 			$power += $buff_data->{"all_elements_plus"};
-			if (defined $buff_data->{"element_plus"}{$element}) {
-				$power += $buff_data->{"element_plus"}{$element};
-			}
 			$power *= $buff_data->{"all_elements_multiplier"};
-			if (defined $buff_data->{"element_multiplier"}{$element}) {
-				$power *= $buff_data->{"element_multiplier"}{$element};
-			}
 			$buffed_weapon->{"elements"}{$element} = $power;
 		}
 	}
@@ -349,39 +379,33 @@ sub compute_buffed_weapon
 			$power *= $buff_data->{"awakening"};
 		}
 		if ($power > 0) {
+			$power = compute_buffed_element($power,
+			                                $buff_data->{"status_plus"}{$status},
+			                                $buff_data->{"status_multiplier"}{$status},
+			                                $constants->{"element_status_plus_caps"});
 			$power += $buff_data->{"all_statuses_plus"};
-			if (defined $buff_data->{"status_plus"}{$status}) {
-				$power += $buff_data->{"status_plus"}{$status};
-			}
-			$power += $buff_data->{"all_statuses_multiplier"};
-			if (defined $buff_data->{"status_multiplier"}{$status}) {
-				$power *= $buff_data->{"status_multiplier"}{$status};
-			}
+			$power *= $buff_data->{"all_statuses_multiplier"};
 			$buffed_weapon->{"statuses"}{$status} = $power;
 		}
 	}
 	for my $element (keys %{$weapon->{"phial_elements"}}) {
 		my $power = $weapon->{"phial_elements"}{$element} / $multi_divider;
+		$power = compute_buffed_element($power,
+		                                $buff_data->{"element_plus"}{$element},
+		                                $buff_data->{"element_multiplier"}{$element},
+		                                $constants->{"element_status_plus_caps"});
 		$power += $buff_data->{"all_elements_plus"};
-		if (defined $buff_data->{"element_plus"}{$element}) {
-			$power += $buff_data->{"element_plus"}{$element};
-		}
 		$power *= $buff_data->{"all_elements_multiplier"};
-		if (defined $buff_data->{"element_multiplier"}{$element}) {
-			$power *= $buff_data->{"element_multiplier"}{$element};
-		}
 		$buffed_weapon->{"phial_elements"}{$element} = $power;
 	}
 	for my $status (keys %{$weapon->{"phial_statuses"}}) {
 		my $power = $weapon->{"phial_statuses"}{$status} / $multi_divider;
+		$power = compute_buffed_element($power,
+		                                $buff_data->{"status_plus"}{$status},
+		                                $buff_data->{"status_multiplier"}{$status},
+		                                $constants->{"element_status_plus_caps"});
 		$power += $buff_data->{"all_statuses_plus"};
-		if (defined $buff_data->{"status_plus"}{$status}) {
-			$power += $buff_data->{"status_plus"}{$status};
-		}
-		$power += $buff_data->{"all_statuses_multiplier"};
-		if (defined $buff_data->{"status_multiplier"}{$status}) {
-			$power *= $buff_data->{"status_multiplier"}{$status};
-		}
+		$power *= $buff_data->{"all_statuses_multiplier"};
 		$buffed_weapon->{"phial_statuses"}{$status} = $power;
 	}
 
@@ -561,6 +585,18 @@ sub get_damage_data
 			$total_state_damage->{"bounce_sharpness"} = $new_bounce_sharpness;
 		}
 	}
+
+	if (defined $profile->{"enraged_ratio"}) {
+		$damage_data->{"enraged_ratio"} = $profile->{"enraged_ratio"} ;
+	} else {
+		$damage_data->{"enraged_ratio"} = $constants->{"enraged_ratio"};
+	}
+	if (defined $profile->{"monster_hit_points"}) {
+		$damage_data->{"monster_hit_points"} = $profile->{"monster_hit_points"};
+	} else {
+		$damage_data->{"monster_hit_points"} = $constants->{"monster_hit_points"};
+	}
+
 	return $damage_data;
 }
 
@@ -655,7 +691,7 @@ sub get_dps
 			for (1..1) {
 				$state_dps->{"total"} =
 					$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
-				$state_dps->{"kill_freq"} = $state_dps->{"total"} / $constants->{"monster_hit_points"};
+				$state_dps->{"kill_freq"} = $state_dps->{"total"} / $damage_data->{"monster_hit_points"};
 				if ($state_dps->{"kill_freq"} > 0) {
 					for my $status (keys %{$state_damage_weak->{"statuses"}}) {
 						my $status_attack = $state_damage_weak->{"statuses"}{$status};
@@ -675,7 +711,7 @@ sub get_dps
 				}
 			}
 
-			my $ratio = $constants->{"enraged_ratio"};
+			my $ratio = $damage_data->{"enraged_ratio"};
 			$ratio = 1.0 - $ratio if ($enraged_state eq "!enraged");
 			$ratio /= $nb_hit_data;
 			for my $key (keys %{$state_dps}) {
@@ -684,27 +720,6 @@ sub get_dps
 		}
 	}
 	return $dps;
-}
-
-sub combine_buff_list
-{
-	my ($buff_group_map, $buff_refs) = @_;
-
-	my %levels;
-	for my $buff_ref (@{$buff_refs}) {
-		my $group_id = $buff_ref->{"id"};
-		my $level = $buff_ref->{"level"};
-		$level += $levels{$group_id} if ($levels{$group_id});
-		if ($level >= @{$buff_group_map->{$group_id}}) {
-			$level = @{$buff_group_map->{$group_id}} - 1;
-		}
-		$levels{$group_id} = $level;
-	}
-	my $data = {};
-	for my $group_id (keys %levels) {
-		all_buff_combine($data, $buff_group_map->{$group_id}[$levels{$group_id}]{"data"});
-	}
-	return $data;
 }
 
 sub clean_buff_data
@@ -746,56 +761,135 @@ sub clean_buff_data
 			# TODO: gunlance
 			$res->{$key} = $buff_data->{$key} if ($weapon->{"phial"} eq "impact");
 		} else {
-			$res->{$key} = $buff_data->{$key};
+			unless ((keys %{$buff_data->{$key}}) == 1 &&
+			        $buff_data->{$key}{"raw_weapon"} &&
+			        !$weapon->{"awakened"} &&
+			        (%{$weapon->{"elements"}} || %{$weapon->{"statuses"}})) {
+				$res->{$key} = $buff_data->{$key};
+			}
 		}
 	}
 	return $res;
 }
 
-sub get_useful_buff_groups
+sub append_item
 {
-	my ($buff_group_map, $weapon) = @_;
+	my ($input, $buff_group_map, $item, $use_slot) = @_;
 
-	my $res = {};
-	for my $key (%{$buff_group_map}) {
-		for my $buff (@{$buff_group_map->{$key}}) {
-			my $d = clean_buff_data($buff->{"data"}, $weapon);
-			if (%{$d}) {
-				$res->{$key} = $buff_group_map->{$key};
+	my $res = {
+		"slots" => [],
+		"buff_levels" => {},
+		"used_items" => []
+	};
+
+	if (defined $item->{"slots"}) {
+		my @slots = @{$item->{"slots"}};
+		push @slots, @{$input->{"slots"}} if ($input->{"slots"});
+		$res->{"slots"} = [ (sort { $b <=> $a } @slots) ];
+	} else {
+		if ($use_slot) {
+			$res->{"slots"} = [ @{$input->{"slots"}} ] || [];
+		} else {
+			$res->{"slots"} = $input->{"slots"} || [];
+		}
+	}
+	if ($use_slot && @{$res->{"slots"}}) {
+		my $idx_min = 0;
+		my $idx_min_val = 999;
+		my $decoration_level = $item->{"decoration_level"} || 0;
+		for my $i (0 .. (@{$res->{"slots"}} - 1)) {
+			if ($res->{"slots"}[$i] < $idx_min_val &&
+			    $res->{"slots"}[$i] >= $decoration_level) {
+				$idx_min = $i;
+				$idx_min_val = $res->{"slots"}[$i];
+			}
+		}
+		splice @{$res->{"slots"}}, $idx_min, 1;
+	}
+	if (defined $item->{"buff_refs"}) {
+		my %levels = %{$input->{"buff_levels"}};
+		for my $buff_ref (@{$item->{"buff_refs"}}) {
+			my $group_id = $buff_ref->{"id"};
+			my $level = $buff_ref->{"level"};
+			$level += $levels{$group_id} if ($levels{$group_id});
+			if ($level >= @{$buff_group_map->{$group_id}}) {
+				$level = @{$buff_group_map->{$group_id}} - 1;
+			}
+			$levels{$group_id} = $level;
+		}
+		$res->{"buff_levels"} = { %levels };
+	} else {
+		$res->{"buff_levels"} = $input->{"buff_levels"};
+	}
+	$res->{"used_items"} = [ @{$input->{"used_items"}}, $item ];
+	return $res;
+}
+
+sub fill_slots
+{
+	my ($output_list, $input, $buff_group_map, @items) = @_;
+
+	if ($input->{"slots"} && @{$input->{"slots"}}) {
+		my $max_slot = 0;
+		for my $slot (@{$input->{"slots"}}) {
+			$max_slot = $slot if ($slot > $max_slot);
+		}
+		my @useful_items = ();
+		for my $item (@items) {
+			if ($item->{"buff_refs"} &&
+			    $item->{"decoration_level"} &&
+			    $item->{"decoration_level"} <= $max_slot) {
+				for my $buff_ref (@{$item->{"buff_refs"}}) {
+					my $group_id = $buff_ref->{"id"};
+					if ($input->{"buff_levels"} && $input->{"buff_levels"}{$group_id}) {
+						if ($input->{"buff_levels"}{$group_id} < @{$buff_group_map->{$group_id}} - 1) {
+							push @useful_items, $item;
+							last;
+						}
+					} else {
+						push @useful_items, $item;
+						last;
+					}
+				}
+			}
+		}
+		while (@useful_items) {
+			my $new_input = append_item($input, $buff_group_map, $useful_items[0], 1);
+			fill_slots($output_list, $new_input, $buff_group_map, @useful_items);
+			shift @useful_items;
+		}
+	}
+	push @{$output_list}, $input;
+}
+
+sub get_useful_items
+{
+	my ($items, $buff_group_map, $weapon) = @_;
+
+	my @res = ();
+
+	my %useful_buffs = ();
+	for my $item (@{$items}) {
+		next unless $item->{"buff_refs"};
+		for my $buff_ref (@{$item->{"buff_refs"}}) {
+			my $group_id = $buff_ref->{"id"};
+			if (!defined $useful_buffs{$group_id}) {
+				$useful_buffs{$group_id} = 0;
+				for my $buff (@{$buff_group_map->{$group_id}}) {
+					my $d = clean_buff_data($buff->{"data"}, $weapon);
+					if (%{$d}) {
+						$useful_buffs{$group_id} = 1;
+						last;
+					}
+				}
+			}
+			if ($useful_buffs{$group_id}) {
+				push @res, $item;
 				last;
 			}
 		}
 	}
-	return $res;
-}
-
-sub make_decoration_list
-{
-	my ($list, $items, $useful_buffs, $slots, $cancel, @istack) = @_;
-	$cancel ||= {};
-	if (@{$slots}) {
-		my $l_cancel = { %{$cancel} };
-		my $l_slots = [ @{$slots} ];
-		my $slot_level = shift @{$l_slots};
-		my $idx = 0;
-		for my $item (@{$items}) {
-			if (!$l_cancel->{$idx} &&
-			    $item->{"decoration_level"} &&
-			    $item->{"decoration_level"} <= $slot_level) {
-				for my $buff_ref (@{$item->{"buff_refs"}}) {
-					if ($useful_buffs->{$buff_ref->{"id"}}) {
-						push @istack, $item;
-						make_decoration_list($list, $items, $useful_buffs, $l_slots, $l_cancel, @istack);
-						pop @istack;
-						last;
-					}
-				}
-				$l_cancel->{$idx} = 1;
-			}
-			++$idx;
-		}
-	}
-	push @{$list}, [ @istack ];
+	return @res;
 }
 
 my $data = {};
@@ -806,29 +900,28 @@ for my $profile (@{$data->{"profiles"}}) {
 	for my $weapon (@{$data->{"weapons"}}) {
 		next if ($weapon->{"type"} ne $profile->{"type"});
 
-		my $useful_buffs = get_useful_buff_groups($data->{"buff_group_map"}, $weapon);
-		my @ilist = ();
-		my @slots = (sort { $a <=> $b } @{$weapon->{"slots"}});
-		make_decoration_list(\@ilist, $data->{"items"}, $useful_buffs, \@slots, {});
-		my @blist = ();
-		for my $v (@ilist) {
-			my $elt = {
-				"name" => join(', ', map { $_->{"name"} } @{$v}),
-				"buff_refs" => []
-			};
-			for my $item (@{$v}) {
-				push @{$elt->{"buff_refs"}}, @{$item->{"buff_refs"}};
+		my $start_build = {
+			"slots" => [],
+			"buff_levels" => {},
+			"used_items" => []
+		};
+		$start_build = append_item($start_build, $data->{"buff_group_map"}, $weapon);
+		$start_build = append_item($start_build, $data->{"buff_group_map"}, $data->{"item_map"}{"powercharm"});
+		$start_build = append_item($start_build, $data->{"buff_group_map"}, $data->{"item_map"}{"powertalon"});
+		my @gen_builds = ();
+		fill_slots(\@gen_builds, $start_build, $data->{"buff_group_map"},
+		           get_useful_items($data->{"items"}, $data->{"buff_group_map"}, $weapon));
+
+		for my $build (@gen_builds) {
+			my $buff_data = {};
+			for my $group_id (keys %{$build->{"buff_levels"}}) {
+				my $level = $build->{"buff_levels"}{$group_id};
+				all_buff_combine($buff_data, $data->{"buff_group_map"}{$group_id}[$level]{"data"});
 			}
-			push @blist, $elt;
-		}
-
-		for my $item (@blist) {
-			my $buff_data = combine_buff_list($data->{"buff_group_map"}, $item->{"buff_refs"});
-
 			my $damage = {
 				"weapon_name" => $weapon->{"name"},
 				"profile_name" => $profile->{"name"},
-				"item_name" => $item->{"name"},
+				"item_names" => (join " / ", (map { $_->{"name"} } @{$build->{"used_items"}})),
 				"damage" => get_damage_data($profile, $weapon, $buff_data)
 			};
 			push @damages, $damage;
@@ -840,10 +933,10 @@ for my $monster (@{$data->{"monsters"}}) {
 	for my $part (@{$monster->{"parts"}}) {
 		for my $damage (@damages) {
 			my $dps = get_dps($monster, $part, $damage->{"damage"});
-			printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s / %s / %s\n",
+			printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s / %s\n",
 				($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
 				 (1.0 / $dps->{kill_freq}), $monster->{name}, $part->{name},
-				 $damage->{weapon_name}, $damage->{profile_name}, $damage->{item_name});
+				 $damage->{profile_name}, $damage->{item_names});
 		}
 	}
 }
