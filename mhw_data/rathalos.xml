@@ -1,6 +1,7 @@
 <data>
     <monster>
         <name>Rathalos</name>
+        <hit_points>3250</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -30,7 +31,7 @@
             </hit_data>
         </part>
         <part>
-            <name>Body/Back</name>
+            <name>Body</name>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -44,7 +45,21 @@
             </hit_data>
         </part>
         <part>
-            <name>Wings</name>
+            <name>Back</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Left Wing</name>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -58,7 +73,35 @@
             </hit_data>
         </part>
         <part>
-            <name>Legs</name>
+            <name>Right Wing</name>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Left Leg</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>5</thunder>
+                <ice>0</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Right Leg</name>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>

@@ -32,6 +32,8 @@ my $cur_buff = {};
 my $cur_buff_condition = "always";
 my $cur_buff_level = 1;
 my $cur_item = {};
+my $cur_target = {};
+my $cur_sub_target = {};
 
 my %element_codes = (
 	"fire" => 0,
@@ -159,7 +161,6 @@ sub process_start
 		}
 	} elsif ($xml_stack[0] eq "hit_data") {
 		$cur_hit_data = {
-			"state" => "no_state",
 			"cut" => 0,
 			"impact" => 0,
 			"bullet" => 0,
@@ -210,6 +211,15 @@ sub process_start
 		$cur_item = {
 			"name" => "no_name",
 			"buff_refs" => []
+		};
+	} elsif ($xml_stack[0] eq "target") {
+		$cur_target = {
+			"name" => "no_name",
+			"sub_targets" => []
+		};
+	} elsif ($xml_stack[1] eq "target" && $xml_stack[0] eq "sub_target") {
+		$cur_sub_target = {
+			"weight" => 1.0
 		};
 	}
 }
@@ -262,6 +272,18 @@ sub process_val
 		push @{$output_data->{"monsters"}}, $cur_monster;
 	} elsif ($xml_stack[1] eq "monster") {
 		if ($xml_stack[0] eq "part") {
+			my $has_states = 0;
+			for my $hit_data (@{$cur_part->{"hit_data"}}) {
+				if (defined $hit_data->{"state"}) {
+					$has_states = 1;
+					last;
+				}
+			}
+			if ($has_states) {
+				for my $hit_data (@{$cur_part->{"hit_data"}}) {
+					$hit_data->{"state"} = "" unless (defined $hit_data->{"state"});
+				}
+			}
 			push @{$cur_monster->{"parts"}}, $cur_part;
 		} elsif ($xml_stack[0] eq "tolerance") {
 			my $tol_type = $cur_tolerance->{"type"};
@@ -357,6 +379,19 @@ sub process_val
 		my $ref = { "id" => $xml_stack_attr[0]->{"id"} };
 		$ref->{"level"} = defined $xml_stack_attr[0]->{"level"} ? $xml_stack_attr[0]->{"level"} : 1;
 		push @{$cur_item->{"buff_refs"}}, $ref;
+	} elsif ($xml_stack[0] eq "target") {
+		unless (@{$cur_target->{"sub_targets"}}) {
+			push @{$cur_target->{"sub_targets"}}, { "weight" => 1.0 };
+		}
+		push @{$output_data->{"targets"}}, $cur_target;
+	} elsif ($xml_stack[1] eq "target") {
+		if ($xml_stack[0] eq "sub_target") {
+			push @{$cur_target->{"sub_targets"}}, $cur_sub_target;
+		} else {
+			$cur_target->{$xml_stack[0]} = $val;
+		}
+	} elsif ($xml_stack[2] eq "target" && $xml_stack[1] eq "sub_target") {
+		$cur_sub_target->{$xml_stack[0]} = $val;
 	}
 }
 
@@ -396,6 +431,7 @@ sub parse_data_files
 	$output_data->{"profiles"} ||= [];
 	$output_data->{"items"} ||= [];
 	$output_data->{"item_map"} ||= {};
+	$output_data->{"targets"} ||= [];
 	for my $file (@_) {
 		my $p = new XML::Parser(Handlers => {
 			Start => \&handle_start,

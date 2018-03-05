@@ -524,6 +524,48 @@ sub compute_damage
 	return $damage;
 }
 
+sub state_damage_sum
+{
+	my ($acu, $other, $rate, $total_rate) = @_;
+
+	$acu->{"cut"} ||= 0.0;
+	$acu->{"cut"} += $other->{"cut"} * $rate;
+	$acu->{"impact"} ||= 0.0;
+	$acu->{"impact"} += $other->{"impact"} * $rate;
+	$acu->{"piercing"} ||= 0.0;
+	$acu->{"piercing"} += $other->{"piercing"} * $rate;
+	$acu->{"fixed"} ||= 0.0;
+	$acu->{"fixed"} += $other->{"fixed"} * $rate;
+	$acu->{"elements"} ||= {};
+	for my $element (keys %{$other->{"elements"}}) {
+		$acu->{"elements"}{$element} ||= 0.0;
+		$acu->{"elements"}{$element} +=
+			$other->{"elements"}{$element} *= $rate;
+	}
+	$acu->{"statuses"} ||= {};
+	for my $status (keys %{$other->{"statuses"}}) {
+		$acu->{"statuses"}{$status} ||= 0.0;
+		$acu->{"statuses"}{$status} +=
+			$other->{"statuses"}{$status} *= $rate;
+	}
+
+	for my $v (@{$other->{"bounce_sharpness"}}) {
+		my $rate_proportion = ($total_rate > 0.0 ? $rate / $total_rate : 1.0);
+		push @{$acu->{"bounce_sharpness"}},
+			[($v->[0] > 900 ? 999 : $v->[0] * $rate_proportion), $v->[1]];
+	}
+	my $new_bounce_sharpness = [];
+	for my $v (sort { $b->[1] <=> $a->[1] } (@{$acu->{"bounce_sharpness"}})) {
+		my $i = (scalar @{$new_bounce_sharpness}) - 1;
+		if ($i >= 0 && $new_bounce_sharpness->[$i][1] == $v->[1]) {
+			$new_bounce_sharpness->[$i][0] += $v->[0];
+		} else {
+			push @{$new_bounce_sharpness}, [$v->[0], $v->[1]];
+		}
+	}
+	$acu->{"bounce_sharpness"} = $new_bounce_sharpness;
+}
+
 sub get_damage_data
 {
 	my ($profile, $weapon, $buff_data) = @_;
@@ -545,58 +587,9 @@ sub get_damage_data
 
 			$damage_data->{$state->[0]} ||= {};
 			$damage_data->{$state->[0]}{$state->[1]} ||= {};
-			my $total_state_damage = $damage_data->{$state->[0]}{$state->[1]};
-
-			$total_state_damage->{"cut"} ||= 0.0;
-			$total_state_damage->{"cut"} += $state_damage->{"cut"} * $rate;
-			$total_state_damage->{"impact"} ||= 0.0;
-			$total_state_damage->{"impact"} += $state_damage->{"impact"} * $rate;
-			$total_state_damage->{"piercing"} ||= 0.0;
-			$total_state_damage->{"piercing"} += $state_damage->{"piercing"} * $rate;
-			$total_state_damage->{"fixed"} ||= 0.0;
-			$total_state_damage->{"fixed"} += $state_damage->{"fixed"} * $rate;
-			$total_state_damage->{"elements"} ||= {};
-			for my $element (keys %{$state_damage->{"elements"}}) {
-				$total_state_damage->{"elements"}{$element} ||= 0.0;
-				$total_state_damage->{"elements"}{$element} +=
-					$state_damage->{"elements"}{$element} *= $rate;
-			}
-			$total_state_damage->{"statuses"} ||= {};
-			for my $status (keys %{$state_damage->{"statuses"}}) {
-				$total_state_damage->{"statuses"}{$status} ||= 0.0;
-				$total_state_damage->{"statuses"}{$status} +=
-					$state_damage->{"statuses"}{$status} *= $rate;
-			}
-
-			for my $v (@{$state_damage->{"bounce_sharpness"}}) {
-				my $rate_proportion = ($total_rate > 0.0 ? $rate / $total_rate : 1.0);
-				push @{$total_state_damage->{"bounce_sharpness"}},
-					[($v->[0] > 900 ? 999 : $v->[0] * $rate_proportion), $v->[1]];
-			}
-			my $new_bounce_sharpness = [];
-			for my $v (sort { $b->[1] <=> $a->[1] } (@{$total_state_damage->{"bounce_sharpness"}})) {
-				my $i = (scalar @{$new_bounce_sharpness}) - 1;
-				if ($i >= 0 && $new_bounce_sharpness->[$i][1] == $v->[1]) {
-					$new_bounce_sharpness->[$i][0] += $v->[0];
-				} else {
-					push @{$new_bounce_sharpness}, [$v->[0], $v->[1]];
-				}
-			}
-			$total_state_damage->{"bounce_sharpness"} = $new_bounce_sharpness;
+			state_damage_sum($damage_data->{$state->[0]}{$state->[1]}, $state_damage, $rate, $total_rate);
 		}
 	}
-
-	if (defined $profile->{"enraged_ratio"}) {
-		$damage_data->{"enraged_ratio"} = $profile->{"enraged_ratio"} ;
-	} else {
-		$damage_data->{"enraged_ratio"} = $constants->{"enraged_ratio"};
-	}
-	if (defined $profile->{"monster_defense_multiplier"}) {
-		$damage_data->{"monster_defense_multiplier"} = $profile->{"monster_defense_multiplier"};
-	} else {
-		$damage_data->{"monster_defense_multiplier"} = $constants->{"monster_defense_multiplier"};
-	}
-
 	return $damage_data;
 }
 
@@ -634,96 +627,78 @@ sub get_status_hits
 
 sub get_dps
 {
-	my ($monster, $part, $damage_data) = @_;
+	my ($monster, $hit_data, $state_damage_data, $monster_defense_multiplier) = @_;
 
-	my $dps = {};
+	my $dps = {
+		"raw" => 0.0,
+		"element" => 0.0,
+		"status" => 0.0,
+		"fixed" => 0.0,
+		"bounce_rate" => 0.0,
+		"proc_rate" => {},
+		"kill_freq" => 0.0
+	};
+	my $state_damage_normal = $state_damage_data->{"normal_spot"};
+	my $state_damage_weak = $state_damage_data->{"weak_spot"};
 
-	for my $enraged_state ("not_enraged", "enraged") {
-		my $nb_hit_data = 0;
-		for my $hit_data (@{$part->{"hit_data"}}) {
-			++$nb_hit_data;
-		}
-		for my $hit_data (@{$part->{"hit_data"}}) {
-			my $state_dps = {
-				"raw" => 0.0,
-				"element" => 0.0,
-				"status" => 0.0,
-				"fixed" => 0.0,
-				"bounce_rate" => 0.0,
-				"proc_rate" => {},
-				"kill_freq" => 0.0
-			};
-			my $state_damage_normal = $damage_data->{$enraged_state}{"normal_spot"};
-			my $state_damage_weak = $damage_data->{$enraged_state}{"weak_spot"};
+	my %hit_data_p = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
+	$hit_data_p{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
+	$hit_data_p{"piercing"} = $hit_data->{"cut"} if $hit_data_p{"piercing"} < $hit_data->{"cut"};
 
-			my %hit_data_p = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
-			$hit_data_p{"piercing"} = $hit_data->{"impact"} * $constants->{"piercing_factor"};
-			$hit_data_p{"piercing"} = $hit_data->{"cut"} if $hit_data_p{"piercing"} < $hit_data->{"cut"};
-
-			my $state_damage_total = 0.0;
-			for my $hit_type (keys %hit_data_p) {
-				my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
-					$state_damage_weak : $state_damage_normal;
-				$state_damage_total += $state_damage->{$hit_type};
-			}
-			for my $hit_type (keys %hit_data_p) {
-				my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
-					$state_damage_weak : $state_damage_normal;
-				$state_dps->{"raw"} += $state_damage->{$hit_type} * $hit_data_p{$hit_type} / 100.0;
-				for my $v (@{$state_damage->{"bounce_sharpness"}}) {
-					if ($v->[1] * $hit_data_p{$hit_type} < $constants->{"bounce_threshold"}) {
-						$state_dps->{"bounce_rate"} +=
-							$v->[0] * $state_damage->{$hit_type} / $state_damage_total;
-					}
-				}
-			}
-
-			for my $element (keys %{$state_damage_weak->{"elements"}}) {
-				my $state_damage = $hit_data->{$element} >= $constants->{"element_weakness_threshold"} ?
-					$state_damage_weak : $state_damage_normal;
-				$state_dps->{"element"} +=
-					$state_damage->{"elements"}{$element} * $hit_data->{$element} / 100.0;
-			}
-
-			$state_dps->{"fixed"} += $state_damage_weak->{"fixed"};
-
-			for (1..3) {
-				$state_dps->{"total"} =
-					$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
-
-				my $real_total = $state_dps->{"total"} * $damage_data->{"monster_defense_multiplier"};
-				print $monster->{"hit_points"} . "\n";
-				if ($monster->{"hit_points"} > 0 && $real_total > 0) {
-					$state_dps->{"kill_freq"} = $real_total / $monster->{"hit_points"};
-					for my $status (keys %{$state_damage_weak->{"statuses"}}) {
-						my $status_attack = $state_damage_weak->{"statuses"}{$status};
-						if (defined $hit_data->{$status}) {
-							$status_attack *= $hit_data->{$status} / 100.0;
-						}
-						my $hits =
-							get_status_hits($status_attack,
-							                $monster->{"tolerances"}{$status},
-							                1.0 / $state_dps->{"kill_freq"},
-							                ($status ne "poison"));
-						if ($hits > 0.0) {
-							$state_dps->{"status"} += $hits * $monster->{"tolerances"}{$status}{"damage"};
-							$state_dps->{"proc_rate"}{$status} = $hits;
-						}
-					}
-				} else {
-					$state_dps->{"kill_freq"} = 0;
-					$state_dps->{"status"} = 0;
-				}
-			}
-
-			my $ratio = $damage_data->{"enraged_ratio"};
-			$ratio = 1.0 - $ratio if ($enraged_state ne "enraged");
-			$ratio /= $nb_hit_data;
-			for my $key (keys %{$state_dps}) {
-				$dps->{$key} += $state_dps->{$key} * $ratio;
+	my $state_damage_total = 0.0;
+	for my $hit_type (keys %hit_data_p) {
+		my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
+			$state_damage_weak : $state_damage_normal;
+		$state_damage_total += $state_damage->{$hit_type};
+	}
+	for my $hit_type (keys %hit_data_p) {
+		my $state_damage = $hit_data_p{$hit_type} >= $constants->{"weakness_threshold"} ?
+			$state_damage_weak : $state_damage_normal;
+		$dps->{"raw"} += $state_damage->{$hit_type} * $hit_data_p{$hit_type} / 100.0;
+		for my $v (@{$state_damage->{"bounce_sharpness"}}) {
+			if ($v->[1] * $hit_data_p{$hit_type} < $constants->{"bounce_threshold"}) {
+				$dps->{"bounce_rate"} +=
+					$v->[0] * $state_damage->{$hit_type} / $state_damage_total;
 			}
 		}
 	}
+
+	for my $element (keys %{$state_damage_weak->{"elements"}}) {
+		my $state_damage = $hit_data->{$element} >= $constants->{"element_weakness_threshold"} ?
+			$state_damage_weak : $state_damage_normal;
+		$dps->{"element"} +=
+			$state_damage->{"elements"}{$element} * $hit_data->{$element} / 100.0;
+	}
+
+	$dps->{"fixed"} += $state_damage_weak->{"fixed"};
+
+	for (1..3) {
+		$dps->{"total"} =
+			$dps->{"raw"} + $dps->{"element"} + $dps->{"status"} + $dps->{"fixed"};
+
+		my $real_total = $dps->{"total"} * $monster_defense_multiplier;
+		$dps->{"status"} = 0;
+		if ($monster->{"hit_points"} > 0 && $real_total > 0) {
+			$dps->{"kill_freq"} = $real_total / $monster->{"hit_points"};
+			for my $status (keys %{$state_damage_weak->{"statuses"}}) {
+				my $status_attack = $state_damage_weak->{"statuses"}{$status};
+				if (defined $hit_data->{$status}) {
+					$status_attack *= $hit_data->{$status} / 100.0;
+				}
+				my $hits =
+					get_status_hits($status_attack,
+					                $monster->{"tolerances"}{$status},
+					                1.0 / $dps->{"kill_freq"},
+					                ($status ne "poison"));
+				if ($hits > 0.0) {
+					$dps->{"status"} += $hits * $monster->{"tolerances"}{$status}{"damage"};
+					$dps->{"proc_rate"}{$status} = $hits;
+				}
+			}
+		}
+		last unless ($dps->{"status"} > 0);
+	}
+
 	return $dps;
 }
 
@@ -897,6 +872,29 @@ sub get_useful_items
 	return @res;
 }
 
+sub dps_sum
+{
+	my ($acu, $other, $rate) = @_;
+	$acu->{"total"} ||= 0.0;
+	$acu->{"total"} += $other->{"total"} * $rate;
+	$acu->{"raw"} ||= 0.0;
+	$acu->{"raw"} += $other->{"raw"} * $rate;
+	$acu->{"element"} ||= 0.0;
+	$acu->{"element"} += $other->{"element"} * $rate;
+	$acu->{"status"} ||= 0.0;
+	$acu->{"status"} += $other->{"status"} * $rate;
+	$acu->{"fixed"} ||= 0.0;
+	$acu->{"fixed"} += $other->{"fixed"} * $rate;
+	$acu->{"bounce_rate"} ||= 0.0;
+	$acu->{"bounce_rate"} += $other->{"bounce_rate"} * $rate;
+	for my $proc (keys %{$acu->{"proc_rate"}}) {
+		$acu->{"proc_rate"}{$proc} ||= 0.0;
+		$acu->{"proc_rate"}{$proc} += $other->{"proc_rate"} * $rate;
+	}
+	$acu->{"kill_freq"} ||= 0.0;
+	$acu->{"kill_freq"} += $other->{"kill_freq"} * $rate;
+}
+
 my $data = {};
 parse_data_files($data, @ARGV);
 
@@ -934,15 +932,71 @@ for my $profile (@{$data->{"profiles"}}) {
 	}
 }
 
-for my $monster (@{$data->{"monsters"}}) {
-	for my $part (@{$monster->{"parts"}}) {
-		for my $damage (@damages) {
-			my $dps = get_dps($monster, $part, $damage->{"damage"});
-			printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s / %s\n",
-				($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
-				 $dps->{kill_freq} == 0 ? 0 : (1.0 / $dps->{kill_freq}),
-				 $monster->{name}, $part->{name},
-				 $damage->{profile_name}, $damage->{item_names});
+for my $damage (@damages) {
+	for my $target (@{$data->{"targets"}}) {
+		my $total_weight = 0.0;
+		my $total_dps = {};
+
+		for my $sub_target (@{$target->{"sub_targets"}}) {
+			my $weight = $sub_target->{"weight"};
+			my $monster_name = defined $sub_target->{"monster_name"} ?
+				$sub_target->{"monster_name"} : $target->{"monster_name"};
+			my $part_name = defined $sub_target->{"part_name"} ?
+				$sub_target->{"part_name"} : $target->{"part_name"};
+			my $state = defined $sub_target->{"state"} ?
+				$sub_target->{"state"} : $target->{"state"};
+			my $enraged_ratio = defined $sub_target->{"enraged_ratio"} ?
+				$sub_target->{"enraged_ratio"} : defined $target->{"enraged_ratio"} ?
+				$target->{"enraged_ratio"} : $constants->{"enraged_ratio"};
+			my $monster_defense_multiplier = defined $sub_target->{"monster_defense_multiplier"} ?
+				$sub_target->{"monster_defense_multiplier"} : defined $target->{"monster_defense_multiplier"} ?
+				$target->{"enraged_ratio"} : $constants->{"enraged_ratio"};
+
+			my $sub_target_dps = {};
+			my $sub_target_weight = 0.0;
+			for my $monster (@{$data->{"monsters"}}) {
+				my $monster_dps = {};
+				my $monster_weight = 0.0;
+				next if (defined $monster_name && $monster_name ne $monster->{"name"});
+				for my $part (@{$monster->{"parts"}}) {
+					my $part_dps = {};
+					my $part_weight = 0.0;
+					next if (defined $part_name && $part_name ne $part->{"name"});
+					for my $hit_data (@{$part->{"hit_data"}}) {
+						next if (defined $state && defined $hit_data->{"state"} &&
+						         $state ne $hit_data->{"state"});
+						my $hit_data_dps;
+						$hit_data_dps = get_dps($monster, $hit_data, $damage->{"damage"}{"enraged"},
+						                        $monster_defense_multiplier);
+						dps_sum($part_dps, $hit_data_dps, $enraged_ratio);
+						$hit_data_dps = get_dps($monster, $hit_data, $damage->{"damage"}{"not_enraged"},
+						                        $monster_defense_multiplier);
+						dps_sum($part_dps, $hit_data_dps, 1.0 - $enraged_ratio);
+						$part_weight += 1.0;
+					}
+					if ($part_weight > 0.0) {
+						dps_sum($monster_dps, $part_dps, 1.0 / $part_weight);
+						$monster_weight += 1.0;
+					}
+				}
+				if ($monster_weight > 0.0) {
+					dps_sum($sub_target_dps, $monster_dps, 1.0 / $monster_weight);
+					$sub_target_weight += 1.0;
+				}
+			}
+			if ($sub_target_weight > 0.0) {
+				dps_sum($total_dps, $sub_target_dps, $weight / $sub_target_weight);
+				$total_weight += $weight;
+			}
 		}
+
+		my $dps = {};
+		if ($total_weight != 0.0) {
+			dps_sum($dps, $total_dps, 1.0 / $total_weight);
+		}
+		printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s\n",
+			($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
+			 $dps->{kill_freq} == 0 ? 0 : (1.0 / $dps->{kill_freq}),
+			 $target->{name}, $damage->{profile_name}, $damage->{item_names});
 	}
 }

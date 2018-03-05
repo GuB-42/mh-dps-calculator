@@ -1,0 +1,19 @@
+<data>
+	<target>
+		<name>Rathalos target</name>
+		<enraged_ratio>0.4</enraged_ratio>
+		<monster_defense_multiplier>0.5</monster_defense_multiplier>
+		<monster_name>Rathalos</monster_name>
+		<sub_target>
+			<weight>0.4</weight>
+			<part_name>Head</part_name>
+		</sub_target>
+		<sub_target>
+			<weight>0.2</weight>
+			<part_name>Tail</part_name>
+		</sub_target>
+		<sub_target>
+			<weight>0.4</weight>
+		</sub_target>
+	</target>
+</data>
