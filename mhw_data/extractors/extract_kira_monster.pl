@@ -15,6 +15,10 @@ my @header_row = ();
 my $weapon_type = "";
 my %sharpness = ();
 my @slots = ();
+my $monster_name;
+
+my @monsters;
+my $cur_monster;
 
 sub process_data_row {
 	my @drow = @data_row;
@@ -23,20 +27,34 @@ sub process_data_row {
 	for (my $i = 0; $i < @drow; ++$i) {
 		$lrow{$header_row[$i]} = $data_row[$i];
 	}
-	$xml_writer->startTag("part");
-	$xml_writer->dataElement("name", $lrow{"Body Part"});
-	$xml_writer->startTag("hit_data");
-	$xml_writer->dataElement("cut", $lrow{"Sever"});
-	$xml_writer->dataElement("impact", $lrow{"Blunt"});
-	$xml_writer->dataElement("bullet", $lrow{"Shot"});
-	$xml_writer->dataElement("fire", $lrow{"Fir"});
-	$xml_writer->dataElement("water", $lrow{"Wat"});
-	$xml_writer->dataElement("thunder", $lrow{"Thn"});
-	$xml_writer->dataElement("ice", $lrow{"Ice"});
-	$xml_writer->dataElement("dragon", $lrow{"Drg"});
-	$xml_writer->dataElement("stun", $lrow{"Stun"});
-	$xml_writer->endTag();
-	$xml_writer->endTag();
+
+	my $part_name = $lrow{"Body Part"};
+	my $state = "";
+
+	unless ($part_name =~ /^Exhaust Organ/) {
+		if ($part_name =~ /(.*\S)\s*\((.*)\)/) {
+			$part_name = $1;
+			$state = $2;
+		}
+	}
+
+	unless ($cur_monster->{$part_name}) {
+		push @{$cur_monster->{"parts"}}, $part_name;
+		$cur_monster->{$part_name} = {
+			"hit_data" => {}
+		}
+	}
+	$cur_monster->{$part_name}{"hit_data"}{$state} = {
+		"cut" => $lrow{"Sever"},
+		"impact" => $lrow{"Blunt"},
+		"bullet" => $lrow{"Shot"},
+		"fire" => $lrow{"Fir"},
+		"water" => $lrow{"Wat"},
+		"thunder" => $lrow{"Thn"},
+		"ice" => $lrow{"Ice"},
+		"dragon" => $lrow{"Drg"},
+		"stun" => $lrow{"Stun"}
+	}
 }
 
 my $in_hit_data = 0;
@@ -83,7 +101,7 @@ sub end {
 		if ($text =~ /^\s*([,\d]+)\s*Base HP\s*$/) {
 			my $hp = $1;
 			$hp =~ s/,//g;
-			$xml_writer->dataElement("hit_points", $hp);
+			$cur_monster->{"hit_points"} = $hp;
 		}
 	} elsif (lc($tag) eq "td") {
 		$in_td = 0;
@@ -100,7 +118,12 @@ sub end {
 	} elsif (lc($tag) eq "th") {
 		push @header_row, $text;
 	} elsif (lc($tag) eq "h1") {
-		$xml_writer->dataElement("name", decode_text($text));
+		$cur_monster = {
+			"name" => decode_text($text),
+			"hit_data" => {},
+			"parts" => []
+		};
+		push @monsters, $cur_monster;
 	}
 }
 
@@ -118,12 +141,30 @@ $xml_writer->xmlDecl("UTF-8");
 $xml_writer->startTag("data");
 
 for my $file (@ARGV) {
-	$xml_writer->startTag("monster");
 	my $p = HTML::Parser->new(api_version => 3,
 	                          start_h => [ \&start, "self, tagname, attr, attrseq, text" ],
 	                          end_h => [ \&end, "self, tagname, text" ],
 	                          text_h => [ \&text, "self, text, is_cdata" ]);
 	$p->parse_file($file);
+}
+
+for my $monster (@monsters) {
+	$xml_writer->startTag("monster");
+	$xml_writer->dataElement("name", $monster->{"name"});
+	$xml_writer->dataElement("hit_points", $monster->{"hit_points"}) if ($monster->{"hit_points"});
+	for my $part_name (@{$monster->{"parts"}}) {
+		$xml_writer->startTag("part");
+		$xml_writer->dataElement("name", $part_name);
+		for my $state (sort keys %{$monster->{$part_name}{"hit_data"}}) {
+			$xml_writer->startTag("hit_data");
+			$xml_writer->dataElement("state", $state) if ($state);
+			for my $key ("cut", "impact", "bullet", "fire", "water", "thunder", "ice", "dragon", "stun") {
+				$xml_writer->dataElement($key, $monster->{$part_name}{"hit_data"}{$state}{$key});
+			}
+			$xml_writer->endTag();
+		}
+		$xml_writer->endTag();
+	}
 	$xml_writer->endTag();
 }
 

@@ -530,9 +530,9 @@ sub get_damage_data
 
 	my $damage_data = {};
 
-	for my $state ([ "!enraged", "normal" ],
-	               [ "enraged", "normal" ],
-	               [ "!enraged", "weak_spot" ],
+	for my $state ([ "not_enraged", "normal_spot" ],
+	               [ "enraged", "normal_spot" ],
+	               [ "not_enraged", "weak_spot" ],
 	               [ "enraged", "weak_spot" ]) {
 		my $total_rate = 0.0;
 		for my $pattern (@{$profile->{"patterns"}}) {
@@ -638,16 +638,12 @@ sub get_dps
 
 	my $dps = {};
 
-	for my $enraged_state ("!enraged", "enraged") {
-		my $not_enraged_state = "!$enraged_state";
-		$not_enraged_state =~ s/^!!//;
+	for my $enraged_state ("not_enraged", "enraged") {
 		my $nb_hit_data = 0;
 		for my $hit_data (@{$part->{"hit_data"}}) {
-			next if ($hit_data->{"states"}{$not_enraged_state});
 			++$nb_hit_data;
 		}
 		for my $hit_data (@{$part->{"hit_data"}}) {
-			next if ($hit_data->{"states"}{$not_enraged_state});
 			my $state_dps = {
 				"raw" => 0.0,
 				"element" => 0.0,
@@ -657,7 +653,7 @@ sub get_dps
 				"proc_rate" => {},
 				"kill_freq" => 0.0
 			};
-			my $state_damage_normal = $damage_data->{$enraged_state}{"normal"};
+			my $state_damage_normal = $damage_data->{$enraged_state}{"normal_spot"};
 			my $state_damage_weak = $damage_data->{$enraged_state}{"weak_spot"};
 
 			my %hit_data_p = ("cut" => $hit_data->{"cut"}, "impact" => $hit_data->{"impact"});
@@ -696,8 +692,9 @@ sub get_dps
 					$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
 
 				my $real_total = $state_dps->{"total"} * $damage_data->{"monster_defense_multiplier"};
+				print $monster->{"hit_points"} . "\n";
 				if ($monster->{"hit_points"} > 0 && $real_total > 0) {
-					$state_dps->{"kill_freq"} = $real_total / $damage_data->{"hit_points"};
+					$state_dps->{"kill_freq"} = $real_total / $monster->{"hit_points"};
 					for my $status (keys %{$state_damage_weak->{"statuses"}}) {
 						my $status_attack = $state_damage_weak->{"statuses"}{$status};
 						if (defined $hit_data->{$status}) {
@@ -720,7 +717,7 @@ sub get_dps
 			}
 
 			my $ratio = $damage_data->{"enraged_ratio"};
-			$ratio = 1.0 - $ratio if ($enraged_state eq "!enraged");
+			$ratio = 1.0 - $ratio if ($enraged_state ne "enraged");
 			$ratio /= $nb_hit_data;
 			for my $key (keys %{$state_dps}) {
 				$dps->{$key} += $state_dps->{$key} * $ratio;
@@ -943,7 +940,8 @@ for my $monster (@{$data->{"monsters"}}) {
 			my $dps = get_dps($monster, $part, $damage->{"damage"});
 			printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s / %s\n",
 				($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
-				 (1.0 / $dps->{kill_freq}), $monster->{name}, $part->{name},
+				 $dps->{kill_freq} == 0 ? 0 : (1.0 / $dps->{kill_freq}),
+				 $monster->{name}, $part->{name},
 				 $damage->{profile_name}, $damage->{item_names});
 		}
 	}

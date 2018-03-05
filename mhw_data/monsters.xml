@@ -2,8 +2,8 @@
 
 <data>
     <monster>
-        <hit_points>2990</hit_points>
         <name>Anjanath</name>
+        <hit_points>2990</hit_points>
         <part>
             <name>Nose</name>
             <hit_data>
@@ -87,10 +87,8 @@
                 <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Left Leg (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>45</cut>
                 <impact>45</impact>
                 <bullet>50</bullet>
@@ -115,10 +113,8 @@
                 <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Right Leg (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>45</cut>
                 <impact>45</impact>
                 <bullet>50</bullet>
@@ -146,8 +142,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Apceros</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -178,8 +174,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>53</hit_points>
         <name>Aptonoth</name>
+        <hit_points>53</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -210,8 +206,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3250</hit_points>
         <name>Azure Rathalos</name>
+        <hit_points>3250</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -354,8 +350,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Barnos</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -386,8 +382,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2450</hit_points>
         <name>Barroth</name>
+        <hit_points>2450</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -401,10 +397,8 @@
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>20</cut>
                 <impact>24</impact>
                 <bullet>9</bullet>
@@ -429,10 +423,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Body (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>24</cut>
                 <impact>24</impact>
                 <bullet>20</bullet>
@@ -457,10 +449,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Forearms (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>35</cut>
                 <impact>38</impact>
                 <bullet>30</bullet>
@@ -485,10 +475,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Left Hindleg (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>24</cut>
                 <impact>24</impact>
                 <bullet>20</bullet>
@@ -513,10 +501,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Right Hindleg (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>24</cut>
                 <impact>24</impact>
                 <bullet>20</bullet>
@@ -541,10 +527,8 @@
                 <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Tail (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>25</cut>
                 <impact>25</impact>
                 <bullet>22</bullet>
@@ -558,8 +542,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>4550</hit_points>
         <name>Bazelgeuse</name>
+        <hit_points>4550</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -646,8 +630,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3450</hit_points>
         <name>Black Diablos</name>
+        <hit_points>3450</hit_points>
         <part>
             <name>Horn</name>
             <hit_data>
@@ -804,8 +788,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3250</hit_points>
         <name>Diablos</name>
+        <hit_points>3250</hit_points>
         <part>
             <name>Horn</name>
             <hit_data>
@@ -962,8 +946,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3000</hit_points>
         <name>Dodogama</name>
+        <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -977,10 +961,8 @@
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Rock 1)</name>
             <hit_data>
+                <state>Rock 1</state>
                 <cut>75</cut>
                 <impact>75</impact>
                 <bullet>65</bullet>
@@ -991,10 +973,8 @@
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Rock 2)</name>
             <hit_data>
+                <state>Rock 2</state>
                 <cut>100</cut>
                 <impact>100</impact>
                 <bullet>90</bullet>
@@ -1019,10 +999,8 @@
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Neck (Rock 1)</name>
             <hit_data>
+                <state>Rock 1</state>
                 <cut>65</cut>
                 <impact>65</impact>
                 <bullet>55</bullet>
@@ -1033,10 +1011,8 @@
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Neck (Rock 2)</name>
             <hit_data>
+                <state>Rock 2</state>
                 <cut>90</cut>
                 <impact>90</impact>
                 <bullet>80</bullet>
@@ -1120,8 +1096,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>120</hit_points>
         <name>Gajalaka</name>
+        <hit_points>120</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1152,8 +1128,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Gajau</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1184,8 +1160,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Gastodon</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1216,8 +1192,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>150</hit_points>
         <name>Girros</name>
+        <hit_points>150</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1248,8 +1224,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2400</hit_points>
         <name>Great Girros</name>
+        <hit_points>2400</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1378,8 +1354,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2200</hit_points>
         <name>Great Jagras</name>
+        <hit_points>2200</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1423,8 +1399,9 @@
             </hit_data>
         </part>
         <part>
-            <name>Stomach (Inflated)</name>
+            <name>Stomach</name>
             <hit_data>
+                <state>Inflated</state>
                 <cut>90</cut>
                 <impact>95</impact>
                 <bullet>85</bullet>
@@ -1525,8 +1502,8 @@
         <name>Grimalkyne</name>
     </monster>
     <monster>
-        <hit_points>40</hit_points>
         <name>Hornetaur</name>
+        <hit_points>40</hit_points>
         <part>
             <name>Body</name>
             <hit_data>
@@ -1543,8 +1520,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>60</hit_points>
         <name>Jagras</name>
+        <hit_points>60</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1575,8 +1552,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2800</hit_points>
         <name>Jyuratodus</name>
+        <hit_points>2800</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1590,10 +1567,8 @@
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>50</cut>
                 <impact>50</impact>
                 <bullet>40</bullet>
@@ -1632,10 +1607,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Body (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>30</cut>
                 <impact>30</impact>
                 <bullet>25</bullet>
@@ -1688,10 +1661,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Left Leg (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>35</cut>
                 <impact>35</impact>
                 <bullet>30</bullet>
@@ -1716,10 +1687,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Right Leg (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>35</cut>
                 <impact>35</impact>
                 <bullet>30</bullet>
@@ -1744,10 +1713,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Tail (Mud)</name>
             <hit_data>
+                <state>Mud</state>
                 <cut>50</cut>
                 <impact>50</impact>
                 <bullet>40</bullet>
@@ -1761,8 +1728,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>70</hit_points>
         <name>Kelbi</name>
+        <hit_points>70</hit_points>
         <part>
             <name>Horn</name>
             <hit_data>
@@ -1793,8 +1760,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>120</hit_points>
         <name>Kestodon</name>
+        <hit_points>120</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1825,8 +1792,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3350</hit_points>
         <name>Kirin</name>
+        <hit_points>3350</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1854,10 +1821,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Body (Electricity)</name>
             <hit_data>
+                <state>Electricity</state>
                 <cut>20</cut>
                 <impact>20</impact>
                 <bullet>10</bullet>
@@ -1882,10 +1847,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Lower Body (Electricity)</name>
             <hit_data>
+                <state>Electricity</state>
                 <cut>20</cut>
                 <impact>20</impact>
                 <bullet>10</bullet>
@@ -1898,10 +1861,9 @@
             </hit_data>
         </part>
     </monster>
-    <monster></monster>
     <monster>
-        <hit_points>2650</hit_points>
         <name>Kulu-Ya-Ku</name>
+        <hit_points>2650</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -1974,8 +1936,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3980</hit_points>
         <name>Kushala Daora</name>
+        <hit_points>3980</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -2090,8 +2052,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>4000</hit_points>
         <name>Lavasioth</name>
+        <hit_points>4000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -2105,10 +2067,8 @@
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>35</cut>
                 <impact>40</impact>
                 <bullet>35</bullet>
@@ -2161,10 +2121,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Back (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>35</cut>
                 <impact>35</impact>
                 <bullet>35</bullet>
@@ -2203,10 +2161,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Legs (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>30</cut>
                 <impact>30</impact>
                 <bullet>30</bullet>
@@ -2234,8 +2190,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3000</hit_points>
         <name>Legiana</name>
+        <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -2364,8 +2320,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Mernos</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -2396,8 +2352,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Mosswine</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Body</name>
             <hit_data>
@@ -2414,8 +2370,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3520</hit_points>
         <name>Nergigante</name>
+        <hit_points>3520</hit_points>
         <part>
             <name>Horn</name>
             <hit_data>
@@ -2429,10 +2385,8 @@
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Horn (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>35</cut>
                 <impact>40</impact>
                 <bullet>45</bullet>
@@ -2457,10 +2411,32 @@
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (White)</name>
             <hit_data>
+                <state>Black</state>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>20</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+            <hit_data>
+                <state>Gloss Black</state>
+                <cut>20</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>20</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+            <hit_data>
+                <state>White</state>
                 <cut>75</cut>
                 <impact>90</impact>
                 <bullet>70</bullet>
@@ -2469,34 +2445,6 @@
                 <thunder>15</thunder>
                 <ice>15</ice>
                 <dragon>5</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Head (Black)</name>
-            <hit_data>
-                <cut>20</cut>
-                <impact>25</impact>
-                <bullet>15</bullet>
-                <fire>5</fire>
-                <water>10</water>
-                <thunder>20</thunder>
-                <ice>15</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Head (Gloss Black)</name>
-            <hit_data>
-                <cut>20</cut>
-                <impact>25</impact>
-                <bullet>15</bullet>
-                <fire>5</fire>
-                <water>10</water>
-                <thunder>20</thunder>
-                <ice>15</ice>
-                <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -2541,10 +2489,32 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Forearms (White)</name>
             <hit_data>
+                <state>Black</state>
+                <cut>10</cut>
+                <impact>15</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Gloss Black</state>
+                <cut>10</cut>
+                <impact>15</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>White</state>
                 <cut>70</cut>
                 <impact>60</impact>
                 <bullet>55</bullet>
@@ -2553,34 +2523,6 @@
                 <thunder>15</thunder>
                 <ice>0</ice>
                 <dragon>5</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Forearms (Black)</name>
-            <hit_data>
-                <cut>10</cut>
-                <impact>15</impact>
-                <bullet>10</bullet>
-                <fire>5</fire>
-                <water>5</water>
-                <thunder>20</thunder>
-                <ice>0</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Forearms (Gloss Black)</name>
-            <hit_data>
-                <cut>10</cut>
-                <impact>15</impact>
-                <bullet>10</bullet>
-                <fire>5</fire>
-                <water>5</water>
-                <thunder>20</thunder>
-                <ice>0</ice>
-                <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2611,10 +2553,32 @@
                 <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Wings (White)</name>
             <hit_data>
+                <state>Black</state>
+                <cut>28</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Gloss Black</state>
+                <cut>28</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>10</fire>
+                <water>5</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>20</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>White</state>
                 <cut>55</cut>
                 <impact>45</impact>
                 <bullet>45</bullet>
@@ -2623,34 +2587,6 @@
                 <thunder>10</thunder>
                 <ice>5</ice>
                 <dragon>15</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Wings (Black)</name>
-            <hit_data>
-                <cut>28</cut>
-                <impact>25</impact>
-                <bullet>25</bullet>
-                <fire>10</fire>
-                <water>5</water>
-                <thunder>15</thunder>
-                <ice>5</ice>
-                <dragon>20</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Wings (Gloss Black)</name>
-            <hit_data>
-                <cut>28</cut>
-                <impact>25</impact>
-                <bullet>25</bullet>
-                <fire>10</fire>
-                <water>5</water>
-                <thunder>15</thunder>
-                <ice>5</ice>
-                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -2681,10 +2617,32 @@
                 <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Tail Tip (White)</name>
             <hit_data>
+                <state>Black</state>
+                <cut>25</cut>
+                <impact>20</impact>
+                <bullet>10</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Gloss Black</state>
+                <cut>25</cut>
+                <impact>20</impact>
+                <bullet>10</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>20</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>White</state>
                 <cut>65</cut>
                 <impact>55</impact>
                 <bullet>40</bullet>
@@ -2696,38 +2654,10 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-        <part>
-            <name>Tail Tip (Black)</name>
-            <hit_data>
-                <cut>25</cut>
-                <impact>20</impact>
-                <bullet>10</bullet>
-                <fire>15</fire>
-                <water>5</water>
-                <thunder>20</thunder>
-                <ice>5</ice>
-                <dragon>15</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Tail Tip (Gloss Black)</name>
-            <hit_data>
-                <cut>25</cut>
-                <impact>20</impact>
-                <bullet>10</bullet>
-                <fire>15</fire>
-                <water>5</water>
-                <thunder>20</thunder>
-                <ice>5</ice>
-                <dragon>15</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Noios</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -2758,8 +2688,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3000</hit_points>
         <name>Odogaron</name>
+        <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -2888,8 +2818,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2950</hit_points>
         <name>Paolumu</name>
+        <hit_points>2950</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3018,8 +2948,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3000</hit_points>
         <name>Pink Rathian</name>
+        <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3162,8 +3092,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2800</hit_points>
         <name>Pukei-Pukei</name>
+        <hit_points>2800</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3292,8 +3222,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3000</hit_points>
         <name>Radobaan</name>
+        <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3436,8 +3366,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Raphinos</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3468,8 +3398,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3250</hit_points>
         <name>Rathalos</name>
+        <hit_points>3250</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3598,8 +3528,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>3000</hit_points>
         <name>Rathian</name>
+        <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3728,8 +3658,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>100</hit_points>
         <name>Shamos</name>
+        <hit_points>100</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3760,8 +3690,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>4300</hit_points>
         <name>Teostra</name>
+        <hit_points>4300</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -3876,8 +3806,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2900</hit_points>
         <name>Tobi-Kadachi</name>
+        <hit_points>2900</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -4006,8 +3936,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>2650</hit_points>
         <name>Tzitzi-Ya-Ku</name>
+        <hit_points>2650</hit_points>
         <part>
             <name>Antennae</name>
             <hit_data>
@@ -4080,8 +4010,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>4300</hit_points>
         <name>Uragaan</name>
+        <hit_points>4300</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -4109,10 +4039,8 @@
                 <dragon>30</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Jaw (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>55</cut>
                 <impact>60</impact>
                 <bullet>40</bullet>
@@ -4224,8 +4152,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>4700</hit_points>
         <name>Vaal Hazak</name>
+        <hit_points>4700</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -4239,10 +4167,8 @@
                 <dragon>0</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>70</cut>
                 <impact>80</impact>
                 <bullet>60</bullet>
@@ -4295,10 +4221,8 @@
                 <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Stomach (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>60</cut>
                 <impact>70</impact>
                 <bullet>40</bullet>
@@ -4323,10 +4247,8 @@
                 <dragon>0</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Back (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>55</cut>
                 <impact>65</impact>
                 <bullet>40</bullet>
@@ -4365,10 +4287,8 @@
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Forelegs (Wounded)</name>
             <hit_data>
+                <state>Wounded</state>
                 <cut>55</cut>
                 <impact>50</impact>
                 <bullet>45</bullet>
@@ -4397,20 +4317,6 @@
         <part>
             <name>Tail Tip</name>
             <hit_data>
-                <cut>35</cut>
-                <impact>30</impact>
-                <bullet>30</bullet>
-                <fire>20</fire>
-                <water>5</water>
-                <thunder>10</thunder>
-                <ice>15</ice>
-                <dragon>0</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Tail Tip</name>
-            <hit_data>
                 <cut>60</cut>
                 <impact>30</impact>
                 <bullet>50</bullet>
@@ -4424,8 +4330,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>8</hit_points>
         <name>Vespoid</name>
+        <hit_points>8</hit_points>
         <part>
             <name>Body</name>
             <hit_data>
@@ -4442,8 +4348,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>7500</hit_points>
         <name>Xeno'jiiva</name>
+        <hit_points>7500</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -4457,24 +4363,8 @@
                 <dragon>20</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Head (Wounded)</name>
             <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>60</bullet>
-                <fire>20</fire>
-                <water>10</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>20</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Head (Critical State)</name>
-            <hit_data>
+                <state>Critical State</state>
                 <cut>80</cut>
                 <impact>100</impact>
                 <bullet>60</bullet>
@@ -4483,6 +4373,18 @@
                 <thunder>30</thunder>
                 <ice>30</ice>
                 <dragon>15</dragon>
+                <stun>100</stun>
+            </hit_data>
+            <hit_data>
+                <state>Wounded</state>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>60</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -4499,10 +4401,8 @@
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Neck (Critical State)</name>
             <hit_data>
+                <state>Critical State</state>
                 <cut>50</cut>
                 <impact>50</impact>
                 <bullet>30</bullet>
@@ -4527,10 +4427,8 @@
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Body (Critical State)</name>
             <hit_data>
+                <state>Critical State</state>
                 <cut>60</cut>
                 <impact>60</impact>
                 <bullet>40</bullet>
@@ -4555,10 +4453,8 @@
                 <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Chest (Critical State)</name>
             <hit_data>
+                <state>Critical State</state>
                 <cut>100</cut>
                 <impact>80</impact>
                 <bullet>70</bullet>
@@ -4583,24 +4479,8 @@
                 <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Forelegs (Wounded)</name>
             <hit_data>
-                <cut>60</cut>
-                <impact>60</impact>
-                <bullet>50</bullet>
-                <fire>20</fire>
-                <water>10</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>20</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Forelegs (Critical State)</name>
-            <hit_data>
+                <state>Critical State</state>
                 <cut>70</cut>
                 <impact>90</impact>
                 <bullet>60</bullet>
@@ -4609,6 +4489,18 @@
                 <thunder>30</thunder>
                 <ice>30</ice>
                 <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Wounded</state>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
+                <fire>20</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -4625,10 +4517,8 @@
                 <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Hindlegs (Critical State)</name>
             <hit_data>
+                <state>Critical State</state>
                 <cut>50</cut>
                 <impact>50</impact>
                 <bullet>40</bullet>
@@ -4653,24 +4543,8 @@
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Wings (Wounded)</name>
             <hit_data>
-                <cut>60</cut>
-                <impact>60</impact>
-                <bullet>40</bullet>
-                <fire>15</fire>
-                <water>10</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>15</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Wings (Critical State)</name>
-            <hit_data>
+                <state>Critical State</state>
                 <cut>100</cut>
                 <impact>80</impact>
                 <bullet>50</bullet>
@@ -4678,6 +4552,18 @@
                 <water>30</water>
                 <thunder>30</thunder>
                 <ice>30</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Wounded</state>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>40</bullet>
+                <fire>15</fire>
+                <water>10</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
                 <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -4695,10 +4581,8 @@
                 <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Tail (Critical State)</name>
             <hit_data>
+                <state>Critical State</state>
                 <cut>50</cut>
                 <impact>50</impact>
                 <bullet>30</bullet>
@@ -4723,10 +4607,8 @@
                 <dragon>20</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part>
-            <name>Tail Tip (Critical State)</name>
             <hit_data>
+                <state>Critical State</state>
                 <cut>90</cut>
                 <impact>90</impact>
                 <bullet>60</bullet>
@@ -4740,8 +4622,8 @@
         </part>
     </monster>
     <monster>
-        <hit_points>12000</hit_points>
         <name>Zorah Magdaros</name>
+        <hit_points>12000</hit_points>
         <part>
             <name>Head</name>
             <hit_data>
@@ -4771,22 +4653,9 @@
             </hit_data>
         </part>
         <part>
-            <name>Chest (Before Wounded)</name>
+            <name>Chest</name>
             <hit_data>
-                <cut>50</cut>
-                <impact>50</impact>
-                <bullet>30</bullet>
-                <fire>0</fire>
-                <water>25</water>
-                <thunder>10</thunder>
-                <ice>20</ice>
-                <dragon>25</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Chest (After Wounded)</name>
-            <hit_data>
+                <state>After Wounded</state>
                 <cut>80</cut>
                 <impact>80</impact>
                 <bullet>80</bullet>
@@ -4795,6 +4664,18 @@
                 <thunder>15</thunder>
                 <ice>25</ice>
                 <dragon>30</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Before Wounded</state>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>25</water>
+                <thunder>10</thunder>
+                <ice>20</ice>
+                <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>

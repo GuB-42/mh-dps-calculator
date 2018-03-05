@@ -159,7 +159,7 @@ sub process_start
 		}
 	} elsif ($xml_stack[0] eq "hit_data") {
 		$cur_hit_data = {
-			"states" => {},
+			"state" => "no_state",
 			"cut" => 0,
 			"impact" => 0,
 			"bullet" => 0,
@@ -261,14 +261,14 @@ sub process_val
 	} elsif ($xml_stack[0] eq "monster") {
 		push @{$output_data->{"monsters"}}, $cur_monster;
 	} elsif ($xml_stack[1] eq "monster") {
-		if ($xml_stack[0] eq "name") {
-			$cur_monster->{"name"} = $val;
-		} elsif ($xml_stack[0] eq "part") {
+		if ($xml_stack[0] eq "part") {
 			push @{$cur_monster->{"parts"}}, $cur_part;
 		} elsif ($xml_stack[0] eq "tolerance") {
 			my $tol_type = $cur_tolerance->{"type"};
 			delete $cur_tolerance->{"type"};
 			$cur_monster->{"tolerances"}{$tol_type} = $cur_tolerance;
+		} else {
+			$cur_monster->{$xml_stack[0]} = $val;
 		}
 	} elsif ($xml_stack[1] eq "part") {
 		if ($xml_stack[0] eq "name") {
@@ -277,11 +277,7 @@ sub process_val
 			push @{$cur_part->{"hit_data"}}, $cur_hit_data;
 		}
 	} elsif ($xml_stack[1] eq "hit_data") {
-		if ($xml_stack[0] eq "state") {
-			$cur_hit_data->{"states"}{$val} = 1;
-		} else {
-			$cur_hit_data->{$xml_stack[0]} = $val;
-		}
+		$cur_hit_data->{$xml_stack[0]} = $val;
 	} elsif ($xml_stack[1] eq "tolerance") {
 		$cur_tolerance->{$xml_stack[0]} = $val;
 	} elsif ($xml_stack[0] eq "weapon_profile") {
