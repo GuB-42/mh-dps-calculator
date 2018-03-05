@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <data>
+
+<!-- Weapons -->
+
 <translation>
 	<name>Buster Sword I</name>
 	<name_fr>Espadon</name_fr>
@@ -5746,4 +5749,540 @@
 	<name_fr>Grand arc de chasseur</name_fr>
 	<name_jp>グレイトハンターボウ</name_jp>
 </translation>
+
+<!-- buffs -->
+
+<translation>
+	<name>Heavy Artillery</name>
+	<name_fr>Artillerie lourde</name_fr>
+</translation>
+<translation>
+	<name>Critical Boost</name>
+	<name_fr>Berserker</name_fr>
+</translation>
+<translation>
+	<name>Bombardier</name>
+	<name_fr>Bombardier</name_fr>
+</translation>
+<translation>
+	<name>Artillery</name>
+	<name_fr>BOUM!</name_fr>
+</translation>
+<translation>
+	<name>Ice Attack</name>
+	<name_fr>Blizzard</name_fr>
+</translation>
+<translation>
+	<name>Slugger</name>
+	<name_fr>Cogneur</name_fr>
+</translation>
+<translation>
+	<name>Focus</name>
+	<name_fr>Concentration</name_fr>
+</translation>
+<translation>
+	<name>Maximum Might</name>
+	<name_fr>Corps et âme</name_fr>
+</translation>
+<translation>
+	<name>Critical Draw</name>
+	<name_fr>Dégainage éclair</name_fr>
+</translation>
+<translation>
+	<name>Spread/Power Shots</name>
+	<name_fr>Désigné pour mourir</name_fr>
+</translation>
+<translation>
+	<name>Partbreaker</name>
+	<name_fr>Destructeur</name_fr>
+</translation>
+<translation>
+	<name>Blast Attack</name>
+	<name_fr>Destruction massive</name_fr>
+</translation>
+<translation>
+	<name>Palico Rally</name>
+	<name_fr>Esprit Palico</name_fr>
+</translation>
+<translation>
+	<name>Thunder Attack</name>
+	<name_fr>Feu du Ciel</name_fr>
+</translation>
+<translation>
+	<name>Latent Power</name>
+	<name_fr>Force latente</name_fr>
+</translation>
+<translation>
+	<name>Heroics</name>
+	<name_fr>Heroisme</name_fr>
+</translation>
+<translation>
+	<name>Intimidator</name>
+	<name_fr>Intimidation</name_fr>
+</translation>
+<translation>
+	<name>Fortify</name>
+	<name_fr>Jamais vaincu</name_fr>
+</translation>
+<translation>
+	<name>Sleep Attack</name>
+	<name_fr>La nuit porte conseil</name_fr>
+</translation>
+<translation>
+	<name>Attack Boost</name>
+	<name_fr>Machine de guerre</name_fr>
+</translation>
+<translation>
+	<name>Master Mounter</name>
+	<name_fr>Maitre cavalier</name_fr>
+</translation>
+<translation>
+	<name>Critical Eye</name>
+	<name_fr>Maitre d'armes</name_fr>
+</translation>
+<translation>
+	<name>Water Attack</name>
+	<name_fr>Maelstrom</name_fr>
+</translation>
+<translation>
+	<name>Horn Maestro</name>
+	<name_fr>Maestro</name_fr>
+</translation>
+<translation>
+	<name>Weakness Exploit</name>
+	<name_fr>Mise à Mort</name_fr>
+</translation>
+<translation>
+	<name>Poison Attack</name>
+	<name_fr>Mort aux rats</name_fr>
+</translation>
+<translation>
+	<name>Airborne</name>
+	<name_fr>Mort venue d'en haut</name_fr>
+</translation>
+<translation>
+	<name>Paralysis Attack</name>
+	<name_fr>Neutralisation</name_fr>
+</translation>
+<translation>
+	<name>Peak Performance</name>
+	<name_fr>Performance optimale</name_fr>
+</translation>
+<translation>
+	<name>Dragon Attack</name>
+	<name_fr>Pourfendeur de dragon</name_fr>
+</translation>
+<translation>
+	<name>Capacity Boost</name>
+	<name_fr>Prêt à tirer</name_fr>
+</translation>
+<translation>
+	<name>Power Prolonger</name>
+	<name_fr>Puissance absolue</name_fr>
+</translation>
+<translation>
+	<name>Fire Attack</name>
+	<name_fr>Pyromane</name_fr>
+</translation>
+<translation>
+	<name>Affinity Sliding</name>
+	<name_fr>Roi de la glisse</name_fr>
+</translation>
+<translation>
+	<name>Special Ammo Boost</name>
+	<name_fr>Salve mortelle</name_fr>
+</translation>
+<translation>
+	<name>Handicraft</name>
+	<name_fr>Savoir-faire</name_fr>
+</translation>
+<translation>
+	<name>Elderseal Boost</name>
+	<name_fr>Sceau des anciens +</name_fr>
+</translation>
+<translation>
+	<name>Agitator</name>
+	<name_fr>Témérité</name_fr>
+</translation>
+<translation>
+	<name>Normal Shots</name>
+	<name_fr>Tir maximum</name_fr>
+</translation>
+<translation>
+	<name>Free Elem/Ammo Up</name>
+	<name_fr>Tireur d'élite</name_fr>
+</translation>
+<translation>
+	<name>Piercing Shots</name>
+	<name_fr>Traque sans merci</name_fr>
+</translation>
+<translation>
+	<name>Resentment</name>
+	<name_fr>Vengeance</name_fr>
+</translation>
+<translation>
+	<name>Stamina Thief</name>
+	<name_fr>Vol d'endurance</name_fr>
+</translation>
+<translation>
+	<name>Ice Resistance</name>
+	<name_fr>Antigel</name_fr>
+</translation>
+<translation>
+	<name>Blast Resistance</name>
+	<name_fr>Anti-explosion</name_fr>
+</translation>
+<translation>
+	<name>Bleeding Resistance</name>
+	<name_fr>Anti-hémorragie</name_fr>
+</translation>
+<translation>
+	<name>Muck Resistance</name>
+	<name_fr>Anti-fange</name_fr>
+</translation>
+<translation>
+	<name>Paralysis Resistance</name>
+	<name_fr>Antiparalysie</name_fr>
+</translation>
+<translation>
+	<name>Effluvia Expert</name>
+	<name_fr>Aura de purge</name_fr>
+</translation>
+<translation>
+	<name>Dragon Resistance</name>
+	<name_fr>Aura draconien</name_fr>
+</translation>
+<translation>
+	<name>Defense Boost</name>
+	<name_fr>Bastion</name_fr>
+</translation>
+<translation>
+	<name>Earplugs</name>
+	<name_fr>Bouchon d'oreilles</name_fr>
+</translation>
+<translation>
+	<name>Stun Resistance</name>
+	<name_fr>Crâne d'acier</name_fr>
+</translation>
+<translation>
+	<name>Water Resistance</name>
+	<name_fr>Étanchéité</name_fr>
+</translation>
+<translation>
+	<name>Resuscitate</name>
+	<name_fr>Esprit indomptable</name_fr>
+</translation>
+<translation>
+	<name>Fire Resistance</name>
+	<name_fr>Ignifuge</name_fr>
+</translation>
+<translation>
+	<name>Evade Window</name>
+	<name_fr>Invulnérabilité</name_fr>
+</translation>
+<translation>
+	<name>Sleep Resistance</name>
+	<name_fr>Insomnie</name_fr>
+</translation>
+<translation>
+	<name>Flinch Free</name>
+	<name_fr>Nerfs d'acier</name_fr>
+</translation>
+<translation>
+	<name>Guard</name>
+	<name_fr>Paladin</name_fr>
+</translation>
+<translation>
+	<name>Thunder Resistance</name>
+	<name_fr>Paratonnerre</name_fr>
+</translation>
+<translation>
+	<name>Windproof</name>
+	<name_fr>Pare-vent</name_fr>
+</translation>
+<translation>
+	<name>Iron Skin</name>
+	<name_fr>Peau de fer</name_fr>
+</translation>
+<translation>
+	<name>Effluvial Resistance</name>
+	<name_fr>Purification</name_fr>
+</translation>
+<translation>
+	<name>Leap Of Faith</name>
+	<name_fr>Saut de la foi</name_fr>
+</translation>
+<translation>
+	<name>Tremor Resistance</name>
+	<name_fr>Sismologie</name_fr>
+</translation>
+<translation>
+	<name>Blight Resistance</name>
+	<name_fr>Totem élémentaire</name_fr>
+</translation>
+<translation>
+	<name>Poison Resistance</name>
+	<name_fr>Toxicologie</name_fr>
+</translation>
+<translation>
+	<name>Evade Extender</name>
+	<name_fr>Trompe-la-mort</name_fr>
+</translation>
+<translation>
+	<name>Jump Master</name>
+	<name_fr>Acrobate</name_fr>
+</translation>
+<translation>
+	<name>Speed Sharpening</name>
+	<name_fr>Affûtage rapide</name_fr>
+</translation>
+<translation>
+	<name>Constitution</name>
+	<name_fr>Athlète</name_fr>
+</translation>
+<translation>
+	<name>Health Boost</name>
+	<name_fr>Afflux de vie</name_fr>
+</translation>
+<translation>
+	<name>Honey Hunter</name>
+	<name_fr>Amoureux du miel</name_fr>
+</translation>
+<translation>
+	<name>Divine Blessing</name>
+	<name_fr>Bénédiction</name_fr>
+</translation>
+<translation>
+	<name>Botanist</name>
+	<name_fr>Botaniste</name_fr>
+</translation>
+<translation>
+	<name>Recovery Up</name>
+	<name_fr>Cercle de vie</name_fr>
+</translation>
+<translation>
+	<name>Forager's Luck</name>
+	<name_fr>Chance du foreur</name_fr>
+</translation>
+<translation>
+	<name>Detector</name>
+	<name_fr>Détecteur</name_fr>
+</translation>
+<translation>
+	<name>Entomologist</name>
+	<name_fr>Entomologiste</name_fr>
+</translation>
+<translation>
+	<name>Carving pro</name>
+	<name_fr>Expert en dépeçage</name_fr>
+</translation>
+<translation>
+	<name>Sporepuff Expert</name>
+	<name_fr>Expert sporenlit</name_fr>
+</translation>
+<translation>
+	<name>Stealth</name>
+	<name_fr>Furtivité</name_fr>
+</translation>
+<translation>
+	<name>Geologist</name>
+	<name_fr>Géologiste</name_fr>
+</translation>
+<translation>
+	<name>Recovery Speed</name>
+	<name_fr>Halo de guérison</name_fr>
+</translation>
+<translation>
+	<name>Aquatic Expert</name>
+	<name_fr>Homme-poisson</name_fr>
+</translation>
+<translation>
+	<name>Scenthound</name>
+	<name_fr>Instinct Animal</name_fr>
+</translation>
+<translation>
+	<name>Master Fisher</name>
+	<name_fr>Maitre de la pêche</name_fr>
+</translation>
+<translation>
+	<name>Marathon Runner</name>
+	<name_fr>Marathonien</name_fr>
+</translation>
+<translation>
+	<name>Stamina Surge</name>
+	<name_fr>Métabolisme</name_fr>
+</translation>
+<translation>
+	<name>Cliffhanger</name>
+	<name_fr>Monte-en-l'air</name_fr>
+</translation>
+<translation>
+	<name>Mushroomancer</name>
+	<name_fr>Mycologue extrême</name_fr>
+</translation>
+<translation>
+	<name>Pro Transporter</name>
+	<name_fr>Pro du transport</name_fr>
+</translation>
+<translation>
+	<name>Quick Sheath</name>
+	<name_fr>Rengainage éclair</name_fr>
+</translation>
+<translation>
+	<name>Hunger Resistance</name>
+	<name_fr>Spartiate</name_fr>
+</translation>
+<translation>
+	<name>Scoutfly Range Up</name>
+	<name_fr>Pistage</name_fr>
+</translation>
+<translation>
+	<name>Master Gatherer</name>
+	<name_fr>Prince de la cueillette</name_fr>
+</translation>
+<translation>
+	<name>Scholar</name>
+	<name_fr>Puits de science</name_fr>
+</translation>
+<translation>
+	<name>Speed Crawler</name>
+	<name_fr>Rampeur Rapide</name_fr>
+</translation>
+<translation>
+	<name>Heat Guard</name>
+	<name_fr>Thermorésistance</name_fr>
+</translation>
+<translation>
+	<name>Poison Functionality</name>
+	<name_fr>Apothicaire</name_fr>
+</translation>
+<translation>
+	<name>Blindsider</name>
+	<name_fr>Aveuglement</name_fr>
+</translation>
+<translation>
+	<name>Speed Eating</name>
+	<name_fr>Carnassier</name_fr>
+</translation>
+<translation>
+	<name>Item Prolonger</name>
+	<name_fr>Chimiste</name_fr>
+</translation>
+<translation>
+	<name>Tool Specialist</name>
+	<name_fr>Expert en survie</name_fr>
+</translation>
+<translation>
+	<name>Slinger Capacity</name>
+	<name_fr>Fronde +</name_fr>
+</translation>
+<translation>
+	<name>Para Functionality</name>
+	<name_fr>Gibier de potence</name_fr>
+</translation>
+<translation>
+	<name>Dungmaster</name>
+	<name_fr>Grand Bousier</name_fr>
+</translation>
+<translation>
+	<name>Sleep Functionality</name>
+	<name_fr>Marchand de sable</name_fr>
+</translation>
+<translation>
+	<name>Blast Functionality</name>
+	<name_fr>Maître bombardier</name_fr>
+</translation>
+<translation>
+	<name>Free Meal</name>
+	<name_fr>Pique-assiette</name_fr>
+</translation>
+<translation>
+	<name>BBQ Master</name>
+	<name_fr>Roi du BBQ</name_fr>
+</translation>
+<translation>
+	<name>Wide-Range</name>
+	<name_fr>Un pour tous</name_fr>
+</translation>
+<translation>
+	<name>Protective polish</name>
+	<name_fr>Acier trempé</name_fr>
+</translation>
+<translation>
+	<name>Adrenaline</name>
+	<name_fr>Adrénaline</name_fr>
+</translation>
+<translation>
+	<name>Nullify Wind Pressur</name>
+	<name_fr>Anti-vent</name_fr>
+</translation>
+<translation>
+	<name>Critical Status</name>
+	<name_fr>Attaque perfide</name_fr>
+</translation>
+<translation>
+	<name>Punishing Draw</name>
+	<name_fr>Batto-jutsu</name_fr>
+</translation>
+<translation>
+	<name>Guts</name>
+	<name_fr>Bravoure</name_fr>
+</translation>
+<translation>
+	<name>Good Luck</name>
+	<name_fr>Chance</name_fr>
+</translation>
+<translation>
+	<name>Master's touch</name>
+	<name_fr>Main de maître</name_fr>
+</translation>
+<translation>
+	<name>Bow Charge Plus</name>
+	<name_fr>Maître archer</name_fr>
+</translation>
+<translation>
+	<name>Capture Master</name>
+	<name_fr>Maître capture</name_fr>
+</translation>
+<translation>
+	<name>Bludgeoner</name>
+	<name_fr>Matraquage</name_fr>
+</translation>
+<translation>
+	<name>Mind's eye/Ballistics</name>
+	<name_fr>Œil de l'esprit</name_fr>
+</translation>
+<translation>
+	<name>Poison duration Up</name>
+	<name_fr>Poison +</name_fr>
+</translation>
+<translation>
+	<name>Critical Element</name>
+	<name_fr>Rage élémentaire</name_fr>
+</translation>
+<translation>
+	<name>Hasten Recovery</name>
+	<name_fr>Récupération rapide</name_fr>
+</translation>
+<translation>
+	<name>Razor Sharp/Spare Shot</name>
+	<name_fr>Samouraï/Franc-tireur</name_fr>
+</translation>
+<translation>
+	<name>Non elemental Boost</name>
+	<name_fr>Secret de l'acier</name_fr>
+</translation>
+<translation>
+	<name>Stamina Cap Up</name>
+	<name_fr>Stamina +</name_fr>
+</translation>
+<translation>
+	<name>Super Recovery</name>
+	<name_fr>Super récupération</name_fr>
+</translation>
+<translation>
+	<name>Guard up</name>
+	<name_fr>Ultra garde</name_fr>
+</translation>
+
 </data>

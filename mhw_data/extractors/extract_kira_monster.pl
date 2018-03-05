@@ -44,8 +44,17 @@ my $in_tr = 0;
 my $in_td = 0;
 my $cur_col = 0;
 my @text_stack = ();
-my %important_tags = map { $_ => 1 } ("div", "td", "tr", "h4", "th", "thead");
+my %important_tags = map { $_ => 1 } ("div", "td", "tr", "h1", "h4", "th", "thead");
 
+sub decode_text {
+	my $t = $_[0];
+	$t =~ s/&#(\d+);/$1 == 9495 ? "" : chr($1)/eg;
+	$t = decode_entities($t);
+	$t =~ s/\s+/ /g;
+	$t =~ s/^\s+//;
+	$t =~ s/\s+$//;
+	return $t;
+}
 
 sub start {
 	my ($self, $tag, $attr, $attrseq, $origtext) = @_;
@@ -78,13 +87,7 @@ sub end {
 		}
 	} elsif (lc($tag) eq "td") {
 		$in_td = 0;
-		my $t = $text;
-		$t =~ s/&#(\d+);/$1 == 9495 ? "" : chr($1)/eg;
-		$t = decode_entities($t);
-		$t =~ s/\s+/ /g;
-		$t =~ s/^\s+//;
-		$t =~ s/\s+$//;
-		$data_row[$cur_col] = $t;
+		$data_row[$cur_col] = decode_text($text);
 #		print "$cur_col: $t\n";
 		++$cur_col;
 	} elsif (lc($tag) eq "tr" && (@data_row > 0)) {
@@ -93,16 +96,11 @@ sub end {
 	} elsif (lc($tag) eq "h4") {
 		if ($text =~ /\s*(.*\S)\s+hit data/) {
 			$in_hit_data = 1;
-			my $name = $1;
-			$name = decode_entities($name);
-			$xml_writer->dataElement("name", $name);
 		}
 	} elsif (lc($tag) eq "th") {
-		my $t = $text;
-		$t =~ s/\s+/ /g;
-		$t =~ s/^\s+//;
-		$t =~ s/\s+$//;
-		push @header_row, $t;
+		push @header_row, $text;
+	} elsif (lc($tag) eq "h1") {
+		$xml_writer->dataElement("name", decode_text($text));
 	}
 }
 
