@@ -40,7 +40,7 @@ my $constants = {
 	},
 
 	"enraged_ratio" => 0.4,
-	"monster_hit_points" => 6000.0,
+	"monster_defense_multiplier" => 0.5,
 	"sharpness_use" => 15,
 	"sharpen_period" => 300.0,
 	"buff_ratios" => {
@@ -591,10 +591,10 @@ sub get_damage_data
 	} else {
 		$damage_data->{"enraged_ratio"} = $constants->{"enraged_ratio"};
 	}
-	if (defined $profile->{"monster_hit_points"}) {
-		$damage_data->{"monster_hit_points"} = $profile->{"monster_hit_points"};
+	if (defined $profile->{"monster_defense_multiplier"}) {
+		$damage_data->{"monster_defense_multiplier"} = $profile->{"monster_defense_multiplier"};
 	} else {
-		$damage_data->{"monster_hit_points"} = $constants->{"monster_hit_points"};
+		$damage_data->{"monster_defense_multiplier"} = $constants->{"monster_defense_multiplier"};
 	}
 
 	return $damage_data;
@@ -653,7 +653,10 @@ sub get_dps
 				"element" => 0.0,
 				"status" => 0.0,
 				"fixed" => 0.0,
-				"bounce_rate" => 0.0 } ;
+				"bounce_rate" => 0.0,
+				"proc_rate" => {},
+				"kill_freq" => 0.0
+			};
 			my $state_damage_normal = $damage_data->{$enraged_state}{"normal"};
 			my $state_damage_weak = $damage_data->{$enraged_state}{"weak_spot"};
 
@@ -688,11 +691,13 @@ sub get_dps
 
 			$state_dps->{"fixed"} += $state_damage_weak->{"fixed"};
 
-			for (1..1) {
+			for (1..3) {
 				$state_dps->{"total"} =
 					$state_dps->{"raw"} + $state_dps->{"element"} + $state_dps->{"status"} + $state_dps->{"fixed"};
-				$state_dps->{"kill_freq"} = $state_dps->{"total"} / $damage_data->{"monster_hit_points"};
-				if ($state_dps->{"kill_freq"} > 0) {
+
+				my $real_total = $state_dps->{"total"} * $damage_data->{"monster_defense_multiplier"};
+				if ($monster->{"hit_points"} > 0 && $real_total > 0) {
+					$state_dps->{"kill_freq"} = $real_total / $damage_data->{"hit_points"};
 					for my $status (keys %{$state_damage_weak->{"statuses"}}) {
 						my $status_attack = $state_damage_weak->{"statuses"}{$status};
 						if (defined $hit_data->{$status}) {
@@ -708,6 +713,9 @@ sub get_dps
 							$state_dps->{"proc_rate"}{$status} = $hits;
 						}
 					}
+				} else {
+					$state_dps->{"kill_freq"} = 0;
+					$state_dps->{"status"} = 0;
 				}
 			}
 

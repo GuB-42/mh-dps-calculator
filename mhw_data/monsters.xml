@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- source: https://mhworld.kiranico.com/ -->
-
 <data>
     <monster>
+        <hit_points>2990</hit_points>
         <name>Anjanath</name>
         <part>
             <name>Nose</name>
@@ -147,12 +146,71 @@
         </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Apceros</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>60</bullet>
+                <fire>40</fire>
+                <water>25</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>60</bullet>
+                <fire>40</fire>
+                <water>25</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>53</hit_points>
         <name>Aptonoth</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>100</bullet>
+                <fire>40</fire>
+                <water>20</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>15</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>70</impact>
+                <bullet>100</bullet>
+                <fire>40</fire>
+                <water>20</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>3250</hit_points>
         <name>Azure Rathalos</name>
         <part>
             <name>Head</name>
@@ -296,9 +354,39 @@
         </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Barnos</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>50</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>50</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>2450</hit_points>
         <name>Barroth</name>
         <part>
             <name>Head</name>
@@ -470,6 +558,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>4550</hit_points>
         <name>Bazelgeuse</name>
         <part>
             <name>Head</name>
@@ -557,6 +646,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3450</hit_points>
         <name>Black Diablos</name>
         <part>
             <name>Horn</name>
@@ -714,6 +804,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3250</hit_points>
         <name>Diablos</name>
         <part>
             <name>Horn</name>
@@ -871,6 +962,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3000</hit_points>
         <name>Dodogama</name>
         <part>
             <name>Head</name>
@@ -1028,18 +1120,135 @@
         </part>
     </monster>
     <monster>
+        <hit_points>120</hit_points>
         <name>Gajalaka</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>90</impact>
+                <bullet>90</bullet>
+                <fire>35</fire>
+                <water>30</water>
+                <thunder>50</thunder>
+                <ice>40</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>45</cut>
+                <impact>65</impact>
+                <bullet>70</bullet>
+                <fire>35</fire>
+                <water>30</water>
+                <thunder>50</thunder>
+                <ice>40</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Gajau</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>80</bullet>
+                <fire>40</fire>
+                <water>10</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>70</impact>
+                <bullet>70</bullet>
+                <fire>40</fire>
+                <water>10</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Gastodon</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>15</water>
+                <thunder>25</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>65</cut>
+                <impact>65</impact>
+                <bullet>65</bullet>
+                <fire>10</fire>
+                <water>25</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>150</hit_points>
         <name>Girros</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>90</bullet>
+                <fire>50</fire>
+                <water>5</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>80</bullet>
+                <fire>40</fire>
+                <water>0</water>
+                <thunder>20</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>2400</hit_points>
         <name>Great Girros</name>
         <part>
             <name>Head</name>
@@ -1169,6 +1378,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>2200</hit_points>
         <name>Great Jagras</name>
         <part>
             <name>Head</name>
@@ -1315,12 +1525,57 @@
         <name>Grimalkyne</name>
     </monster>
     <monster>
+        <hit_points>40</hit_points>
         <name>Hornetaur</name>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>100</impact>
+                <bullet>80</bullet>
+                <fire>100</fire>
+                <water>20</water>
+                <thunder>60</thunder>
+                <ice>100</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>60</hit_points>
         <name>Jagras</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>90</bullet>
+                <fire>50</fire>
+                <water>5</water>
+                <thunder>30</thunder>
+                <ice>20</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>80</bullet>
+                <fire>40</fire>
+                <water>0</water>
+                <thunder>20</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>2800</hit_points>
         <name>Jyuratodus</name>
         <part>
             <name>Head</name>
@@ -1506,12 +1761,71 @@
         </part>
     </monster>
     <monster>
+        <hit_points>70</hit_points>
         <name>Kelbi</name>
+        <part>
+            <name>Horn</name>
+            <hit_data>
+                <cut>85</cut>
+                <impact>85</impact>
+                <bullet>80</bullet>
+                <fire>80</fire>
+                <water>80</water>
+                <thunder>80</thunder>
+                <ice>80</ice>
+                <dragon>0</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Head / Body</name>
+            <hit_data>
+                <cut>85</cut>
+                <impact>85</impact>
+                <bullet>80</bullet>
+                <fire>80</fire>
+                <water>80</water>
+                <thunder>80</thunder>
+                <ice>80</ice>
+                <dragon>0</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>120</hit_points>
         <name>Kestodon</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>35</bullet>
+                <fire>25</fire>
+                <water>40</water>
+                <thunder>25</thunder>
+                <ice>40</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>80</bullet>
+                <fire>25</fire>
+                <water>40</water>
+                <thunder>25</thunder>
+                <ice>40</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>3350</hit_points>
         <name>Kirin</name>
         <part>
             <name>Head</name>
@@ -1586,6 +1900,7 @@
     </monster>
     <monster></monster>
     <monster>
+        <hit_points>2650</hit_points>
         <name>Kulu-Ya-Ku</name>
         <part>
             <name>Head</name>
@@ -1659,6 +1974,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3980</hit_points>
         <name>Kushala Daora</name>
         <part>
             <name>Head</name>
@@ -1774,6 +2090,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>4000</hit_points>
         <name>Lavasioth</name>
         <part>
             <name>Head</name>
@@ -1917,6 +2234,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3000</hit_points>
         <name>Legiana</name>
         <part>
             <name>Head</name>
@@ -2046,12 +2364,57 @@
         </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Mernos</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>80</bullet>
+                <fire>25</fire>
+                <water>25</water>
+                <thunder>25</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>80</bullet>
+                <fire>25</fire>
+                <water>25</water>
+                <thunder>25</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Mosswine</name>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>85</bullet>
+                <fire>100</fire>
+                <water>100</water>
+                <thunder>100</thunder>
+                <ice>100</ice>
+                <dragon>0</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>3520</hit_points>
         <name>Nergigante</name>
         <part>
             <name>Horn</name>
@@ -2363,9 +2726,39 @@
         </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Noios</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>80</bullet>
+                <fire>10</fire>
+                <water>25</water>
+                <thunder>25</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>80</bullet>
+                <fire>10</fire>
+                <water>25</water>
+                <thunder>25</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>3000</hit_points>
         <name>Odogaron</name>
         <part>
             <name>Head</name>
@@ -2495,6 +2888,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>2950</hit_points>
         <name>Paolumu</name>
         <part>
             <name>Head</name>
@@ -2624,6 +3018,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3000</hit_points>
         <name>Pink Rathian</name>
         <part>
             <name>Head</name>
@@ -2767,6 +3162,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>2800</hit_points>
         <name>Pukei-Pukei</name>
         <part>
             <name>Head</name>
@@ -2896,6 +3292,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3000</hit_points>
         <name>Radobaan</name>
         <part>
             <name>Head</name>
@@ -3039,9 +3436,39 @@
         </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Raphinos</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>90</bullet>
+                <fire>50</fire>
+                <water>50</water>
+                <thunder>100</thunder>
+                <ice>50</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>90</cut>
+                <impact>90</impact>
+                <bullet>90</bullet>
+                <fire>50</fire>
+                <water>50</water>
+                <thunder>100</thunder>
+                <ice>50</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>3250</hit_points>
         <name>Rathalos</name>
         <part>
             <name>Head</name>
@@ -3171,6 +3598,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>3000</hit_points>
         <name>Rathian</name>
         <part>
             <name>Head</name>
@@ -3300,9 +3728,39 @@
         </part>
     </monster>
     <monster>
+        <hit_points>100</hit_points>
         <name>Shamos</name>
+        <part>
+            <name>Head</name>
+            <hit_data>
+                <cut>80</cut>
+                <impact>80</impact>
+                <bullet>80</bullet>
+                <fire>40</fire>
+                <water>25</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>70</cut>
+                <impact>70</impact>
+                <bullet>70</bullet>
+                <fire>40</fire>
+                <water>25</water>
+                <thunder>40</thunder>
+                <ice>25</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>4300</hit_points>
         <name>Teostra</name>
         <part>
             <name>Head</name>
@@ -3418,6 +3876,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>2900</hit_points>
         <name>Tobi-Kadachi</name>
         <part>
             <name>Head</name>
@@ -3547,6 +4006,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>2650</hit_points>
         <name>Tzitzi-Ya-Ku</name>
         <part>
             <name>Antennae</name>
@@ -3620,6 +4080,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>4300</hit_points>
         <name>Uragaan</name>
         <part>
             <name>Head</name>
@@ -3763,6 +4224,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>4700</hit_points>
         <name>Vaal Hazak</name>
         <part>
             <name>Head</name>
@@ -3962,9 +4424,25 @@
         </part>
     </monster>
     <monster>
+        <hit_points>8</hit_points>
         <name>Vespoid</name>
+        <part>
+            <name>Body</name>
+            <hit_data>
+                <cut>85</cut>
+                <impact>85</impact>
+                <bullet>85</bullet>
+                <fire>100</fire>
+                <water>50</water>
+                <thunder>100</thunder>
+                <ice>50</ice>
+                <dragon>0</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster>
+        <hit_points>7500</hit_points>
         <name>Xeno'jiiva</name>
         <part>
             <name>Head</name>
@@ -4262,6 +4740,7 @@
         </part>
     </monster>
     <monster>
+        <hit_points>12000</hit_points>
         <name>Zorah Magdaros</name>
         <part>
             <name>Head</name>

@@ -126,6 +126,7 @@ sub process_start
 	} elsif ($xml_stack[0] eq "monster") {
 		$cur_monster = {
 			"name" => "no_name",
+			"hit_points" => 0,
 			"parts" => [],
 			"tolerances" => {}
 		};
