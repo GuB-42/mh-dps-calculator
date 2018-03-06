@@ -389,7 +389,7 @@ sub compute_buffed_weapon
 		}
 	}
 	for my $element (keys %{$weapon->{"phial_elements"}}) {
-		my $power = $weapon->{"phial_elements"}{$element} / $multi_divider;
+		my $power = $weapon->{"phial_elements"}{$element};
 		$power = compute_buffed_element($power,
 		                                $buff_data->{"element_plus"}{$element},
 		                                $buff_data->{"element_multiplier"}{$element},
@@ -399,7 +399,7 @@ sub compute_buffed_weapon
 		$buffed_weapon->{"phial_elements"}{$element} = $power;
 	}
 	for my $status (keys %{$weapon->{"phial_statuses"}}) {
-		my $power = $weapon->{"phial_statuses"}{$status} / $multi_divider;
+		my $power = $weapon->{"phial_statuses"}{$status};
 		$power = compute_buffed_element($power,
 		                                $buff_data->{"status_plus"}{$status},
 		                                $buff_data->{"status_multiplier"}{$status},
