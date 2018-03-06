@@ -5750,6 +5750,248 @@
 	<name_jp>グレイトハンターボウ</name_jp>
 </translation>
 
+<!-- monsters -->
+
+<translation>
+    <name>Anjanath</name>
+    <name_jp>アンジャナフ</name_jp>
+</translation>
+<translation>
+    <name>Azure Rathalos</name>
+    <name_jp>リオレウス亜種</name_jp>
+</translation>
+<translation>
+    <name>Barroth</name>
+    <name_jp>ボルボロス</name_jp>
+</translation>
+<translation>
+    <name>Bazelgeuse</name>
+    <name_jp>バゼルギウス</name_jp>
+</translation>
+<translation>
+    <name>Black Diablos</name>
+    <name_jp>ディアブロス亜種</name_jp>
+</translation>
+<translation>
+    <name>Diablos</name>
+    <name_jp>ディアブロス</name_jp>
+</translation>
+<translation>
+    <name>Dodogama</name>
+    <name_jp>ドドガマル</name_jp>
+</translation>
+<translation>
+    <name>Great Girros</name>
+    <name_jp>ドスギルオス</name_jp>
+</translation>
+<translation>
+    <name>Great Jagras</name>
+    <name_jp>ドスジャグラス</name_jp>
+</translation>
+<translation>
+    <name>Jyuratodus</name>
+    <name_jp>ジュラトドス</name_jp>
+</translation>
+<translation>
+    <name>Kirin</name>
+    <name_jp>キリン</name_jp>
+</translation>
+<translation>
+    <name>Kulu-Ya-Ku</name>
+    <name_jp>クルルヤック</name_jp>
+</translation>
+<translation>
+    <name>Kushala Daora</name>
+    <name_jp>クシャルダオラ</name_jp>
+</translation>
+<translation>
+    <name>Lavasioth</name>
+    <name_jp>ヴォルガノス</name_jp>
+</translation>
+<translation>
+    <name>Legiana</name>
+    <name_jp>レイギエナ</name_jp>
+</translation>
+<translation>
+    <name>Nergigante</name>
+    <name_jp>ネルギガンテ</name_jp>
+</translation>
+<translation>
+    <name>Odogaron</name>
+    <name_jp>オドガロン</name_jp>
+</translation>
+<translation>
+    <name>Paolumu</name>
+    <name_jp>パオウルムー</name_jp>
+</translation>
+<translation>
+    <name>Pink Rathian</name>
+    <name_jp>リオレイア亜種</name_jp>
+</translation>
+<translation>
+    <name>Pukei-Pukei</name>
+    <name_jp>プケプケ</name_jp>
+</translation>
+<translation>
+    <name>Radobaan</name>
+    <name_jp>ラドバルキン</name_jp>
+</translation>
+<translation>
+    <name>Rathalos</name>
+    <name_jp>リオレウス</name_jp>
+</translation>
+<translation>
+    <name>Rathian</name>
+    <name_jp>リオレイア</name_jp>
+</translation>
+<translation>
+    <name>Teostra</name>
+    <name_jp>テオ・テスカトル</name_jp>
+</translation>
+<translation>
+    <name>Tobi-Kadachi</name>
+    <name_jp>トビカガチ</name_jp>
+</translation>
+<translation>
+    <name>Tzitzi-Ya-Ku</name>
+    <name_jp>ツィツィヤック</name_jp>
+</translation>
+<translation>
+    <name>Uragaan</name>
+    <name_jp>ウラガンキン</name_jp>
+</translation>
+<translation>
+    <name>Vaal Hazak</name>
+    <name_jp>ヴァルハザク</name_jp>
+</translation>
+<translation>
+    <name>Xeno'jiiva</name>
+    <name_jp>ゼノ・ジーヴァ</name_jp>
+</translation>
+<translation>
+    <name>Zorah Magdaros</name>
+    <name_jp>ゾラ・マグダラオス</name_jp>
+</translation>
+
+<!-- parts -->
+
+<translation>
+	<name>Fin</name>
+	<name_jp>ヒレ</name_jp>
+</translation>
+<translation>
+	<name>Body</name>
+	<name_jp>上半身</name_jp>
+</translation>
+<translation>
+	<name>Lower Body</name>
+	<name_jp>下半身</name_jp>
+</translation>
+<translation>
+	<name>Forearms</name>
+	<name_jp>前脚</name_jp>
+</translation>
+<translation>
+	<name>Shell</name>
+	<name_jp>外殻</name_jp>
+</translation>
+<translation>
+	<name>Weak Shell</name>
+	<name_jp>外殻（未発達）</name_jp>
+</translation>
+<translation>
+	<name>Tail</name>
+	<name_jp>尻尾</name_jp>
+</translation>
+<translation>
+	<name>Tail Tip</name>
+	<name_jp>尾先</name_jp>
+</translation>
+<translation>
+	<name>Hindlegs</name>
+	<name_jp>後脚</name_jp>
+</translation>
+<translation>
+	<name>Exhaust Organ</name>
+	<name_jp>排熱器官</name_jp>
+</translation>
+<translation>
+	<name>Wings</name>
+	<name_jp>翼</name_jp>
+</translation>
+<translation>
+	<name>Back</name>
+	<name_jp>背</name_jp>
+</translation>
+<translation>
+	<name>Back</name>
+	<name_jp>背中</name_jp>
+</translation>
+<translation>
+	<name>Body</name>
+	<name_jp>胴</name_jp>
+</translation>
+<translation>
+	<name>Back / Legs Bone</name>
+	<name_jp>胴と脚の骨</name_jp>
+</translation>
+<translation>
+	<name>Chest</name>
+	<name_jp>胸</name_jp>
+</translation>
+<translation>
+	<name>Leg</name>
+	<name_jp>脚</name_jp>
+</translation>
+<translation>
+	<name>Belly</name>
+	<name_jp>腹</name_jp>
+</translation>
+<translation>
+	<name>Stomach</name>
+	<name_jp>腹膨張</name_jp>
+</translation>
+<translation>
+	<name>Horn</name>
+	<name_jp>角</name_jp>
+</translation>
+<translation>
+	<name>Antennae</name>
+	<name_jp>触覚</name_jp>
+</translation>
+<translation>
+	<name>Head</name>
+	<name_jp>頭</name_jp>
+</translation>
+<translation>
+	<name>Head Bone</name>
+	<name_jp>頭の骨</name_jp>
+</translation>
+<translation>
+	<name>Tongue</name>
+	<name_jp>舌</name_jp>
+</translation>
+<translation>
+	<name>Jaw</name>
+	<name_jp>顎</name_jp>
+</translation>
+<translation>
+	<name>Neck Pouch</name>
+	<name_jp>顎袋</name_jp>
+</translation>
+<translation>
+	<name>Neck</name>
+	<name_jp>首</name_jp>
+</translation>
+<translation>
+	<name>Lower Neck</name>
+	<name_jp>首下</name_jp>
+</translation>
+<translation>
+	<name>Nose</name>
+	<name_jp>鼻</name_jp>
+</translation>
+
 <!-- buffs -->
 
 <translation>

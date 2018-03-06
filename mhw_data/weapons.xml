@@ -23862,6 +23862,38 @@
         <final>true</final>
     </weapon>
     <weapon>
+        <type>bow</type>
+        <name_jp>アーロイの弓</name_jp>
+        <inflated_attack>168</inflated_attack>
+        <attack>140</attack>
+        <affinity>20</affinity>
+        <awakened>true</awakened>
+        <element>
+            <inflated_thunder>180</inflated_thunder>
+            <thunder>18</thunder>
+        </element>
+        <slots>
+            <slot>2</slot>
+        </slots>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>bow</type>
+        <name_jp>アーロイの戦弓</name_jp>
+        <inflated_attack>192</inflated_attack>
+        <attack>160</attack>
+        <affinity>30</affinity>
+        <awakened>true</awakened>
+        <element>
+            <inflated_thunder>240</inflated_thunder>
+            <thunder>24</thunder>
+        </element>
+        <slots>
+            <slot>3</slot>
+        </slots>
+        <final>true</final>
+    </weapon>
+    <weapon>
         <type>long_sword</type>
         <name_jp>蒼星ノ太刀【舞龍】</name_jp>
         <inflated_attack></inflated_attack>
