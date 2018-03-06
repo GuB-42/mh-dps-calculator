@@ -37,10 +37,6 @@
 			<stun>0</stun>
 			<exhaust>0</exhaust>
 			<sharpness_multiplier>1</sharpness_multiplier>
-			<phial_impact_attack>0</phial_impact_attack>
-			<phial_impact_stun>0</phial_impact_stun>
-			<phial_element_attack>0</phial_element_attack>
-			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.1</draw_attack_ratio>
 			<airborne_ratio>0.2</airborne_ratio>
 		</pattern>
@@ -59,10 +55,6 @@
 			<stun>0</stun>
 			<exhaust>0</exhaust>
 			<sharpness_multiplier>1.1</sharpness_multiplier>
-			<phial_impact_attack>0</phial_impact_attack>
-			<phial_impact_stun>0</phial_impact_stun>
-			<phial_element_attack>0</phial_element_attack>
-			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.5</draw_attack_ratio>
 			<airborne_ratio>0.05</airborne_ratio>
 		</pattern>
@@ -81,10 +73,6 @@
 			<stun>30</stun>
 			<exhaust>15</exhaust>
 			<sharpness_multiplier>1</sharpness_multiplier>
-			<phial_impact_attack>0</phial_impact_attack>
-			<phial_impact_stun>0</phial_impact_stun>
-			<phial_element_attack>0</phial_element_attack>
-			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.1</draw_attack_ratio>
 			<airborne_ratio>0.05</airborne_ratio>
 		</pattern>
@@ -99,16 +87,85 @@
 			<cut>1</cut>
 			<impact>0</impact>
 			<piercing>0</piercing>
-			<element>5</element>
+			<element>8</element>
 			<stun>0</stun>
 			<exhaust>0</exhaust>
 			<sharpness_multiplier>1</sharpness_multiplier>
-			<phial_impact_attack>0</phial_impact_attack>
-			<phial_impact_stun>0</phial_impact_stun>
-			<phial_element_attack>0</phial_element_attack>
-			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.5</airborne_ratio>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Lance</name>
+		<type>lance</type>
+		<sharpness_use>50</sharpness_use>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>0</cut>
+			<impact>0</impact>
+			<piercing>1</piercing>
+			<element>4</element>
+			<stun>0</stun>
+			<exhaust>0</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.05</airborne_ratio>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Sword&amp;Shield</name>
+		<type>sword_and_shield</type>
+		<sharpness_use>70</sharpness_use>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>1</cut>
+			<impact>0</impact>
+			<piercing>0</piercing>
+			<element>6</element>
+			<stun>5</stun>
+			<exhaust>5</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.1</airborne_ratio>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Long Sword</name>
+		<type>long_sword</type>
+		<sharpness_use>50</sharpness_use>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>1</cut>
+			<impact>0</impact>
+			<piercing>0</piercing>
+			<element>4</element>
+			<stun>0</stun>
+			<exhaust>0</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.1</airborne_ratio>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Switch Axe</name>
+		<type>switch_axe</type>
+		<sharpness_use>50</sharpness_use>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>1</cut>
+			<impact>0</impact>
+			<piercing>0</piercing>
+			<element>3</element>
+			<stun>0</stun>
+			<exhaust>0</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<phial_ratio>0.5</phial_ratio>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.01</airborne_ratio>
 		</pattern>
 	</weapon_profile>
 </data>

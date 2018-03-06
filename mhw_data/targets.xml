@@ -1,6 +1,6 @@
 <data>
 	<target>
-		<name>Rathalos target</name>
+		<name>Rathalos</name>
 		<enraged_ratio>0.4</enraged_ratio>
 		<monster_defense_multiplier>0.5</monster_defense_multiplier>
 		<monster_name>Rathalos</monster_name>
@@ -14,6 +14,34 @@
 		</sub_target>
 		<sub_target>
 			<weight>0.4</weight>
+		</sub_target>
+	</target>
+	<target>
+		<name>Hybrid</name>
+		<enraged_ratio>0.4</enraged_ratio>
+		<monster_defense_multiplier>0.5</monster_defense_multiplier>
+		<sub_target>
+			<weight>0.2</weight>
+			<monster_name>Rathalos</monster_name>
+			<part_name>Head</part_name>
+		</sub_target>
+		<sub_target>
+			<weight>0.2</weight>
+			<monster_name>Rathalos</monster_name>
+		</sub_target>
+		<sub_target>
+			<weight>0.1</weight>
+			<monster_name>Odogaron</monster_name>
+			<part_name>Head</part_name>
+		</sub_target>
+		<sub_target>
+			<weight>0.1</weight>
+			<monster_name>Odogaron</monster_name>
+			<part_name>Tail</part_name>
+		</sub_target>
+		<sub_target>
+			<weight>0.4</weight>
+			<monster_name>Nergigante</monster_name>
 		</sub_target>
 	</target>
 </data>
