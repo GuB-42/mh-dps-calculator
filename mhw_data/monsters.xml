@@ -3,9 +3,11 @@
 <data>
     <monster>
         <name>Anjanath</name>
+        <name_jp>アンジャナフ</name_jp>
         <hit_points>2990</hit_points>
         <part>
             <name>Nose</name>
+            <name_jp>鼻</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>75</impact>
@@ -20,6 +22,7 @@
         </part>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>70</cut>
                 <impact>70</impact>
@@ -34,6 +37,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -48,6 +52,7 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>45</impact>
@@ -62,6 +67,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -76,6 +82,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -102,6 +109,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -128,6 +136,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -140,76 +149,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Apceros</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>60</cut>
-                <impact>60</impact>
-                <bullet>60</bullet>
-                <fire>40</fire>
-                <water>25</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>60</cut>
-                <impact>60</impact>
-                <bullet>60</bullet>
-                <fire>40</fire>
-                <water>25</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Aptonoth</name>
-        <hit_points>53</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>100</bullet>
-                <fire>40</fire>
-                <water>20</water>
-                <thunder>30</thunder>
-                <ice>20</ice>
-                <dragon>15</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>100</bullet>
-                <fire>40</fire>
-                <water>20</water>
-                <thunder>30</thunder>
-                <ice>20</ice>
-                <dragon>15</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Azure Rathalos</name>
+        <name_jp>リオレウス亜種</name_jp>
         <hit_points>3250</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -224,6 +228,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -238,6 +243,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -252,6 +258,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -266,6 +273,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -280,6 +288,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -294,6 +303,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -308,6 +318,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -322,6 +333,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -336,6 +348,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -348,44 +361,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Barnos</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>45</cut>
-                <impact>45</impact>
-                <bullet>45</bullet>
-                <fire>20</fire>
-                <water>0</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>50</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>45</cut>
-                <impact>45</impact>
-                <bullet>45</bullet>
-                <fire>20</fire>
-                <water>0</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
-                <dragon>50</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Barroth</name>
+        <name_jp>ボルボロス</name_jp>
         <hit_points>2450</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>25</impact>
@@ -401,9 +441,9 @@
                 <state>Mud</state>
                 <cut>20</cut>
                 <impact>24</impact>
-                <bullet>9</bullet>
+                <bullet>10</bullet>
                 <fire>0</fire>
-                <water>80</water>
+                <water>50</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -412,6 +452,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>46</cut>
                 <impact>46</impact>
@@ -429,7 +470,7 @@
                 <impact>24</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
-                <water>80</water>
+                <water>50</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -438,6 +479,7 @@
         </part>
         <part>
             <name>Forearms</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>85</impact>
@@ -455,7 +497,7 @@
                 <impact>38</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
-                <water>80</water>
+                <water>50</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -464,6 +506,7 @@
         </part>
         <part>
             <name>Left Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -481,7 +524,7 @@
                 <impact>24</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
-                <water>80</water>
+                <water>50</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -490,6 +533,7 @@
         </part>
         <part>
             <name>Right Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -507,7 +551,7 @@
                 <impact>24</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
-                <water>80</water>
+                <water>50</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
@@ -516,6 +560,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -533,19 +578,78 @@
                 <impact>25</impact>
                 <bullet>22</bullet>
                 <fire>0</fire>
-                <water>80</water>
+                <water>50</water>
                 <thunder>0</thunder>
                 <ice>15</ice>
                 <dragon>10</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Bazelgeuse</name>
+        <name_jp>バゼルギウス</name_jp>
         <hit_points>4550</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>85</impact>
@@ -560,6 +664,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -574,6 +679,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -588,9 +694,10 @@
         </part>
         <part>
             <name>Legs</name>
+            <name_jp>脚</name_jp>
             <hit_data>
-                <cut>36</cut>
-                <impact>34</impact>
+                <cut>35</cut>
+                <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
                 <water>5</water>
@@ -602,6 +709,7 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -616,6 +724,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>75</cut>
                 <impact>70</impact>
@@ -628,14 +737,73 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Black Diablos</name>
+        <name_jp>ディアブロス亜種</name_jp>
         <hit_points>3450</hit_points>
         <part>
             <name>Horn</name>
+            <name_jp>角</name_jp>
             <hit_data>
-                <cut>19</cut>
+                <cut>20</cut>
                 <impact>37</impact>
                 <bullet>15</bullet>
                 <fire>0</fire>
@@ -648,6 +816,7 @@
         </part>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>43</cut>
                 <impact>55</impact>
@@ -657,11 +826,12 @@
                 <thunder>10</thunder>
                 <ice>30</ice>
                 <dragon>0</dragon>
-                <stun>0</stun>
+                <stun>100</stun>
             </hit_data>
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -676,6 +846,7 @@
         </part>
         <part>
             <name>Stomach</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>63</cut>
                 <impact>68</impact>
@@ -690,6 +861,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>24</cut>
                 <impact>42</impact>
@@ -704,6 +876,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -718,6 +891,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -732,6 +906,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -746,6 +921,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -760,6 +936,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>24</impact>
@@ -774,6 +951,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>24</impact>
@@ -786,14 +964,73 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>200</plus>
+            <max>875</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Diablos</name>
+        <name_jp>ディアブロス</name_jp>
         <hit_points>3250</hit_points>
         <part>
             <name>Horn</name>
+            <name_jp>角</name_jp>
             <hit_data>
-                <cut>21</cut>
+                <cut>20</cut>
                 <impact>42</impact>
                 <bullet>20</bullet>
                 <fire>0</fire>
@@ -806,6 +1043,7 @@
         </part>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>63</impact>
@@ -820,6 +1058,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -834,9 +1073,10 @@
         </part>
         <part>
             <name>Stomach</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>73</cut>
-                <impact>78</impact>
+                <impact>75</impact>
                 <bullet>40</bullet>
                 <fire>0</fire>
                 <water>30</water>
@@ -848,6 +1088,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>24</cut>
                 <impact>42</impact>
@@ -862,6 +1103,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -876,6 +1118,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -890,6 +1133,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -904,6 +1148,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -918,6 +1163,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>24</impact>
@@ -932,6 +1178,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>23</cut>
                 <impact>33</impact>
@@ -944,12 +1191,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>75</initial>
+            <plus>200</plus>
+            <max>875</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>200</plus>
+            <max>875</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Dodogama</name>
+        <name_jp>ドドガマル</name_jp>
         <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -988,6 +1294,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -1026,6 +1333,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1040,6 +1348,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1054,6 +1363,7 @@
         </part>
         <part>
             <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1068,6 +1378,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1082,6 +1393,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -1094,140 +1406,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Gajalaka</name>
-        <hit_points>120</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>90</impact>
-                <bullet>90</bullet>
-                <fire>35</fire>
-                <water>30</water>
-                <thunder>50</thunder>
-                <ice>40</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>45</cut>
-                <impact>65</impact>
-                <bullet>70</bullet>
-                <fire>35</fire>
-                <water>30</water>
-                <thunder>50</thunder>
-                <ice>40</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Gajau</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>80</bullet>
-                <fire>40</fire>
-                <water>10</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
-                <fire>40</fire>
-                <water>10</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Gastodon</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>35</cut>
-                <impact>35</impact>
-                <bullet>35</bullet>
-                <fire>5</fire>
-                <water>15</water>
-                <thunder>25</thunder>
-                <ice>15</ice>
-                <dragon>5</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>65</cut>
-                <impact>65</impact>
-                <bullet>65</bullet>
-                <fire>10</fire>
-                <water>25</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Girros</name>
-        <hit_points>150</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>90</bullet>
-                <fire>50</fire>
-                <water>5</water>
-                <thunder>30</thunder>
-                <ice>20</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>80</bullet>
-                <fire>40</fire>
-                <water>0</water>
-                <thunder>20</thunder>
-                <ice>10</ice>
-                <dragon>5</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Great Girros</name>
+        <name_jp>ドスギルオス</name_jp>
         <hit_points>2400</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>85</impact>
@@ -1242,6 +1485,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>45</impact>
@@ -1256,6 +1500,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1270,6 +1515,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1284,6 +1530,7 @@
         </part>
         <part>
             <name>Left Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1298,6 +1545,7 @@
         </part>
         <part>
             <name>Right Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1312,6 +1560,7 @@
         </part>
         <part>
             <name>Left Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -1326,6 +1575,7 @@
         </part>
         <part>
             <name>Right Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -1340,6 +1590,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -1352,12 +1603,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Great Jagras</name>
+        <name_jp>ドスジャグラス</name_jp>
         <hit_points>2200</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>85</impact>
@@ -1372,6 +1682,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -1386,6 +1697,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -1400,6 +1712,7 @@
         </part>
         <part>
             <name>Stomach</name>
+            <name_jp>腹膨張</name_jp>
             <hit_data>
                 <state>Inflated</state>
                 <cut>90</cut>
@@ -1415,6 +1728,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -1429,6 +1743,7 @@
         </part>
         <part>
             <name>Left Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>60</impact>
@@ -1443,6 +1758,7 @@
         </part>
         <part>
             <name>Right Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>60</impact>
@@ -1457,6 +1773,7 @@
         </part>
         <part>
             <name>Left Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -1471,6 +1788,7 @@
         </part>
         <part>
             <name>Right Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -1485,6 +1803,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1497,65 +1816,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Grimalkyne</name>
-    </monster>
-    <monster>
-        <name>Hornetaur</name>
-        <hit_points>40</hit_points>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>100</impact>
-                <bullet>80</bullet>
-                <fire>100</fire>
-                <water>20</water>
-                <thunder>60</thunder>
-                <ice>100</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Jagras</name>
-        <hit_points>60</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>90</bullet>
-                <fire>50</fire>
-                <water>5</water>
-                <thunder>30</thunder>
-                <ice>20</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>80</bullet>
-                <fire>40</fire>
-                <water>0</water>
-                <thunder>20</thunder>
-                <ice>10</ice>
-                <dragon>5</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Jyuratodus</name>
+        <name_jp>ジュラトドス</name_jp>
         <hit_points>2800</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>63</cut>
                 <impact>63</impact>
@@ -1582,6 +1907,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>43</cut>
                 <impact>43</impact>
@@ -1596,6 +1922,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1622,6 +1949,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -1636,6 +1964,7 @@
         </part>
         <part>
             <name>Fin</name>
+            <name_jp>ヒレ</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -1650,6 +1979,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -1676,6 +2006,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -1702,6 +2033,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1726,76 +2058,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Kelbi</name>
-        <hit_points>70</hit_points>
-        <part>
-            <name>Horn</name>
-            <hit_data>
-                <cut>85</cut>
-                <impact>85</impact>
-                <bullet>80</bullet>
-                <fire>80</fire>
-                <water>80</water>
-                <thunder>80</thunder>
-                <ice>80</ice>
-                <dragon>0</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Head / Body</name>
-            <hit_data>
-                <cut>85</cut>
-                <impact>85</impact>
-                <bullet>80</bullet>
-                <fire>80</fire>
-                <water>80</water>
-                <thunder>80</thunder>
-                <ice>80</ice>
-                <dragon>0</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Kestodon</name>
-        <hit_points>120</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>35</cut>
-                <impact>35</impact>
-                <bullet>35</bullet>
-                <fire>25</fire>
-                <water>40</water>
-                <thunder>25</thunder>
-                <ice>40</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>80</bullet>
-                <fire>25</fire>
-                <water>40</water>
-                <thunder>25</thunder>
-                <ice>40</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Kirin</name>
+        <name_jp>キリン</name_jp>
         <hit_points>3350</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>55</impact>
@@ -1810,9 +2137,10 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>上半身</name_jp>
             <hit_data>
-                <cut>31</cut>
-                <impact>31</impact>
+                <cut>30</cut>
+                <impact>30</impact>
                 <bullet>22</bullet>
                 <fire>20</fire>
                 <water>15</water>
@@ -1836,9 +2164,10 @@
         </part>
         <part>
             <name>Lower Body</name>
+            <name_jp>下半身</name_jp>
             <hit_data>
-                <cut>29</cut>
-                <impact>29</impact>
+                <cut>30</cut>
+                <impact>30</impact>
                 <bullet>20</bullet>
                 <fire>20</fire>
                 <water>15</water>
@@ -1860,12 +2189,55 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>200</plus>
+            <max>875</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Kulu-Ya-Ku</name>
+        <name_jp>クルルヤック</name_jp>
         <hit_points>2650</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>85</cut>
                 <impact>85</impact>
@@ -1880,6 +2252,7 @@
         </part>
         <part>
             <name>Forearms</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -1894,12 +2267,13 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
                 <bullet>40</bullet>
                 <fire>15</fire>
-                <water>2</water>
+                <water>20</water>
                 <thunder>15</thunder>
                 <ice>15</ice>
                 <dragon>15</dragon>
@@ -1908,6 +2282,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1934,12 +2309,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Kushala Daora</name>
+        <name_jp>クシャルダオラ</name_jp>
         <hit_points>3980</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1954,6 +2388,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -1968,6 +2403,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>50</impact>
@@ -1982,6 +2418,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -1996,6 +2433,7 @@
         </part>
         <part>
             <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>50</impact>
@@ -2010,6 +2448,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2024,6 +2463,7 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>15</impact>
@@ -2038,6 +2478,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -2050,17 +2491,68 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Lavasioth</name>
+        <name_jp>ヴォルガノス</name_jp>
         <hit_points>4000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>15</cut>
                 <impact>20</impact>
                 <bullet>15</bullet>
-                <fire>50</fire>
+                <fire>10</fire>
                 <water>15</water>
                 <thunder>0</thunder>
                 <ice>0</ice>
@@ -2082,6 +2574,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>15</cut>
                 <impact>15</impact>
@@ -2096,6 +2589,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2110,6 +2604,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -2136,6 +2631,7 @@
         </part>
         <part>
             <name>Fins</name>
+            <name_jp>ヒレ</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2150,6 +2646,7 @@
         </part>
         <part>
             <name>Legs</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>15</cut>
                 <impact>15</impact>
@@ -2176,6 +2673,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>15</impact>
@@ -2188,12 +2686,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Legiana</name>
+        <name_jp>レイギエナ</name_jp>
         <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -2208,6 +2765,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>40</impact>
@@ -2222,6 +2780,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -2236,6 +2795,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -2250,6 +2810,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -2264,6 +2825,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -2278,6 +2840,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2292,6 +2855,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2306,6 +2870,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -2318,62 +2883,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Mernos</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>80</bullet>
-                <fire>25</fire>
-                <water>25</water>
-                <thunder>25</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>80</bullet>
-                <fire>25</fire>
-                <water>25</water>
-                <thunder>25</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-    </monster>
-    <monster>
-        <name>Mosswine</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>85</bullet>
-                <fire>100</fire>
-                <water>100</water>
-                <thunder>100</thunder>
-                <ice>100</ice>
-                <dragon>0</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Nergigante</name>
+        <name_jp>ネルギガンテ</name_jp>
         <hit_points>3520</hit_points>
         <part>
             <name>Horn</name>
+            <name_jp>角</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -2383,6 +2957,18 @@
                 <thunder>20</thunder>
                 <ice>0</ice>
                 <dragon>10</dragon>
+                <stun>100</stun>
+            </hit_data>
+            <hit_data>
+                <state>White</state>
+                <cut>35</cut>
+                <impact>40</impact>
+                <bullet>45</bullet>
+                <fire>5</fire>
+                <water>15</water>
+                <thunder>20</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
             <hit_data>
@@ -2400,6 +2986,7 @@
         </part>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -2450,6 +3037,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -2464,6 +3052,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -2478,6 +3067,7 @@
         </part>
         <part>
             <name>Forearms</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -2528,6 +3118,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -2542,6 +3133,7 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -2592,6 +3184,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>45</impact>
@@ -2606,6 +3199,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -2654,44 +3248,63 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Noios</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>80</bullet>
-                <fire>10</fire>
-                <water>25</water>
-                <thunder>25</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>80</bullet>
-                <fire>10</fire>
-                <water>25</water>
-                <thunder>25</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Odogaron</name>
+        <name_jp>オドガロン</name_jp>
         <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>70</cut>
                 <impact>75</impact>
@@ -2706,6 +3319,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>45</impact>
@@ -2720,6 +3334,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2734,6 +3349,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2748,6 +3364,7 @@
         </part>
         <part>
             <name>Left Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -2762,6 +3379,7 @@
         </part>
         <part>
             <name>Right Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -2776,6 +3394,7 @@
         </part>
         <part>
             <name>Left Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -2790,6 +3409,7 @@
         </part>
         <part>
             <name>Right Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -2804,6 +3424,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -2816,12 +3437,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Paolumu</name>
+        <name_jp>パオウルムー</name_jp>
         <hit_points>2950</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>55</impact>
@@ -2836,6 +3516,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -2850,6 +3531,7 @@
         </part>
         <part>
             <name>Neck Pouch</name>
+            <name_jp>顎袋</name_jp>
             <hit_data>
                 <cut>75</cut>
                 <impact>75</impact>
@@ -2864,9 +3546,10 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
-                <cut>46</cut>
-                <impact>46</impact>
+                <cut>45</cut>
+                <impact>45</impact>
                 <bullet>42</bullet>
                 <fire>15</fire>
                 <water>0</water>
@@ -2878,6 +3561,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -2892,6 +3576,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -2906,6 +3591,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2920,6 +3606,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2934,6 +3621,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -2946,12 +3634,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Pink Rathian</name>
+        <name_jp>リオレイア亜種</name_jp>
         <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -2966,6 +3713,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -2980,6 +3728,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -2994,6 +3743,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -3008,6 +3758,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3022,6 +3773,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3036,6 +3788,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -3050,6 +3803,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -3064,6 +3818,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -3078,6 +3833,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3090,12 +3846,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Pukei-Pukei</name>
+        <name_jp>プケプケ</name_jp>
         <hit_points>2800</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>75</cut>
                 <impact>80</impact>
@@ -3110,20 +3925,22 @@
         </part>
         <part>
             <name>Tongue</name>
+            <name_jp>舌</name_jp>
             <hit_data>
-                <cut>80</cut>
+                <cut>75</cut>
                 <impact>80</impact>
-                <bullet>75</bullet>
+                <bullet>70</bullet>
                 <fire>15</fire>
                 <water>0</water>
-                <thunder>25</thunder>
-                <ice>15</ice>
+                <thunder>30</thunder>
+                <ice>20</ice>
                 <dragon>10</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -3138,20 +3955,22 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
                 <bullet>30</bullet>
                 <fire>0</fire>
-                <water>5</water>
-                <thunder>5</thunder>
-                <ice>15</ice>
-                <dragon>0</dragon>
+                <water>0</water>
+                <thunder>15</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3166,6 +3985,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3180,6 +4000,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -3194,6 +4015,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -3208,6 +4030,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -3220,12 +4043,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Radobaan</name>
+        <name_jp>ラドバルキン</name_jp>
         <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>90</impact>
@@ -3240,8 +4122,9 @@
         </part>
         <part>
             <name>Head Bone</name>
+            <name_jp>頭の骨</name_jp>
             <hit_data>
-                <cut>24</cut>
+                <cut>25</cut>
                 <impact>25</impact>
                 <bullet>15</bullet>
                 <fire>0</fire>
@@ -3254,6 +4137,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -3268,6 +4152,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>50</impact>
@@ -3352,6 +4237,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>30</impact>
@@ -3364,44 +4250,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Raphinos</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>90</bullet>
-                <fire>50</fire>
-                <water>50</water>
-                <thunder>100</thunder>
-                <ice>50</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>90</cut>
-                <impact>90</impact>
-                <bullet>90</bullet>
-                <fire>50</fire>
-                <water>50</water>
-                <thunder>100</thunder>
-                <ice>50</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Rathalos</name>
+        <name_jp>リオレウス</name_jp>
         <hit_points>3250</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -3416,6 +4329,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>40</impact>
@@ -3430,6 +4344,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -3444,6 +4359,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -3458,6 +4374,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3472,6 +4389,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3486,6 +4404,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -3500,6 +4419,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -3514,6 +4434,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -3526,12 +4447,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Rathian</name>
+        <name_jp>リオレイア</name_jp>
         <hit_points>3000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>70</cut>
                 <impact>75</impact>
@@ -3546,6 +4526,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>45</impact>
@@ -3560,6 +4541,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -3574,6 +4556,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -3588,6 +4571,7 @@
         </part>
         <part>
             <name>Left Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -3602,6 +4586,7 @@
         </part>
         <part>
             <name>Right Wing</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -3616,6 +4601,7 @@
         </part>
         <part>
             <name>Left Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -3630,6 +4616,7 @@
         </part>
         <part>
             <name>Right Leg</name>
+            <name_jp>脚</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -3644,6 +4631,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -3656,44 +4644,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Shamos</name>
-        <hit_points>100</hit_points>
-        <part>
-            <name>Head</name>
-            <hit_data>
-                <cut>80</cut>
-                <impact>80</impact>
-                <bullet>80</bullet>
-                <fire>40</fire>
-                <water>25</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>70</cut>
-                <impact>70</impact>
-                <bullet>70</bullet>
-                <fire>40</fire>
-                <water>25</water>
-                <thunder>40</thunder>
-                <ice>25</ice>
-                <dragon>10</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>200</plus>
+            <max>875</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Teostra</name>
+        <name_jp>テオ・テスカトル</name_jp>
         <hit_points>4300</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>55</cut>
                 <impact>60</impact>
@@ -3708,6 +4723,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>33</cut>
                 <impact>38</impact>
@@ -3722,6 +4738,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -3736,6 +4753,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -3750,6 +4768,7 @@
         </part>
         <part>
             <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>38</cut>
                 <impact>38</impact>
@@ -3764,6 +4783,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>25</impact>
@@ -3778,6 +4798,7 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -3792,6 +4813,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>38</cut>
                 <impact>33</impact>
@@ -3804,12 +4826,63 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Tobi-Kadachi</name>
+        <name_jp>トビカガチ</name_jp>
         <hit_points>2900</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -3824,6 +4897,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -3838,6 +4912,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -3852,6 +4927,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -3866,6 +4942,7 @@
         </part>
         <part>
             <name>Left Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -3880,6 +4957,7 @@
         </part>
         <part>
             <name>Right Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -3894,6 +4972,7 @@
         </part>
         <part>
             <name>Left Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -3908,6 +4987,7 @@
         </part>
         <part>
             <name>Right Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -3922,6 +5002,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>80</cut>
                 <impact>80</impact>
@@ -3934,12 +5015,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>50</plus>
+            <max>350</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Tzitzi-Ya-Ku</name>
+        <name_jp>ツィツィヤック</name_jp>
         <hit_points>2650</hit_points>
         <part>
             <name>Antennae</name>
+            <name_jp>触覚</name_jp>
             <hit_data>
                 <cut>75</cut>
                 <impact>65</impact>
@@ -3954,6 +5094,7 @@
         </part>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>65</cut>
                 <impact>55</impact>
@@ -3968,6 +5109,7 @@
         </part>
         <part>
             <name>Forearms</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -3982,6 +5124,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -3990,12 +5133,13 @@
                 <water>15</water>
                 <thunder>20</thunder>
                 <ice>20</ice>
-                <dragon>20</dragon>
+                <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -4008,12 +5152,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Uragaan</name>
+        <name_jp>ウラガンキン</name_jp>
         <hit_points>4300</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>70</cut>
                 <impact>80</impact>
@@ -4028,8 +5231,9 @@
         </part>
         <part>
             <name>Jaw</name>
+            <name_jp>顎</name_jp>
             <hit_data>
-                <cut>19</cut>
+                <cut>20</cut>
                 <impact>20</impact>
                 <bullet>10</bullet>
                 <fire>0</fire>
@@ -4068,6 +5272,7 @@
         </part>
         <part>
             <name>Lower Neck</name>
+            <name_jp>首下</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -4082,6 +5287,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -4096,6 +5302,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>24</impact>
@@ -4110,6 +5317,7 @@
         </part>
         <part>
             <name>Forearms</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -4124,6 +5332,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -4138,6 +5347,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4150,12 +5360,71 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>150</initial>
+            <plus>100</plus>
+            <max>550</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>75</initial>
+            <plus>50</plus>
+            <max>275</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>exhaust</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Vaal Hazak</name>
+        <name_jp>ヴァルハザク</name_jp>
         <hit_points>4700</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
@@ -4182,24 +5451,11 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
-                <cut>70</cut>
-                <impact>80</impact>
-                <bullet>60</bullet>
-                <fire>25</fire>
-                <water>5</water>
-                <thunder>10</thunder>
-                <ice>15</ice>
-                <dragon>25</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part>
-            <name>Chest</name>
-            <hit_data>
-                <cut>50</cut>
-                <impact>45</impact>
-                <bullet>45</bullet>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>30</bullet>
                 <fire>15</fire>
                 <water>5</water>
                 <thunder>10</thunder>
@@ -4209,12 +5465,28 @@
             </hit_data>
         </part>
         <part>
+            <name>Chest</name>
+            <name_jp>胸</name_jp>
+            <hit_data>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
+                <fire>15</fire>
+                <water>5</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part>
             <name>Stomach</name>
+            <name_jp>腹</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
                 <bullet>45</bullet>
-                <fire>2</fire>
+                <fire>20</fire>
                 <water>5</water>
                 <thunder>10</thunder>
                 <ice>15</ice>
@@ -4236,6 +5508,7 @@
         </part>
         <part>
             <name>Back</name>
+            <name_jp>背中</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -4262,6 +5535,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4276,12 +5550,13 @@
         </part>
         <part>
             <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
                 <bullet>35</bullet>
                 <fire>20</fire>
-                <water>5</water>
+                <water>0</water>
                 <thunder>5</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
@@ -4293,7 +5568,7 @@
                 <impact>50</impact>
                 <bullet>45</bullet>
                 <fire>20</fire>
-                <water>5</water>
+                <water>0</water>
                 <thunder>5</thunder>
                 <ice>10</ice>
                 <dragon>20</dragon>
@@ -4302,9 +5577,10 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
-                <cut>24</cut>
-                <impact>23</impact>
+                <cut>25</cut>
+                <impact>25</impact>
                 <bullet>30</bullet>
                 <fire>15</fire>
                 <water>5</water>
@@ -4316,6 +5592,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>30</impact>
@@ -4328,30 +5605,63 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-    </monster>
-    <monster>
-        <name>Vespoid</name>
-        <hit_points>8</hit_points>
-        <part>
-            <name>Body</name>
-            <hit_data>
-                <cut>85</cut>
-                <impact>85</impact>
-                <bullet>85</bullet>
-                <fire>100</fire>
-                <water>50</water>
-                <thunder>100</thunder>
-                <ice>50</ice>
-                <dragon>0</dragon>
-                <stun>100</stun>
-            </hit_data>
-        </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>30</duration>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>sleep</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
+        <tolerance>
+            <type>mount</type>
+            <initial>75</initial>
+            <plus>100</plus>
+            <max>475</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
     </monster>
     <monster>
         <name>Xeno'jiiva</name>
+        <name_jp>ゼノ・ジーヴァ</name_jp>
         <hit_points>7500</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>70</cut>
                 <impact>70</impact>
@@ -4390,6 +5700,7 @@
         </part>
         <part>
             <name>Neck</name>
+            <name_jp>首</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -4416,6 +5727,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4442,6 +5754,7 @@
         </part>
         <part>
             <name>Chest</name>
+            <name_jp>胸</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -4468,6 +5781,7 @@
         </part>
         <part>
             <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>50</impact>
@@ -4506,6 +5820,7 @@
         </part>
         <part>
             <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -4532,6 +5847,7 @@
         </part>
         <part>
             <name>Wings</name>
+            <name_jp>翼</name_jp>
             <hit_data>
                 <cut>50</cut>
                 <impact>50</impact>
@@ -4570,6 +5886,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4596,6 +5913,7 @@
         </part>
         <part>
             <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
             <hit_data>
                 <cut>70</cut>
                 <impact>70</impact>
@@ -4620,12 +5938,47 @@
                 <stun>0</stun>
             </hit_data>
         </part>
+        <tolerance>
+            <type>poison</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+            <duration>60</duration>
+            <damage>240</damage>
+        </tolerance>
+        <tolerance>
+            <type>paralysis</type>
+            <initial>300</initial>
+            <plus>100</plus>
+            <max>700</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>stun</type>
+            <initial>300</initial>
+            <plus>200</plus>
+            <max>1100</max>
+            <regen_value>5</regen_value>
+            <regen_tick>10</regen_tick>
+        </tolerance>
+        <tolerance>
+            <type>blast</type>
+            <initial>150</initial>
+            <plus>200</plus>
+            <max>950</max>
+            <damage>120</damage>
+        </tolerance>
     </monster>
     <monster>
         <name>Zorah Magdaros</name>
+        <name_jp>ゾラ・マグダラオス</name_jp>
         <hit_points>12000</hit_points>
         <part>
             <name>Head</name>
+            <name_jp>頭</name_jp>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -4640,6 +5993,7 @@
         </part>
         <part>
             <name>Body</name>
+            <name_jp>胴</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -4654,6 +6008,7 @@
         </part>
         <part>
             <name>Chest</name>
+            <name_jp>胸</name_jp>
             <hit_data>
                 <state>After Wounded</state>
                 <cut>80</cut>
@@ -4681,6 +6036,7 @@
         </part>
         <part>
             <name>Left Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -4695,6 +6051,7 @@
         </part>
         <part>
             <name>Right Foreleg</name>
+            <name_jp>前脚</name_jp>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -4709,6 +6066,7 @@
         </part>
         <part>
             <name>Left Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4723,6 +6081,7 @@
         </part>
         <part>
             <name>Right Hindleg</name>
+            <name_jp>後脚</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4737,6 +6096,7 @@
         </part>
         <part>
             <name>Tail</name>
+            <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4751,10 +6111,11 @@
         </part>
         <part>
             <name>Shell</name>
+            <name_jp>外殻</name_jp>
             <hit_data>
-                <cut>1</cut>
-                <impact>1</impact>
-                <bullet>1</bullet>
+                <cut>0</cut>
+                <impact>0</impact>
+                <bullet>0</bullet>
                 <fire>0</fire>
                 <water>0</water>
                 <thunder>0</thunder>
@@ -4821,6 +6182,7 @@
         </part>
         <part>
             <name>Left Weak Shell</name>
+            <name_jp>外殻（未発達）</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -4835,6 +6197,7 @@
         </part>
         <part>
             <name>Right Weak Shell</name>
+            <name_jp>外殻（未発達）</name_jp>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>

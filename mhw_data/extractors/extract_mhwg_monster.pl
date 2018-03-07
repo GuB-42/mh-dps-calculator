@@ -24,6 +24,24 @@ my $monster_name;
 my @monsters;
 my $cur_monster;
 
+my %monster_states = (
+	"Anjanath" => [ "", "Wounded" ],
+	"Barroth" => [ "", "Mud" ],
+	"Dodogama" => [ "", "Rock 1", "Rock 2" ],
+	"Great Jagras/腹膨張" => [ "Inflated" ],
+	"Jyuratodus" => [ "", "Mud" ],
+	"Kirin" => [ "", "Electricity" ],
+	"Lavasioth/頭" => [ "Wounded", "" ],
+	"Lavasioth/背中" => [ "Wounded", "" ],
+	"Lavasioth/脚" => [ "Wounded", "" ],
+	"Nergigante/Head" => [ "", "Wounded" ],
+	"Nergigante" => [ "", "White", "Black" ],
+	"Uragaan" => [ "", "Wounded" ],
+	"Vaal Hazak" => [ "", "Wounded" ],
+	"Xeno'jiiva" => [ "", "Critical State", "Wounded" ],
+	"Zorah Magdaros/胸" => [ "Before Wounded", "After Wounded" ]
+);
+
 sub process_data_row {
 	my @drow = @data_row;
 	my %lrow = ();
@@ -61,6 +79,16 @@ sub process_data_row {
 
 		for (my $i = 0; $i < @lrow_s; ++$i) {
 			my $state = $i == 0 ? "" : "state$i";
+			my $xn = $cur_monster->{"name"} . "/" . $part_name;
+			if ($monster_states{$xn}) {
+				if (defined $monster_states{$xn}->[$i]) {
+					$state = $monster_states{$xn}->[$i];
+				}
+			} elsif ($monster_states{$cur_monster->{"name"}}) {
+				if (defined $monster_states{$cur_monster->{"name"}}->[$i]) {
+					$state = $monster_states{$cur_monster->{"name"}}->[$i];
+				}
+			}
 			$cur_monster->{"hit_data"}{$part_name}{$state} = {
 				"cut" => $lrow_s[$i]{"切"},
 				"impact" => $lrow_s[$i]{"打"},
@@ -103,8 +131,8 @@ sub process_status_row {
 	);
 	my $sta_name = $xname{$header_row[0]};
 	my $sta_init = ($data_row[1] && $xinit{$data_row[1]}) ? $xinit{$data_row[1]} : 0;
-	my $sta_plus = ($data_row[2] && $xplus{$data_row[2]}) ? $xinit{$data_row[2]} : 0;
-	my $sta_duration = ($data_row[3] && $xduration{$data_row[3]}) ? $xinit{$data_row[3]} : 0;
+	my $sta_plus = ($data_row[2] && $xplus{$data_row[2]}) ? $xplus{$data_row[2]} : 0;
+	my $sta_duration = ($data_row[3] && $xduration{$data_row[3]}) ? $xduration{$data_row[3]} : 0;
 	if ($sta_init) {
 		$cur_monster->{"tolerances"}{$sta_name} = {
 			"initial" => $sta_init,

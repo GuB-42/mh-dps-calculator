@@ -5876,6 +5876,10 @@
 <!-- parts -->
 
 <translation>
+	<name>Fins</name>
+	<name_jp>ヒレ</name_jp>
+</translation>
+<translation>
 	<name>Fin</name>
 	<name_jp>ヒレ</name_jp>
 </translation>
@@ -5888,7 +5892,19 @@
 	<name_jp>下半身</name_jp>
 </translation>
 <translation>
+	<name>Forelegs</name>
+	<name_jp>前脚</name_jp>
+</translation>
+<translation>
+	<name>Foreleg</name>
+	<name_jp>前脚</name_jp>
+</translation>
+<translation>
 	<name>Forearms</name>
+	<name_jp>前脚</name_jp>
+</translation>
+<translation>
+	<name>Forearm</name>
 	<name_jp>前脚</name_jp>
 </translation>
 <translation>
@@ -5912,11 +5928,19 @@
 	<name_jp>後脚</name_jp>
 </translation>
 <translation>
+	<name>Hindleg</name>
+	<name_jp>後脚</name_jp>
+</translation>
+<translation>
 	<name>Exhaust Organ</name>
 	<name_jp>排熱器官</name_jp>
 </translation>
 <translation>
 	<name>Wings</name>
+	<name_jp>翼</name_jp>
+</translation>
+<translation>
+	<name>Wing</name>
 	<name_jp>翼</name_jp>
 </translation>
 <translation>
@@ -5940,11 +5964,19 @@
 	<name_jp>胸</name_jp>
 </translation>
 <translation>
+	<name>Legs</name>
+	<name_jp>脚</name_jp>
+</translation>
+<translation>
 	<name>Leg</name>
 	<name_jp>脚</name_jp>
 </translation>
 <translation>
-	<name>Belly</name>
+	<name>Body</name>
+	<name_jp>腹</name_jp>
+</translation>
+<translation>
+	<name>Stomach</name>
 	<name_jp>腹</name_jp>
 </translation>
 <translation>
@@ -5981,6 +6013,10 @@
 </translation>
 <translation>
 	<name>Neck</name>
+	<name_jp>首</name_jp>
+</translation>
+<translation>
+	<name>Upper Neck</name>
 	<name_jp>首</name_jp>
 </translation>
 <translation>

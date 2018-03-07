@@ -61,3 +61,5 @@ kiranico_extracts/monsters/uragaan \
 kiranico_extracts/monsters/vaal-hazak \
 kiranico_extracts/monsters/xenojiiva \
 kiranico_extracts/monsters/zorah-magdaros > /tmp/kira_mons.xml
+
+./merge_monsters.pl translations.xml /tmp/kira_mons.xml /tmp/mhwg_mons.xml
