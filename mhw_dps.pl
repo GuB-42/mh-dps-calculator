@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 
+use open ':std', ':encoding(UTF-8)';
+
 use FindBin;
 use lib $FindBin::Bin;
 use DataReader;
@@ -902,15 +904,17 @@ my @damages = ();
 for my $profile (@{$data->{"profiles"}}) {
 	for my $weapon (@{$data->{"weapons"}}) {
 		next if ($weapon->{"type"} ne $profile->{"type"});
+		next unless ($weapon->{"final"});
 
 		my $start_build = {
-			"slots" => [],
+			"slots" => [ 3 ],
 			"buff_levels" => {},
 			"used_items" => []
 		};
 		$start_build = append_item($start_build, $data->{"buff_group_map"}, $weapon);
 		$start_build = append_item($start_build, $data->{"buff_group_map"}, $data->{"item_map"}{"powercharm"});
 		$start_build = append_item($start_build, $data->{"buff_group_map"}, $data->{"item_map"}{"powertalon"});
+#		$start_build->{"slots"} = [ 1 ];
 		my @gen_builds = ();
 		fill_slots(\@gen_builds, $start_build, $data->{"buff_group_map"},
 		           get_useful_items($data->{"items"}, $data->{"buff_group_map"}, $weapon));
@@ -922,15 +926,19 @@ for my $profile (@{$data->{"profiles"}}) {
 				all_buff_combine($buff_data, $data->{"buff_group_map"}{$group_id}[$level]{"data"});
 			}
 			my $damage = {
-				"weapon_name" => $weapon->{"name"},
-				"profile_name" => $profile->{"name"},
-				"item_names" => (join " / ", (map { $_->{"name"} } @{$build->{"used_items"}})),
-				"damage" => get_damage_data($profile, $weapon, $buff_data)
+				"weapon" => $weapon,
+				"profile" => $profile,
+				"used_items" => $build->{"used_items"},
+				"slots" => $build->{"slots"},
+				"buff_levels" => $build->{"buff_levels"},
+				"damage_data" => get_damage_data($profile, $weapon, $buff_data)
 			};
 			push @damages, $damage;
 		}
 	}
 }
+
+my @results;
 
 for my $damage (@damages) {
 	for my $target (@{$data->{"targets"}}) {
@@ -966,10 +974,10 @@ for my $damage (@damages) {
 						next if (defined $state && defined $hit_data->{"state"} &&
 						         $state ne $hit_data->{"state"});
 						my $hit_data_dps;
-						$hit_data_dps = get_dps($monster, $hit_data, $damage->{"damage"}{"enraged"},
+						$hit_data_dps = get_dps($monster, $hit_data, $damage->{"damage_data"}{"enraged"},
 						                        $monster_defense_multiplier);
 						dps_sum($part_dps, $hit_data_dps, $enraged_ratio);
-						$hit_data_dps = get_dps($monster, $hit_data, $damage->{"damage"}{"not_enraged"},
+						$hit_data_dps = get_dps($monster, $hit_data, $damage->{"damage_data"}{"not_enraged"},
 						                        $monster_defense_multiplier);
 						dps_sum($part_dps, $hit_data_dps, 1.0 - $enraged_ratio);
 						$part_weight += 1.0;
@@ -994,9 +1002,56 @@ for my $damage (@damages) {
 		if ($total_weight != 0.0) {
 			dps_sum($dps, $total_dps, 1.0 / $total_weight);
 		}
+
+		my $result = {
+			"target" => $target,
+			"profile" => $damage->{"profile"},
+			"weapon" => $damage->{"weapon"},
+			"used_items" => $damage->{"used_items"},
+			"slots" => $damage->{"slots"},
+			"buff_levels" => $damage->{"buff_levels"},
+			"damage_data" => $damage->{"damage_data"},
+			"dps" => $dps
+		};
+		push @results, $result;
 		printf "%6.2f R:%6.2f E:%6.2f S:%6.2f F:%6.2f B:%4.2f K:%6.1f %s / %s / %s\n",
-			($dps->{total}, $dps->{raw}, $dps->{element}, $dps->{status}, $dps->{fixed}, $dps->{bounce_rate},
-			 $dps->{kill_freq} == 0 ? 0 : (1.0 / $dps->{kill_freq}),
-			 $target->{name}, $damage->{profile_name}, $damage->{item_names});
+			($result->{dps}{total},
+			 $result->{dps}{raw}, $result->{dps}{element}, $result->{dps}{status}, $result->{dps}{fixed},
+			 $result->{dps}{bounce_rate}, $result->{dps}{kill_freq} == 0 ? 0 : (1.0 / $result->{dps}{kill_freq}),
+			 $result->{target}{name}, $result->{profile}{name},
+			 (join " / ", (map { $_->{"name"} } @{$result->{used_items}})));
 	}
+}
+
+exit;
+
+my %res_by_profile = ();
+for my $result (@results) {
+	$res_by_profile{$result->{"profile"}{"name"}} ||= [];
+	push @{$res_by_profile{$result->{"profile"}{"name"}}}, $result;
+}
+for my $pname (sort keys %res_by_profile) {
+	my @best_of_weapon = ();
+	my %res_by_weapon = ();
+	for my $result (@{$res_by_profile{$pname}}) {
+		$res_by_weapon{$result->{"weapon"}{"name"}} ||= [];
+		push @{$res_by_weapon{$result->{"weapon"}{"name"}}}, $result;
+	}
+	for my $wname (sort keys %res_by_weapon) {
+		@{$res_by_weapon{$wname}} = sort { $b->{dps}{total} <=> $a->{dps}{total} } @{$res_by_weapon{$wname}};
+		push @best_of_weapon, $res_by_weapon{$wname}[0];
+	}
+	@best_of_weapon = sort { $b->{dps}{total} <=> $a->{dps}{total} } @best_of_weapon;
+
+	open F, '>', "out_csv/$pname.csv" || die "$!";
+	print F "Total DPS,Raw DPS,Element DPS,Status DPS,Fixed DPS,Bounce,Weapon,Arme,Buff1,Buff2,Buff3,Buff4\n";
+	for my $result (@best_of_weapon) {
+		printf F "%g,%g,%g,%g,%g,%s,%s,%s,%s,%s,%s\n",
+			($result->{dps}{total},
+			 $result->{dps}{raw}, $result->{dps}{element}, $result->{dps}{status}, $result->{dps}{fixed},
+			 $result->{dps}{bounce_rate}, $result->{weapon}{name}, $result->{weapon}{name_fr},
+			 $result->{used_items}[3]{name}, $result->{used_items}[4]{name},
+			 $result->{used_items}[5]{name}, $result->{used_items}[6]{name});
+	}
+	close F
 }

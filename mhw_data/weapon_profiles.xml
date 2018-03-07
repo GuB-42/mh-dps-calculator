@@ -114,7 +114,7 @@
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
-		<name>Sword&amp;Shield</name>
+		<name>Sword &amp; Shield</name>
 		<type>sword_and_shield</type>
 		<sharpness_use>70</sharpness_use>
 		<pattern>
