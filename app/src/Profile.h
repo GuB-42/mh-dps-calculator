@@ -43,6 +43,7 @@ private:
 };
 
 struct Profile : public NamedObject {
+	QString type;
 	QList<Pattern *> patterns;
 
 	Profile();

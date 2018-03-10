@@ -9,25 +9,6 @@ class QTextStream;
 class QXmlStreamReader;
 
 struct Weapon : public NamedObject {
-	enum PhialType {
-		PHIAL_NONE,
-		PHIAL_ELEMENT,
-		PHIAL_IMPACT,
-		PHIAL_POWER,
-		PHIAL_COUNT
-	};
-
-	enum SharpnessLevel {
-		SHARPNESS_RED,
-		SHARPNESS_ORANGE,
-		SHARPNESS_YELLOW,
-		SHARPNESS_GREEN,
-		SHARPNESS_BLUE,
-		SHARPNESS_WHITE,
-		SHARPNESS_PURPLE,
-		SHARPNESS_COUNT
-	};
-
 	QString type;
 	double attack;
 	double affinity;
@@ -46,9 +27,6 @@ struct Weapon : public NamedObject {
 	void print(QTextStream &stream, QString indent = QString()) const;
 	void readXml(QXmlStreamReader *xml);
 };
-
-const char *toString(Weapon::PhialType t);
-const char *toString(Weapon::SharpnessLevel s);
 
 #endif
 

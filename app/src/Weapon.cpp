@@ -3,29 +3,6 @@
 #include <QTextStream>
 #include <QXmlStreamReader>
 
-const char *toString(Weapon::PhialType t) {
-	switch (t) {
-	case Weapon::PHIAL_NONE: return "no_phial";
-	case Weapon::PHIAL_ELEMENT: return "element";
-	case Weapon::PHIAL_IMPACT: return "impact";
-	case Weapon::PHIAL_POWER: return "power";
-	default: return "???";
-	}
-}
-
-const char *toString(Weapon::SharpnessLevel t) {
-	switch (t) {
-	case Weapon::SHARPNESS_RED: return "red";
-	case Weapon::SHARPNESS_ORANGE: return "orange";
-	case Weapon::SHARPNESS_YELLOW: return "yellow";
-	case Weapon::SHARPNESS_GREEN: return "green";
-	case Weapon::SHARPNESS_BLUE: return "blue";
-	case Weapon::SHARPNESS_WHITE: return "white";
-	case Weapon::SHARPNESS_PURPLE: return "purple";
-	default: return "???";
-	}
-}
-
 Weapon::Weapon() :
 	attack(0.0), affinity(0.0), awakened(false), phial(PHIAL_NONE),
 	sharpnessPlus(0.0), rare(0)
@@ -91,7 +68,7 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 }
 
 static void parse_sharpness(QXmlStreamReader *xml,
-                            double (*psharpness)[Weapon::SHARPNESS_COUNT],
+                            double (*psharpness)[SHARPNESS_COUNT],
                             double *pplus) {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
@@ -101,8 +78,8 @@ static void parse_sharpness(QXmlStreamReader *xml,
 				*pplus = xml->readElementText().toDouble();
 			} else {
 				bool found = false;
-				for (int i = 0; i < Weapon::SHARPNESS_COUNT; ++i) {
-					if (tag_name == toString((Weapon::SharpnessLevel)i)) {
+				for (int i = 0; i < SHARPNESS_COUNT; ++i) {
+					if (tag_name == toString((SharpnessLevel)i)) {
 						(*psharpness)[i] = xml->readElementText().toDouble();
 						found = true;
 						break;
@@ -119,16 +96,16 @@ static void parse_sharpness(QXmlStreamReader *xml,
 static void parse_element_phial(QXmlStreamReader *xml,
                                 double (*pelements)[ELEMENT_COUNT],
                                 double (*pstatuses)[STATUS_COUNT],
-                                Weapon::PhialType *pphial) {
+                                PhialType *pphial) {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
 			QStringRef tag_name = xml->name();
 			bool found = false;
 			if (pphial) {
-				for (int i = 0; i < Weapon::PHIAL_COUNT; ++i) {
-					if (tag_name == toString((Weapon::PhialType)i)) {
-						*pphial = (Weapon::PhialType)i;
+				for (int i = 0; i < PHIAL_COUNT; ++i) {
+					if (tag_name == toString((PhialType)i)) {
+						*pphial = (PhialType)i;
 						xml->skipCurrentElement();
 						found = true;
 						break;

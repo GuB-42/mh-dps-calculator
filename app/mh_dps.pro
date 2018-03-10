@@ -12,6 +12,8 @@ src/BuffGroup.cpp \
 src/BuffWithCondition.cpp \
 src/ConditionRatios.cpp \
 src/Constants.cpp \
+src/DamageData.cpp \
+src/FoldedBuffs.cpp \
 src/Item.cpp \
 src/MainData.cpp \
 src/MhDpsApplication.cpp \
@@ -25,9 +27,9 @@ src/main.cpp
 HEADERS += \
 src/BuffGroup.h \
 src/BuffWithCondition.h \
-src/BuffedWeapon.h \
 src/ConditionRatios.h \
 src/Constants.h \
+src/DamageData.h \
 src/FoldedBuffs.h \
 src/Item.h \
 src/MainData.h \

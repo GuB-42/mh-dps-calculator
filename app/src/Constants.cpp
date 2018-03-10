@@ -9,11 +9,49 @@ Constants::Constants() {
 	elementCriticalHitMultiplier = 1.0;
 	statusCriticalHitMultiplier = 1.0;
 	feebleHitMultiplier = 0.75;
+	phialPowerBoost = 1.2;
+	phialElementBoost = 1.25;
+	statusAttackRate = (1.0 / 3.0);
+
+	rawSharpnessMultipliers[SHARPNESS_RED] = 0.5;
+	rawSharpnessMultipliers[SHARPNESS_ORANGE] = 0.75;
+	rawSharpnessMultipliers[SHARPNESS_YELLOW] = 1.0;
+	rawSharpnessMultipliers[SHARPNESS_GREEN] = 1.05;
+	rawSharpnessMultipliers[SHARPNESS_BLUE] = 1.2;
+	rawSharpnessMultipliers[SHARPNESS_WHITE] = 1.32;
+	rawSharpnessMultipliers[SHARPNESS_PURPLE] = 1.44;
+
+	elementSharpnessMultipliers[SHARPNESS_RED] = 0.25;
+	elementSharpnessMultipliers[SHARPNESS_ORANGE] = 0.5;
+	elementSharpnessMultipliers[SHARPNESS_YELLOW] = 0.75;
+	elementSharpnessMultipliers[SHARPNESS_GREEN] = 1.0;
+	elementSharpnessMultipliers[SHARPNESS_BLUE] = 1.0625;
+	elementSharpnessMultipliers[SHARPNESS_WHITE] = 1.125;
+	elementSharpnessMultipliers[SHARPNESS_PURPLE] = 1.2;
+
+	QVector<BuffCap> *bcaps = new QVector<BuffCap>;
+	*bcaps <<
+		BuffCap( 1.0,  4.0) <<
+		BuffCap(12.0,  4.0) <<
+		BuffCap(15.0,  5.0) <<
+		BuffCap(21.0,  6.0) <<
+		BuffCap(24.0,  7.0) <<
+		BuffCap(27.0,  8.0) <<
+		BuffCap(30.0,  9.0) <<
+		BuffCap(33.0, 10.0) <<
+		BuffCap(36.0, 11.0) <<
+		BuffCap(39.0, 12.0) <<
+		BuffCap(42.0, 13.0) <<
+		BuffCap(48.0, 14.0) <<
+		BuffCap(54.0, 15.0);
+	elementBuffCaps = bcaps;
+	statusBuffCaps = bcaps;
 
 	enragedRatio = 0.4;
 	monsterDefenseMultiplier = 0.5;
 	sharpenPeriod = 300.0;
 	sharpnessUse = 15.0;
+
 	(*cond)[CONDITION_ALWAYS] = 1.0;
 	(*cond)[CONDITION_ENRAGED] = 0.0;
 	(*cond)[CONDITION_WEAK_SPOT] = 0.0;
@@ -32,6 +70,16 @@ Constants::Constants() {
 	(*cond)[CONDITION_DEMON_POWDER_USE] = 0.5;
 	(*cond)[CONDITION_MIGHT_PILL_USE] = 0.1;
 	conditionRatios = cond;
+}
+
+Constants::~Constants() {
+	delete conditionRatios;
+	if (elementBuffCaps == statusBuffCaps) {
+		delete elementBuffCaps;
+	} else {
+		delete elementBuffCaps;
+		delete statusBuffCaps;
+	}
 }
 
 const Constants *Constants::instance() {

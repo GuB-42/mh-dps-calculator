@@ -82,9 +82,9 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond,
 			} else if (tag_name == "piercing") {
 				piercing = xml->readElementText().toDouble();
 			} else if (tag_name == "element") {
-				element = xml->readElementText().toDouble();
-			} else if (tag_name == "status") {
-				status = xml->readElementText().toDouble();
+				status = element = xml->readElementText().toDouble();
+//			} else if (tag_name == "status") {
+//				status = xml->readElementText().toDouble();
 			} else if (tag_name == "stun") {
 				stun = xml->readElementText().toDouble();
 			} else if (tag_name == "exhaust") {
@@ -139,6 +139,7 @@ Profile::~Profile() {
 
 void Profile::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
+	stream << indent << "- type: " << type << endl;
 	foreach(const Pattern *pattern, patterns) {
 		stream << indent << "- pattern" << endl;
 		pattern->print(stream, indent + "\t");
@@ -163,6 +164,8 @@ void Profile::readXml(QXmlStreamReader *xml) {
 			QStringRef tag_name = xml->name();
 			if (readXmlName(xml)) {
 				; // name
+			} else if (tag_name == "type") {
+				type = xml->readElementText();
 			} else if (tag_name == "pattern") {
 				QSet<Condition> o_cond;
 				bool o_sharpen_period = false;

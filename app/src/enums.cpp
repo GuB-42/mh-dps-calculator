@@ -90,3 +90,25 @@ const char *toString(Condition c) {
 	}
 }
 
+const char *toString(PhialType t) {
+	switch (t) {
+	case PHIAL_NONE: return "no_phial";
+	case PHIAL_ELEMENT: return "element";
+	case PHIAL_IMPACT: return "impact";
+	case PHIAL_POWER: return "power";
+	default: return "???";
+	}
+}
+
+const char *toString(SharpnessLevel t) {
+	switch (t) {
+	case SHARPNESS_RED: return "red";
+	case SHARPNESS_ORANGE: return "orange";
+	case SHARPNESS_YELLOW: return "yellow";
+	case SHARPNESS_GREEN: return "green";
+	case SHARPNESS_BLUE: return "blue";
+	case SHARPNESS_WHITE: return "white";
+	case SHARPNESS_PURPLE: return "purple";
+	default: return "???";
+	}
+}

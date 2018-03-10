@@ -9,14 +9,6 @@ ConditionRatios::ConditionRatios()
 	}
 }
 
-double &ConditionRatios::operator[](Condition c) {
-	return ratios[c];
-}
-
-const double &ConditionRatios::operator[](Condition c) const {
-	return ratios[c];
-}
-
 void ConditionRatios::print(QTextStream &stream, QString indent) const
 {
 	for(int i = 0; i < CONDITION_COUNT; ++i) {

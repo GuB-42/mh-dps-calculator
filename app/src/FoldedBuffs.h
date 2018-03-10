@@ -1,7 +1,7 @@
 #ifndef FoldedBuffs_h_
 #define FoldedBuffs_h_
 
-#include <QList>
+#include <QVector>
 #include "enums.h"
 
 class BuffWithCondition;
@@ -26,7 +26,7 @@ struct FoldedBuffs {
 	FoldedBuffsData *notEnragedNormalSpot;
 };
 
-FoldedBuffs *computeFoldedBuffs(const QList<const BuffWithCondition *> &buff_conds,
+FoldedBuffs *computeFoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
                                 const ConditionRatios &ratios,
                                 bool raw_weapon, double base_affinity);
 

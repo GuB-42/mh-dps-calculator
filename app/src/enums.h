@@ -85,4 +85,25 @@ enum Condition {
 };
 const char *toString(Condition c);
 
+enum PhialType {
+	PHIAL_NONE,
+	PHIAL_ELEMENT,
+	PHIAL_IMPACT,
+	PHIAL_POWER,
+	PHIAL_COUNT
+};
+const char *toString(PhialType t);
+
+enum SharpnessLevel {
+	SHARPNESS_RED,
+	SHARPNESS_ORANGE,
+	SHARPNESS_YELLOW,
+	SHARPNESS_GREEN,
+	SHARPNESS_BLUE,
+	SHARPNESS_WHITE,
+	SHARPNESS_PURPLE,
+	SHARPNESS_COUNT
+};
+const char *toString(SharpnessLevel s);
+
 #endif
