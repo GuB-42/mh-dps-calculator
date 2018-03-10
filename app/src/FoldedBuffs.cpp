@@ -7,7 +7,7 @@
 void FoldedBuffsData::applyBuff(const BuffWithCondition *buff_cond,
                                 const ConditionRatios &ratios,
                                 bool enraged, bool weak_spot,
-                                bool raw_weapon, double base_affinity) {
+                                double raw_weapon_ratio, double base_affinity) {
 	double ratio = 0.0;
 	switch (buff_cond->condition) {
 	case CONDITION_ALWAYS:
@@ -20,7 +20,7 @@ void FoldedBuffsData::applyBuff(const BuffWithCondition *buff_cond,
 		ratio = weak_spot ? 1.0 : 0.0;
 		break;
 	case CONDITION_RAW_WEAPON:
-		ratio = raw_weapon ? 1.0 : 0.0;
+		ratio = raw_weapon_ratio;
 		break;
 	default:
 		ratio = ratios[buff_cond->condition];
@@ -138,49 +138,42 @@ FoldedBuffsData::FoldedBuffsData() {
 	}
 }
 
-template <int N>
-struct FoldedBuffsWithData : public FoldedBuffs {
-	FoldedBuffsData data[N];
-};
-static FoldedBuffs *alloc_data(bool has_rage, bool has_weak_spot) {
+void FoldedBuffs::allocate_data(bool has_rage, bool has_weak_spot) {
 	if (has_rage) {
 		if (has_weak_spot) {
-			FoldedBuffsWithData<4> *tret = new FoldedBuffsWithData<4>();
-			tret->notEnragedNormalSpot = &tret->data[0];
-			tret->notEnragedWeakSpot = &tret->data[1];
-			tret->enragedNormalSpot = &tret->data[2];
-			tret->enragedWeakSpot = &tret->data[3];
-			return tret;
+			alloc_data = new FoldedBuffsData[4];
+			data[MODE_NORMAL_NORMAL] = &alloc_data[0];
+			data[MODE_NORMAL_WEAK_SPOT] = &alloc_data[1];
+			data[MODE_ENRAGED_NORMAL] = &alloc_data[2];
+			data[MODE_ENRAGED_WEAK_SPOT] = &alloc_data[3];
 		} else {
-			FoldedBuffsWithData<2> *tret = new FoldedBuffsWithData<2>();
-			tret->notEnragedNormalSpot = &tret->data[0];
-			tret->notEnragedWeakSpot = &tret->data[0];
-			tret->enragedNormalSpot = &tret->data[1];
-			tret->enragedWeakSpot = &tret->data[1];
-			return tret;
+			alloc_data = new FoldedBuffsData[2];
+			data[MODE_NORMAL_NORMAL] = &alloc_data[0];
+			data[MODE_NORMAL_WEAK_SPOT] = &alloc_data[0];
+			data[MODE_ENRAGED_NORMAL] = &alloc_data[1];
+			data[MODE_ENRAGED_WEAK_SPOT] = &alloc_data[1];
 		}
 	} else {
 		if (has_weak_spot) {
-			FoldedBuffsWithData<2> *tret = new FoldedBuffsWithData<2>();
-			tret->notEnragedNormalSpot = &tret->data[0];
-			tret->notEnragedWeakSpot = &tret->data[1];
-			tret->enragedNormalSpot = &tret->data[0];
-			tret->enragedWeakSpot = &tret->data[1];
-			return tret;
+			alloc_data = new FoldedBuffsData[2];
+			data[MODE_NORMAL_NORMAL] = &alloc_data[0];
+			data[MODE_NORMAL_WEAK_SPOT] = &alloc_data[1];
+			data[MODE_ENRAGED_NORMAL] = &alloc_data[0];
+			data[MODE_ENRAGED_WEAK_SPOT] = &alloc_data[1];
 		} else {
-			FoldedBuffsWithData<1> *tret = new FoldedBuffsWithData<1>();
-			tret->notEnragedNormalSpot = &tret->data[0];
-			tret->notEnragedWeakSpot = &tret->data[0];
-			tret->enragedNormalSpot = &tret->data[0];
-			tret->enragedWeakSpot = &tret->data[0];
-			return tret;
+			alloc_data = new FoldedBuffsData[1];
+			data[MODE_NORMAL_NORMAL] = &alloc_data[0];
+			data[MODE_NORMAL_WEAK_SPOT] = &alloc_data[0];
+			data[MODE_ENRAGED_NORMAL] = &alloc_data[0];
+			data[MODE_ENRAGED_WEAK_SPOT] = &alloc_data[0];
 		}
 	}
 }
 
-FoldedBuffs *computeFoldedBuffs(const QList<const BuffWithCondition *> &buff_conds,
-                                const ConditionRatios &ratios,
-                                bool raw_weapon, double base_affinity) {
+FoldedBuffs::FoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
+                         const ConditionRatios &ratios,
+                         double raw_weapon, bool awakened_weapon,
+                         double base_affinity) {
 	bool has_rage = false;
 	bool has_weak_spot = false;
 	foreach(const BuffWithCondition *bc, buff_conds) {
@@ -190,22 +183,44 @@ FoldedBuffs *computeFoldedBuffs(const QList<const BuffWithCondition *> &buff_con
 			has_weak_spot = true;
 		}
 	}
-	FoldedBuffs *ret = alloc_data(has_rage, has_weak_spot);
+	allocate_data(has_rage, has_weak_spot);
+	double raw_weapon_ratio = 0.0;
+	if (raw_weapon) {
+		raw_weapon_ratio = 1.0;
+	} else if (awakened_weapon) {
+		raw_weapon_ratio = 1.0;
+		// FIXME: Conditional awakening isn't handled, it shouldn't matter
+		foreach(const BuffWithCondition *bc, buff_conds) {
+			if (bc->buffClass == BuffWithCondition::BUFF_CLASS_NORMAL &&
+			    bc->normal.buff == BUFF_AWAKENING &&
+			    bc->condition == CONDITION_ALWAYS) {
+				raw_weapon_ratio -= bc->value;
+			}
+		}
+		if (raw_weapon_ratio < 0.0) raw_weapon_ratio = 0.0;
+	}
 	foreach(const BuffWithCondition *bc, buff_conds) {
-		ret->notEnragedNormalSpot->applyBuff(bc, ratios, false, false,
-		                                     raw_weapon, base_affinity);
+		data[MODE_NORMAL_NORMAL]->
+			applyBuff(bc, ratios, false, false,
+			          raw_weapon_ratio, base_affinity);
 		if (has_rage) {
-			ret->enragedNormalSpot->applyBuff(bc, ratios, true, false,
-			                                  raw_weapon, base_affinity);
+			data[MODE_ENRAGED_NORMAL]->
+				applyBuff(bc, ratios, true, false,
+				          raw_weapon_ratio, base_affinity);
 		}
 		if (has_weak_spot) {
-			ret->notEnragedNormalSpot->applyBuff(bc, ratios, false, true,
-			                                     raw_weapon, base_affinity);
+			data[MODE_NORMAL_NORMAL]->
+				applyBuff(bc, ratios, false, true,
+				          raw_weapon_ratio, base_affinity);
 			if (has_rage) {
-				ret->enragedNormalSpot->applyBuff(bc, ratios, true, true,
-				                                  raw_weapon, base_affinity);
+				data[MODE_ENRAGED_NORMAL]->
+					applyBuff(bc, ratios, true, true,
+					          raw_weapon_ratio, base_affinity);
 			}
 		}
 	}
-	return 0;
+}
+
+FoldedBuffs::~FoldedBuffs() {
+	delete[] alloc_data;
 }

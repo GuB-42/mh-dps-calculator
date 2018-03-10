@@ -8,6 +8,18 @@
 // FIXME : to remove later,if not needed
 #include "ConditionRatios.h"
 
+DamageData::DamageData() :
+	cut(0.0), impact(0.0), piercing(0.0), fixed(0.0),
+	mindsEyeRate(0.0)
+{
+	for (int i = 0; i < ELEMENT_COUNT; ++i) {
+		elements[i] = 0.0;
+	}
+	for (int i = 0; i < STATUS_COUNT; ++i) {
+		statuses[i] = 0.0;
+	}
+}
+
 double compute_sharp_bonus(const double levels[SHARPNESS_COUNT],
                            double wasted, double use, double max_ratio,
                            const double values[SHARPNESS_COUNT],
@@ -219,6 +231,42 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		fixed += attack * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER] *
 			pattern.phialImpactAttack;
 	}
+}
+
+void DamageData::combine(DamageData &o, double rate) {
+	cut += o.cut * rate;
+	impact += o.impact * rate;
+	piercing += o.piercing * rate;
+	fixed += o.fixed * rate;
+	for (int elt = 0; elt < ELEMENT_COUNT; ++elt) {
+		elements[elt] += o.elements[elt] * rate;
+	}
+	for (int sta = 0; sta < STATUS_COUNT; ++sta) {
+		statuses[sta] += o.statuses[sta] * rate;
+	}
+	mindsEyeRate += o.mindsEyeRate * rate;
+
+	QVector<SharpnessMultiplierData> a = bounceSharpness;
+	QVector<SharpnessMultiplierData> &b = o.bounceSharpness;
+	bounceSharpness.clear();
+	int ia = 0;
+	int ib = 0;
+	while (ia < a.count() && ib < b.count()) {
+		if (a[ia].multiplier > b[ib].multiplier) {
+			bounceSharpness.append(a[ia]);
+			++ia;
+		} else if (a[ia].multiplier < b[ib].multiplier) {
+			bounceSharpness.append(b[ib]);
+			++ib;
+		} else {
+			SharpnessMultiplierData ns(a[ia].rate + b[ib].rate,
+			                           a[ia].multiplier);
+			bounceSharpness.append(ns);
+			++ia, ++ib;
+		}
+	}
+	while (ia < a.count()) bounceSharpness.append(a[ia++]);
+	while (ib < b.count()) bounceSharpness.append(b[ib++]);
 }
 
 void DamageData::print(QTextStream &stream, QString indent) const {

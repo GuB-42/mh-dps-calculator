@@ -16,18 +16,20 @@ struct FoldedBuffsData {
 	void applyBuff(const BuffWithCondition *buff_cond,
 	               const ConditionRatios &ratios,
 	               bool enraged, bool weak_spot,
-	               bool raw_weapon, double base_affinity);
+	               double raw_weapon_ratio,
+	               double base_affinity);
 };
 
 struct FoldedBuffs {
-	FoldedBuffsData *enragedWeakSpot;
-	FoldedBuffsData *notEnragedWeakSpot;
-	FoldedBuffsData *enragedNormalSpot;
-	FoldedBuffsData *notEnragedNormalSpot;
+	FoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
+                const ConditionRatios &ratios,
+                double raw_weapon, bool awakened_weapon,
+                double base_affinity);
+	~FoldedBuffs();
+	FoldedBuffsData *data[MODE_COUNT];
+private:
+	void allocate_data(bool has_rage, bool has_weak_spot);
+	FoldedBuffsData *alloc_data;
 };
-
-FoldedBuffs *computeFoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
-                                const ConditionRatios &ratios,
-                                bool raw_weapon, double base_affinity);
 
 #endif

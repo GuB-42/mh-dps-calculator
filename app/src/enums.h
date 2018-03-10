@@ -106,4 +106,13 @@ enum SharpnessLevel {
 };
 const char *toString(SharpnessLevel s);
 
+enum MonsterMode {
+	MODE_NORMAL_NORMAL,
+	MODE_NORMAL_WEAK_SPOT,
+	MODE_ENRAGED_NORMAL,
+	MODE_ENRAGED_WEAK_SPOT,
+	MODE_COUNT
+};
+const char *toString(MonsterMode m);
+
 #endif

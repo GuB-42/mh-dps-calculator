@@ -112,3 +112,13 @@ const char *toString(SharpnessLevel t) {
 	default: return "???";
 	}
 }
+
+const char *toString(MonsterMode m) {
+	switch (m) {
+	case MODE_NORMAL_NORMAL: return "normal_normal";
+	case MODE_NORMAL_WEAK_SPOT: return "normal_weak_spot";
+	case MODE_ENRAGED_NORMAL: return "enraged_normal";
+	case MODE_ENRAGED_WEAK_SPOT: return "enraged_weak_spot";
+	default: return "???";
+	}
+}
