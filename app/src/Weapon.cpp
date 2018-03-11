@@ -137,7 +137,7 @@ static void parse_element_phial(QXmlStreamReader *xml,
 	}
 }
 
-static void parse_slots(QXmlStreamReader *xml, QList<int> *dslots) {
+static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {

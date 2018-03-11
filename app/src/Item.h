@@ -2,7 +2,7 @@
 #define Item_h_
 
 #include "NamedObject.h"
-#include <QList>
+#include <QVector>
 
 class BuffGroup;
 
@@ -17,7 +17,8 @@ struct Item : public NamedObject {
 	QString type;
 	int decorationLevel;
 	int rare;
-	QList<BuffRef> buffRefs;
+	QVector<int> decorationSlots;
+	QVector<BuffRef> buffRefs;
 
 	Item();
 	void print(QTextStream &stream, QString indent = QString()) const;

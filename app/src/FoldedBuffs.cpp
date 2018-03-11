@@ -1,5 +1,6 @@
 #include "FoldedBuffs.h"
 
+#include <QTextStream>
 #include "BuffWithCondition.h"
 #include "ConditionRatios.h"
 #include "Constants.h"
@@ -138,6 +139,29 @@ FoldedBuffsData::FoldedBuffsData() {
 	}
 }
 
+void FoldedBuffsData::print(QTextStream &stream, QString indent) const {
+	for (int i = 0; i < NORMAL_BUFF_COUNT; ++i) {
+		stream << indent << "- " << toString((NormalBuff)i) << ": " <<
+			normalBuffs[i] << endl;
+	}
+	for (int i = 0; i < ELEMENT_BUFF_COUNT; ++i) {
+		stream << indent << "- " << toString((ElementBuff)i) << ": [";
+		for (int j = 0; j < ELEMENT_COUNT; ++j) {
+			if (j > 0) stream << ", ";
+			stream << elementBuffs[i][j];
+		}
+		stream << "]" << endl;
+	}
+	for (int i = 0; i < STATUS_BUFF_COUNT; ++i) {
+		stream << indent << "- " << toString((StatusBuff)i) << ": [";
+		for (int j = 0; j < STATUS_COUNT; ++j) {
+			if (j > 0) stream << ", ";
+			stream << statusBuffs[i][j];
+		}
+		stream << "]" << endl;
+	}
+}
+
 void FoldedBuffs::allocate_data(bool has_rage, bool has_weak_spot) {
 	if (has_rage) {
 		if (has_weak_spot) {
@@ -209,11 +233,11 @@ FoldedBuffs::FoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
 				          raw_weapon_ratio, base_affinity);
 		}
 		if (has_weak_spot) {
-			data[MODE_NORMAL_NORMAL]->
+			data[MODE_NORMAL_WEAK_SPOT]->
 				applyBuff(bc, ratios, false, true,
 				          raw_weapon_ratio, base_affinity);
 			if (has_rage) {
-				data[MODE_ENRAGED_NORMAL]->
+				data[MODE_ENRAGED_WEAK_SPOT]->
 					applyBuff(bc, ratios, true, true,
 					          raw_weapon_ratio, base_affinity);
 			}
@@ -223,4 +247,19 @@ FoldedBuffs::FoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
 
 FoldedBuffs::~FoldedBuffs() {
 	delete[] alloc_data;
+}
+
+void FoldedBuffs::print(QTextStream &stream, QString indent) const {
+	bool found[MODE_COUNT] = { false };
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		if (found[i]) continue;
+		stream << indent << "- " << toString((MonsterMode)i) << endl;
+		for (int j = i + 1; j < MODE_COUNT; ++j) {
+			if (data[i] == data[j]) {
+				stream << indent << "- " << toString((MonsterMode)j) << endl;
+			}
+			found[j] = true;
+		}
+		data[i]->print(stream, indent + "\t");
+	}
 }

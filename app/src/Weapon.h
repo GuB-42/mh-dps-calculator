@@ -1,7 +1,7 @@
 #ifndef Weapon_h_
 #define Weapon_h_
 
-#include <QList>
+#include <QVector>
 #include "enums.h"
 #include "NamedObject.h"
 
@@ -20,7 +20,7 @@ struct Weapon : public NamedObject {
 	double phialStatuses[STATUS_COUNT];
 	double sharpness[SHARPNESS_COUNT];
 	double sharpnessPlus;
-	QList<int> decorationSlots;
+	QVector<int> decorationSlots;
 	int rare;
 
 	Weapon();

@@ -66,6 +66,9 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				BuffGroup *buff_group = new BuffGroup;
 				buff_group->readXml(xml);
 				buffGroups.append(buff_group);
+				if (!buff_group->id.isNull()) {
+					buffGroupHash[buff_group->id] = buff_group;
+				}
 			} else if (tag_name == "weapon_profile") {
 				Profile *profile = new Profile;
 				profile->readXml(xml);
@@ -74,11 +77,25 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				Item *item = new Item;
 				item->readXml(xml);
 				items.append(item);
+				if (!item->id.isNull()) {
+					itemHash[item->id] = item;
+				}
 			} else {
 				xml->skipCurrentElement();
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
+		}
+	}
+}
+
+void MainData::matchData() {
+	foreach(Item *item, items) {
+		for (QVector<Item::BuffRef>::iterator it = item->buffRefs.begin();
+		     it != item->buffRefs.end(); ++it) {
+			QHash<QString, BuffGroup *>::const_iterator itb =
+				buffGroupHash.find(it->id);
+			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
 		}
 	}
 }

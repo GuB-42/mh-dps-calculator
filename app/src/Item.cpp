@@ -21,7 +21,7 @@ void Item::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-static void parse_buff_refs(QXmlStreamReader *xml, QList<Item::BuffRef> *pout)
+static void parse_buff_refs(QXmlStreamReader *xml, QVector<Item::BuffRef> *pout)
 {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
@@ -41,6 +41,22 @@ static void parse_buff_refs(QXmlStreamReader *xml, QList<Item::BuffRef> *pout)
 	}
 }
 
+static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
+	while (!xml->atEnd()) {
+		QXmlStreamReader::TokenType token_type = xml->readNext();
+		if (token_type == QXmlStreamReader::StartElement) {
+			QStringRef tag_name = xml->name();
+			if (tag_name == "slot") {
+				dslots->append(xml->readElementText().toInt());
+			} else {
+				xml->skipCurrentElement();
+			}
+		} else if (token_type == QXmlStreamReader::EndElement) {
+			break;
+		}
+	}
+}
+
 void Item::readXml(QXmlStreamReader *xml) {
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
@@ -53,6 +69,8 @@ void Item::readXml(QXmlStreamReader *xml) {
 				; // name
 			} else if (tag_name == "type") {
 				type = xml->readElementText();
+			} else if (tag_name == "slots") {
+				parse_slots(xml, &decorationSlots);
 			} else if (tag_name == "decoration_level") {
 				decorationLevel = xml->readElementText().toInt();
 			} else if (tag_name == "rare") {

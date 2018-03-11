@@ -10,6 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 SOURCES += \
 src/BuffGroup.cpp \
 src/BuffWithCondition.cpp \
+src/Build.cpp \
 src/ConditionRatios.cpp \
 src/Constants.cpp \
 src/Damage.cpp \
@@ -28,6 +29,7 @@ src/main.cpp
 HEADERS += \
 src/BuffGroup.h \
 src/BuffWithCondition.h \
+src/Build.h \
 src/ConditionRatios.h \
 src/Constants.h \
 src/Damage.h \

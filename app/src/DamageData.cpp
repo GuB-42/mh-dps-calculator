@@ -77,7 +77,7 @@ static double compute_buffed_element(double base,
 			break;
 		}
 	}
-	return ret > base + cap ? base + cap : base;
+	return ret > base + cap ? base + cap : ret;
 }
 
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
