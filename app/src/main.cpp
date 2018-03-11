@@ -11,6 +11,7 @@
 #include "Build.h"
 #include "Item.h"
 #include "BuffGroup.h"
+#include "BuffWithCondition.h"
 
 #include "MainData.h"
 
@@ -24,8 +25,10 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 				foreach(BuffGroupLevel *bl, buff_ref.buffGroup->levels) {
 					if (!bl) continue;
 					foreach(BuffWithCondition *bc, bl->buffs) {
-						useful = true;
-						break;
+						if (bc->isUseful(*weapon)) {
+							useful = true;
+							break;
+						}
 					}
 					if (useful) break;
 				}

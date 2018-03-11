@@ -5,6 +5,7 @@
 #include <QString>
 
 class QTextStream;
+class Weapon;
 
 struct BuffWithCondition {
 	enum BuffClass {
@@ -32,6 +33,7 @@ struct BuffWithCondition {
 	};
 
 	BuffWithCondition();
+	bool isUseful(const Weapon &weapon);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 
