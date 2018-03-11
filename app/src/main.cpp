@@ -44,7 +44,7 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 			build->addWeapon(weapon);
 			build->addItem(data.itemHash["powercharm"]);
 			build->addItem(data.itemHash["powertalon"]);
-			build->decorationSlots << 3;
+//			build->decorationSlots << 3;
 
 			QVector<Build *> builds;
 			builds << build;
@@ -82,13 +82,13 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 				stream << endl;
 
 				Dps main_dps;
-				double main_weigth;
+				double main_weigth = 0.0;
 				foreach(Monster *monster, data.monsters) {
 					Dps monster_dps;
-					double monster_weigth;
+					double monster_weigth = 0.0;
 					foreach(MonsterPart *part, monster->parts) {
 						Dps part_dps;
-						double part_weigth;
+						double part_weigth = 0.0;
 						foreach(MonsterHitData *hit_data, part->hitData) {
 							double enraged_ratio = 0.4;
 							if (dmg.data[MODE_NORMAL_NORMAL] ==
