@@ -21,6 +21,10 @@ struct Constants {
 	double phialPowerBoost;
 	double phialElementBoost;
 	double statusAttackRate;
+	double rawWeakSpotThreshold;
+	double elementWeakSpotThreshold;
+	double bounceThreshold;
+	double piercingFactor;
 	double rawSharpnessMultipliers[SHARPNESS_COUNT];
 	double elementSharpnessMultipliers[SHARPNESS_COUNT];
 	const QVector<BuffCap> *elementBuffCaps;
@@ -34,7 +38,10 @@ struct Constants {
 
 	Constants();
 	~Constants();
-	static const Constants *instance();
+	inline static const Constants *instance() {
+		if (!instancePtr) instancePtr = new Constants();
+		return instancePtr;
+	}
 private:
 	static const Constants *instancePtr;
 };

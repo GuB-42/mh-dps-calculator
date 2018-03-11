@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = mh_dps
 
-CONFIG += debug
+CONFIG += release
 
 QT = core gui xml
 
@@ -15,6 +15,7 @@ src/ConditionRatios.cpp \
 src/Constants.cpp \
 src/Damage.cpp \
 src/DamageData.cpp \
+src/Dps.cpp \
 src/FoldedBuffs.cpp \
 src/Item.cpp \
 src/MainData.cpp \
@@ -34,6 +35,7 @@ src/ConditionRatios.h \
 src/Constants.h \
 src/Damage.h \
 src/DamageData.h \
+src/Dps.cpp \
 src/FoldedBuffs.h \
 src/Item.h \
 src/MainData.h \

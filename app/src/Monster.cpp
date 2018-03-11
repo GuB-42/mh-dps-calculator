@@ -91,8 +91,8 @@ void MonsterPart::readXml(QXmlStreamReader *xml) {
 }
 
 MonsterTolerance::MonsterTolerance() :
-	initial(0.0), plus(0.0), max(0.0), regen_value(0.0),
-	regen_tick(0.0), duration(0.0), damage(0.0)
+	initial(0.0), plus(0.0), max(0.0), regenValue(0.0),
+	regenTick(0.0), duration(0.0), damage(0.0)
 {
 }
 
@@ -101,8 +101,8 @@ void MonsterTolerance::print(QTextStream &stream, QString indent) const {
 		initial << ", " <<
 		plus << ", " <<
 		max << ", " <<
-		regen_value << ", " <<
-		regen_tick << ", " <<
+		regenValue << ", " <<
+		regenTick << ", " <<
 		duration << ", " <<
 		damage << "]" << endl;
 }
@@ -119,9 +119,9 @@ void MonsterTolerance::readXml(QXmlStreamReader *xml, StatusType *pstatus_type) 
 			} else if (tag_name == "max") {
 				max = xml->readElementText().toDouble();
 			} else if (tag_name == "regen_value") {
-				regen_value = xml->readElementText().toDouble();
+				regenValue = xml->readElementText().toDouble();
 			} else if (tag_name == "regen_tick") {
-				regen_tick = xml->readElementText().toDouble();
+				regenTick = xml->readElementText().toDouble();
 			} else if (tag_name == "duration") {
 				duration = xml->readElementText().toDouble();
 			} else if (tag_name == "damage") {

@@ -5,6 +5,8 @@
 #include <QTextStream>
 
 #include "Weapon.h"
+#include "Monster.h"
+#include "Dps.h"
 #include "Profile.h"
 #include "FoldedBuffs.h"
 #include "Damage.h"
@@ -76,6 +78,22 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 						stream << ", ";
 					}
 					stream << item->getName(NamedObject::LANG_EN);
+				}
+				Dps main_dps;
+				foreach(Monster *monster, data.monsters) {
+					Dps monster_dps;
+					foreach(MonsterPart *part, monster->parts) {
+						Dps part_dps;
+						foreach(MonsterHitData *hit_data, part->hitData) {
+							Dps dps(*monster, *hit_data,
+							        *dmg.data[MODE_NORMAL_NORMAL],
+							        *dmg.data[MODE_NORMAL_WEAK_SPOT],
+							        1.0);
+							part_dps.combine(dps, 1.0);
+						}
+						monster_dps.combine(part_dps, 1.0);
+					}
+					main_dps.combine(monster_dps, 1.0);
 				}
 				stream << endl;
 

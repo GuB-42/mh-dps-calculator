@@ -12,6 +12,10 @@ Constants::Constants() {
 	phialPowerBoost = 1.2;
 	phialElementBoost = 1.25;
 	statusAttackRate = (1.0 / 3.0);
+	rawWeakSpotThreshold = 45.0;
+	elementWeakSpotThreshold = 20.0;
+	bounceThreshold = 25.0;
+	piercingFactor = 0.72;
 
 	rawSharpnessMultipliers[SHARPNESS_RED] = 0.5;
 	rawSharpnessMultipliers[SHARPNESS_ORANGE] = 0.75;
@@ -80,11 +84,6 @@ Constants::~Constants() {
 		delete elementBuffCaps;
 		delete statusBuffCaps;
 	}
-}
-
-const Constants *Constants::instance() {
-	if (!instancePtr) instancePtr = new Constants();
-	return instancePtr;
 }
 
 const Constants *Constants::instancePtr = NULL;

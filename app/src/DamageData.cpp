@@ -233,7 +233,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	}
 }
 
-void DamageData::combine(DamageData &o, double rate) {
+void DamageData::combine(const DamageData &o, double rate) {
 	cut += o.cut * rate;
 	impact += o.impact * rate;
 	piercing += o.piercing * rate;
@@ -247,7 +247,7 @@ void DamageData::combine(DamageData &o, double rate) {
 	mindsEyeRate += o.mindsEyeRate * rate;
 
 	QVector<SharpnessMultiplierData> a = bounceSharpness;
-	QVector<SharpnessMultiplierData> &b = o.bounceSharpness;
+	const QVector<SharpnessMultiplierData> &b = o.bounceSharpness;
 	bounceSharpness.clear();
 	int ia = 0;
 	int ib = 0;

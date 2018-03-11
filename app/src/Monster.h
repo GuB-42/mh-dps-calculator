@@ -33,8 +33,8 @@ struct MonsterTolerance {
 	double initial;
 	double plus;
 	double max;
-	double regen_value;
-	double regen_tick;
+	double regenValue;
+	double regenTick;
 	double duration;
 	double damage;
 
