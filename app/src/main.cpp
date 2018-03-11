@@ -79,23 +79,59 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 					}
 					stream << item->getName(NamedObject::LANG_EN);
 				}
+				stream << endl;
+
 				Dps main_dps;
+				double main_weigth;
 				foreach(Monster *monster, data.monsters) {
 					Dps monster_dps;
+					double monster_weigth;
 					foreach(MonsterPart *part, monster->parts) {
 						Dps part_dps;
+						double part_weigth;
 						foreach(MonsterHitData *hit_data, part->hitData) {
-							Dps dps(*monster, *hit_data,
-							        *dmg.data[MODE_NORMAL_NORMAL],
-							        *dmg.data[MODE_NORMAL_WEAK_SPOT],
-							        1.0);
-							part_dps.combine(dps, 1.0);
+							double enraged_ratio = 0.4;
+							if (dmg.data[MODE_NORMAL_NORMAL] ==
+							    dmg.data[MODE_ENRAGED_NORMAL] &&
+							    dmg.data[MODE_NORMAL_WEAK_SPOT] ==
+							    dmg.data[MODE_ENRAGED_WEAK_SPOT]) {
+								Dps dps(*monster, *hit_data,
+								        *dmg.data[MODE_NORMAL_NORMAL],
+								        *dmg.data[MODE_NORMAL_WEAK_SPOT],
+								        1.0);
+								part_dps.combine(dps, 1.0);
+							} else {
+								{
+									Dps dps(*monster, *hit_data,
+									        *dmg.data[MODE_NORMAL_NORMAL],
+									        *dmg.data[MODE_NORMAL_WEAK_SPOT],
+									        1.0);
+									part_dps.combine(dps, 1.0 - enraged_ratio);
+								}
+								{
+									Dps dps(*monster, *hit_data,
+									        *dmg.data[MODE_ENRAGED_NORMAL],
+									        *dmg.data[MODE_ENRAGED_WEAK_SPOT],
+									        1.0);
+									part_dps.combine(dps, enraged_ratio);
+								}
+							}
+							part_weigth += 1.0;
 						}
-						monster_dps.combine(part_dps, 1.0);
+						if (part_weigth != 0.0) {
+							monster_dps.combine(part_dps, 1.0 / part_weigth);
+							monster_weigth += 1.0;
+						}
 					}
-					main_dps.combine(monster_dps, 1.0);
+					if (monster_weigth != 0.0) {
+						main_dps.combine(monster_dps, 1.0);
+						main_weigth += 1.0;
+					}
 				}
-				stream << endl;
+				Dps final_dps;
+				if (main_weigth != 0.0) {
+					final_dps.combine(main_dps, main_weigth);
+				}
 
 //				dmg.print(stream, "\t");
 

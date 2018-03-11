@@ -14,7 +14,7 @@ double get_status_hits(double status_attack,
 		status_attack -=
 			tolerance.regenValue / tolerance.regenTick;
 	}
-	if (status_attack < 0.0) return 0.0;
+	if (status_attack <= 0.0) return 0.0;
 	double duration = 0.0;
 	double hits = 0.0;
 	for (int retry = 0; retry < 3; ++retry) {

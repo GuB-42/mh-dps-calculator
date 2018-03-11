@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = mh_dps
 
-CONFIG += release
+CONFIG += debug
 
 QT = core gui xml
 
