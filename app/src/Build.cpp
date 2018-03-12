@@ -64,7 +64,7 @@ void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) cons
 				QMap<const BuffGroup *, int>::const_iterator it =
 					buffLevels.find(buff_ref.buffGroup);
 				if (it == buffLevels.end() ||
-				    it.value() < it.key()->levels.count()) {
+				    it.value() < it.key()->levels.count() - 1) {
 					useful_items.append(item);
 					break;
 				}

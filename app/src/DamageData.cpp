@@ -80,6 +80,8 @@ static double compute_buffed_element(double base,
 	return ret > base + cap ? base + cap : ret;
 }
 
+// TODO: check if exhaust switch axe phials also deals KO
+// and also how it stacks with awakening
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
                        const Pattern &pattern,
                        double element_status_crit_adjustment) {
@@ -125,12 +127,14 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	                        Constants::instance()->rawSharpnessMultipliers,
 	                        &bounceSharpness);
 	for (int i = 0; i < bounceSharpness.count(); ++i) {
-		bounceSharpness[i].multiplier *= pattern.bounceSharpnessMultiplier;
+		bounceSharpness[i].multiplier *= pattern.sharpnessMultiplier;
 	}
 	double element_sharpness_multiplier =
 		compute_sharp_bonus(weapon.sharpness, wasted_sharpness,
 	                        sharpness_use, max_sharpness_ratio,
 	                        Constants::instance()->elementSharpnessMultipliers);
+	// WARN: do maybe redesign, TODO, to check
+	raw_sharpness_multiplier *= pattern.sharpnessMultiplier;
 	mindsEyeRate = buffs.normalBuffs[BUFF_MINDS_EYE] +
 		(1.0 - buffs.normalBuffs[BUFF_MINDS_EYE]) * pattern.mindsEyeRatio;
 
@@ -166,6 +170,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		element_sharpness_multiplier * element_phial_multiplier;
 	for (int elt = 0; elt < ELEMENT_COUNT; ++elt) {
 		double element_attack = 0.0;
+		double element_phial_attack = 0.0;
 		double eplus = buffs.elementBuffs[BUFF_ELEMENT_PLUS][elt] +
 			buffs.normalBuffs[BUFF_ALL_ELEMENTS_PLUS];
 		double emult = buffs.elementBuffs[BUFF_ELEMENT_MULTIPLIER][elt] *
@@ -176,10 +181,14 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 				                       *Constants::instance()->elementBuffCaps);
 			double awake = 1.0;
 			if (weapon.awakened) awake = buffs.normalBuffs[BUFF_AWAKENING];
-			element_attack += awake * (1.0 - pattern.phialRatio) *
+			element_attack = awake *
 				pattern.element * buffed_element / multi_element_divider;
+			if (weapon.phialElements[elt] > 0.0) {
+				element_attack *= (1.0 - pattern.phialRatio);
+			}
 			if (weapon.phial == PHIAL_ELEMENT) {
-				element_attack += buffed_element * pattern.phialElementAttack;
+				element_phial_attack =
+					buffed_element * pattern.phialElementAttack;
 			}
 		}
 		if (weapon.phialElements[elt] > 0.0) {
@@ -187,7 +196,8 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 				compute_buffed_element(weapon.phialElements[elt], eplus, emult,
 				                       *Constants::instance()->elementBuffCaps);
 		}
-		elements[elt] = element_attack * element_multiplier;
+		elements[elt] = element_attack * element_multiplier +
+			element_phial_attack;
 	}
 
 	double status_multiplier = status_affinity_multiplier *
@@ -204,8 +214,11 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 				                       *Constants::instance()->statusBuffCaps);
 			double awake = 1.0;
 			if (weapon.awakened) awake = buffs.normalBuffs[BUFF_AWAKENING];
-			status_attack += awake * (1.0 - pattern.phialRatio) *
+			status_attack = awake *
 				pattern.status * buffed_status / multi_element_divider;
+			if (weapon.phialStatuses[sta] > 0.0) {
+				status_attack *= (1.0 - pattern.phialRatio);
+			}
 		}
 		if (weapon.phialStatuses[sta] > 0.0) {
 			status_attack += pattern.phialRatio * pattern.status *
@@ -231,6 +244,9 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		fixed += attack * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER] *
 			pattern.phialImpactAttack;
 	}
+
+	statuses[STATUS_STUN] *= buffs.normalBuffs[BUFF_STUN_MULTIPLIER];
+	statuses[STATUS_EXHAUST] *= buffs.normalBuffs[BUFF_EXHAUST_MULTIPLIER];
 }
 
 void DamageData::combine(const DamageData &o, double rate) {
@@ -256,17 +272,24 @@ void DamageData::combine(const DamageData &o, double rate) {
 			bounceSharpness.append(a[ia]);
 			++ia;
 		} else if (a[ia].multiplier < b[ib].multiplier) {
-			bounceSharpness.append(b[ib]);
+			SharpnessMultiplierData ns(b[ib].rate * rate,
+			                           b[ib].multiplier);
+			bounceSharpness.append(ns);
 			++ib;
 		} else {
-			SharpnessMultiplierData ns(a[ia].rate + b[ib].rate,
+			SharpnessMultiplierData ns(a[ia].rate + b[ib].rate * rate,
 			                           a[ia].multiplier);
 			bounceSharpness.append(ns);
 			++ia, ++ib;
 		}
 	}
 	while (ia < a.count()) bounceSharpness.append(a[ia++]);
-	while (ib < b.count()) bounceSharpness.append(b[ib++]);
+	while (ib < b.count()) {
+			SharpnessMultiplierData ns(b[ib].rate * rate,
+			                           b[ib].multiplier);
+		bounceSharpness.append(ns);
+		++ib;
+	}
 }
 
 void DamageData::print(QTextStream &stream, QString indent) const {

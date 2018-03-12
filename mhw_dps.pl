@@ -283,8 +283,12 @@ sub compute_buffed_weapon
 	}
 	if (!%{$weapon->{"elements"}} && !%{$weapon->{"statuses"}}) {
 		$conditions->{"raw_weapon"} = 1.0;
-	} elsif ($weapon->{"awakened"} && (!(defined $buff->{"awakening"}) || !%{$buff->{"awakening"}})) {
-		$conditions->{"raw_weapon"} = 1.0;
+	} elsif ($weapon->{"awakened"}) {
+		if (defined $buff->{"awakening"}) {
+			$conditions->{"raw_weapon"} = 1.0 - $buff->{"awakening"}{"always"};
+		} else {
+			$conditions->{"raw_weapon"} = 1.0;
+		}
 	}
 	my $buff_data = fold_conditions_buff_data($buff, $conditions, $weapon->{"affinity"});
 
@@ -304,7 +308,8 @@ sub compute_buffed_weapon
 		"stun_multiplier" => $buff_data->{"stun_multiplier"},
 		"exhaust_multiplier" => $buff_data->{"exhaust_multiplier"},
 		"artillery_multiplier" => $buff_data->{"artillery_multiplier"},
-		"bounce_sharpness" => []
+		"bounce_sharpness" => [],
+		"minds_eye" => $buff_data->{"minds_eye"}
 	};
 
 	$buffed_weapon->{"affinity"} += $buff_data->{"affinity_plus"};
@@ -342,29 +347,16 @@ sub compute_buffed_weapon
 		                $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
 		                $constants->{"element_sharpness_multipliers"});
 
-	if ($buff_data->{"minds_eye"} < 1.0) {
-		$buffed_weapon->{"bounce_sharpness"} =
-			get_sharp_bonus_array($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
-			                      $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
-			                      $constants->{"raw_sharpness_multipliers"});
-		if ($buff_data->{"minds_eye"} > 0.0) {
-			for my $v (@{$buffed_weapon->{"bounce_sharpness"}}) {
-				$v->[1] *= 1.0 - $buff_data->{"minds_eye"};
-			}
-			push @{$buffed_weapon->{"bounce_sharpness"}}, [$buff_data->{"minds_eye"}, 999];
-		}
-	} else {
-		push @{$buffed_weapon->{"bounce_sharpness"}}, [1.0, 999];
-	}
+	$buffed_weapon->{"bounce_sharpness"} =
+		get_sharp_bonus_array($weapon, $buff_data->{"sharpness_plus"}, $sharpness_use,
+		                      $buff_data->{"max_sharpness_time"} / $constants->{"sharpen_period"},
+		                      $constants->{"raw_sharpness_multipliers"});
 
 	my $multi_divider =
 		scalar(%{$weapon->{"elements"}}) + scalar(%{$weapon->{"statuses"}});
 
 	for my $element (keys %{$weapon->{"elements"}}) {
-		my $power = $weapon->{"elements"}{$element} / $multi_divider;
-		if ($weapon->{"awakened"}) {
-			$power *= $buff_data->{"awakening"};
-		}
+		my $power = $weapon->{"elements"}{$element};
 		if ($power > 0) {
 			$power = compute_buffed_element($power,
 			                                $buff_data->{"element_plus"}{$element},
@@ -372,14 +364,14 @@ sub compute_buffed_weapon
 			                                $constants->{"element_status_plus_caps"});
 			$power += $buff_data->{"all_elements_plus"};
 			$power *= $buff_data->{"all_elements_multiplier"};
-			$buffed_weapon->{"elements"}{$element} = $power;
+			if ($weapon->{"awakened"}) {
+				$power *= $buff_data->{"awakening"};
+			}
+			$buffed_weapon->{"elements"}{$element} = $power / $multi_divider;
 		}
 	}
 	for my $status (keys %{$weapon->{"statuses"}}) {
-		my $power = $weapon->{"statuses"}{$status} / $multi_divider;
-		if ($weapon->{"awakened"}) {
-			$power *= $buff_data->{"awakening"};
-		}
+		my $power = $weapon->{"statuses"}{$status};
 		if ($power > 0) {
 			$power = compute_buffed_element($power,
 			                                $buff_data->{"status_plus"}{$status},
@@ -387,7 +379,10 @@ sub compute_buffed_weapon
 			                                $constants->{"element_status_plus_caps"});
 			$power += $buff_data->{"all_statuses_plus"};
 			$power *= $buff_data->{"all_statuses_multiplier"};
-			$buffed_weapon->{"statuses"}{$status} = $power;
+			if ($weapon->{"awakened"}) {
+				$power *= $buff_data->{"awakening"};
+			}
+			$buffed_weapon->{"statuses"}{$status} = $power / $multi_divider;
 		}
 	}
 	for my $element (keys %{$weapon->{"phial_elements"}}) {
@@ -426,6 +421,7 @@ sub compute_damage
 		"elements" => {},
 		"statuses" => {},
 		"bounce_sharpness" => [],
+		"minds_eye" => $buffed_weapon->{"minds_eye"}
 	};
 
 	my $raw_affinity_multiplier = 1.0;
@@ -520,8 +516,8 @@ sub compute_damage
 			[$v->[0], $v->[1] * $pattern->{"sharpness_multiplier"}];
 	}
 
-	$damage->{"statuses"}{"exhaust"} += $exhaust if ($exhaust > 0.0);
-	$damage->{"statuses"}{"stun"} += $stun if ($stun > 0.0);
+	$damage->{"statuses"}{"exhaust"} = $exhaust if ($exhaust > 0.0);
+	$damage->{"statuses"}{"stun"} = $stun if ($stun > 0.0);
 
 	return $damage;
 }
@@ -566,6 +562,8 @@ sub state_damage_sum
 		}
 	}
 	$acu->{"bounce_sharpness"} = $new_bounce_sharpness;
+	$acu->{"minds_eye"} ||= 0.0;
+	$acu->{"minds_eye"} += $other->{"minds_eye"} * $rate / $total_rate;
 }
 
 sub get_damage_data
@@ -659,7 +657,7 @@ sub get_dps
 		$dps->{"raw"} += $state_damage->{$hit_type} * $hit_data_p{$hit_type} / 100.0;
 		for my $v (@{$state_damage->{"bounce_sharpness"}}) {
 			if ($v->[1] * $hit_data_p{$hit_type} < $constants->{"bounce_threshold"}) {
-				$dps->{"bounce_rate"} +=
+				$dps->{"bounce_rate"} += (1.0 - $state_damage_data->{"minds_eye"}) *
 					$v->[0] * $state_damage->{$hit_type} / $state_damage_total;
 			}
 		}
@@ -895,6 +893,46 @@ sub dps_sum
 	}
 	$acu->{"kill_freq"} ||= 0.0;
 	$acu->{"kill_freq"} += $other->{"kill_freq"} * $rate;
+}
+
+sub write_damage_debug_csv
+{
+	open F, '>', "debug.csv" || die "$!";
+	for my $damage (@_) {
+		my @items = ();
+		for (my $i = 1; $i < @{$damage->{used_items}}; ++$i) {
+			push @items, $damage->{used_items}[$i]{"name"};
+		}
+		my $item_names = (join " / ", sort @items);
+		for my $state ([ "not_enraged", "normal_spot" ],
+		               [ "enraged", "normal_spot" ],
+		               [ "not_enraged", "weak_spot" ],
+		               [ "enraged", "weak_spot" ]) {
+			my $dd = $damage->{"damage_data"}{$state->[0]}{$state->[1]};
+			printf F "%s,%s,%s,%s,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g\n",
+				$damage->{"profile"}{"name"},
+				$damage->{"weapon"}{"name"},
+				$item_names,
+				"$state->[0]/$state->[1]",
+				$dd->{"cut"}, $dd->{"impact"}, $dd->{"piercing"}, $dd->{"fixed"},
+				($dd->{"elements"}{"fire"} || 0.0),
+				($dd->{"elements"}{"thunder"} || 0.0),
+				($dd->{"elements"}{"ice"} || 0.0),
+				($dd->{"elements"}{"dragon"} || 0.0),
+				($dd->{"elements"}{"water"} || 0.0),
+				($dd->{"statuses"}{"poison"} || 0.0),
+				($dd->{"statuses"}{"paralysis"} || 0.0),
+				($dd->{"statuses"}{"sleep"} || 0.0),
+				($dd->{"statuses"}{"stun"} || 0.0),
+				($dd->{"statuses"}{"blast"} || 0.0),
+				($dd->{"statuses"}{"exhaust"} || 0.0),
+				($dd->{"statuses"}{"mount"} || 0.0),
+				($dd->{"minds_eye"} || 0.0),
+				($dd->{"bounce_sharpness"}[0][0]),
+				($dd->{"bounce_sharpness"}[0][1]);
+		}
+	}
+	close F;
 }
 
 my $data = {};

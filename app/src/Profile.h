@@ -21,7 +21,7 @@ struct Pattern {
 	double status;
 	double stun;
 	double exhaust;
-	double bounceSharpnessMultiplier;
+	double sharpnessMultiplier;
 	double phialImpactAttack;
 	double phialImpactStun;
 	double phialImpactExhaust;

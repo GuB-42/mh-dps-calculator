@@ -16,7 +16,7 @@ Pattern::Pattern() :
 	status(0.0),
 	stun(0.0),
 	exhaust(0.0),
-	bounceSharpnessMultiplier(1.0),
+	sharpnessMultiplier(1.0),
 	phialImpactAttack(0.0),
 	phialImpactStun(0.0),
 	phialImpactExhaust(0.0),
@@ -44,7 +44,7 @@ void Pattern::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- status: " << status << endl;
 	stream << indent << "- stun: " << stun << endl;
 	stream << indent << "- exhaust: " << exhaust << endl;
-	stream << indent << "- bounce_sharpness_multiplier: " << bounceSharpnessMultiplier << endl;
+	stream << indent << "- sharpness_multiplier: " << sharpnessMultiplier << endl;
 	stream << indent << "- phial_impact_attack: " << phialImpactAttack << endl;
 	stream << indent << "- phial_impact_stun: " << phialImpactStun << endl;
 	stream << indent << "- phial_impact_exhaust: " << phialImpactExhaust << endl;
@@ -89,8 +89,8 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond,
 				stun = xml->readElementText().toDouble();
 			} else if (tag_name == "exhaust") {
 				exhaust = xml->readElementText().toDouble();
-			} else if (tag_name == "bounce_sharpness_multiplier") {
-				bounceSharpnessMultiplier = xml->readElementText().toDouble();
+			} else if (tag_name == "sharpness_multiplier") {
+				sharpnessMultiplier = xml->readElementText().toDouble();
 			} else if (tag_name == "phial_impact_attack") {
 				phialImpactAttack = xml->readElementText().toDouble();
 			} else if (tag_name == "phial_impact_stun") {
