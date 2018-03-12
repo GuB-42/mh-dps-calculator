@@ -33,8 +33,8 @@ Constants::Constants() {
 	elementSharpnessMultipliers[SHARPNESS_WHITE] = 1.125;
 	elementSharpnessMultipliers[SHARPNESS_PURPLE] = 1.2;
 
-	QVector<BuffCap> *bcaps = new QVector<BuffCap>;
-	*bcaps <<
+	QVector<BuffCap> bcaps;
+	bcaps <<
 		BuffCap( 1.0,  4.0) <<
 		BuffCap(12.0,  4.0) <<
 		BuffCap(15.0,  5.0) <<
@@ -50,6 +50,16 @@ Constants::Constants() {
 		BuffCap(54.0, 15.0);
 	elementBuffCaps = bcaps;
 	statusBuffCaps = bcaps;
+
+	QHash<QString, double> crit_adj;
+	crit_adj["great_sword"] = 0.8;
+	crit_adj["sword_and_shield"] = 1.4;
+	crit_adj["dual_blades"] = 1.4;
+	crit_adj["light_bowgun"] = 1.4;
+	crit_adj["heavy_bowgun"] = 1.4;
+	crit_adj["bow"] = 1.4;
+	elementCritAdjustment = crit_adj;
+	statusCritAdjustment = crit_adj;
 
 	enragedRatio = 0.4;
 	monsterDefenseMultiplier = 0.5;
@@ -74,16 +84,6 @@ Constants::Constants() {
 	(*cond)[CONDITION_DEMON_POWDER_USE] = 0.5;
 	(*cond)[CONDITION_MIGHT_PILL_USE] = 0.1;
 	conditionRatios = cond;
-}
-
-Constants::~Constants() {
-	delete conditionRatios;
-	if (elementBuffCaps == statusBuffCaps) {
-		delete elementBuffCaps;
-	} else {
-		delete elementBuffCaps;
-		delete statusBuffCaps;
-	}
 }
 
 const Constants *Constants::instancePtr = NULL;

@@ -15,6 +15,7 @@
 #include "BuffGroup.h"
 #include "BuffWithCondition.h"
 #include "DamageData.h"
+#include "Constants.h"
 
 #include "MainData.h"
 
@@ -25,6 +26,19 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 	FILE *f = fopen("debug.csv", "w");
 	if (!f) return;
 	foreach(Weapon *weapon, data.weapons) {
+		double element_crit_adjustment = 1.0;
+		double status_crit_adjustment = 1.0;
+
+		QHash<QString, double>::const_iterator cit;
+		cit = Constants::instance()->elementCritAdjustment.find(weapon->type);
+		if (cit != Constants::instance()->elementCritAdjustment.end()) {
+			element_crit_adjustment = *cit;
+		}
+		cit = Constants::instance()->statusCritAdjustment.find(weapon->type);
+		if (cit != Constants::instance()->statusCritAdjustment.end()) {
+			status_crit_adjustment = *cit;
+		}
+
 		QVector<Item *> useful_items;
 		foreach(Item *item, data.items) {
 			bool useful = false;
@@ -60,7 +74,9 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 				b->getBuffWithConditions(&bwc);
 				Damage dmg;
 				foreach(Pattern *pattern, profile->patterns) {
-					dmg.addPattern(bwc, *weapon, *pattern, 1.0);
+					dmg.addPattern(bwc, *weapon, *pattern,
+					               element_crit_adjustment,
+					               status_crit_adjustment);
 				}
 				QStringList item_names;
 				foreach(const Item *item, b->usedItems) {
@@ -111,6 +127,19 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 
 static void do_stuff(QTextStream &stream, const MainData &data) {
 	foreach(Weapon *weapon, data.weapons) {
+		double element_crit_adjustment = 1.0;
+		double status_crit_adjustment = 1.0;
+
+		QHash<QString, double>::const_iterator cit;
+		cit = Constants::instance()->elementCritAdjustment.find(weapon->type);
+		if (cit != Constants::instance()->elementCritAdjustment.end()) {
+			element_crit_adjustment = *cit;
+		}
+		cit = Constants::instance()->statusCritAdjustment.find(weapon->type);
+		if (cit != Constants::instance()->statusCritAdjustment.end()) {
+			status_crit_adjustment = *cit;
+		}
+
 		QVector<Item *> useful_items;
 		foreach(Item *item, data.items) {
 			bool useful = false;
@@ -159,7 +188,9 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 						                     weapon->affinity);
 					folded_buffs.print(stream);
 */
-					dmg.addPattern(bwc, *weapon, *pattern, 1.0);
+					dmg.addPattern(bwc, *weapon, *pattern,
+					               element_crit_adjustment,
+					               status_crit_adjustment);
 				}
 				bool first = true;
 				stream << weapon->getName(NamedObject::LANG_EN) << ": ";

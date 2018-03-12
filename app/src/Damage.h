@@ -19,7 +19,8 @@ struct Damage {
 	~Damage();
 	void addPattern(const QVector<const BuffWithCondition *> &buff_conds,
 	                const Weapon &weapon, const Pattern &pattern,
-	                double element_status_crit_adjustment);
+	                double element_crit_adjustment,
+	                double status_crit_adjustment);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 

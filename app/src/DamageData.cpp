@@ -84,7 +84,8 @@ static double compute_buffed_element(double base,
 // and also how it stacks with awakening
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
                        const Pattern &pattern,
-                       double element_status_crit_adjustment) {
+                       double element_crit_adjustment,
+                       double status_crit_adjustment) {
 	double attack = (weapon.attack * buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
 		buffs.normalBuffs[BUFF_ATTACK_PLUS];
 
@@ -102,9 +103,9 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		status_affinity_multiplier = (1.0 - xaffinity) +
 			xaffinity * buffs.normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER];
 		element_affinity_multiplier = 1.0 +
-			(element_affinity_multiplier - 1.0) * element_status_crit_adjustment;
+			(element_affinity_multiplier - 1.0) * element_crit_adjustment;
 		status_affinity_multiplier = 1.0 +
-			(status_affinity_multiplier - 1.0) * element_status_crit_adjustment;
+			(status_affinity_multiplier - 1.0) * status_crit_adjustment;
 	} else if (xaffinity < 0.0) {
 		raw_affinity_multiplier = (1.0 + xaffinity) -
 			xaffinity * Constants::instance()->feebleHitMultiplier;
@@ -178,7 +179,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		if (weapon.elements[elt] > 0.0) {
 			double buffed_element =
 				compute_buffed_element(weapon.elements[elt], eplus, emult,
-				                       *Constants::instance()->elementBuffCaps);
+				                       Constants::instance()->elementBuffCaps);
 			double awake = 1.0;
 			if (weapon.awakened) awake = buffs.normalBuffs[BUFF_AWAKENING];
 			element_attack = awake *
@@ -194,7 +195,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		if (weapon.phialElements[elt] > 0.0) {
 			element_attack += pattern.phialRatio * pattern.element *
 				compute_buffed_element(weapon.phialElements[elt], eplus, emult,
-				                       *Constants::instance()->elementBuffCaps);
+				                       Constants::instance()->elementBuffCaps);
 		}
 		elements[elt] = element_attack * element_multiplier +
 			element_phial_attack;
@@ -211,7 +212,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		if (weapon.statuses[sta] > 0.0) {
 			double buffed_status =
 				compute_buffed_element(weapon.statuses[sta], splus, smult,
-				                       *Constants::instance()->statusBuffCaps);
+				                       Constants::instance()->statusBuffCaps);
 			double awake = 1.0;
 			if (weapon.awakened) awake = buffs.normalBuffs[BUFF_AWAKENING];
 			status_attack = awake *
@@ -223,7 +224,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		if (weapon.phialStatuses[sta] > 0.0) {
 			status_attack += pattern.phialRatio * pattern.status *
 				compute_buffed_element(weapon.phialStatuses[sta], splus, smult,
-				                       *Constants::instance()->statusBuffCaps);
+				                       Constants::instance()->statusBuffCaps);
 		}
 		statuses[sta] = status_attack * status_multiplier;
 	}

@@ -3,6 +3,8 @@
 
 #include "enums.h"
 #include <QVector>
+#include <QHash>
+#include <QString>
 
 class ConditionRatios;
 
@@ -27,8 +29,10 @@ struct Constants {
 	double piercingFactor;
 	double rawSharpnessMultipliers[SHARPNESS_COUNT];
 	double elementSharpnessMultipliers[SHARPNESS_COUNT];
-	const QVector<BuffCap> *elementBuffCaps;
-	const QVector<BuffCap> *statusBuffCaps;
+	QVector<BuffCap> elementBuffCaps;
+	QVector<BuffCap> statusBuffCaps;
+	QHash<QString, double> elementCritAdjustment;
+	QHash<QString, double> statusCritAdjustment;
 
 	const ConditionRatios *conditionRatios;
 	double enragedRatio;
@@ -37,7 +41,6 @@ struct Constants {
 	double sharpnessUse;
 
 	Constants();
-	~Constants();
 	inline static const Constants *instance() {
 		if (!instancePtr) instancePtr = new Constants();
 		return instancePtr;
