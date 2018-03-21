@@ -433,13 +433,17 @@ sub print_monster
 {
 	my ($monster) = @_;
 
-	$xml_writer->startTag("monster");
+	my $monster_id = lc($monster->{"name"});
+	$monster_id =~ s/\W+/_/g;
+	$xml_writer->startTag("monster", "id" => $monster_id);
 	$xml_writer->dataElement("name", $monster->{"name"});
 	$xml_writer->dataElement("name_fr", $monster->{"name_fr"}) if ($monster->{"name_fr"});
 	$xml_writer->dataElement("name_jp", $monster->{"name_jp"}) if ($monster->{"name_jp"});
 	$xml_writer->dataElement("hit_points", $monster->{"hit_points"}) if ($monster->{"hit_points"});
 	for my $part (@{$monster->{"parts"}}) {
-		$xml_writer->startTag("part");
+		my $part_id = lc($part->{"name"});
+		$part_id =~ s/\W+/_/g;
+		$xml_writer->startTag("part", "id" => $part_id);
 		$xml_writer->dataElement("name", $part->{"name"}) if ($part->{"name"});
 		$xml_writer->dataElement("name_fr", $part->{"name_fr"}) if ($part->{"name_fr"});
 		$xml_writer->dataElement("name_jp", $part->{"name_jp"}) if ($part->{"name_jp"});
