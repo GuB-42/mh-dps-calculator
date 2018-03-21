@@ -21,6 +21,7 @@ struct Weapon : public NamedObject {
 	double sharpness[SHARPNESS_COUNT];
 	double sharpnessPlus;
 	QVector<int> decorationSlots;
+	bool final;
 	int rare;
 
 	Weapon();

@@ -8,9 +8,10 @@ class QTextStream;
 class Monster;
 class MonsterHitData;
 class DamageData;
+class Damage;
+class Target;
 
 struct Dps {
-	double total;
 	double raw;
 	double total_elements;
 	double elements[ELEMENT_COUNT];
@@ -20,6 +21,8 @@ struct Dps {
 	double bounceRate;
 	double statusProcRate[STATUS_COUNT];
 	double killFrequency;
+	double weakSpotRatio;
+	double stunRate;
 
 	Dps();
 	Dps(const Monster &monster,
@@ -27,6 +30,14 @@ struct Dps {
 	    const DamageData &normal_damage,
 	    const DamageData &weak_damage,
 	    double defense_multiplier);
+	Dps(const Target &target, const Damage &damage);
+	void computeNoStatus(const MonsterHitData &hit_data,
+	                     const DamageData &normal_damage,
+	                     const DamageData &weak_damage);
+	void computeStatus(const Monster &monster,
+	                   const DamageData &normal_damage,
+	                   const DamageData &weak_damage,
+	                   double defense_multiplier);
 	void combine(const Dps &o, double rate);
 	void print(QTextStream &stream, QString indent = QString());
 };

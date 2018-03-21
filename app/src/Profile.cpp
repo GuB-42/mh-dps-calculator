@@ -132,9 +132,7 @@ Profile::Profile() : localRatios(NULL) {
 
 Profile::~Profile() {
 	delete localRatios;
-	while (!patterns.isEmpty()) {
-		delete patterns.takeLast();
-	}
+	foreach(Pattern *pattern, patterns) delete pattern;
 }
 
 void Profile::print(QTextStream &stream, QString indent) const {
@@ -148,9 +146,9 @@ void Profile::print(QTextStream &stream, QString indent) const {
 
 void Profile::readXml(QXmlStreamReader *xml) {
 	QMap<Pattern *, QSet<Condition> > om_cond;
-	QList<Pattern *> om_up_cond;
-	QList<Pattern *> om_up_sharpen_period;
-	QList<Pattern *> om_up_sharpness_use;
+	QVector<Pattern *> om_up_cond;
+	QVector<Pattern *> om_up_sharpen_period;
+	QVector<Pattern *> om_up_sharpness_use;
 
 	double sharpen_period = Constants::instance()->sharpenPeriod;
 	double sharpness_use = Constants::instance()->sharpnessUse;

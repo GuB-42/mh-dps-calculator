@@ -1,7 +1,7 @@
 #ifndef Profile_h_
 #define Profile_h_
 
-#include <QList>
+#include <QVector>
 #include <QSet>
 #include <QString>
 #include "NamedObject.h"
@@ -44,7 +44,7 @@ private:
 
 struct Profile : public NamedObject {
 	QString type;
-	QList<Pattern *> patterns;
+	QVector<Pattern *> patterns;
 
 	Profile();
 	~Profile();

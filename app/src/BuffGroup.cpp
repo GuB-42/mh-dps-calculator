@@ -5,9 +5,7 @@
 #include <QXmlStreamReader>
 
 BuffGroupLevel::~BuffGroupLevel() {
-	while (!buffs.isEmpty()) {
-		delete buffs.takeLast();
-	}
+	foreach(BuffWithCondition *b, buffs) delete b;
 }
 
 void BuffGroupLevel::print(QTextStream &stream, QString indent) const {
@@ -19,7 +17,7 @@ void BuffGroupLevel::print(QTextStream &stream, QString indent) const {
 }
 
 static void sub_parse_buff(QXmlStreamReader *xml,
-                           QList<BuffWithCondition *> *list,
+                           QVector<BuffWithCondition *> *list,
                            Condition cond,
                            ElementBuff element_buff,
                            StatusBuff status_buff) {
@@ -143,9 +141,7 @@ BuffGroup::BuffGroup() {
 }
 
 BuffGroup::~BuffGroup() {
-	while (!alloc_list.isEmpty()) {
-		delete alloc_list.takeLast();
-	}
+	foreach(BuffGroupLevel *v, alloc_list) delete v;
 }
 
 void BuffGroup::print(QTextStream &stream, QString indent) const {

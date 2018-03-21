@@ -3,6 +3,10 @@ TARGET = mh_dps
 
 CONFIG += debug
 
+QMAKE_CXXFLAGS_RELEASE += -g
+QMAKE_CFLAGS_RELEASE += -g
+QMAKE_LFLAGS_RELEASE =
+
 QT = core gui xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -23,6 +27,7 @@ src/MhDpsApplication.cpp \
 src/Monster.cpp \
 src/NamedObject.cpp \
 src/Profile.cpp \
+src/Target.cpp \
 src/Weapon.cpp \
 src/enums.cpp \
 src/main.cpp
@@ -43,5 +48,6 @@ src/MhDpsApplication.h \
 src/Monster.h \
 src/NamedObject.h \
 src/Profile.h \
+src/Target.h \
 src/Weapon.h \
 src/enums.h

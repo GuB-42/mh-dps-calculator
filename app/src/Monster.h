@@ -1,7 +1,7 @@
 #ifndef Monster_h_
 #define Monster_h_
 
-#include <QList>
+#include <QVector>
 #include "enums.h"
 #include "NamedObject.h"
 
@@ -22,7 +22,7 @@ struct MonsterHitData {
 };
 
 struct MonsterPart : public NamedObject {
-	QList<MonsterHitData *> hitData;
+	QVector<MonsterHitData *> hitData;
 
 	~MonsterPart();
 	void print(QTextStream &stream, QString indent = QString()) const;
@@ -45,7 +45,7 @@ struct MonsterTolerance {
 
 struct Monster : public NamedObject {
 	MonsterTolerance *tolerances[STATUS_COUNT];
-	QList<MonsterPart *> parts;
+	QVector<MonsterPart *> parts;
 	double hitPoints;
 
 	Monster();

@@ -54,9 +54,7 @@ void MonsterHitData::readXml(QXmlStreamReader *xml) {
 }
 
 MonsterPart::~MonsterPart() {
-	while (!hitData.isEmpty()) {
-		delete hitData.takeLast();
-	}
+	foreach(MonsterHitData *h, hitData) delete h;
 }
 
 void MonsterPart::print(QTextStream &stream, QString indent) const {
@@ -154,9 +152,7 @@ Monster::~Monster() {
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		delete tolerances[i];
 	}
-	while (!parts.isEmpty()) {
-		delete parts.takeLast();
-	}
+	foreach(MonsterPart *part, parts) delete part;
 }
 
 void Monster::print(QTextStream &stream, QString indent) const {

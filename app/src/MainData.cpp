@@ -4,26 +4,18 @@
 #include "BuffGroup.h"
 #include "Profile.h"
 #include "Item.h"
+#include "Target.h"
 
 #include <QTextStream>
 #include <QXmlStreamReader>
 
 MainData::~MainData() {
-	while (!monsters.isEmpty()) {
-		delete monsters.takeLast();
-	}
-	while (!weapons.isEmpty()) {
-		delete weapons.takeLast();
-	}
-	while (!buffGroups.isEmpty()) {
-		delete buffGroups.takeLast();
-	}
-	while (!profiles.isEmpty()) {
-		delete profiles.takeLast();
-	}
-	while (!items.isEmpty()) {
-		delete items.takeLast();
-	}
+	foreach(Monster *monster, monsters) delete monster;
+	foreach(Weapon *weapon, weapons) delete weapon;
+	foreach(BuffGroup *buffGroup, buffGroups) delete buffGroup;
+	foreach(Profile *profile, profiles) delete profile;
+	foreach(Item *item, items) delete item;
+	foreach(Target *target, targets) delete target;
 }
 
 void MainData::print(QTextStream &stream, QString indent) const {
@@ -46,6 +38,10 @@ void MainData::print(QTextStream &stream, QString indent) const {
 	foreach(const Item *item, items) {
 		stream << indent << "[item]" << endl;
 		item->print(stream, indent + "\t");
+	}
+	foreach(const Target *target, targets) {
+		stream << indent << "[target]" << endl;
+		target->print(stream, indent + "\t");
 	}
 }
 
@@ -80,6 +76,10 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				if (!item->id.isNull()) {
 					itemHash[item->id] = item;
 				}
+			} else if (tag_name == "target") {
+				Target *target = new Target;
+				target->readXml(xml);
+				targets.append(target);
 			} else {
 				xml->skipCurrentElement();
 			}
@@ -97,5 +97,8 @@ void MainData::matchData() {
 				buffGroupHash.find(it->id);
 			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
 		}
+	}
+	foreach(Target *target, targets) {
+		target->matchMonsters(monsters);
 	}
 }

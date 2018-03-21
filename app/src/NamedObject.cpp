@@ -45,6 +45,9 @@ QString NamedObject::getAllNames() const {
 }
 
 void NamedObject::print(QTextStream &stream, QString indent) const {
+	if (!id.isNull()) {
+		stream << indent << "- id: " << id << endl;
+	}
 	for (int i = 0; i < LANG_COUNT; ++i) {
 		if (!names[i].isNull()) {
 			stream << indent << "- name (" <<

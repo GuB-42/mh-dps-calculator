@@ -15,6 +15,7 @@
 #include "BuffGroup.h"
 #include "BuffWithCondition.h"
 #include "DamageData.h"
+#include "Target.h"
 #include "Constants.h"
 
 #include "MainData.h"
@@ -25,7 +26,11 @@
 static void gen_debug(QTextStream &stream, const MainData &data) {
 	FILE *f = fopen("debug.csv", "w");
 	if (!f) return;
+	FILE *f2 = fopen("debug2.csv", "w");
+	if (!f2) { fclose(f); return; }
 	foreach(Weapon *weapon, data.weapons) {
+		if (!weapon->final) continue;
+
 		double element_crit_adjustment = 1.0;
 		double status_crit_adjustment = 1.0;
 
@@ -119,10 +124,32 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 					       dd.bounceSharpness[0].rate / sharp_sum,
 					       dd.bounceSharpness[0].multiplier);
 				}
+				foreach(Target *target, data.targets) {
+					Dps target_dps(*target, dmg);
+					fprintf(f2, "%s,%s,%s,%s,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g\n",
+					       profile->getName(NamedObject::LANG_EN).toUtf8().data(),
+					       weapon->getName(NamedObject::LANG_EN).toUtf8().data(),
+					       item_names.join(" / ").toUtf8().data(),
+					       target->getName(NamedObject::LANG_EN).toUtf8().data(),
+					       target_dps.raw,
+					       target_dps.total_elements,
+					       target_dps.total_statuses,
+					       target_dps.fixed,
+					       target_dps.killFrequency,
+					       target_dps.statusProcRate[STATUS_POISON],
+					       target_dps.statusProcRate[STATUS_PARALYSIS],
+					       target_dps.statusProcRate[STATUS_SLEEP],
+					       target_dps.statusProcRate[STATUS_STUN],
+					       target_dps.statusProcRate[STATUS_BLAST],
+					       target_dps.statusProcRate[STATUS_EXHAUST],
+					       target_dps.statusProcRate[STATUS_MOUNT],
+					       target_dps.stunRate);
+				}
 			}
 		}
 	}
 	fclose(f);
+	fclose(f2);
 }
 
 static void do_stuff(QTextStream &stream, const MainData &data) {
@@ -174,24 +201,12 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 				QVector<const BuffWithCondition *> bwc;
 				b->getBuffWithConditions(&bwc);
 				Damage dmg;
-				foreach(Pattern *pattern, profile->patterns) { /*
-					bool raw_weapon = true;
-					for (int i = 0; i < ELEMENT_COUNT; ++i) {
-						if (weapon->elements[i] > 0.0) raw_weapon = false;
-					}
-					for (int i = 0; i < STATUS_COUNT; ++i) {
-						if (weapon->statuses[i] > 0.0) raw_weapon = false;
-					}
-					FoldedBuffs folded_buffs(bwc,
-					                         *pattern->conditionRatios,
-						                     raw_weapon, weapon->awakened,
-						                     weapon->affinity);
-					folded_buffs.print(stream);
-*/
+				foreach(Pattern *pattern, profile->patterns) {
 					dmg.addPattern(bwc, *weapon, *pattern,
 					               element_crit_adjustment,
 					               status_crit_adjustment);
 				}
+
 				bool first = true;
 				stream << weapon->getName(NamedObject::LANG_EN) << ": ";
 				foreach(const Item *item, b->usedItems) {
@@ -203,75 +218,18 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 					stream << item->getName(NamedObject::LANG_EN);
 				}
 				stream << endl;
+				dmg.print(stream, "\t");
 
-				Dps main_dps;
-				double main_weigth = 0.0;
-				foreach(Monster *monster, data.monsters) {
-					Dps monster_dps;
-					double monster_weigth = 0.0;
-					foreach(MonsterPart *part, monster->parts) {
-						Dps part_dps;
-						double part_weigth = 0.0;
-						foreach(MonsterHitData *hit_data, part->hitData) {
-							double enraged_ratio = 0.4;
-							if (dmg.data[MODE_NORMAL_NORMAL] ==
-							    dmg.data[MODE_ENRAGED_NORMAL] &&
-							    dmg.data[MODE_NORMAL_WEAK_SPOT] ==
-							    dmg.data[MODE_ENRAGED_WEAK_SPOT]) {
-								Dps dps(*monster, *hit_data,
-								        *dmg.data[MODE_NORMAL_NORMAL],
-								        *dmg.data[MODE_NORMAL_WEAK_SPOT],
-								        1.0);
-								part_dps.combine(dps, 1.0);
-							} else {
-								{
-									Dps dps(*monster, *hit_data,
-									        *dmg.data[MODE_NORMAL_NORMAL],
-									        *dmg.data[MODE_NORMAL_WEAK_SPOT],
-									        1.0);
-									part_dps.combine(dps, 1.0 - enraged_ratio);
-								}
-								{
-									Dps dps(*monster, *hit_data,
-									        *dmg.data[MODE_ENRAGED_NORMAL],
-									        *dmg.data[MODE_ENRAGED_WEAK_SPOT],
-									        1.0);
-									part_dps.combine(dps, enraged_ratio);
-								}
-							}
-							part_weigth += 1.0;
-						}
-						if (part_weigth != 0.0) {
-							monster_dps.combine(part_dps, 1.0 / part_weigth);
-							monster_weigth += 1.0;
-						}
-					}
-					if (monster_weigth != 0.0) {
-						main_dps.combine(monster_dps, 1.0);
-						main_weigth += 1.0;
-					}
+				foreach(Target *target, data.targets) {
+					Dps target_dps(*target, dmg);
+					stream <<  "\t- target: " << target->getName(NamedObject::LANG_EN) << endl;
+					target_dps.print(stream, "\t\t");
 				}
-				Dps final_dps;
-				if (main_weigth != 0.0) {
-					final_dps.combine(main_dps, main_weigth);
-				}
-
-//				dmg.print(stream, "\t");
 
 				delete b;
 			}
 		}
 	}
-/*
-			stream << "[ " << weapon->getName(NamedObject::LANG_EN) << " / " <<
-				profile->getName(NamedObject::LANG_EN) << "]" << endl;
-			stream << "- weapon" << endl;
-			weapon->print(stream, "\t");
-			stream << "- pattern" << endl;
-			profile->print(stream, "\t");
-			stream << "- damage" << endl;
-			dmg.print(stream, "\t");
-			stream << endl;*/
 }
 
 int main(int argc, char **argv)

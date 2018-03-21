@@ -5,7 +5,7 @@
 
 Weapon::Weapon() :
 	attack(0.0), affinity(0.0), awakened(false), phial(PHIAL_NONE),
-	sharpnessPlus(0.0), rare(0)
+	sharpnessPlus(0.0), final(false), rare(0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elements[i] = 0.0;
@@ -64,6 +64,7 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 		stream << decorationSlots[i];
 	}
 	stream << "]" << endl;
+	stream << indent << "- final: " << (final ? "true" : "false") << endl;
 	stream << indent << "- rare: " << rare << endl;
 }
 
@@ -172,6 +173,11 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "awakened") {
 				QString v = xml->readElementText();
 				awakened = !(v.isEmpty() || v.toLower() == "false" || v == "0");
+			} else if (tag_name == "final") {
+				QString v = xml->readElementText();
+				final = !(v.isEmpty() || v.toLower() == "false" || v == "0");
+			} else if (tag_name == "rare") {
+				rare = xml->readElementText().toInt();
 			} else if (tag_name == "sharpness") {
 				parse_sharpness(xml, &sharpness, &sharpnessPlus);
 			} else if (tag_name == "element") {

@@ -2,7 +2,9 @@
 
 #include <QTextStream>
 #include "Monster.h"
+#include "Target.h"
 #include "DamageData.h"
+#include "Damage.h"
 #include "Constants.h"
 
 double get_status_hits(double status_attack,
@@ -35,14 +37,12 @@ double get_status_hits(double status_attack,
 		duration = hits * tolerance.duration;
 		if (overbuild || duration == 0.0) break;
 	}
-	return hits;
+	return hits / period;
 }
 
-Dps::Dps(const Monster &monster,
-         const MonsterHitData &hit_data,
-         const DamageData &normal_damage,
-         const DamageData &weak_damage,
-         double defense_multiplier) {
+void Dps::computeNoStatus(const MonsterHitData &hit_data,
+                          const DamageData &normal_damage,
+                          const DamageData &weak_damage) {
 	double t_atk_normal[3] = {
 		normal_damage.cut, normal_damage.impact, normal_damage.piercing
 	};
@@ -59,11 +59,14 @@ Dps::Dps(const Monster &monster,
 	bounceRate = 0.0;
 	double bounce_divider = 0.0;
 	double minds_eye = 0.0;
+	double weak_raw = 0.0;
 	for (int i = 0; i < 3; ++i) {
 		bool weak = t_def[i] < Constants::instance()->rawWeakSpotThreshold;
 		const DamageData &dmg = weak ? normal_damage : weak_damage;
 		const double (&t_atk)[3] = weak ? t_atk_normal : t_atk_weak;
-		raw += t_atk[i] * t_def[i] / 100.0;
+		double t_raw = t_atk[i] * t_def[i] / 100.0;
+		raw += t_raw;
+		if (weak) weak_raw += t_atk[i] * t_def[i] / 100.0;
 		foreach(const SharpnessMultiplierData smd, dmg.bounceSharpness) {
 			double v = t_atk[i] * smd.rate;
 			bounce_divider += v;
@@ -91,23 +94,31 @@ Dps::Dps(const Monster &monster,
 		total_elements += v;
 	}
 
+	stunRate = hit_data.stun / 100.0;
+	weakSpotRatio = (raw != 0.0 ? weak_raw / raw : 0.0);
+}
+
+void Dps::computeStatus(const Monster &monster,
+                        const DamageData &normal_damage,
+                        const DamageData &weak_damage,
+                        double defense_multiplier) {
 	killFrequency = 0.0;
 	total_statuses = 0.0;
 	for (int sta = 0; sta < STATUS_COUNT; ++sta) {
 		statusProcRate[sta] = 0.0;
 	}
+	double subtotal = raw + fixed + total_elements;
 	for (int retry = 0; retry < 3; ++retry) {
-		total = raw + fixed + total_statuses + total_elements;
-		double real_total = total * defense_multiplier;
+		double real_total = (subtotal + total_statuses) * defense_multiplier;
 		total_statuses = 0.0;
 		if (monster.hitPoints > 0.0	&& real_total > 0.0) {
 			killFrequency = real_total / monster.hitPoints;
 			for (int sta = 0; sta < STATUS_COUNT; ++sta) {
 				if (monster.tolerances[sta]) {
-					double status_attack = weak_damage.statuses[sta];
-					if (sta == STATUS_STUN) {
-						status_attack *= hit_data.stun / 100.0;
-					}
+					double status_attack =
+						normal_damage.statuses[sta] * (1.0 - weakSpotRatio) +
+						weak_damage.statuses[sta] * weakSpotRatio;
+					if (sta == STATUS_STUN) status_attack *= stunRate;
 					double hits = get_status_hits(status_attack,
 					                              *monster.tolerances[sta],
 					                              1.0 / killFrequency,
@@ -125,9 +136,81 @@ Dps::Dps(const Monster &monster,
 	}
 }
 
+Dps::Dps(const Monster &monster,
+         const MonsterHitData &hit_data,
+         const DamageData &normal_damage,
+         const DamageData &weak_damage,
+         double defense_multiplier) {
+	computeNoStatus(hit_data, normal_damage, weak_damage);
+	computeStatus(monster, normal_damage, weak_damage, defense_multiplier);
+}
+
+Dps::Dps(const Target &target, const Damage &damage) : Dps()
+{
+	bool enraged_equals_normal =
+		damage.data[MODE_NORMAL_NORMAL] ==
+		damage.data[MODE_ENRAGED_NORMAL] &&
+		damage.data[MODE_NORMAL_WEAK_SPOT] ==
+		damage.data[MODE_ENRAGED_WEAK_SPOT];
+
+	Dps t_dps;
+	foreach(TargetMonster *tmonster, target.targetMonsters) {
+		if (enraged_equals_normal) {
+			double monster_weight = 0.0;
+			foreach(TargetZone *tzone, tmonster->targetZones) {
+				monster_weight += tzone->weight;
+			}
+			Dps monster_dps;
+			foreach(TargetZone *tzone, tmonster->targetZones) {
+				t_dps.computeNoStatus(*tzone->hitData,
+				                      *damage.data[MODE_NORMAL_NORMAL],
+				                      *damage.data[MODE_NORMAL_WEAK_SPOT]);
+				monster_dps.combine(t_dps, tzone->weight / monster_weight);
+			}
+			monster_dps.computeStatus(*tmonster->monster,
+			                          *damage.data[MODE_NORMAL_NORMAL],
+			                          *damage.data[MODE_NORMAL_WEAK_SPOT],
+			                          tmonster->defenseMultiplier);
+			combine(monster_dps, monster_weight);
+		} else {
+			double normal_weight = 0.0;
+			double enraged_weight = 0.0;
+			foreach(TargetZone *tzone, tmonster->targetZones) {
+				normal_weight += tzone->weight * (1.0 - tzone->enragedRatio);
+				enraged_weight += tzone->weight * tzone->enragedRatio;
+			}
+			Dps normal_dps;
+			Dps enraged_dps;
+			foreach(TargetZone *tzone, tmonster->targetZones) {
+				t_dps.computeNoStatus(*tzone->hitData,
+				                      *damage.data[MODE_NORMAL_NORMAL],
+				                      *damage.data[MODE_NORMAL_WEAK_SPOT]);
+				normal_dps.combine(t_dps, tzone->weight * (1.0 - tzone->enragedRatio) /
+				                   normal_weight);
+				t_dps.computeNoStatus(*tzone->hitData,
+				                      *damage.data[MODE_ENRAGED_NORMAL],
+				                      *damage.data[MODE_ENRAGED_WEAK_SPOT]);
+				enraged_dps.combine(t_dps, tzone->weight * tzone->enragedRatio /
+				                    enraged_weight);
+			}
+			normal_dps.computeStatus(*tmonster->monster,
+			                         *damage.data[MODE_NORMAL_NORMAL],
+			                         *damage.data[MODE_NORMAL_WEAK_SPOT],
+			                         tmonster->defenseMultiplier);
+			combine(normal_dps, normal_weight);
+			enraged_dps.computeStatus(*tmonster->monster,
+			                          *damage.data[MODE_ENRAGED_NORMAL],
+			                          *damage.data[MODE_ENRAGED_WEAK_SPOT],
+			                          tmonster->defenseMultiplier);
+			combine(enraged_dps, enraged_weight);
+		}
+	}
+}
+
 Dps::Dps() :
-	total(0.0), raw(0.0), total_elements(0.0), total_statuses(0.0), fixed(0.0),
-	bounceRate(0.0), killFrequency(0.0)
+	raw(0.0), total_elements(0.0), total_statuses(0.0), fixed(0.0),
+	bounceRate(0.0), killFrequency(0.0),
+	weakSpotRatio(0.0), stunRate(0.0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elements[i] = 0.0;
@@ -139,19 +222,26 @@ Dps::Dps() :
 }
 
 void Dps::combine(const Dps &o, double rate) {
-	total += o.total * rate;
 	raw += o.raw * rate;
-	total_elements += o.total_elements * rate;
-	total_statuses += o.total_statuses * rate;
 	fixed += o.fixed * rate;
 	bounceRate += o.bounceRate * rate;
 	killFrequency += o.killFrequency * rate;
-	for (int i = 0; i < ELEMENT_COUNT; ++i) {
-		elements[i] += o.elements[i] * rate;;
+	weakSpotRatio += o.weakSpotRatio * rate;
+	stunRate += o.stunRate * rate;
+	if (o.total_elements != 0.0) {
+		total_elements += o.total_elements * rate;
+		for (int i = 0; i < ELEMENT_COUNT; ++i) {
+			elements[i] += o.elements[i] * rate;
+		}
+	}
+	if (o.total_statuses != 0.0) {
+		total_statuses += o.total_statuses * rate;
+		for (int i = 0; i < STATUS_COUNT; ++i) {
+			statuses[i] += o.statuses[i] * rate;
+		}
 	}
 	for (int i = 0; i < STATUS_COUNT; ++i) {
-		statuses[i] += o.statuses[i] * rate;
-		statusProcRate[i] = o.statusProcRate[i] * rate;
+		statusProcRate[i] += o.statusProcRate[i] * rate;
 	}
 }
 
