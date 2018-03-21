@@ -29,9 +29,7 @@ struct DamageData {
 
 	DamageData();
 	DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
-	           const Pattern &pattern,
-	           double element_crit_adjustment,
-	           double status_crit_adjustment);
+	           const Pattern &pattern);
 	void combine(const DamageData &o, double rate);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

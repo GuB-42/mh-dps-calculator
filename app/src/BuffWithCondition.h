@@ -33,7 +33,7 @@ struct BuffWithCondition {
 	};
 
 	BuffWithCondition();
-	bool isUseful(const Weapon &weapon);
+	bool isUseful(const Weapon &weapon) const;
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 

@@ -83,9 +83,7 @@ static double compute_buffed_element(double base,
 // TODO: check if exhaust switch axe phials also deals KO
 // and also how it stacks with awakening
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
-                       const Pattern &pattern,
-                       double element_crit_adjustment,
-                       double status_crit_adjustment) {
+                       const Pattern &pattern) {
 	double attack = (weapon.attack * buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
 		buffs.normalBuffs[BUFF_ATTACK_PLUS];
 
@@ -103,9 +101,9 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		status_affinity_multiplier = (1.0 - xaffinity) +
 			xaffinity * buffs.normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER];
 		element_affinity_multiplier = 1.0 +
-			(element_affinity_multiplier - 1.0) * element_crit_adjustment;
+			(element_affinity_multiplier - 1.0) * weapon.elementCritAdjustment;
 		status_affinity_multiplier = 1.0 +
-			(status_affinity_multiplier - 1.0) * status_crit_adjustment;
+			(status_affinity_multiplier - 1.0) * weapon.statusCritAdjustment;
 	} else if (xaffinity < 0.0) {
 		raw_affinity_multiplier = (1.0 + xaffinity) -
 			xaffinity * Constants::instance()->feebleHitMultiplier;

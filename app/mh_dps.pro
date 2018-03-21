@@ -15,6 +15,7 @@ SOURCES += \
 src/BuffGroup.cpp \
 src/BuffWithCondition.cpp \
 src/Build.cpp \
+src/BuildWithDps.cpp \
 src/ConditionRatios.cpp \
 src/Constants.cpp \
 src/Damage.cpp \
@@ -30,12 +31,15 @@ src/Profile.cpp \
 src/Target.cpp \
 src/Weapon.cpp \
 src/enums.cpp \
-src/main.cpp
+src/main.cpp \
+src/gui/MainWindow.cpp \
+src/gui/ResultTableModel.cpp
 
 HEADERS += \
 src/BuffGroup.h \
 src/BuffWithCondition.h \
 src/Build.h \
+src/BuildWithDps.h \
 src/ConditionRatios.h \
 src/Constants.h \
 src/Damage.h \
@@ -50,4 +54,9 @@ src/NamedObject.h \
 src/Profile.h \
 src/Target.h \
 src/Weapon.h \
-src/enums.h
+src/enums.h \
+src/gui/MainWindow.h \
+src/gui/ResultTableModel.h
+
+FORMS += \
+src/gui/MainWindow.ui

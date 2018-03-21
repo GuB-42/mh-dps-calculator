@@ -17,6 +17,11 @@
 		</sub_target>
 	</target>
 	<target>
+		<name>Everything</name>
+		<enraged_ratio>0.4</enraged_ratio>
+		<monster_defense_multiplier>0.5</monster_defense_multiplier>
+	</target>
+	<target>
 		<name>Hybrid</name>
 		<enraged_ratio>0.4</enraged_ratio>
 		<monster_defense_multiplier>0.5</monster_defense_multiplier>

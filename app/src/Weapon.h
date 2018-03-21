@@ -23,6 +23,8 @@ struct Weapon : public NamedObject {
 	QVector<int> decorationSlots;
 	bool final;
 	int rare;
+	double elementCritAdjustment;
+	double statusCritAdjustment;
 
 	Weapon();
 	void print(QTextStream &stream, QString indent = QString()) const;

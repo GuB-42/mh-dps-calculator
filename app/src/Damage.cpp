@@ -23,9 +23,7 @@ Damage::~Damage() {
 }
 
 void Damage::addPattern(const QVector<const BuffWithCondition *> &buff_conds,
-                        const Weapon &weapon, const Pattern &pattern,
-                        double element_crit_adjustment,
-                        double status_crit_adjustment) {
+                        const Weapon &weapon, const Pattern &pattern) {
 	bool raw_weapon = true;
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (weapon.elements[i] > 0.0) raw_weapon = false;
@@ -43,9 +41,7 @@ void Damage::addPattern(const QVector<const BuffWithCondition *> &buff_conds,
 	bool is_set[MODE_COUNT] = { false };
 	for (int mode = 0; mode < MODE_COUNT; ++mode) {
 		if (!is_set[mode]) {
-			DamageData dmg(weapon, *folded_buffs.data[mode], pattern,
-			               element_crit_adjustment,
-			               status_crit_adjustment);
+			DamageData dmg(weapon, *folded_buffs.data[mode], pattern);
 			DamageData *old_data = NULL;
 			DamageData *new_data = data[mode];
 			if (isAlias[mode]) {

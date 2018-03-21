@@ -31,44 +31,15 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 	foreach(Weapon *weapon, data.weapons) {
 		if (!weapon->final) continue;
 
-		double element_crit_adjustment = 1.0;
-		double status_crit_adjustment = 1.0;
+		Build base_build;
+		base_build.addWeapon(weapon);
+		base_build.addItem(data.itemHash["powercharm"]);
+		base_build.addItem(data.itemHash["powertalon"]);
+		QVector<Item *> useful_items = base_build.listUsefulItems(data.items);
 
-		QHash<QString, double>::const_iterator cit;
-		cit = Constants::instance()->elementCritAdjustment.find(weapon->type);
-		if (cit != Constants::instance()->elementCritAdjustment.end()) {
-			element_crit_adjustment = *cit;
-		}
-		cit = Constants::instance()->statusCritAdjustment.find(weapon->type);
-		if (cit != Constants::instance()->statusCritAdjustment.end()) {
-			status_crit_adjustment = *cit;
-		}
-
-		QVector<Item *> useful_items;
-		foreach(Item *item, data.items) {
-			bool useful = false;
-			foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
-				if (!buff_ref.buffGroup) continue;
-				foreach(BuffGroupLevel *bl, buff_ref.buffGroup->levels) {
-					if (!bl) continue;
-					foreach(BuffWithCondition *bc, bl->buffs) {
-						if (bc->isUseful(*weapon)) {
-							useful = true;
-							break;
-						}
-					}
-					if (useful) break;
-				}
-				if (useful) break;
-			}
-			if (useful) useful_items.append(item);
-		}
 		foreach(Profile *profile, data.profiles) {
 			if (weapon->type != profile->type) continue;
-			Build *build = new Build();
-			build->addWeapon(weapon);
-			build->addItem(data.itemHash["powercharm"]);
-			build->addItem(data.itemHash["powertalon"]);
+			Build *build = new Build(base_build);
 			//build->decorationSlots << 3;
 
 			QVector<Build *> builds;
@@ -79,9 +50,7 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 				b->getBuffWithConditions(&bwc);
 				Damage dmg;
 				foreach(Pattern *pattern, profile->patterns) {
-					dmg.addPattern(bwc, *weapon, *pattern,
-					               element_crit_adjustment,
-					               status_crit_adjustment);
+					dmg.addPattern(bwc, *weapon, *pattern);
 				}
 				QStringList item_names;
 				foreach(const Item *item, b->usedItems) {
@@ -154,45 +123,16 @@ static void gen_debug(QTextStream &stream, const MainData &data) {
 
 static void do_stuff(QTextStream &stream, const MainData &data) {
 	foreach(Weapon *weapon, data.weapons) {
-		double element_crit_adjustment = 1.0;
-		double status_crit_adjustment = 1.0;
+		Build base_build;
+		base_build.addWeapon(weapon);
+		base_build.addItem(data.itemHash["powercharm"]);
+		base_build.addItem(data.itemHash["powertalon"]);
+		QVector<Item *> useful_items = base_build.listUsefulItems(data.items);
 
-		QHash<QString, double>::const_iterator cit;
-		cit = Constants::instance()->elementCritAdjustment.find(weapon->type);
-		if (cit != Constants::instance()->elementCritAdjustment.end()) {
-			element_crit_adjustment = *cit;
-		}
-		cit = Constants::instance()->statusCritAdjustment.find(weapon->type);
-		if (cit != Constants::instance()->statusCritAdjustment.end()) {
-			status_crit_adjustment = *cit;
-		}
-
-		QVector<Item *> useful_items;
-		foreach(Item *item, data.items) {
-			bool useful = false;
-			foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
-				if (!buff_ref.buffGroup) continue;
-				foreach(BuffGroupLevel *bl, buff_ref.buffGroup->levels) {
-					if (!bl) continue;
-					foreach(BuffWithCondition *bc, bl->buffs) {
-						if (bc->isUseful(*weapon)) {
-							useful = true;
-							break;
-						}
-					}
-					if (useful) break;
-				}
-				if (useful) break;
-			}
-			if (useful) useful_items.append(item);
-		}
 		foreach(Profile *profile, data.profiles) {
 			if (weapon->type != profile->type) continue;
-			Build *build = new Build();
-			build->addWeapon(weapon);
-			build->addItem(data.itemHash["powercharm"]);
-			build->addItem(data.itemHash["powertalon"]);
-//			build->decorationSlots << 3;
+			Build *build = new Build(base_build);
+			//build->decorationSlots << 3;
 
 			QVector<Build *> builds;
 			builds << build;
@@ -202,9 +142,7 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 				b->getBuffWithConditions(&bwc);
 				Damage dmg;
 				foreach(Pattern *pattern, profile->patterns) {
-					dmg.addPattern(bwc, *weapon, *pattern,
-					               element_crit_adjustment,
-					               status_crit_adjustment);
+					dmg.addPattern(bwc, *weapon, *pattern);
 				}
 
 				bool first = true;
@@ -234,6 +172,9 @@ static void do_stuff(QTextStream &stream, const MainData &data) {
 
 int main(int argc, char **argv)
 {
+	MhDpsApplication app(argc, argv);
+	return app.exec();
+
 	MainData data;
 	for (int i = 1; i < argc; ++i) {
 		QFile f(argv[i]);
@@ -254,9 +195,7 @@ int main(int argc, char **argv)
 	QTextStream stream(stdout);
 	stream.setCodec("UTF-8");
 //	data.print(stream);
-	gen_debug(stream, data);
+//	gen_debug(stream, data);
 //	do_stuff(stream, data);
 	return 0;
-	// MhDpsApplication app(argc, argv);
-	// return app.exec();
 }

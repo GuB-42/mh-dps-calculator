@@ -2,10 +2,14 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include <QHash>
+#include "Constants.h"
 
 Weapon::Weapon() :
 	attack(0.0), affinity(0.0), awakened(false), phial(PHIAL_NONE),
-	sharpnessPlus(0.0), final(false), rare(0)
+	sharpnessPlus(0.0), final(false), rare(0),
+	elementCritAdjustment(1.0),
+	statusCritAdjustment(1.0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elements[i] = 0.0;
@@ -192,5 +196,14 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
+	}
+	QHash<QString, double>::const_iterator cit;
+	cit = Constants::instance()->elementCritAdjustment.find(type);
+	if (cit != Constants::instance()->elementCritAdjustment.end()) {
+		elementCritAdjustment = *cit;
+	}
+	cit = Constants::instance()->statusCritAdjustment.find(type);
+	if (cit != Constants::instance()->statusCritAdjustment.end()) {
+		statusCritAdjustment = *cit;
 	}
 }

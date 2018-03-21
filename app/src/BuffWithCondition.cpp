@@ -8,7 +8,7 @@ BuffWithCondition::BuffWithCondition() :
 {
 }
 
-bool BuffWithCondition::isUseful(const Weapon &weapon) {
+bool BuffWithCondition::isUseful(const Weapon &weapon) const {
 	if (condition == CONDITION_RAW_WEAPON) {
 		bool raw_weapon = true;
 		for (int i = 0; i < ELEMENT_COUNT; ++i) {

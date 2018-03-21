@@ -4,8 +4,12 @@
 #include "Item.h"
 #include "Weapon.h"
 #include "BuffGroup.h"
+#include "BuffWithCondition.h"
 
-void Build::addItem(Item *item, bool take_slot) {
+Build::Build() : weapon(NULL) {
+}
+
+void Build::addItem(const Item *item, bool take_slot) {
 	if (take_slot && item->decorationLevel > 0) {
 		int best_idx = -1;
 		int slot_lvl = -1;
@@ -33,7 +37,8 @@ void Build::addItem(Item *item, bool take_slot) {
 	}
 }
 
-void Build::addWeapon(Weapon *weapon) {
+void Build::addWeapon(const Weapon *weapon) {
+	this->weapon = weapon;
 	foreach(int s, weapon->decorationSlots) decorationSlots << s;
 }
 
@@ -78,6 +83,26 @@ void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) cons
 		new_build->fillSlots(pout, useful_items);
 		useful_items.pop_back();
 	}
+}
+
+QVector<Item *> Build::listUsefulItems(const QVector<Item *> &items) const {
+	QVector<Item *> useful_items;
+	foreach(Item *item, items) {
+		foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
+			if (!buff_ref.buffGroup) continue;
+			foreach(const BuffGroupLevel *bl, buff_ref.buffGroup->levels) {
+				if (!bl) continue;
+				foreach(const BuffWithCondition *bc, bl->buffs) {
+					if (!weapon || bc->isUseful(*weapon)) {
+						useful_items.append(item);
+						goto item_is_useful;
+					}
+				}
+			}
+		}
+item_is_useful: ;
+	}
+	return useful_items;
 }
 
 void Build::print(QTextStream &stream, QString indent) const {
