@@ -1082,6 +1082,42 @@
     </weapon>
     <weapon>
         <type>bow</type>
+        <name>Insurgent's Bow</name>
+        <name_jp>暴徒の凶弓</name_jp>
+        <inflated_attack>252</inflated_attack>
+        <attack>210</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <slots>
+            <slot>3</slot>
+        </slots>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>bow</type>
+        <name>Villainous Bow</name>
+        <name_jp>ヴィランブレイス</name_jp>
+        <inflated_attack>276</inflated_attack>
+        <attack>230</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <slots>
+            <slot>3</slot>
+        </slots>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>bow</type>
         <name>Cross Hunter's Bow</name>
         <name_fr>Arc du traqueur</name_fr>
         <name_jp>クロスハンターボウ</name_jp>
@@ -3041,6 +3077,60 @@
         <final>true</final>
     </weapon>
     <weapon>
+        <type>charge_blade</type>
+        <name>Tyrant's Charge Blade</name>
+        <name_jp>暴虐の盾斧</name_jp>
+        <inflated_attack>720</inflated_attack>
+        <attack>200</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <phial>
+            <element />
+        </phial>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>charge_blade</type>
+        <name>Oppressor's Charge Blade</name>
+        <name_jp>デストネーター</name_jp>
+        <inflated_attack>792</inflated_attack>
+        <attack>220</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <phial>
+            <element />
+        </phial>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
         <type>dual_blades</type>
         <name>Matched Slicers I</name>
         <name_fr>Dagues jumelles</name_fr>
@@ -4905,6 +4995,54 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>dual_blades</type>
+        <name>Wrath &amp; Rancor</name>
+        <name_jp>憤怒の双刃</name_jp>
+        <inflated_attack>280</inflated_attack>
+        <attack>200</attack>
+        <affinity>-20</affinity>
+        <element>
+            <inflated_dragon>120</inflated_dragon>
+            <dragon>12</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>dual_blades</type>
+        <name>Wrathful Predation</name>
+        <name_jp>ラースプレデター</name_jp>
+        <inflated_attack>308</inflated_attack>
+        <attack>220</attack>
+        <affinity>-20</affinity>
+        <element>
+            <inflated_dragon>180</inflated_dragon>
+            <dragon>18</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>40</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -6895,6 +7033,54 @@
         <final>true</final>
     </weapon>
     <weapon>
+        <type>great_sword</type>
+        <name>Berseker Sword</name>
+        <name_jp>ベルセルクソード</name_jp>
+        <inflated_attack>1008</inflated_attack>
+        <attack>210</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>180</inflated_dragon>
+            <dragon>18</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>70</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>20</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>great_sword</type>
+        <name>Anguish</name>
+        <name_jp>アングイッシュ</name_jp>
+        <inflated_attack>1104</inflated_attack>
+        <attack>230</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>240</inflated_dragon>
+            <dragon>24</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
         <type>gunlance</type>
         <name>Iron Gunlance I</name>
         <name_fr>Lancecanon de fer</name_fr>
@@ -8649,6 +8835,54 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>gunlance</type>
+        <name>Ravenous Gunlance</name>
+        <name_jp>愚欲の銃槍</name_jp>
+        <inflated_attack>483</inflated_attack>
+        <attack>210</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>180</inflated_dragon>
+            <dragon>18</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>gunlance</type>
+        <name>Insatiable Gunlance</name>
+        <name_jp>暴銃槍グラグリード</name_jp>
+        <inflated_attack>529</inflated_attack>
+        <attack>230</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>240</inflated_dragon>
+            <dragon>24</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>40</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -10539,6 +10773,60 @@
         <final>true</final>
     </weapon>
     <weapon>
+        <type>hammer</type>
+        <name>Devil's Due</name>
+        <name_jp>混沌の鎚</name_jp>
+        <inflated_attack>1092</inflated_attack>
+        <attack>210</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>3</slot>
+        </slots>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>hammer</type>
+        <name>Devil's Crush</name>
+        <name_jp>カオスラッシュ</name_jp>
+        <inflated_attack>1196</inflated_attack>
+        <attack>230</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>3</slot>
+        </slots>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
         <type>heavy_bowgun</type>
         <name>Iron Assault I</name>
         <name_fr>Arbalète en fer</name_fr>
@@ -11412,6 +11700,26 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>heavy_bowgun</type>
+        <name>Gluttonous Cannon</name>
+        <name_jp>暴食の重弩</name_jp>
+        <inflated_attack>315</inflated_attack>
+        <attack>210</attack>
+        <affinity>-25</affinity>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>heavy_bowgun</type>
+        <name>Dark Devourer</name>
+        <name_jp>アンフィニグラ</name_jp>
+        <inflated_attack>345</inflated_attack>
+        <attack>230</attack>
+        <affinity>-25</affinity>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -13301,6 +13609,54 @@
         <final>true</final>
     </weapon>
     <weapon>
+        <type>hunting_horn</type>
+        <name>Devil's Maestro</name>
+        <name_jp>鎖縛の暴竜</name_jp>
+        <inflated_attack>840</inflated_attack>
+        <attack>200</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>180</inflated_dragon>
+            <dragon>18</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>hunting_horn</type>
+        <name>Deep Vero</name>
+        <name_jp>ディープヴェロウ</name_jp>
+        <inflated_attack>924</inflated_attack>
+        <attack>220</attack>
+        <affinity>-30</affinity>
+        <element>
+            <inflated_dragon>240</inflated_dragon>
+            <dragon>24</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
         <type>insect_glaive</type>
         <name>Iron Blade I</name>
         <name_fr>Glaive en fer</name_fr>
@@ -15124,6 +15480,54 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>insect_glaive</type>
+        <name>Bad Wing</name>
+        <name_jp>バッドウィング</name_jp>
+        <inflated_attack>620</inflated_attack>
+        <attack>200</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>insect_glaive</type>
+        <name>Grunge Storm</name>
+        <name_jp>グランジストーム</name_jp>
+        <inflated_attack>682</inflated_attack>
+        <attack>220</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -17012,6 +17416,54 @@
         <final>true</final>
     </weapon>
     <weapon>
+        <type>lance</type>
+        <name>Grief Lance</name>
+        <name_jp>悲哀の重鎗</name_jp>
+        <inflated_attack>483</inflated_attack>
+        <attack>210</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>lance</type>
+        <name>Fiendish Tower</name>
+        <name_jp>アトロシスタワー</name_jp>
+        <inflated_attack>529</inflated_attack>
+        <attack>230</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
         <type>light_bowgun</type>
         <name>Chain Blitz I</name>
         <name_fr>Déchiqueteur de fer</name_fr>
@@ -17964,6 +18416,26 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>light_bowgun</type>
+        <name>Devil's Grin</name>
+        <name_jp>イビルマシーン</name_jp>
+        <inflated_attack>273</inflated_attack>
+        <attack>210</attack>
+        <affinity>-25</affinity>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>light_bowgun</type>
+        <name>Devil's Madness</name>
+        <name_jp>マッドネスグリーフ</name_jp>
+        <inflated_attack>299</inflated_attack>
+        <attack>230</attack>
+        <affinity>-25</affinity>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -19772,6 +20244,54 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>long_sword</type>
+        <name>Reaver "Cruelty"</name>
+        <name_jp>クルーエルペイン</name_jp>
+        <inflated_attack>693</inflated_attack>
+        <attack>210</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>long_sword</type>
+        <name>Reaver "Calamity"</name>
+        <name_jp>カラミティペイン</name_jp>
+        <inflated_attack>759</inflated_attack>
+        <attack>230</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -21812,6 +22332,60 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>switch_axe</type>
+        <name>Tyrannos</name>
+        <name_jp>テュランノス</name_jp>
+        <inflated_attack>700</inflated_attack>
+        <attack>200</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>120</inflated_dragon>
+            <dragon>12</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <phial>
+            <power />
+        </phial>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>switch_axe</type>
+        <name>Terror Tyrannos</name>
+        <name_jp>テラーテュランノス</name_jp>
+        <inflated_attack>770</inflated_attack>
+        <attack>220</attack>
+        <affinity>-25</affinity>
+        <element>
+            <inflated_dragon>180</inflated_dragon>
+            <dragon>18</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <phial>
+            <power />
+        </phial>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
@@ -23859,6 +24433,54 @@
             <slot>3</slot>
         </slots>
         <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>sword_and_shield</type>
+        <name>Fatal Jho</name>
+        <name_jp>フェイタルジョー</name_jp>
+        <inflated_attack>280</inflated_attack>
+        <attack>200</attack>
+        <affinity>-20</affinity>
+        <element>
+            <inflated_dragon>150</inflated_dragon>
+            <dragon>15</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>60</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>30</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>sword_and_shield</type>
+        <name>Fatal Bite</name>
+        <name_jp>フェイタルヴァイト</name_jp>
+        <inflated_attack>308</inflated_attack>
+        <attack>220</attack>
+        <affinity>-20</affinity>
+        <element>
+            <inflated_dragon>210</inflated_dragon>
+            <dragon>21</dragon>
+        </element>
+        <elderseal>high</elderseal>
+        <sharpness>
+            <red>50</red>
+            <orange>120</orange>
+            <yellow>80</yellow>
+            <green>60</green>
+            <blue>40</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <rare>7</rare>
         <final>true</final>
     </weapon>
     <weapon>
