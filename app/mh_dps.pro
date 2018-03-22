@@ -32,6 +32,7 @@ src/Target.cpp \
 src/Weapon.cpp \
 src/enums.cpp \
 src/main.cpp \
+src/gui/GuiElements.cpp \
 src/gui/MainWindow.cpp \
 src/gui/ResultTableModel.cpp
 
@@ -55,6 +56,7 @@ src/Profile.h \
 src/Target.h \
 src/Weapon.h \
 src/enums.h \
+src/gui/GuiElements.h \
 src/gui/MainWindow.h \
 src/gui/ResultTableModel.h
 

@@ -2,6 +2,8 @@
 #include "ui_MainWindow.h"
 
 #include <QSortFilterProxyModel>
+#include <QClipboard>
+
 #include "ResultTableModel.h"
 #include "../MainData.h"
 #include "../Target.h"
@@ -26,11 +28,18 @@ MainWindow::MainWindow(QWidget *parent) :
 	        this, SLOT(changeLanguage(int)));
 
 	tableModel->setDataLanguage(dataLanguage);
-	QSortFilterProxyModel *proxyModel = new QSortFilterProxyModel(this);
-	proxyModel->setSourceModel(tableModel);
-	ui->tableView->setModel(proxyModel);
+	ui->tableView->setModel(tableModel);
+	ui->tableView->addAction(ui->action_Copy);
 
 	connect(ui->calculateDps, SIGNAL(clicked()), this, SLOT(calculate()));
+	connect(ui->action_Quit, SIGNAL(triggered()), this, SLOT(close()));
+	connect(ui->action_Copy, SIGNAL(triggered()), this, SLOT(copy()));
+
+	connect(QApplication::instance(), SIGNAL(focusChanged(QWidget*, QWidget*)),
+	        this, SLOT(updateCopyAction()));
+	connect(ui->tableView->selectionModel(), SIGNAL(selectionChanged(const QItemSelection &, const QItemSelection &)),
+	        this, SLOT(updateCopyAction()));
+	updateCopyAction();
 }
 
 MainWindow::~MainWindow() {
@@ -99,6 +108,14 @@ void MainWindow::setDataLanguage(NamedObject::Language lang) {
 	}
 }
 
+void MainWindow::updateCopyAction() {
+	if (ui->tableView->selectionModel()->hasSelection()) {
+		ui->action_Copy->setEnabled(true);
+	} else {
+		ui->action_Copy->setEnabled(false);
+	}
+}
+
 void MainWindow::changeLanguage(int lang_idx) {
 	if (lang_idx >= 0 && lang_idx < NamedObject::LANG_COUNT) {
 		setDataLanguage((NamedObject::Language)lang_idx);
@@ -114,11 +131,15 @@ void MainWindow::calculate() {
 	QVector<BuildWithDps *> result;
 	foreach(const Weapon *weapon, mainData->weapons) {
 		if (weapon->type != profile->type) continue;
+		if (!weapon->final && ui->finalOnly->isChecked()) continue;
 
 		Build *build = new Build;
 		build->addWeapon(weapon);
-		build->addItem(mainData->itemHash["powercharm"]);
-		build->addItem(mainData->itemHash["powertalon"]);
+		if (ui->ignoreWeaponSlots->isChecked()) {
+			build->decorationSlots.clear();
+		}
+		build->buffLevels[mainData->buffGroupHash["powercharm"]] = 1;
+		build->buffLevels[mainData->buffGroupHash["powertalon"]] = 1;
 		build->decorationSlots << getDecorationSlots();
 
 		QVector<Build *> builds;
@@ -129,4 +150,18 @@ void MainWindow::calculate() {
 		}
 	}
 	tableModel->setResultData(result);
+}
+
+void MainWindow::copy() {
+	if (ui->tableView->hasFocus() && ui->tableView->selectionModel()) {
+		QModelIndexList indexes;
+		foreach(const QModelIndex &index,
+		        ui->tableView->selectionModel()->selectedIndexes()) {
+			if (index.model() == ui->tableView->model()) {
+				indexes.append(index);
+			}
+		}
+		QApplication::clipboard()->
+			setMimeData(ui->tableView->model()->mimeData(indexes));
+	}
 }

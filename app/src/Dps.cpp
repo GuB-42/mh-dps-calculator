@@ -84,14 +84,14 @@ void Dps::computeNoStatus(const MonsterHitData &hit_data,
 
 	fixed = weak_damage.fixed;
 
-	total_elements = 0.0;
+	totalElements = 0.0;
 	for (int elt = 0; elt < ELEMENT_COUNT; ++elt) {
 		bool weak = hit_data.element[elt] <
 			Constants::instance()->elementWeakSpotThreshold;
 		const DamageData &dmg = weak ? normal_damage : weak_damage;
 		double v = dmg.elements[elt] * hit_data.element[elt] / 100.0;
 		elements[elt] = v;
-		total_elements += v;
+		totalElements += v;
 	}
 
 	stunRate = hit_data.stun / 100.0;
@@ -103,14 +103,14 @@ void Dps::computeStatus(const Monster &monster,
                         const DamageData &weak_damage,
                         double defense_multiplier) {
 	killFrequency = 0.0;
-	total_statuses = 0.0;
+	totalStatuses = 0.0;
 	for (int sta = 0; sta < STATUS_COUNT; ++sta) {
 		statusProcRate[sta] = 0.0;
 	}
-	double subtotal = raw + fixed + total_elements;
+	double subtotal = raw + fixed + totalElements;
 	for (int retry = 0; retry < 3; ++retry) {
-		double real_total = (subtotal + total_statuses) * defense_multiplier;
-		total_statuses = 0.0;
+		double real_total = (subtotal + totalStatuses) * defense_multiplier;
+		totalStatuses = 0.0;
 		if (monster.hitPoints > 0.0	&& real_total > 0.0) {
 			killFrequency = real_total / monster.hitPoints;
 			for (int sta = 0; sta < STATUS_COUNT; ++sta) {
@@ -127,25 +127,16 @@ void Dps::computeStatus(const Monster &monster,
 						double v = hits * monster.tolerances[sta]->damage;
 						statuses[sta] = v;
 						statusProcRate[sta] = hits;
-						total_statuses += v;
+						totalStatuses += v;
 					}
 				}
 			}
 		}
-		if (total_statuses == 0.0) break;
+		if (totalStatuses == 0.0) break;
 	}
 }
 
-Dps::Dps(const Monster &monster,
-         const MonsterHitData &hit_data,
-         const DamageData &normal_damage,
-         const DamageData &weak_damage,
-         double defense_multiplier) {
-	computeNoStatus(hit_data, normal_damage, weak_damage);
-	computeStatus(monster, normal_damage, weak_damage, defense_multiplier);
-}
-
-Dps::Dps(const Target &target, const Damage &damage) : Dps()
+void Dps::compute(const Target &target, const Damage &damage)
 {
 	bool enraged_equals_normal =
 		damage.data[MODE_NORMAL_NORMAL] ==
@@ -208,7 +199,7 @@ Dps::Dps(const Target &target, const Damage &damage) : Dps()
 }
 
 Dps::Dps() :
-	raw(0.0), total_elements(0.0), total_statuses(0.0), fixed(0.0),
+	raw(0.0), totalElements(0.0), totalStatuses(0.0), fixed(0.0),
 	bounceRate(0.0), killFrequency(0.0),
 	weakSpotRatio(0.0), stunRate(0.0)
 {
@@ -221,6 +212,11 @@ Dps::Dps() :
 	}
 }
 
+Dps::Dps(const Target &target, const Damage &damage) : Dps()
+{
+	compute(target, damage);
+}
+
 void Dps::combine(const Dps &o, double rate) {
 	raw += o.raw * rate;
 	fixed += o.fixed * rate;
@@ -228,14 +224,14 @@ void Dps::combine(const Dps &o, double rate) {
 	killFrequency += o.killFrequency * rate;
 	weakSpotRatio += o.weakSpotRatio * rate;
 	stunRate += o.stunRate * rate;
-	if (o.total_elements != 0.0) {
-		total_elements += o.total_elements * rate;
+	if (o.totalElements != 0.0) {
+		totalElements += o.totalElements * rate;
 		for (int i = 0; i < ELEMENT_COUNT; ++i) {
 			elements[i] += o.elements[i] * rate;
 		}
 	}
-	if (o.total_statuses != 0.0) {
-		total_statuses += o.total_statuses * rate;
+	if (o.totalStatuses != 0.0) {
+		totalStatuses += o.totalStatuses * rate;
 		for (int i = 0; i < STATUS_COUNT; ++i) {
 			statuses[i] += o.statuses[i] * rate;
 		}
@@ -247,14 +243,14 @@ void Dps::combine(const Dps &o, double rate) {
 
 void Dps::print(QTextStream &stream, QString indent) {
 	stream << indent << "- raw: " << raw << endl;
-	stream << indent << "- total elements: " << total_elements << endl;
+	stream << indent << "- total elements: " << totalElements << endl;
 	stream << indent << "- elements: [";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << elements[i];
 	}
 	stream << "]" << endl;
-	stream << indent << "- total statuses: " << total_statuses << endl;
+	stream << indent << "- total statuses: " << totalStatuses << endl;
 	stream << indent << "- statuses: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";

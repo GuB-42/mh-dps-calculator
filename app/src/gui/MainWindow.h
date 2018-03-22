@@ -27,8 +27,10 @@ public:
 
 public slots:
 	void calculate();
+	void copy();
 
 private slots:
+	void updateCopyAction();
 	void changeLanguage(int lang_idx);
 
 private:
