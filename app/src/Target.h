@@ -7,9 +7,9 @@
 
 class QTextStream;
 class QXmlStreamReader;
-class MonsterHitData;
-class MonsterPart;
-class Monster;
+struct MonsterHitData;
+struct MonsterPart;
+struct Monster;
 
 struct TargetZone {
 	double weight;

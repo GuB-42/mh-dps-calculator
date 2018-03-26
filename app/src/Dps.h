@@ -5,11 +5,11 @@
 #include "enums.h"
 
 class QTextStream;
-class Monster;
-class MonsterHitData;
-class DamageData;
-class Damage;
-class Target;
+struct Monster;
+struct MonsterHitData;
+struct DamageData;
+struct Damage;
+struct Target;
 
 struct Dps {
 	double raw;

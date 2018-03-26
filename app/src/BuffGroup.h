@@ -6,7 +6,7 @@
 
 class QTextStream;
 class QXmlStreamReader;
-class BuffWithCondition;
+struct BuffWithCondition;
 
 struct BuffGroupLevel : public NamedObject {
 	QVector<BuffWithCondition *> buffs;

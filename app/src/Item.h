@@ -4,7 +4,7 @@
 #include "NamedObject.h"
 #include <QVector>
 
-class BuffGroup;
+struct BuffGroup;
 
 struct Item : public NamedObject {
 	struct BuffRef {

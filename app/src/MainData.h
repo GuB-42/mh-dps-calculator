@@ -7,12 +7,12 @@
 
 class QTextStream;
 class QXmlStreamReader;
-class Monster;
-class Weapon;
-class BuffGroup;
-class Profile;
-class Item;
-class Target;
+struct Monster;
+struct Weapon;
+struct BuffGroup;
+struct Profile;
+struct Item;
+struct Target;
 
 struct MainData {
 	QVector<Monster *> monsters;

@@ -9,7 +9,7 @@
 
 class QTextStream;
 class QXmlStreamReader;
-class ConditionRatios;
+struct ConditionRatios;
 
 struct Pattern {
 	double rate;

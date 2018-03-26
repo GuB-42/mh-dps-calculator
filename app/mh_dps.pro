@@ -45,7 +45,7 @@ src/ConditionRatios.h \
 src/Constants.h \
 src/Damage.h \
 src/DamageData.h \
-src/Dps.cpp \
+src/Dps.h \
 src/FoldedBuffs.h \
 src/Item.h \
 src/MainData.h \

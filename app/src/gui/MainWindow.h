@@ -5,9 +5,9 @@
 #include "../NamedObject.h"
 
 class ResultTableModel;
-class MainData;
-class Profile;
-class Target;
+struct MainData;
+struct Profile;
+struct Target;
 
 namespace Ui {
 	class MainWindow;

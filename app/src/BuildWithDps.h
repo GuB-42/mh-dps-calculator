@@ -5,9 +5,9 @@
 #include "Damage.h"
 #include "Dps.h"
 
-class Build;
-class Target;
-class Profile;
+struct Build;
+struct Target;
+struct Profile;
 
 struct BuildWithDps {
 	Build *build;

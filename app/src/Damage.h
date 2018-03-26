@@ -5,11 +5,11 @@
 #include <QVector>
 #include <QString>
 
-class DamageData;
-class BuffWithCondition;
-class Weapon;
-class Pattern;
 class QTextStream;
+struct DamageData;
+struct BuffWithCondition;
+struct Weapon;
+struct Pattern;
 
 struct Damage {
 	DamageData *data[MODE_COUNT];

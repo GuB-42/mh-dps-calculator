@@ -3,7 +3,7 @@
 
 #include <QApplication>
 
-class MainData;
+struct MainData;
 class MainWindow;
 
 class MhDpsApplication : public QApplication

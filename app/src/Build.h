@@ -6,10 +6,10 @@
 #include <QString>
 
 class QTextStream;
-class BuffGroup;
-class Item;
-class BuffWithCondition;
-class Weapon;
+struct BuffGroup;
+struct Item;
+struct BuffWithCondition;
+struct Weapon;
 
 struct Build {
 	const Weapon *weapon;

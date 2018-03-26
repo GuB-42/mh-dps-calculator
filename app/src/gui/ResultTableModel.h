@@ -4,7 +4,7 @@
 #include "../NamedObject.h"
 #include "../enums.h"
 
-class BuildWithDps;
+struct BuildWithDps;
 
 class ResultTableModel : public QAbstractTableModel {
 	Q_OBJECT

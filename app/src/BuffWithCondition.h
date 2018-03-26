@@ -5,7 +5,7 @@
 #include <QString>
 
 class QTextStream;
-class Weapon;
+struct Weapon;
 
 struct BuffWithCondition {
 	enum BuffClass {

@@ -6,7 +6,7 @@
 #include <QHash>
 #include <QString>
 
-class ConditionRatios;
+struct ConditionRatios;
 
 struct BuffCap {
 	BuffCap() : base(0.0), cap(0.0) {};

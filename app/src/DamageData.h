@@ -5,9 +5,9 @@
 #include <QString>
 #include "enums.h"
 
-class Weapon;
-class FoldedBuffsData;
-class Pattern;
+struct Weapon;
+struct FoldedBuffsData;
+struct Pattern;
 class QTextStream;
 
 struct SharpnessMultiplierData {

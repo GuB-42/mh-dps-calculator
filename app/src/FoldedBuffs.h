@@ -5,8 +5,8 @@
 #include <QString>
 #include "enums.h"
 
-class BuffWithCondition;
-class ConditionRatios;
+struct BuffWithCondition;
+struct ConditionRatios;
 class QTextStream;
 
 struct FoldedBuffsData {
