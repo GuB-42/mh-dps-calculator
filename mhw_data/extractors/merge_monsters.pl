@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use open ':std', ':encoding(UTF-8)';
+use utf8;
 
 use XML::Parser;
 use XML::Writer;
@@ -108,6 +109,162 @@ sub handle_char
 	$xml_string_stack[0] .= $string;
 }
 
+my %hardcoded_match = (
+	"Back Bone" => { "胴と脚の骨" => 1 },
+	"Left Hindleg Bone" => { "胴と脚の骨" => 1 },
+	"Right Hindleg Bone" => { "胴と脚の骨" => 1 }
+);
+
+sub find_other_part
+{
+	my ($part_a, $parts_b) = @_;
+
+	my %part_a_names;
+	my @part_a_trans;
+	my @part_a_trans_left_right;
+	my @part_a_trans_sub;
+	for my $k (keys %{$part_a}) {
+		if ($k =~ /^name/) {
+			$part_a_names{$k} = $part_a->{$k};
+		}
+
+		if ($translation_map{$k}) {
+			my $n = $part_a->{$k};
+			if ($translation_map{$k}->{$n}) {
+				push @part_a_trans, @{$translation_map{$k}->{$n}};
+				push @part_a_trans_left_right, @{$translation_map{$k}->{$n}};
+			}
+			if ($n =~ /^(?:Left|Right) (.*)/) {
+				if ($translation_map{$k}->{$1}) {
+					push @part_a_trans_left_right, @{$translation_map{$k}->{$1}};
+				}
+			}
+			if ($n =~ /(.*\S)\s*\(.*\)$/) {
+				if ($translation_map{$k}->{$1}) {
+					push @part_a_trans_sub, @{$translation_map{$k}->{$1}};
+				}
+			}
+		}
+	}
+	my $part_a_pnames = (join ' / ', values %part_a_names);
+
+	my $other_part;
+	for my $part_b (@{$parts_b}) {
+		for my $k (keys %{$part_b}) {
+			if (defined $part_a_names{$k} && $part_a_names{$k} eq $part_b->{$k}) {
+				$other_part = $part_b;
+				last;
+			}
+		}
+		last if ($other_part);
+	}
+	unless ($other_part) {
+		for my $part_b (@{$parts_b}) {
+			for my $k (keys %{$part_b}) {
+				for my $trans (@part_a_trans) {
+					if (defined $trans->{$k} && $trans->{$k} eq $part_b->{$k}) {
+						$other_part = $part_b;
+						last;
+					}
+				}
+				last if ($other_part);
+			}
+			last if ($other_part);
+		}
+	}
+	unless ($other_part) {
+		for my $part_b (@{$parts_b}) {
+			for my $k (keys %{$part_b}) {
+				if (defined $part_a_names{$k} &&
+				    ("Left $part_a_names{$k}" eq $part_b->{$k} ||
+				     "Right $part_a_names{$k}" eq $part_b->{$k} ||
+				     $part_a_names{$k} eq "Left $part_b->{$k}" ||
+				     $part_a_names{$k} eq "Right $part_b->{$k}")) {
+					$other_part = $part_b;
+					last;
+				}
+			}
+			last if ($other_part);
+		}
+	}
+	unless ($other_part) {
+		for my $part_b (@{$parts_b}) {
+			for my $k (keys %{$part_b}) {
+				for my $trans (@part_a_trans_left_right) {
+					if (defined $trans->{$k} &&
+					    ($trans->{$k} eq $part_b->{$k} ||
+					     "Left $trans->{$k}" eq $part_b->{$k} ||
+					     "Right $trans->{$k}" eq $part_b->{$k} ||
+					     $trans->{$k} eq "Left $part_b->{$k}" ||
+					     $trans->{$k} eq "Right $part_b->{$k}")) {
+						$other_part = $part_b;
+						last;
+					}
+				}
+				last if ($other_part);
+			}
+			last if ($other_part);
+		}
+	}
+	unless ($other_part) {
+		for my $part_b (@{$parts_b}) {
+			for my $k (keys %{$part_b}) {
+				if (defined $part_a_names{$k}) {
+					my $subname_a = $part_a_names{$k};
+					$subname_a =~ s/\s*\(.*\)$//;
+					my $subname_b = $part_b->{$k};
+					$subname_b =~ s/\s*\(.*\)$//;
+					if ($subname_a eq $part_b->{$k} ||
+					    $part_a_names{$k} eq $subname_b) {
+						$other_part = $part_b;
+						last;
+					}
+				}
+			}
+			last if ($other_part);
+		}
+	}
+	unless ($other_part) {
+		for my $part_b (@{$parts_b}) {
+			for my $k (keys %{$part_b}) {
+				for my $trans (@part_a_trans_sub) {
+					if (defined $trans->{$k}) {
+						my $subname_a = $trans->{$k};
+						$subname_a =~ s/\s*\(.*\)$//;
+						my $subname_b = $part_b->{$k};
+						$subname_b =~ s/\s*\(.*\)$//;
+						if ($subname_a eq $part_b->{$k} ||
+						    $trans->{$k} eq $subname_b) {
+							$other_part = $part_b;
+							last;
+						}
+					}
+				}
+				last if ($other_part);
+			}
+			last if ($other_part);
+		}
+	}
+	unless ($other_part) {
+		for my $k2 (keys %part_a_names) {
+			my $a_name = $part_a_names{$k2};
+			for my $part_b (@{$parts_b}) {
+				for my $k (keys %{$part_b}) {
+					next unless ($k =~ /^name/);
+					if (defined $hardcoded_match{$part_b->{$k}} &&
+					    $hardcoded_match{$part_b->{$k}}->{$a_name}) {
+						$other_part = $part_b;
+						last;
+					}
+				}
+				last if ($other_part);
+			}
+			last if ($other_part);
+		}
+	}
+	return $other_part;
+}
+
 sub merge_parts
 {
 	my ($parts_a, $parts_b, $monster_names) = @_;
@@ -116,87 +273,16 @@ sub merge_parts
 	my @used_parts_b;
 
 	for my $part_a (@{$parts_a}) {
-		my %part_a_names;
-		my @part_a_trans;
-		my @part_a_trans_left_right;
+		my @part_a_pnames_tab = ();
 		for my $k (keys %{$part_a}) {
 			if ($k =~ /^name/) {
-				$part_a_names{$k} = $part_a->{$k};
+				push @part_a_pnames_tab, $part_a->{$k};
 			}
+		}
+		my $part_a_pnames = (join ' / ', @part_a_pnames_tab);
 
-			if ($translation_map{$k}) {
-				my $n = $part_a->{$k};
-				if ($translation_map{$k}->{$n}) {
-					push @part_a_trans, @{$translation_map{$k}->{$n}};
-					push @part_a_trans_left_right, @{$translation_map{$k}->{$n}};
-				}
-				if ($n =~ /^(?:Left|Right) (.*)/) {
-					if ($translation_map{$k}->{$1}) {
-						push @part_a_trans_left_right, @{$translation_map{$k}->{$1}};
-					}
-				}
-			}
-		}
-		my $part_a_pnames = (join ' / ', values %part_a_names);
 
-		my $other_part;
-		for my $part_b (@{$parts_b}) {
-			for my $k (keys %{$part_b}) {
-				if (defined $part_a_names{$k} && $part_a_names{$k} eq $part_b->{$k}) {
-					$other_part = $part_b;
-					last;
-				}
-			}
-			last if ($other_part);
-		}
-		unless ($other_part) {
-			for my $part_b (@{$parts_b}) {
-				for my $k (keys %{$part_b}) {
-					for my $trans (@part_a_trans) {
-						if (defined $trans->{$k} && $trans->{$k} eq $part_b->{$k}) {
-							$other_part = $part_b;
-							last;
-						}
-					}
-					last if ($other_part);
-				}
-				last if ($other_part);
-			}
-		}
-		unless ($other_part) {
-			for my $part_b (@{$parts_b}) {
-				for my $k (keys %{$part_b}) {
-					if (defined $part_a_names{$k} &&
-					    ("Left $part_a_names{$k}" eq $part_b->{$k} ||
-					     "Right $part_a_names{$k}" eq $part_b->{$k} ||
-					     $part_a_names{$k} eq "Left $part_b->{$k}" ||
-					     $part_a_names{$k} eq "Right $part_b->{$k}")) {
-						$other_part = $part_b;
-						last;
-					}
-				}
-				last if ($other_part);
-			}
-		}
-		unless ($other_part) {
-			for my $part_b (@{$parts_b}) {
-				for my $k (keys %{$part_b}) {
-					for my $trans (@part_a_trans_left_right) {
-						if (defined $trans->{$k} &&
-						    ($trans->{$k} eq $part_b->{$k} ||
-						     "Left $trans->{$k}" eq $part_b->{$k} ||
-						     "Right $trans->{$k}" eq $part_b->{$k} ||
-						     $trans->{$k} eq "Left $part_b->{$k}" ||
-						     $trans->{$k} eq "Right $part_b->{$k}")) {
-							$other_part = $part_b;
-							last;
-						}
-					}
-					last if ($other_part);
-				}
-				last if ($other_part);
-			}
-		}
+		my $other_part = find_other_part($part_a, $parts_b);
 
 		if ($other_part) {
 			my %other_part_names;
@@ -288,6 +374,7 @@ sub merge_parts
 		}
 		unless ($found) {
 			print STDERR "$monster_names: part mismatch: <null> != $part_b_pnames\n";
+			push @{$ret}, $part_b;
 		}
 	}
 
@@ -367,6 +454,13 @@ sub merge_monsters
 	return $ret;
 }
 
+for my $k (keys %hardcoded_match) {
+	for my $o (keys %{$hardcoded_match{$k}}) {
+		$hardcoded_match{$o} ||= {};
+		$hardcoded_match{$o}->{$k} = 1;
+	}
+}
+
 for my $file (@ARGV) {
 	my $p = new XML::Parser(Handlers => {
 		Start => \&handle_start,
@@ -441,8 +535,19 @@ sub print_monster
 	$xml_writer->dataElement("name_jp", $monster->{"name_jp"}) if ($monster->{"name_jp"});
 	$xml_writer->dataElement("hit_points", $monster->{"hit_points"}) if ($monster->{"hit_points"});
 	for my $part (@{$monster->{"parts"}}) {
+		if ($part->{"name_jp"} && !$part->{"name"}) {
+			if ($translation_map{"name_jp"}{$part->{"name_jp"}}) {
+				for my $trans (@{$translation_map{"name_jp"}{$part->{"name_jp"}}}) {
+					if ($trans->{"name"}) {
+						$part->{"name"} = $trans->{"name"};
+						last;
+					}
+				}
+			}
+		}
 		my $part_id = lc($part->{"name"});
 		$part_id =~ s/\W+/_/g;
+		$part_id =~ s/^_|_$//g;
 		$xml_writer->startTag("part", "id" => $part_id);
 		$xml_writer->dataElement("name", $part->{"name"}) if ($part->{"name"});
 		$xml_writer->dataElement("name_fr", $part->{"name_fr"}) if ($part->{"name_fr"});

@@ -31,15 +31,14 @@ my %monster_states = (
 	"Great Jagras/腹膨張" => [ "Inflated" ],
 	"Jyuratodus" => [ "", "Mud" ],
 	"Kirin" => [ "", "Electricity" ],
-	"Lavasioth/頭" => [ "Wounded", "" ],
-	"Lavasioth/背中" => [ "Wounded", "" ],
-	"Lavasioth/脚" => [ "Wounded", "" ],
+	"Lavasioth" => [ "", "Wounded" ],
 	"Nergigante/Head" => [ "", "Wounded" ],
 	"Nergigante" => [ "", "White", "Black" ],
 	"Uragaan" => [ "", "Wounded" ],
 	"Vaal Hazak" => [ "", "Wounded" ],
 	"Xeno'jiiva" => [ "", "Critical State", "Wounded" ],
-	"Zorah Magdaros/胸" => [ "Before Wounded", "After Wounded" ]
+	"Zorah Magdaros/胸" => [ "Before Wounded", "After Wounded" ],
+	"Deviljho" => [ "", "Enraged" ],
 );
 
 sub process_data_row {

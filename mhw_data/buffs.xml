@@ -3,18 +3,22 @@
 <data>
 	<buff_group id="poison_resistance">
 		<name>Poison Resistance</name>
+		<name_fr>Toxicologie</name_fr>
 		<buff>
 			<name>Poison Resistance [1]</name>
+			<name_fr>Toxicologie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Poison Resistance [2]</name>
+			<name_fr>Toxicologie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Poison Resistance [3]</name>
+			<name_fr>Toxicologie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -22,18 +26,22 @@
 
 	<buff_group id="paralysis_resistance">
 		<name>Paralysis Resistance</name>
+		<name_fr>Antiparalysie</name_fr>
 		<buff>
 			<name>Paralysis Resistance [1]</name>
+			<name_fr>Antiparalysie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Paralysis Resistance [2]</name>
+			<name_fr>Antiparalysie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Paralysis Resistance [3]</name>
+			<name_fr>Antiparalysie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -41,18 +49,22 @@
 
 	<buff_group id="sleep_resistance">
 		<name>Sleep Resistance</name>
+		<name_fr>Insomnie</name_fr>
 		<buff>
 			<name>Sleep Resistance [1]</name>
+			<name_fr>Insomnie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Sleep Resistance [2]</name>
+			<name_fr>Insomnie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Sleep Resistance [3]</name>
+			<name_fr>Insomnie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -60,18 +72,22 @@
 
 	<buff_group id="stun_resistance">
 		<name>Stun Resistance</name>
+		<name_fr>Crâne d'acier</name_fr>
 		<buff>
 			<name>Stun Resistance [1]</name>
+			<name_fr>Crâne d'acier [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Stun Resistance [2]</name>
+			<name_fr>Crâne d'acier [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Stun Resistance [3]</name>
+			<name_fr>Crâne d'acier [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -79,8 +95,10 @@
 
 	<buff_group id="muck_resistance">
 		<name>Muck Resistance</name>
+		<name_fr>Anti-fange</name_fr>
 		<buff>
 			<name>Muck Resistance [1]</name>
+			<name_fr>Anti-fange [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -88,18 +106,22 @@
 
 	<buff_group id="blast_resistance">
 		<name>Blast Resistance</name>
+		<name_fr>Anti-explosion</name_fr>
 		<buff>
 			<name>Blast Resistance [1]</name>
+			<name_fr>Anti-explosion [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Blast Resistance [2]</name>
+			<name_fr>Anti-explosion [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Blast Resistance [3]</name>
+			<name_fr>Anti-explosion [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -107,18 +129,22 @@
 
 	<buff_group id="bleeding_resistance">
 		<name>Bleeding Resistance</name>
+		<name_fr>Anti-hémorragie</name_fr>
 		<buff>
 			<name>Bleeding Resistance [1]</name>
+			<name_fr>Anti-hémorragie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Bleeding Resistance [2]</name>
+			<name_fr>Anti-hémorragie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Bleeding Resistance [3]</name>
+			<name_fr>Anti-hémorragie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -126,18 +152,22 @@
 
 	<buff_group id="iron_skin">
 		<name>Iron Skin</name>
+		<name_fr>Peau de fer</name_fr>
 		<buff>
 			<name>Iron Skin [1]</name>
+			<name_fr>Peau de fer [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Iron Skin [2]</name>
+			<name_fr>Peau de fer [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Iron Skin [3]</name>
+			<name_fr>Peau de fer [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -145,28 +175,34 @@
 
 	<buff_group id="earplugs">
 		<name>Earplugs</name>
+		<name_fr>Bouchon d'oreilles</name_fr>
 		<buff>
 			<name>Earplugs [1]</name>
+			<name_fr>Bouchon d'oreilles [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Earplugs [2]</name>
+			<name_fr>Bouchon d'oreilles [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Earplugs [3]</name>
+			<name_fr>Bouchon d'oreilles [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Earplugs [4]</name>
+			<name_fr>Bouchon d'oreilles [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Earplugs [5]</name>
+			<name_fr>Bouchon d'oreilles [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -174,28 +210,34 @@
 
 	<buff_group id="windproof">
 		<name>Windproof</name>
+		<name_fr>Pare-vent</name_fr>
 		<buff>
 			<name>Windproof [1]</name>
+			<name_fr>Pare-vent [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Windproof [2]</name>
+			<name_fr>Pare-vent [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Windproof [3]</name>
+			<name_fr>Pare-vent [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Windproof [4]</name>
+			<name_fr>Pare-vent [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Windproof [5]</name>
+			<name_fr>Pare-vent [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -203,18 +245,22 @@
 
 	<buff_group id="tremor_resistance">
 		<name>Tremor Resistance</name>
+		<name_fr>Sismologie</name_fr>
 		<buff>
 			<name>Tremor Resistance [1]</name>
+			<name_fr>Sismologie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Tremor Resistance [2]</name>
+			<name_fr>Sismologie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Tremor Resistance [3]</name>
+			<name_fr>Sismologie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -222,8 +268,10 @@
 
 	<buff_group id="dungmaster">
 		<name>Dungmaster</name>
+		<name_fr>Grand Bousier</name_fr>
 		<buff>
 			<name>Dungmaster [1]</name>
+			<name_fr>Grand Bousier [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -231,8 +279,10 @@
 
 	<buff_group id="effluvial_expert">
 		<name>Effluvial Expert</name>
+		<name_fr>Aura de purge</name_fr>
 		<buff>
 			<name>Effluvial Expert [1]</name>
+			<name_fr>Aura de purge [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -240,8 +290,10 @@
 
 	<buff_group id="heat_guard">
 		<name>Heat Guard</name>
+		<name_fr>Thermorésistance</name_fr>
 		<buff>
 			<name>Heat Guard [1]</name>
+			<name_fr>Thermorésistance [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -249,41 +301,49 @@
 
 	<buff_group id="attack_boost">
 		<name>Attack Boost</name>
+		<name_fr>Machine de guerre</name_fr>
 		<buff>
 			<name>Attack Boost [1]</name>
+			<name_fr>Machine de guerre [1]</name_fr>
 			<level>1</level>
 			<attack_plus>3</attack_plus>
 		</buff>
 		<buff>
 			<name>Attack Boost [2]</name>
+			<name_fr>Machine de guerre [2]</name_fr>
 			<level>2</level>
 			<attack_plus>6</attack_plus>
 		</buff>
 		<buff>
 			<name>Attack Boost [3]</name>
+			<name_fr>Machine de guerre [3]</name_fr>
 			<level>3</level>
 			<attack_plus>9</attack_plus>
 		</buff>
 		<buff>
 			<name>Attack Boost [4]</name>
+			<name_fr>Machine de guerre [4]</name_fr>
 			<level>4</level>
 			<attack_plus>12</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff>
 			<name>Attack Boost [5]</name>
+			<name_fr>Machine de guerre [5]</name_fr>
 			<level>5</level>
 			<attack_plus>15</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff>
 			<name>Attack Boost [6]</name>
+			<name_fr>Machine de guerre [6]</name_fr>
 			<level>6</level>
 			<attack_plus>18</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff>
 			<name>Attack Boost [7]</name>
+			<name_fr>Machine de guerre [7]</name_fr>
 			<level>7</level>
 			<attack_plus>21</attack_plus>
 			<affinity_plus>5</affinity_plus>
@@ -292,38 +352,46 @@
 
 	<buff_group id="defense_boost">
 		<name>Defense Boost</name>
+		<name_fr>Bastion</name_fr>
 		<buff>
 			<name>Defense Boost [1]</name>
+			<name_fr>Bastion [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Defense Boost [2]</name>
+			<name_fr>Bastion [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Defense Boost [3]</name>
+			<name_fr>Bastion [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Defense Boost [4]</name>
+			<name_fr>Bastion [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Defense Boost [5]</name>
+			<name_fr>Bastion [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Defense Boost [6]</name>
+			<name_fr>Bastion [6]</name_fr>
 			<level>6</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Defense Boost [7]</name>
+			<name_fr>Bastion [7]</name_fr>
 			<level>7</level>
 			<!-- not implemented -->
 		</buff>
@@ -331,18 +399,22 @@
 
 	<buff_group id="health_boost">
 		<name>Health Boost</name>
+		<name_fr>Afflux de vie</name_fr>
 		<buff>
 			<name>Health Boost [1]</name>
+			<name_fr>Afflux de vie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Health Boost [2]</name>
+			<name_fr>Afflux de vie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Health Boost [3]</name>
+			<name_fr>Afflux de vie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -350,18 +422,22 @@
 
 	<buff_group id="recovery_up">
 		<name>Recovery Up</name>
+		<name_fr>Cercle de vie</name_fr>
 		<buff>
 			<name>Recovery Up [1]</name>
+			<name_fr>Cercle de vie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Recovery Up [2]</name>
+			<name_fr>Cercle de vie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Recovery Up [3]</name>
+			<name_fr>Cercle de vie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -369,18 +445,22 @@
 
 	<buff_group id="recovery_speed">
 		<name>Recovery Speed</name>
+		<name_fr>Halo de guérison</name_fr>
 		<buff>
 			<name>Recovery Speed [1]</name>
+			<name_fr>Halo de guérison [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Recovery Speed [2]</name>
+			<name_fr>Halo de guérison [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Recovery Speed [3]</name>
+			<name_fr>Halo de guérison [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -388,18 +468,22 @@
 
 	<buff_group id="fire_resistance">
 		<name>Fire Resistance</name>
+		<name_fr>Ignifuge</name_fr>
 		<buff>
 			<name>Fire Resistance [1]</name>
+			<name_fr>Ignifuge [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Fire Resistance [2]</name>
+			<name_fr>Ignifuge [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Fire Resistance [3]</name>
+			<name_fr>Ignifuge [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -407,18 +491,22 @@
 
 	<buff_group id="water_resistance">
 		<name>Water Resistance</name>
+		<name_fr>Étanchéité</name_fr>
 		<buff>
 			<name>Water Resistance [1]</name>
+			<name_fr>Étanchéité [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Water Resistance [2]</name>
+			<name_fr>Étanchéité [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Water Resistance [3]</name>
+			<name_fr>Étanchéité [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -426,18 +514,22 @@
 
 	<buff_group id="ice_resistance">
 		<name>Ice Resistance</name>
+		<name_fr>Antigel</name_fr>
 		<buff>
 			<name>Ice Resistance [1]</name>
+			<name_fr>Antigel [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Ice Resistance [2]</name>
+			<name_fr>Antigel [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Ice Resistance [3]</name>
+			<name_fr>Antigel [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -445,18 +537,22 @@
 
 	<buff_group id="thunder_resistance">
 		<name>Thunder Resistance</name>
+		<name_fr>Paratonnerre</name_fr>
 		<buff>
 			<name>Thunder Resistance [1]</name>
+			<name_fr>Paratonnerre [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Thunder Resistance [2]</name>
+			<name_fr>Paratonnerre [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Thunder Resistance [3]</name>
+			<name_fr>Paratonnerre [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -464,18 +560,22 @@
 
 	<buff_group id="dragon_resistance">
 		<name>Dragon Resistance</name>
+		<name_fr>Aura draconien</name_fr>
 		<buff>
 			<name>Dragon Resistance [1]</name>
+			<name_fr>Aura draconien [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Dragon Resistance [2]</name>
+			<name_fr>Aura draconien [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Dragon Resistance [3]</name>
+			<name_fr>Aura draconien [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -483,18 +583,22 @@
 
 	<buff_group id="blight_resistance">
 		<name>Blight Resistance</name>
+		<name_fr>Totem élémentaire</name_fr>
 		<buff>
 			<name>Blight Resistance [1]</name>
+			<name_fr>Totem élémentaire [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Blight Resistance [2]</name>
+			<name_fr>Totem élémentaire [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Blight Resistance [3]</name>
+			<name_fr>Totem élémentaire [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -502,8 +606,10 @@
 
 	<buff_group id="fire_attack">
 		<name>Fire Attack</name>
+		<name_fr>Pyromane</name_fr>
 		<buff>
 			<name>Fire Attack [1]</name>
+			<name_fr>Pyromane [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<fire>3</fire>
@@ -511,6 +617,7 @@
 		</buff>
 		<buff>
 			<name>Fire Attack [2]</name>
+			<name_fr>Pyromane [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<fire>6</fire>
@@ -518,6 +625,7 @@
 		</buff>
 		<buff>
 			<name>Fire Attack [3]</name>
+			<name_fr>Pyromane [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<fire>10</fire>
@@ -525,6 +633,7 @@
 		</buff>
 		<buff>
 			<name>Fire Attack [4]</name>
+			<name_fr>Pyromane [4]</name_fr>
 			<level>4</level>
 			<element_plus>
 				<fire>10</fire>
@@ -535,6 +644,7 @@
 		</buff>
 		<buff>
 			<name>Fire Attack [5]</name>
+			<name_fr>Pyromane [5]</name_fr>
 			<level>5</level>
 			<element_plus>
 				<fire>10</fire>
@@ -547,8 +657,10 @@
 
 	<buff_group id="water_attack">
 		<name>Water Attack</name>
+		<name_fr>Maelstrom</name_fr>
 		<buff>
 			<name>Water Attack [1]</name>
+			<name_fr>Maelstrom [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<water>3</water>
@@ -556,6 +668,7 @@
 		</buff>
 		<buff>
 			<name>Water Attack [2]</name>
+			<name_fr>Maelstrom [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<water>6</water>
@@ -563,6 +676,7 @@
 		</buff>
 		<buff>
 			<name>Water Attack [3]</name>
+			<name_fr>Maelstrom [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<water>10</water>
@@ -570,6 +684,7 @@
 		</buff>
 		<buff>
 			<name>Water Attack [4]</name>
+			<name_fr>Maelstrom [4]</name_fr>
 			<level>4</level>
 			<element_plus>
 				<water>10</water>
@@ -580,6 +695,7 @@
 		</buff>
 		<buff>
 			<name>Water Attack [5]</name>
+			<name_fr>Maelstrom [5]</name_fr>
 			<level>5</level>
 			<element_plus>
 				<water>10</water>
@@ -592,8 +708,10 @@
 
 	<buff_group id="ice_attack">
 		<name>Ice Attack</name>
+		<name_fr>Blizzard</name_fr>
 		<buff>
 			<name>Ice Attack [1]</name>
+			<name_fr>Blizzard [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<ice>3</ice>
@@ -601,6 +719,7 @@
 		</buff>
 		<buff>
 			<name>Ice Attack [2]</name>
+			<name_fr>Blizzard [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<ice>6</ice>
@@ -608,6 +727,7 @@
 		</buff>
 		<buff>
 			<name>Ice Attack [3]</name>
+			<name_fr>Blizzard [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<ice>10</ice>
@@ -615,6 +735,7 @@
 		</buff>
 		<buff>
 			<name>Ice Attack [4]</name>
+			<name_fr>Blizzard [4]</name_fr>
 			<level>4</level>
 			<element_plus>
 				<ice>10</ice>
@@ -625,6 +746,7 @@
 		</buff>
 		<buff>
 			<name>Ice Attack [5]</name>
+			<name_fr>Blizzard [5]</name_fr>
 			<level>5</level>
 			<element_plus>
 				<ice>10</ice>
@@ -637,8 +759,10 @@
 
 	<buff_group id="thunder_attack">
 		<name>Thunder Attack</name>
+		<name_fr>Feu du Ciel</name_fr>
 		<buff>
 			<name>Thunder Attack [1]</name>
+			<name_fr>Feu du Ciel [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<thunder>3</thunder>
@@ -646,6 +770,7 @@
 		</buff>
 		<buff>
 			<name>Thunder Attack [2]</name>
+			<name_fr>Feu du Ciel [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<thunder>6</thunder>
@@ -653,6 +778,7 @@
 		</buff>
 		<buff>
 			<name>Thunder Attack [3]</name>
+			<name_fr>Feu du Ciel [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<thunder>10</thunder>
@@ -660,6 +786,7 @@
 		</buff>
 		<buff>
 			<name>Thunder Attack [4]</name>
+			<name_fr>Feu du Ciel [4]</name_fr>
 			<level>4</level>
 			<element_plus>
 				<thunder>10</thunder>
@@ -670,6 +797,7 @@
 		</buff>
 		<buff>
 			<name>Thunder Attack [5]</name>
+			<name_fr>Feu du Ciel [5]</name_fr>
 			<level>5</level>
 			<element_plus>
 				<thunder>10</thunder>
@@ -682,8 +810,10 @@
 
 	<buff_group id="dragon_attack">
 		<name>Dragon Attack</name>
+		<name_fr>Pourfendeur de dragon</name_fr>
 		<buff>
 			<name>Dragon Attack [1]</name>
+			<name_fr>Pourfendeur de dragon [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<dragon>3</dragon>
@@ -691,6 +821,7 @@
 		</buff>
 		<buff>
 			<name>Dragon Attack [2]</name>
+			<name_fr>Pourfendeur de dragon [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<dragon>6</dragon>
@@ -698,6 +829,7 @@
 		</buff>
 		<buff>
 			<name>Dragon Attack [3]</name>
+			<name_fr>Pourfendeur de dragon [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<dragon>10</dragon>
@@ -705,6 +837,7 @@
 		</buff>
 		<buff>
 			<name>Dragon Attack [4]</name>
+			<name_fr>Pourfendeur de dragon [4]</name_fr>
 			<level>4</level>
 			<element_plus>
 				<dragon>10</dragon>
@@ -715,6 +848,7 @@
 		</buff>
 		<buff>
 			<name>Dragon Attack [5]</name>
+			<name_fr>Pourfendeur de dragon [5]</name_fr>
 			<level>5</level>
 			<element_plus>
 				<dragon>10</dragon>
@@ -727,8 +861,10 @@
 
 	<buff_group id="poison_attack">
 		<name>Poison Attack</name>
+		<name_fr>Mort aux rats</name_fr>
 		<buff>
 			<name>Poison Attack [1]</name>
+			<name_fr>Mort aux rats [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<poison>3</poison>
@@ -739,6 +875,7 @@
 		</buff>
 		<buff>
 			<name>Poison Attack [2]</name>
+			<name_fr>Mort aux rats [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<poison>6</poison>
@@ -749,6 +886,7 @@
 		</buff>
 		<buff>
 			<name>Poison Attack [3]</name>
+			<name_fr>Mort aux rats [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<poison>10</poison>
@@ -761,8 +899,10 @@
 
 	<buff_group id="paralysis_attack">
 		<name>Paralysis Attack</name>
+		<name_fr>Neutralisation</name_fr>
 		<buff>
 			<name>Paralysis Attack [1]</name>
+			<name_fr>Neutralisation [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<paralysis>3</paralysis>
@@ -773,6 +913,7 @@
 		</buff>
 		<buff>
 			<name>Paralysis Attack [2]</name>
+			<name_fr>Neutralisation [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<paralysis>6</paralysis>
@@ -783,6 +924,7 @@
 		</buff>
 		<buff>
 			<name>Paralysis Attack [3]</name>
+			<name_fr>Neutralisation [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<paralysis>10</paralysis>
@@ -795,8 +937,10 @@
 
 	<buff_group id="sleep_attack">
 		<name>Sleep Attack</name>
+		<name_fr>La nuit porte conseil</name_fr>
 		<buff>
 			<name>Sleep Attack [1]</name>
+			<name_fr>La nuit porte conseil [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<sleep>3</sleep>
@@ -807,6 +951,7 @@
 		</buff>
 		<buff>
 			<name>Sleep Attack [2]</name>
+			<name_fr>La nuit porte conseil [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<sleep>6</sleep>
@@ -817,6 +962,7 @@
 		</buff>
 		<buff>
 			<name>Sleep Attack [3]</name>
+			<name_fr>La nuit porte conseil [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<sleep>10</sleep>
@@ -829,8 +975,10 @@
 
 	<buff_group id="blast_attack">
 		<name>Blast Attack</name>
+		<name_fr>Destruction massive</name_fr>
 		<buff>
 			<name>Blast Attack [1]</name>
+			<name_fr>Destruction massive [1]</name_fr>
 			<level>1</level>
 			<element_plus>
 				<blast>3</blast>
@@ -841,6 +989,7 @@
 		</buff>
 		<buff>
 			<name>Blast Attack [2]</name>
+			<name_fr>Destruction massive [2]</name_fr>
 			<level>2</level>
 			<element_plus>
 				<blast>6</blast>
@@ -851,6 +1000,7 @@
 		</buff>
 		<buff>
 			<name>Blast Attack [3]</name>
+			<name_fr>Destruction massive [3]</name_fr>
 			<level>3</level>
 			<element_plus>
 				<blast>10</blast>
@@ -863,8 +1013,10 @@
 
 	<buff_group id="normal_shots">
 		<name>Normal Shots</name>
+		<name_fr>Tir maximum</name_fr>
 		<buff>
 			<name>Normal Shots [1]</name>
+			<name_fr>Tir maximum [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -872,8 +1024,10 @@
 
 	<buff_group id="piercing_shots">
 		<name>Piercing Shots</name>
+		<name_fr>Traque sans merci</name_fr>
 		<buff>
 			<name>Piercing Shots [1]</name>
+			<name_fr>Traque sans merci [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -881,8 +1035,10 @@
 
 	<buff_group id="spread_power_shots">
 		<name>Spread/Power Shots</name>
+		<name_fr>Désigné pour mourir</name_fr>
 		<buff>
 			<name>Spread/Power Shots [1]</name>
+			<name_fr>Désigné pour mourir [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -890,18 +1046,22 @@
 
 	<buff_group id="free_elem_ammo_up">
 		<name>Free Elem/Ammo Up</name>
+		<name_fr>Tireur d'élite</name_fr>
 		<buff>
 			<name>Free Elem/Ammo Up [1]</name>
+			<name_fr>Tireur d'élite [1]</name_fr>
 			<level>1</level>
 			<awakening>0.33</awakening>
 		</buff>
 		<buff>
 			<name>Free Elem/Ammo Up [2]</name>
+			<name_fr>Tireur d'élite [2]</name_fr>
 			<level>2</level>
 			<awakening>0.66</awakening>
 		</buff>
 		<buff>
 			<name>Free Elem/Ammo Up [3]</name>
+			<name_fr>Tireur d'élite [3]</name_fr>
 			<level>3</level>
 			<awakening>1.0</awakening>
 		</buff>
@@ -909,38 +1069,46 @@
 
 	<buff_group id="critical_eye">
 		<name>Critical Eye</name>
+		<name_fr>Maitre d'armes</name_fr>
 		<buff>
 			<name>Critical Eye [1]</name>
+			<name_fr>Maitre d'armes [1]</name_fr>
 			<level>1</level>
 			<affinity_plus>3</affinity_plus>
 		</buff>
 		<buff>
 			<name>Critical Eye [2]</name>
+			<name_fr>Maitre d'armes [2]</name_fr>
 			<level>2</level>
 			<affinity_plus>6</affinity_plus>
 		</buff>
 		<buff>
 			<name>Critical Eye [3]</name>
+			<name_fr>Maitre d'armes [3]</name_fr>
 			<level>3</level>
 			<affinity_plus>10</affinity_plus>
 		</buff>
 		<buff>
 			<name>Critical Eye [4]</name>
+			<name_fr>Maitre d'armes [4]</name_fr>
 			<level>4</level>
 			<affinity_plus>15</affinity_plus>
 		</buff>
 		<buff>
 			<name>Critical Eye [5]</name>
+			<name_fr>Maitre d'armes [5]</name_fr>
 			<level>5</level>
 			<affinity_plus>20</affinity_plus>
 		</buff>
 		<buff>
 			<name>Critical Eye [6]</name>
+			<name_fr>Maitre d'armes [6]</name_fr>
 			<level>6</level>
 			<affinity_plus>25</affinity_plus>
 		</buff>
 		<buff>
 			<name>Critical Eye [7]</name>
+			<name_fr>Maitre d'armes [7]</name_fr>
 			<level>7</level>
 			<affinity_plus>30</affinity_plus>
 		</buff>
@@ -948,18 +1116,22 @@
 
 	<buff_group id="critical_boost">
 		<name>Critical Boost</name>
+		<name_fr>Berserker</name_fr>
 		<buff>
 			<name>Critical Boost [1]</name>
+			<name_fr>Berserker [1]</name_fr>
 			<level>1</level>
 			<raw_critical_hit_multiplier>1.3</raw_critical_hit_multiplier>
 		</buff>
 		<buff>
 			<name>Critical Boost [2]</name>
+			<name_fr>Berserker [2]</name_fr>
 			<level>2</level>
 			<raw_critical_hit_multiplier>1.35</raw_critical_hit_multiplier>
 		</buff>
 		<buff>
 			<name>Critical Boost [3]</name>
+			<name_fr>Berserker [3]</name_fr>
 			<level>3</level>
 			<raw_critical_hit_multiplier>1.40</raw_critical_hit_multiplier>
 		</buff>
@@ -967,8 +1139,10 @@
 
 	<buff_group id="weakness_exploit">
 		<name>Weakness Exploit</name>
+		<name_fr>Mise à Mort</name_fr>
 		<buff>
 			<name>Weakness Exploit [1]</name>
+			<name_fr>Mise à Mort [1]</name_fr>
 			<level>1</level>
 			<weak_spot>
 				<affinity_plus>15</affinity_plus>
@@ -976,6 +1150,7 @@
 		</buff>
 		<buff>
 			<name>Weakness Exploit [2]</name>
+			<name_fr>Mise à Mort [2]</name_fr>
 			<level>2</level>
 			<weak_spot>
 				<affinity_plus>30</affinity_plus>
@@ -983,6 +1158,7 @@
 		</buff>
 		<buff>
 			<name>Weakness Exploit [3]</name>
+			<name_fr>Mise à Mort [3]</name_fr>
 			<level>3</level>
 			<weak_spot>
 				<affinity_plus>50</affinity_plus>
@@ -992,18 +1168,22 @@
 
 	<buff_group id="focus">
 		<name>Focus</name>
+		<name_fr>Concentration</name_fr>
 		<buff>
 			<name>Focus [1]</name>
+			<name_fr>Concentration [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Focus [2]</name>
+			<name_fr>Concentration [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Focus [3]</name>
+			<name_fr>Concentration [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1011,18 +1191,22 @@
 
 	<buff_group id="power_prolonger">
 		<name>Power Prolonger</name>
+		<name_fr>Puissance absolue</name_fr>
 		<buff>
 			<name>Power Prolonger [1]</name>
+			<name_fr>Puissance absolue [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Power Prolonger [2]</name>
+			<name_fr>Puissance absolue [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Power Prolonger [3]</name>
+			<name_fr>Puissance absolue [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1030,28 +1214,34 @@
 
 	<buff_group id="handicraft">
 		<name>Handicraft</name>
+		<name_fr>Savoir-faire</name_fr>
 		<buff>
 			<name>Handicraft [1]</name>
+			<name_fr>Savoir-faire [1]</name_fr>
 			<level>1</level>
 			<sharpness_plus>10</sharpness_plus>
 		</buff>
 		<buff>
 			<name>Handicraft [2]</name>
+			<name_fr>Savoir-faire [2]</name_fr>
 			<level>2</level>
 			<sharpness_plus>20</sharpness_plus>
 		</buff>
 		<buff>
 			<name>Handicraft [3]</name>
+			<name_fr>Savoir-faire [3]</name_fr>
 			<level>3</level>
 			<sharpness_plus>30</sharpness_plus>
 		</buff>
 		<buff>
 			<name>Handicraft [4]</name>
+			<name_fr>Savoir-faire [4]</name_fr>
 			<level>4</level>
 			<sharpness_plus>40</sharpness_plus>
 		</buff>
 		<buff>
 			<name>Handicraft [5]</name>
+			<name_fr>Savoir-faire [5]</name_fr>
 			<level>5</level>
 			<sharpness_plus>50</sharpness_plus>
 		</buff>
@@ -1059,8 +1249,10 @@
 
 	<buff_group id="critical_draw">
 		<name>Critical Draw</name>
+		<name_fr>Dégainage éclair</name_fr>
 		<buff>
 			<name>Critical Draw [1]</name>
+			<name_fr>Dégainage éclair [1]</name_fr>
 			<level>1</level>
 			<draw_attack>
 				<affinity_plus>30</affinity_plus>
@@ -1068,6 +1260,7 @@
 		</buff>
 		<buff>
 			<name>Critical Draw [2]</name>
+			<name_fr>Dégainage éclair [2]</name_fr>
 			<level>2</level>
 			<draw_attack>
 				<affinity_plus>60</affinity_plus>
@@ -1075,6 +1268,7 @@
 		</buff>
 		<buff>
 			<name>Critical Draw [3]</name>
+			<name_fr>Dégainage éclair [3]</name_fr>
 			<level>3</level>
 			<draw_attack>
 				<affinity_plus>100</affinity_plus>
@@ -1084,18 +1278,22 @@
 
 	<buff_group id="partbreaker">
 		<name>Partbreaker</name>
+		<name_fr>Destructeur</name_fr>
 		<buff>
 			<name>Partbreaker [1]</name>
+			<name_fr>Destructeur [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Partbreaker [2]</name>
+			<name_fr>Destructeur [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Partbreaker [3]</name>
+			<name_fr>Destructeur [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1103,18 +1301,22 @@
 
 	<buff_group id="slugger">
 		<name>Slugger</name>
+		<name_fr>Cogneur</name_fr>
 		<buff>
 			<name>Slugger [1]</name>
+			<name_fr>Cogneur [1]</name_fr>
 			<level>1</level>
 			<stun_multiplier>1.1</stun_multiplier>
 		</buff>
 		<buff>
 			<name>Slugger [2]</name>
+			<name_fr>Cogneur [2]</name_fr>
 			<level>2</level>
 			<stun_multiplier>1.2</stun_multiplier>
 		</buff>
 		<buff>
 			<name>Slugger [3]</name>
+			<name_fr>Cogneur [3]</name_fr>
 			<level>3</level>
 			<stun_multiplier>1.3</stun_multiplier>
 		</buff>
@@ -1122,18 +1324,22 @@
 
 	<buff_group id="stamina_thief">
 		<name>Stamina Thief</name>
+		<name_fr>Vol d'endurance</name_fr>
 		<buff>
 			<name>Stamina Thief [1]</name>
+			<name_fr>Vol d'endurance [1]</name_fr>
 			<level>1</level>
 			<exhaust_multiplier>1.1</exhaust_multiplier>
 		</buff>
 		<buff>
 			<name>Stamina Thief [2]</name>
+			<name_fr>Vol d'endurance [2]</name_fr>
 			<level>2</level>
 			<exhaust_multiplier>1.2</exhaust_multiplier>
 		</buff>
 		<buff>
 			<name>Stamina Thief [3]</name>
+			<name_fr>Vol d'endurance [3]</name_fr>
 			<level>3</level>
 			<exhaust_multiplier>1.3</exhaust_multiplier>
 		</buff>
@@ -1141,8 +1347,10 @@
 
 	<buff_group id="master_mounter">
 		<name>Master Mounter</name>
+		<name_fr>Maitre cavalier</name_fr>
 		<buff>
 			<name>Master Mounter [1]</name>
+			<name_fr>Maitre cavalier [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1150,8 +1358,10 @@
 
 	<buff_group id="airborne">
 		<name>Airborne</name>
+		<name_fr>Mort venue d'en haut</name_fr>
 		<buff>
 			<name>Airborne [1]</name>
+			<name_fr>Mort venue d'en haut [1]</name_fr>
 			<level>1</level>
 			<airborne>
 				<attack_multiplier>1.1</attack_multiplier>
@@ -1161,8 +1371,10 @@
 
 	<buff_group id="latent_power">
 		<name>Latent Power</name>
+		<name_fr>Force latente</name_fr>
 		<buff>
 			<name>Latent Power [1]</name>
+			<name_fr>Force latente [1]</name_fr>
 			<level>1</level>
 			<received_damage>
 				<affinity_plus>10</affinity_plus>
@@ -1170,6 +1382,7 @@
 		</buff>
 		<buff>
 			<name>Latent Power [2]</name>
+			<name_fr>Force latente [2]</name_fr>
 			<level>2</level>
 			<received_damage>
 				<affinity_plus>20</affinity_plus>
@@ -1177,6 +1390,7 @@
 		</buff>
 		<buff>
 			<name>Latent Power [3]</name>
+			<name_fr>Force latente [3]</name_fr>
 			<level>3</level>
 			<received_damage>
 				<affinity_plus>30</affinity_plus>
@@ -1184,6 +1398,7 @@
 		</buff>
 		<buff>
 			<name>Latent Power [4]</name>
+			<name_fr>Force latente [4]</name_fr>
 			<level>4</level>
 			<received_damage>
 				<affinity_plus>40</affinity_plus>
@@ -1191,6 +1406,7 @@
 		</buff>
 		<buff>
 			<name>Latent Power [5]</name>
+			<name_fr>Force latente [5]</name_fr>
 			<level>5</level>
 			<received_damage>
 				<affinity_plus>50</affinity_plus>
@@ -1200,8 +1416,10 @@
 
 	<buff_group id="agitator">
 		<name>Agitator</name>
+		<name_fr>Témérité</name_fr>
 		<buff>
 			<name>Agitator [1]</name>
+			<name_fr>Témérité [1]</name_fr>
 			<level>1</level>
 			<enraged>
 				<attack_plus>4</attack_plus>
@@ -1210,6 +1428,7 @@
 		</buff>
 		<buff>
 			<name>Agitator [2]</name>
+			<name_fr>Témérité [2]</name_fr>
 			<level>2</level>
 			<enraged>
 				<attack_plus>8</attack_plus>
@@ -1218,6 +1437,7 @@
 		</buff>
 		<buff>
 			<name>Agitator [3]</name>
+			<name_fr>Témérité [3]</name_fr>
 			<level>3</level>
 			<enraged>
 				<attack_plus>12</attack_plus>
@@ -1226,6 +1446,7 @@
 		</buff>
 		<buff>
 			<name>Agitator [4]</name>
+			<name_fr>Témérité [4]</name_fr>
 			<level>4</level>
 			<enraged>
 				<attack_plus>16</attack_plus>
@@ -1234,6 +1455,7 @@
 		</buff>
 		<buff>
 			<name>Agitator [5]</name>
+			<name_fr>Témérité [5]</name_fr>
 			<level>5</level>
 			<enraged>
 				<attack_plus>20</attack_plus>
@@ -1244,8 +1466,10 @@
 
 	<buff_group id="peak_performance">
 		<name>Peak Performance</name>
+		<name_fr>Performance optimale</name_fr>
 		<buff>
 			<name>Peak Performance [1]</name>
+			<name_fr>Performance optimale [1]</name_fr>
 			<level>1</level>
 			<full_life>
 				<attack_plus>5</attack_plus>
@@ -1253,6 +1477,7 @@
 		</buff>
 		<buff>
 			<name>Peak Performance [2]</name>
+			<name_fr>Performance optimale [2]</name_fr>
 			<level>2</level>
 			<full_life>
 				<attack_plus>10</attack_plus>
@@ -1260,6 +1485,7 @@
 		</buff>
 		<buff>
 			<name>Peak Performance [3]</name>
+			<name_fr>Performance optimale [3]</name_fr>
 			<level>3</level>
 			<full_life>
 				<attack_plus>15</attack_plus>
@@ -1269,8 +1495,10 @@
 
 	<buff_group id="heroics">
 		<name>Heroics</name>
+		<name_fr>Heroisme</name_fr>
 		<buff>
 			<name>Heroics [1]</name>
+			<name_fr>Heroisme [1]</name_fr>
 			<level>1</level>
 			<low_life>
 				<attack_multiplier>1.05</attack_multiplier>
@@ -1278,6 +1506,7 @@
 		</buff>
 		<buff>
 			<name>Heroics [2]</name>
+			<name_fr>Heroisme [2]</name_fr>
 			<level>2</level>
 			<low_life>
 				<attack_multiplier>1.1</attack_multiplier>
@@ -1285,6 +1514,7 @@
 		</buff>
 		<buff>
 			<name>Heroics [3]</name>
+			<name_fr>Heroisme [3]</name_fr>
 			<level>3</level>
 			<low_life>
 				<attack_multiplier>1.15</attack_multiplier>
@@ -1292,6 +1522,7 @@
 		</buff>
 		<buff>
 			<name>Heroics [4]</name>
+			<name_fr>Heroisme [4]</name_fr>
 			<level>4</level>
 			<low_life>
 				<attack_multiplier>1.20</attack_multiplier>
@@ -1299,6 +1530,7 @@
 		</buff>
 		<buff>
 			<name>Heroics [5]</name>
+			<name_fr>Heroisme [5]</name_fr>
 			<level>5</level>
 			<low_life>
 				<attack_multiplier>1.25</attack_multiplier>
@@ -1308,8 +1540,10 @@
 
 	<buff_group id="fortify">
 		<name>Fortify</name>
+		<name_fr>Jamais vaincu</name_fr>
 		<buff>
 			<name>Fortify [1]</name>
+			<name_fr>Jamais vaincu [1]</name_fr>
 			<level>1</level>
 			<death_1>
 				<attack_multiplier>1.1</attack_multiplier>
@@ -1322,8 +1556,10 @@
 
 	<buff_group id="resentment">
 		<name>Resentment</name>
+		<name_fr>Vengeance</name_fr>
 		<buff>
 			<name>Resentment [1]</name>
+			<name_fr>Vengeance [1]</name_fr>
 			<level>1</level>
 			<red_life>
 				<attack_plus>5</attack_plus>
@@ -1331,6 +1567,7 @@
 		</buff>
 		<buff>
 			<name>Resentment [2]</name>
+			<name_fr>Vengeance [2]</name_fr>
 			<level>2</level>
 			<red_life>
 				<attack_plus>10</attack_plus>
@@ -1338,6 +1575,7 @@
 		</buff>
 		<buff>
 			<name>Resentment [3]</name>
+			<name_fr>Vengeance [3]</name_fr>
 			<level>3</level>
 			<red_life>
 				<attack_plus>15</attack_plus>
@@ -1345,6 +1583,7 @@
 		</buff>
 		<buff>
 			<name>Resentment [4]</name>
+			<name_fr>Vengeance [4]</name_fr>
 			<level>4</level>
 			<red_life>
 				<attack_plus>20</attack_plus>
@@ -1352,6 +1591,7 @@
 		</buff>
 		<buff>
 			<name>Resentment [5]</name>
+			<name_fr>Vengeance [5]</name_fr>
 			<level>5</level>
 			<red_life>
 				<attack_plus>25</attack_plus>
@@ -1361,8 +1601,10 @@
 
 	<buff_group id="resuscitate">
 		<name>Resuscitate</name>
+		<name_fr>Esprit indomptable</name_fr>
 		<buff>
 			<name>Resuscitate [1]</name>
+			<name_fr>Esprit indomptable [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1370,8 +1612,10 @@
 
 	<buff_group id="horn_maestro">
 		<name>Horn Maestro</name>
+		<name_fr>Maestro</name_fr>
 		<buff>
 			<name>Horn Maestro [1]</name>
+			<name_fr>Maestro [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1379,8 +1623,10 @@
 
 	<buff_group id="capacity_boost">
 		<name>Capacity Boost</name>
+		<name_fr>Prêt à tirer</name_fr>
 		<buff>
 			<name>Capacity Boost [1]</name>
+			<name_fr>Prêt à tirer [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1388,13 +1634,16 @@
 
 	<buff_group id="special_ammo_boost">
 		<name>Special Ammo Boost</name>
+		<name_fr>Salve mortelle</name_fr>
 		<buff>
 			<name>Special Ammo Boost [1]</name>
+			<name_fr>Salve mortelle [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Special Ammo Boost [2]</name>
+			<name_fr>Salve mortelle [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
@@ -1402,18 +1651,22 @@
 
 	<buff_group id="artillery">
 		<name>Artillery</name>
+		<name_fr>BOUM!</name_fr>
 		<buff>
 			<name>Artillery [1]</name>
+			<name_fr>BOUM! [1]</name_fr>
 			<level>1</level>
 			<artillery_multiplier>1.1</artillery_multiplier>
 		</buff>
 		<buff>
 			<name>Artillery [2]</name>
+			<name_fr>BOUM! [2]</name_fr>
 			<level>2</level>
 			<artillery_multiplier>1.2</artillery_multiplier>
 		</buff>
 		<buff>
 			<name>Artillery [3]</name>
+			<name_fr>BOUM! [3]</name_fr>
 			<level>3</level>
 			<artillery_multiplier>1.3</artillery_multiplier>
 		</buff>
@@ -1421,13 +1674,16 @@
 
 	<buff_group id="heavy_artillery">
 		<name>Heavy Artillery</name>
+		<name_fr>Artillerie lourde</name_fr>
 		<buff>
 			<name>Heavy Artillery [1]</name>
+			<name_fr>Artillerie lourde [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Heavy Artillery [2]</name>
+			<name_fr>Artillerie lourde [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
@@ -1435,18 +1691,22 @@
 
 	<buff_group id="marathon_runner">
 		<name>Marathon Runner</name>
+		<name_fr>Marathonien</name_fr>
 		<buff>
 			<name>Marathon Runner [1]</name>
+			<name_fr>Marathonien [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Marathon Runner [2]</name>
+			<name_fr>Marathonien [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Marathon Runner [3]</name>
+			<name_fr>Marathonien [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1454,28 +1714,34 @@
 
 	<buff_group id="constitution">
 		<name>Constitution</name>
+		<name_fr>Athlète</name_fr>
 		<buff>
 			<name>Constitution [1]</name>
+			<name_fr>Athlète [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Constitution [2]</name>
+			<name_fr>Athlète [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Constitution [3]</name>
+			<name_fr>Athlète [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Constitution [4]</name>
+			<name_fr>Athlète [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Constitution [5]</name>
+			<name_fr>Athlète [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -1483,8 +1749,10 @@
 
 	<buff_group id="leap_of_faith">
 		<name>Leap of Faith</name>
+		<name_fr>Saut de la foi</name_fr>
 		<buff>
 			<name>Leap of Faith [1]</name>
+			<name_fr>Saut de la foi [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1492,18 +1760,22 @@
 
 	<buff_group id="stamina_surge">
 		<name>Stamina Surge</name>
+		<name_fr>Métabolisme</name_fr>
 		<buff>
 			<name>Stamina Surge [1]</name>
+			<name_fr>Métabolisme [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Stamina Surge [2]</name>
+			<name_fr>Métabolisme [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Stamina Surge [3]</name>
+			<name_fr>Métabolisme [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1511,18 +1783,22 @@
 
 	<buff_group id="hunger_resistance">
 		<name>Hunger Resistance</name>
+		<name_fr>Spartiate</name_fr>
 		<buff>
 			<name>Hunger Resistance [1]</name>
+			<name_fr>Spartiate [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Hunger Resistance [2]</name>
+			<name_fr>Spartiate [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Hunger Resistance [3]</name>
+			<name_fr>Spartiate [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1530,28 +1806,34 @@
 
 	<buff_group id="evade_window">
 		<name>Evade Window</name>
+		<name_fr>Invulnérabilité</name_fr>
 		<buff>
 			<name>Evade Window [1]</name>
+			<name_fr>Invulnérabilité [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Evade Window [2]</name>
+			<name_fr>Invulnérabilité [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Evade Window [3]</name>
+			<name_fr>Invulnérabilité [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Evade Window [4]</name>
+			<name_fr>Invulnérabilité [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Evade Window [5]</name>
+			<name_fr>Invulnérabilité [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -1559,18 +1841,22 @@
 
 	<buff_group id="evade_extender">
 		<name>Evade Extender</name>
+		<name_fr>Trompe-la-mort</name_fr>
 		<buff>
 			<name>Evade Extender [1]</name>
+			<name_fr>Trompe-la-mort [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Evade Extender [2]</name>
+			<name_fr>Trompe-la-mort [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Evade Extender [3]</name>
+			<name_fr>Trompe-la-mort [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1578,28 +1864,34 @@
 
 	<buff_group id="guard">
 		<name>Guard</name>
+		<name_fr>Paladin</name_fr>
 		<buff>
 			<name>Guard [1]</name>
+			<name_fr>Paladin [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Guard [2]</name>
+			<name_fr>Paladin [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Guard [3]</name>
+			<name_fr>Paladin [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Guard [4]</name>
+			<name_fr>Paladin [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Guard [5]</name>
+			<name_fr>Paladin [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -1607,18 +1899,22 @@
 
 	<buff_group id="quick_sheath">
 		<name>Quick Sheath</name>
+		<name_fr>Rengainage éclair</name_fr>
 		<buff>
 			<name>Quick Sheath [1]</name>
+			<name_fr>Rengainage éclair [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Quick Sheath [2]</name>
+			<name_fr>Rengainage éclair [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Quick Sheath [3]</name>
+			<name_fr>Rengainage éclair [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1626,28 +1922,34 @@
 
 	<buff_group id="wide_range">
 		<name>Wide-Range</name>
+		<name_fr>Un pour tous</name_fr>
 		<buff>
 			<name>Wide-Range [1]</name>
+			<name_fr>Un pour tous [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Wide-Range [2]</name>
+			<name_fr>Un pour tous [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Wide-Range [3]</name>
+			<name_fr>Un pour tous [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Wide-Range [4]</name>
+			<name_fr>Un pour tous [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Wide-Range [5]</name>
+			<name_fr>Un pour tous [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -1655,18 +1957,22 @@
 
 	<buff_group id="item_prolonger">
 		<name>Item Prolonger</name>
+		<name_fr>Chimiste</name_fr>
 		<buff>
 			<name>Item Prolonger [1]</name>
+			<name_fr>Chimiste [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Item Prolonger [2]</name>
+			<name_fr>Chimiste [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Item Prolonger [3]</name>
+			<name_fr>Chimiste [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1674,8 +1980,10 @@
 
 	<buff_group id="free_meal">
 		<name>Free Meal</name>
+		<name_fr>Pique-assiette</name_fr>
 		<buff>
 			<name>Free Meal [1]</name>
+			<name_fr>Pique-assiette [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1683,18 +1991,22 @@
 
 	<buff_group id="speed_eating">
 		<name>Speed Eating</name>
+		<name_fr>Carnassier</name_fr>
 		<buff>
 			<name>Speed Eating [1]</name>
+			<name_fr>Carnassier [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Speed Eating [2]</name>
+			<name_fr>Carnassier [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Speed Eating [3]</name>
+			<name_fr>Carnassier [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1702,18 +2014,22 @@
 
 	<buff_group id="speed_sharpening">
 		<name>Speed Sharpening</name>
+		<name_fr>Affûtage rapide</name_fr>
 		<buff>
 			<name>Speed Sharpening [1]</name>
+			<name_fr>Affûtage rapide [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Speed Sharpening [2]</name>
+			<name_fr>Affûtage rapide [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Speed Sharpening [3]</name>
+			<name_fr>Affûtage rapide [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1721,18 +2037,22 @@
 
 	<buff_group id="bombardier">
 		<name>Bombardier</name>
+		<name_fr>Bombardier</name_fr>
 		<buff>
 			<name>Bombardier [1]</name>
+			<name_fr>Bombardier [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Bombardier [2]</name>
+			<name_fr>Bombardier [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Bombardier [3]</name>
+			<name_fr>Bombardier [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1740,18 +2060,22 @@
 
 	<buff_group id="mushroomancer">
 		<name>Mushroomancer</name>
+		<name_fr>Mycologue extrême</name_fr>
 		<buff>
 			<name>Mushroomancer [1]</name>
+			<name_fr>Mycologue extrême [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Mushroomancer [2]</name>
+			<name_fr>Mycologue extrême [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Mushroomancer [3]</name>
+			<name_fr>Mycologue extrême [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1759,8 +2083,10 @@
 
 	<buff_group id="master_fisher">
 		<name>Master Fisher</name>
+		<name_fr>Maitre de la pêche</name_fr>
 		<buff>
 			<name>Master Fisher [1]</name>
+			<name_fr>Maitre de la pêche [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1768,8 +2094,10 @@
 
 	<buff_group id="pro_transporter">
 		<name>Pro Transporter</name>
+		<name_fr>Pro du transport</name_fr>
 		<buff>
 			<name>Pro Transporter [1]</name>
+			<name_fr>Pro du transport [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1777,8 +2105,10 @@
 
 	<buff_group id="master_gatherer">
 		<name>Master Gatherer</name>
+		<name_fr>Prince de la cueillette</name_fr>
 		<buff>
 			<name>Master Gatherer [1]</name>
+			<name_fr>Prince de la cueillette [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1786,8 +2116,10 @@
 
 	<buff_group id="honey_hunter">
 		<name>Honey Hunter</name>
+		<name_fr>Amoureux du miel</name_fr>
 		<buff>
 			<name>Honey Hunter [1]</name>
+			<name_fr>Amoureux du miel [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1795,8 +2127,10 @@
 
 	<buff_group id="carving_pro">
 		<name>Carving Pro</name>
+		<name_fr>Expert en dépeçage</name_fr>
 		<buff>
 			<name>Carving Pro [1]</name>
+			<name_fr>Expert en dépeçage [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1804,18 +2138,22 @@
 
 	<buff_group id="divine_blessing">
 		<name>Divine Blessing</name>
+		<name_fr>Bénédiction</name_fr>
 		<buff>
 			<name>Divine Blessing [1]</name>
+			<name_fr>Bénédiction [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Divine Blessing [2]</name>
+			<name_fr>Bénédiction [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Divine Blessing [3]</name>
+			<name_fr>Bénédiction [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1823,28 +2161,34 @@
 
 	<buff_group id="palico_rally">
 		<name>Palico Rally</name>
+		<name_fr>Esprit Palico</name_fr>
 		<buff>
 			<name>Palico Rally [1]</name>
+			<name_fr>Esprit Palico [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Palico Rally [2]</name>
+			<name_fr>Esprit Palico [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Palico Rally [3]</name>
+			<name_fr>Esprit Palico [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Palico Rally [4]</name>
+			<name_fr>Esprit Palico [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Palico Rally [5]</name>
+			<name_fr>Esprit Palico [5]</name_fr>
 			<level>5</level>
 			<!-- not implemented -->
 		</buff>
@@ -1852,23 +2196,28 @@
 
 	<buff_group id="botanist">
 		<name>Botanist</name>
+		<name_fr>Botaniste</name_fr>
 		<buff>
 			<name>Botanist [1]</name>
+			<name_fr>Botaniste [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Botanist [2]</name>
+			<name_fr>Botaniste [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Botanist [3]</name>
+			<name_fr>Botaniste [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Botanist [4]</name>
+			<name_fr>Botaniste [4]</name_fr>
 			<level>4</level>
 			<!-- not implemented -->
 		</buff>
@@ -1876,18 +2225,22 @@
 
 	<buff_group id="geologist">
 		<name>Geologist</name>
+		<name_fr>Géologiste</name_fr>
 		<buff>
 			<name>Geologist [1]</name>
+			<name_fr>Géologiste [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Geologist [2]</name>
+			<name_fr>Géologiste [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Geologist [3]</name>
+			<name_fr>Géologiste [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1895,8 +2248,10 @@
 
 	<buff_group id="maximum_might">
 		<name>Maximum Might</name>
+		<name_fr>Corps et âme</name_fr>
 		<buff>
 			<name>Maximum Might [1]</name>
+			<name_fr>Corps et âme [1]</name_fr>
 			<level>1</level>
 			<full_stamina>
 				<affinity_plus>10</affinity_plus>
@@ -1904,6 +2259,7 @@
 		</buff>
 		<buff>
 			<name>Maximum Might [2]</name>
+			<name_fr>Corps et âme [2]</name_fr>
 			<level>2</level>
 			<full_stamina>
 				<affinity_plus>20</affinity_plus>
@@ -1911,6 +2267,7 @@
 		</buff>
 		<buff>
 			<name>Maximum Might [3]</name>
+			<name_fr>Corps et âme [3]</name_fr>
 			<level>3</level>
 			<full_stamina>
 				<affinity_plus>30</affinity_plus>
@@ -1920,18 +2277,22 @@
 
 	<buff_group id="slinger_capacity">
 		<name>Slinger Capacity</name>
+		<name_fr>Fronde +</name_fr>
 		<buff>
 			<name>Slinger Capacity [1]</name>
+			<name_fr>Fronde + [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Slinger Capacity [2]</name>
+			<name_fr>Fronde + [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Slinger Capacity [3]</name>
+			<name_fr>Fronde + [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1939,18 +2300,22 @@
 
 	<buff_group id="stealth">
 		<name>Stealth</name>
+		<name_fr>Furtivité</name_fr>
 		<buff>
 			<name>Stealth [1]</name>
+			<name_fr>Furtivité [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Stealth [2]</name>
+			<name_fr>Furtivité [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Stealth [3]</name>
+			<name_fr>Furtivité [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1958,18 +2323,22 @@
 
 	<buff_group id="flinch_free">
 		<name>Flinch Free</name>
+		<name_fr>Nerfs d'acier</name_fr>
 		<buff>
 			<name>Flinch Free [1]</name>
+			<name_fr>Nerfs d'acier [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Flinch Free [2]</name>
+			<name_fr>Nerfs d'acier [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Flinch Free [3]</name>
+			<name_fr>Nerfs d'acier [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -1977,8 +2346,10 @@
 
 	<buff_group id="scoutfly_range_up">
 		<name>Scoutfly Range Up</name>
+		<name_fr>Pistage</name_fr>
 		<buff>
 			<name>Scoutfly Range Up [1]</name>
+			<name_fr>Pistage [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1986,8 +2357,10 @@
 
 	<buff_group id="speed_crawler">
 		<name>Speed Crawler</name>
+		<name_fr>Rampeur Rapide</name_fr>
 		<buff>
 			<name>Speed Crawler [1]</name>
+			<name_fr>Rampeur Rapide [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -1995,8 +2368,10 @@
 
 	<buff_group id="jump_master">
 		<name>Jump Master</name>
+		<name_fr>Acrobate</name_fr>
 		<buff>
 			<name>Jump Master [1]</name>
+			<name_fr>Acrobate [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2004,18 +2379,22 @@
 
 	<buff_group id="sporepuff_expert">
 		<name>Sporepuff Expert</name>
+		<name_fr>Expert sporenlit</name_fr>
 		<buff>
 			<name>Sporepuff Expert [1]</name>
+			<name_fr>Expert sporenlit [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Sporepuff Expert [2]</name>
+			<name_fr>Expert sporenlit [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Sporepuff Expert [3]</name>
+			<name_fr>Expert sporenlit [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -2023,18 +2402,22 @@
 
 	<buff_group id="aquatic_expert">
 		<name>Aquatic Expert</name>
+		<name_fr>Homme-poisson</name_fr>
 		<buff>
 			<name>Aquatic Expert [1]</name>
+			<name_fr>Homme-poisson [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Aquatic Expert [2]</name>
+			<name_fr>Homme-poisson [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Aquatic Expert [3]</name>
+			<name_fr>Homme-poisson [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -2042,8 +2425,10 @@
 
 	<buff_group id="cliffhanger">
 		<name>Cliffhanger</name>
+		<name_fr>Monte-en-l'air</name_fr>
 		<buff>
 			<name>Cliffhanger [1]</name>
+			<name_fr>Monte-en-l'air [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2051,8 +2436,10 @@
 
 	<buff_group id="blindsider">
 		<name>Blindsider</name>
+		<name_fr>Aveuglement</name_fr>
 		<buff>
 			<name>Blindsider [1]</name>
+			<name_fr>Aveuglement [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2060,8 +2447,10 @@
 
 	<buff_group id="scholar">
 		<name>Scholar</name>
+		<name_fr>Puits de science</name_fr>
 		<buff>
 			<name>Scholar [1]</name>
+			<name_fr>Puits de science [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2069,18 +2458,22 @@
 
 	<buff_group id="entomologist">
 		<name>Entomologist</name>
+		<name_fr>Entomologiste</name_fr>
 		<buff>
 			<name>Entomologist [1]</name>
+			<name_fr>Entomologiste [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Entomologist [2]</name>
+			<name_fr>Entomologiste [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Entomologist [3]</name>
+			<name_fr>Entomologiste [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -2088,18 +2481,22 @@
 
 	<buff_group id="effluvia_resistance">
 		<name>Effluvia Resistance</name>
+		<name_fr>Purification</name_fr>
 		<buff>
 			<name>Effluvia Resistance [1]</name>
+			<name_fr>Purification [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Effluvia Resistance [2]</name>
+			<name_fr>Purification [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Effluvia Resistance [3]</name>
+			<name_fr>Purification [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -2107,8 +2504,10 @@
 
 	<buff_group id="scenthound">
 		<name>Scenthound</name>
+		<name_fr>Instinct Animal</name_fr>
 		<buff>
 			<name>Scenthound [1]</name>
+			<name_fr>Instinct Animal [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2116,8 +2515,10 @@
 
 	<buff_group id="foragers_luck">
 		<name>Forager's Luck</name>
+		<name_fr>Chance du foreur</name_fr>
 		<buff>
 			<name>Forager's Luck [1]</name>
+			<name_fr>Chance du foreur [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2125,8 +2526,10 @@
 
 	<buff_group id="detector">
 		<name>Detector</name>
+		<name_fr>Détecteur</name_fr>
 		<buff>
 			<name>Detector [1]</name>
+			<name_fr>Détecteur [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2134,8 +2537,10 @@
 
 	<buff_group id="bbq_master">
 		<name>BBQ Master</name>
+		<name_fr>Roi du BBQ</name_fr>
 		<buff>
 			<name>BBQ Master [1]</name>
+			<name_fr>Roi du BBQ [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
@@ -2143,18 +2548,22 @@
 
 	<buff_group id="tool_specialist">
 		<name>Tool Specialist</name>
+		<name_fr>Expert en survie</name_fr>
 		<buff>
 			<name>Tool Specialist [1]</name>
+			<name_fr>Expert en survie [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Tool Specialist [2]</name>
+			<name_fr>Expert en survie [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Tool Specialist [3]</name>
+			<name_fr>Expert en survie [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -2162,8 +2571,10 @@
 
 	<buff_group id="affinity_sliding">
 		<name>Affinity Sliding</name>
+		<name_fr>Roi de la glisse</name_fr>
 		<buff>
 			<name>Affinity Sliding [1]</name>
+			<name_fr>Roi de la glisse [1]</name_fr>
 			<level>1</level>
 			<sliding>
 				<affinity_plus>30</affinity_plus>
@@ -2173,18 +2584,22 @@
 
 	<buff_group id="intimidator">
 		<name>Intimidator</name>
+		<name_fr>Intimidation</name_fr>
 		<buff>
 			<name>Intimidator [1]</name>
+			<name_fr>Intimidation [1]</name_fr>
 			<level>1</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Intimidator [2]</name>
+			<name_fr>Intimidation [2]</name_fr>
 			<level>2</level>
 			<!-- not implemented -->
 		</buff>
 		<buff>
 			<name>Intimidator [3]</name>
+			<name_fr>Intimidation [3]</name_fr>
 			<level>3</level>
 			<!-- not implemented -->
 		</buff>
@@ -2192,48 +2607,60 @@
 
 	<buff_group id="hasten_recovery">
 		<name>Hasten Recovery</name>
+		<name_fr>Récupération rapide</name_fr>
 		<buff>
 			<name>Hasten Recovery</name>
+			<name_fr>Récupération rapide</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="super_recovery">
 		<name>Super Recovery</name>
+		<name_fr>Super récupération</name_fr>
 		<buff>
 			<name>Super Recovery</name>
+			<name_fr>Super récupération</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="poison_duration_up">
 		<name>Poison Duration Up</name>
+		<name_fr>Poison +</name_fr>
 		<buff>
 			<name>Poison Duration Up</name>
+			<name_fr>Poison +</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="adrenaline">
 		<name>Adrenaline</name>
+		<name_fr>Adrénaline</name_fr>
 		<buff>
 			<name>Adrenaline</name>
+			<name_fr>Adrénaline</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="stamina_cap_up">
 		<name>Stamina Cap Up</name>
+		<name_fr>Stamina +</name_fr>
 		<buff>
 			<name>Stamina Cap Up</name>
+			<name_fr>Stamina +</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="critical_element">
 		<name>Critical Element</name>
+		<name_fr>Rage élémentaire</name_fr>
 		<buff>
 			<name>Critical Element</name>
+			<name_fr>Rage élémentaire</name_fr>
 			<element_critical_hit_multiplier>1.25</element_critical_hit_multiplier>
 		</buff>
 	</buff_group>
@@ -2248,16 +2675,20 @@
 
 	<buff_group id="bludgeoner">
 		<name>Bludgeoner</name>
+		<name_fr>Matraquage</name_fr>
 		<buff>
 			<name>Bludgeoner</name>
+			<name_fr>Matraquage</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="non_elemental_boost">
 		<name>Non-elemental Boost</name>
+		<name_fr>Secret de l'acier</name_fr>
 		<buff>
 			<name>Non-elemental Boost</name>
+			<name_fr>Secret de l'acier</name_fr>
 			<raw_weapon>
 				<attack_multiplier>1.1</attack_multiplier>
 			</raw_weapon>
@@ -2266,24 +2697,30 @@
 
 	<buff_group id="capture_master">
 		<name>Capture Master</name>
+		<name_fr>Maître capture</name_fr>
 		<buff>
 			<name>Capture Master</name>
+			<name_fr>Maître capture</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="guard_up">
 		<name>Guard Up</name>
+		<name_fr>Ultra garde</name_fr>
 		<buff>
 			<name>Guard Up</name>
+			<name_fr>Ultra garde</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="guts">
 		<name>Guts</name>
+		<name_fr>Bravoure</name_fr>
 		<buff>
 			<name>Guts</name>
+			<name_fr>Bravoure</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2298,48 +2735,60 @@
 
 	<buff_group id="nullify_wind_pressure">
 		<name>Nullify Wind Pressure</name>
+		<name_fr>Anti-vent</name_fr>
 		<buff>
 			<name>Nullify Wind Pressure</name>
+			<name_fr>Anti-vent</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="razor_sharp_spare_shot">
 		<name>Razor Sharp/Spare Shot</name>
+		<name_fr>Samouraï/Franc-tireur</name_fr>
 		<buff>
 			<name>Razor Sharp/Spare Shot</name>
+			<name_fr>Samouraï/Franc-tireur</name_fr>
 			<sharpness_use_multiplier>0.5</sharpness_use_multiplier>
 		</buff>
 	</buff_group>
 
 	<buff_group id="critical_status">
 		<name>Critical Status</name>
+		<name_fr>Attaque perfide</name_fr>
 		<buff>
 			<name>Critical Status</name>
+			<name_fr>Attaque perfide</name_fr>
 			<status_critical_hit_multiplier>1.25</status_critical_hit_multiplier>
 		</buff>
 	</buff_group>
 
 	<buff_group id="good_luck">
 		<name>Good Luck</name>
+		<name_fr>Chance</name_fr>
 		<buff>
 			<name>Good Luck</name>
+			<name_fr>Chance</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="bow_charge_plus">
 		<name>Bow Charge Plus</name>
+		<name_fr>Maître archer</name_fr>
 		<buff>
 			<name>Bow Charge Plus</name>
+			<name_fr>Maître archer</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="punishing_draw">
 		<name>Punishing Draw</name>
+		<name_fr>Batto-jutsu</name_fr>
 		<buff>
 			<name>Punishing Draw</name>
+			<name_fr>Batto-jutsu</name_fr>
 			<draw_attack_stun>30</draw_attack_stun>
 			<draw_attack_exhaust>30</draw_attack_exhaust>
 			<draw_attack>
@@ -2350,48 +2799,60 @@
 
 	<buff_group id="protective_polish">
 		<name>Protective Polish</name>
+		<name_fr>Acier trempé</name_fr>
 		<buff>
 			<name>Protective Polish</name>
+			<name_fr>Acier trempé</name_fr>
 			<max_sharpness_time>60.0</max_sharpness_time>
 		</buff>
 	</buff_group>
 
-	<buff_group id = "poison_functionality">
+	<buff_group id="poison_functionality">
 		<name>Poison Functionality</name>
+		<name_fr>Apothicaire</name_fr>
 		<buff>
 			<name>Poison Functionality</name>
+			<name_fr>Apothicaire</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
-	<buff_group id = "para_functionality">
+	<buff_group id="para_functionality">
 		<name>Para Functionality</name>
+		<name_fr>Gibier de potence</name_fr>
 		<buff>
 			<name>Para Functionality</name>
+			<name_fr>Gibier de potence</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
-	<buff_group id = "sleep_functionality">
+	<buff_group id="sleep_functionality">
 		<name>Sleep Functionality</name>
+		<name_fr>Marchand de sable</name_fr>
 		<buff>
 			<name>Sleep Functionality</name>
+			<name_fr>Marchand de sable</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
-	<buff_group id = "blast_functionality">
+	<buff_group id="blast_functionality">
 		<name>Blast Functionality</name>
+		<name_fr>Maître bombardier</name_fr>
 		<buff>
 			<name>Blast Functionality</name>
+			<name_fr>Maître bombardier</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
-	<buff_group id = "elderseal_boost">
+	<buff_group id="elderseal_boost">
 		<name>Elderseal Boost</name>
+		<name_fr>Sceau des anciens +</name_fr>
 		<buff>
 			<name>Elderseal Boost</name>
+			<name_fr>Sceau des anciens +</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>

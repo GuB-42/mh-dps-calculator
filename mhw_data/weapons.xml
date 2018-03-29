@@ -1073,8 +1073,45 @@
             <inflated_dragon>180</inflated_dragon>
             <dragon>18</dragon>
         </element>
+        <elderseal>low</elderseal>
         <slots>
             <slot>3</slot>
+            <slot>3</slot>
+        </slots>
+        <rare>8</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>bow</type>
+        <name>Cross Hunter's Bow</name>
+        <name_fr>Arc du traqueur</name_fr>
+        <name_jp>クロスハンターボウ</name_jp>
+        <inflated_attack>216</inflated_attack>
+        <attack>180</attack>
+        <element>
+            <inflated_blast>120</inflated_blast>
+            <blast>12</blast>
+        </element>
+        <defense>20</defense>
+        <slots>
+            <slot>3</slot>
+        </slots>
+        <rare>6</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>bow</type>
+        <name>Great Hunter's Bow</name>
+        <name_fr>Grand arc de chasseur</name_fr>
+        <name_jp>グレイトハンターボウ</name_jp>
+        <inflated_attack>228</inflated_attack>
+        <attack>190</attack>
+        <element>
+            <inflated_blast>150</inflated_blast>
+            <blast>15</blast>
+        </element>
+        <defense>20</defense>
+        <slots>
             <slot>3</slot>
         </slots>
         <rare>8</rare>
@@ -1118,39 +1155,35 @@
     </weapon>
     <weapon>
         <type>bow</type>
-        <name>Cross Hunter's Bow</name>
-        <name_fr>Arc du traqueur</name_fr>
-        <name_jp>クロスハンターボウ</name_jp>
-        <inflated_attack>216</inflated_attack>
-        <attack>180</attack>
+        <name>Aloy's Bow</name>
+        <inflated_attack>168</inflated_attack>
+        <attack>140</attack>
+        <affinity>20</affinity>
+        <awakened>true</awakened>
         <element>
-            <inflated_blast>120</inflated_blast>
-            <blast>12</blast>
+            <inflated_thunder>180</inflated_thunder>
+            <thunder>18</thunder>
         </element>
-        <defense>20</defense>
+        <slots>
+            <slot>2</slot>
+        </slots>
+        <rare>5</rare>
+    </weapon>
+    <weapon>
+        <type>bow</type>
+        <name>Aloy's War Bow</name>
+        <inflated_attack>192</inflated_attack>
+        <attack>160</attack>
+        <affinity>30</affinity>
+        <awakened>true</awakened>
+        <element>
+            <inflated_thunder>240</inflated_thunder>
+            <thunder>24</thunder>
+        </element>
         <slots>
             <slot>3</slot>
         </slots>
         <rare>6</rare>
-        <creatable>true</creatable>
-    </weapon>
-    <weapon>
-        <type>bow</type>
-        <name>Great Hunter's Bow</name>
-        <name_fr>Grand arc de chasseur</name_fr>
-        <name_jp>グレイトハンターボウ</name_jp>
-        <inflated_attack>228</inflated_attack>
-        <attack>190</attack>
-        <element>
-            <inflated_blast>150</inflated_blast>
-            <blast>15</blast>
-        </element>
-        <defense>20</defense>
-        <slots>
-            <slot>3</slot>
-        </slots>
-        <rare>8</rare>
-        <final>true</final>
     </weapon>
     <weapon>
         <type>charge_blade</type>
@@ -1831,8 +1864,8 @@
             <red>90</red>
             <orange>50</orange>
             <yellow>50</yellow>
-            <green>30</green>
-            <blue>130</blue>
+            <green>80</green>
+            <blue>80</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -2120,8 +2153,8 @@
             <red>110</red>
             <orange>100</orange>
             <yellow>40</yellow>
-            <green>50</green>
-            <blue>50</blue>
+            <green>40</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <rare>6</rare>
@@ -2977,8 +3010,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>10</yellow>
-            <green>70</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -3775,8 +3808,8 @@
             <red>60</red>
             <orange>50</orange>
             <yellow>60</yellow>
-            <green>70</green>
-            <blue>120</blue>
+            <green>120</green>
+            <blue>70</blue>
             <white>40</white>
             <plus>50</plus>
         </sharpness>
@@ -4114,12 +4147,11 @@
         </element>
         <defense>15</defense>
         <sharpness>
-            <red>90</red>
-            <orange>50</orange>
-            <yellow>60</yellow>
-            <green>120</green>
-            <blue>60</blue>
-            <white>20</white>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>40</green>
+            <blue>70</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -7487,8 +7519,8 @@
             <red>110</red>
             <orange>50</orange>
             <yellow>50</yellow>
-            <green>90</green>
-            <blue>50</blue>
+            <green>80</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -8749,8 +8781,9 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>80</yellow>
-            <green>20</green>
+            <yellow>40</yellow>
+            <green>40</green>
+            <blue>20</blue>
             <plus>50</plus>
         </sharpness>
         <rare>6</rare>
@@ -10443,8 +10476,8 @@
             <red>110</red>
             <orange>100</orange>
             <yellow>40</yellow>
-            <green>50</green>
-            <blue>50</blue>
+            <green>40</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <rare>6</rare>
@@ -10605,8 +10638,8 @@
         </element>
         <elderseal>low</elderseal>
         <sharpness>
-            <red>100</red>
-            <orange>160</orange>
+            <red>150</red>
+            <orange>110</orange>
             <yellow>40</yellow>
             <green>40</green>
             <blue>10</blue>
@@ -10630,8 +10663,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -13071,8 +13104,8 @@
             <red>110</red>
             <orange>100</orange>
             <yellow>40</yellow>
-            <green>50</green>
-            <blue>50</blue>
+            <green>40</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -13527,8 +13560,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -14950,8 +14983,8 @@
             <red>110</red>
             <orange>100</orange>
             <yellow>40</yellow>
-            <green>50</green>
-            <blue>50</blue>
+            <green>40</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -15393,8 +15426,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -16077,8 +16110,8 @@
             <red>110</red>
             <orange>50</orange>
             <yellow>50</yellow>
-            <green>90</green>
-            <blue>50</blue>
+            <green>80</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -16187,8 +16220,8 @@
             <red>110</red>
             <orange>50</orange>
             <yellow>50</yellow>
-            <green>30</green>
-            <blue>110</blue>
+            <green>80</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -16310,8 +16343,8 @@
             <red>110</red>
             <orange>50</orange>
             <yellow>50</yellow>
-            <green>90</green>
-            <blue>50</blue>
+            <green>80</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -17138,9 +17171,9 @@
             <red>110</red>
             <orange>100</orange>
             <yellow>40</yellow>
-            <green>50</green>
-            <blue>40</blue>
-            <plus>40</plus>
+            <green>40</green>
+            <blue>60</blue>
+            <plus>50</plus>
         </sharpness>
         <rare>6</rare>
     </weapon>
@@ -17272,8 +17305,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -17378,8 +17411,8 @@
             <red>120</red>
             <orange>120</orange>
             <yellow>40</yellow>
-            <green>60</green>
-            <blue>60</blue>
+            <green>50</green>
+            <blue>70</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -19041,8 +19074,9 @@
         <sharpness>
             <red>110</red>
             <orange>50</orange>
-            <yellow>140</yellow>
-            <green>50</green>
+            <yellow>50</yellow>
+            <green>80</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -20108,8 +20142,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -21593,8 +21627,8 @@
             <power />
         </phial>
         <sharpness>
-            <red>180</red>
-            <orange>20</orange>
+            <red>130</red>
+            <orange>70</orange>
             <yellow>30</yellow>
             <green>100</green>
             <blue>20</blue>
@@ -21899,8 +21933,8 @@
             <red>110</red>
             <orange>50</orange>
             <yellow>50</yellow>
-            <green>90</green>
-            <blue>50</blue>
+            <green>80</green>
+            <blue>60</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -22244,8 +22278,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>
@@ -24354,8 +24388,8 @@
         <sharpness>
             <red>140</red>
             <orange>110</orange>
-            <yellow>50</yellow>
-            <green>30</green>
+            <yellow>40</yellow>
+            <green>40</green>
             <blue>20</blue>
             <plus>50</plus>
         </sharpness>

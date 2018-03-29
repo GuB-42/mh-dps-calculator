@@ -5868,126 +5868,129 @@
 <!-- monsters -->
 
 <translation>
-    <name>Anjanath</name>
-    <name_jp>アンジャナフ</name_jp>
+	<name>Anjanath</name>
+	<name_jp>アンジャナフ</name_jp>
 </translation>
 <translation>
-    <name>Azure Rathalos</name>
-    <name_jp>リオレウス亜種</name_jp>
+	<name>Azure Rathalos</name>
+	<name_jp>リオレウス亜種</name_jp>
 </translation>
 <translation>
-    <name>Barroth</name>
-    <name_jp>ボルボロス</name_jp>
+	<name>Barroth</name>
+	<name_jp>ボルボロス</name_jp>
 </translation>
 <translation>
-    <name>Bazelgeuse</name>
-    <name_jp>バゼルギウス</name_jp>
+	<name>Bazelgeuse</name>
+	<name_jp>バゼルギウス</name_jp>
 </translation>
 <translation>
-    <name>Black Diablos</name>
-    <name_jp>ディアブロス亜種</name_jp>
+	<name>Black Diablos</name>
+	<name_jp>ディアブロス亜種</name_jp>
 </translation>
 <translation>
-    <name>Diablos</name>
-    <name_jp>ディアブロス</name_jp>
+	<name>Diablos</name>
+	<name_jp>ディアブロス</name_jp>
 </translation>
 <translation>
-    <name>Dodogama</name>
-    <name_jp>ドドガマル</name_jp>
+	<name>Dodogama</name>
+	<name_jp>ドドガマル</name_jp>
 </translation>
 <translation>
-    <name>Great Girros</name>
-    <name_jp>ドスギルオス</name_jp>
+	<name>Great Girros</name>
+	<name_jp>ドスギルオス</name_jp>
 </translation>
 <translation>
-    <name>Great Jagras</name>
-    <name_jp>ドスジャグラス</name_jp>
+	<name>Great Jagras</name>
+	<name_jp>ドスジャグラス</name_jp>
 </translation>
 <translation>
-    <name>Jyuratodus</name>
-    <name_jp>ジュラトドス</name_jp>
+	<name>Jyuratodus</name>
+	<name_jp>ジュラトドス</name_jp>
 </translation>
 <translation>
-    <name>Kirin</name>
-    <name_jp>キリン</name_jp>
+	<name>Kirin</name>
+	<name_jp>キリン</name_jp>
 </translation>
 <translation>
-    <name>Kulu-Ya-Ku</name>
-    <name_jp>クルルヤック</name_jp>
+	<name>Kulu-Ya-Ku</name>
+	<name_jp>クルルヤック</name_jp>
 </translation>
 <translation>
-    <name>Kushala Daora</name>
-    <name_jp>クシャルダオラ</name_jp>
+	<name>Kushala Daora</name>
+	<name_jp>クシャルダオラ</name_jp>
 </translation>
 <translation>
-    <name>Lavasioth</name>
-    <name_jp>ヴォルガノス</name_jp>
+	<name>Lavasioth</name>
+	<name_jp>ヴォルガノス</name_jp>
 </translation>
 <translation>
-    <name>Legiana</name>
-    <name_jp>レイギエナ</name_jp>
+	<name>Legiana</name>
+	<name_jp>レイギエナ</name_jp>
 </translation>
 <translation>
-    <name>Nergigante</name>
-    <name_jp>ネルギガンテ</name_jp>
+	<name>Nergigante</name>
+	<name_jp>ネルギガンテ</name_jp>
 </translation>
 <translation>
-    <name>Odogaron</name>
-    <name_jp>オドガロン</name_jp>
+	<name>Odogaron</name>
+	<name_jp>オドガロン</name_jp>
 </translation>
 <translation>
-    <name>Paolumu</name>
-    <name_jp>パオウルムー</name_jp>
+	<name>Paolumu</name>
+	<name_jp>パオウルムー</name_jp>
 </translation>
 <translation>
-    <name>Pink Rathian</name>
-    <name_jp>リオレイア亜種</name_jp>
+	<name>Pink Rathian</name>
+	<name_jp>リオレイア亜種</name_jp>
 </translation>
 <translation>
-    <name>Pukei-Pukei</name>
-    <name_jp>プケプケ</name_jp>
+	<name>Pukei-Pukei</name>
+	<name_jp>プケプケ</name_jp>
 </translation>
 <translation>
-    <name>Radobaan</name>
-    <name_jp>ラドバルキン</name_jp>
+	<name>Radobaan</name>
+	<name_jp>ラドバルキン</name_jp>
 </translation>
 <translation>
-    <name>Rathalos</name>
-    <name_jp>リオレウス</name_jp>
+	<name>Rathalos</name>
+	<name_jp>リオレウス</name_jp>
 </translation>
 <translation>
-    <name>Rathian</name>
-    <name_jp>リオレイア</name_jp>
+	<name>Rathian</name>
+	<name_jp>リオレイア</name_jp>
 </translation>
 <translation>
-    <name>Teostra</name>
-    <name_jp>テオ・テスカトル</name_jp>
+	<name>Teostra</name>
+	<name_jp>テオ・テスカトル</name_jp>
 </translation>
 <translation>
-    <name>Tobi-Kadachi</name>
-    <name_jp>トビカガチ</name_jp>
+	<name>Tobi-Kadachi</name>
+	<name_jp>トビカガチ</name_jp>
 </translation>
 <translation>
-    <name>Tzitzi-Ya-Ku</name>
-    <name_jp>ツィツィヤック</name_jp>
+	<name>Tzitzi-Ya-Ku</name>
+	<name_jp>ツィツィヤック</name_jp>
 </translation>
 <translation>
-    <name>Uragaan</name>
-    <name_jp>ウラガンキン</name_jp>
+	<name>Uragaan</name>
+	<name_jp>ウラガンキン</name_jp>
 </translation>
 <translation>
-    <name>Vaal Hazak</name>
-    <name_jp>ヴァルハザク</name_jp>
+	<name>Vaal Hazak</name>
+	<name_jp>ヴァルハザク</name_jp>
 </translation>
 <translation>
-    <name>Xeno'jiiva</name>
-    <name_jp>ゼノ・ジーヴァ</name_jp>
+	<name>Xeno'jiiva</name>
+	<name_jp>ゼノ・ジーヴァ</name_jp>
 </translation>
 <translation>
-    <name>Zorah Magdaros</name>
-    <name_jp>ゾラ・マグダラオス</name_jp>
+	<name>Zorah Magdaros</name>
+	<name_jp>ゾラ・マグダラオス</name_jp>
 </translation>
-
+<translation>
+	<name>Deviljho</name>
+	<name_jp>イビルジョー</name_jp>
+</translation>
 <!-- parts -->
 
 <translation>
@@ -6045,6 +6048,14 @@
 <translation>
 	<name>Hindleg</name>
 	<name_jp>後脚</name_jp>
+</translation>
+<translation>
+	<name>Hindlegs</name>
+	<name_jp>脚</name_jp>
+</translation>
+<translation>
+	<name>Hindleg</name>
+	<name_jp>脚</name_jp>
 </translation>
 <translation>
 	<name>Exhaust Organ</name>
@@ -6132,7 +6143,7 @@
 </translation>
 <translation>
 	<name>Upper Neck</name>
-	<name_jp>首</name_jp>
+	<name_jp>首上</name_jp>
 </translation>
 <translation>
 	<name>Lower Neck</name>
@@ -6141,6 +6152,10 @@
 <translation>
 	<name>Nose</name>
 	<name_jp>鼻</name_jp>
+</translation>
+<translation>
+	<name>Body</name>
+	<name_jp>胴体</name_jp>
 </translation>
 
 <!-- buffs -->
@@ -6338,7 +6353,7 @@
 	<name_fr>Antiparalysie</name_fr>
 </translation>
 <translation>
-	<name>Effluvia Expert</name>
+	<name>Effluvial Expert</name>
 	<name_fr>Aura de purge</name_fr>
 </translation>
 <translation>
@@ -6398,11 +6413,11 @@
 	<name_fr>Peau de fer</name_fr>
 </translation>
 <translation>
-	<name>Effluvial Resistance</name>
+	<name>Effluvia Resistance</name>
 	<name_fr>Purification</name_fr>
 </translation>
 <translation>
-	<name>Leap Of Faith</name>
+	<name>Leap of Faith</name>
 	<name_fr>Saut de la foi</name_fr>
 </translation>
 <translation>
@@ -6466,7 +6481,7 @@
 	<name_fr>Entomologiste</name_fr>
 </translation>
 <translation>
-	<name>Carving pro</name>
+	<name>Carving Pro</name>
 	<name_fr>Expert en dépeçage</name_fr>
 </translation>
 <translation>
@@ -6598,7 +6613,7 @@
 	<name_fr>Un pour tous</name_fr>
 </translation>
 <translation>
-	<name>Protective polish</name>
+	<name>Protective Polish</name>
 	<name_fr>Acier trempé</name_fr>
 </translation>
 <translation>
@@ -6606,7 +6621,7 @@
 	<name_fr>Adrénaline</name_fr>
 </translation>
 <translation>
-	<name>Nullify Wind Pressur</name>
+	<name>Nullify Wind Pressure</name>
 	<name_fr>Anti-vent</name_fr>
 </translation>
 <translation>
@@ -6646,7 +6661,7 @@
 	<name_fr>Œil de l'esprit</name_fr>
 </translation>
 <translation>
-	<name>Poison duration Up</name>
+	<name>Poison Duration Up</name>
 	<name_fr>Poison +</name_fr>
 </translation>
 <translation>
@@ -6662,7 +6677,7 @@
 	<name_fr>Samouraï/Franc-tireur</name_fr>
 </translation>
 <translation>
-	<name>Non elemental Boost</name>
+	<name>Non-elemental Boost</name>
 	<name_fr>Secret de l'acier</name_fr>
 </translation>
 <translation>
@@ -6674,7 +6689,7 @@
 	<name_fr>Super récupération</name_fr>
 </translation>
 <translation>
-	<name>Guard up</name>
+	<name>Guard Up</name>
 	<name_fr>Ultra garde</name_fr>
 </translation>
 

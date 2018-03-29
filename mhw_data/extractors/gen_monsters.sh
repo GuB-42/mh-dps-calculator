@@ -28,7 +28,8 @@ mhwg_extracts/monsters/4203.html \
 mhwg_extracts/monsters/4244.html \
 mhwg_extracts/monsters/4256.html \
 mhwg_extracts/monsters/4324.html \
-mhwg_extracts/monsters/3806.html > /tmp/mhwg_mons.xml
+mhwg_extracts/monsters/3806.html \
+mhwg_extracts/monsters/4254.html> /tmp/mhwg_mons.xml
 
 ./extract_kira_monster.pl \
 kiranico_extracts/monsters/anjanath \
@@ -60,6 +61,7 @@ kiranico_extracts/monsters/tzitzi-ya-ku \
 kiranico_extracts/monsters/uragaan \
 kiranico_extracts/monsters/vaal-hazak \
 kiranico_extracts/monsters/xenojiiva \
-kiranico_extracts/monsters/zorah-magdaros > /tmp/kira_mons.xml
+kiranico_extracts/monsters/zorah-magdaros \
+kiranico_extracts/monsters/deviljho > /tmp/kira_mons.xml
 
 ./merge_monsters.pl translations.xml /tmp/kira_mons.xml /tmp/mhwg_mons.xml
