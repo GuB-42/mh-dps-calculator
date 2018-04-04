@@ -25,6 +25,7 @@ struct Weapon : public NamedObject {
 	int rare;
 	double elementCritAdjustment;
 	double statusCritAdjustment;
+	int augmentations;
 
 	Weapon();
 	void print(QTextStream &stream, QString indent = QString()) const;

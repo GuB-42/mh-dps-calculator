@@ -4,7 +4,8 @@
 #include <QXmlStreamReader>
 
 Item::Item() :
-	decorationLevel(0), rare(0)
+	decorationLevel(0), weaponAugmentationLevel(0),
+	weaponSlotUpgrade(0), rare(0)
 {
 }
 
@@ -73,6 +74,10 @@ void Item::readXml(QXmlStreamReader *xml) {
 				parse_slots(xml, &decorationSlots);
 			} else if (tag_name == "decoration_level") {
 				decorationLevel = xml->readElementText().toInt();
+			} else if (tag_name == "weapon_augmentation_level") {
+				weaponAugmentationLevel = xml->readElementText().toInt();
+			} else if (tag_name == "weapon_slot_upgrade") {
+				weaponSlotUpgrade = xml->readElementText().toInt();
 			} else if (tag_name == "rare") {
 				rare = xml->readElementText().toInt();
 			} else if (tag_name == "buff_refs") {

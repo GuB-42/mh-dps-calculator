@@ -3,7 +3,6 @@
 #include <QTextStream>
 #include <QXmlStreamReader>
 #include <QHash>
-#include <QMap>
 #include "Monster.h"
 #include "Constants.h"
 

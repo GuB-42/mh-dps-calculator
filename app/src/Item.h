@@ -16,6 +16,8 @@ struct Item : public NamedObject {
 
 	QString type;
 	int decorationLevel;
+	int weaponAugmentationLevel;
+	int weaponSlotUpgrade;
 	int rare;
 	QVector<int> decorationSlots;
 	QVector<BuffRef> buffRefs;

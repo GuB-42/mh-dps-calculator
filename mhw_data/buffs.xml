@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <data>
+	<buff_group id="augmentation_attack_increase">
+		<name>Augmentation: Attack Increase</name>
+		<buff>
+			<name>Augmentation: Attack Increase [1]</name>
+			<level>1</level>
+			<attack_plus_before>5</attack_plus_before>
+		</buff>
+		<buff>
+			<name>Augmentation: Attack Increase [2]</name>
+			<level>2</level>
+			<attack_plus_before>10</attack_plus_before>
+		</buff>
+		<buff>
+			<name>Augmentation: Attack Increase [3]</name>
+			<level>3</level>
+			<attack_plus_before>15</attack_plus_before>
+		</buff>
+	</buff_group>
+
+	<buff_group id="augmentation_affinity_increase">
+		<name>Augmentation: Affinity Increase</name>
+		<buff>
+			<name>Augmentation: Affinity Increase [1]</name>
+			<level>1</level>
+			<affinity_plus>10</affinity_plus>
+		</buff>
+		<buff>
+			<name>Augmentation: Affinity Increase [2]</name>
+			<level>2</level>
+			<affinity_plus>15</affinity_plus>
+		</buff>
+		<buff>
+			<name>Augmentation: Affinity Increase [3]</name>
+			<level>3</level>
+			<affinity_plus>20</affinity_plus>
+		</buff>
+	</buff_group>
+
+	<buff_group id="augmentation_defense_increase">
+		<name>Augmentation: Defense Increase</name>
+		<buff>
+			<name>Augmentation: Defense Increase [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Augmentation: Defense Increase [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Augmentation: Defense Increase [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="augmentation_health_regen">
+		<name>Augmentation: Health Regen</name>
+		<buff>
+			<name>Augmentation: Health Regen [1]</name>
+			<level>1</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Augmentation: Health Regen [2]</name>
+			<level>2</level>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Augmentation: Health Regen [3]</name>
+			<level>3</level>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="poison_resistance">
 		<name>Poison Resistance</name>
 		<name_fr>Toxicologie</name_fr>

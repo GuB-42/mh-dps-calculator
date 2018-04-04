@@ -6,7 +6,9 @@
 #include "BuffGroup.h"
 #include "BuffWithCondition.h"
 
-Build::Build() : weapon(NULL) {
+Build::Build() :
+	weapon(NULL), weaponAugmentations(0), weaponSlotUpgrade(0)
+{
 }
 
 void Build::addItem(const Item *item, bool take_slot) {
@@ -24,6 +26,21 @@ void Build::addItem(const Item *item, bool take_slot) {
 		if (best_idx >= 0) decorationSlots.remove(best_idx);
 	}
 	foreach(int s, item->decorationSlots) decorationSlots << s;
+	if (item->weaponSlotUpgrade) {
+		if (weaponSlotUpgrade) {
+			for (QVector<int>::iterator it = decorationSlots.begin();
+			     it != decorationSlots.end(); ++it) {
+				if (*it == weaponSlotUpgrade) {
+					*it += item->weaponSlotUpgrade;
+					weaponSlotUpgrade += item->weaponSlotUpgrade;
+					break;
+				}
+			}
+		} else {
+			decorationSlots << item->weaponSlotUpgrade;
+			weaponSlotUpgrade = item->weaponSlotUpgrade;
+		}
+	}
 	usedItems << item;
 	foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
 		if (buff_ref.buffGroup) {
@@ -40,6 +57,7 @@ void Build::addItem(const Item *item, bool take_slot) {
 void Build::addWeapon(const Weapon *weapon) {
 	this->weapon = weapon;
 	foreach(int s, weapon->decorationSlots) decorationSlots << s;
+	weaponAugmentations += weapon->augmentations;
 }
 
 void Build::getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const {
@@ -85,22 +103,58 @@ void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) cons
 	}
 }
 
+void Build::fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const {
+	QVector<Item *> useful_items;
+	foreach(Item *item, items) {
+		if (item->weaponAugmentationLevel &&
+		    item->weaponAugmentationLevel <= weaponAugmentations) {
+			if (item->weaponSlotUpgrade > 0) {
+				useful_items.append(item);
+			} else if (!item->decorationSlots.isEmpty()) {
+				useful_items.append(item);
+			} else {
+				foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
+					QMap<const BuffGroup *, int>::const_iterator it =
+						buffLevels.find(buff_ref.buffGroup);
+					if (it == buffLevels.end() ||
+					    it.value() < it.key()->levels.count() - 1) {
+						useful_items.append(item);
+						break;
+					}
+				}
+			}
+		}
+	}
+	while (!useful_items.isEmpty()) {
+		Build *new_build = new Build(*this);
+		new_build->addItem(useful_items.last(), false);
+		new_build->weaponAugmentations -=
+			useful_items.last()->weaponAugmentationLevel;
+		pout->append(new_build);
+		new_build->fillWeaponAugmentations(pout, useful_items);
+		useful_items.pop_back();
+	}
+}
+
 QVector<Item *> Build::listUsefulItems(const QVector<Item *> &items) const {
 	QVector<Item *> useful_items;
 	foreach(Item *item, items) {
+		if (item->weaponSlotUpgrade) goto item_is_useful;
+		if (!item->decorationSlots.isEmpty()) goto item_is_useful;
 		foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
 			if (!buff_ref.buffGroup) continue;
 			foreach(const BuffGroupLevel *bl, buff_ref.buffGroup->levels) {
 				if (!bl) continue;
 				foreach(const BuffWithCondition *bc, bl->buffs) {
 					if (!weapon || bc->isUseful(*weapon)) {
-						useful_items.append(item);
 						goto item_is_useful;
 					}
 				}
 			}
 		}
-item_is_useful: ;
+		continue;
+item_is_useful:
+		useful_items.append(item);
 	}
 	return useful_items;
 }
@@ -112,6 +166,10 @@ void Build::print(QTextStream &stream, QString indent) const {
 		stream << decorationSlots[i];
 	}
 	stream << "]" << endl;
+	stream << indent <<
+		"- weapon augmentations: " << weaponAugmentations << endl;
+	stream << indent <<
+		"- weapon slot upgrade: " << weaponSlotUpgrade << endl;
 	foreach(const Item *item, usedItems) {
 		stream << indent << "- used item:" << endl;
 		item->print(stream, indent + "\t");

@@ -10,7 +10,8 @@
 #include "../Item.h"
 
 ResultTableModel::ResultTableModel(QObject *parent) :
-	QAbstractTableModel(parent), itemColumns(0)
+	QAbstractTableModel(parent), itemColumns(0),
+	dataLanguage(NamedObject::LANG_EN)
 {
 }
 

@@ -1,5 +1,52 @@
 <data>
 
+<!-- augmentations -->
+
+<item id="augmentation_attack_increase">
+	<type>weapon_augmentation</type>
+	<name>Attack Increase</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_attack_increase"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_affinity_increase">
+	<type>weapon_augmentation</type>
+	<name>Affinity Increase</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_affinity_increase"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_defense_increase">
+	<type>weapon_augmentation</type>
+	<name>Defense Increase</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_defense_increase"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_health_regen">
+	<type>weapon_augmentation</type>
+	<name>Health Regen</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_health_regen"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_slot_upgrade">
+	<type>weapon_augmentation</type>
+	<name>Slot Upgrade</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<weapon_slot_upgrade>1</weapon_slot_upgrade>
+</item>
+
+<!-- augmentations -->
+
 <item id="powercharm">
 	<type>inventory_item</type>
 	<name>Powercharm</name>

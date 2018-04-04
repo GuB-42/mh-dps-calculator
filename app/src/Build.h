@@ -14,6 +14,8 @@ struct Weapon;
 struct Build {
 	const Weapon *weapon;
 	QVector<int> decorationSlots;
+	int weaponAugmentations;
+	int weaponSlotUpgrade;
 	QMap<const BuffGroup *, int> buffLevels;
 	QVector<const Item *> usedItems;
 
@@ -22,6 +24,7 @@ struct Build {
 	void addWeapon(const Weapon *weapon);
 	void getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const;
 	void fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) const;
+	void fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const;
 	QVector<Item *> listUsefulItems(const QVector<Item *> &items) const;
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

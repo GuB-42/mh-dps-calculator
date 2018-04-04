@@ -60,6 +60,7 @@ void FoldedBuffsData::applyBuff(const BuffWithCondition *buff_cond,
 		case BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER: op = OP_MAX; break;
 		case BUFF_STATUS_CRITICAL_HIT_MULTIPLIER: op = OP_MAX; break;
 		case BUFF_MINDS_EYE: op = OP_PLUS; break;
+		case BUFF_ATTACK_PLUS_BEFORE: op = OP_PLUS; break;
 		case NORMAL_BUFF_COUNT: op = OP_NONE; break;
 		}
 		break;
@@ -129,6 +130,7 @@ FoldedBuffsData::FoldedBuffsData() {
 	normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER] =
 		Constants::instance()->statusCriticalHitMultiplier;
 	normalBuffs[BUFF_MINDS_EYE] = 0.0;
+	normalBuffs[BUFF_ATTACK_PLUS_BEFORE] = 0.0;
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elementBuffs[BUFF_ELEMENT_PLUS][i] = 0.0;
 		elementBuffs[BUFF_ELEMENT_MULTIPLIER][i] = 1.0;

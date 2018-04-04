@@ -47,6 +47,7 @@ const char *toString(NormalBuff b) {
 	case BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER: return "element_critical_hit_multiplier";
 	case BUFF_STATUS_CRITICAL_HIT_MULTIPLIER: return "status_critical_hit_multiplier";
 	case BUFF_MINDS_EYE: return "minds_eye";
+	case BUFF_ATTACK_PLUS_BEFORE: return "attack_plus_before";
 	default: return "???";
 	}
 }

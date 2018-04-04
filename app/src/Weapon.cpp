@@ -9,7 +9,8 @@ Weapon::Weapon() :
 	attack(0.0), affinity(0.0), awakened(false), phial(PHIAL_NONE),
 	sharpnessPlus(0.0), final(false), rare(0),
 	elementCritAdjustment(1.0),
-	statusCritAdjustment(1.0)
+	statusCritAdjustment(1.0),
+	augmentations(0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elements[i] = 0.0;
@@ -205,5 +206,10 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 	cit = Constants::instance()->statusCritAdjustment.find(type);
 	if (cit != Constants::instance()->statusCritAdjustment.end()) {
 		statusCritAdjustment = *cit;
+	}
+	if (final && rare) {
+		augmentations = 9 - rare;
+		if (augmentations < 0) augmentations = 0;
+		if (augmentations > 3) augmentations = 3;
 	}
 }

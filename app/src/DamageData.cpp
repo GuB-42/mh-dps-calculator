@@ -84,7 +84,9 @@ static double compute_buffed_element(double base,
 // and also how it stacks with awakening
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
                        const Pattern &pattern) {
-	double attack = (weapon.attack * buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
+	double attack =
+		((weapon.attack + buffs.normalBuffs[BUFF_ATTACK_PLUS_BEFORE]) *
+		 buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
 		buffs.normalBuffs[BUFF_ATTACK_PLUS];
 
 	double xaffinity =
