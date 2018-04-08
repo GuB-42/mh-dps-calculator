@@ -82,8 +82,13 @@ void MainWindow::setMainData(const MainData *md) {
 	for (int idx = 0; idx < mainData->buffGroups.count(); ++idx) {
 		ui->buffCb->addItem(mainData->buffGroups[idx]->getName(dataLanguage));
 	}
-	buffListModel->addBuff(mainData->buffGroupHash["powercharm"], 1);
-	buffListModel->addBuff(mainData->buffGroupHash["powertalon"], 1);
+	QStringList base_buff_names;
+	base_buff_names << "powercharm" << "powertalon";
+	foreach(QString base_buff_name, base_buff_names) {
+		const BuffGroup *bg =
+			mainData->buffGroupHash[base_buff_name];
+		if (bg) buffListModel->addBuff(bg, 1);
+	}
 }
 
 
