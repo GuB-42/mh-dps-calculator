@@ -1168,6 +1168,7 @@
             <slot>2</slot>
         </slots>
         <rare>5</rare>
+        <creatable>true</creatable>
     </weapon>
     <weapon>
         <type>bow</type>
@@ -7109,6 +7110,52 @@
             <white>50</white>
             <plus>50</plus>
         </sharpness>
+        <rare>7</rare>
+        <final>true</final>
+    </weapon>
+    <weapon>
+        <type>great_sword</type>
+        <name>Wyvern Ignition "Steel"</name>
+        <name_jp>竜熱機関式【鋼翼】</name_jp>
+        <inflated_attack>720</inflated_attack>
+        <attack>150</attack>
+        <affinity>-15</affinity>
+        <sharpness>
+            <red>180</red>
+            <orange>70</orange>
+            <yellow>20</yellow>
+            <green>20</green>
+            <blue>60</blue>
+            <plus>50</plus>
+        </sharpness>
+        <rare>4</rare>
+        <creatable>true</creatable>
+    </weapon>
+    <weapon>
+        <type>great_sword</type>
+        <name>Wyvern Ignition "Impact"</name>
+        <name_jp>竜熱機関式【鋼翼】改</name_jp>
+        <inflated_attack>1008</inflated_attack>
+        <attack>210</attack>
+        <affinity>-15</affinity>
+        <awakened>true</awakened>
+        <element>
+            <inflated_fire>510</inflated_fire>
+            <fire>51</fire>
+        </element>
+        <sharpness>
+            <red>250</red>
+            <orange>20</orange>
+            <yellow>20</yellow>
+            <green>20</green>
+            <blue>30</blue>
+            <white>60</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>1</slot>
+            <slot>1</slot>
+        </slots>
         <rare>7</rare>
         <final>true</final>
     </weapon>
@@ -20340,6 +20387,13 @@
             <inflated_water>120</inflated_water>
             <water>12</water>
         </element>
+        <sharpness>
+            <red>100</red>
+            <orange>70</orange>
+            <yellow>30</yellow>
+            <green>100</green>
+            <plus>50</plus>
+        </sharpness>
         <rare>3</rare>
         <creatable>true</creatable>
     </weapon>

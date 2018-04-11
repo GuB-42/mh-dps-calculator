@@ -209,6 +209,7 @@
     </monster>
     <monster id="azure_rathalos">
         <name>Azure Rathalos</name>
+        <name_fr>Rathalos azur</name_fr>
         <name_jp>リオレウス亜種</name_jp>
         <hit_points>3250</hit_points>
         <part id="head">
@@ -797,6 +798,7 @@
     </monster>
     <monster id="black_diablos">
         <name>Black Diablos</name>
+        <name_fr>Diablos noire</name_fr>
         <name_jp>ディアブロス亜種</name_jp>
         <hit_points>3450</hit_points>
         <part id="horn">
@@ -1466,6 +1468,7 @@
     </monster>
     <monster id="great_girros">
         <name>Great Girros</name>
+        <name_fr>Grand Girros</name_fr>
         <name_jp>ドスギルオス</name_jp>
         <hit_points>2400</hit_points>
         <part id="head">
@@ -1663,6 +1666,7 @@
     </monster>
     <monster id="great_jagras">
         <name>Great Jagras</name>
+        <name_fr>Grand Jagras</name_fr>
         <name_jp>ドスジャグラス</name_jp>
         <hit_points>2200</hit_points>
         <part id="head">
@@ -2549,6 +2553,19 @@
             <name>Head</name>
             <name_jp>頭</name_jp>
             <hit_data>
+                <state>Heated</state>
+                <cut>55</cut>
+                <impact>60</impact>
+                <bullet>55</bullet>
+                <fire>0</fire>
+                <water>45</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+            <hit_data>
+                <state>Magma Armor</state>
                 <cut>15</cut>
                 <impact>20</impact>
                 <bullet>15</bullet>
@@ -2561,13 +2578,13 @@
             </hit_data>
             <hit_data>
                 <state>Wounded</state>
-                <cut>55</cut>
-                <impact>60</impact>
-                <bullet>55</bullet>
-                <fire>0</fire>
-                <water>45</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
+                <cut>35</cut>
+                <impact>40</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>35</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
                 <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
@@ -2602,7 +2619,7 @@
                 <stun>0</stun>
             </hit_data>
             <hit_data>
-                <state>Wounded</state>
+                <state>Heated</state>
                 <cut>50</cut>
                 <impact>45</impact>
                 <bullet>50</bullet>
@@ -2618,6 +2635,19 @@
             <name>Back</name>
             <name_jp>背中</name_jp>
             <hit_data>
+                <state>Heated</state>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>50</bullet>
+                <fire>0</fire>
+                <water>35</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Magma Armor</state>
                 <cut>20</cut>
                 <impact>20</impact>
                 <bullet>20</bullet>
@@ -2660,6 +2690,19 @@
             <name>Legs</name>
             <name_jp>脚</name_jp>
             <hit_data>
+                <state>Heated</state>
+                <cut>40</cut>
+                <impact>40</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>30</water>
+                <thunder>5</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Magma Armor</state>
                 <cut>15</cut>
                 <impact>15</impact>
                 <bullet>15</bullet>
@@ -2672,11 +2715,11 @@
             </hit_data>
             <hit_data>
                 <state>Wounded</state>
-                <cut>40</cut>
-                <impact>40</impact>
-                <bullet>40</bullet>
-                <fire>0</fire>
-                <water>30</water>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>30</bullet>
+                <fire>5</fire>
+                <water>25</water>
                 <thunder>5</thunder>
                 <ice>5</ice>
                 <dragon>5</dragon>
@@ -2687,6 +2730,19 @@
             <name>Tail</name>
             <name_jp>尻尾</name_jp>
             <hit_data>
+                <state>Heated</state>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>45</bullet>
+                <fire>0</fire>
+                <water>35</water>
+                <thunder>10</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Magma Armor</state>
                 <cut>20</cut>
                 <impact>15</impact>
                 <bullet>20</bullet>
@@ -2699,13 +2755,13 @@
             </hit_data>
             <hit_data>
                 <state>Wounded</state>
-                <cut>45</cut>
-                <impact>40</impact>
-                <bullet>45</bullet>
-                <fire>0</fire>
-                <water>35</water>
-                <thunder>10</thunder>
-                <ice>10</ice>
+                <cut>35</cut>
+                <impact>30</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>30</water>
+                <thunder>15</thunder>
+                <ice>15</ice>
                 <dragon>5</dragon>
                 <stun>0</stun>
             </hit_data>
@@ -2981,18 +3037,6 @@
                 <thunder>20</thunder>
                 <ice>0</ice>
                 <dragon>10</dragon>
-                <stun>100</stun>
-            </hit_data>
-            <hit_data>
-                <state>White</state>
-                <cut>35</cut>
-                <impact>40</impact>
-                <bullet>45</bullet>
-                <fire>5</fire>
-                <water>15</water>
-                <thunder>20</thunder>
-                <ice>0</ice>
-                <dragon>5</dragon>
                 <stun>100</stun>
             </hit_data>
             <hit_data>
@@ -3718,6 +3762,7 @@
     </monster>
     <monster id="pink_rathian">
         <name>Pink Rathian</name>
+        <name_fr>Rathian sakura</name_fr>
         <name_jp>リオレイア亜種</name_jp>
         <hit_points>3000</hit_points>
         <part id="head">
@@ -5375,8 +5420,8 @@
                 <stun>0</stun>
             </hit_data>
         </part>
-        <part id="tail">
-            <name>Tail</name>
+        <part id="tail_top">
+            <name>Tail (Top)</name>
             <name_jp>尻尾</name_jp>
             <hit_data>
                 <cut>25</cut>
@@ -5387,6 +5432,35 @@
                 <thunder>0</thunder>
                 <ice>10</ice>
                 <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="tail_bottom">
+            <name>Tail (Bottom)</name>
+            <name_jp>尻尾</name_jp>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="tail_tip">
+            <name>Tail Tip</name>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>15</bullet>
+                <fire>0</fire>
+                <water>35</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>

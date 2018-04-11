@@ -31,7 +31,8 @@ sub process_data_row {
 	my $part_name = $lrow{"Body Part"};
 	my $state = "";
 
-	unless ($part_name =~ /^Exhaust Organ/) {
+	unless ($part_name =~ /^Exhaust Organ/ ||
+	        $part_name =~ /\((?:Top|Bottom)\)$/) {
 		if ($part_name =~ /(.*\S)\s*\((.*)\)/) {
 			$part_name = $1;
 			$state = $2;

@@ -5864,6 +5864,14 @@
 	<name>Fatal Bite</name>
 	<name_jp>フェイタルヴァイト</name_jp>
 </translation>
+<translation>
+	<name>Wyvern Ignition "Steel"</name>
+	<name_jp>竜熱機関式【鋼翼】</name_jp>
+</translation>
+<translation>
+	<name>Wyvern Ignition "Impact"</name>
+	<name_jp>竜熱機関式【鋼翼】改</name_jp>
+</translation>
 
 <!-- monsters -->
 
@@ -5873,6 +5881,7 @@
 </translation>
 <translation>
 	<name>Azure Rathalos</name>
+	<name_fr>Rathalos azur</name_fr>
 	<name_jp>リオレウス亜種</name_jp>
 </translation>
 <translation>
@@ -5885,6 +5894,7 @@
 </translation>
 <translation>
 	<name>Black Diablos</name>
+	<name_fr>Diablos noire</name_fr>
 	<name_jp>ディアブロス亜種</name_jp>
 </translation>
 <translation>
@@ -5897,10 +5907,12 @@
 </translation>
 <translation>
 	<name>Great Girros</name>
+	<name_fr>Grand Girros</name_fr>
 	<name_jp>ドスギルオス</name_jp>
 </translation>
 <translation>
 	<name>Great Jagras</name>
+	<name_fr>Grand Jagras</name_fr>
 	<name_jp>ドスジャグラス</name_jp>
 </translation>
 <translation>
@@ -5941,6 +5953,7 @@
 </translation>
 <translation>
 	<name>Pink Rathian</name>
+	<name_fr>Rathian sakura</name_fr>
 	<name_jp>リオレイア亜種</name_jp>
 </translation>
 <translation>

@@ -13,6 +13,7 @@ my @data_row = ();
 my $weapon_type = "";
 my $name_key = "name";
 my %sharpness = ();
+my %sharpness_plus = ();
 my @slots = ();
 
 sub process_data_row {
@@ -96,16 +97,27 @@ sub process_data_row {
 	$xml_writer->endTag() if ($has_phial);
 
 	my $has_sharpness = 0;
+	my $sharpness_total = 0;
+	my $sharpness_plus_total = 0;
 	for my $sharpness_color ("red", "orange", "yellow", "green", "blue", "white", "purple") {
 		if ($sharpness{$sharpness_color}) {
+			my $v = int($sharpness{$sharpness_color} * 0.4 + 0.5) * 10;
+			$sharpness_total += $v;
+		}
+		if ($sharpness_plus{$sharpness_color}) {
 			unless ($has_sharpness) {
 				$xml_writer->startTag("sharpness");
 				$has_sharpness = 1;
 			}
-			$xml_writer->dataElement($sharpness_color, int($sharpness{$sharpness_color} * 0.4 + 0.5) * 10);
+			my $v = int($sharpness_plus{$sharpness_color} * 0.4 + 0.5) * 10;
+			$xml_writer->dataElement($sharpness_color, $v);
+			$sharpness_plus_total += $v;
 		}
 	}
-	$xml_writer->endTag() if ($has_sharpness);
+	if ($has_sharpness) {
+		$xml_writer->dataElement("plus", $sharpness_plus_total - $sharpness_total);
+		$xml_writer->endTag()
+	}
 
 	my $has_slots = 0;
 	for my $slot_level (@slots) {
@@ -142,6 +154,7 @@ sub start {
 		$cur_col = 0;
 		@data_row = ();
 		%sharpness = ();
+		%sharpness_plus = ();
 		@slots = ();
 	} elsif (lc($tag) eq "div") {
 		my $class = $attr->{"class"};
@@ -150,7 +163,10 @@ sub start {
 			if ($class =~ /sharpness-(\w+)/) {
 				my $sharpness_color = $1;
 				if ($style =~ /(\d+)px/) {
-					$sharpness{$sharpness_color} = $1;
+					unless (defined $sharpness{$sharpness_color}) {
+						$sharpness{$sharpness_color} = $1
+					}
+					$sharpness_plus{$sharpness_color} = $1;
 				}
 			}
 		}
