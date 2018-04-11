@@ -50,6 +50,7 @@
 <item id="powercharm">
 	<type>inventory_item</type>
 	<name>Powercharm</name>
+	<name_fr>Amulette de force</name_fr>
 	<buff_refs>
 		<buff_ref id="powercharm"/>
 	</buff_refs>
@@ -58,6 +59,7 @@
 <item id="powertalon">
 	<type>inventory_item</type>
 	<name>Powertalon</name>
+	<name_fr>Griffe de force</name_fr>
 	<buff_refs>
 		<buff_ref id="powertalon"/>
 	</buff_refs>

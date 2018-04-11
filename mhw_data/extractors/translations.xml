@@ -6657,7 +6657,7 @@
 	<name_fr>Matraquage</name_fr>
 </translation>
 <translation>
-	<name>Mind's eye/Ballistics</name>
+	<name>Mind's Eye/Ballistics</name>
 	<name_fr>Œil de l'esprit</name_fr>
 </translation>
 <translation>
@@ -6691,6 +6691,2101 @@
 <translation>
 	<name>Guard Up</name>
 	<name_fr>Ultra garde</name_fr>
+</translation>
+
+<!-- items -->
+
+<translation>
+	<name>Potion</name>
+	<name_fr>Potion</name_fr>
+</translation>
+<translation>
+	<name>Mega Potion</name>
+	<name_fr>Méga potion</name_fr>
+</translation>
+<translation>
+	<name>Max Potion</name>
+	<name_fr>Potion secrète</name_fr>
+</translation>
+<translation>
+	<name>Ancient Potion</name>
+	<name_fr>Potion ancestrale</name_fr>
+</translation>
+<translation>
+	<name>Antidote</name>
+	<name_fr>Antidote</name_fr>
+</translation>
+<translation>
+	<name>Herbal Medicine</name>
+	<name_fr>Remède d'herbe</name_fr>
+</translation>
+<translation>
+	<name>Nulberry</name>
+	<name_fr>Baie-soin</name_fr>
+</translation>
+<translation>
+	<name>Energy Drink</name>
+	<name_fr>Boisson énergétique</name_fr>
+</translation>
+<translation>
+	<name>Ration</name>
+	<name_fr>Ration</name_fr>
+</translation>
+<translation>
+	<name>Rare Steak</name>
+	<name_fr>Steak saignant</name_fr>
+</translation>
+<translation>
+	<name>Well-done Steak</name>
+	<name_fr>Steak à point</name_fr>
+</translation>
+<translation>
+	<name>Burnt Meat</name>
+	<name_fr>Viande brûlée</name_fr>
+</translation>
+<translation>
+	<name>Cool Drink</name>
+	<name_fr>Boisson fraîche</name_fr>
+</translation>
+<translation>
+	<name>Nutrients</name>
+	<name_fr>Nutriments</name_fr>
+</translation>
+<translation>
+	<name>Mega Nutrients</name>
+	<name_fr>Méga nutriments</name_fr>
+</translation>
+<translation>
+	<name>Immunizer</name>
+	<name_fr>Immunisateur</name_fr>
+</translation>
+<translation>
+	<name>Astera Jerky</name>
+	<name_fr>Viande d'Astera</name_fr>
+</translation>
+<translation>
+	<name>Dash Juice</name>
+	<name_fr>Potion de vitalité</name_fr>
+</translation>
+<translation>
+	<name>Mega Dash Juice</name>
+	<name_fr>Potion de vitalité +</name_fr>
+</translation>
+<translation>
+	<name>Might Seed</name>
+	<name_fr>Graine de force</name_fr>
+</translation>
+<translation>
+	<name>Demondrug</name>
+	<name_fr>Potion du démon</name_fr>
+</translation>
+<translation>
+	<name>Mega Demondrug</name>
+	<name_fr>Potion du démon +</name_fr>
+</translation>
+<translation>
+	<name>Might Pill</name>
+	<name_fr>Philtre du diable</name_fr>
+</translation>
+<translation>
+	<name>Adamant Seed</name>
+	<name_fr>Graine de ténacité</name_fr>
+</translation>
+<translation>
+	<name>Armorskin</name>
+	<name_fr>Potion de pierre</name_fr>
+</translation>
+<translation>
+	<name>Mega Armorskin</name>
+	<name_fr>Potion de pierre +</name_fr>
+</translation>
+<translation>
+	<name>Adamant Pill</name>
+	<name_fr>Philtre de métal</name_fr>
+</translation>
+<translation>
+	<name>Lifepowder</name>
+	<name_fr>Poudre de vie</name_fr>
+</translation>
+<translation>
+	<name>Herbal Powder</name>
+	<name_fr>Poudre végétale</name_fr>
+</translation>
+<translation>
+	<name>Demon Powder</name>
+	<name_fr>Poudre du démon</name_fr>
+</translation>
+<translation>
+	<name>Hardshell Powder</name>
+	<name_fr>Poudre de pierre</name_fr>
+</translation>
+<translation>
+	<name>Honey</name>
+	<name_fr>Miel</name_fr>
+</translation>
+<translation>
+	<name>Herb</name>
+	<name_fr>Herbe</name_fr>
+</translation>
+<translation>
+	<name>Antidote Herb</name>
+	<name_fr>Herbe à antidote</name_fr>
+</translation>
+<translation>
+	<name>Fire Herb</name>
+	<name_fr>Herbe de feu</name_fr>
+</translation>
+<translation>
+	<name>Flowfern</name>
+	<name_fr>Ondulite</name_fr>
+</translation>
+<translation>
+	<name>Snow Herb</name>
+	<name_fr>Herbe des neiges</name_fr>
+</translation>
+<translation>
+	<name>Sleep Herb</name>
+	<name_fr>Herbe du sommeil</name_fr>
+</translation>
+<translation>
+	<name>Ivy</name>
+	<name_fr>Lierre</name_fr>
+</translation>
+<translation>
+	<name>Smokenut</name>
+	<name_fr>Noix fumigène</name_fr>
+</translation>
+<translation>
+	<name>Dragonfell Berry</name>
+	<name_fr>Baie-dragon</name_fr>
+</translation>
+<translation>
+	<name>Blue Mushroom</name>
+	<name_fr>Champignon bleu</name_fr>
+</translation>
+<translation>
+	<name>Mandragora</name>
+	<name_fr>Mandragore</name_fr>
+</translation>
+<translation>
+	<name>Nitroshroom</name>
+	<name_fr>Champinitro</name_fr>
+</translation>
+<translation>
+	<name>Devil's Blight</name>
+	<name_fr>Fléau du diable</name_fr>
+</translation>
+<translation>
+	<name>Parashroom</name>
+	<name_fr>Champaralysie</name_fr>
+</translation>
+<translation>
+	<name>Toadstool</name>
+	<name_fr>Champi vénéneux</name_fr>
+</translation>
+<translation>
+	<name>Exciteshroom</name>
+	<name_fr>Champexciteur</name_fr>
+</translation>
+<translation>
+	<name>Chillshroom</name>
+	<name_fr>Champicool</name_fr>
+</translation>
+<translation>
+	<name>Bitterbug</name>
+	<name_fr>Amerinsecte</name_fr>
+</translation>
+<translation>
+	<name>Flashbug</name>
+	<name_fr>Scaralux</name_fr>
+</translation>
+<translation>
+	<name>Godbug</name>
+	<name_fr>Insecte immortel</name_fr>
+</translation>
+<translation>
+	<name>Thunderbug</name>
+	<name_fr>Foudrinsecte</name_fr>
+</translation>
+<translation>
+	<name>Baitbug</name>
+	<name_fr>Délicioptère</name_fr>
+</translation>
+<translation>
+	<name>Kelbi Horn</name>
+	<name_fr>Corne Kelbi</name_fr>
+</translation>
+<translation>
+	<name>Dash Extract</name>
+	<name_fr>Extrait de vitalité</name_fr>
+</translation>
+<translation>
+	<name>Nourishing Extract</name>
+	<name_fr>Extrait d'arginine</name_fr>
+</translation>
+<translation>
+	<name>Screamer Sac</name>
+	<name_fr>Poche hurlante</name_fr>
+</translation>
+<translation>
+	<name>Catalyst</name>
+	<name_fr>Catalyseur</name_fr>
+</translation>
+<translation>
+	<name>Tranq Bomb</name>
+	<name_fr>Bombe tranquillisante</name_fr>
+</translation>
+<translation>
+	<name>Flash Pod</name>
+	<name_fr>Capsule aveuglante</name_fr>
+</translation>
+<translation>
+	<name>Screamer Pod</name>
+	<name_fr>Capsule sonore</name_fr>
+</translation>
+<translation>
+	<name>Dung Pod</name>
+	<name_fr>Capsule de bouse</name_fr>
+</translation>
+<translation>
+	<name>Smoke Bomb</name>
+	<name_fr>Bombe fumigène</name_fr>
+</translation>
+<translation>
+	<name>Poison Smoke Bomb</name>
+	<name_fr>Bombe de poison</name_fr>
+</translation>
+<translation>
+	<name>Farcaster</name>
+	<name_fr>Téléportogène</name_fr>
+</translation>
+<translation>
+	<name>Raw Meat</name>
+	<name_fr>Viande crue</name_fr>
+</translation>
+<translation>
+	<name>Poisoned Meat</name>
+	<name_fr>Viande empoisonnée</name_fr>
+</translation>
+<translation>
+	<name>Tinged Meat</name>
+	<name_fr>Viande paralysante</name_fr>
+</translation>
+<translation>
+	<name>Drugged Meat</name>
+	<name_fr>Viande somnifère</name_fr>
+</translation>
+<translation>
+	<name>Gunpowder</name>
+	<name_fr>Poudre à canon</name_fr>
+</translation>
+<translation>
+	<name>Small Barrel</name>
+	<name_fr>Petit baril</name_fr>
+</translation>
+<translation>
+	<name>Barrel Bomb</name>
+	<name_fr>Bombe baril</name_fr>
+</translation>
+<translation>
+	<name>Bounce Bomb</name>
+	<name_fr>Bombe artifice</name_fr>
+</translation>
+<translation>
+	<name>Mega Bounce Bomb</name>
+	<name_fr>Méga bombe artifice</name_fr>
+</translation>
+<translation>
+	<name>Large Barrel</name>
+	<name_fr>Grand baril</name_fr>
+</translation>
+<translation>
+	<name>Large Barrel Bomb</name>
+	<name_fr>Grande bombe baril</name_fr>
+</translation>
+<translation>
+	<name>Mega Barrel Bomb</name>
+	<name_fr>Méga bombe baril</name_fr>
+</translation>
+<translation>
+	<name>Spider Web</name>
+	<name_fr>Toile d'araignée</name_fr>
+</translation>
+<translation>
+	<name>Net</name>
+	<name_fr>Filet</name_fr>
+</translation>
+<translation>
+	<name>Trap Tool</name>
+	<name_fr>Kit de piège</name_fr>
+</translation>
+<translation>
+	<name>Pitfall Trap</name>
+	<name_fr>Piège à fosse</name_fr>
+</translation>
+<translation>
+	<name>Shock Trap</name>
+	<name_fr>Piège électrochoc</name_fr>
+</translation>
+<translation>
+	<name>Rolled-up Dung</name>
+	<name_fr>Boule de bouse</name_fr>
+</translation>
+<translation>
+	<name>Dung</name>
+	<name_fr>Bouse</name_fr>
+</translation>
+<translation>
+	<name>Arowana Bait</name>
+	<name_fr>Appât pour Arowana</name_fr>
+</translation>
+<translation>
+	<name>Gunpowderfish Bait</name>
+	<name_fr>Appât pour poisson-poudre</name_fr>
+</translation>
+<translation>
+	<name>Goldenfish Bait</name>
+	<name_fr>Appât pour poisson d'or</name_fr>
+</translation>
+<translation>
+	<name>Boomerang</name>
+	<name_fr>Boomerang</name_fr>
+</translation>
+<translation>
+	<name>Binoculars</name>
+	<name_fr>Jumelles</name_fr>
+</translation>
+<translation>
+	<name>Powercharm</name>
+	<name_fr>Amulette de force</name_fr>
+</translation>
+<translation>
+	<name>Powertalon</name>
+	<name_fr>Griffe de force</name_fr>
+</translation>
+<translation>
+	<name>Armorcharm</name>
+	<name_fr>Amulette de défense</name_fr>
+</translation>
+<translation>
+	<name>Armortalon</name>
+	<name_fr>Griffe de défense</name_fr>
+</translation>
+<translation>
+	<name>Needleberry</name>
+	<name_fr>Noix aiguille</name_fr>
+</translation>
+<translation>
+	<name>Blastnut</name>
+	<name_fr>Noix dynamite</name_fr>
+</translation>
+<translation>
+	<name>Dragonstrike nut</name>
+	<name_fr>Noix frappe-du-dragon</name_fr>
+</translation>
+<translation>
+	<name>Slashberry</name>
+	<name_fr>Noix tranchante</name_fr>
+</translation>
+<translation>
+	<name>Latchberry</name>
+	<name_fr>Noix perforante</name_fr>
+</translation>
+<translation>
+	<name>Bomberry</name>
+	<name_fr>Noix explosive</name_fr>
+</translation>
+<translation>
+	<name>Flamenut</name>
+	<name_fr>Noix-de-feu</name_fr>
+</translation>
+<translation>
+	<name>Blazenut</name>
+	<name_fr>Noix-de-volcan</name_fr>
+</translation>
+<translation>
+	<name>Gunpowder Level 2</name>
+	<name_fr>Poudre à canon II</name_fr>
+</translation>
+<translation>
+	<name>Gunpowser Level 3</name>
+	<name_fr>Poudre à canon III</name_fr>
+</translation>
+<translation>
+	<name>Whetfish Fin</name>
+	<name_fr>Nageoire de poissaiguiseur</name_fr>
+</translation>
+<translation>
+	<name>Whetfish Fin+</name>
+	<name_fr>Nageoire de poissaiguiseur +</name_fr>
+</translation>
+<translation>
+	<name>Sushifish Scale</name>
+	<name_fr>Écaille de sushipoisson</name_fr>
+</translation>
+<translation>
+	<name>Great Sushifish Scale</name>
+	<name_fr>Grande écaille de sushipoisson</name_fr>
+</translation>
+<translation>
+	<name>Gunpowderfish Scale</name>
+	<name_fr>Écaille de poisson-poudre</name_fr>
+</translation>
+<translation>
+	<name>Great Gunpowderfish Scale</name>
+	<name_fr>Écaille de grand poisson-poudre</name_fr>
+</translation>
+<translation>
+	<name>Burst Arowana Scale</name>
+	<name_fr>Écaille d'arowana explosif</name_fr>
+</translation>
+<translation>
+	<name>Great Burst Arowana Scale</name>
+	<name_fr>Écaille de grand arowana explosif</name_fr>
+</translation>
+<translation>
+	<name>Bomb Arowana Scale</name>
+	<name_fr>Écaille d'arowana bombe</name_fr>
+</translation>
+<translation>
+	<name>Great Bomb Arowana Scale</name>
+	<name_fr>Écaille de grand arowana bombe</name_fr>
+</translation>
+<translation>
+	<name>Empty Phial</name>
+	<name_fr>Fiole vide</name_fr>
+</translation>
+<translation>
+	<name>Iron Ore</name>
+	<name_fr>Minerai de fer</name_fr>
+</translation>
+<translation>
+	<name>Machalite Ore</name>
+	<name_fr>Machalite</name_fr>
+</translation>
+<translation>
+	<name>Dragonite Ore</name>
+	<name_fr>Dragonite</name_fr>
+</translation>
+<translation>
+	<name>Carbalite Ore</name>
+	<name_fr>Carbalite</name_fr>
+</translation>
+<translation>
+	<name>Fucium Ore</name>
+	<name_fr>Fucium</name_fr>
+</translation>
+<translation>
+	<name>Earth Crystal</name>
+	<name_fr>Cristal de terre</name_fr>
+</translation>
+<translation>
+	<name>Coral Crystal</name>
+	<name_fr>Cristal de corail</name_fr>
+</translation>
+<translation>
+	<name>Dragonvein Crystal</name>
+	<name_fr>Cristal de dragon ancien</name_fr>
+</translation>
+<translation>
+	<name>Lightcrystal</name>
+	<name_fr>Cristal de lumière</name_fr>
+</translation>
+<translation>
+	<name>Novacrystal</name>
+	<name_fr>Cristal nova</name_fr>
+</translation>
+<translation>
+	<name>Firecell Stone</name>
+	<name_fr>Pierre de lave</name_fr>
+</translation>
+<translation>
+	<name>Aquacore Ore</name>
+	<name_fr>Pierre marine</name_fr>
+</translation>
+<translation>
+	<name>Spiritcore Ore</name>
+	<name_fr>Minerai solaire</name_fr>
+</translation>
+<translation>
+	<name>Dreamcore Ore</name>
+	<name_fr>Onirite</name_fr>
+</translation>
+<translation>
+	<name>Dragoncore Ore</name>
+	<name_fr>Quartz de wyrm</name_fr>
+</translation>
+<translation>
+	<name>Armor Sphere</name>
+	<name_fr>Sphère d'armure</name_fr>
+</translation>
+<translation>
+	<name>Armor Sphere+</name>
+	<name_fr>Sphère d'armure ||</name_fr>
+</translation>
+<translation>
+	<name>Advanced Armor Sphere</name>
+	<name_fr>Sphère d'armure III</name_fr>
+</translation>
+<translation>
+	<name>Hard Armor Sphere</name>
+	<name_fr>Sphère d'armure IV</name_fr>
+</translation>
+<translation>
+	<name>Heavy Armor Sphere</name>
+	<name_fr>Sphère d'armure V</name_fr>
+</translation>
+<translation>
+	<name>Sturdy Bone</name>
+	<name_fr>Os solide</name_fr>
+</translation>
+<translation>
+	<name>Quality Bone</name>
+	<name_fr>Os de qualité</name_fr>
+</translation>
+<translation>
+	<name>Ancient Bone</name>
+	<name_fr>Os ancien</name_fr>
+</translation>
+<translation>
+	<name>Boulder Bone</name>
+	<name_fr>Os fossilisé</name_fr>
+</translation>
+<translation>
+	<name>Coral Bone</name>
+	<name_fr>Os de corail</name_fr>
+</translation>
+<translation>
+	<name>Warped Bone</name>
+	<name_fr>Os déformé</name_fr>
+</translation>
+<translation>
+	<name>Brutal Bone</name>
+	<name_fr>Os bestial</name_fr>
+</translation>
+<translation>
+	<name>Dragonbone Relic</name>
+	<name_fr>Relique de dragon</name_fr>
+</translation>
+<translation>
+	<name>Unknown Skull</name>
+	<name_fr>Crâne mystérieux</name_fr>
+</translation>
+<translation>
+	<name>Great Hornfly</name>
+	<name_fr>Grand papillon corne</name_fr>
+</translation>
+<translation>
+	<name>Sinister Cloth</name>
+	<name_fr>Étoffe sinistre</name_fr>
+</translation>
+<translation>
+	<name>Monster Bone S</name>
+	<name_fr>Os de Wyverne (P)</name_fr>
+</translation>
+<translation>
+	<name>Monster Bone M</name>
+	<name_fr>Os de Wyverne (M)</name_fr>
+</translation>
+<translation>
+	<name>Monster Bone L</name>
+	<name_fr>Os de Wyverne (G)</name_fr>
+</translation>
+<translation>
+	<name>Monster Bone+</name>
+	<name_fr>Os de monstre</name_fr>
+</translation>
+<translation>
+	<name>Monster Keenbone</name>
+	<name_fr>Os acéros</name_fr>
+</translation>
+<translation>
+	<name>Monster Hardbone</name>
+	<name_fr>Os duros</name_fr>
+</translation>
+<translation>
+	<name>Elder Dragon Bone</name>
+	<name_fr>Os dragon ancien</name_fr>
+</translation>
+<translation>
+	<name>Sharp Claw</name>
+	<name_fr>Griffe acérée</name_fr>
+</translation>
+<translation>
+	<name>Piercing Claw</name>
+	<name_fr>Griffe perforante</name_fr>
+</translation>
+<translation>
+	<name>Monster Fluid</name>
+	<name_fr>Liquide de monstre</name_fr>
+</translation>
+<translation>
+	<name>Monster Broth</name>
+	<name_fr>Bouillon de monstre</name_fr>
+</translation>
+<translation>
+	<name>Poison Sac</name>
+	<name_fr>Poche de poison</name_fr>
+</translation>
+<translation>
+	<name>Toxin Sac</name>
+	<name_fr>Poche de toxine</name_fr>
+</translation>
+<translation>
+	<name>Paralysis Sac</name>
+	<name_fr>Poche de paralysie</name_fr>
+</translation>
+<translation>
+	<name>Omniplegia Sac</name>
+	<name_fr>Poche d'omniplégie</name_fr>
+</translation>
+<translation>
+	<name>Sleep Sac</name>
+	<name_fr>Poche de somnifère</name_fr>
+</translation>
+<translation>
+	<name>Coma Sac</name>
+	<name_fr>Poche de coma</name_fr>
+</translation>
+<translation>
+	<name>Flame Sac</name>
+	<name_fr>Poche de flamme</name_fr>
+</translation>
+<translation>
+	<name>Inferno Sac</name>
+	<name_fr>Poche infernale</name_fr>
+</translation>
+<translation>
+	<name>Aqua Sac</name>
+	<name_fr>Poche d'eau</name_fr>
+</translation>
+<translation>
+	<name>Torrent Sac</name>
+	<name_fr>Poche de torrent</name_fr>
+</translation>
+<translation>
+	<name>Frost Sac</name>
+	<name_fr>Poche de givre</name_fr>
+</translation>
+<translation>
+	<name>Freezer Sac</name>
+	<name_fr>Poche de glace</name_fr>
+</translation>
+<translation>
+	<name>Electro Sac</name>
+	<name_fr>Poche électrique</name_fr>
+</translation>
+<translation>
+	<name>Thunder Sac</name>
+	<name_fr>Poche de foudre</name_fr>
+</translation>
+<translation>
+	<name>Bird Wyvern Gem</name>
+	<name_fr>Gemme wyverne rapace</name_fr>
+</translation>
+<translation>
+	<name>Wyvern Gem</name>
+	<name_fr>Gemme wyverne</name_fr>
+</translation>
+<translation>
+	<name>Elder Dragon Blood</name>
+	<name_fr>Sang dragon ancien</name_fr>
+</translation>
+<translation>
+	<name>Mosswine Hide</name>
+	<name_fr>Peau Mosswine</name_fr>
+</translation>
+<translation>
+	<name>Warm Pelt</name>
+	<name_fr>Pelage chaud</name_fr>
+</translation>
+<translation>
+	<name>High-quality Pelt</name>
+	<name_fr>Pelage de qualité</name_fr>
+</translation>
+<translation>
+	<name>Vespoid Shell</name>
+	<name_fr>Carapace Vespoid</name_fr>
+</translation>
+<translation>
+	<name>Vespoid Carapace</name>
+	<name_fr>Cuirasse Vespoid</name_fr>
+</translation>
+<translation>
+	<name>Vespoid Wing</name>
+	<name_fr>Aile Vespoid</name_fr>
+</translation>
+<translation>
+	<name>Vespoid Innerwing</name>
+	<name_fr>Aile fine Vespoid</name_fr>
+</translation>
+<translation>
+	<name>Hornetaur Shell</name>
+	<name_fr>Carapace Hornetaur</name_fr>
+</translation>
+<translation>
+	<name>Hornetaur Wing</name>
+	<name_fr>Aile Hornetaur</name_fr>
+</translation>
+<translation>
+	<name>Hornetaur Head</name>
+	<name_fr>Tête Hornetaur</name_fr>
+</translation>
+<translation>
+	<name>Hornetaur Carapace</name>
+	<name_fr>Cuirasse Hornetaur</name_fr>
+</translation>
+<translation>
+	<name>Hornetaur Innerwing</name>
+	<name_fr>Aile fine Hornetaur</name_fr>
+</translation>
+<translation>
+	<name>Gajau Skin</name>
+	<name_fr>Peau Gajau</name_fr>
+</translation>
+<translation>
+	<name>Gajau Whisker</name>
+	<name_fr>Moustache Gajau</name_fr>
+</translation>
+<translation>
+	<name>Gajau Scale</name>
+	<name_fr>Écaille Gajau</name_fr>
+</translation>
+<translation>
+	<name>Grand Gajau Whisker</name>
+	<name_fr>Moustache Grand Gajau</name_fr>
+</translation>
+<translation>
+	<name>Wingdrake Hide</name>
+	<name_fr>Peau drake ailé</name_fr>
+</translation>
+<translation>
+	<name>Wingdrake Hide+</name>
+	<name_fr>Peau drake ailé +</name_fr>
+</translation>
+<translation>
+	<name>Barnos Hide+</name>
+	<name_fr>Peau Barnos +</name_fr>
+</translation>
+<translation>
+	<name>Barnos Talon</name>
+	<name_fr>Serre Barnos +</name_fr>
+</translation>
+<translation>
+	<name>Kestodon Shell</name>
+	<name_fr>Carapace Kestodon</name_fr>
+</translation>
+<translation>
+	<name>Kestodon Scalp</name>
+	<name_fr>Scalp Kestodon</name_fr>
+</translation>
+<translation>
+	<name>Kestodon Carapace</name>
+	<name_fr>Cuirasse Kestodon</name_fr>
+</translation>
+<translation>
+	<name>Gastodon Carapace</name>
+	<name_fr>Cuirasse Gastodon</name_fr>
+</translation>
+<translation>
+	<name>Gastodon Horn</name>
+	<name_fr>Corne Gastodon</name_fr>
+</translation>
+<translation>
+	<name>Jagras Scale</name>
+	<name_fr>Écaille Jagras</name_fr>
+</translation>
+<translation>
+	<name>Jagras Hide</name>
+	<name_fr>Peau Jagras</name_fr>
+</translation>
+<translation>
+	<name>Jagras Scale+</name>
+	<name_fr>Écaille Jagras +</name_fr>
+</translation>
+<translation>
+	<name>Jagras Hide+</name>
+	<name_fr>Peau Jagras +</name_fr>
+</translation>
+<translation>
+	<name>Shamos Scale</name>
+	<name_fr>Écaille Shamos</name_fr>
+</translation>
+<translation>
+	<name>Shamos Hide</name>
+	<name_fr>Peau Shamos</name_fr>
+</translation>
+<translation>
+	<name>Shamos Scale+</name>
+	<name_fr>Écaille Shamos +</name_fr>
+</translation>
+<translation>
+	<name>Shamos Hide+</name>
+	<name_fr>Peau Shamos +</name_fr>
+</translation>
+<translation>
+	<name>Girros Scale</name>
+	<name_fr>Écaille Girros</name_fr>
+</translation>
+<translation>
+	<name>Girros Hide</name>
+	<name_fr>Peau Girros</name_fr>
+</translation>
+<translation>
+	<name>Girros Fang</name>
+	<name_fr>Croc Girros</name_fr>
+</translation>
+<translation>
+	<name>Girros Scale+</name>
+	<name_fr>Écaille Girros +</name_fr>
+</translation>
+<translation>
+	<name>Girros Hide+</name>
+	<name_fr>Peau Girros +</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Scale</name>
+	<name_fr>Écaille Grand Jagras</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Hide</name>
+	<name_fr>Peau Grand Jagras</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Mane</name>
+	<name_fr>Crinière Grand Jagras</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Claw</name>
+	<name_fr>Griffe Grand Jagras</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Scale+</name>
+	<name_fr>Écaille Grand Jagras +</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Hide+</name>
+	<name_fr>Peau Grand Jagras +</name_fr>
+</translation>
+<translation>
+	<name>Great Jagras Claw+</name>
+	<name_fr>Griffe Grand Jagras +</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Scale</name>
+	<name_fr>Écaille Kulu-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Hide</name>
+	<name_fr>Peau Kulu-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Plume</name>
+	<name_fr>Aigrette Kulu-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Beak</name>
+	<name_fr>Bec Kulu-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Scale+</name>
+	<name_fr>Écaille Kulu-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Hide+</name>
+	<name_fr>Peau Kulu-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Plume+</name>
+	<name_fr>Aigrette Kulu-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Kulu-Ya-Ku Beak+</name>
+	<name_fr>Bec Kulu-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Scale</name>
+	<name_fr>Écaille Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Shell</name>
+	<name_fr>Carapace Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Quill</name>
+	<name_fr>Plume Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Sac</name>
+	<name_fr>Poche Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Tail</name>
+	<name_fr>Queue Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Scale+</name>
+	<name_fr>Écaille Pukei-Pukei +</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Carapace</name>
+	<name_fr>Cuirasse Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Wing</name>
+	<name_fr>Aile Pukei-Pukei</name_fr>
+</translation>
+<translation>
+	<name>Pukei-Pukei Sac+</name>
+	<name_fr>Poche Pukei-Pukei +</name_fr>
+</translation>
+<translation>
+	<name>Barroth Shell</name>
+	<name_fr>Cuirasse Barroth</name_fr>
+</translation>
+<translation>
+	<name>Barroth Ridge</name>
+	<name_fr>Vertèbre Barroth</name_fr>
+</translation>
+<translation>
+	<name>Barroth Claw</name>
+	<name_fr>Griffe Barroth</name_fr>
+</translation>
+<translation>
+	<name>Barroth Scalp</name>
+	<name_fr>Scalp Barroth</name_fr>
+</translation>
+<translation>
+	<name>Barroth Tail</name>
+	<name_fr>Queue Barroth</name_fr>
+</translation>
+<translation>
+	<name>Fertile Mud</name>
+	<name_fr>Boue fertile</name_fr>
+</translation>
+<translation>
+	<name>Barroth Carapace</name>
+	<name_fr>Carapace Barroth</name_fr>
+</translation>
+<translation>
+	<name>Barroth Ridge+</name>
+	<name_fr>Thorax Barroth</name_fr>
+</translation>
+<translation>
+	<name>Barroth Claw+</name>
+	<name_fr>Griffe Barroth +</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Scale</name>
+	<name_fr>Écaille Jyuratodus</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Shell</name>
+	<name_fr>Carapace Jyuratodus</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Fang</name>
+	<name_fr>Croc Jyuratodus</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Fin</name>
+	<name_fr>Nageoire Jyuratodus</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Scale+</name>
+	<name_fr>Écaille Jyuratodus +</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Carapace</name>
+	<name_fr>Cuirasse Jyuratodus</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Fang+</name>
+	<name_fr>Croc Jyuratodus +</name_fr>
+</translation>
+<translation>
+	<name>Jyuratodus Fin+</name>
+	<name_fr>Nageoire Jyuratodus +</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Scale</name>
+	<name_fr>Écaille Tobi-Kadachi</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Pelt</name>
+	<name_fr>Pelage Tobi-Kadachi</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Membrane</name>
+	<name_fr>Membrane Tobi-Kadachi</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Claw</name>
+	<name_fr>Griffe Tobi-Kadachi</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Electrode</name>
+	<name_fr>Électrode Tobi-Kadachi</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Scale+</name>
+	<name_fr>Écaille Tobi-Kadachi +</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Pelt+</name>
+	<name_fr>Pelage Tobi-Kadachi +</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Claw+</name>
+	<name_fr>Griffe Tobi-Kadachi +</name_fr>
+</translation>
+<translation>
+	<name>Tobi-Kadachi Electrode+</name>
+	<name_fr>Électrode Tobi-Kadachi +</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Scale</name>
+	<name_fr>Écaille Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Pelt</name>
+	<name_fr>Pelage Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Fang</name>
+	<name_fr>Croc Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Nosebone</name>
+	<name_fr>Os nasal Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Tail</name>
+	<name_fr>Queue Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Plate</name>
+	<name_fr>Plaque Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Scale+</name>
+	<name_fr>Écaille Anjanath +</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Pelt+</name>
+	<name_fr>Pelage Anjanath +</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Fang+</name>
+	<name_fr>Croc Anjanath +</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Nosebone+</name>
+	<name_fr>Os nasal Anjanath +</name_fr>
+</translation>
+<translation>
+	<name>Anjanath Gem</name>
+	<name_fr>Gemme Anjanath</name_fr>
+</translation>
+<translation>
+	<name>Rathian Scale</name>
+	<name_fr>Écaille Rathian</name_fr>
+</translation>
+<translation>
+	<name>Rathian Shell</name>
+	<name_fr>Carapace Rathian</name_fr>
+</translation>
+<translation>
+	<name>Rathian Webbing</name>
+	<name_fr>Palmure Rathian</name_fr>
+</translation>
+<translation>
+	<name>Rathian Spike</name>
+	<name_fr>Pointe Rathian</name_fr>
+</translation>
+<translation>
+	<name>Rathian Plate</name>
+	<name_fr>Plaque Rathian</name_fr>
+</translation>
+<translation>
+	<name>Rathian Scale+</name>
+	<name_fr>Écaille Rathian +</name_fr>
+</translation>
+<translation>
+	<name>Rathian Carapace</name>
+	<name_fr>Cuirasse Rathian</name_fr>
+</translation>
+<translation>
+	<name>Rathian Spike+</name>
+	<name_fr>Pointe Rathian +</name_fr>
+</translation>
+<translation>
+	<name>Rathian Ruby</name>
+	<name_fr>Rubis Rathian</name_fr>
+</translation>
+<translation>
+	<name>Pink Rathian Scale+</name>
+	<name_fr>Écaille Rathian sakura +</name_fr>
+</translation>
+<translation>
+	<name>Pink Rathian Carapace</name>
+	<name_fr>Cuirasse Rathian sakura</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Scale</name>
+	<name_fr>Écaille Tzitzi-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Hide</name>
+	<name_fr>Peau Tzitzi-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Claw</name>
+	<name_fr>Griffe Tzitzi-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Photophore</name>
+	<name_fr>Photophore Tzitzi-Ya-Ku</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Scale+</name>
+	<name_fr>Écaille Tzitzi-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Hide+</name>
+	<name_fr>Peau Tzitzi-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Claw+</name>
+	<name_fr>Griffe Tzitzi-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi-Ya-Ku Photophore+</name>
+	<name_fr>Photophore Tzitzi-Ya-Ku +</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Pelt</name>
+	<name_fr>Pelage Paolumu</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Scale</name>
+	<name_fr>Écaille Paolumu</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Shell</name>
+	<name_fr>Carapace Paolumu</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Webbing</name>
+	<name_fr>Palmure Paolumu</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Pelt+</name>
+	<name_fr>Pelage Paolumu +</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Scale+</name>
+	<name_fr>Écaille Paolumu +</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Carapace+</name>
+	<name_fr>Cuirasse Paolumu +</name_fr>
+</translation>
+<translation>
+	<name>Paolumu Wing</name>
+	<name_fr>Aile Paolumu</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Scale</name>
+	<name_fr>Écaille Grand Girros</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Hide</name>
+	<name_fr>Peau Grand Girros</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Hood</name>
+	<name_fr>Capuchon Grand Girros</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Fang</name>
+	<name_fr>Croc Grand Girros</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Tail</name>
+	<name_fr>Queue Grand Girros</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Scale+</name>
+	<name_fr>Écaille Grand Girros +</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Hide+</name>
+	<name_fr>Peau Grand Girros +</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Hood+</name>
+	<name_fr>Capuchon Grand Girros +</name_fr>
+</translation>
+<translation>
+	<name>Great Girros Fang+</name>
+	<name_fr>Croc Grand Girros +</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Scale</name>
+	<name_fr>Écaille Radobaan</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Shell</name>
+	<name_fr>Carapace Radobaan</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Oilshell</name>
+	<name_fr>Carapace huileuse Radobaan</name_fr>
+</translation>
+<translation>
+	<name>Wyvern Bonemass</name>
+	<name_fr>Masse osseuse Wyverne</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Marrow</name>
+	<name_fr>Moelle Radobaan</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Scale+</name>
+	<name_fr>Écaille Radobaan +</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Carapace</name>
+	<name_fr>Cuirasse Radobaan</name_fr>
+</translation>
+<translation>
+	<name>Radobaan Medulla</name>
+	<name_fr>Médulla Radobaan</name_fr>
+</translation>
+<translation>
+	<name>Legiana Scale</name>
+	<name_fr>Écaille Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Hide</name>
+	<name_fr>Peau Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Claw</name>
+	<name_fr>Griffe Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Webbing</name>
+	<name_fr>Palmure Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Tail Webbing</name>
+	<name_fr>Palmure de queue Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Plate</name>
+	<name_fr>Plaque Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Scale+</name>
+	<name_fr>Écaille Legiana +</name_fr>
+</translation>
+<translation>
+	<name>Legiana Hide+</name>
+	<name_fr>Peau Legiana +</name_fr>
+</translation>
+<translation>
+	<name>Legiana Claw+</name>
+	<name_fr>Griffe Legiana +</name_fr>
+</translation>
+<translation>
+	<name>Legiana Wing</name>
+	<name_fr>Aile Legiana</name_fr>
+</translation>
+<translation>
+	<name>Legiana Gem</name>
+	<name_fr>Gemme Legiana</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Scale</name>
+	<name_fr>Écaille Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Sinew</name>
+	<name_fr>Tendon Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Claw</name>
+	<name_fr>Griffe Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Fang</name>
+	<name_fr>Croc Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Tail</name>
+	<name_fr>Queue Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Plate</name>
+	<name_fr>Plaque Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Scale+</name>
+	<name_fr>Écaille Odogaron +</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Sinew+</name>
+	<name_fr>Tendon Odogaron +</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Claw+</name>
+	<name_fr>Griffe Odogaron +</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Fang+</name>
+	<name_fr>Croc Odogaron +</name_fr>
+</translation>
+<translation>
+	<name>Odogaron Gem</name>
+	<name_fr>Gemme Odogaron</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Scale</name>
+	<name_fr>Écaille Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Shell</name>
+	<name_fr>Carapace Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Webbing</name>
+	<name_fr>Palmure Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Tail</name>
+	<name_fr>Queue Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rath Wingtalon</name>
+	<name_fr>Serre Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Marrow</name>
+	<name_fr>Moelle Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Plate</name>
+	<name_fr>Plaque Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Scale+</name>
+	<name_fr>Écaille Rathalos +</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Carapace</name>
+	<name_fr>Cuirasse Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Wing</name>
+	<name_fr>Aile Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Medulla</name>
+	<name_fr>Medulla Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Ruby</name>
+	<name_fr>Rubis Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Azure Rathalos Scale+</name>
+	<name_fr>Écaille Rathalos azur +</name_fr>
+</translation>
+<translation>
+	<name>Azure Rathalos Carapace</name>
+	<name_fr>Cuirasse Rathalos azur</name_fr>
+</translation>
+<translation>
+	<name>Azure Rathalos Tail</name>
+	<name_fr>Queue Rathalos azur</name_fr>
+</translation>
+<translation>
+	<name>Azure Rathalos Wing</name>
+	<name_fr>Aile Rathalos azur</name_fr>
+</translation>
+<translation>
+	<name>Diablos Shell</name>
+	<name_fr>Carapace Diablos</name_fr>
+</translation>
+<translation>
+	<name>Diablos Ridge</name>
+	<name_fr>vertèbre Diablos</name_fr>
+</translation>
+<translation>
+	<name>Diablos Tailcase</name>
+	<name_fr>Chevron Diablos</name_fr>
+</translation>
+<translation>
+	<name>Diablos Fang</name>
+	<name_fr>Croc Diablos</name_fr>
+</translation>
+<translation>
+	<name>Twisted Horn</name>
+	<name_fr>Corne tordue</name_fr>
+</translation>
+<translation>
+	<name>Diablos Marrow</name>
+	<name_fr>Moelle Diablos</name_fr>
+</translation>
+<translation>
+	<name>Diablos Carapace</name>
+	<name_fr>Cuirasse Diablos</name_fr>
+</translation>
+<translation>
+	<name>Diablos Ridge+</name>
+	<name_fr>Thorax Diablos</name_fr>
+</translation>
+<translation>
+	<name>Majestic Horn</name>
+	<name_fr>Corne majestueuse</name_fr>
+</translation>
+<translation>
+	<name>Blos Medulla</name>
+	<name_fr>Medulla à épines</name_fr>
+</translation>
+<translation>
+	<name>Black Diablos Carapace</name>
+	<name_fr>Cuirasse Diablos noire</name_fr>
+</translation>
+<translation>
+	<name>Black Diablos Ridge+</name>
+	<name_fr>Thorax Diablos noire</name_fr>
+</translation>
+<translation>
+	<name>Black Spiral Horn+</name>
+	<name_fr>Corne spiralée noire +</name_fr>
+</translation>
+<translation>
+	<name>Kirin Hide</name>
+	<name_fr>Peau Kirin</name_fr>
+</translation>
+<translation>
+	<name>Kirin Tail</name>
+	<name_fr>Queue Kirin</name_fr>
+</translation>
+<translation>
+	<name>Kirin Mane</name>
+	<name_fr>Crinière Kirin</name_fr>
+</translation>
+<translation>
+	<name>Kirin Thunderhorn</name>
+	<name_fr>Corne Kirin</name_fr>
+</translation>
+<translation>
+	<name>Kirin Hide+</name>
+	<name_fr>Peau Kirin +</name_fr>
+</translation>
+<translation>
+	<name>Kirin Thundertail</name>
+	<name_fr>Queue de foudre Kirin</name_fr>
+</translation>
+<translation>
+	<name>Kirin Azure Horn</name>
+	<name_fr>Corne azur Kirin</name_fr>
+</translation>
+<translation>
+	<name>Zorah Magdaros Heat Scale</name>
+	<name_fr>Écaille calorifuge Zorah Magdaros</name_fr>
+</translation>
+<translation>
+	<name>Zorah Magdaros Carapace</name>
+	<name_fr>Cuirasse Zorah Magdaros</name_fr>
+</translation>
+<translation>
+	<name>Zorah Magdaros Ridge</name>
+	<name_fr>vertèbre Zorah Magdaros</name_fr>
+</translation>
+<translation>
+	<name>Zorah Magdaros Pleura</name>
+	<name_fr>Plexus Zorah Magdaros</name_fr>
+</translation>
+<translation>
+	<name>Zorah Magdaros Magma</name>
+	<name_fr>Magma Zorah Magdaros</name_fr>
+</translation>
+<translation>
+	<name>Zorah Magdaros Gem</name>
+	<name_fr>Gemme Zorah Magdaros</name_fr>
+</translation>
+<translation>
+	<name>Dodogama Scale+</name>
+	<name_fr>Écaille Dodogama +</name_fr>
+</translation>
+<translation>
+	<name>Dodogama Hide+</name>
+	<name_fr>Peau Dodogama +</name_fr>
+</translation>
+<translation>
+	<name>Dodogama Jaw</name>
+	<name_fr>Mâchoire Dodogama</name_fr>
+</translation>
+<translation>
+	<name>Dodogama Talon</name>
+	<name_fr>Serre Dodogama</name_fr>
+</translation>
+<translation>
+	<name>Dodogama Tail</name>
+	<name_fr>Queue Dodogama</name_fr>
+</translation>
+<translation>
+	<name>Lavasioth Scale+</name>
+	<name_fr>Écaille Lavasioth +</name_fr>
+</translation>
+<translation>
+	<name>Lavasioth Carapace</name>
+	<name_fr>Cuirasse Lavasioth</name_fr>
+</translation>
+<translation>
+	<name>Lavasioth Fang+</name>
+	<name_fr>Croc Lavasioth +</name_fr>
+</translation>
+<translation>
+	<name>Lavasioth Fin+</name>
+	<name_fr>Nageoire Lavasioth +</name_fr>
+</translation>
+<translation>
+	<name>Uragaan Scale+</name>
+	<name_fr>Écaille Uragaan +</name_fr>
+</translation>
+<translation>
+	<name>Uragaan Carapace</name>
+	<name_fr>Cuirasse Uragaan</name_fr>
+</translation>
+<translation>
+	<name>Uragaan Jaw</name>
+	<name_fr>Mâchoire Uragaan</name_fr>
+</translation>
+<translation>
+	<name>Uragaan Scute</name>
+	<name_fr>Scutum Uragaan</name_fr>
+</translation>
+<translation>
+	<name>Uragaan Marrow</name>
+	<name_fr>Moelle Uragaan</name_fr>
+</translation>
+<translation>
+	<name>Uragaan Ruby</name>
+	<name_fr>Rubis Uragaan</name_fr>
+</translation>
+<translation>
+	<name>Lava Nugget</name>
+	<name_fr>Pépite de lave</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Scale+</name>
+	<name_fr>Écaille Bazelgeuse +</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Carapace</name>
+	<name_fr>Cuirasse Bazelgeuse</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Tail</name>
+	<name_fr>Queue Bazelgeuse</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Fuse</name>
+	<name_fr>Mèche Bazelgeuse</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Talon</name>
+	<name_fr>Serre Bazelgeuse</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Wing</name>
+	<name_fr>Aile Bazelgeuse</name_fr>
+</translation>
+<translation>
+	<name>Bazelgeuse Gem</name>
+	<name_fr>Gemme Bazelgeuse</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Scale</name>
+	<name_fr>Deviljho Scale</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Hide</name>
+	<name_fr>Deviljho Hide</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Tallfang</name>
+	<name_fr>Deviljho Tallfang</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Talon</name>
+	<name_fr>Deviljho Talon</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Scalp</name>
+	<name_fr>Deviljho Scalp</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Tail</name>
+	<name_fr>Deviljho Tail</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Saliva</name>
+	<name_fr>Deviljho Saliva</name_fr>
+</translation>
+<translation>
+	<name>Deviljho Gem</name>
+	<name_fr>Deviljho Gem</name_fr>
+</translation>
+<translation>
+	<name>Immortal Dragonscale</name>
+	<name_fr>Écaille de dragon immortel</name_fr>
+</translation>
+<translation>
+	<name>Nergigante Carapace</name>
+	<name_fr>Cuirasse Nergigante</name_fr>
+</translation>
+<translation>
+	<name>Nergigante Tail</name>
+	<name_fr>Queue Nergigante</name_fr>
+</translation>
+<translation>
+	<name>Nergigante Horn+</name>
+	<name_fr>Corne Nergigante +</name_fr>
+</translation>
+<translation>
+	<name>Nergigante Talon</name>
+	<name_fr>Serre Nergigante</name_fr>
+</translation>
+<translation>
+	<name>Nergigante Regrowth Plate</name>
+	<name_fr>Plaque régénérante Nergigante</name_fr>
+</translation>
+<translation>
+	<name>Nergigante Gem</name>
+	<name_fr>Gemme Nergigante</name_fr>
+</translation>
+<translation>
+	<name>Deceased Scale</name>
+	<name_fr>Écaille de dragon-zombie</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Carapace</name>
+	<name_fr>Cuirasse Vaal Hazak</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Membrane</name>
+	<name_fr>Membrane Vaal Hazak</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Tail</name>
+	<name_fr>Queue Vaal Hazak</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Fang+</name>
+	<name_fr>Croc Vaal Hazak +</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Talon</name>
+	<name_fr>Serre Vaal Hazak</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Wing</name>
+	<name_fr>Aile Vaal Hazak</name_fr>
+</translation>
+<translation>
+	<name>Vaal Hazak Gem</name>
+	<name_fr>Gemme Vaal Hazak</name_fr>
+</translation>
+<translation>
+	<name>Teostra Carapace</name>
+	<name_fr>Cuirasse Teostra</name_fr>
+</translation>
+<translation>
+	<name>Teostra Mane</name>
+	<name_fr>Crinière Teostra</name_fr>
+</translation>
+<translation>
+	<name>Teostra Tail</name>
+	<name_fr>Queue Teostra</name_fr>
+</translation>
+<translation>
+	<name>Teostra Horn+</name>
+	<name_fr>Corne Teostra +</name_fr>
+</translation>
+<translation>
+	<name>Fire Dragon Scale+</name>
+	<name_fr>Écaille Teostra +</name_fr>
+</translation>
+<translation>
+	<name>Teostra Claw+</name>
+	<name_fr>Griffe Teostra +</name_fr>
+</translation>
+<translation>
+	<name>Teostra Webbing</name>
+	<name_fr>Palmure Teostra</name_fr>
+</translation>
+<translation>
+	<name>Teostra Powder</name>
+	<name_fr>Poudre Teostra</name_fr>
+</translation>
+<translation>
+	<name>Teostra Gem</name>
+	<name_fr>Gemme Teostra</name_fr>
+</translation>
+<translation>
+	<name>Daora Carapace</name>
+	<name_fr>Cuirasse Daora</name_fr>
+</translation>
+<translation>
+	<name>Daora Dragon Scale+</name>
+	<name_fr>Écaille Daora +</name_fr>
+</translation>
+<translation>
+	<name>Daora Webbing</name>
+	<name_fr>Palmure Daora</name_fr>
+</translation>
+<translation>
+	<name>Daora Horn+</name>
+	<name_fr>Corne Daora +</name_fr>
+</translation>
+<translation>
+	<name>Daora Tail</name>
+	<name_fr>Queue Daora</name_fr>
+</translation>
+<translation>
+	<name>Daora Claw+</name>
+	<name_fr>Griffe Daora +</name_fr>
+</translation>
+<translation>
+	<name>Daora Gem</name>
+	<name_fr>Gemme Daora</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Soulscale</name>
+	<name_fr>Écaille d'âme Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Shell</name>
+	<name_fr>Carapace Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Veil</name>
+	<name_fr>Voile Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Tail</name>
+	<name_fr>Queue Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Horn</name>
+	<name_fr>Corne Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Claw</name>
+	<name_fr>Griffe Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Wing</name>
+	<name_fr>Aile Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Xeno'jiiva Gem</name>
+	<name_fr>Gemme Xeno'jiiva</name_fr>
+</translation>
+<translation>
+	<name>Tailraider Voucher</name>
+	<name_fr>Coupon Chasseur de miaonstres</name_fr>
+</translation>
+<translation>
+	<name>Gajalaka Sketch</name>
+	<name_fr>Dessin Gajalaka</name_fr>
+</translation>
+<translation>
+	<name>Black Bandage</name>
+	<name_fr>Bandage noir</name_fr>
+</translation>
+<translation>
+	<name>Black Crystal Ticket</name>
+	<name_fr>Ticket cristal noir</name_fr>
+</translation>
+<translation>
+	<name>Wiggler Ticket</name>
+	<name_fr>Ticket tortilleur</name_fr>
+</translation>
+<translation>
+	<name>Watcher Lens</name>
+	<name_fr>Lentille de Veilleur</name_fr>
+</translation>
+<translation>
+	<name>Nora Brave Trophy</name>
+	<name_fr>Trophée de valeur Nora</name_fr>
+</translation>
+<translation>
+	<name>SFV Ticket</name>
+	<name_fr>Ticket SFV</name_fr>
+</translation>
+<translation>
+	<name>Azure Star Shard</name>
+	<name_fr>Fragment d'astre bleu</name_fr>
+</translation>
+<translation>
+	<name>Mysterious Feystone</name>
+	<name_fr>Joyaux ??? 1</name_fr>
+</translation>
+<translation>
+	<name>Glowing Feystone</name>
+	<name_fr>Joyaux ??? 2</name_fr>
+</translation>
+<translation>
+	<name>Worn Feystone</name>
+	<name_fr>Joyaux ??? 3</name_fr>
+</translation>
+<translation>
+	<name>Warped Feystone</name>
+	<name_fr>Joyaux ??? 4</name_fr>
+</translation>
+<translation>
+	<name>Sullied Streamstone</name>
+	<name_fr>Pierre-dragon terne</name_fr>
+</translation>
+<translation>
+	<name>Shining Streamstone</name>
+	<name_fr>Pierre-dragon brillante</name_fr>
+</translation>
+<translation>
+	<name>Streamstone Shard</name>
+	<name_fr>Éclat de pierre-dragon</name_fr>
+</translation>
+<translation>
+	<name>Streamstone</name>
+	<name_fr>Pierre-dragon</name_fr>
+</translation>
+<translation>
+	<name>Gleaming Streamstone</name>
+	<name_fr>Pierre-dragon scintillante</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Sword</name>
+	<name_fr>Pierre-dragon du guerrier - Épée</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Blade</name>
+	<name_fr>Pierre-dragon du guerrier - Lame</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Hammer</name>
+	<name_fr>Pierre-dragon du guerrier - Marteau</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Lance</name>
+	<name_fr>Pierre-dragon du guerrier - Lance</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Axe</name>
+	<name_fr>Pierre-dragon du guerrier - Hache</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Shaft</name>
+	<name_fr>Pierre-dragon du guerrier - Bâton</name_fr>
+</translation>
+<translation>
+	<name>Warrior's Streamstone: Ranged</name>
+	<name_fr>Pierre-dragon du guerrier - Corde</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Sword</name>
+	<name_fr>Pierre-dragon du héros - Épée</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Blade</name>
+	<name_fr>Pierre-dragon du héros - Lame</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Hammer</name>
+	<name_fr>Pierre-dragon du héros - Marteau</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Lance</name>
+	<name_fr>Pierre-dragon du héros - Lance</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Axe</name>
+	<name_fr>Pierre-dragon du héros - Hache</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Shaft</name>
+	<name_fr>Pierre-dragon du héros - Bâton</name_fr>
+</translation>
+<translation>
+	<name>Hero's Streamstone: Ranged</name>
+	<name_fr>Pierre-dragon du héros - Corde</name_fr>
+</translation>
+<translation>
+	<name>Voucher</name>
+	<name_fr>Coupon</name_fr>
+</translation>
+<translation>
+	<name>First Wyverian Print</name>
+	<name_fr>Billet des Anciens Wyvériens</name_fr>
+</translation>
+<translation>
+	<name>Deluxe First Wyverian Print</name>
+	<name_fr>Billet des Anciens Wyvériens EX</name_fr>
+</translation>
+<translation>
+	<name>Steel Wyverian Print</name>
+	<name_fr>Billet wyvérien en acier</name_fr>
+</translation>
+<translation>
+	<name>Silver Wyverian Print</name>
+	<name_fr>Billet wyvérien en argent</name_fr>
+</translation>
+<translation>
+	<name>Gold Wyverian Print</name>
+	<name_fr>Billet wyvérien en or</name_fr>
+</translation>
+<translation>
+	<name>Commendation</name>
+	<name_fr>Certificat du champion</name_fr>
+</translation>
+<translation>
+	<name>High Commendation</name>
+	<name_fr>Certificat du héros</name_fr>
+</translation>
+<translation>
+	<name>Research Commission Ticket</name>
+	<name_fr>Ticket Commission de recherche</name_fr>
+</translation>
+<translation>
+	<name>Pukei Coin</name>
+	<name_fr>Pièce Pukei</name_fr>
+</translation>
+<translation>
+	<name>Kulu Coin</name>
+	<name_fr>Pièce Kulu</name_fr>
+</translation>
+<translation>
+	<name>Rathian Coin</name>
+	<name_fr>Pièce Rathian</name_fr>
+</translation>
+<translation>
+	<name>Tzitzi Coin</name>
+	<name_fr>Pièce Tzitzi</name_fr>
+</translation>
+<translation>
+	<name>Barroth Coin</name>
+	<name_fr>Pièce Barroth</name_fr>
+</translation>
+<translation>
+	<name>Gama Coin</name>
+	<name_fr>Pièce Gama</name_fr>
+</translation>
+<translation>
+	<name>Rathalos Coin</name>
+	<name_fr>Pièce Rathalos</name_fr>
+</translation>
+<translation>
+	<name>Brute Coin</name>
+	<name_fr>Pièce de la terre</name_fr>
+</translation>
+<translation>
+	<name>Flying Coin</name>
+	<name_fr>Pièce de l'air</name_fr>
+</translation>
+<translation>
+	<name>Pinnacle Coin</name>
+	<name_fr>Pièce "Apogée"</name_fr>
+</translation>
+<translation>
+	<name>Hunter King Coin</name>
+	<name_fr>Pièce "Roi de la chasse"</name_fr>
+</translation>
+<translation>
+	<name>Ace Hunter Coin</name>
+	<name_fr>Pièce "As de la chasse"</name_fr>
+</translation>
+<translation>
+	<name>Steel Egg</name>
+	<name_fr>Œuf d'acier</name_fr>
+</translation>
+<translation>
+	<name>Silver Egg</name>
+	<name_fr>Œuf d'argent</name_fr>
+</translation>
+<translation>
+	<name>Golden Egg</name>
+	<name_fr>Œuf d'or</name_fr>
+</translation>
+<translation>
+	<name>Chipped Scale</name>
+	<name_fr>Écaille ébréchée</name_fr>
+</translation>
+<translation>
+	<name>Large Scale</name>
+	<name_fr>Grande écaille</name_fr>
+</translation>
+<translation>
+	<name>Beautiful Scale</name>
+	<name_fr>Écaille magnifique</name_fr>
+</translation>
+<translation>
+	<name>Lustrous Scale</name>
+	<name_fr>Écaille brillante</name_fr>
+</translation>
+<translation>
+	<name>Glimmering Scale</name>
+	<name_fr>Écaille scintillante</name_fr>
+</translation>
+<translation>
+	<name>Bhernastone</name>
+	<name_fr>Pierre de Bherna</name_fr>
+</translation>
+<translation>
+	<name>Dundormarin</name>
+	<name_fr>Joyau de Dundorma</name_fr>
+</translation>
+<translation>
+	<name>Loc Lac Ore</name>
+	<name_fr>Minerai de Loc Lac</name_fr>
+</translation>
+<translation>
+	<name>Val Habar Quartz</name>
+	<name_fr>Quartz de Val Habar</name_fr>
+</translation>
+<translation>
+	<name>Minegardenite</name>
+	<name_fr>Minegardenite</name_fr>
+</translation>
+<translation>
+	<name>Golden Scale</name>
+	<name_fr>Écaille d'or</name_fr>
+</translation>
+<translation>
+	<name>Golden Scale+</name>
+	<name_fr>Grande écaille d'or</name_fr>
+</translation>
+<translation>
+	<name>Platinum Scale</name>
+	<name_fr>Écaille de platine</name_fr>
+</translation>
+<translation>
+	<name>Platinum Scale+</name>
+	<name_fr>Grande écaille de platine</name_fr>
+</translation>
+<translation>
+	<name>Gilded Scale</name>
+	<name_fr>Écaille rouge</name_fr>
+</translation>
+<translation>
+	<name>Gilded Scale+</name>
+	<name_fr>Grande écaille rouge</name_fr>
 </translation>
 
 </data>

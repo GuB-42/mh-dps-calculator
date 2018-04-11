@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <data>
 	<buff_group id="augmentation_attack_increase">
 		<name>Augmentation: Attack Increase</name>
@@ -2743,8 +2742,10 @@
 
 	<buff_group id="minds_eye_ballistics">
 		<name>Mind's Eye/Ballistics</name>
+		<name_fr>Œil de l'esprit</name_fr>
 		<buff>
 			<name>Mind's Eye/Ballistics</name>
+			<name_fr>Œil de l'esprit</name_fr>
 			<minds_eye>1</minds_eye>
 		</buff>
 	</buff_group>
@@ -2937,24 +2938,30 @@
 
 	<buff_group id="demondrug">
 		<name>Demondrug</name>
+		<name_fr>Potion du démon</name_fr>
 		<buff>
 			<name>Demondrug</name>
+			<name_fr>Potion du démon</name_fr>
 			<attack_plus>5</attack_plus>
 		</buff>
 	</buff_group>
 
 	<buff_group id="mega_demondrug">
 		<name>Mega Demondrug</name>
+		<name_fr>Potion du démon +</name_fr>
 		<buff>
 			<name>Mega Demondrug</name>
+			<name_fr>Potion du démon +</name_fr>
 			<attack_plus>7</attack_plus>
 		</buff>
 	</buff_group>
 
 	<buff_group id="might_seed">
 		<name>Might Seed</name>
+		<name_fr>Graine de force</name_fr>
 		<buff>
 			<name>Might Seed</name>
+			<name_fr>Graine de force</name_fr>
 			<might_seed_use>
 				<attack_plus>10</attack_plus>
 			</might_seed_use>
@@ -2963,8 +2970,10 @@
 
 	<buff_group id="demon_powder">
 		<name>Demon Powder</name>
+		<name_fr>Poudre du démon</name_fr>
 		<buff>
 			<name>Demon Powder</name>
+			<name_fr>Poudre du démon</name_fr>
 			<demon_powder_use>
 				<attack_plus>10</attack_plus>
 			</demon_powder_use>
@@ -2973,8 +2982,10 @@
 
 	<buff_group id="might_pill">
 		<name>Might Pill</name>
+		<name_fr>Philtre du diable</name_fr>
 		<buff>
 			<name>Might Pill</name>
+			<name_fr>Philtre du diable</name_fr>
 			<might_pill_use>
 				<attack_plus>25</attack_plus>
 			</might_pill_use>
@@ -2983,40 +2994,50 @@
 
 	<buff_group id="armorskin">
 		<name>Armorskin</name>
+		<name_fr>Potion de pierre</name_fr>
 		<buff>
 			<name>Armorskin</name>
+			<name_fr>Potion de pierre</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="mega_armorskin">
 		<name>Mega Armorskin</name>
+		<name_fr>Potion de pierre +</name_fr>
 		<buff>
 			<name>Mega Armorskin</name>
+			<name_fr>Potion de pierre +</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="adamant_seed">
 		<name>Adamant Seed</name>
+		<name_fr>Graine de ténacité</name_fr>
 		<buff>
 			<name>Adamant Seed</name>
+			<name_fr>Graine de ténacité</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="hardshell_powder">
 		<name>Hardshell Powder</name>
+		<name_fr>Poudre de pierre</name_fr>
 		<buff>
 			<name>Hardshell Powder</name>
+			<name_fr>Poudre de pierre</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="adamant_pill">
 		<name>Adamant Pill</name>
+		<name_fr>Philtre de métal</name_fr>
 		<buff>
 			<name>Adamant Pill</name>
+			<name_fr>Philtre de métal</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3025,32 +3046,40 @@
 
 	<buff_group id="powercharm">
 		<name>Powercharm</name>
+		<name_fr>Amulette de force</name_fr>
 		<buff>
 			<name>Powercharm</name>
+			<name_fr>Amulette de force</name_fr>
 			<attack_plus>6</attack_plus>
 		</buff>
 	</buff_group>
 
 	<buff_group id="powertalon">
 		<name>Powertalon</name>
+		<name_fr>Griffe de force</name_fr>
 		<buff>
 			<name>Powertalon</name>
+			<name_fr>Griffe de force</name_fr>
 			<attack_plus>9</attack_plus>
 		</buff>
 	</buff_group>
 
 	<buff_group id="armorcharm">
 		<name>Armorcharm</name>
+		<name_fr>Amulette de défense</name_fr>
 		<buff>
 			<name>Armorcharm</name>
+			<name_fr>Amulette de défense</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="armortalon">
 		<name>Armortalon</name>
+		<name_fr>Griffe de défense</name_fr>
 		<buff>
 			<name>Armortalon</name>
+			<name_fr>Griffe de défense</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
