@@ -42,7 +42,11 @@ my %monster_states = (
 	"Vaal Hazak" => [ "", "Wounded" ],
 	"Xeno'jiiva" => [ "", "Critical State", "Wounded" ],
 	"Zorah Magdaros/胸" => [ "Before Wounded", "After Wounded" ],
-	"Deviljho" => [ "", "Enraged" ],
+	"Deviljho" => [ "", "Enraged" ]
+);
+
+my %monster_enraged_states = (
+	"Deviljho" => [ 0, 1 ]
 );
 
 sub process_data_row {
@@ -102,7 +106,19 @@ sub process_data_row {
 				"ice" => $lrow_s[$i]{"氷"},
 				"dragon" => $lrow_s[$i]{"龍"},
 				"stun" => $lrow_s[$i]{"気絶"}
+			};
+
+			my $enraged_state;
+			if ($monster_enraged_states{$xn}) {
+				if (defined $monster_enraged_states{$xn}->[$i]) {
+					$enraged_state = $monster_enraged_states{$xn}->[$i];
+				}
+			} elsif ($monster_enraged_states{$cur_monster->{"name"}}) {
+				if (defined $monster_enraged_states{$cur_monster->{"name"}}->[$i]) {
+					$enraged_state = $monster_enraged_states{$cur_monster->{"name"}}->[$i];
+				}
 			}
+			$cur_monster->{"hit_data"}{$part_name}{$state}{"enraged_state"} = $enraged_state;
 		}
 	}
 }
@@ -280,6 +296,10 @@ for my $monster (@monsters) {
 		for my $state (sort keys %{$monster->{"hit_data"}{$part_name}}) {
 			$xml_writer->startTag("hit_data");
 			$xml_writer->dataElement("state", $state) if ($state);
+			if (defined $monster->{"hit_data"}{$part_name}{$state}{"enraged_state"}) {
+				$xml_writer->dataElement("enraged_state",
+				                         $monster->{"hit_data"}{$part_name}{$state}{"enraged_state"});
+			}
 			for my $key ("cut", "impact", "bullet", "fire", "water", "thunder", "ice", "dragon", "stun") {
 				$xml_writer->dataElement($key, $monster->{"hit_data"}{$part_name}{$state}{$key});
 			}

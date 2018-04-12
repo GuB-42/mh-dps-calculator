@@ -6342,6 +6342,7 @@
             <name>Head</name>
             <name_jp>頭</name_jp>
             <hit_data>
+                <enraged_state>0</enraged_state>
                 <cut>65</cut>
                 <impact>65</impact>
                 <bullet>60</bullet>
@@ -6354,6 +6355,7 @@
             </hit_data>
             <hit_data>
                 <state>Enraged</state>
+                <enraged_state>1</enraged_state>
                 <cut>30</cut>
                 <impact>34</impact>
                 <bullet>30</bullet>
@@ -6369,6 +6371,7 @@
             <name>Chest</name>
             <name_jp>胸</name_jp>
             <hit_data>
+                <enraged_state>0</enraged_state>
                 <cut>37</cut>
                 <impact>37</impact>
                 <bullet>35</bullet>
@@ -6381,6 +6384,7 @@
             </hit_data>
             <hit_data>
                 <state>Enraged</state>
+                <enraged_state>1</enraged_state>
                 <cut>76</cut>
                 <impact>76</impact>
                 <bullet>60</bullet>
@@ -6396,6 +6400,7 @@
             <name>Body</name>
             <name_jp>胴体</name_jp>
             <hit_data>
+                <enraged_state>0</enraged_state>
                 <cut>25</cut>
                 <impact>25</impact>
                 <bullet>25</bullet>
@@ -6408,6 +6413,7 @@
             </hit_data>
             <hit_data>
                 <state>Enraged</state>
+                <enraged_state>1</enraged_state>
                 <cut>22</cut>
                 <impact>22</impact>
                 <bullet>20</bullet>
@@ -6423,6 +6429,7 @@
             <name>Forelegs</name>
             <name_jp>前脚</name_jp>
             <hit_data>
+                <enraged_state>0</enraged_state>
                 <cut>30</cut>
                 <impact>30</impact>
                 <bullet>30</bullet>
@@ -6435,6 +6442,7 @@
             </hit_data>
             <hit_data>
                 <state>Enraged</state>
+                <enraged_state>1</enraged_state>
                 <cut>27</cut>
                 <impact>27</impact>
                 <bullet>30</bullet>
@@ -6450,6 +6458,7 @@
             <name>Hindlegs</name>
             <name_jp>後脚</name_jp>
             <hit_data>
+                <enraged_state>0</enraged_state>
                 <cut>43</cut>
                 <impact>38</impact>
                 <bullet>35</bullet>
@@ -6462,6 +6471,7 @@
             </hit_data>
             <hit_data>
                 <state>Enraged</state>
+                <enraged_state>1</enraged_state>
                 <cut>35</cut>
                 <impact>32</impact>
                 <bullet>25</bullet>
@@ -6477,6 +6487,7 @@
             <name>Tail</name>
             <name_jp>尻尾</name_jp>
             <hit_data>
+                <enraged_state>0</enraged_state>
                 <cut>35</cut>
                 <impact>32</impact>
                 <bullet>30</bullet>
@@ -6489,6 +6500,7 @@
             </hit_data>
             <hit_data>
                 <state>Enraged</state>
+                <enraged_state>1</enraged_state>
                 <cut>38</cut>
                 <impact>35</impact>
                 <bullet>30</bullet>

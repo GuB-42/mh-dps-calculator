@@ -13,6 +13,7 @@ struct Monster;
 
 struct TargetZone {
 	double weight;
+	double expectedEnragedRatio;
 	double enragedRatio;
 	const MonsterPart *part;
 	const MonsterHitData *hitData;

@@ -7,7 +7,7 @@
 #include "Constants.h"
 
 TargetZone::TargetZone() :
-	weight(0.0), enragedRatio(0.0),
+	weight(0.0), expectedEnragedRatio(0.0), enragedRatio(0.0),
 	part(NULL), hitData(NULL)
 {
 }
@@ -15,6 +15,7 @@ TargetZone::TargetZone() :
 void TargetZone::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- weight: " << weight << endl;
 	stream << indent << "- enraged ratio: " << enragedRatio << endl;
+	stream << indent << "- expected enraged ratio: " << expectedEnragedRatio << endl;
 	stream << indent << "- part: " << part->getAllNames() << endl;
 	stream << indent << "- hit data" << endl;
 	hitData->print(stream, indent + "\t");
@@ -91,6 +92,7 @@ void Target::SubTarget::readXml(QXmlStreamReader *xml) {
 				partId = xml->readElementText();
 			} else if (tag_name == "state") {
 				stateId = xml->readElementText();
+				if (stateId.isNull()) stateId = "";
 			} else if (tag_name == "sub_target") {
 				SubTarget *st = new SubTarget();
 				st->readXml(xml);
@@ -186,6 +188,21 @@ static void make_flat_subs(QVector<SubTargetLeaf> *subs,
 	}
 }
 
+static TargetZone *make_target_zone(const SubTargetLeaf &subt,
+                                    const MonsterPart *part,
+                                    const MonsterHitData *hitData) {
+
+	TargetZone *ret = new TargetZone();
+	ret->weight = subt.weight;
+	ret->expectedEnragedRatio = subt.enragedRatio;
+	double sr = subt.enragedRatio * hitData->enragedState;
+	double isr = (1 - subt.enragedRatio) * (1 - hitData->enragedState);
+	ret->enragedRatio = sr / (sr + isr);
+	ret->part = part;
+	ret->hitData = hitData;
+	return ret;
+}
+
 static void merge_target_zones(QVector<TargetZone *> *oval,
                                QVector<TargetZone *> *nval,
                                const QVector<MonsterPart *> &monsterParts) {
@@ -205,6 +222,10 @@ static void merge_target_zones(QVector<TargetZone *> *oval,
 								(*oz_it)->enragedRatio =
 									((*oz_it)->enragedRatio * (*oz_it)->weight +
 									 (*nz_it)->enragedRatio * (*nz_it)->weight) /
+									new_weight;
+								(*oz_it)->expectedEnragedRatio =
+									((*oz_it)->expectedEnragedRatio * (*oz_it)->weight +
+									 (*nz_it)->expectedEnragedRatio * (*nz_it)->weight) /
 									new_weight;
 							}
 							(*oz_it)->weight = new_weight;
@@ -272,6 +293,46 @@ end_merge_monster:
 	}
 }
 
+static void fix_enraged_weights(QVector<TargetZone *> targetZones) {
+	QVector<TargetZone *>::const_iterator it_start = targetZones.begin();
+	QVector<TargetZone *>::const_iterator it_end = it_start;
+	while (it_start != targetZones.end()) {
+		while (it_end != targetZones.end() &&
+		       (*it_end)->part == (*it_start)->part) ++it_end;
+		// weird maths that kinda work...
+		for (int i = 0; i < 10; ++i) {
+			double total_weight = 0.0;
+			double er = 0.0;
+			double k = 0.0;
+			double ik = 0.0;
+			int count = 0;
+			for (QVector<TargetZone *>::const_iterator it = it_start;
+			     it != it_end; ++it) {
+				total_weight += (*it)->weight;
+				er += (*it)->expectedEnragedRatio * (*it)->weight;
+				k += (*it)->enragedRatio * (*it)->weight;
+				ik += (1.0 - (*it)->enragedRatio) * (*it)->weight;
+				++count;
+			}
+			if (count > 1 && k != 0.0 && ik != 0.0 && total_weight != 0.0 &&
+			    (er - k) * (er - k) > 1e-6 * total_weight * total_weight) {
+				er /= total_weight;
+				k /= total_weight;
+				ik /= total_weight;
+				for (QVector<TargetZone *>::const_iterator it = it_start;
+				     it != it_end; ++it) {
+					double w = (*it)->enragedRatio;
+					double factor = w * (er / k) + (1 - w) * ((1 - er) / ik);
+					(*it)->weight *= factor;
+				}
+			} else {
+				break;
+			}
+		}
+		it_start = it_end;
+	}
+}
+
 void Target::matchMonsters(const QVector<Monster *> &monsters) {
 	QVector<SubTargetLeaf> flat_subs;
 	SubTargetLeaf data = {
@@ -324,13 +385,8 @@ void Target::matchMonsters(const QVector<Monster *> &monsters) {
 							target_monster->monster = monster;
 							tmonsters.append(target_monster);
 						}
-						TargetZone *target_zone = new TargetZone();
-						target_zone->weight = subt.weight;
-						target_zone->enragedRatio =
-							subt.enragedRatio;
-						target_zone->part = part;
-						target_zone->hitData = hitData;
-						target_monster->targetZones.append(target_zone);
+						target_monster->targetZones.
+							append(make_target_zone(subt, part, hitData));
 						part_divider += 1.0;
 					}
 				}
@@ -358,5 +414,8 @@ void Target::matchMonsters(const QVector<Monster *> &monsters) {
 		}
 
 		merge_target_monsters(&targetMonsters, &tmonsters, monsters);
+	}
+	foreach(TargetMonster *tmonster, targetMonsters) {
+		fix_enraged_weights(tmonster->targetZones);
 	}
 }

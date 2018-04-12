@@ -21,6 +21,7 @@ struct BuffGroup : public NamedObject {
 
 	BuffGroup();
 	~BuffGroup();
+	bool hasBuffs();
 	void print(QTextStream &stream, QString indent = QString()) const;
 	void readXml(QXmlStreamReader *xml);
 private:

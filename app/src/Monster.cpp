@@ -4,7 +4,7 @@
 #include <QXmlStreamReader>
 
 MonsterHitData::MonsterHitData() :
-	cut(0.0), impact(0.0), bullet(0.0), stun(0.0)
+	enragedState(0.5), cut(0.0), impact(0.0), bullet(0.0), stun(0.0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		element[i] = 0.0;
@@ -12,7 +12,7 @@ MonsterHitData::MonsterHitData() :
 }
 
 void MonsterHitData::print(QTextStream &stream, QString indent) const {
-	stream << indent << "(" << state << ") "
+	stream << indent << "(" << state << "/" << enragedState << ") " <<
 	"[" << cut << ", " << impact << ", " << bullet << ", ";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		stream << element[i] << ", ";
@@ -28,6 +28,8 @@ void MonsterHitData::readXml(QXmlStreamReader *xml) {
 			QStringRef tag_name = xml->name();
 			if (tag_name == "state") {
 				state = xml->readElementText();
+			} else if (tag_name == "enraged_state") {
+				enragedState = xml->readElementText().toDouble();
 			} else if (tag_name == "cut") {
 				cut = xml->readElementText().toDouble();
 			} else if (tag_name == "impact") {

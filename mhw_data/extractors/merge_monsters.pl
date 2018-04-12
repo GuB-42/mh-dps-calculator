@@ -555,6 +555,10 @@ sub print_monster
 		for my $state (sort keys %{$part->{"hit_data"}}) {
 			$xml_writer->startTag("hit_data");
 			$xml_writer->dataElement("state", $state) if ($state);
+			if (defined $part->{"hit_data"}{$state}{"enraged_state"}) {
+				$xml_writer->dataElement("enraged_state",
+				                         $part->{"hit_data"}{$state}{"enraged_state"});
+			}
 			for my $key ("cut", "impact", "bullet", "fire", "water", "thunder", "ice", "dragon", "stun") {
 				$xml_writer->dataElement($key, $part->{"hit_data"}{$state}{$key});
 			}

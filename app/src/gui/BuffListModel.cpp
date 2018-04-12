@@ -1,5 +1,4 @@
 #include "BuffListModel.h"
-#include "../Build.h"
 #include "../BuffGroup.h"
 
 BuffListModel::BuffListModel(QObject *parent) :
@@ -18,7 +17,12 @@ QVariant BuffListModel::data(const QModelIndex &index, int role) const {
 
 	if (role == Qt::DisplayRole) {
 		const BuffListModelData &d = listData[index.row()];
-		return d.group->levels[d.level]->getName(dataLanguage);
+		const BuffGroupLevel *group_level = d.group->levels[d.level];
+		if (group_level) {
+			return group_level->getName(dataLanguage);
+		} else {
+			return tr("%1 [%2]").arg(d.group->getName(dataLanguage)).arg(d.level);
+		}
 	} else {
 		return QVariant();
 	}

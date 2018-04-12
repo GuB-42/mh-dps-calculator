@@ -3,9 +3,9 @@ TARGET = mh_dps
 
 CONFIG += debug
 
-QMAKE_CXXFLAGS_RELEASE += -g
-QMAKE_CFLAGS_RELEASE += -g
-QMAKE_LFLAGS_RELEASE =
+# QMAKE_CXXFLAGS_RELEASE += -g
+# QMAKE_CFLAGS_RELEASE += -g
+# QMAKE_LFLAGS_RELEASE =
 
 QT = core gui xml
 
@@ -32,6 +32,7 @@ src/Target.cpp \
 src/Weapon.cpp \
 src/enums.cpp \
 src/main.cpp \
+src/gui/BuffGroupListModel.cpp \
 src/gui/BuffListModel.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainWindow.cpp \
@@ -57,6 +58,7 @@ src/Profile.h \
 src/Target.h \
 src/Weapon.h \
 src/enums.h \
+src/gui/BuffGroupListModel.h \
 src/gui/BuffListModel.h \
 src/gui/GuiElements.h \
 src/gui/MainWindow.h \

@@ -330,6 +330,12 @@ void ResultTableModel::setResultData(const QVector<BuildWithDps *> &d) {
 	endResetModel();
 }
 
+void ResultTableModel::clear() {
+	beginResetModel();
+	clearData();
+	endResetModel();
+}
+
 void ResultTableModel::clearData() {
 	foreach(BuildWithDps *bwd, resultData) delete bwd;
 	resultData.clear();

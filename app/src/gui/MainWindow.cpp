@@ -5,6 +5,7 @@
 
 #include "ResultTableModel.h"
 #include "BuffListModel.h"
+#include "BuffGroupListModel.h"
 #include "../MainData.h"
 #include "../Target.h"
 #include "../Profile.h"
@@ -20,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	mainData(NULL),
 	tableModel(new ResultTableModel(this)),
 	buffListModel(new BuffListModel(this)),
+	buffGroupListModel(new BuffGroupListModel(this)),
 	dataLanguage(NamedObject::LANG_EN)
 {
 	ui->setupUi(this);
@@ -33,9 +35,13 @@ MainWindow::MainWindow(QWidget *parent) :
 	tableModel->setDataLanguage(dataLanguage);
 	ui->tableView->setModel(tableModel);
 	ui->tableView->addAction(ui->action_Copy);
+	ui->tableView->horizontalHeader()->setSortIndicator(-1, Qt::AscendingOrder);
 
 	buffListModel->setDataLanguage(dataLanguage);
 	ui->buffListView->setModel(buffListModel);
+
+	buffGroupListModel->setDataLanguage(dataLanguage);
+	ui->buffCb->setModel(buffGroupListModel);
 
 	connect(ui->buffListView->selectionModel(),
 	        SIGNAL(selectionChanged(const QItemSelection &, const QItemSelection &)),
@@ -66,6 +72,9 @@ MainWindow::~MainWindow() {
 void MainWindow::clearAll() {
 	ui->profileCb->clear();
 	ui->targetCb->clear();
+	tableModel->clear();
+	buffListModel->clear();
+	buffGroupListModel->clear();
 }
 
 void MainWindow::setMainData(const MainData *md) {
@@ -79,9 +88,12 @@ void MainWindow::setMainData(const MainData *md) {
 	for (int idx = 0; idx < mainData->targets.count(); ++idx) {
 		ui->targetCb->addItem(mainData->targets[idx]->getName(dataLanguage));
 	}
-	for (int idx = 0; idx < mainData->buffGroups.count(); ++idx) {
-		ui->buffCb->addItem(mainData->buffGroups[idx]->getName(dataLanguage));
+	foreach(BuffGroup *buff_group, mainData->buffGroups) {
+		if (buff_group->hasBuffs()) {
+			buffGroupListModel->addBuffGroup(buff_group);
+		}
 	}
+
 	QStringList base_buff_names;
 	base_buff_names << "powercharm" << "powertalon";
 	foreach(QString base_buff_name, base_buff_names) {
@@ -112,11 +124,13 @@ const Target *MainWindow::getTarget() const {
 
 const BuffGroup *MainWindow::getBuffGroup() const {
 	int idx = ui->buffCb->currentIndex();
-	if (mainData && idx >= 0 && idx < mainData->buffGroups.count()) {
-		return mainData->buffGroups[idx];
-	} else {
-		return NULL;
+
+	if (idx >= 0) {
+		const BuffGroupListModel *model =
+			qobject_cast<const BuffGroupListModel *>(ui->buffCb->model());
+		if (model) return model->buffGroup(model->index(idx));
 	}
+	return NULL;
 }
 
 QVector<int> MainWindow::getDecorationSlots() const {
@@ -131,6 +145,7 @@ void MainWindow::setDataLanguage(NamedObject::Language lang) {
 	dataLanguage = lang;
 	tableModel->setDataLanguage(dataLanguage);
 	buffListModel->setDataLanguage(dataLanguage);
+	buffGroupListModel->setDataLanguage(dataLanguage);
 	for (int idx = 0; idx < ui->profileCb->count(); ++idx) {
 		if (mainData && idx < mainData->profiles.count()) {
 			ui->profileCb->setItemText(idx, mainData->profiles[idx]->
@@ -140,12 +155,6 @@ void MainWindow::setDataLanguage(NamedObject::Language lang) {
 	for (int idx = 0; idx < ui->targetCb->count(); ++idx) {
 		if (mainData && idx < mainData->targets.count()) {
 			ui->targetCb->setItemText(idx, mainData->targets[idx]->
-			                          getName(dataLanguage));
-		}
-	}
-	for (int idx = 0; idx < ui->buffCb->count(); ++idx) {
-		if (mainData && idx < mainData->buffGroups.count()) {
-			ui->buffCb->setItemText(idx, mainData->buffGroups[idx]->
 			                          getName(dataLanguage));
 		}
 	}
@@ -168,16 +177,20 @@ void MainWindow::changeLanguage(int lang_idx) {
 void MainWindow::selectBuffGroupFromList(const QModelIndex &index) {
 	if (!mainData) return;
 	if (!index.isValid()) return;
-	const BuffListModel *model =
-		qobject_cast<const BuffListModel *>(index.model());
-	if (!model) return;
-	const BuffGroup *group = model->buffGroup(index);
-	if (!group) return;
-	for (int idx = 0; idx < ui->buffCb->count(); ++idx) {
-		if (idx < mainData->buffGroups.count() &&
-		    mainData->buffGroups[idx] == group) {
-			ui->buffCb->setCurrentIndex(idx);
-			break;
+	const BuffGroup *group = NULL;
+	{
+		const BuffListModel *model =
+			qobject_cast<const BuffListModel *>(index.model());
+		if (model) group = model->buffGroup(index);
+	}
+	if (group) {
+		const BuffGroupListModel *model =
+			qobject_cast<const BuffGroupListModel *>(ui->buffCb->model());
+		if (model) {
+			QModelIndex idx = model->buffGroupIndex(group);
+			if (idx.isValid()) {
+				ui->buffCb->setCurrentIndex(idx.row());
+			}
 		}
 	}
 }
@@ -188,15 +201,20 @@ void MainWindow::updateBuffGroupFromListSelection() {
 }
 
 void MainWindow::buffGroupChanged(int new_idx) {
-	if (!mainData) return;
-	if (new_idx < 0 || new_idx >= ui->buffCb->count()) return;
-	QModelIndex idx =
-		buffListModel->buffGroupIndex(mainData->buffGroups[new_idx]);
-	if (idx.isValid()) {
-		ui->buffListView->selectionModel()->
-			select(idx, QItemSelectionModel::ClearAndSelect);
-	} else {
-		ui->buffListView->selectionModel()->clearSelection();
+	const BuffGroup *group = NULL;
+	if (new_idx >= 0) {
+		const BuffGroupListModel *model =
+			qobject_cast<const BuffGroupListModel *>(ui->buffCb->model());
+		if (model) group = model->buffGroup(model->index(new_idx));
+	}
+	if (group) {
+		QModelIndex idx = buffListModel->buffGroupIndex(group);
+		if (idx.isValid()) {
+			ui->buffListView->selectionModel()->
+				select(idx, QItemSelectionModel::ClearAndSelect);
+		} else {
+			ui->buffListView->selectionModel()->clearSelection();
+		}
 	}
 }
 
@@ -247,6 +265,7 @@ void MainWindow::calculate() {
 		}
 	}
 	tableModel->setResultData(result);
+	ui->tableView->horizontalHeader()->setSortIndicator(-1, Qt::AscendingOrder);
 }
 
 void MainWindow::copy() {

@@ -35,6 +35,7 @@ public:
 
 	void setDataLanguage(NamedObject::Language lang);
 	void setResultData(const QVector<BuildWithDps *> &d);
+	void clear();
 
 private:
 	QVector<QVector<QVariant> > getDataTable(const QModelIndexList &indexes) const;

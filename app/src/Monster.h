@@ -10,6 +10,7 @@ class QXmlStreamReader;
 
 struct MonsterHitData {
 	QString state;
+	double enragedState;
 	double cut;
 	double impact;
 	double bullet;

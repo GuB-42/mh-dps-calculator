@@ -7,6 +7,7 @@
 class QModelIndex;
 class ResultTableModel;
 class BuffListModel;
+class BuffGroupListModel;
 struct MainData;
 struct Profile;
 struct Target;
@@ -49,6 +50,7 @@ private:
 
 	ResultTableModel *tableModel;
 	BuffListModel *buffListModel;
+	BuffGroupListModel *buffGroupListModel;
 	NamedObject::Language dataLanguage;
 };
 

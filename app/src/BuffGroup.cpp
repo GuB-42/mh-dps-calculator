@@ -144,6 +144,13 @@ BuffGroup::~BuffGroup() {
 	foreach(BuffGroupLevel *v, alloc_list) delete v;
 }
 
+bool BuffGroup::hasBuffs() {
+	foreach(BuffGroupLevel *level, levels) {
+		if (level && !level->buffs.isEmpty()) return true;
+	}
+	return false;
+}
+
 void BuffGroup::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	for (int i = 0; i < levels.count(); ++i) {
