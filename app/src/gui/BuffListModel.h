@@ -1,6 +1,7 @@
 #include <QAbstractListModel>
 #include <QList>
 #include "../NamedObject.h"
+#include "../Build.h"
 
 struct BuffGroup;
 
@@ -18,19 +19,12 @@ public:
 
 	void setDataLanguage(NamedObject::Language lang);
 
-	QMap<const BuffGroup *, int> getBuffLevels() const;
+	QVector<BuffWithLevel> getBuffLevels() const;
 	const BuffGroup *buffGroup(const QModelIndex &index) const;
 	QModelIndex buffGroupIndex(const BuffGroup *group) const;
 
 private:
-	struct BuffListModelData {
-		BuffListModelData() : group(NULL), level(0) {}
-		BuffListModelData(const BuffGroup *g, int l) : group(g), level(l) {}
-		const BuffGroup *group;
-		int level;
-	};
-
-	QList<BuffListModelData> listData;
+	QList<BuffWithLevel> listData;
 	QMap<const BuffGroup *, int> listDataMap;
 	NamedObject::Language dataLanguage;
 };

@@ -9,14 +9,23 @@
 #include "Weapon.h"
 #include "Item.h"
 
-BuildWithDps::BuildWithDps() :
-	build(NULL)
-{
+BuildWithDps::BuildWithDps() : build(NULL) {
+}
+
+BuildWithDps::BuildWithDps(Build *b) : build(b) {
 }
 
 BuildWithDps::BuildWithDps(Build *b, const Profile &profile, const Target &target) :
 	build(b)
 {
+	compute(profile, target);
+}
+
+BuildWithDps::~BuildWithDps() {
+	delete build;
+}
+
+void BuildWithDps::compute(const Profile &profile, const Target &target) {
 	if (build->weapon) {
 		QVector<const BuffWithCondition *> bwc;
 		build->getBuffWithConditions(&bwc);
@@ -25,8 +34,4 @@ BuildWithDps::BuildWithDps(Build *b, const Profile &profile, const Target &targe
 		}
 	}
 	dps.compute(target, damage);
-}
-
-BuildWithDps::~BuildWithDps() {
-	delete build;
 }

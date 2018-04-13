@@ -16,8 +16,10 @@ struct BuildWithDps {
 
 	BuildWithDps();
 	// Note : takes ownership of build
+	explicit BuildWithDps(Build *b);
 	BuildWithDps(Build *b, const Profile &profile, const Target &target);
 	~BuildWithDps();
+	void compute(const Profile &profile, const Target &target);
 };
 
 #endif

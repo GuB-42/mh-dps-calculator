@@ -1,7 +1,7 @@
 #include "ResultTableModel.h"
 
 #include <QMimeData>
-#include <QtAlgorithms>
+#include <algorithm>
 #include "GuiElements.h"
 #include "../BuildWithDps.h"
 #include "../Build.h"
@@ -277,16 +277,16 @@ void ResultTableModel::sort(int column, Qt::SortOrder order) {
 	case COLUMN_STATUS_DPS:
 	case COLUMN_FIXED_DPS:
 		if (order == Qt::AscendingOrder) {
-			qStableSort(rows.begin(), rows.end(), greaterRowWithKey);
+			std::stable_sort(rows.begin(), rows.end(), greaterRowWithKey);
 		} else {
-			qStableSort(rows.begin(), rows.end(), lessRowWithKey);
+			std::stable_sort(rows.begin(), rows.end(), lessRowWithKey);
 		}
 		break;
 	default:
 		if (order == Qt::AscendingOrder) {
-			qStableSort(rows.begin(), rows.end(), lessRowWithKey);
+			std::stable_sort(rows.begin(), rows.end(), lessRowWithKey);
 		} else {
-			qStableSort(rows.begin(), rows.end(), greaterRowWithKey);
+			std::stable_sort(rows.begin(), rows.end(), greaterRowWithKey);
 		}
 		break;
 	}

@@ -1,4 +1,5 @@
 #include "BuffListModel.h"
+#include <algorithm>
 #include "../BuffGroup.h"
 
 BuffListModel::BuffListModel(QObject *parent) :
@@ -16,7 +17,7 @@ QVariant BuffListModel::data(const QModelIndex &index, int role) const {
 	if (index.row() < 0 && index.row() >= listData.count()) return QVariant();
 
 	if (role == Qt::DisplayRole) {
-		const BuffListModelData &d = listData[index.row()];
+		const BuffWithLevel &d = listData[index.row()];
 		const BuffGroupLevel *group_level = d.group->levels[d.level];
 		if (group_level) {
 			return group_level->getName(dataLanguage);
@@ -46,7 +47,7 @@ void BuffListModel::addBuff(const BuffGroup *group, int level) {
 	if (it == listDataMap.end()) {
 		int new_row_idx = listData.count();
 		beginInsertRows(QModelIndex(), new_row_idx, new_row_idx);
-		listData.append(BuffListModelData(group, level));
+		listData.append(BuffWithLevel(group, level));
 		listDataMap[group] = new_row_idx;
 		endInsertRows();
 	} else {
@@ -67,18 +68,19 @@ void BuffListModel::removeBuff(const BuffGroup *group, int level) {
 
 	QMap<const BuffGroup *, int>::iterator it = listDataMap.find(group);
 	if (it != listDataMap.end()) {
-		int new_level = listData[*it].level - level;
+		int idx = *it;
+		int new_level = listData[idx].level - level;
 		if (new_level <= 0) {
-			beginRemoveRows(QModelIndex(), *it, *it);
+			beginRemoveRows(QModelIndex(), idx, idx);
 			listDataMap.clear();
-			listData.removeAt(*it);
+			listData.removeAt(idx);
 			for (int i = 0; i < listData.count(); ++i) {
 				listDataMap[listData[i].group] = i;
 			}
 			endRemoveRows();
 		} else {
-			listData[*it].level = new_level;
-			emit dataChanged(index(*it), index(*it));
+			listData[idx].level = new_level;
+			emit dataChanged(index(idx), index(idx));
 		}
 	}
 }
@@ -88,11 +90,10 @@ void BuffListModel::setDataLanguage(NamedObject::Language lang) {
 	emit dataChanged(index(0), index(rowCount() - 1));
 }
 
-QMap<const BuffGroup *, int> BuffListModel::getBuffLevels() const {
-	QMap<const BuffGroup *, int> ret;
-	foreach(const BuffListModelData &d, listData) {
-		ret[d.group] = d.level;
-	};
+QVector<BuffWithLevel> BuffListModel::getBuffLevels() const {
+	QVector<BuffWithLevel> ret;
+	ret = listData.toVector();
+	std::sort(ret.begin(), ret.end());
 	return ret;
 }
 

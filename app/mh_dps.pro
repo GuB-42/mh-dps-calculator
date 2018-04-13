@@ -7,7 +7,7 @@ CONFIG += debug
 # QMAKE_CFLAGS_RELEASE += -g
 # QMAKE_LFLAGS_RELEASE =
 
-QT = core gui xml
+QT = core gui xml concurrent
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

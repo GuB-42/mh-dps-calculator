@@ -2,6 +2,10 @@
 #include "ui_MainWindow.h"
 
 #include <QClipboard>
+#include <QProgressBar>
+#include <QFuture>
+#include <QFutureWatcher>
+#include <QtConcurrentMap>
 
 #include "ResultTableModel.h"
 #include "BuffListModel.h"
@@ -18,6 +22,7 @@
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent),
 	ui(new Ui::MainWindow),
+	progressBar(new QProgressBar(this)),
 	mainData(NULL),
 	tableModel(new ResultTableModel(this)),
 	buffListModel(new BuffListModel(this)),
@@ -25,6 +30,10 @@ MainWindow::MainWindow(QWidget *parent) :
 	dataLanguage(NamedObject::LANG_EN)
 {
 	ui->setupUi(this);
+
+	progressBar->setSizePolicy(QSizePolicy::Expanding,
+	                           QSizePolicy::Preferred);
+	ui->statusbar->addWidget(progressBar);
 
 	for (int i = 0; i < NamedObject::LANG_COUNT; ++i) {
 		ui->languageCb->addItem(toString((NamedObject::Language)i));
@@ -218,17 +227,46 @@ void MainWindow::buffGroupChanged(int new_idx) {
 	}
 }
 
+struct MakeBuilds
+{
+	explicit MakeBuilds(bool ia) : ignoreAugmentations(ia) {};
+	void operator()(MainWindow::BuildFutureElt &elt) {
+		QVector<Build *> augmented_builds;
+		foreach(Build *b, elt.builds) {
+			augmented_builds << b;
+			if (!ignoreAugmentations) {
+				b->fillWeaponAugmentations(&augmented_builds, elt.useful_items);
+			}
+		}
+		elt.builds.clear();
+		foreach(Build *b, augmented_builds) {
+			elt.builds << b;
+			b->fillSlots(&elt.builds, elt.useful_items);
+		}
+	}
+	bool ignoreAugmentations;
+};
+
 void MainWindow::calculate() {
 	const Profile *profile = getProfile();
 	const Target *target = getTarget();
 
 	if (!profile || !target) return;
 
-	QVector<BuildWithDps *> result;
+	for (int i = 0; i < buildFutures.count(); ++i) {
+		buildFutures[i].future.cancel();
+	}
+	for (int i = 0; i < resultFutures.count(); ++i) {
+		resultFutures[i].future.cancel();
+	}
+	tableModel->clear();
+
+	BuildFuture new_future(profile, target);
 	foreach(const Weapon *weapon, mainData->weapons) {
 		if (weapon->type != profile->type) continue;
 		if (!weapon->final && ui->finalOnly->isChecked()) continue;
 
+		BuildFutureElt elt;
 		Build *build = new Build;
 		build->addWeapon(weapon);
 		if (ui->ignoreWeaponSlots->isChecked()) {
@@ -236,36 +274,105 @@ void MainWindow::calculate() {
 		}
 		build->buffLevels = buffListModel->getBuffLevels();
 		build->decorationSlots << getDecorationSlots();
-
-		QVector<Item *> useful_items = build->listUsefulItems(mainData->items);
+		elt.useful_items = build->listUsefulItems(mainData->items);
 		if (ui->ignoreWeaponSlots->isChecked()) {
-			QVector<Item *>::iterator it = useful_items.begin();
-			while (it != useful_items.end()) {
+			QVector<Item *>::iterator it = elt.useful_items.begin();
+			while (it != elt.useful_items.end()) {
 				if ((*it)->buffRefs.isEmpty()) {
-					it = useful_items.erase(it);
+					it = elt.useful_items.erase(it);
 				} else {
 					++it;
 				}
 			}
 		}
-
-		QVector<Build *> augmented_builds;
-		augmented_builds << build;
-		if (!ui->ignoreAugmentations->isChecked()) {
-			build->fillWeaponAugmentations(&augmented_builds, useful_items);
-		}
-
-		QVector<Build *> all_builds;
-		foreach(Build *b, augmented_builds) {
-			all_builds << b;
-			b->fillSlots(&all_builds, useful_items);
-		}
-		foreach(Build *b, all_builds) {
-			result.append(new BuildWithDps(b, *profile, *target));
-		}
+		elt.builds.append(build);
+		new_future.data.append(elt);
 	}
-	tableModel->setResultData(result);
-	ui->tableView->horizontalHeader()->setSortIndicator(-1, Qt::AscendingOrder);
+
+	new_future.future =
+		QtConcurrent::map(new_future.data,
+		                  MakeBuilds(ui->ignoreAugmentations->isChecked()));
+	buildFutures.append(new_future);
+	QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
+	watcher->setFuture(new_future.future);
+	connect(watcher, SIGNAL(finished()), this, SLOT(buildFutureFinished()));
+	connect(watcher, SIGNAL(progressValueChanged(int)), this, SLOT(buildFutureProgress(int)));
+	connect(watcher, SIGNAL(finished()), watcher, SLOT(deleteLater()));
+}
+
+struct MakeResult
+{
+	MakeResult(const Profile &p, const Target &t) :
+		profile(p), target(t) {};
+	void operator()(BuildWithDps *bwd) {
+		bwd->compute(profile, target);
+	}
+	const Profile &profile;
+	const Target &target;
+};
+
+void MainWindow::buildFutureFinished() {
+	while (!buildFutures.isEmpty()) {
+		BuildFuture &fdata = buildFutures.first();
+		if (!fdata.future.isFinished()) break;
+		if (buildFutures.count() == 1 && !fdata.future.isCanceled()) {
+			ResultFuture new_future;
+			foreach(const BuildFutureElt &elt, fdata.data) {
+				foreach(Build *b, elt.builds) {
+					new_future.result.append(new BuildWithDps(b));
+				}
+			}
+			new_future.result.squeeze();
+			new_future.future =
+				QtConcurrent::map(new_future.result,
+			                      MakeResult(*fdata.profile, *fdata.target));
+			resultFutures.append(new_future);
+			QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
+			watcher->setFuture(new_future.future);
+			connect(watcher, SIGNAL(finished()), this, SLOT(resultFutureFinished()));
+			connect(watcher, SIGNAL(progressValueChanged(int)), this, SLOT(resultFutureProgress(int)));
+			connect(watcher, SIGNAL(finished()), watcher, SLOT(deleteLater()));
+		} else {
+			foreach(const BuildFutureElt &elt, fdata.data) {
+				foreach(Build *b, elt.builds) delete b;
+			}
+		}
+		buildFutures.removeFirst();
+	}
+}
+
+void MainWindow::buildFutureProgress(int value) {
+	if (!buildFutures.isEmpty()) {
+		int min = buildFutures.last().future.progressMinimum();
+		int max = buildFutures.last().future.progressMaximum();
+		int offset = (max - min) * 5;
+		progressBar->setRange(min, max + offset);
+		progressBar->setValue(value);
+	}
+}
+
+void MainWindow::resultFutureFinished() {
+	while (!resultFutures.isEmpty()) {
+		ResultFuture &fdata = resultFutures.first();
+		if (!fdata.future.isFinished()) break;
+		if (resultFutures.count() == 1 && !fdata.future.isCanceled()) {
+			tableModel->setResultData(fdata.result);
+			ui->tableView->horizontalHeader()->setSortIndicator(-1, Qt::AscendingOrder);
+		} else {
+			foreach(BuildWithDps *bwd, fdata.result) delete bwd;
+		}
+		resultFutures.removeFirst();
+	}
+}
+
+void MainWindow::resultFutureProgress(int value) {
+	if (!resultFutures.isEmpty()) {
+		int min = resultFutures.last().future.progressMinimum();
+		int max = resultFutures.last().future.progressMaximum();
+		int offset = (max - min) / 5;
+		progressBar->setRange(min, max + offset);
+		progressBar->setValue(value + offset);
+	}
 }
 
 void MainWindow::copy() {
