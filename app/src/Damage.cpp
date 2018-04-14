@@ -6,13 +6,19 @@
 #include "Weapon.h"
 #include "Profile.h"
 #include "FoldedBuffs.h"
+#include "Constants.h"
 
-Damage::Damage() {
+Damage::Damage() :
+	sharpenPeriod(Constants::instance()->sharpenPeriod)
+{
 	data[0] = new DamageData();
 	isAlias[0] = false;
 	for (int i = 1; i < MODE_COUNT; ++i) {
 		data[i] = data[0];
 		isAlias[i] = true;
+	}
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		sharpnessUse[i] = 0.0;
 	}
 }
 
@@ -22,26 +28,33 @@ Damage::~Damage() {
 	}
 }
 
-void Damage::addPattern(const QVector<const BuffWithCondition *> &buff_conds,
+void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,
+                             const Weapon &weapon, const Pattern &pattern) {
+	double rate = pattern.rate / pattern.period;
+	for (int mode = 0; mode < MODE_COUNT; ++mode) {
+		const FoldedBuffsData *buffs = folded_buffs.data[mode];
+		double xaffinity =
+			(weapon.affinity + buffs->normalBuffs[BUFF_AFFINITY_PLUS]) / 100.0;
+		double sharpness_use = pattern.sharpnessUse * rate *
+			buffs->normalBuffs[BUFF_SHARPNESS_USE_MULTIPLIER];
+		if (xaffinity > 0.0) {
+			sharpness_use *= 1.0 + xaffinity *
+				(buffs->normalBuffs[BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER] - 1.0);
+		}
+		sharpnessUse[mode] += sharpness_use;
+	}
+}
+
+void Damage::addPattern(const FoldedBuffs &folded_buffs,
                         const Weapon &weapon, const Pattern &pattern) {
-	bool raw_weapon = true;
-	for (int i = 0; i < ELEMENT_COUNT; ++i) {
-		if (weapon.elements[i] > 0.0) raw_weapon = false;
-	}
-	for (int i = 0; i < STATUS_COUNT; ++i) {
-		if (weapon.statuses[i] > 0.0) raw_weapon = false;
-	}
-
-	FoldedBuffs folded_buffs(buff_conds, *pattern.conditionRatios,
-		                     raw_weapon, weapon.awakened,
-		                     weapon.affinity);
-
 	double rate = pattern.rate / pattern.period;
 
 	bool is_set[MODE_COUNT] = { false };
 	for (int mode = 0; mode < MODE_COUNT; ++mode) {
 		if (!is_set[mode]) {
-			DamageData dmg(weapon, *folded_buffs.data[mode], pattern);
+			DamageData dmg(weapon, *folded_buffs.data[mode],
+			               pattern, sharpnessUse[mode] * sharpenPeriod,
+			               sharpenPeriod);
 			DamageData *old_data = NULL;
 			DamageData *new_data = data[mode];
 			if (isAlias[mode]) {

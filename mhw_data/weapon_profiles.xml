@@ -3,7 +3,6 @@
 	<weapon_profile>
 		<name>Charge Blade</name>
 		<type>charge_blade</type>
-		<sharpness_use>75</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>150.0</period>
@@ -21,12 +20,12 @@
 			<phial_ratio>0</phial_ratio>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.01</airborne_ratio>
+			<sharpness_use>80</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Dual Blades</name>
 		<type>dual_blades</type>
-		<sharpness_use>100</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -39,12 +38,12 @@
 			<sharpness_multiplier>1</sharpness_multiplier>
 			<draw_attack_ratio>0.1</draw_attack_ratio>
 			<airborne_ratio>0.2</airborne_ratio>
+			<sharpness_use>10</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Great Sword</name>
 		<type>great_sword</type>
-		<sharpness_use>50</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -57,12 +56,12 @@
 			<sharpness_multiplier>1.1</sharpness_multiplier>
 			<draw_attack_ratio>0.5</draw_attack_ratio>
 			<airborne_ratio>0.05</airborne_ratio>
+			<sharpness_use>1</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Hammer</name>
 		<type>hammer</type>
-		<sharpness_use>50</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -75,12 +74,12 @@
 			<sharpness_multiplier>1</sharpness_multiplier>
 			<draw_attack_ratio>0.1</draw_attack_ratio>
 			<airborne_ratio>0.05</airborne_ratio>
+			<sharpness_use>1.5</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Insect Glaive</name>
 		<type>insect_glaive</type>
-		<sharpness_use>100</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -93,12 +92,12 @@
 			<sharpness_multiplier>1</sharpness_multiplier>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.5</airborne_ratio>
+			<sharpness_use>8</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Lance</name>
 		<type>lance</type>
-		<sharpness_use>50</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -111,12 +110,12 @@
 			<sharpness_multiplier>1</sharpness_multiplier>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.05</airborne_ratio>
+			<sharpness_use>4</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Sword &amp; Shield</name>
 		<type>sword_and_shield</type>
-		<sharpness_use>70</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -129,12 +128,12 @@
 			<sharpness_multiplier>1</sharpness_multiplier>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.1</airborne_ratio>
+			<sharpness_use>6</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Long Sword</name>
 		<type>long_sword</type>
-		<sharpness_use>50</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -147,12 +146,12 @@
 			<sharpness_multiplier>1</sharpness_multiplier>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.1</airborne_ratio>
+			<sharpness_use>4</sharpness_use>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Switch Axe</name>
 		<type>switch_axe</type>
-		<sharpness_use>50</sharpness_use>
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -166,6 +165,7 @@
 			<phial_ratio>0.5</phial_ratio>
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.01</airborne_ratio>
+			<sharpness_use>3</sharpness_use>
 		</pattern>
 	</weapon_profile>
 </data>

@@ -29,7 +29,8 @@ struct DamageData {
 
 	DamageData();
 	DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
-	           const Pattern &pattern);
+	           const Pattern &pattern,
+	           double sharpness_use, double sharpen_period);
 	void combine(const DamageData &o, double rate);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

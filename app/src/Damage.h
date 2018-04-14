@@ -10,14 +10,19 @@ struct DamageData;
 struct BuffWithCondition;
 struct Weapon;
 struct Pattern;
+struct FoldedBuffs;
 
 struct Damage {
 	DamageData *data[MODE_COUNT];
+	double sharpenPeriod;
+	double sharpnessUse[MODE_COUNT];
 	bool isAlias[MODE_COUNT];
 
 	Damage();
 	~Damage();
-	void addPattern(const QVector<const BuffWithCondition *> &buff_conds,
+	void addSharpnessUse(const FoldedBuffs &folded_buffs,
+	                     const Weapon &weapon, const Pattern &pattern);
+	void addPattern(const FoldedBuffs &folded_buffs,
 	                const Weapon &weapon, const Pattern &pattern);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

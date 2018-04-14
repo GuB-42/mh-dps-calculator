@@ -83,7 +83,8 @@ static double compute_buffed_element(double base,
 // TODO: check if exhaust switch axe phials also deals KO
 // and also how it stacks with awakening
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
-                       const Pattern &pattern) {
+                       const Pattern &pattern,
+                       double sharpness_use, double sharpen_period) {
 	double attack =
 		((weapon.attack + buffs.normalBuffs[BUFF_ATTACK_PLUS_BEFORE]) *
 		 buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
@@ -111,17 +112,11 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 			xaffinity * Constants::instance()->feebleHitMultiplier;
 	}
 
-	double sharpness_use = pattern.sharpnessUse *
-		buffs.normalBuffs[BUFF_SHARPNESS_USE_MULTIPLIER];
-	if (xaffinity > 0.0) {
-		sharpness_use *= 1.0 + xaffinity *
-			(buffs.normalBuffs[BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER] - 1.0);
-	}
 	double wasted_sharpness =
 		weapon.sharpnessPlus - buffs.normalBuffs[BUFF_SHARPNESS_PLUS];
 	if (wasted_sharpness < 0.0) wasted_sharpness = 0.0;
-	double max_sharpness_ratio =
-		buffs.normalBuffs[BUFF_MAX_SHARPNESS_TIME] / pattern.sharpenPeriod;
+	double max_sharpness_ratio = sharpen_period <= 0.0 ? 1.0 :
+		buffs.normalBuffs[BUFF_MAX_SHARPNESS_TIME] / sharpen_period;
 	double raw_sharpness_multiplier =
 		compute_sharp_bonus(weapon.sharpness, wasted_sharpness,
 	                        sharpness_use, max_sharpness_ratio,
@@ -235,7 +230,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		buffs.normalBuffs[BUFF_DRAW_ATTACK_STUN];
 	statuses[STATUS_EXHAUST] += pattern.exhaust +
 		(*pattern.conditionRatios)[CONDITION_DRAW_ATTACK] *
-		buffs.normalBuffs[BUFF_DRAW_ATTACK_STUN];
+		buffs.normalBuffs[BUFF_DRAW_ATTACK_EXHAUST];
 
 	fixed = 0.0;
 

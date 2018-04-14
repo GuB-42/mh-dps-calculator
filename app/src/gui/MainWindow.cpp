@@ -45,6 +45,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->tableView->setModel(tableModel);
 	ui->tableView->addAction(ui->action_Copy);
 	ui->tableView->horizontalHeader()->setSortIndicator(-1, Qt::AscendingOrder);
+	ui->tableView->setColumnHidden(ResultTableModel::COLUMN_SHARPNESS_USE, true);
 
 	buffListModel->setDataLanguage(dataLanguage);
 	ui->buffListView->setModel(buffListModel);

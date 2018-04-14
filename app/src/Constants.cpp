@@ -63,8 +63,7 @@ Constants::Constants() {
 
 	enragedRatio = 0.4;
 	monsterDefenseMultiplier = 0.5;
-	sharpenPeriod = 300.0;
-	sharpnessUse = 15.0;
+	sharpenPeriod = 150.0;
 
 	(*cond)[CONDITION_ALWAYS] = 1.0;
 	(*cond)[CONDITION_ENRAGED] = 0.0;

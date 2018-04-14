@@ -33,6 +33,8 @@ QString ResultTableModel::columnName(Column c) {
 		return tr("Fixed");
 	case COLUMN_BOUNCE_RATE:
 		return tr("Bounce");
+	case COLUMN_SHARPNESS_USE:
+		return tr("Sharpness use");
 	case COLUMN_WEAPON_NAME:
 		return tr("Weapon");
 	case COLUMN_COUNT:
@@ -102,6 +104,8 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 				return dps.fixed;
 			case COLUMN_BOUNCE_RATE:
 				return dps.bounceRate;
+			case COLUMN_SHARPNESS_USE:
+				return bwd->damage.sharpenPeriod * bwd->damage.sharpnessUse[0];
 			case COLUMN_WEAPON_NAME:
 				return bwd->build->weapon->getName(dataLanguage);
 			case COLUMN_COUNT:
@@ -127,6 +131,7 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 		case COLUMN_STATUS_DPS:
 		case COLUMN_FIXED_DPS:
 		case COLUMN_BOUNCE_RATE:
+		case COLUMN_SHARPNESS_USE:
 			return QVariant(Qt::AlignRight | Qt::AlignVCenter);
 		default:
 			return QVariant();

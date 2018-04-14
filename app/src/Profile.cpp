@@ -23,7 +23,6 @@ Pattern::Pattern() :
 	phialElementAttack(0.0),
 	phialRatio(0.0),
 	mindsEyeRatio(0.0),
-	sharpenPeriod(0.0),
 	sharpnessUse(0.0),
 	conditionRatios(Constants::instance()->conditionRatios),
 	localRatios(NULL)
@@ -51,7 +50,6 @@ void Pattern::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- phial_element_attack: " << phialElementAttack << endl;
 	stream << indent << "- phial_ratio: " << phialRatio << endl;
 	stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << endl;
-	stream << indent << "- sharpen_period: " << sharpenPeriod << endl;
 	stream << indent << "- sharpness_use: " << sharpnessUse << endl;
 	stream << indent << "- condition ratios";
 	if (localRatios) stream << " *";
@@ -65,8 +63,7 @@ void Pattern::updateConditionRatio(Condition cond, double v) {
 	(*localRatios)[cond] = v;
 }
 
-void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond,
-                      bool *po_sharpen_period, bool *po_sharpness_use) {
+void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond) {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
@@ -103,11 +100,7 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond,
 				phialRatio = xml->readElementText().toDouble();
 			} else if (tag_name == "minds_eye_ratio") {
 				mindsEyeRatio = xml->readElementText().toDouble();
-			} else if (tag_name == "sharpen_period") {
-				if (po_sharpen_period) *po_sharpen_period = true;
-				sharpenPeriod = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpness_use") {
-				if (po_sharpness_use) *po_sharpness_use = true;
 				sharpnessUse = xml->readElementText().toDouble();
 			} else {
 				bool found = false;
@@ -127,7 +120,7 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond,
 	}
 }
 
-Profile::Profile() : localRatios(NULL) {
+Profile::Profile() : localRatios(NULL), sharpenPeriod(0.0) {
 }
 
 Profile::~Profile() {
@@ -138,6 +131,7 @@ Profile::~Profile() {
 void Profile::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	stream << indent << "- type: " << type << endl;
+	stream << indent << "- sharpen_period: " << sharpenPeriod << endl;
 	foreach(const Pattern *pattern, patterns) {
 		stream << indent << "- pattern" << endl;
 		pattern->print(stream, indent + "\t");
@@ -147,11 +141,8 @@ void Profile::print(QTextStream &stream, QString indent) const {
 void Profile::readXml(QXmlStreamReader *xml) {
 	QMap<Pattern *, QSet<Condition> > om_cond;
 	QVector<Pattern *> om_up_cond;
-	QVector<Pattern *> om_up_sharpen_period;
-	QVector<Pattern *> om_up_sharpness_use;
 
-	double sharpen_period = Constants::instance()->sharpenPeriod;
-	double sharpness_use = Constants::instance()->sharpnessUse;
+	sharpenPeriod = Constants::instance()->sharpenPeriod;
 
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
@@ -164,37 +155,20 @@ void Profile::readXml(QXmlStreamReader *xml) {
 				; // name
 			} else if (tag_name == "type") {
 				type = xml->readElementText();
+			} else if (tag_name == "sharpen_period") {
+				sharpenPeriod = xml->readElementText().toDouble();
 			} else if (tag_name == "pattern") {
 				QSet<Condition> o_cond;
 				bool o_sharpen_period = false;
-				bool o_sharpness_use = false;
 				Pattern *pattern = new Pattern;
 				if (localRatios) pattern->conditionRatios = localRatios;
-				pattern->readXml(xml, &o_cond, &o_sharpen_period, &o_sharpness_use);
-				if (!o_sharpen_period) {
-					pattern->sharpenPeriod = sharpen_period;
-					om_up_sharpen_period.append(pattern);
-				}
-				if (!o_sharpness_use) {
-					pattern->sharpnessUse = sharpness_use;
-					om_up_sharpness_use.append(pattern);
-				}
+				pattern->readXml(xml, &o_cond);
 				if (o_cond.isEmpty()) {
 					om_up_cond.append(pattern);
 				} else {
 					om_cond[pattern] = o_cond;
 				}
 				patterns.append(pattern);
-			} else if (tag_name == "sharpen_period") {
-				sharpen_period = xml->readElementText().toDouble();
-				foreach(Pattern *p, om_up_sharpen_period) {
-					p->sharpenPeriod = sharpen_period;
-				}
-			} else if (tag_name == "sharpness_use") {
-				sharpness_use = xml->readElementText().toDouble();
-				foreach(Pattern *p, om_up_sharpness_use) {
-					p->sharpenPeriod = sharpness_use;
-				}
 			} else {
 				bool found = false;
 				for (int i = 0; i < CONDITION_COUNT; ++i) {

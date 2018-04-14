@@ -38,7 +38,6 @@ struct Constants {
 	double enragedRatio;
 	double monsterDefenseMultiplier;
 	double sharpenPeriod;
-	double sharpnessUse;
 
 	Constants();
 	inline static const Constants *instance() {

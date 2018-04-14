@@ -28,7 +28,6 @@ struct Pattern {
 	double phialElementAttack;
 	double phialRatio;
 	double mindsEyeRatio;
-	double sharpenPeriod;
 	double sharpnessUse;
 	const ConditionRatios *conditionRatios;
 
@@ -36,8 +35,7 @@ struct Pattern {
 	~Pattern();
 	void print(QTextStream &stream, QString indent = QString()) const;
 	void updateConditionRatio(Condition cond, double v);
-	void readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond,
-                 bool *po_sharpen_period, bool *po_sharpness_use);
+	void readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond);
 private:
 	ConditionRatios *localRatios;
 };
@@ -45,6 +43,7 @@ private:
 struct Profile : public NamedObject {
 	QString type;
 	QVector<Pattern *> patterns;
+	double sharpenPeriod;
 
 	Profile();
 	~Profile();
