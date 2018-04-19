@@ -27,6 +27,7 @@ struct Constants {
 	double elementWeakSpotThreshold;
 	double bounceThreshold;
 	double piercingFactor;
+	double impactPhialRawBonusMultiplier;
 	double rawSharpnessMultipliers[SHARPNESS_COUNT];
 	double elementSharpnessMultipliers[SHARPNESS_COUNT];
 	QVector<BuffCap> elementBuffCaps;
@@ -44,6 +45,8 @@ struct Constants {
 		if (!instancePtr) instancePtr = new Constants();
 		return instancePtr;
 	}
+
+	static double statusDamageCurve(double x);
 private:
 	static const Constants *instancePtr;
 };

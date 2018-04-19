@@ -6,21 +6,14 @@
 		<pattern>
 			<rate>1.0</rate>
 			<period>150.0</period>
-			<cut>30</cut>
-			<impact>2</impact>
-			<piercing>0</piercing>
-			<element>80</element>
-			<stun>0</stun>
-			<exhaust>0</exhaust>
-			<sharpness_multiplier>1</sharpness_multiplier>
-			<phial_impact_attack>9</phial_impact_attack>
-			<phial_impact_stun>29</phial_impact_stun>
-			<phial_impact_exhaust>29</phial_impact_exhaust>
-			<phial_element_attack>42</phial_element_attack>
-			<phial_ratio>0</phial_ratio>
-			<draw_attack_ratio>0.05</draw_attack_ratio>
-			<airborne_ratio>0.01</airborne_ratio>
-			<sharpness_use>80</sharpness_use>
+			<motion_value_ref id="cb_sword_forward_slash" multiplier="6"/>
+			<motion_value_ref id="cb_sword_charged_double_slash" multiplier="15"/>
+			<motion_value_ref id="cb_sword_shield_thrust" multiplier="9"/>
+			<motion_value_ref id="cb_axe_smash" multiplier="2" raw_multiplier="1.1"/>
+			<motion_value_ref id="cb_axe_super_aed_has_phials" multiplier="7"/>
+			<motion_value_ref id="cb_axe_super_aed_per_phial" multiplier="29"/>
+			<motion_value_ref id="cb_sword_condensed_element_slash" multiplier="2"/>
+			<motion_value_ref id="cb_axe_ed_1" multiplier="2" raw_multiplier="1.1"/>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
@@ -28,17 +21,15 @@
 		<type>dual_blades</type>
 		<pattern>
 			<rate>1.0</rate>
-			<period>10.0</period>
-			<cut>1.0</cut>
-			<impact>0</impact>
-			<piercing>0</piercing>
-			<element>10.0</element>
-			<stun>0</stun>
-			<exhaust>0</exhaust>
-			<sharpness_multiplier>1</sharpness_multiplier>
-			<draw_attack_ratio>0.1</draw_attack_ratio>
-			<airborne_ratio>0.2</airborne_ratio>
-			<sharpness_use>10</sharpness_use>
+			<period>150.0</period>
+			<motion_value_ref id="db_demon_fangs" multiplier="4"/>
+			<motion_value_ref id="db_twofold_demon_slash" multiplier="2"/>
+			<motion_value_ref id="db_sixfold_demon_slash" multiplier="1"/>
+			<motion_value_ref id="db_blade_dance" multiplier="9"/>
+			<motion_value_ref id="db_demon_flurry_rush" multiplier="10"/>
+			<motion_value_ref id="db_heavenly_blade_dance" multiplier="3"/>
+			<motion_value_ref id="db_midair_spinning_blade_dance" multiplier="2"/>
+			<motion_value_ref id="db_spinning_blade_dance_finisher" multiplier="1"/>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>

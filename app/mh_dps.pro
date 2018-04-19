@@ -26,6 +26,7 @@ src/Item.cpp \
 src/MainData.cpp \
 src/MhDpsApplication.cpp \
 src/Monster.cpp \
+src/MotionValue.cpp \
 src/NamedObject.cpp \
 src/Profile.cpp \
 src/Target.cpp \
@@ -34,6 +35,7 @@ src/enums.cpp \
 src/main.cpp \
 src/gui/BuffGroupListModel.cpp \
 src/gui/BuffListModel.cpp \
+src/gui/ColumnMenu.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainWindow.cpp \
 src/gui/ResultTableModel.cpp
@@ -53,6 +55,7 @@ src/Item.h \
 src/MainData.h \
 src/MhDpsApplication.h \
 src/Monster.h \
+src/MotionValue.h \
 src/NamedObject.h \
 src/Profile.h \
 src/Target.h \
@@ -60,6 +63,7 @@ src/Weapon.h \
 src/enums.h \
 src/gui/BuffGroupListModel.h \
 src/gui/BuffListModel.h \
+src/gui/ColumnMenu.h \
 src/gui/GuiElements.h \
 src/gui/MainWindow.h \
 src/gui/ResultTableModel.h

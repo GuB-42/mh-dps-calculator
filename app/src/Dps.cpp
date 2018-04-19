@@ -81,6 +81,7 @@ void Dps::computeNoStatus(const MonsterHitData &hit_data,
 		bounceRate *= 1.0 - minds_eye / bounce_divider;
 		bounceRate /= bounce_divider;
 	}
+	if (bounceRate < 1e-9) bounceRate = 0.0;
 
 	fixed = weak_damage.fixed;
 
@@ -124,10 +125,14 @@ void Dps::computeStatus(const Monster &monster,
 					                              1.0 / killFrequency,
 					                              sta == STATUS_POISON);
 					if (hits > 0.0) {
-						double v = hits * monster.tolerances[sta]->damage;
-						statuses[sta] = v;
 						statusProcRate[sta] = hits;
-						totalStatuses += v;
+						if (monster.tolerances[sta]->damage > 0.0) {
+							double mod_hits = killFrequency *
+								 Constants::statusDamageCurve(hits / killFrequency);
+							double v = monster.tolerances[sta]->damage * mod_hits;
+							statuses[sta] = v;
+							totalStatuses += v;
+						}
 					}
 				}
 			}

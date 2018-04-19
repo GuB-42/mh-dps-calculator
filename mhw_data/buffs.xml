@@ -2866,9 +2866,8 @@
 		<buff>
 			<name>Punishing Draw</name>
 			<name_fr>Batto-jutsu</name_fr>
-			<draw_attack_stun>30</draw_attack_stun>
-			<draw_attack_exhaust>30</draw_attack_exhaust>
 			<draw_attack>
+				<punishing_draw>1</punishing_draw>
 				<attack_plus>5</attack_plus>
 			</draw_attack>
 		</buff>

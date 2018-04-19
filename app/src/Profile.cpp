@@ -1,7 +1,9 @@
 #include "Profile.h"
 #include "Constants.h"
 #include "ConditionRatios.h"
+#include "MotionValue.h"
 
+#include <QDebug>
 #include <QMap>
 #include <QTextStream>
 #include <QXmlStreamReader>
@@ -24,6 +26,9 @@ Pattern::Pattern() :
 	phialRatio(0.0),
 	mindsEyeRatio(0.0),
 	sharpnessUse(0.0),
+	definedPhialRatio(false),
+	definedMindsEyeRatio(false),
+	definedSharpnessMultiplier(false),
 	conditionRatios(Constants::instance()->conditionRatios),
 	localRatios(NULL)
 {
@@ -51,6 +56,11 @@ void Pattern::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- phial_ratio: " << phialRatio << endl;
 	stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << endl;
 	stream << indent << "- sharpness_use: " << sharpnessUse << endl;
+	foreach(const MotionValueRef &mvr, motionValueRefs) {
+		stream << indent << "- motion value: " << mvr.id <<
+			" (multiplier: " << mvr.multiplier << ") (raw multiplier: " <<
+			mvr.rawMultiplier << ")" << endl;
+	}
 	stream << indent << "- condition ratios";
 	if (localRatios) stream << " *";
 	stream << endl;
@@ -63,7 +73,88 @@ void Pattern::updateConditionRatio(Condition cond, double v) {
 	(*localRatios)[cond] = v;
 }
 
-void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond) {
+void Pattern::applyMotionValue(const MotionValue *mv,
+                               double multiplier, double raw_multiplier,
+                               const MultiplierTotals &totals) {
+	cut += mv->cut * multiplier * raw_multiplier;
+	impact += mv->impact * multiplier * raw_multiplier;
+	piercing += mv->piercing * multiplier * raw_multiplier;
+	element += mv->element * multiplier;
+	status += mv->status * multiplier;
+	stun += mv->stun * multiplier;
+	exhaust += mv->exhaust * multiplier;
+	phialImpactAttack += mv->phialImpactAttack * multiplier;
+	phialImpactStun += mv->phialImpactStun * multiplier;
+	phialImpactExhaust += mv->phialImpactExhaust * multiplier;
+	phialElementAttack += mv->phialElementAttack * multiplier;
+	sharpnessUse += mv->sharpnessUse * multiplier;
+	punishingDrawStun += mv->punishingDrawStun * multiplier;
+	punishingDrawExhaust += mv->punishingDrawExhaust * multiplier;
+	if (totals.sharpnessMultiplier > 0.0) {
+		double weight = multiplier / totals.sharpnessMultiplier;
+		sharpnessMultiplier += mv->sharpnessMultiplier * weight;
+	}
+	if (totals.drawAttackRatio > 0.0) {
+		double weight = multiplier / totals.drawAttackRatio;
+		double cr = (*conditionRatios)[CONDITION_DRAW_ATTACK];
+		updateConditionRatio(CONDITION_DRAW_ATTACK,
+		                     cr + mv->drawAttackRatio * weight);
+	}
+	if (totals.airborneRatio > 0.0) {
+		double weight = multiplier / totals.airborneRatio;
+		double cr = (*conditionRatios)[CONDITION_AIRBORNE];
+		updateConditionRatio(CONDITION_AIRBORNE,
+		                     cr + mv->airborneRatio * weight);
+	}
+	if (totals.phialRatio > 0.0) {
+		double weight = multiplier / totals.phialRatio;
+		phialRatio += mv->phialRatio * weight;
+	}
+	if (totals.mindsEyeRatio > 0.0) {
+		double weight = multiplier / totals.mindsEyeRatio;
+		mindsEyeRatio += mv->mindsEyeRatio * weight;
+	}
+}
+
+void Pattern::applyMotionValues(const QHash<QString, MotionValue *> &mv_hash) {
+	MultiplierTotals totals;
+	foreach(const MotionValueRef &mvr, motionValueRefs) {
+		QHash<QString, MotionValue *>::const_iterator it =
+			mv_hash.find(mvr.id);
+		if (it != mv_hash.end()) {
+			const MotionValue *mv = *it;
+			if (!definedSharpnessMultiplier &&
+			    mv->definedSharpnessMultiplier) {
+				totals.sharpnessMultiplier += mvr.multiplier;
+			}
+			if (!definedConditionRatios[CONDITION_DRAW_ATTACK] &&
+			    mv->definedDrawAttackRatio) {
+				totals.drawAttackRatio += mvr.multiplier;
+			}
+			if (!definedConditionRatios[CONDITION_AIRBORNE] &&
+			    mv->definedAirborneRatio) {
+				totals.airborneRatio += mvr.multiplier;
+			}
+			if (!definedPhialRatio && mv->definedPhialRatio) {
+				totals.phialRatio += mvr.multiplier;
+			}
+			if (!definedMindsEyeRatio && mv->definedMindsEyeRatio) {
+				totals.mindsEyeRatio += mvr.multiplier;
+			}
+		}
+	}
+	foreach(const MotionValueRef &mvr, motionValueRefs) {
+		QHash<QString, MotionValue *>::const_iterator it =
+			mv_hash.find(mvr.id);
+		if (it != mv_hash.end()) {
+			applyMotionValue(*it, mvr.multiplier, mvr.rawMultiplier, totals);
+		} else {
+			qWarning() << "Unknown motion value \"" << mvr.id << "\"";
+		}
+	}
+}
+
+void Pattern::readXml(QXmlStreamReader *xml) {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
@@ -87,6 +178,7 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond) {
 			} else if (tag_name == "exhaust") {
 				exhaust = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpness_multiplier") {
+				definedSharpnessMultiplier = true;
 				sharpnessMultiplier = xml->readElementText().toDouble();
 			} else if (tag_name == "phial_impact_attack") {
 				phialImpactAttack = xml->readElementText().toDouble();
@@ -97,16 +189,33 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond) {
 			} else if (tag_name == "phial_element_attack") {
 				phialElementAttack = xml->readElementText().toDouble();
 			} else if (tag_name == "phial_ratio") {
+				definedPhialRatio = true;
 				phialRatio = xml->readElementText().toDouble();
 			} else if (tag_name == "minds_eye_ratio") {
+				definedMindsEyeRatio = true;
 				mindsEyeRatio = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpness_use") {
 				sharpnessUse = xml->readElementText().toDouble();
+			} else if (tag_name == "motion_value_ref") {
+				MotionValueRef mvr;
+				mvr.id = xml->attributes().value("id").toString();
+				if (xml->attributes().hasAttribute("multiplier")) {
+					mvr.multiplier =
+						xml->attributes().value("multiplier").
+						toString().toDouble();
+				}
+				if (xml->attributes().hasAttribute("raw_multiplier")) {
+					mvr.rawMultiplier =
+						xml->attributes().value("raw_multiplier").
+						toString().toDouble();
+				}
+				motionValueRefs.append(mvr);
+				xml->skipCurrentElement();
 			} else {
 				bool found = false;
 				for (int i = 0; i < CONDITION_COUNT; ++i) {
 					if (tag_name == QString(toString((Condition)i)) + "_ratio") {
-						if (po_cond) po_cond->insert((Condition)i);
+						definedConditionRatios[i] = true;
 						updateConditionRatio((Condition)i, xml->readElementText().toDouble());
 						found = true;
 						break;
@@ -120,7 +229,7 @@ void Pattern::readXml(QXmlStreamReader *xml, QSet<Condition> *po_cond) {
 	}
 }
 
-Profile::Profile() : localRatios(NULL), sharpenPeriod(0.0) {
+Profile::Profile() : sharpenPeriod(0.0), localRatios(NULL) {
 }
 
 Profile::~Profile() {
@@ -139,9 +248,6 @@ void Profile::print(QTextStream &stream, QString indent) const {
 }
 
 void Profile::readXml(QXmlStreamReader *xml) {
-	QMap<Pattern *, QSet<Condition> > om_cond;
-	QVector<Pattern *> om_up_cond;
-
 	sharpenPeriod = Constants::instance()->sharpenPeriod;
 
 	if (xml->attributes().hasAttribute("id")) {
@@ -158,16 +264,9 @@ void Profile::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "sharpen_period") {
 				sharpenPeriod = xml->readElementText().toDouble();
 			} else if (tag_name == "pattern") {
-				QSet<Condition> o_cond;
-				bool o_sharpen_period = false;
 				Pattern *pattern = new Pattern;
 				if (localRatios) pattern->conditionRatios = localRatios;
-				pattern->readXml(xml, &o_cond);
-				if (o_cond.isEmpty()) {
-					om_up_cond.append(pattern);
-				} else {
-					om_cond[pattern] = o_cond;
-				}
+				pattern->readXml(xml);
 				patterns.append(pattern);
 			} else {
 				bool found = false;
@@ -177,17 +276,17 @@ void Profile::readXml(QXmlStreamReader *xml) {
 							const ConditionRatios *def =
 								Constants::instance()->conditionRatios;
 							localRatios = new ConditionRatios(*def);
-							foreach(Pattern *p, om_up_cond) {
-								p->conditionRatios = localRatios;
+							foreach(Pattern *pattern, patterns) {
+								if (pattern->definedConditionRatios.none()) {
+									pattern->conditionRatios = localRatios;
+								}
 							}
 						}
 						double v = xml->readElementText().toDouble();
 						(*localRatios)[(Condition)i] = v;
-						for (QMap<Pattern *, QSet<Condition> >::const_iterator it =
-						     	om_cond.begin();
-						     it != om_cond.end(); ++it) {
-							if (!it.value().contains((Condition)i)) {
-								it.key()->updateConditionRatio((Condition)i, v);
+						foreach(Pattern *pattern, patterns) {
+							if (!pattern->definedConditionRatios[i]) {
+								pattern->updateConditionRatio((Condition)i, v);
 							}
 						}
 						found = true;

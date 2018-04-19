@@ -51,8 +51,7 @@ void FoldedBuffsData::applyBuff(const BuffWithCondition *buff_cond,
 		case BUFF_MAX_SHARPNESS_TIME: op = OP_PLUS; break;
 		case BUFF_SHARPNESS_USE_MULTIPLIER: op = OP_MULTIPLY; break;
 		case BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER: op = OP_MULTIPLY; break;
-		case BUFF_DRAW_ATTACK_STUN: op = OP_PLUS; break;
-		case BUFF_DRAW_ATTACK_EXHAUST: op = OP_PLUS; break;
+		case BUFF_PUNISHING_DRAW: op = OP_PLUS; break;
 		case BUFF_STUN_MULTIPLIER: op = OP_MULTIPLY; break;
 		case BUFF_EXHAUST_MULTIPLIER: op = OP_MULTIPLY; break;
 		case BUFF_ARTILLERY_MULTIPLIER: op = OP_MULTIPLY; break;
@@ -118,8 +117,7 @@ FoldedBuffsData::FoldedBuffsData() {
 	normalBuffs[BUFF_MAX_SHARPNESS_TIME] = 0.0;
 	normalBuffs[BUFF_SHARPNESS_USE_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_DRAW_ATTACK_STUN] = 0.0;
-	normalBuffs[BUFF_DRAW_ATTACK_EXHAUST] = 0.0;
+	normalBuffs[BUFF_PUNISHING_DRAW] = 0.0;
 	normalBuffs[BUFF_STUN_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_EXHAUST_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_ARTILLERY_MULTIPLIER] = 1.0;

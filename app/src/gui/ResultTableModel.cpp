@@ -11,12 +11,86 @@
 
 ResultTableModel::ResultTableModel(QObject *parent) :
 	QAbstractTableModel(parent), itemColumns(0),
-	dataLanguage(NamedObject::LANG_EN)
+	dataLanguage(NamedObject::LANG_EN),
+	monsterMode(MODE_ENRAGED_WEAK_SPOT)
 {
 }
 
 ResultTableModel::~ResultTableModel() {
 	clearData();
+}
+
+bool ResultTableModel::isNumberColumn(Column c) {
+	switch (c) {
+	case COLUMN_TOTAL_DPS:
+	case COLUMN_RAW_DPS:
+	case COLUMN_ELEMENT_DPS:
+	case COLUMN_STATUS_DPS:
+	case COLUMN_FIXED_DPS:
+	case COLUMN_KILL_TIME:
+	case COLUMN_BOUNCE_RATE:
+	case COLUMN_POISON_PROC_RATE:
+	case COLUMN_PARALYSIS_PROC_RATE:
+	case COLUMN_SLEEP_PROC_RATE:
+	case COLUMN_STUN_PROC_RATE:
+	case COLUMN_BLAST_PROC_RATE:
+	case COLUMN_EXHAUST_PROC_RATE:
+	case COLUMN_MOUNT_PROC_RATE:
+	case COLUMN_SHARPNESS_USE:
+	case COLUMN_DMG_CUT_PIERCING:
+	case COLUMN_DMG_IMPACT:
+	case COLUMN_DMG_FIXED:
+	case COLUMN_DMG_ELEMENT:
+	case COLUMN_DMG_STATUS:
+	case COLUMN_DMG_STUN:
+	case COLUMN_DMG_EXHAUST:
+	case COLUMN_DMG_MOUNT:
+		return true;
+	default:
+		return false;
+	}
+}
+
+bool ResultTableModel::isGreaterIsBetterColumn(Column c) {
+	switch (c) {
+	case COLUMN_TOTAL_DPS:
+	case COLUMN_RAW_DPS:
+	case COLUMN_ELEMENT_DPS:
+	case COLUMN_STATUS_DPS:
+	case COLUMN_FIXED_DPS:
+	case COLUMN_POISON_PROC_RATE:
+	case COLUMN_PARALYSIS_PROC_RATE:
+	case COLUMN_SLEEP_PROC_RATE:
+	case COLUMN_STUN_PROC_RATE:
+	case COLUMN_BLAST_PROC_RATE:
+	case COLUMN_EXHAUST_PROC_RATE:
+	case COLUMN_MOUNT_PROC_RATE:
+	case COLUMN_DMG_CUT_PIERCING:
+	case COLUMN_DMG_IMPACT:
+	case COLUMN_DMG_FIXED:
+	case COLUMN_DMG_ELEMENT:
+	case COLUMN_DMG_STATUS:
+	case COLUMN_DMG_STUN:
+	case COLUMN_DMG_EXHAUST:
+	case COLUMN_DMG_MOUNT:
+		return true;
+	default:
+		return false;
+	}
+}
+
+bool ResultTableModel::isDefaultVisibleColumn(Column c) {
+	switch (c) {
+	case COLUMN_TOTAL_DPS:
+	case COLUMN_RAW_DPS:
+	case COLUMN_ELEMENT_DPS:
+	case COLUMN_STATUS_DPS:
+	case COLUMN_FIXED_DPS:
+	case COLUMN_WEAPON_NAME:
+		return true;
+	default:
+		return c >= COLUMN_COUNT;
+	}
 }
 
 QString ResultTableModel::columnName(Column c) {
@@ -33,8 +107,40 @@ QString ResultTableModel::columnName(Column c) {
 		return tr("Fixed");
 	case COLUMN_BOUNCE_RATE:
 		return tr("Bounce");
+	case COLUMN_KILL_TIME:
+		return tr("Kill time");
+	case COLUMN_POISON_PROC_RATE:
+		return tr("Poison");
+	case COLUMN_PARALYSIS_PROC_RATE:
+		return tr("Paralysis");
+	case COLUMN_SLEEP_PROC_RATE:
+		return tr("Sleep");
+	case COLUMN_STUN_PROC_RATE:
+		return tr("Stun");
+	case COLUMN_BLAST_PROC_RATE:
+		return tr("Blast");
+	case COLUMN_EXHAUST_PROC_RATE:
+		return tr("Exhaust");
+	case COLUMN_MOUNT_PROC_RATE:
+		return tr("Mount");
 	case COLUMN_SHARPNESS_USE:
 		return tr("Sharpness use");
+	case COLUMN_DMG_CUT_PIERCING:
+		return tr("Base cut");
+	case COLUMN_DMG_IMPACT:
+		return tr("Base impact");
+	case COLUMN_DMG_FIXED:
+		return tr("Base fixed");
+	case COLUMN_DMG_ELEMENT:
+		return tr("Base element");
+	case COLUMN_DMG_STATUS:
+		return tr("Base status");
+	case COLUMN_DMG_STUN:
+		return tr("Base stun");
+	case COLUMN_DMG_EXHAUST:
+		return tr("Base exhaust");
+	case COLUMN_DMG_MOUNT:
+		return tr("Base mount");
 	case COLUMN_WEAPON_NAME:
 		return tr("Weapon");
 	case COLUMN_COUNT:
@@ -50,7 +156,7 @@ int ResultTableModel::rowCount(const QModelIndex &parent) const {
 
 int ResultTableModel::columnCount(const QModelIndex &parent) const {
 	if (parent.isValid()) return 0;
-	return 7 + itemColumns;
+	return COLUMN_COUNT + itemColumns;
 }
 
 QVariant ResultTableModel::headerData(int section, Qt::Orientation orientation, int role) const {
@@ -102,10 +208,58 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 				return dps.totalStatuses;
 			case COLUMN_FIXED_DPS:
 				return dps.fixed;
+			case COLUMN_KILL_TIME:
+				return 1.0 / dps.killFrequency;
 			case COLUMN_BOUNCE_RATE:
 				return dps.bounceRate;
+			case COLUMN_POISON_PROC_RATE:
+				return dps.statusProcRate[STATUS_POISON];
+			case COLUMN_PARALYSIS_PROC_RATE:
+				return dps.statusProcRate[STATUS_PARALYSIS];
+			case COLUMN_SLEEP_PROC_RATE:
+				return dps.statusProcRate[STATUS_SLEEP];
+			case COLUMN_STUN_PROC_RATE:
+				return dps.statusProcRate[STATUS_STUN];
+			case COLUMN_BLAST_PROC_RATE:
+				return dps.statusProcRate[STATUS_BLAST];
+			case COLUMN_EXHAUST_PROC_RATE:
+				return dps.statusProcRate[STATUS_EXHAUST];
+			case COLUMN_MOUNT_PROC_RATE:
+				return dps.statusProcRate[STATUS_MOUNT];
 			case COLUMN_SHARPNESS_USE:
 				return bwd->damage.sharpenPeriod * bwd->damage.sharpnessUse[0];
+			case COLUMN_DMG_CUT_PIERCING:
+				return bwd->damage.data[monsterMode]->cut +
+					bwd->damage.data[monsterMode]->piercing;
+			case COLUMN_DMG_IMPACT:
+				return bwd->damage.data[monsterMode]->impact;
+			case COLUMN_DMG_FIXED:
+				return bwd->damage.data[monsterMode]->fixed;
+			case COLUMN_DMG_ELEMENT:
+				{
+					double total = 0.0;
+					for (int i = 0; i < ELEMENT_COUNT; ++i) {
+						total += bwd->damage.data[monsterMode]->elements[i];
+					}
+					return total;
+				}
+			case COLUMN_DMG_STATUS:
+				{
+					double total = 0.0;
+					for (int i = 0; i < STATUS_COUNT; ++i) {
+						if (i == STATUS_STUN) continue;
+						if (i == STATUS_EXHAUST) continue;
+						if (i == STATUS_MOUNT) continue;
+						total += bwd->damage.data[monsterMode]->statuses[i];
+					}
+					return total;
+				}
+			case COLUMN_DMG_STUN:
+				return bwd->damage.data[monsterMode]->statuses[STATUS_STUN];
+			case COLUMN_DMG_EXHAUST:
+				return bwd->damage.data[monsterMode]->statuses[STATUS_EXHAUST];
+			case COLUMN_DMG_MOUNT:
+				return bwd->damage.data[monsterMode]->statuses[STATUS_MOUNT];
 			case COLUMN_WEAPON_NAME:
 				return bwd->build->weapon->getName(dataLanguage);
 			case COLUMN_COUNT:
@@ -116,24 +270,19 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 			return QVariant();
 		}
 	} else if (role == Qt::BackgroundRole) {
-		if (index.column() == COLUMN_ELEMENT_DPS) {
-			return GuiElements::elementBrush(bwd->damage.data[MODE_ENRAGED_WEAK_SPOT]->elements);
-		} else if (index.column() == COLUMN_STATUS_DPS) {
-			return GuiElements::statusBrush(bwd->damage.data[MODE_ENRAGED_WEAK_SPOT]->statuses);
+		if (index.column() == COLUMN_ELEMENT_DPS ||
+		    index.column() == COLUMN_DMG_ELEMENT) {
+			return GuiElements::elementBrush(bwd->damage.data[monsterMode]->elements);
+		} else if (index.column() == COLUMN_STATUS_DPS ||
+		           index.column() == COLUMN_DMG_STATUS) {
+			return GuiElements::statusBrush(bwd->damage.data[monsterMode]->statuses);
 		} else {
 			return QVariant();
 		}
 	} else if (role == Qt::TextAlignmentRole) {
-		switch ((Column)index.column()) {
-		case COLUMN_TOTAL_DPS:
-		case COLUMN_RAW_DPS:
-		case COLUMN_ELEMENT_DPS:
-		case COLUMN_STATUS_DPS:
-		case COLUMN_FIXED_DPS:
-		case COLUMN_BOUNCE_RATE:
-		case COLUMN_SHARPNESS_USE:
+		if (isNumberColumn((Column)index.column())) {
 			return QVariant(Qt::AlignRight | Qt::AlignVCenter);
-		default:
+		} else {
 			return QVariant();
 		}
 	} else {
@@ -150,8 +299,8 @@ QVector<QVector<QVariant> > ResultTableModel::getDataTable(const QModelIndexList
 		if (index.isValid() &&
 		    index.row() >= 0 && index.row() < rowCount() &&
 		    index.column() >= 0 && index.column() < columnCount()) {
-			rows[index.row()] = 1;
-			columns[index.column()] = 1;
+			rows[index.row()] = -1;
+			columns[index.column()] = -1;
 		}
 	}
 
@@ -165,9 +314,13 @@ QVector<QVector<QVariant> > ResultTableModel::getDataTable(const QModelIndexList
 		out_table.append(r);
 	}
 	idx = 0;
+	foreach(int c, mimeColumnOrder) {
+		QMap<int, int>::iterator it = columns.find(c);
+		if (it != columns.end()) *it = idx++;
+	}
 	for (QMap<int, int>::iterator it = columns.begin();
 	     it != columns.end(); ++it) {
-		*it = idx++;
+		if (*it == -1) *it = idx++;
 	}
 
 	foreach(const QModelIndex &index, indexes) {
@@ -275,25 +428,18 @@ void ResultTableModel::sort(int column, Qt::SortOrder order) {
 		rows.append(RowWithKey(data(index(i, column)), resultData[i], i));
 	}
 
-	switch (column) {
-	case COLUMN_TOTAL_DPS:
-	case COLUMN_RAW_DPS:
-	case COLUMN_ELEMENT_DPS:
-	case COLUMN_STATUS_DPS:
-	case COLUMN_FIXED_DPS:
+	if (isGreaterIsBetterColumn((Column)column)) {
 		if (order == Qt::AscendingOrder) {
 			std::stable_sort(rows.begin(), rows.end(), greaterRowWithKey);
 		} else {
 			std::stable_sort(rows.begin(), rows.end(), lessRowWithKey);
 		}
-		break;
-	default:
+	} else {
 		if (order == Qt::AscendingOrder) {
 			std::stable_sort(rows.begin(), rows.end(), lessRowWithKey);
 		} else {
 			std::stable_sort(rows.begin(), rows.end(), greaterRowWithKey);
 		}
-		break;
 	}
 
 	emit layoutAboutToBeChanged();
@@ -319,30 +465,59 @@ void ResultTableModel::sort(int column, Qt::SortOrder order) {
 
 void ResultTableModel::setDataLanguage(NamedObject::Language lang) {
 	dataLanguage = lang;
-	emit dataChanged(index(0, 6), index(rowCount() - 1, columnCount() - 1));
+	emit dataChanged(index(0, COLUMN_WEAPON_NAME),
+	                 index(rowCount() - 1, columnCount() - 1));
 }
 
 void ResultTableModel::setResultData(const QVector<BuildWithDps *> &d) {
-	beginResetModel();
-	clearData();
-	resultData = d;
-	itemColumns = 0;
-	foreach(BuildWithDps *bwd, resultData) {
-		if (itemColumns < bwd->build->usedItems.count()) {
-			itemColumns = bwd->build->usedItems.count();
+	clear();
+	int item_columns = 0;
+	foreach(BuildWithDps *bwd, d) {
+		if (item_columns < bwd->build->usedItems.count()) {
+			item_columns = bwd->build->usedItems.count();
 		}
 	}
-	endResetModel();
+	if (item_columns > itemColumns) {
+		beginInsertColumns(QModelIndex(),
+		                   COLUMN_COUNT + itemColumns,
+		                   COLUMN_COUNT + item_columns - 1);
+		itemColumns = item_columns;
+		endInsertColumns();
+	} else if (item_columns < itemColumns) {
+		beginRemoveColumns(QModelIndex(),
+		                   COLUMN_COUNT + item_columns,
+		                   COLUMN_COUNT + itemColumns - 1);
+		itemColumns = item_columns;
+		endRemoveColumns();
+	}
+	if (d.count() > 0) {
+		beginInsertRows(QModelIndex(), 0, d.count() - 1);
+		resultData = d;
+		endInsertRows();
+	}
 }
 
 void ResultTableModel::clear() {
-	beginResetModel();
-	clearData();
-	endResetModel();
+	if (rowCount() > 0) {
+		beginRemoveRows(QModelIndex(), 0, rowCount() - 1);
+		clearData();
+		endRemoveRows();
+	} else {
+		clearData();
+	}
+}
+
+void ResultTableModel::setMimeColumnOrder(QList<int> order) {
+	mimeColumnOrder = order;
+}
+
+void ResultTableModel::setMonsterMode(MonsterMode mode) {
+	monsterMode = mode;
+	emit dataChanged(index(0, COLUMN_DMG_CUT_PIERCING),
+	                 index(rowCount() - 1, COLUMN_DMG_MOUNT));
 }
 
 void ResultTableModel::clearData() {
 	foreach(BuildWithDps *bwd, resultData) delete bwd;
 	resultData.clear();
-	itemColumns = 0;
 }

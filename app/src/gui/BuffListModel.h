@@ -1,3 +1,6 @@
+#ifndef BuffListModel_h_
+#define BuffListModel_h_
+
 #include <QAbstractListModel>
 #include <QList>
 #include "../NamedObject.h"
@@ -28,3 +31,5 @@ private:
 	QMap<const BuffGroup *, int> listDataMap;
 	NamedObject::Language dataLanguage;
 };
+
+#endif

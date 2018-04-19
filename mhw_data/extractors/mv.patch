@@ -1,0 +1,61 @@
+--- motion_values.xml	2018-04-16 20:53:12.689481720 +0200
++++ motion_values.xml	2018-04-16 20:54:12.564112840 +0200
+@@ -301,6 +301,10 @@
+         <name>Charge Blade: Axe: ED I</name>
+         <cut>0.21</cut>
+         <element>1</element>
++        <phial_impact_attack>0.04</phial_impact_attack>
++        <phial_impact_stun>30</phial_impact_stun>
++        <phial_impact_exhaust>5</phial_impact_exhaust>
++        <phial_element_attack>3.5</phial_element_attack>
+         <sharpness_use>1</sharpness_use>
+     </motion_value>
+     <motion_value id="cb_axe_rushing_ed_1">
+@@ -308,6 +312,10 @@
+         <name>Charge Blade: Axe: Rushing ED I</name>
+         <cut>0.21</cut>
+         <element>1</element>
++        <phial_impact_attack>0.04</phial_impact_attack>
++        <phial_impact_stun>30</phial_impact_stun>
++        <phial_impact_exhaust>5</phial_impact_exhaust>
++        <phial_element_attack>3.5</phial_element_attack>
+         <sharpness_use>1</sharpness_use>
+     </motion_value>
+     <motion_value id="cb_axe_ed_2">
+@@ -315,6 +323,10 @@
+         <name>Charge Blade: Axe: ED II</name>
+         <cut>0.76</cut>
+         <element>2</element>
++        <phial_impact_attack>0.08</phial_impact_attack>
++        <phial_impact_stun>60</phial_impact_stun>
++        <phial_impact_exhaust>10</phial_impact_exhaust>
++        <phial_element_attack>7</phial_element_attack>
+         <sharpness_use>2</sharpness_use>
+     </motion_value>
+     <motion_value id="cb_axe_amped_element_discharge">
+@@ -322,6 +334,10 @@
+         <name>Charge Blade: Axe: Amped Element Discharge</name>
+         <cut>0.9</cut>
+         <element>1</element>
++        <phial_impact_attack>0.27</phial_impact_attack>
++        <phial_impact_stun>105</phial_impact_stun>
++        <phial_impact_exhaust>21</phial_impact_exhaust>
++        <phial_element_attack>15</phial_element_attack>
+         <sharpness_use>1</sharpness_use>
+     </motion_value>
+     <motion_value id="cb_axe_super_aed_has_phials">
+@@ -331,6 +347,14 @@
+         <element>3</element>
+         <sharpness_use>3</sharpness_use>
+     </motion_value>
++    <motion_value id="cb_axe_super_aed_per_phial">
++        <type>charge_blade</type>
++        <name>Charge Blade: Axe: Super AED, per phial</name>
++        <phial_impact_attack>0.25</phial_impact_attack>
++        <phial_impact_stun>40</phial_impact_stun>
++        <phial_impact_exhaust>10</phial_impact_exhaust>
++        <phial_element_attack>10</phial_element_attack>
++    </motion_value>
+     <motion_value id="cb_axe_super_aed_no_phials">
+         <type>charge_blade</type>
+         <name>Charge Blade: Axe: Super AED (No Phials)</name>

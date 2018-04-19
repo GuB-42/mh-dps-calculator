@@ -1,4 +1,5 @@
 #include "Constants.h"
+#include <math.h>
 #include "enums.h"
 #include "ConditionRatios.h"
 
@@ -16,6 +17,7 @@ Constants::Constants() {
 	elementWeakSpotThreshold = 20.0;
 	bounceThreshold = 25.0;
 	piercingFactor = 0.72;
+	impactPhialRawBonusMultiplier = 0.5;
 
 	rawSharpnessMultipliers[SHARPNESS_RED] = 0.5;
 	rawSharpnessMultipliers[SHARPNESS_ORANGE] = 0.75;
@@ -83,6 +85,16 @@ Constants::Constants() {
 	(*cond)[CONDITION_DEMON_POWDER_USE] = 0.5;
 	(*cond)[CONDITION_MIGHT_PILL_USE] = 0.1;
 	conditionRatios = cond;
+}
+
+double Constants::statusDamageCurve(double x) {
+	const double A = 3.0;
+	double ox = x - 0.5;
+	double ofpx = ox - floor(ox);
+	double a = pow(ofpx, A);
+	double b = pow(1.0 - ofpx, A);
+	double satxp = pow(x > 1.0 ? 1.0 : x, A);
+	return (a / (a + b) + floor(ox)) * satxp + pow(x * 0.5, A) * (1 - satxp);
 }
 
 const Constants *Constants::instancePtr = NULL;

@@ -13,6 +13,7 @@ struct BuffGroup;
 struct Profile;
 struct Item;
 struct Target;
+struct MotionValue;
 
 struct MainData {
 	QVector<Monster *> monsters;
@@ -23,6 +24,8 @@ struct MainData {
 	QVector<Item *> items;
 	QHash<QString, Item *> itemHash;
 	QVector<Target *> targets;
+	QVector<MotionValue *> motionValues;
+	QHash<QString, MotionValue *> motionValueHash;
 
 	~MainData();
 	void print(QTextStream &stream, QString indent = QString()) const;

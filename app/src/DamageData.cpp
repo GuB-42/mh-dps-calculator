@@ -85,9 +85,9 @@ static double compute_buffed_element(double base,
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
                        const Pattern &pattern,
                        double sharpness_use, double sharpen_period) {
-	double attack =
-		((weapon.attack + buffs.normalBuffs[BUFF_ATTACK_PLUS_BEFORE]) *
-		 buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
+	double pre_attack =
+		weapon.attack + buffs.normalBuffs[BUFF_ATTACK_PLUS_BEFORE];
+	double attack = (pre_attack * buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
 		buffs.normalBuffs[BUFF_ATTACK_PLUS];
 
 	double xaffinity =
@@ -224,21 +224,20 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		statuses[sta] = status_attack * status_multiplier;
 	}
 
-	// FIXME: do it with a proper buff
 	statuses[STATUS_STUN] += pattern.stun +
-		(*pattern.conditionRatios)[CONDITION_DRAW_ATTACK] *
-		buffs.normalBuffs[BUFF_DRAW_ATTACK_STUN];
-	statuses[STATUS_EXHAUST] += pattern.exhaust +
-		(*pattern.conditionRatios)[CONDITION_DRAW_ATTACK] *
-		buffs.normalBuffs[BUFF_DRAW_ATTACK_EXHAUST];
+		pattern.punishingDrawStun * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
+	statuses[STATUS_EXHAUST] += pattern.stun +
+		pattern.punishingDrawExhaust * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
 
 	fixed = 0.0;
 
 	if (weapon.phial == PHIAL_IMPACT) {
 		statuses[STATUS_STUN] += pattern.phialImpactStun;
 		statuses[STATUS_EXHAUST] += pattern.phialImpactExhaust;
-		fixed += attack * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER] *
-			pattern.phialImpactAttack;
+		double impact_attack_buff = (pre_attack - attack) *
+			Constants::instance()->impactPhialRawBonusMultiplier;
+		fixed += ((pre_attack * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER]) +
+		          impact_attack_buff) * pattern.phialImpactAttack;
 	}
 
 	statuses[STATUS_STUN] *= buffs.normalBuffs[BUFF_STUN_MULTIPLIER];

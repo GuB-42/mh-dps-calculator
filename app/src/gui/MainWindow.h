@@ -52,6 +52,7 @@ private slots:
 	void buildFutureProgress(int value);
 	void resultFutureFinished();
 	void resultFutureProgress(int value);
+	void updateTableMimeColumnOrder();
 
 public:
 	struct BuildFutureElt {

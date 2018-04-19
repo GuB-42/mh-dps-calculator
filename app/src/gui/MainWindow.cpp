@@ -44,8 +44,15 @@ MainWindow::MainWindow(QWidget *parent) :
 	tableModel->setDataLanguage(dataLanguage);
 	ui->tableView->setModel(tableModel);
 	ui->tableView->addAction(ui->action_Copy);
-	ui->tableView->horizontalHeader()->setSortIndicator(-1, Qt::AscendingOrder);
-	ui->tableView->setColumnHidden(ResultTableModel::COLUMN_SHARPNESS_USE, true);
+
+	for (int i = 0; i < ResultTableModel::COLUMN_COUNT; ++i) {
+		if (tableModel->isDefaultVisibleColumn((ResultTableModel::Column)i)) {
+			ui->tableView->showColumn(i);
+		} else {
+			ui->tableView->hideColumn(i);
+		}
+	}
+	ui->menu_Columns->setView(ui->tableView);
 
 	buffListModel->setDataLanguage(dataLanguage);
 	ui->buffListView->setModel(buffListModel);
@@ -71,6 +78,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(ui->tableView->selectionModel(), SIGNAL(selectionChanged(const QItemSelection &, const QItemSelection &)),
 	        this, SLOT(updateCopyAction()));
 	updateCopyAction();
+
+	ui->tableView->horizontalHeader()->setMovable(true);
+	connect(ui->tableView->horizontalHeader(), SIGNAL(sectionMoved(int, int, int)),
+	        this, SLOT(updateTableMimeColumnOrder()));
+	updateTableMimeColumnOrder();
 
 	ui->splitter->setSizes(QList<int>() << 1 << height());
 }
@@ -376,12 +388,25 @@ void MainWindow::resultFutureProgress(int value) {
 	}
 }
 
+void MainWindow::updateTableMimeColumnOrder() {
+	QList<int> order;
+	for (int i = 0; i < tableModel->columnCount(); ++i) {
+		int logi = ui->tableView->horizontalHeader()->logicalIndex(i);
+		if (i != logi) {
+			while (order.count() < i - 1) order.append(order.count());
+			order.append(logi);
+		}
+	}
+	tableModel->setMimeColumnOrder(order);
+}
+
 void MainWindow::copy() {
-	if (ui->tableView->hasFocus() && ui->tableView->selectionModel()) {
+	if (ui->tableView->selectionModel()) {
 		QModelIndexList indexes;
 		foreach(const QModelIndex &index,
 		        ui->tableView->selectionModel()->selectedIndexes()) {
-			if (index.model() == ui->tableView->model()) {
+			if (index.isValid() && index.model() == ui->tableView->model() &&
+			    !ui->tableView->isColumnHidden(index.column())) {
 				indexes.append(index);
 			}
 		}

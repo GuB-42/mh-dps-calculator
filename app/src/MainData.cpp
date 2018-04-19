@@ -5,6 +5,7 @@
 #include "Profile.h"
 #include "Item.h"
 #include "Target.h"
+#include "MotionValue.h"
 
 #include <QTextStream>
 #include <QXmlStreamReader>
@@ -16,6 +17,7 @@ MainData::~MainData() {
 	foreach(Profile *profile, profiles) delete profile;
 	foreach(Item *item, items) delete item;
 	foreach(Target *target, targets) delete target;
+	foreach(MotionValue *motion_value, motionValues) delete motion_value;
 }
 
 void MainData::print(QTextStream &stream, QString indent) const {
@@ -42,6 +44,10 @@ void MainData::print(QTextStream &stream, QString indent) const {
 	foreach(const Target *target, targets) {
 		stream << indent << "[target]" << endl;
 		target->print(stream, indent + "\t");
+	}
+	foreach(const MotionValue *motion_value, motionValues) {
+		stream << indent << "[motion value]" << endl;
+		motion_value->print(stream, indent + "\t");
 	}
 }
 
@@ -80,6 +86,13 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				Target *target = new Target;
 				target->readXml(xml);
 				targets.append(target);
+			} else if (tag_name == "motion_value") {
+				MotionValue *motion_value = new MotionValue;
+				motion_value->readXml(xml);
+				motionValues.append(motion_value);
+				if (!motion_value->id.isNull()) {
+					motionValueHash[motion_value->id] = motion_value;
+				}
 			} else {
 				xml->skipCurrentElement();
 			}
@@ -100,5 +113,10 @@ void MainData::matchData() {
 	}
 	foreach(Target *target, targets) {
 		target->matchMonsters(monsters);
+	}
+	foreach(Profile *profile, profiles) {
+		foreach(Pattern *pattern, profile->patterns) {
+			pattern->applyMotionValues(motionValueHash);
+		}
 	}
 }

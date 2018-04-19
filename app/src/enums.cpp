@@ -38,8 +38,7 @@ const char *toString(NormalBuff b) {
 	case BUFF_MAX_SHARPNESS_TIME: return "max_sharpness_time";
 	case BUFF_SHARPNESS_USE_MULTIPLIER: return "sharpness_use_multiplier";
 	case BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER: return "sharpness_use_critical_multiplier";
-	case BUFF_DRAW_ATTACK_STUN: return "draw_attack_stun";
-	case BUFF_DRAW_ATTACK_EXHAUST: return "draw_attack_exhaust";
+	case BUFF_PUNISHING_DRAW: return "punising_draw";
 	case BUFF_STUN_MULTIPLIER: return "stun_multiplier";
 	case BUFF_EXHAUST_MULTIPLIER: return "exhaust_multiplier";
 	case BUFF_ARTILLERY_MULTIPLIER: return "artillery_multiplier";
