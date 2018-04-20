@@ -240,7 +240,13 @@
       <string>&amp;Columns</string>
      </property>
     </widget>
+    <widget class="MonsterModeMenu" name="menu_MonsterMode">
+     <property name="title">
+      <string>&amp;Base values</string>
+     </property>
+    </widget>
     <addaction name="menu_Columns"/>
+    <addaction name="menu_MonsterMode"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -276,6 +282,11 @@
    <class>ColumnMenu</class>
    <extends>QMenu</extends>
    <header>src/gui/ColumnMenu.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MonsterModeMenu</class>
+   <extends>QMenu</extends>
+   <header>src/gui/MonsterModeMenu.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

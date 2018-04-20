@@ -53,6 +53,10 @@ MainWindow::MainWindow(QWidget *parent) :
 		}
 	}
 	ui->menu_Columns->setView(ui->tableView);
+	ui->menu_MonsterMode->setValue(MODE_ENRAGED_WEAK_SPOT);
+	tableModel->setMonsterMode(MODE_ENRAGED_WEAK_SPOT);
+	connect(ui->menu_MonsterMode, SIGNAL(valueSelected(MonsterMode)),
+	        tableModel, SLOT(setMonsterMode(MonsterMode)));
 
 	buffListModel->setDataLanguage(dataLanguage);
 	ui->buffListView->setModel(buffListModel);

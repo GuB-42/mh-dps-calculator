@@ -60,6 +60,8 @@ public:
 	void setResultData(const QVector<BuildWithDps *> &d);
 	void clear();
 	void setMimeColumnOrder(QList<int> order);
+
+public slots:
 	void setMonsterMode(MonsterMode mode);
 
 private:

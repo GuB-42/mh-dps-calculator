@@ -1,6 +1,8 @@
 #ifndef enums_h_
 #define enums_h_
 
+#include <QMetaType>
+
 enum StatusType {
 	STATUS_POISON,
 	STATUS_PARALYSIS,
@@ -114,5 +116,15 @@ enum MonsterMode {
 	MODE_COUNT
 };
 const char *toString(MonsterMode m);
+
+Q_DECLARE_METATYPE(StatusType);
+Q_DECLARE_METATYPE(ElementType);
+Q_DECLARE_METATYPE(NormalBuff);
+Q_DECLARE_METATYPE(ElementBuff);
+Q_DECLARE_METATYPE(StatusBuff);
+Q_DECLARE_METATYPE(Condition);
+Q_DECLARE_METATYPE(PhialType);
+Q_DECLARE_METATYPE(SharpnessLevel);
+Q_DECLARE_METATYPE(MonsterMode);
 
 #endif

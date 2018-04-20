@@ -38,6 +38,7 @@ src/gui/BuffListModel.cpp \
 src/gui/ColumnMenu.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainWindow.cpp \
+src/gui/MonsterModeMenu.cpp \
 src/gui/ResultTableModel.cpp
 
 HEADERS += \
@@ -66,6 +67,7 @@ src/gui/BuffListModel.h \
 src/gui/ColumnMenu.h \
 src/gui/GuiElements.h \
 src/gui/MainWindow.h \
+src/gui/MonsterModeMenu.h \
 src/gui/ResultTableModel.h
 
 FORMS += \
