@@ -1,17 +1,17 @@
-#ifndef MhDpsApplication_h_
-#define MhDpsApplication_h_
+#ifndef MainApplication_h_
+#define MainApplication_h_
 
 #include <QApplication>
 
 struct MainData;
 class MainWindow;
 
-class MhDpsApplication : public QApplication
+class MainApplication : public QApplication
 {
 	Q_OBJECT
 public:
-	MhDpsApplication(int &argc, char *argv[]);
-	~MhDpsApplication();
+	MainApplication(int &argc, char *argv[]);
+	~MainApplication();
 private:
 	MainWindow *mainWindow;
 	MainData *mainData;

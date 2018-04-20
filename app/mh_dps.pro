@@ -24,7 +24,6 @@ src/Dps.cpp \
 src/FoldedBuffs.cpp \
 src/Item.cpp \
 src/MainData.cpp \
-src/MhDpsApplication.cpp \
 src/Monster.cpp \
 src/MotionValue.cpp \
 src/NamedObject.cpp \
@@ -38,6 +37,7 @@ src/gui/BuffListModel.cpp \
 src/gui/ColumnMenu.cpp \
 src/gui/Computer.cpp \
 src/gui/GuiElements.cpp \
+src/gui/MainApplication.cpp \
 src/gui/MainWindow.cpp \
 src/gui/MonsterModeMenu.cpp \
 src/gui/ResultTableModel.cpp
@@ -55,7 +55,6 @@ src/Dps.h \
 src/FoldedBuffs.h \
 src/Item.h \
 src/MainData.h \
-src/MhDpsApplication.h \
 src/Monster.h \
 src/MotionValue.h \
 src/NamedObject.h \
@@ -68,6 +67,7 @@ src/gui/BuffListModel.h \
 src/gui/ColumnMenu.h \
 src/gui/Computer.h \
 src/gui/GuiElements.h \
+src/gui/MainApplication.h \
 src/gui/MainWindow.h \
 src/gui/MonsterModeMenu.h \
 src/gui/ResultTableModel.h

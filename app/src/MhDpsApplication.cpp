@@ -1,14 +1,14 @@
-#include "MhDpsApplication.h"
+#include "MainApplication.h"
 
 #include <QtCore/QtGlobal>
 #include <QFile>
 #include <QDir>
 #include <QXmlStreamReader>
 
-#include "gui/MainWindow.h"
-#include "MainData.h"
+#include "MainWindow.h"
+#include "../MainData.h"
 
-MhDpsApplication::MhDpsApplication(int &argc, char *argv[]) :
+MainApplication::MainApplication(int &argc, char *argv[]) :
 	QApplication(argc, argv)
 {
 	mainData = new MainData;
@@ -54,7 +54,7 @@ MhDpsApplication::MhDpsApplication(int &argc, char *argv[]) :
 	mainWindow->show();
 }
 
-MhDpsApplication::~MhDpsApplication()
+MainApplication::~MainApplication()
 {
 	mainWindow->setMainData(NULL);
 	delete mainWindow;

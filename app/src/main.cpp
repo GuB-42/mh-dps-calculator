@@ -1,4 +1,4 @@
-#include "MhDpsApplication.h"
+#include "gui/MainApplication.h"
 
 #include <QFile>
 #include <QXmlStreamReader>
@@ -9,7 +9,7 @@
 int main(int argc, char **argv)
 {
 #if 1
-	MhDpsApplication app(argc, argv);
+	MainApplication app(argc, argv);
 	return app.exec();
 #else
 	MainData data;
