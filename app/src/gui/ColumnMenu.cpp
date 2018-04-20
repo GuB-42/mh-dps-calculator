@@ -1,6 +1,7 @@
 #include "ColumnMenu.h"
 
 #include <QTableView>
+#include <QEvent>
 
 ColumnActionWrapper::ColumnActionWrapper(int col, QObject *parent) :
 	QAction(parent), m_column(col)
@@ -164,6 +165,19 @@ void ColumnMenu::headerDataChanged(Qt::Orientation orientation, int first, int l
 			columnMenuActions[i]->setText(model->headerData(i, Qt::Horizontal).toString());
 		}
 	}
+}
+
+void ColumnMenu::changeEvent(QEvent *event) {
+	if (event) {
+		switch (event->type()) {
+		case QEvent::LanguageChange:
+			headerDataChanged(Qt::Horizontal, 0, columnMenuActions.count());
+			break;
+		default:
+			break;
+		}
+	}
+	QMenu::changeEvent(event);
 }
 
 void ColumnMenu::clearMenu() {

@@ -9,10 +9,9 @@ class MonsterModeActionWrapper : public QAction {
 public:
 	MonsterModeActionWrapper(MonsterMode v, QObject *parent = NULL);
 	inline MonsterMode value() const { return m_value; }
+	void updateText();
 signals:
 	void valueSelected(MonsterMode v);
-public slots:
-	void updateText();
 private slots:
 	void triggeredSlot(bool checked);
 private:
@@ -27,6 +26,8 @@ public slots:
 	void setValue(MonsterMode v);
 signals:
 	void valueSelected(MonsterMode v);
+protected:
+	void changeEvent(QEvent * event);
 private:
 	QList<MonsterModeActionWrapper *> monsterModeActions;
 };

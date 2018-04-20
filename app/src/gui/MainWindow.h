@@ -2,6 +2,7 @@
 #define MainWindow_h_
 
 #include <QMainWindow>
+#include <QTranslator>
 #include "../NamedObject.h"
 
 class QModelIndex;
@@ -50,8 +51,14 @@ private slots:
 	void buffGroupChanged(int new_idx);
 	void updateTableMimeColumnOrder();
 
+protected:
+	void changeEvent(QEvent * event);
+
 private:
 	Ui::MainWindow *ui;
+	QTranslator translator;
+	QTranslator translatorQt;
+
 	QProgressBar *progressBar;
 	const MainData *mainData;
 

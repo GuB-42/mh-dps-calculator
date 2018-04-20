@@ -167,7 +167,42 @@ QVector<int> MainWindow::getDecorationSlots() const {
 	return ret;
 }
 
+#include <QFileDialog>
+#include <QLibraryInfo>
+
+static void switchTranslatorQt(QTranslator& translator, const QString& filename)
+{
+	qApp->removeTranslator(&translator);
+	if (translator.load(filename, QLibraryInfo::location(QLibraryInfo::TranslationsPath))) {
+		qApp->installTranslator(&translator);
+	}
+}
+static void switchTranslator(QTranslator& translator, const QString& filename)
+{
+	qApp->removeTranslator(&translator);
+	if (translator.load(filename)) {
+		qApp->installTranslator(&translator);
+	}
+}
+
 void MainWindow::setDataLanguage(NamedObject::Language lang) {
+	switch (lang) {
+	case NamedObject::LANG_FR:
+		switchTranslatorQt(translatorQt, "qt_fr.qm");
+		switchTranslator(translator, ":/translations/fr.qm");
+		break;
+	case NamedObject::LANG_EN:
+		switchTranslatorQt(translatorQt, "qt_en.qm");
+		switchTranslator(translator, ":/translations/en.qm");
+		break;
+	case NamedObject::LANG_JP:
+		switchTranslatorQt(translatorQt, "qt_ja.qm");
+		switchTranslator(translator, ":/translations/ja.qm");
+		break;
+	case NamedObject::LANG_COUNT:
+		break;
+	}
+
 	dataLanguage = lang;
 	tableModel->setDataLanguage(dataLanguage);
 	buffListModel->setDataLanguage(dataLanguage);
@@ -321,4 +356,17 @@ void MainWindow::removeBuff() {
 			ui->buffListView->scrollTo(idx);
 		}
 	}
+}
+
+void MainWindow::changeEvent(QEvent *event) {
+	if (event) {
+		switch (event->type()) {
+		case QEvent::LanguageChange:
+			ui->retranslateUi(this);
+			break;
+		default:
+			break;
+		}
+	}
+	QMainWindow::changeEvent(event);
 }

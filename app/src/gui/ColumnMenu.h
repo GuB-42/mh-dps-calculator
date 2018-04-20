@@ -36,6 +36,8 @@ private slots:
 	void headerDataChanged(Qt::Orientation orientation, int first, int last);
 	void columnsMoved(const QModelIndex &, int start, int end,
                       const QModelIndex &, int column);
+protected:
+	void changeEvent(QEvent * event);
 private:
 	void clearMenu();
 

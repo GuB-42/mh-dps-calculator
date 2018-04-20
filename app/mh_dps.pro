@@ -74,3 +74,24 @@ src/gui/ResultTableModel.h
 
 FORMS += \
 src/gui/MainWindow.ui
+
+TRANSLATIONS += \
+src/translations/fr.ts
+
+# TRANSLATIONS_FILES =
+
+qtPrepareTool(LRELEASE, lrelease)
+for(tsfile, TRANSLATIONS) {
+#	qmfile = $$shadowed($$tsfile)
+	qmfile = $$tsfile
+	qmfile ~= s,.ts$,.qm,
+	qmdir = $$dirname(qmfile)
+#	!exists($$qmdir) {
+#		mkpath($$qmdir)|error("Aborting.")
+#	}
+	command = $$LRELEASE -removeidentical $$tsfile -qm $$qmfile
+	system($$command)|error("Failed to run: $$command")
+#	TRANSLATIONS_FILES += $$qmfile
+}
+
+RESOURCES += src/gui/resources.qrc

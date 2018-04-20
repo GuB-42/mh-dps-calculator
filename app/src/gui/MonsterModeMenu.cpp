@@ -1,4 +1,5 @@
 #include "MonsterModeMenu.h"
+#include <QEvent>
 
 MonsterModeActionWrapper::MonsterModeActionWrapper(MonsterMode v, QObject *parent) :
 	QAction(parent), m_value(v)
@@ -50,4 +51,19 @@ void MonsterModeMenu::setValue(MonsterMode v) {
 	if (v >= 0 && v < monsterModeActions.count()) {
 		monsterModeActions[v]->setChecked(true);
 	}
+}
+
+void MonsterModeMenu::changeEvent(QEvent *event) {
+	if (event) {
+		switch (event->type()) {
+		case QEvent::LanguageChange:
+			foreach (MonsterModeActionWrapper *act, monsterModeActions) {
+				act->updateText();
+			}
+			break;
+		default:
+			break;
+		}
+	}
+	QMenu::changeEvent(event);
 }
