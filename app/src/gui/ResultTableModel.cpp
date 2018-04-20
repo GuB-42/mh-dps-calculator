@@ -29,6 +29,7 @@ bool ResultTableModel::isNumberColumn(Column c) {
 	case COLUMN_FIXED_DPS:
 	case COLUMN_KILL_TIME:
 	case COLUMN_BOUNCE_RATE:
+	case COLUMN_CRIT_RATE:
 	case COLUMN_POISON_PROC_RATE:
 	case COLUMN_PARALYSIS_PROC_RATE:
 	case COLUMN_SLEEP_PROC_RATE:
@@ -58,6 +59,7 @@ bool ResultTableModel::isGreaterIsBetterColumn(Column c) {
 	case COLUMN_ELEMENT_DPS:
 	case COLUMN_STATUS_DPS:
 	case COLUMN_FIXED_DPS:
+	case COLUMN_CRIT_RATE:
 	case COLUMN_POISON_PROC_RATE:
 	case COLUMN_PARALYSIS_PROC_RATE:
 	case COLUMN_SLEEP_PROC_RATE:
@@ -107,6 +109,8 @@ QString ResultTableModel::columnName(Column c) {
 		return tr("Fixed");
 	case COLUMN_BOUNCE_RATE:
 		return tr("Bounce");
+	case COLUMN_CRIT_RATE:
+		return tr("Critical");
 	case COLUMN_KILL_TIME:
 		return tr("Kill time");
 	case COLUMN_POISON_PROC_RATE:
@@ -212,6 +216,8 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 				return 1.0 / dps.killFrequency;
 			case COLUMN_BOUNCE_RATE:
 				return dps.bounceRate;
+			case COLUMN_CRIT_RATE:
+				return dps.critRate;
 			case COLUMN_POISON_PROC_RATE:
 				return dps.statusProcRate[STATUS_POISON];
 			case COLUMN_PARALYSIS_PROC_RATE:

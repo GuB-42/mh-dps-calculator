@@ -26,10 +26,13 @@ struct Pattern {
 	double cut;
 	double impact;
 	double piercing;
+	double bullet;
+	double fixed;
 	double element;
 	double status;
 	double stun;
 	double exhaust;
+	double mount;
 	double sharpnessMultiplier;
 	double phialImpactAttack;
 	double phialImpactStun;

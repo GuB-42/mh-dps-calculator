@@ -14,10 +14,13 @@ Pattern::Pattern() :
 	cut(0.0),
 	impact(0.0),
 	piercing(0.0),
+	bullet(0.0),
+	fixed(0.0),
 	element(0.0),
 	status(0.0),
 	stun(0.0),
 	exhaust(0.0),
+	mount(0.0),
 	sharpnessMultiplier(1.0),
 	phialImpactAttack(0.0),
 	phialImpactStun(0.0),
@@ -26,6 +29,8 @@ Pattern::Pattern() :
 	phialRatio(0.0),
 	mindsEyeRatio(0.0),
 	sharpnessUse(0.0),
+	punishingDrawStun(0.0),
+	punishingDrawExhaust(0.0),
 	definedPhialRatio(false),
 	definedMindsEyeRatio(false),
 	definedSharpnessMultiplier(false),
@@ -44,10 +49,13 @@ void Pattern::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- cut: " << cut << endl;
 	stream << indent << "- impact: " << impact << endl;
 	stream << indent << "- piercing: " << piercing << endl;
+	stream << indent << "- bullet: " << bullet << endl;
+	stream << indent << "- fixed: " << fixed << endl;
 	stream << indent << "- element: " << element << endl;
 	stream << indent << "- status: " << status << endl;
 	stream << indent << "- stun: " << stun << endl;
 	stream << indent << "- exhaust: " << exhaust << endl;
+	stream << indent << "- mount: " << mount << endl;
 	stream << indent << "- sharpness_multiplier: " << sharpnessMultiplier << endl;
 	stream << indent << "- phial_impact_attack: " << phialImpactAttack << endl;
 	stream << indent << "- phial_impact_stun: " << phialImpactStun << endl;
@@ -56,6 +64,8 @@ void Pattern::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- phial_ratio: " << phialRatio << endl;
 	stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << endl;
 	stream << indent << "- sharpness_use: " << sharpnessUse << endl;
+	stream << indent << "- punishing_draw_stun: " << punishingDrawStun << endl;
+	stream << indent << "- punishing_draw_exhaust: " << punishingDrawExhaust << endl;
 	foreach(const MotionValueRef &mvr, motionValueRefs) {
 		stream << indent << "- motion value: " << mvr.id <<
 			" (multiplier: " << mvr.multiplier << ") (raw multiplier: " <<
@@ -79,10 +89,13 @@ void Pattern::applyMotionValue(const MotionValue *mv,
 	cut += mv->cut * multiplier * raw_multiplier;
 	impact += mv->impact * multiplier * raw_multiplier;
 	piercing += mv->piercing * multiplier * raw_multiplier;
+	bullet += mv->bullet * multiplier * raw_multiplier;
+	fixed += mv->fixed * multiplier;
 	element += mv->element * multiplier;
 	status += mv->status * multiplier;
 	stun += mv->stun * multiplier;
 	exhaust += mv->exhaust * multiplier;
+	mount += mv->mount * multiplier;
 	phialImpactAttack += mv->phialImpactAttack * multiplier;
 	phialImpactStun += mv->phialImpactStun * multiplier;
 	phialImpactExhaust += mv->phialImpactExhaust * multiplier;
@@ -169,6 +182,10 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 				impact = xml->readElementText().toDouble();
 			} else if (tag_name == "piercing") {
 				piercing = xml->readElementText().toDouble();
+			} else if (tag_name == "bullet") {
+				bullet = xml->readElementText().toDouble();
+			} else if (tag_name == "fixed") {
+				fixed = xml->readElementText().toDouble();
 			} else if (tag_name == "element") {
 				status = element = xml->readElementText().toDouble();
 //			} else if (tag_name == "status") {
@@ -177,6 +194,8 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 				stun = xml->readElementText().toDouble();
 			} else if (tag_name == "exhaust") {
 				exhaust = xml->readElementText().toDouble();
+			} else if (tag_name == "mount") {
+				mount = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpness_multiplier") {
 				definedSharpnessMultiplier = true;
 				sharpnessMultiplier = xml->readElementText().toDouble();
@@ -248,6 +267,7 @@ void Profile::print(QTextStream &stream, QString indent) const {
 }
 
 void Profile::readXml(QXmlStreamReader *xml) {
+	double glob_rate = 1.0;
 	sharpenPeriod = Constants::instance()->sharpenPeriod;
 
 	if (xml->attributes().hasAttribute("id")) {
@@ -261,6 +281,8 @@ void Profile::readXml(QXmlStreamReader *xml) {
 				; // name
 			} else if (tag_name == "type") {
 				type = xml->readElementText();
+			} else if (tag_name == "rate") {
+				glob_rate = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpen_period") {
 				sharpenPeriod = xml->readElementText().toDouble();
 			} else if (tag_name == "pattern") {
@@ -298,5 +320,8 @@ void Profile::readXml(QXmlStreamReader *xml) {
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
+	}
+	foreach(Pattern *pattern, patterns) {
+		pattern->rate *= glob_rate;
 	}
 }

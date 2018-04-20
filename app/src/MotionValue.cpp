@@ -13,6 +13,7 @@ MotionValue::MotionValue() :
 	status(0.0),
 	stun(0.0),
 	exhaust(0.0),
+	mount(0.0),
 	phialImpactAttack(0.0),
 	phialImpactStun(0.0),
 	phialImpactExhaust(0.0),
@@ -44,6 +45,7 @@ void MotionValue::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- status: " << status << endl;
 	stream << indent << "- stun: " << stun << endl;
 	stream << indent << "- exhaust: " << exhaust << endl;
+	stream << indent << "- mount: " << mount << endl;
 	stream << indent << "- phial_impact_attack: " << phialImpactAttack << endl;
 	stream << indent << "- phial_impact_stun: " << phialImpactStun << endl;
 	stream << indent << "- phial_impact_exhaust: " << phialImpactExhaust << endl;

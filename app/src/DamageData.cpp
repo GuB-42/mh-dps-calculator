@@ -9,8 +9,8 @@
 #include "ConditionRatios.h"
 
 DamageData::DamageData() :
-	cut(0.0), impact(0.0), piercing(0.0), fixed(0.0),
-	mindsEyeRate(0.0)
+	cut(0.0), impact(0.0), piercing(0.0), bullet(0.0), fixed(0.0),
+	mindsEyeRate(0.0), critRate(0.0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elements[i] = 0.0;
@@ -153,6 +153,8 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	cut = final_raw_attack * pattern.cut;
 	impact = final_raw_attack * pattern.impact;
 	piercing = final_raw_attack * pattern.piercing;
+	bullet = attack * raw_affinity_multiplier * pattern.bullet;
+	critRate = xaffinity * (cut + impact + piercing + bullet);
 
 	double multi_element_divider = 0.0;
 	for (int elt = 0; elt < ELEMENT_COUNT; ++elt) {
@@ -226,10 +228,11 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 
 	statuses[STATUS_STUN] += pattern.stun +
 		pattern.punishingDrawStun * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
-	statuses[STATUS_EXHAUST] += pattern.stun +
+	statuses[STATUS_EXHAUST] += pattern.exhaust +
 		pattern.punishingDrawExhaust * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
+	statuses[STATUS_MOUNT] += pattern.mount;
 
-	fixed = 0.0;
+	fixed = pattern.fixed;
 
 	if (weapon.phial == PHIAL_IMPACT) {
 		statuses[STATUS_STUN] += pattern.phialImpactStun;
@@ -242,12 +245,14 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 
 	statuses[STATUS_STUN] *= buffs.normalBuffs[BUFF_STUN_MULTIPLIER];
 	statuses[STATUS_EXHAUST] *= buffs.normalBuffs[BUFF_EXHAUST_MULTIPLIER];
+	statuses[STATUS_MOUNT] *= buffs.normalBuffs[BUFF_MOUNT_MULTIPLIER];
 }
 
 void DamageData::combine(const DamageData &o, double rate) {
 	cut += o.cut * rate;
 	impact += o.impact * rate;
 	piercing += o.piercing * rate;
+	bullet += o.bullet * rate;
 	fixed += o.fixed * rate;
 	for (int elt = 0; elt < ELEMENT_COUNT; ++elt) {
 		elements[elt] += o.elements[elt] * rate;
@@ -256,6 +261,7 @@ void DamageData::combine(const DamageData &o, double rate) {
 		statuses[sta] += o.statuses[sta] * rate;
 	}
 	mindsEyeRate += o.mindsEyeRate * rate;
+	critRate += o.critRate * rate;
 
 	QVector<SharpnessMultiplierData> a = bounceSharpness;
 	const QVector<SharpnessMultiplierData> &b = o.bounceSharpness;

@@ -19,6 +19,7 @@ struct Dps {
 	double statuses[STATUS_COUNT];
 	double fixed;
 	double bounceRate;
+	double critRate;
 	double statusProcRate[STATUS_COUNT];
 	double killFrequency;
 	double weakSpotRatio;

@@ -43,45 +43,58 @@ double get_status_hits(double status_attack,
 void Dps::computeNoStatus(const MonsterHitData &hit_data,
                           const DamageData &normal_damage,
                           const DamageData &weak_damage) {
-	double t_atk_normal[3] = {
-		normal_damage.cut, normal_damage.impact, normal_damage.piercing
+	double t_atk_normal[4] = {
+		normal_damage.cut, normal_damage.impact,
+		normal_damage.piercing, normal_damage.bullet
 	};
-	double t_atk_weak[3] = {
-		weak_damage.cut, weak_damage.impact, weak_damage.piercing
+	double t_atk_weak[4] = {
+		weak_damage.cut, weak_damage.impact,
+		weak_damage.piercing, weak_damage.bullet
 	};
-	double t_def[3] = {
+	double t_def[4] = {
 		hit_data.cut, hit_data.impact,
-		hit_data.impact * Constants::instance()->piercingFactor
+		hit_data.impact * Constants::instance()->piercingFactor,
+		hit_data.bullet
 	};
 	if (t_def[2] < t_def[0]) t_def[2] = t_def[0];
 
 	raw = 0.0;
 	bounceRate = 0.0;
+	critRate = 0.0;
 	double bounce_divider = 0.0;
+	double crit_divider = 0.0;
 	double minds_eye = 0.0;
 	double weak_raw = 0.0;
-	for (int i = 0; i < 3; ++i) {
-		bool weak = t_def[i] < Constants::instance()->rawWeakSpotThreshold;
-		const DamageData &dmg = weak ? normal_damage : weak_damage;
-		const double (&t_atk)[3] = weak ? t_atk_normal : t_atk_weak;
+	for (int i = 0; i < 4; ++i) {
+		bool weak = t_def[i] > Constants::instance()->rawWeakSpotThreshold;
+		const double (&t_atk)[4] = weak ? t_atk_weak : t_atk_normal;
+		if (t_atk[i] == 0.0) continue;
+		const DamageData &dmg = weak ? weak_damage : normal_damage;
 		double t_raw = t_atk[i] * t_def[i] / 100.0;
 		raw += t_raw;
 		if (weak) weak_raw += t_atk[i] * t_def[i] / 100.0;
-		foreach(const SharpnessMultiplierData smd, dmg.bounceSharpness) {
-			double v = t_atk[i] * smd.rate;
-			bounce_divider += v;
-			if (smd.multiplier * t_def[i] <
-			    Constants::instance()->bounceThreshold) {
-				bounceRate += v;
+		if (i != 3) {
+			foreach(const SharpnessMultiplierData smd, dmg.bounceSharpness) {
+				double v = t_atk[i] * smd.rate;
+				bounce_divider += v;
+				if (smd.multiplier * t_def[i] <
+				    Constants::instance()->bounceThreshold) {
+					bounceRate += v;
+				}
 			}
+			minds_eye += dmg.mindsEyeRate * t_atk[i];
 		}
-		minds_eye += dmg.mindsEyeRate * t_atk[i];
+		critRate += dmg.critRate * t_atk[i];
+		for (int j = 0; j < 4; ++j) {
+			crit_divider += t_atk[i] * t_atk[j];
+		}
 	}
 	if (bounce_divider > 0.0) {
 		bounceRate *= 1.0 - minds_eye / bounce_divider;
 		bounceRate /= bounce_divider;
 	}
 	if (bounceRate < 1e-9) bounceRate = 0.0;
+	if (crit_divider) critRate /= crit_divider;
 
 	fixed = weak_damage.fixed;
 
@@ -205,7 +218,7 @@ void Dps::compute(const Target &target, const Damage &damage)
 
 Dps::Dps() :
 	raw(0.0), totalElements(0.0), totalStatuses(0.0), fixed(0.0),
-	bounceRate(0.0), killFrequency(0.0),
+	bounceRate(0.0), critRate(0.0), killFrequency(0.0),
 	weakSpotRatio(0.0), stunRate(0.0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
@@ -226,6 +239,7 @@ void Dps::combine(const Dps &o, double rate) {
 	raw += o.raw * rate;
 	fixed += o.fixed * rate;
 	bounceRate += o.bounceRate * rate;
+	critRate += o.critRate * rate;
 	killFrequency += o.killFrequency * rate;
 	weakSpotRatio += o.weakSpotRatio * rate;
 	stunRate += o.stunRate * rate;

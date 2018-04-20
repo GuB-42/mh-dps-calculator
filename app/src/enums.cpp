@@ -41,6 +41,7 @@ const char *toString(NormalBuff b) {
 	case BUFF_PUNISHING_DRAW: return "punising_draw";
 	case BUFF_STUN_MULTIPLIER: return "stun_multiplier";
 	case BUFF_EXHAUST_MULTIPLIER: return "exhaust_multiplier";
+	case BUFF_MOUNT_MULTIPLIER: return "mount_multiplier";
 	case BUFF_ARTILLERY_MULTIPLIER: return "artillery_multiplier";
 	case BUFF_RAW_CRITICAL_HIT_MULTIPLIER: return "raw_critical_hit_multiplier";
 	case BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER: return "element_critical_hit_multiplier";

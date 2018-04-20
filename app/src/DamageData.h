@@ -21,10 +21,12 @@ struct DamageData {
 	double cut;
 	double impact;
 	double piercing;
+	double bullet;
 	double fixed;
 	double elements[ELEMENT_COUNT];
 	double statuses[STATUS_COUNT];
 	double mindsEyeRate;
+	double critRate;
 	QVector<SharpnessMultiplierData> bounceSharpness;
 
 	DamageData();

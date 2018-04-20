@@ -54,6 +54,7 @@ void FoldedBuffsData::applyBuff(const BuffWithCondition *buff_cond,
 		case BUFF_PUNISHING_DRAW: op = OP_PLUS; break;
 		case BUFF_STUN_MULTIPLIER: op = OP_MULTIPLY; break;
 		case BUFF_EXHAUST_MULTIPLIER: op = OP_MULTIPLY; break;
+		case BUFF_MOUNT_MULTIPLIER: op = OP_MULTIPLY; break;
 		case BUFF_ARTILLERY_MULTIPLIER: op = OP_MULTIPLY; break;
 		case BUFF_RAW_CRITICAL_HIT_MULTIPLIER: op = OP_MAX; break;
 		case BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER: op = OP_MAX; break;
@@ -120,6 +121,7 @@ FoldedBuffsData::FoldedBuffsData() {
 	normalBuffs[BUFF_PUNISHING_DRAW] = 0.0;
 	normalBuffs[BUFF_STUN_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_EXHAUST_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_MOUNT_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_ARTILLERY_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_RAW_CRITICAL_HIT_MULTIPLIER] =
 		Constants::instance()->rawCriticalHitMultiplier;

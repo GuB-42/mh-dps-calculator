@@ -19,6 +19,7 @@ struct MotionValue : public NamedObject {
 	double status;
 	double stun;
 	double exhaust;
+	double mount;
 	double phialImpactAttack;
 	double phialImpactStun;
 	double phialImpactExhaust;
