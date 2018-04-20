@@ -36,6 +36,7 @@ src/main.cpp \
 src/gui/BuffGroupListModel.cpp \
 src/gui/BuffListModel.cpp \
 src/gui/ColumnMenu.cpp \
+src/gui/Computer.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainWindow.cpp \
 src/gui/MonsterModeMenu.cpp \
@@ -65,6 +66,7 @@ src/enums.h \
 src/gui/BuffGroupListModel.h \
 src/gui/BuffListModel.h \
 src/gui/ColumnMenu.h \
+src/gui/Computer.h \
 src/gui/GuiElements.h \
 src/gui/MainWindow.h \
 src/gui/MonsterModeMenu.h \
