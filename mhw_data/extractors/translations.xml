@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <data>
 
 <!-- Weapons -->
@@ -6176,533 +6175,666 @@
 <translation>
 	<name>Heavy Artillery</name>
 	<name_fr>Artillerie lourde</name_fr>
+	<name_jp>砲撃手</name_jp>
 </translation>
 <translation>
 	<name>Critical Boost</name>
 	<name_fr>Berserker</name_fr>
+	<name_jp>超会心</name_jp>
 </translation>
 <translation>
 	<name>Bombardier</name>
 	<name_fr>Bombardier</name_fr>
+	<name_jp>ボマー</name_jp>
 </translation>
 <translation>
 	<name>Artillery</name>
 	<name_fr>BOUM!</name_fr>
+	<name_jp>砲術</name_jp>
 </translation>
 <translation>
 	<name>Ice Attack</name>
 	<name_fr>Blizzard</name_fr>
+	<name_jp>氷属性攻撃強化</name_jp>
 </translation>
 <translation>
 	<name>Slugger</name>
 	<name_fr>Cogneur</name_fr>
+	<name_jp>ＫＯ術</name_jp>
 </translation>
 <translation>
 	<name>Focus</name>
 	<name_fr>Concentration</name_fr>
+	<name_jp>集中</name_jp>
 </translation>
 <translation>
 	<name>Maximum Might</name>
 	<name_fr>Corps et âme</name_fr>
+	<name_jp>渾身</name_jp>
 </translation>
 <translation>
 	<name>Critical Draw</name>
 	<name_fr>Dégainage éclair</name_fr>
+	<name_jp>抜刀術【技】</name_jp>
 </translation>
 <translation>
 	<name>Spread/Power Shots</name>
 	<name_fr>Désigné pour mourir</name_fr>
+	<name_jp>散弾・剛射強化</name_jp>
 </translation>
 <translation>
 	<name>Partbreaker</name>
 	<name_fr>Destructeur</name_fr>
+	<name_jp>破壊王</name_jp>
 </translation>
 <translation>
 	<name>Blast Attack</name>
 	<name_fr>Destruction massive</name_fr>
+	<name_jp>爆破属性強化</name_jp>
 </translation>
 <translation>
 	<name>Palico Rally</name>
 	<name_fr>Esprit Palico</name_fr>
+	<name_jp>オトモへの采配</name_jp>
 </translation>
 <translation>
 	<name>Thunder Attack</name>
 	<name_fr>Feu du Ciel</name_fr>
+	<name_jp>雷属性攻撃強化</name_jp>
 </translation>
 <translation>
 	<name>Latent Power</name>
 	<name_fr>Force latente</name_fr>
+	<name_jp>力の解放</name_jp>
 </translation>
 <translation>
 	<name>Heroics</name>
 	<name_fr>Heroisme</name_fr>
+	<name_jp>火事場力</name_jp>
 </translation>
 <translation>
 	<name>Intimidator</name>
 	<name_fr>Intimidation</name_fr>
+	<name_jp>威嚇</name_jp>
 </translation>
 <translation>
 	<name>Fortify</name>
 	<name_fr>Jamais vaincu</name_fr>
+	<name_jp>不屈</name_jp>
 </translation>
 <translation>
 	<name>Sleep Attack</name>
 	<name_fr>La nuit porte conseil</name_fr>
+	<name_jp>睡眠属性強化</name_jp>
 </translation>
 <translation>
 	<name>Attack Boost</name>
 	<name_fr>Machine de guerre</name_fr>
+	<name_jp>攻撃</name_jp>
 </translation>
 <translation>
 	<name>Master Mounter</name>
 	<name_fr>Maitre cavalier</name_fr>
+	<name_jp>乗り名人</name_jp>
 </translation>
 <translation>
 	<name>Critical Eye</name>
 	<name_fr>Maitre d'armes</name_fr>
+	<name_jp>見切り</name_jp>
 </translation>
 <translation>
 	<name>Water Attack</name>
 	<name_fr>Maelstrom</name_fr>
+	<name_jp>水属性攻撃強化</name_jp>
 </translation>
 <translation>
 	<name>Horn Maestro</name>
 	<name_fr>Maestro</name_fr>
+	<name_jp>笛吹き名人</name_jp>
 </translation>
 <translation>
 	<name>Weakness Exploit</name>
 	<name_fr>Mise à Mort</name_fr>
+	<name_jp>弱点特効</name_jp>
 </translation>
 <translation>
 	<name>Poison Attack</name>
 	<name_fr>Mort aux rats</name_fr>
+	<name_jp>毒属性強化</name_jp>
 </translation>
 <translation>
 	<name>Airborne</name>
 	<name_fr>Mort venue d'en haut</name_fr>
+	<name_jp>飛燕</name_jp>
 </translation>
 <translation>
 	<name>Paralysis Attack</name>
 	<name_fr>Neutralisation</name_fr>
+	<name_jp>麻痺属性強化</name_jp>
 </translation>
 <translation>
 	<name>Peak Performance</name>
 	<name_fr>Performance optimale</name_fr>
+	<name_jp>フルチャージ</name_jp>
 </translation>
 <translation>
 	<name>Dragon Attack</name>
 	<name_fr>Pourfendeur de dragon</name_fr>
+	<name_jp>龍属性攻撃強化</name_jp>
 </translation>
 <translation>
 	<name>Capacity Boost</name>
 	<name_fr>Prêt à tirer</name_fr>
+	<name_jp>砲弾装填数ＵＰ</name_jp>
 </translation>
 <translation>
 	<name>Power Prolonger</name>
 	<name_fr>Puissance absolue</name_fr>
+	<name_jp>強化持続</name_jp>
 </translation>
 <translation>
 	<name>Fire Attack</name>
 	<name_fr>Pyromane</name_fr>
+	<name_jp>火属性攻撃強化</name_jp>
 </translation>
 <translation>
 	<name>Affinity Sliding</name>
 	<name_fr>Roi de la glisse</name_fr>
+	<name_jp>滑走強化</name_jp>
 </translation>
 <translation>
 	<name>Special Ammo Boost</name>
 	<name_fr>Salve mortelle</name_fr>
+	<name_jp>特殊射撃強化</name_jp>
 </translation>
 <translation>
 	<name>Handicraft</name>
 	<name_fr>Savoir-faire</name_fr>
+	<name_jp>匠</name_jp>
 </translation>
 <translation>
 	<name>Elderseal Boost</name>
 	<name_fr>Sceau des anciens +</name_fr>
+	<name_jp>龍封力強化</name_jp>
 </translation>
 <translation>
 	<name>Agitator</name>
 	<name_fr>Témérité</name_fr>
+	<name_jp>挑戦者</name_jp>
 </translation>
 <translation>
 	<name>Normal Shots</name>
 	<name_fr>Tir maximum</name_fr>
+	<name_jp>通常弾・通常矢強化</name_jp>
 </translation>
 <translation>
 	<name>Free Elem/Ammo Up</name>
 	<name_fr>Tireur d'élite</name_fr>
+	<name_jp>属性解放／装填拡張</name_jp>
 </translation>
 <translation>
 	<name>Piercing Shots</name>
 	<name_fr>Traque sans merci</name_fr>
+	<name_jp>貫通弾・竜の一矢強化</name_jp>
 </translation>
 <translation>
 	<name>Resentment</name>
 	<name_fr>Vengeance</name_fr>
+	<name_jp>逆恨み</name_jp>
 </translation>
 <translation>
 	<name>Stamina Thief</name>
 	<name_fr>Vol d'endurance</name_fr>
+	<name_jp>スタミナ奪取</name_jp>
 </translation>
 <translation>
 	<name>Ice Resistance</name>
 	<name_fr>Antigel</name_fr>
+	<name_jp>氷耐性</name_jp>
 </translation>
 <translation>
 	<name>Blast Resistance</name>
 	<name_fr>Anti-explosion</name_fr>
+	<name_jp>爆破やられ耐性</name_jp>
 </translation>
 <translation>
 	<name>Bleeding Resistance</name>
 	<name_fr>Anti-hémorragie</name_fr>
+	<name_jp>裂傷耐性</name_jp>
 </translation>
 <translation>
 	<name>Muck Resistance</name>
 	<name_fr>Anti-fange</name_fr>
+	<name_jp>泥耐性</name_jp>
 </translation>
 <translation>
 	<name>Paralysis Resistance</name>
 	<name_fr>Antiparalysie</name_fr>
+	<name_jp>麻痺耐性</name_jp>
 </translation>
 <translation>
 	<name>Effluvial Expert</name>
 	<name_fr>Aura de purge</name_fr>
+	<name_jp>瘴気環境適応</name_jp>
 </translation>
 <translation>
 	<name>Dragon Resistance</name>
 	<name_fr>Aura draconien</name_fr>
+	<name_jp>龍耐性</name_jp>
 </translation>
 <translation>
 	<name>Defense Boost</name>
 	<name_fr>Bastion</name_fr>
+	<name_jp>防御</name_jp>
 </translation>
 <translation>
 	<name>Earplugs</name>
 	<name_fr>Bouchon d'oreilles</name_fr>
+	<name_jp>耳栓</name_jp>
 </translation>
 <translation>
 	<name>Stun Resistance</name>
 	<name_fr>Crâne d'acier</name_fr>
+	<name_jp>気絶耐性</name_jp>
 </translation>
 <translation>
 	<name>Water Resistance</name>
 	<name_fr>Étanchéité</name_fr>
+	<name_jp>水耐性</name_jp>
 </translation>
 <translation>
 	<name>Resuscitate</name>
 	<name_fr>Esprit indomptable</name_fr>
+	<name_jp>死中に活</name_jp>
 </translation>
 <translation>
 	<name>Fire Resistance</name>
 	<name_fr>Ignifuge</name_fr>
+	<name_jp>火耐性</name_jp>
 </translation>
 <translation>
 	<name>Evade Window</name>
 	<name_fr>Invulnérabilité</name_fr>
+	<name_jp>回避性能</name_jp>
 </translation>
 <translation>
 	<name>Sleep Resistance</name>
 	<name_fr>Insomnie</name_fr>
+	<name_jp>睡眠耐性</name_jp>
 </translation>
 <translation>
 	<name>Flinch Free</name>
 	<name_fr>Nerfs d'acier</name_fr>
+	<name_jp>ひるみ軽減</name_jp>
 </translation>
 <translation>
 	<name>Guard</name>
 	<name_fr>Paladin</name_fr>
+	<name_jp>ガード性能</name_jp>
 </translation>
 <translation>
 	<name>Thunder Resistance</name>
 	<name_fr>Paratonnerre</name_fr>
+	<name_jp>雷耐性</name_jp>
 </translation>
 <translation>
 	<name>Windproof</name>
 	<name_fr>Pare-vent</name_fr>
+	<name_jp>風圧耐性</name_jp>
 </translation>
 <translation>
 	<name>Iron Skin</name>
 	<name_fr>Peau de fer</name_fr>
+	<name_jp>防御力ＤＯＷＮ耐性</name_jp>
 </translation>
 <translation>
 	<name>Effluvia Resistance</name>
 	<name_fr>Purification</name_fr>
+	<name_jp>瘴気耐性</name_jp>
 </translation>
 <translation>
 	<name>Leap of Faith</name>
 	<name_fr>Saut de la foi</name_fr>
+	<name_jp>飛び込み</name_jp>
 </translation>
 <translation>
 	<name>Tremor Resistance</name>
 	<name_fr>Sismologie</name_fr>
+	<name_jp>耐震</name_jp>
 </translation>
 <translation>
 	<name>Blight Resistance</name>
 	<name_fr>Totem élémentaire</name_fr>
+	<name_jp>属性やられ耐性</name_jp>
 </translation>
 <translation>
 	<name>Poison Resistance</name>
 	<name_fr>Toxicologie</name_fr>
+	<name_jp>毒耐性</name_jp>
 </translation>
 <translation>
 	<name>Evade Extender</name>
 	<name_fr>Trompe-la-mort</name_fr>
+	<name_jp>回避距離ＵＰ</name_jp>
 </translation>
 <translation>
 	<name>Jump Master</name>
 	<name_fr>Acrobate</name_fr>
+	<name_jp>ジャンプ鉄人</name_jp>
 </translation>
 <translation>
 	<name>Speed Sharpening</name>
 	<name_fr>Affûtage rapide</name_fr>
+	<name_jp>砥石使用高速化</name_jp>
 </translation>
 <translation>
 	<name>Constitution</name>
 	<name_fr>Athlète</name_fr>
+	<name_jp>体術</name_jp>
 </translation>
 <translation>
 	<name>Health Boost</name>
 	<name_fr>Afflux de vie</name_fr>
+	<name_jp>体力増強</name_jp>
 </translation>
 <translation>
 	<name>Honey Hunter</name>
 	<name_fr>Amoureux du miel</name_fr>
+	<name_jp>ハニーハンター</name_jp>
 </translation>
 <translation>
 	<name>Divine Blessing</name>
 	<name_fr>Bénédiction</name_fr>
+	<name_jp>精霊の加護</name_jp>
 </translation>
 <translation>
 	<name>Botanist</name>
 	<name_fr>Botaniste</name_fr>
+	<name_jp>植生学</name_jp>
 </translation>
 <translation>
 	<name>Recovery Up</name>
 	<name_fr>Cercle de vie</name_fr>
+	<name_jp>体力回復量ＵＰ</name_jp>
 </translation>
 <translation>
 	<name>Forager's Luck</name>
 	<name_fr>Chance du foreur</name_fr>
+	<name_jp>探索者の幸運</name_jp>
 </translation>
 <translation>
 	<name>Detector</name>
 	<name_fr>Détecteur</name_fr>
+	<name_jp>感知</name_jp>
 </translation>
 <translation>
 	<name>Entomologist</name>
 	<name_fr>Entomologiste</name_fr>
+	<name_jp>昆虫標本の達人</name_jp>
 </translation>
 <translation>
 	<name>Carving Pro</name>
 	<name_fr>Expert en dépeçage</name_fr>
+	<name_jp>剥ぎ取り鉄人</name_jp>
 </translation>
 <translation>
 	<name>Sporepuff Expert</name>
 	<name_fr>Expert sporenlit</name_fr>
+	<name_jp>綿胞子草の知識</name_jp>
 </translation>
 <translation>
 	<name>Stealth</name>
 	<name_fr>Furtivité</name_fr>
+	<name_jp>潜伏</name_jp>
 </translation>
 <translation>
 	<name>Geologist</name>
 	<name_fr>Géologiste</name_fr>
+	<name_jp>地質学</name_jp>
 </translation>
 <translation>
 	<name>Recovery Speed</name>
 	<name_fr>Halo de guérison</name_fr>
+	<name_jp>回復速度</name_jp>
 </translation>
 <translation>
 	<name>Aquatic Expert</name>
 	<name_fr>Homme-poisson</name_fr>
+	<name_jp>水場適応</name_jp>
 </translation>
 <translation>
 	<name>Scenthound</name>
 	<name_fr>Instinct Animal</name_fr>
+	<name_jp>追跡の達人</name_jp>
 </translation>
 <translation>
 	<name>Master Fisher</name>
 	<name_fr>Maitre de la pêche</name_fr>
+	<name_jp>釣り名人</name_jp>
 </translation>
 <translation>
 	<name>Marathon Runner</name>
 	<name_fr>Marathonien</name_fr>
+	<name_jp>ランナー</name_jp>
 </translation>
 <translation>
 	<name>Stamina Surge</name>
 	<name_fr>Métabolisme</name_fr>
+	<name_jp>スタミナ急速回復</name_jp>
 </translation>
 <translation>
 	<name>Cliffhanger</name>
 	<name_fr>Monte-en-l'air</name_fr>
+	<name_jp>クライマー</name_jp>
 </translation>
 <translation>
 	<name>Mushroomancer</name>
 	<name_fr>Mycologue extrême</name_fr>
+	<name_jp>キノコ大好き</name_jp>
 </translation>
 <translation>
 	<name>Pro Transporter</name>
 	<name_fr>Pro du transport</name_fr>
+	<name_jp>運搬の達人</name_jp>
 </translation>
 <translation>
 	<name>Quick Sheath</name>
 	<name_fr>Rengainage éclair</name_fr>
+	<name_jp>納刀術</name_jp>
 </translation>
 <translation>
 	<name>Hunger Resistance</name>
 	<name_fr>Spartiate</name_fr>
+	<name_jp>腹減り耐性</name_jp>
 </translation>
 <translation>
 	<name>Scoutfly Range Up</name>
 	<name_fr>Pistage</name_fr>
+	<name_jp>導蟲反応距離ＵＰ</name_jp>
 </translation>
 <translation>
 	<name>Master Gatherer</name>
 	<name_fr>Prince de la cueillette</name_fr>
+	<name_jp>採集の達人</name_jp>
 </translation>
 <translation>
 	<name>Scholar</name>
 	<name_fr>Puits de science</name_fr>
+	<name_jp>研究者</name_jp>
 </translation>
 <translation>
 	<name>Speed Crawler</name>
 	<name_fr>Rampeur Rapide</name_fr>
+	<name_jp>しゃがみ移動速度ＵＰ</name_jp>
 </translation>
 <translation>
 	<name>Heat Guard</name>
 	<name_fr>Thermorésistance</name_fr>
+	<name_jp>熱ダメージ無効</name_jp>
 </translation>
 <translation>
 	<name>Poison Functionality</name>
 	<name_fr>Apothicaire</name_fr>
+	<name_jp>毒ビン追加</name_jp>
 </translation>
 <translation>
 	<name>Blindsider</name>
 	<name_fr>Aveuglement</name_fr>
+	<name_jp>閃光強化</name_jp>
 </translation>
 <translation>
 	<name>Speed Eating</name>
 	<name_fr>Carnassier</name_fr>
+	<name_jp>早食い</name_jp>
 </translation>
 <translation>
 	<name>Item Prolonger</name>
 	<name_fr>Chimiste</name_fr>
+	<name_jp>アイテム使用強化</name_jp>
 </translation>
 <translation>
 	<name>Tool Specialist</name>
 	<name_fr>Expert en survie</name_fr>
+	<name_jp>整備</name_jp>
 </translation>
 <translation>
 	<name>Slinger Capacity</name>
 	<name_fr>Fronde +</name_fr>
+	<name_jp>スリンガー装填数ＵＰ</name_jp>
 </translation>
 <translation>
 	<name>Para Functionality</name>
 	<name_fr>Gibier de potence</name_fr>
+	<name_jp>麻痺ビン追加</name_jp>
 </translation>
 <translation>
 	<name>Dungmaster</name>
 	<name_fr>Grand Bousier</name_fr>
+	<name_jp>こやし名人</name_jp>
 </translation>
 <translation>
 	<name>Sleep Functionality</name>
 	<name_fr>Marchand de sable</name_fr>
+	<name_jp>睡眠ビン追加</name_jp>
 </translation>
 <translation>
 	<name>Blast Functionality</name>
 	<name_fr>Maître bombardier</name_fr>
+	<name_jp>爆破ビン追加</name_jp>
 </translation>
 <translation>
 	<name>Free Meal</name>
 	<name_fr>Pique-assiette</name_fr>
+	<name_jp>満足感</name_jp>
 </translation>
 <translation>
 	<name>BBQ Master</name>
 	<name_fr>Roi du BBQ</name_fr>
+	<name_jp>肉焼き名人</name_jp>
 </translation>
 <translation>
 	<name>Wide-Range</name>
 	<name_fr>Un pour tous</name_fr>
+	<name_jp>広域化</name_jp>
 </translation>
 <translation>
 	<name>Protective Polish</name>
+	<name_jp>剛刃研磨</name_jp>
 	<name_fr>Acier trempé</name_fr>
 </translation>
 <translation>
 	<name>Adrenaline</name>
+	<name_jp>奮起</name_jp>
 	<name_fr>Adrénaline</name_fr>
 </translation>
 <translation>
 	<name>Nullify Wind Pressure</name>
+	<name_jp>風圧完全無効</name_jp>
 	<name_fr>Anti-vent</name_fr>
 </translation>
 <translation>
 	<name>Critical Status</name>
+	<name_jp>会心撃【特殊】</name_jp>
 	<name_fr>Attaque perfide</name_fr>
 </translation>
 <translation>
 	<name>Punishing Draw</name>
+	<name_jp>抜刀術【力】</name_jp>
 	<name_fr>Batto-jutsu</name_fr>
 </translation>
 <translation>
 	<name>Guts</name>
+	<name_jp>根性</name_jp>
 	<name_fr>Bravoure</name_fr>
 </translation>
 <translation>
 	<name>Good Luck</name>
+	<name_jp>幸運</name_jp>
 	<name_fr>Chance</name_fr>
 </translation>
 <translation>
 	<name>Master's Touch</name>
+	<name_jp>達人芸</name_jp>
 	<name_fr>Main de maître</name_fr>
 </translation>
 <translation>
 	<name>Bow Charge Plus</name>
+	<name_jp>弓溜め段階解放</name_jp>
 	<name_fr>Maître archer</name_fr>
 </translation>
 <translation>
 	<name>Capture Master</name>
+	<name_jp>捕獲名人</name_jp>
 	<name_fr>Maître capture</name_fr>
 </translation>
 <translation>
 	<name>Bludgeoner</name>
+	<name_jp>鈍器使い</name_jp>
 	<name_fr>Matraquage</name_fr>
 </translation>
 <translation>
 	<name>Mind's Eye/Ballistics</name>
+	<name_jp>心眼／弾導強化</name_jp>
 	<name_fr>Œil de l'esprit</name_fr>
 </translation>
 <translation>
 	<name>Poison Duration Up</name>
+	<name_jp>毒ダメージ強化</name_jp>
 	<name_fr>Poison +</name_fr>
 </translation>
 <translation>
 	<name>Critical Element</name>
+	<name_jp>会心撃【属性】</name_jp>
 	<name_fr>Rage élémentaire</name_fr>
 </translation>
 <translation>
 	<name>Hasten Recovery</name>
+	<name_jp>加速再生</name_jp>
 	<name_fr>Récupération rapide</name_fr>
 </translation>
 <translation>
 	<name>Razor Sharp/Spare Shot</name>
+	<name_jp>業物／弾丸節約</name_jp>
 	<name_fr>Samouraï/Franc-tireur</name_fr>
 </translation>
 <translation>
 	<name>Non-elemental Boost</name>
+	<name_jp>無属性強化</name_jp>
 	<name_fr>Secret de l'acier</name_fr>
 </translation>
 <translation>
 	<name>Stamina Cap Up</name>
+	<name_jp>スタミナ上限突破</name_jp>
 	<name_fr>Stamina +</name_fr>
 </translation>
 <translation>
 	<name>Super Recovery</name>
+	<name_jp>超回復力</name_jp>
 	<name_fr>Super récupération</name_fr>
 </translation>
 <translation>
 	<name>Guard Up</name>
+	<name_jp>ガード強化</name_jp>
 	<name_fr>Ultra garde</name_fr>
 </translation>
 

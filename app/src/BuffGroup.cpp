@@ -117,6 +117,7 @@ static void sub_parse_buff(QXmlStreamReader *xml,
 void BuffGroupLevel::readXml(QXmlStreamReader *xml, int *plevel) {
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
+		if (plevel) *plevel = xml->attributes().value("id").toString().toInt();
 	}
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
@@ -124,8 +125,6 @@ void BuffGroupLevel::readXml(QXmlStreamReader *xml, int *plevel) {
 			QStringRef tag_name = xml->name();
 			if (readXmlName(xml)) {
 				; // name
-			} else if (tag_name == "level") {
-				if (plevel) *plevel = xml->readElementText().toDouble();
 			} else {
 				sub_parse_buff(xml, &buffs, CONDITION_ALWAYS,
 				               (ElementBuff)-1, (StatusBuff)-1);
