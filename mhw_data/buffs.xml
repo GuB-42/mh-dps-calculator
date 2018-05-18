@@ -3081,6 +3081,26 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="carving_master">
+		<name>Carving Master</name>
+		<name_jp>剥ぎ取り名人</name_jp>
+		<buff>
+			<name>Carving Master</name>
+			<name_jp>剥ぎ取り名人</name_jp>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="great_luck">
+		<name>Great Luck</name>
+		<name_jp>強運</name_jp>
+		<buff>
+			<name>Great Luck</name>
+			<name_jp>強運</name_jp>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<!-- consumables -->
 
 	<buff_group id="demondrug">
@@ -3573,4 +3593,154 @@
 		</buff>
 	</buff_group>
 
+	<set_bonus id="anjanath_will">
+		<name>Anjanath Will</name>
+		<name_jp>蛮顎竜の闘志</name_jp>
+		<set_bonus_level level="2">
+			<buff_ref id="adrenaline"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="stamina_cap_up"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="diablos_mastery">
+		<name>Diablos Mastery</name>
+		<name_jp>角竜の奥義</name_jp>
+		<set_bonus_level level="2">
+			<buff_ref id="bludgeoner"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="non_elemental_boost"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="legiana_favor">
+		<name>Legiana Favor</name>
+		<name_jp>風漂竜の恩寵</name_jp>
+		<set_bonus_level level="2">
+			<buff_ref id="good_luck"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="bow_charge_plus"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="kirin_favor">
+		<name>Kirin Favor</name>
+		<name_jp>幻獣の恩寵</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="capture_master"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="commission_guidance">
+		<name>Commission Guidance</name>
+		<name_jp>調査団の導き</name_jp>
+		<set_bonus_level level="4">
+			<buff_ref id="carving_master"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="rathalos_mastery">
+		<name>Rathalos Mastery</name>
+		<name_jp>火竜の奥義</name_jp>
+		<set_bonus_level level="2">
+			<buff_ref id="critical_element"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="minds_eye_ballistics"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="zorah_magdaros_mastery">
+		<name>Zorah Magdaros Mastery</name>
+		<name_jp>熔山龍の奥義</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="critical_status"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="guild_guidance">
+		<name>Guild Guidance</name>
+		<name_jp>ギルドの導き</name_jp>
+		<set_bonus_level level="4">
+			<buff_ref id="great_luck"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="uragaan_protection">
+		<name>Uragaan Protection</name>
+		<name_jp>爆鎚竜の守護</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="guard_up"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="bazelgeuse_protection">
+		<name>Bazelgeuse Protection</name>
+		<name_jp>爆鱗竜の守護</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="guts"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="nergigante_hunger">
+		<name>Nergigante Hunger</name>
+		<name_jp>滅尽龍の飢餓</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="hasten_recovery"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="teostra_technique">
+		<name>Teostra Technique</name>
+		<name_jp>炎王龍の武技</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="masters_touch"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="kushala_daora_flight">
+		<name>Kushala Daora Flight</name>
+		<name_jp>鋼龍の飛翔</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="nullify_wind_pressure"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="pink_rathian_mastery">
+		<name>Pink Rathian Mastery</name>
+		<name_jp>桜火竜の奥義</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="poison_duration_up"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="odogaron_mastery">
+		<name>Odogaron Mastery</name>
+		<name_jp>惨爪竜の奥義</name_jp>
+		<set_bonus_level level="2">
+			<buff_ref id="punishing_draw"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="protective_polish"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="xeno_jiiva_divinity">
+		<name>Xeno'jiiva Divinity</name>
+		<name_jp>冥灯龍の神秘</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="razor_sharp_spare_shot"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="val_hazak_vitality">
+		<name>Val Hazak Vitality</name>
+		<name_jp>屍套龍の命脈</name_jp>
+		<set_bonus_level level="3">
+			<buff_ref id="super_recovery"/>
+		</set_bonus_level>
+	</set_bonus>
 </data>

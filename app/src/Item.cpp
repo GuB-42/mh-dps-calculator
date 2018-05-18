@@ -20,6 +20,12 @@ void Item::print(QTextStream &stream, QString indent) const {
 		if (buff_ref.buffGroup) stream << " *";
 		stream << endl;
 	}
+	foreach(const BuffSetBonusRef &bsbr, buffSetBonusRefs) {
+		stream << indent << "- set bonus ref: " << bsbr.id <<
+			"[" << bsbr.level << "]";
+		if (bsbr.buffSetBonus) stream << " *";
+		stream << endl;
+	}
 }
 
 static void parse_buff_refs(QXmlStreamReader *xml, QVector<Item::BuffRef> *pout)
@@ -34,6 +40,27 @@ static void parse_buff_refs(QXmlStreamReader *xml, QVector<Item::BuffRef> *pout)
 					br.level = xml->attributes().value("level").toString().toInt();
 				}
 				pout->append(br);
+			}
+			xml->skipCurrentElement();
+		} else if (token_type == QXmlStreamReader::EndElement) {
+			break;
+		}
+	}
+}
+
+static void parse_buff_set_bonus_refs(QXmlStreamReader *xml,
+                                      QVector<Item::BuffSetBonusRef> *pout)
+{
+	while (!xml->atEnd()) {
+		QXmlStreamReader::TokenType token_type = xml->readNext();
+		if (token_type == QXmlStreamReader::StartElement) {
+			if (xml->name() == "set_bonus_ref") {
+				Item::BuffSetBonusRef bsbr;
+				bsbr.id = xml->attributes().value("id").toString();
+				if (xml->attributes().hasAttribute("level")) {
+					bsbr.level = xml->attributes().value("level").toString().toInt();
+				}
+				pout->append(bsbr);
 			}
 			xml->skipCurrentElement();
 		} else if (token_type == QXmlStreamReader::EndElement) {
@@ -82,6 +109,8 @@ void Item::readXml(QXmlStreamReader *xml) {
 				rare = xml->readElementText().toInt();
 			} else if (tag_name == "buff_refs") {
 				parse_buff_refs(xml, &buffRefs);
+			} else if (tag_name == "set_bonus_refs") {
+				parse_buff_set_bonus_refs(xml, &buffSetBonusRefs);
 			} else {
 				xml->skipCurrentElement();
 			}

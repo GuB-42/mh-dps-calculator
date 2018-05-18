@@ -15,11 +15,7 @@ static int find_buff_level(const QVector<BuffWithLevel> &buff_levels,
                            const BuffGroup *group) {
 	if (buff_levels.count() <= 0) return -1;
 	int bit = buff_levels.count();
-	bit |= bit >> 1;
-	bit |= bit >> 2;
-	bit |= bit >> 4;
-	bit |= bit >> 8;
-	bit |= bit >> 16;
+	for (int shift = 1; shift <= 16; shift <<= 1) bit |= bit >> shift;
 	bit &= ~bit >> 1;
 	int i = 0;
 	while (bit) {
@@ -75,6 +71,35 @@ int Build::addBuffLevel(const BuffGroup *group, int level)
 	return level;
 }
 
+void Build::addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level)
+{
+	QVector<BuffSetBonusWithLevel>::iterator it = buffSetBonusLevels.begin();
+	for (; it != buffSetBonusLevels.end(); ++it) {
+		if (it->buffSetBonus == buff_set_bonus) break;
+	}
+	int last_level = 0;
+	int new_level = 0;
+	if (it == buffSetBonusLevels.end()) {
+		buffSetBonusLevels.append(BuffSetBonusWithLevel(buff_set_bonus, level));
+		new_level = level;
+	} else {
+		last_level = it->level;
+		it->level += level;
+		new_level = it->level;
+	}
+	foreach(const BuffSetBonus::Level &bsl, buff_set_bonus->levels) {
+		if (bsl.buffGroup) {
+			if (bsl.buffSetLevel > last_level &&
+			    bsl.buffSetLevel <= new_level) {
+				addBuffLevel(bsl.buffGroup, bsl.buffLevel);
+			} else if (bsl.buffSetLevel <= last_level &&
+			           bsl.buffSetLevel > new_level) {
+				addBuffLevel(bsl.buffGroup, -bsl.buffLevel);
+			}
+		}
+	}
+}
+
 void Build::addItem(const Item *item, bool take_slot) {
 	if (take_slot && item->decorationLevel > 0) {
 		int best_idx = -1;
@@ -109,6 +134,11 @@ void Build::addItem(const Item *item, bool take_slot) {
 	foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
 		if (buff_ref.buffGroup) {
 			addBuffLevel(buff_ref.buffGroup, buff_ref.level);
+		}
+	}
+	foreach(const Item::BuffSetBonusRef &bsbr, item->buffSetBonusRefs) {
+		if (bsbr.buffSetBonus) {
+			addBuffSetBonusLevel(bsbr.buffSetBonus, bsbr.level);
 		}
 	}
 }
@@ -191,20 +221,29 @@ void Build::fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *
 	}
 }
 
+bool Build::isBuffUseful(const BuffGroup *group) const {
+	if (!group) return false;
+	foreach(const BuffGroupLevel *bl, group->levels) {
+		if (!bl) continue;
+		foreach(const BuffWithCondition *bc, bl->buffs) {
+			if (!weapon || bc->isUseful(*weapon)) return true;
+		}
+	}
+	return false;
+}
+
 QVector<Item *> Build::listUsefulItems(const QVector<Item *> &items) const {
 	QVector<Item *> useful_items;
 	foreach(Item *item, items) {
 		if (item->weaponSlotUpgrade) goto item_is_useful;
 		if (!item->decorationSlots.isEmpty()) goto item_is_useful;
 		foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
-			if (!buff_ref.buffGroup) continue;
-			foreach(const BuffGroupLevel *bl, buff_ref.buffGroup->levels) {
-				if (!bl) continue;
-				foreach(const BuffWithCondition *bc, bl->buffs) {
-					if (!weapon || bc->isUseful(*weapon)) {
-						goto item_is_useful;
-					}
-				}
+			if (isBuffUseful(buff_ref.buffGroup)) goto item_is_useful;
+		}
+		foreach(const Item::BuffSetBonusRef &bsr, item->buffSetBonusRefs) {
+			if (!bsr.buffSetBonus) continue;
+			foreach(const BuffSetBonus::Level &bsl, bsr.buffSetBonus->levels) {
+				if (isBuffUseful(bsl.buffGroup)) goto item_is_useful;
 			}
 		}
 		continue;

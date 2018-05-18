@@ -6,6 +6,7 @@
 
 class QTextStream;
 struct BuffGroup;
+struct BuffSetBonus;
 struct Item;
 struct BuffWithCondition;
 struct Weapon;
@@ -22,22 +23,33 @@ struct BuffWithLevel {
     }
 };
 
+struct BuffSetBonusWithLevel {
+	BuffSetBonusWithLevel() : buffSetBonus(NULL), level(0) { }
+	BuffSetBonusWithLevel(const BuffSetBonus *bs, int l) :
+		buffSetBonus(bs), level(l) { }
+	const BuffSetBonus *buffSetBonus;
+	int level;
+};
+
 struct Build {
 	const Weapon *weapon;
 	QVector<int> decorationSlots;
 	int weaponAugmentations;
 	int weaponSlotUpgrade;
 	QVector<BuffWithLevel> buffLevels;
+	QVector<BuffSetBonusWithLevel> buffSetBonusLevels;
 	QVector<const Item *> usedItems;
 
 	Build();
 	int getBuffLevel(const BuffGroup *group) const;
 	int addBuffLevel(const BuffGroup *group, int level);
+	void addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level);
 	void addItem(const Item *item, bool take_slot = false);
 	void addWeapon(const Weapon *weapon);
 	void getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const;
 	void fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) const;
 	void fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const;
+	bool isBuffUseful(const BuffGroup *group) const;
 	QVector<Item *> listUsefulItems(const QVector<Item *> &items) const;
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

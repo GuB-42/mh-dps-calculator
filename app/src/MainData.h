@@ -14,12 +14,15 @@ struct Profile;
 struct Item;
 struct Target;
 struct MotionValue;
+struct BuffSetBonus;
 
 struct MainData {
 	QVector<Monster *> monsters;
 	QVector<Weapon *> weapons;
 	QVector<BuffGroup *> buffGroups;
 	QHash<QString, BuffGroup *> buffGroupHash;
+	QVector<BuffSetBonus *> buffSetBonuses;
+	QHash<QString, BuffSetBonus *> buffSetBonusHash;
 	QVector<Profile *> profiles;
 	QVector<Item *> items;
 	QHash<QString, Item *> itemHash;

@@ -14,6 +14,7 @@ MainData::~MainData() {
 	foreach(Monster *monster, monsters) delete monster;
 	foreach(Weapon *weapon, weapons) delete weapon;
 	foreach(BuffGroup *buffGroup, buffGroups) delete buffGroup;
+	foreach(BuffSetBonus *buffSetBonus, buffSetBonuses) delete buffSetBonus;
 	foreach(Profile *profile, profiles) delete profile;
 	foreach(Item *item, items) delete item;
 	foreach(Target *target, targets) delete target;
@@ -32,6 +33,10 @@ void MainData::print(QTextStream &stream, QString indent) const {
 	foreach(const BuffGroup *buff_group, buffGroups) {
 		stream << indent << "[buff group]" << endl;
 		buff_group->print(stream, indent + "\t");
+	}
+	foreach(const BuffSetBonus *buff_set_bonus, buffSetBonuses) {
+		stream << indent << "[buff set bonus]" << endl;
+		buff_set_bonus->print(stream, indent + "\t");
 	}
 	foreach(const Profile *profile, profiles) {
 		stream << indent << "[profile]" << endl;
@@ -71,6 +76,13 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				if (!buff_group->id.isNull()) {
 					buffGroupHash[buff_group->id] = buff_group;
 				}
+			} else if (tag_name == "set_bonus") {
+				BuffSetBonus *buff_set_bonus = new BuffSetBonus;
+				buff_set_bonus->readXml(xml);
+				buffSetBonuses.append(buff_set_bonus);
+				if (!buff_set_bonus->id.isNull()) {
+					buffSetBonusHash[buff_set_bonus->id] = buff_set_bonus;
+				}
 			} else if (tag_name == "weapon_profile") {
 				Profile *profile = new Profile;
 				profile->readXml(xml);
@@ -103,12 +115,27 @@ void MainData::readXml(QXmlStreamReader *xml) {
 }
 
 void MainData::matchData() {
+	foreach(BuffSetBonus *bsb, buffSetBonuses) {
+		for (QVector<BuffSetBonus::Level>::iterator it = bsb->levels.begin();
+		     it != bsb->levels.end(); ++it) {
+			QHash<QString, BuffGroup *>::const_iterator itb =
+				buffGroupHash.find(it->buffId);
+			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
+		}
+	}
 	foreach(Item *item, items) {
 		for (QVector<Item::BuffRef>::iterator it = item->buffRefs.begin();
 		     it != item->buffRefs.end(); ++it) {
 			QHash<QString, BuffGroup *>::const_iterator itb =
 				buffGroupHash.find(it->id);
 			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
+		}
+		for (QVector<Item::BuffSetBonusRef>::iterator it =
+		     item->buffSetBonusRefs.begin();
+		     it != item->buffSetBonusRefs.end(); ++it) {
+			QHash<QString, BuffSetBonus *>::const_iterator itb =
+				buffSetBonusHash.find(it->id);
+			if (itb != buffSetBonusHash.end()) it->buffSetBonus = *itb;
 		}
 	}
 	foreach(Target *target, targets) {
