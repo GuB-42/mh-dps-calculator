@@ -230,11 +230,6 @@ Dps::Dps() :
 	}
 }
 
-Dps::Dps(const Target &target, const Damage &damage) : Dps()
-{
-	compute(target, damage);
-}
-
 void Dps::combine(const Dps &o, double rate) {
 	raw += o.raw * rate;
 	fixed += o.fixed * rate;

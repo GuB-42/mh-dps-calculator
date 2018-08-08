@@ -26,7 +26,6 @@ struct Dps {
 	double stunRate;
 
 	Dps();
-	Dps(const Target &target, const Damage &damage);
 
 	void computeNoStatus(const MonsterHitData &hit_data,
 	                     const DamageData &normal_damage,

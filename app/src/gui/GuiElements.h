@@ -8,9 +8,9 @@
 class GuiElements {
 public:
 	static QColor elementColor(ElementType e);
-	static QBrush elementBrush(const double (&v)[ElementType::ELEMENT_COUNT]);
+	static QBrush elementBrush(const double (&v)[ELEMENT_COUNT]);
 	static QColor statusColor(StatusType t);
-	static QBrush statusBrush(const double (&v)[StatusType::STATUS_COUNT]);
+	static QBrush statusBrush(const double (&v)[STATUS_COUNT]);
 };
 
 #endif

@@ -291,7 +291,7 @@ for my $k (keys %groups) {
 			$acc = merge_weapons($acc, $weapon);
 		}
 	}
-	if ($translation_map{"name"}{$acc->{"name"}}) {
+	if ($acc->{"name"} && $translation_map{"name"}{$acc->{"name"}}) {
 		for my $tk (keys %{$translation_map{"name"}{$acc->{"name"}}}) {
 			$acc->{$tk} = $translation_map{"name"}{$acc->{"name"}}{$tk};
 		}
