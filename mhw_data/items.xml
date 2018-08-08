@@ -1,0 +1,1040 @@
+<data>
+
+<!-- augmentations -->
+
+<item id="augmentation_attack_increase">
+	<type>weapon_augmentation</type>
+	<name>Attack Increase</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_attack_increase"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_affinity_increase">
+	<type>weapon_augmentation</type>
+	<name>Affinity Increase</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_affinity_increase"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_defense_increase">
+	<type>weapon_augmentation</type>
+	<name>Defense Increase</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_defense_increase"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_health_regen">
+	<type>weapon_augmentation</type>
+	<name>Health Regen</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<buff_refs>
+		<buff_ref id="augmentation_health_regen"/>
+	</buff_refs>
+</item>
+
+<item id="augmentation_slot_upgrade">
+	<type>weapon_augmentation</type>
+	<name>Slot Upgrade</name>
+	<weapon_augmentation_level>1</weapon_augmentation_level>
+	<weapon_slot_upgrade>1</weapon_slot_upgrade>
+</item>
+
+<!-- augmentations -->
+
+<item id="powercharm">
+	<type>inventory_item</type>
+	<name>Powercharm</name>
+	<name_fr>Amulette de force</name_fr>
+	<buff_refs>
+		<buff_ref id="powercharm"/>
+	</buff_refs>
+</item>
+
+<item id="powertalon">
+	<type>inventory_item</type>
+	<name>Powertalon</name>
+	<name_fr>Griffe de force</name_fr>
+	<buff_refs>
+		<buff_ref id="powertalon"/>
+	</buff_refs>
+</item>
+
+<!-- decorations -->
+
+<item id="antidote_jewel">
+	<type>decoration</type>
+	<name>Antidote Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="poison_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="geology_jewel">
+	<type>decoration</type>
+	<name>Geology Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="geologist"/>
+	</buff_refs>
+</item>
+
+<item id="heavy_artillery_jewel">
+	<type>decoration</type>
+	<name>Heavy Artillery Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="heavy_artillery"/>
+	</buff_refs>
+</item>
+
+<item id="hungerless_jewel">
+	<type>decoration</type>
+	<name>Hungerless Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="hunger_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="satiated_jewel">
+	<type>decoration</type>
+	<name>Satiated Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="free_meal"/>
+	</buff_refs>
+</item>
+
+<item id="protection_jewel">
+	<type>decoration</type>
+	<name>Protection Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="divine_blessing"/>
+	</buff_refs>
+</item>
+
+<item id="meowster_jewel">
+	<type>decoration</type>
+	<name>Meowster Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="palico_rally"/>
+	</buff_refs>
+</item>
+
+<item id="botany_jewel">
+	<type>decoration</type>
+	<name>Botany Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="botanist"/>
+	</buff_refs>
+</item>
+
+<item id="tip_toe_jewel">
+	<type>decoration</type>
+	<name>Tip Toe Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="stealth"/>
+	</buff_refs>
+</item>
+
+<item id="flight_jewel">
+	<type>decoration</type>
+	<name>Flight Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="airborne"/>
+	</buff_refs>
+</item>
+
+<item id="smoke_jewel">
+	<type>decoration</type>
+	<name>Smoke Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="sporepuff_expert"/>
+	</buff_refs>
+</item>
+
+<item id="mirewalker_jewel">
+	<type>decoration</type>
+	<name>Mirewalker Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="aquatic_expert"/>
+	</buff_refs>
+</item>
+
+<item id="specimen_jewel">
+	<type>decoration</type>
+	<name>Specimen Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="entomologist"/>
+	</buff_refs>
+</item>
+
+<item id="miasma_jewel">
+	<type>decoration</type>
+	<name>Miasma Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="effluvia_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="scent_jewel">
+	<type>decoration</type>
+	<name>Scent Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="scenthound"/>
+	</buff_refs>
+</item>
+
+<item id="intimidator_jewel">
+	<type>decoration</type>
+	<name>Intimidator Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="intimidator"/>
+	</buff_refs>
+</item>
+
+<item id="crisis_jewel">
+	<type>decoration</type>
+	<name>Crisis Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="resuscitate"/>
+	</buff_refs>
+</item>
+
+<item id="antipara_jewel">
+	<type>decoration</type>
+	<name>Antipara Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="paralysis_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="fortitude_jewel">
+	<type>decoration</type>
+	<name>Fortitude Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="fortify"/>
+	</buff_refs>
+</item>
+
+<item id="water_res_jewel">
+	<type>decoration</type>
+	<name>Water Res Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="water_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="suture_jewel">
+	<type>decoration</type>
+	<name>Suture Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="bleeding_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="dragon_res_jewel">
+	<type>decoration</type>
+	<name>Dragon Res Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="dragon_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="fire_res_jewel">
+	<type>decoration</type>
+	<name>Fire Res Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="fire_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="ice_res_jewel">
+	<type>decoration</type>
+	<name>Ice Res Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="ice_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="def_lock_jewel">
+	<type>decoration</type>
+	<name>Def Lock Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="iron_skin"/>
+	</buff_refs>
+</item>
+
+<item id="thunder_res_jewel">
+	<type>decoration</type>
+	<name>Thunder Res Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="thunder_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="pep_jewel">
+	<type>decoration</type>
+	<name>Pep Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="sleep_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="antiblast_jewel">
+	<type>decoration</type>
+	<name>Antiblast Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>5</rare>
+	<buff_refs>
+		<buff_ref id="blast_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="gobbler_jewel">
+	<type>decoration</type>
+	<name>Gobbler Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="speed_eating"/>
+	</buff_refs>
+</item>
+
+<item id="physique_jewel">
+	<type>decoration</type>
+	<name>Physique Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="constitution"/>
+	</buff_refs>
+</item>
+
+<item id="blaze_jewel">
+	<type>decoration</type>
+	<name>Blaze Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="fire_attack"/>
+	</buff_refs>
+</item>
+
+<item id="evasion_jewel">
+	<type>decoration</type>
+	<name>Evasion Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="evade_window"/>
+	</buff_refs>
+</item>
+
+<item id="jumping_jewel">
+	<type>decoration</type>
+	<name>Jumping Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="evade_extender"/>
+	</buff_refs>
+</item>
+
+<item id="sheath_jewel">
+	<type>decoration</type>
+	<name>Sheath Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="quick_sheath"/>
+	</buff_refs>
+</item>
+
+<item id="friendship_jewel">
+	<type>decoration</type>
+	<name>Friendship Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="wide_range"/>
+	</buff_refs>
+</item>
+
+<item id="enduring_jewel">
+	<type>decoration</type>
+	<name>Enduring Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="item_prolonger"/>
+	</buff_refs>
+</item>
+
+<item id="medicine_jewel">
+	<type>decoration</type>
+	<name>Medicine Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="recovery_up"/>
+	</buff_refs>
+</item>
+
+<item id="grinder_jewel">
+	<type>decoration</type>
+	<name>Grinder Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="speed_sharpening"/>
+	</buff_refs>
+</item>
+
+<item id="steadfast_jewel">
+	<type>decoration</type>
+	<name>Steadfast Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="stun_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="bomber_jewel">
+	<type>decoration</type>
+	<name>Bomber Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="bombardier"/>
+	</buff_refs>
+</item>
+
+<item id="recovery_jewel">
+	<type>decoration</type>
+	<name>Recovery Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="recovery_speed"/>
+	</buff_refs>
+</item>
+
+<item id="slider_jewel">
+	<type>decoration</type>
+	<name>Slider Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="affinity_sliding"/>
+	</buff_refs>
+</item>
+
+<item id="defense_jewel">
+	<type>decoration</type>
+	<name>Defense Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="defense_boost"/>
+	</buff_refs>
+</item>
+
+<item id="stonethrower_jewel">
+	<type>decoration</type>
+	<name>Stonethrower Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="slinger_capacity"/>
+	</buff_refs>
+</item>
+
+<item id="footing_jewel">
+	<type>decoration</type>
+	<name>Footing Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="tremor_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="brace_jewel">
+	<type>decoration</type>
+	<name>Brace Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="flinch_free"/>
+	</buff_refs>
+</item>
+
+<item id="wind_resist_jewel">
+	<type>decoration</type>
+	<name>Wind Resist Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="windproof"/>
+	</buff_refs>
+</item>
+
+<item id="earplug_jewel">
+	<type>decoration</type>
+	<name>Earplug Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="earplugs"/>
+	</buff_refs>
+</item>
+
+<item id="vitality_jewel">
+	<type>decoration</type>
+	<name>Vitality Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="health_boost"/>
+	</buff_refs>
+</item>
+
+<item id="resistor_jewel">
+	<type>decoration</type>
+	<name>Resistor Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="blight_resistance"/>
+	</buff_refs>
+</item>
+
+<item id="sonorous_jewel">
+	<type>decoration</type>
+	<name>Sonorous Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="horn_maestro"/>
+	</buff_refs>
+</item>
+
+<item id="ko_jewel">
+	<type>decoration</type>
+	<name>KO Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="slugger"/>
+	</buff_refs>
+</item>
+
+<item id="stream_jewel">
+	<type>decoration</type>
+	<name>Stream Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="water_attack"/>
+	</buff_refs>
+</item>
+
+<item id="frost_jewel">
+	<type>decoration</type>
+	<name>Frost Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="ice_attack"/>
+	</buff_refs>
+</item>
+
+<item id="bolt_jewel">
+	<type>decoration</type>
+	<name>Bolt Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="thunder_attack"/>
+	</buff_refs>
+</item>
+
+<item id="dragon_jewel">
+	<type>decoration</type>
+	<name>Dragon Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="dragon_attack"/>
+	</buff_refs>
+</item>
+
+<item id="venom_jewel">
+	<type>decoration</type>
+	<name>Venom Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="poison_attack"/>
+	</buff_refs>
+</item>
+
+<item id="poisoncoat_jewel">
+	<type>decoration</type>
+	<name>Poisoncoat Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="poison_functionality"/>
+	</buff_refs>
+</item>
+
+<item id="expert_jewel">
+	<type>decoration</type>
+	<name>Expert Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="critical_eye"/>
+	</buff_refs>
+</item>
+
+<item id="tenderizer_jewel">
+	<type>decoration</type>
+	<name>Tenderizer Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="weakness_exploit"/>
+	</buff_refs>
+</item>
+
+<item id="destroyer_jewel">
+	<type>decoration</type>
+	<name>Destroyer Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="partbreaker"/>
+	</buff_refs>
+</item>
+
+<item id="elementless_jewel">
+	<type>decoration</type>
+	<name>Elementless Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="non_elemental_boost"/>
+	</buff_refs>
+</item>
+
+<item id="drain_jewel">
+	<type>decoration</type>
+	<name>Drain Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>6</rare>
+	<buff_refs>
+		<buff_ref id="stamina_thief"/>
+	</buff_refs>
+</item>
+
+<item id="paracoat_jewel">
+	<type>decoration</type>
+	<name>Paracoat Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="para_functionality"/>
+	</buff_refs>
+</item>
+
+<item id="sharp_jewel">
+	<type>decoration</type>
+	<name>Sharp Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="protective_polish"/>
+	</buff_refs>
+</item>
+
+<item id="shield_jewel">
+	<type>decoration</type>
+	<name>Shield Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="guard_up"/>
+	</buff_refs>
+</item>
+
+<item id="dragonseal_jewel">
+	<type>decoration</type>
+	<name>Dragonseal Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="elderseal_boost"/>
+	</buff_refs>
+</item>
+
+<item id="trueshot_jewel">
+	<type>decoration</type>
+	<name>Trueshot Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="special_ammo_boost"/>
+	</buff_refs>
+</item>
+
+<item id="enhancer_jewel">
+	<type>decoration</type>
+	<name>Enhancer Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="power_prolonger"/>
+	</buff_refs>
+</item>
+
+<item id="forceshot_jewel">
+	<type>decoration</type>
+	<name>Forceshot Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="normal_shots"/>
+	</buff_refs>
+</item>
+
+<item id="furor_jewel">
+	<type>decoration</type>
+	<name>Furor Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="resentment"/>
+	</buff_refs>
+</item>
+
+<item id="potential_jewel">
+	<type>decoration</type>
+	<name>Potential Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="heroics"/>
+	</buff_refs>
+</item>
+
+<item id="paralyzer_jewel">
+	<type>decoration</type>
+	<name>Paralyzer Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="paralysis_attack"/>
+	</buff_refs>
+</item>
+
+<item id="sleep_jewel">
+	<type>decoration</type>
+	<name>Sleep Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="sleep_attack"/>
+	</buff_refs>
+</item>
+
+<item id="ironwall_jewel">
+	<type>decoration</type>
+	<name>Ironwall Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="guard"/>
+	</buff_refs>
+</item>
+
+<item id="refresh_jewel">
+	<type>decoration</type>
+	<name>Refresh Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="stamina_surge"/>
+	</buff_refs>
+</item>
+
+<item id="blast_jewel">
+	<type>decoration</type>
+	<name>Blast Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="blast_attack"/>
+	</buff_refs>
+</item>
+
+<item id="sleepcoat_jewel">
+	<type>decoration</type>
+	<name>Sleepcoat Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="sleep_functionality"/>
+	</buff_refs>
+</item>
+
+<item id="blastcoat_jewel">
+	<type>decoration</type>
+	<name>Blastcoat Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="blast_functionality"/>
+	</buff_refs>
+</item>
+
+<item id="throttle_jewel">
+	<type>decoration</type>
+	<name>Throttle Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="latent_power"/>
+	</buff_refs>
+</item>
+
+<item id="challenger_jewel">
+	<type>decoration</type>
+	<name>Challenger Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="agitator"/>
+	</buff_refs>
+</item>
+
+<item id="attack_jewel">
+	<type>decoration</type>
+	<name>Attack Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="attack_boost"/>
+	</buff_refs>
+</item>
+
+<item id="flawless_jewel">
+	<type>decoration</type>
+	<name>Flawless Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="peak_performance"/>
+	</buff_refs>
+</item>
+
+<item id="magazine_jewel">
+	<type>decoration</type>
+	<name>Magazine Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="capacity_boost"/>
+	</buff_refs>
+</item>
+
+<item id="mighty_jewel">
+	<type>decoration</type>
+	<name>Mighty Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>7</rare>
+	<buff_refs>
+		<buff_ref id="maximum_might"/>
+	</buff_refs>
+</item>
+
+<item id="sprinter_jewel">
+	<type>decoration</type>
+	<name>Sprinter Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="marathon_runner"/>
+	</buff_refs>
+</item>
+
+<item id="critical_jewel">
+	<type>decoration</type>
+	<name>Critical Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="critical_boost"/>
+	</buff_refs>
+</item>
+
+<item id="artillery_jewel">
+	<type>decoration</type>
+	<name>Artillery Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="artillery"/>
+	</buff_refs>
+</item>
+
+<item id="fungiform_jewel">
+	<type>decoration</type>
+	<name>Fungiform Jewel</name>
+	<decoration_level>1</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="mushroomancer"/>
+	</buff_refs>
+</item>
+
+<item id="release_jewel">
+	<type>decoration</type>
+	<name>Release Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="free_elem_ammo_up"/>
+	</buff_refs>
+</item>
+
+<item id="spread_jewel">
+	<type>decoration</type>
+	<name>Spread Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="spread_power_shots"/>
+	</buff_refs>
+</item>
+
+<item id="charger_jewel">
+	<type>decoration</type>
+	<name>Charger Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="focus"/>
+	</buff_refs>
+</item>
+
+<item id="handicraft_jewel">
+	<type>decoration</type>
+	<name>Handicraft Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="handicraft"/>
+	</buff_refs>
+</item>
+
+<item id="mighty_bow_jewel">
+	<type>decoration</type>
+	<name>Mighty Bow Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="bow_charge_plus"/>
+	</buff_refs>
+</item>
+
+<item id="minds_eye_jewel">
+	<type>decoration</type>
+	<name>Mind's Eye Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="minds_eye_ballistics"/>
+	</buff_refs>
+</item>
+
+<item id="draw_jewel">
+	<type>decoration</type>
+	<name>Draw Jewel</name>
+	<decoration_level>2</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="critical_draw"/>
+	</buff_refs>
+</item>
+
+<item id="pierce_jewel">
+	<type>decoration</type>
+	<name>Pierce Jewel</name>
+	<decoration_level>3</decoration_level>
+	<rare>8</rare>
+	<buff_refs>
+		<buff_ref id="piercing_shots"/>
+	</buff_refs>
+</item>
+
+</data>

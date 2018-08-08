@@ -1,0 +1,2149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+    <motion_value id="bow_charged_shot_lv_1">
+        <type>bow</type>
+        <name>Bow: Charged Shot (Lv 1)</name>
+        <bullet>0.07</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_charged_shot_lv_2">
+        <type>bow</type>
+        <name>Bow: Charged Shot (Lv 2)</name>
+        <bullet>0.2</bullet>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_charged_shot_lv_3">
+        <type>bow</type>
+        <name>Bow: Charged Shot (Lv 3)</name>
+        <bullet>0.33</bullet>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_charged_shot_lv_4">
+        <type>bow</type>
+        <name>Bow: Charged Shot (Lv 4)</name>
+        <bullet>0.36</bullet>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_power_shot_lv_1">
+        <type>bow</type>
+        <name>Bow: Power Shot (Lv 1)</name>
+        <bullet>0.18</bullet>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_power_shot_lv_2">
+        <type>bow</type>
+        <name>Bow: Power Shot (Lv 2)</name>
+        <bullet>0.27</bullet>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_power_shot_lv_3">
+        <type>bow</type>
+        <name>Bow: Power Shot (Lv 3)</name>
+        <bullet>0.55</bullet>
+        <element>5</element>
+        <sharpness_use>5</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_power_shot_lv_4">
+        <type>bow</type>
+        <name>Bow: Power Shot (Lv 4)</name>
+        <bullet>0.78</bullet>
+        <element>6</element>
+        <sharpness_use>6</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_arc_shot_lv_1">
+        <type>bow</type>
+        <name>Bow: Arc Shot (Lv 1)</name>
+        <bullet>0.06</bullet>
+        <element>6</element>
+        <stun>5</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>6</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_arc_shot_lv_2">
+        <type>bow</type>
+        <name>Bow: Arc Shot (Lv 2)</name>
+        <bullet>0.16</bullet>
+        <element>8</element>
+        <stun>5</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>8</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_arc_shot_lv_3">
+        <type>bow</type>
+        <name>Bow: Arc Shot (Lv 3)</name>
+        <bullet>0.28</bullet>
+        <element>14</element>
+        <stun>10</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>14</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_arc_shot_lv_4">
+        <type>bow</type>
+        <name>Bow: Arc Shot (Lv 4)</name>
+        <bullet>0.28</bullet>
+        <element>14</element>
+        <stun>15</stun>
+        <exhaust>20</exhaust>
+        <sharpness_use>14</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_dragon_piercer_lv_1_hit">
+        <type>bow</type>
+        <name>Bow: Dragon Piercer (Lv 1), per hit</name>
+        <bullet>0.19</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_dragon_piercer_lv_2_hit">
+        <type>bow</type>
+        <name>Bow: Dragon Piercer (Lv 2), per hit</name>
+        <bullet>0.2</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_dragon_piercer_lv_3_hit">
+        <type>bow</type>
+        <name>Bow: Dragon Piercer (Lv 3), per hit</name>
+        <bullet>0.23</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_quick_shot">
+        <type>bow</type>
+        <name>Bow: Quick Shot</name>
+        <bullet>0.18</bullet>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_lunging_melee_attack">
+        <type>bow</type>
+        <name>Bow: Lunging Melee Attack</name>
+        <cut>0.35</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_wall_climb_power_shot">
+        <type>bow</type>
+        <name>Bow: Wall Climb Power Shot</name>
+        <cut>2.45</cut>
+        <element>7</element>
+        <sharpness_use>7</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_jumping_melee_attack">
+        <type>bow</type>
+        <name>Bow: Jumping Melee Attack</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_mid_air_charged_shot_lv_1">
+        <type>bow</type>
+        <name>Bow: Mid-air Charged Shot (Lv 1)</name>
+        <bullet>0.07</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_mid_air_charged_shot_lv_2">
+        <type>bow</type>
+        <name>Bow: Mid-air Charged Shot (Lv 2)</name>
+        <bullet>0.2</bullet>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="bow_mid_air_charged_shot_lv_3">
+        <type>bow</type>
+        <name>Bow: Mid-air Charged Shot (Lv 3)</name>
+        <bullet>0.33</bullet>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_forward_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Forward Slash</name>
+        <cut>0.2</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_weak_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Weak Slash</name>
+        <cut>0.12</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_charged_rising_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Charged Rising Slash</name>
+        <cut>0.13</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_charged_double_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Charged Double Slash</name>
+        <cut>0.45</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_sliding_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Sliding Slash</name>
+        <cut>0.25</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_return_stroke">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Return Stroke</name>
+        <cut>0.15</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_shield_thrust">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Shield Thrust</name>
+        <cut>0.2</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_spinning_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Spinning Slash</name>
+        <cut>0.28</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_morph_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Morph Slash</name>
+        <cut>0.44</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_condensed_element_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Condensed Element Slash</name>
+        <cut>0.75</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_jumping_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Jumping Slash</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_jumping_morph_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Jumping Morph Slash</name>
+        <cut>0.46</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_sword_jumping_rising_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Sword: Jumping Rising Slash</name>
+        <cut>0.21</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_smash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Smash</name>
+        <cut>0.44</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_morph_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Morph Slash</name>
+        <cut>0.28</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_elemental_roundslash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Elemental Roundslash</name>
+        <cut>0.5</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_rising_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Rising Slash</name>
+        <cut>0.35</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_overhead_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Overhead Slash</name>
+        <cut>0.37</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_dash_slam">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Dash Slam</name>
+        <cut>0.45</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_ed_1">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: ED I</name>
+        <cut>0.21</cut>
+        <element>1</element>
+        <phial_impact_attack>0.04</phial_impact_attack>
+        <phial_impact_stun>30</phial_impact_stun>
+        <phial_impact_exhaust>5</phial_impact_exhaust>
+        <phial_element_attack>3.5</phial_element_attack>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_rushing_ed_1">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Rushing ED I</name>
+        <cut>0.21</cut>
+        <element>1</element>
+        <phial_impact_attack>0.04</phial_impact_attack>
+        <phial_impact_stun>30</phial_impact_stun>
+        <phial_impact_exhaust>5</phial_impact_exhaust>
+        <phial_element_attack>3.5</phial_element_attack>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_ed_2">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: ED II</name>
+        <cut>0.76</cut>
+        <element>2</element>
+        <phial_impact_attack>0.08</phial_impact_attack>
+        <phial_impact_stun>60</phial_impact_stun>
+        <phial_impact_exhaust>10</phial_impact_exhaust>
+        <phial_element_attack>7</phial_element_attack>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_amped_element_discharge">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Amped Element Discharge</name>
+        <cut>0.9</cut>
+        <element>1</element>
+        <phial_impact_attack>0.27</phial_impact_attack>
+        <phial_impact_stun>105</phial_impact_stun>
+        <phial_impact_exhaust>21</phial_impact_exhaust>
+        <phial_element_attack>15</phial_element_attack>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_super_aed_has_phials">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Super AED (Has Phials)</name>
+        <cut>2.02</cut>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_super_aed_per_phial">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Super AED, per phial</name>
+        <phial_impact_attack>0.25</phial_impact_attack>
+        <phial_impact_stun>40</phial_impact_stun>
+        <phial_impact_exhaust>10</phial_impact_exhaust>
+        <phial_element_attack>10</phial_element_attack>
+    </motion_value>
+    <motion_value id="cb_axe_super_aed_no_phials">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Super AED (No Phials)</name>
+        <cut>1.12</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_jumping_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Jumping Slash</name>
+        <cut>0.46</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="cb_axe_jumping_morph_slash">
+        <type>charge_blade</type>
+        <name>Charge Blade: Axe: Jumping Morph Slash</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="db_double_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Double Slash</name>
+        <cut>0.18</cut>
+        <element>2</element>
+        <sharpness_use>0.7</sharpness_use>
+    </motion_value>
+    <motion_value id="db_double_slash_return_stroke">
+        <type>dual_blades</type>
+        <name>Dual Blades: Double Slash Return Stroke</name>
+        <cut>0.19</cut>
+        <element>2</element>
+        <sharpness_use>0.7</sharpness_use>
+    </motion_value>
+    <motion_value id="db_circle_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Circle Slash</name>
+        <cut>0.31</cut>
+        <element>3</element>
+        <sharpness_use>1.05</sharpness_use>
+    </motion_value>
+    <motion_value id="db_lunging_strike">
+        <type>dual_blades</type>
+        <name>Dual Blades: Lunging Strike</name>
+        <cut>0.16</cut>
+        <element>4</element>
+        <sharpness_use>1.4</sharpness_use>
+    </motion_value>
+    <motion_value id="db_left_roundslash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Left RoundSlash</name>
+        <cut>0.27</cut>
+        <element>3</element>
+        <sharpness_use>1.05</sharpness_use>
+    </motion_value>
+    <motion_value id="db_right_roundslash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Right RoundSlash</name>
+        <cut>0.27</cut>
+        <element>3</element>
+        <sharpness_use>1.05</sharpness_use>
+    </motion_value>
+    <motion_value id="db_turn_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Turn Slash</name>
+        <cut>0.1</cut>
+        <element>2</element>
+        <sharpness_use>0.7</sharpness_use>
+    </motion_value>
+    <motion_value id="db_rising_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Rising Slash</name>
+        <cut>0.07</cut>
+        <element>1</element>
+        <sharpness_use>0.35</sharpness_use>
+    </motion_value>
+    <motion_value id="db_sliding_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Sliding Slash</name>
+        <cut>0.46</cut>
+        <element>4</element>
+        <sharpness_use>1.4</sharpness_use>
+    </motion_value>
+    <motion_value id="db_demon_fangs">
+        <type>dual_blades</type>
+        <name>Dual Blades: Demon Fangs</name>
+        <cut>0.11</cut>
+        <element>1</element>
+        <sharpness_use>0.35</sharpness_use>
+    </motion_value>
+    <motion_value id="db_twofold_demon_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Twofold Demon Slash</name>
+        <cut>0.21</cut>
+        <element>2</element>
+        <sharpness_use>0.7</sharpness_use>
+    </motion_value>
+    <motion_value id="db_sixfold_demon_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Sixfold Demon Slash</name>
+        <cut>0.7</cut>
+        <element>6</element>
+        <sharpness_use>2.1</sharpness_use>
+    </motion_value>
+    <motion_value id="db_demon_flurry_rush">
+        <type>dual_blades</type>
+        <name>Dual Blades: Demon Flurry Rush</name>
+        <cut>0.34</cut>
+        <element>6</element>
+        <sharpness_use>2.1</sharpness_use>
+    </motion_value>
+    <motion_value id="db_right_fade_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Right Fade Slash</name>
+        <cut>0.07</cut>
+        <element>1</element>
+        <sharpness_use>0.35</sharpness_use>
+    </motion_value>
+    <motion_value id="db_left_fade_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Left Fade Slash</name>
+        <cut>0.07</cut>
+        <element>1</element>
+        <sharpness_use>0.35</sharpness_use>
+    </motion_value>
+    <motion_value id="db_right_double_roundslash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Right Double Roundslash</name>
+        <cut>0.37</cut>
+        <element>3</element>
+        <sharpness_use>1.05</sharpness_use>
+    </motion_value>
+    <motion_value id="db_left_double_roundslash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Left Double Roundslash</name>
+        <cut>0.37</cut>
+        <element>3</element>
+        <sharpness_use>1.05</sharpness_use>
+    </motion_value>
+    <motion_value id="db_blade_dance">
+        <type>dual_blades</type>
+        <name>Dual Blades: Blade Dance</name>
+        <cut>1.55</cut>
+        <element>15</element>
+        <sharpness_use>5.25</sharpness_use>
+    </motion_value>
+    <motion_value id="db_demon_flurry">
+        <type>dual_blades</type>
+        <name>Dual Blades: Demon Flurry</name>
+        <cut>0.69</cut>
+        <element>7</element>
+        <sharpness_use>2.45</sharpness_use>
+    </motion_value>
+    <motion_value id="db_jumping_double_slash">
+        <type>dual_blades</type>
+        <name>Dual Blades: Jumping Double Slash</name>
+        <cut>0.21</cut>
+        <element>2</element>
+        <sharpness_use>0.7</sharpness_use>
+    </motion_value>
+    <motion_value id="db_heavenly_blade_dance">
+        <type>dual_blades</type>
+        <name>Dual Blades: Heavenly Blade Dance</name>
+        <cut>1.62</cut>
+        <element>10</element>
+        <sharpness_use>3.5</sharpness_use>
+    </motion_value>
+    <motion_value id="db_midair_spinning_blade_dance">
+        <type>dual_blades</type>
+        <name>Dual Blades: Midair Spinning Blade Dance</name>
+        <cut>0.5</cut>
+        <element>4</element>
+        <sharpness_use>1.4</sharpness_use>
+    </motion_value>
+    <motion_value id="db_spinning_blade_dance_finisher">
+        <type>dual_blades</type>
+        <name>Dual Blades: Spinning Blade Dance Finisher</name>
+        <cut>1.04</cut>
+        <element>6</element>
+        <sharpness_use>2.1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Slash Lv1</name>
+        <cut>0.48</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Slash Lv2</name>
+        <cut>0.77</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Slash Lv3</name>
+        <cut>1.05</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_slash_lv4">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Slash Lv4</name>
+        <cut>0.77</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_overhead_slash">
+        <type>great_sword</type>
+        <name>Great Sword: Overhead Slash</name>
+        <cut>0.48</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_charged_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Charged Slash Lv1</name>
+        <cut>0.65</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_charged_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Charged Slash Lv2</name>
+        <cut>0.9</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_charged_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Charged Slash Lv3</name>
+        <cut>1.15</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_charged_slash_lv4">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Charged Slash Lv4</name>
+        <cut>0.9</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_true_charged_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: True Charged Slash Lv1</name>
+        <cut>1.8</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_true_charged_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: True Charged Slash Lv2</name>
+        <cut>2.02</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_true_charged_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: True Charged Slash Lv3</name>
+        <cut>2.33</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_true_charged_slash_lv4">
+        <type>great_sword</type>
+        <name>Great Sword: True Charged Slash Lv4</name>
+        <cut>2.02</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_wide_slash">
+        <type>great_sword</type>
+        <name>Great Sword: Wide Slash</name>
+        <cut>0.26</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_rising_slash">
+        <type>great_sword</type>
+        <name>Great Sword: Rising Slash</name>
+        <cut>0.38</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_side_blow">
+        <type>great_sword</type>
+        <name>Great Sword: Side Blow</name>
+        <impact>0.16</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_tackle_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Tackle Lv1</name>
+        <impact>0.26</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>20</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_tackle_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Tackle Lv2</name>
+        <impact>0.35</impact>
+        <element>1</element>
+        <stun>40</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_tackle_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Tackle Lv3</name>
+        <impact>0.48</impact>
+        <element>1</element>
+        <stun>55</stun>
+        <exhaust>30</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_jumping_wide_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Jumping Wide Slash Lv1</name>
+        <cut>0.71</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_jumping_wide_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Jumping Wide Slash Lv2</name>
+        <cut>0.85</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_jumping_wide_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Jumping Wide Slash Lv3</name>
+        <impact>1.1</impact>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_jumping_slash">
+        <type>great_sword</type>
+        <name>Great Sword: Jumping Slash</name>
+        <cut>0.7</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_midair_charged_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Midair Charged Slash Lv1</name>
+        <cut>0.7</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_midair_charged_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Midair Charged Slash Lv2</name>
+        <cut>0.92</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_midair_charged_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Midair Charged Slash Lv3</name>
+        <cut>1.06</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_wide_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Wide Slash Lv1</name>
+        <cut>0.59</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_wide_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Wide Slash Lv2</name>
+        <cut>0.66</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_strong_wide_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Strong Wide Slash Lv3</name>
+        <cut>0.78</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_rising_slash_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Rising Slash Lv1</name>
+        <cut>0.48</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_rising_slash_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Rising Slash Lv2</name>
+        <cut>0.72</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_charged_rising_slash_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Charged Rising Slash Lv3</name>
+        <cut>0.98</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_plunging_thrust_lv1">
+        <type>great_sword</type>
+        <name>Great Sword: Plunging Thrust Lv1</name>
+        <cut>0.16</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_plunging_thrust_lv2">
+        <type>great_sword</type>
+        <name>Great Sword: Plunging Thrust Lv2</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gs_plunging_thrust_lv3">
+        <type>great_sword</type>
+        <name>Great Sword: Plunging Thrust Lv3</name>
+        <cut>0.27</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_lunging_upthrust">
+        <type>gunlance</type>
+        <name>Gunlance: Lunging Upthrust</name>
+        <cut>0.3</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_lateral_thrust">
+        <type>gunlance</type>
+        <name>Gunlance: Lateral Thrust I, II, III</name>
+        <cut>0.24</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_rising_slash">
+        <type>gunlance</type>
+        <name>Gunlance: Rising Slash</name>
+        <cut>0.3</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_overhead_smash">
+        <type>gunlance</type>
+        <name>Gunlance: Overhead Smash</name>
+        <cut>0.48</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_wide_sweep">
+        <type>gunlance</type>
+        <name>Gunlance: Wide Sweep</name>
+        <cut>0.68</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_guard_thrust">
+        <type>gunlance</type>
+        <name>Gunlance: Guard Thrust I, II, III</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_jumping_thrust">
+        <type>gunlance</type>
+        <name>Gunlance: Jumping Thrust</name>
+        <cut>0.25</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_jumping_reload_smash">
+        <type>gunlance</type>
+        <name>Gunlance: Jumping Reload Smash</name>
+        <cut>0.44</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_jumping_smash">
+        <type>gunlance</type>
+        <name>Gunlance: Jumping Smash</name>
+        <cut>0.44</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="gl_jumping_rising_slash">
+        <type>gunlance</type>
+        <name>Gunlance: Jumping Rising Slash</name>
+        <cut>0.35</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_swing">
+        <type>hammer</type>
+        <name>Hammer: Swing</name>
+        <impact>0.2</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_backswing">
+        <type>hammer</type>
+        <name>Hammer: Backswing</name>
+        <impact>0.16</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_overhead_smash_1">
+        <type>hammer</type>
+        <name>Hammer: Overhead Smash I</name>
+        <impact>0.37</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_side_smash">
+        <type>hammer</type>
+        <name>Hammer: Side Smash</name>
+        <impact>0.15</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_overhead_smash_2">
+        <type>hammer</type>
+        <name>Hammer: Overhead Smash II</name>
+        <impact>0.23</impact>
+        <element>1</element>
+        <stun>25</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_upswing">
+        <type>hammer</type>
+        <name>Hammer: Upswing</name>
+        <impact>0.86</impact>
+        <element>1</element>
+        <stun>50</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_big_bang_1">
+        <type>hammer</type>
+        <name>Hammer: Big Bang I</name>
+        <impact>0.28</impact>
+        <element>1</element>
+        <stun>5</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_big_bang_2">
+        <type>hammer</type>
+        <name>Hammer: Big Bang II</name>
+        <impact>0.32</impact>
+        <element>1</element>
+        <stun>5</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_big_bang_3">
+        <type>hammer</type>
+        <name>Hammer: Big Bang III</name>
+        <impact>0.45</impact>
+        <element>1</element>
+        <stun>10</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_big_bang_4">
+        <type>hammer</type>
+        <name>Hammer: Big Bang IV</name>
+        <impact>0.65</impact>
+        <element>1</element>
+        <stun>10</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_big_bang_finisher">
+        <type>hammer</type>
+        <name>Hammer: Big Bang Finisher</name>
+        <impact>1.56</impact>
+        <element>3</element>
+        <stun>25</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_side_blow">
+        <type>hammer</type>
+        <name>Hammer: Charged Side Blow</name>
+        <impact>0.18</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_upswing">
+        <type>hammer</type>
+        <name>Hammer: Charged Upswing</name>
+        <impact>0.38</impact>
+        <element>1</element>
+        <stun>45</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_big_bang">
+        <type>hammer</type>
+        <name>Hammer: Charged Big Bang</name>
+        <impact>0.91</impact>
+        <element>2</element>
+        <stun>35</stun>
+        <exhaust>40</exhaust>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_spinning_bludgeon">
+        <type>hammer</type>
+        <name>Hammer: Spinning Bludgeon</name>
+        <impact>1.48</impact>
+        <element>7</element>
+        <stun>100</stun>
+        <exhaust>22</exhaust>
+        <sharpness_use>7</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_brutal_upswing">
+        <type>hammer</type>
+        <name>Hammer: Charged Brutal Upswing</name>
+        <impact>0.45</impact>
+        <element>1</element>
+        <stun>55</stun>
+        <exhaust>20</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_brutal_big_bang">
+        <type>hammer</type>
+        <name>Hammer: Charged Brutal Big Bang</name>
+        <impact>1.15</impact>
+        <element>3</element>
+        <stun>95</stun>
+        <exhaust>40</exhaust>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_follow_up">
+        <type>hammer</type>
+        <name>Hammer: Charged Follow Up</name>
+        <impact>0.25</impact>
+        <element>1</element>
+        <stun>10</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_charged_follow_up_power_charge">
+        <type>hammer</type>
+        <name>Hammer: Charged Follow Up (Power Charge)</name>
+        <impact>0.55</impact>
+        <element>1</element>
+        <stun>25</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_spinning_side_smash">
+        <type>hammer</type>
+        <name>Hammer: Spinning Side Smash</name>
+        <impact>0.15</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_spinning_follow_up">
+        <type>hammer</type>
+        <name>Hammer: Spinning Follow Up</name>
+        <impact>0.55</impact>
+        <element>1</element>
+        <stun>25</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_spinning_strong_upswing">
+        <type>hammer</type>
+        <name>Hammer: Spinning Strong Upswing</name>
+        <impact>0.9</impact>
+        <element>1</element>
+        <stun>50</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_jumping_smash">
+        <type>hammer</type>
+        <name>Hammer: Jumping Smash</name>
+        <impact>0.37</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_midair_spinning_bludgeon">
+        <type>hammer</type>
+        <name>Hammer: Midair Spinning Bludgeon</name>
+        <impact>2</impact>
+        <element>5</element>
+        <stun>100</stun>
+        <exhaust>42</exhaust>
+        <sharpness_use>5</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_jumping_charge_attack">
+        <type>hammer</type>
+        <name>Hammer: Jumping Charge Attack</name>
+        <impact>0.65</impact>
+        <element>1</element>
+        <stun>40</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_jumping_charge_attack_2">
+        <type>hammer</type>
+        <name>Hammer: Jumping Charge Attack II</name>
+        <impact>0.7</impact>
+        <element>1</element>
+        <stun>45</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hammer_jumping_charge_attack_3">
+        <type>hammer</type>
+        <name>Hammer: Jumping Charge Attack III</name>
+        <impact>0.8</impact>
+        <element>1</element>
+        <stun>55</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_melee_attack">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Melee Attack</name>
+        <impact>0.3</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>30</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_jumping_reload">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Jumping Reload</name>
+        <impact>0.3</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>30</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_wyvernheart">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Wyvernheart</name>
+        <bullet>0.09</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_wyvernsnipe_hit">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Wyvernsnipe, per hit</name>
+        <bullet>0.2</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_wyvernsnipe_explosion_s_hit">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Wyvernsnipe Explosion (S), per hit</name>
+        <impact>0.38</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_wyvernsnipe_explosion_m_hit">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Wyvernsnipe Explosion (M), per hit</name>
+        <impact>0.49</impact>
+        <element>1</element>
+        <stun>35</stun>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hbg_wyvernsnipe_explosion_l_hit">
+        <type>heavy_bowgun</type>
+        <name>Heavy Bowgun: Wyvernsnipe Explosion (L), per hit</name>
+        <impact>0.81</impact>
+        <element>1</element>
+        <stun>55</stun>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_right_swing">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Right Swing</name>
+        <impact>0.27</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_left_swing">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Left Swing</name>
+        <impact>0.22</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_forward_swing">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Forward Swing</name>
+        <impact>0.28</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>20</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_backward_slam">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Backward Slam</name>
+        <impact>0.34</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_handle_poke">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Handle Poke</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_forward_slam">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Forward Slam</name>
+        <impact>0.53</impact>
+        <element>2</element>
+        <stun>27</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_double_right_swing">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Double Right Swing</name>
+        <impact>0.37</impact>
+        <element>2</element>
+        <stun>14</stun>
+        <exhaust>14</exhaust>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_performance">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Performance</name>
+        <impact>0.29</impact>
+        <element>1</element>
+        <stun>22</stun>
+        <exhaust>22</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_encore">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Encore</name>
+        <impact>0.35</impact>
+        <element>1</element>
+        <stun>27</stun>
+        <exhaust>22</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_shockwave">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Shockwave</name>
+        <impact>0.27</impact>
+        <element>1</element>
+        <stun>27</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_jumping_smash">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Jumping Smash</name>
+        <impact>0.35</impact>
+        <element>1</element>
+        <stun>20</stun>
+        <exhaust>20</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_jumping_strong_overhead_smash">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Jumping Strong Overhead Smash</name>
+        <impact>0.55</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>20</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="hh_mid_air_performance">
+        <type>hunting_horn</type>
+        <name>Hunting Horn: Mid-air Performance</name>
+        <impact>0.35</impact>
+        <element>1</element>
+        <stun>22</stun>
+        <exhaust>22</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_leaping_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Leaping Slash</name>
+        <cut>0.26</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_rising_slash_combo">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Rising Slash Combo</name>
+        <cut>0.3</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_wide_sweep">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Wide Sweep</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_overhead_smash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Overhead Smash</name>
+        <cut>0.3</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_thrust">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Thrust</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_reaping_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Reaping Slash</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_double_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Double Slash</name>
+        <cut>0.42</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_rising_slash_combo">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Rising Slash Combo</name>
+        <cut>0.45</cut>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_wide_sweep">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Wide Sweep</name>
+        <cut>0.44</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_tornado_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Tornado Slash</name>
+        <cut>0.66</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_thrust">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Thrust</name>
+        <cut>0.23</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_reaping_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Reaping Slash</name>
+        <cut>0.34</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_double_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Double Slash</name>
+        <cut>0.58</cut>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_dodge_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Dodge Slash</name>
+        <cut>0.17</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_jumping_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Jumping Slash</name>
+        <cut>0.15</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_jumping_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Jumping Slash</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_jumping_advancing_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Jumping Advancing Slash</name>
+        <cut>0.28</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_strong_jumping_advancing_slash">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Strong Jumping Advancing Slash</name>
+        <cut>0.56</cut>
+        <element>6</element>
+        <sharpness_use>6</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_kinsect_mark_target">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Kinsect (Mark Target)</name>
+        <impact>0.05</impact>
+        <element>1</element>
+        <stun>5</stun>
+        <exhaust>5</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ig_kinsect_harvest_extract">
+        <type>insect_glaive</type>
+        <name>Insect Glaive: Kinsect: Harvest Extract</name>
+        <impact>0.2</impact>
+        <element>1</element>
+        <stun>18</stun>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_mid_thrust_1">
+        <type>lance</type>
+        <name>Lance: Mid Thrust I</name>
+        <piercing>0.2</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_mid_thrust_2">
+        <type>lance</type>
+        <name>Lance: Mid Thrust II</name>
+        <piercing>0.2</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_mid_thrust_3">
+        <type>lance</type>
+        <name>Lance: Mid Thrust III</name>
+        <piercing>0.27</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_high_thrust_1">
+        <type>lance</type>
+        <name>Lance: High Thrust I</name>
+        <piercing>0.22</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_high_thrust_2">
+        <type>lance</type>
+        <name>Lance: High Thrust II</name>
+        <piercing>0.22</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_high_thrust_3">
+        <type>lance</type>
+        <name>Lance: High Thrust III</name>
+        <piercing>0.27</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_wide_sweep_1">
+        <type>lance</type>
+        <name>Lance: Wide Sweep I</name>
+        <piercing>0.2</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_wide_sweep_2">
+        <type>lance</type>
+        <name>Lance: Wide Sweep II</name>
+        <piercing>0.2</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_wide_sweep_3">
+        <type>lance</type>
+        <name>Lance: Wide Sweep III</name>
+        <piercing>0.2</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_counter_thrust">
+        <type>lance</type>
+        <name>Lance: Counter Thrust</name>
+        <piercing>0.4</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_cancel_thrust">
+        <type>lance</type>
+        <name>Lance: Cancel Thrust</name>
+        <piercing>0.22</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_guard_thrust">
+        <type>lance</type>
+        <name>Lance: Guard Thrust</name>
+        <piercing>0.2</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_dash_attack">
+        <type>lance</type>
+        <name>Lance: Dash Attack</name>
+        <piercing>0.11</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_mid_air_dash_attack">
+        <type>lance</type>
+        <name>Lance: Mid-Air Dash Attack</name>
+        <piercing>0.25</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_reverse_attack">
+        <type>lance</type>
+        <name>Lance: Reverse Attack</name>
+        <piercing>0.5</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_advancing_jump_thrust">
+        <type>lance</type>
+        <name>Lance: Advancing Jump Thrust</name>
+        <piercing>0.5</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_finishing_thrust">
+        <type>lance</type>
+        <name>Lance: Finishing Thrust</name>
+        <piercing>0.5</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_finishing_twin_thrust">
+        <type>lance</type>
+        <name>Lance: Finishing Twin Thrust</name>
+        <piercing>0.75</piercing>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_shield_attack">
+        <type>lance</type>
+        <name>Lance: Shield Attack</name>
+        <impact>0.14</impact>
+        <element>1</element>
+        <stun>27</stun>
+        <exhaust>27</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_leaping_thrust">
+        <type>lance</type>
+        <name>Lance: Leaping Thrust</name>
+        <piercing>0.24</piercing>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="lance_jumping_thrust">
+        <type>lance</type>
+        <name>Lance: Jumping Thrust</name>
+        <piercing>0.3</piercing>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lbg_melee_attack">
+        <type>light_bowgun</type>
+        <name>Light Bowgun: Melee Attack</name>
+        <impact>0.25</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>30</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lbg_jumping_reload">
+        <type>light_bowgun</type>
+        <name>Light Bowgun: Jumping Reload</name>
+        <impact>0.25</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>30</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lbg_wyvernblast_s">
+        <type>light_bowgun</type>
+        <name>Light Bowgun: Wyvernblast (S)</name>
+        <bullet>0.26</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lbg_wyvernblast_m">
+        <type>light_bowgun</type>
+        <name>Light Bowgun: Wyvernblast (M)</name>
+        <bullet>0.32</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="lbg_wyvernblast_l">
+        <type>light_bowgun</type>
+        <name>Light Bowgun: Wyvernblast (L)</name>
+        <bullet>0.49</bullet>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_step_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Step Slash</name>
+        <cut>0.24</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_thrust">
+        <type>long_sword</type>
+        <name>Long Sword: Thrust</name>
+        <cut>0.12</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_overhead_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Overhead Slash</name>
+        <cut>0.21</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_rising_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Rising Slash</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_fade_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Fade Slash</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_lateral_fade_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Lateral Fade Slash</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_jumping_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Jumping Slash</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_blade_1">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Blade I</name>
+        <cut>0.14</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_blade_2">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Blade II</name>
+        <cut>0.3</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_blade_3">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Blade III</name>
+        <cut>0.6</cut>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_roundslash">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Roundslash</name>
+        <cut>0.38</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_thrust">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Thrust</name>
+        <cut>0.42</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_helm_breaker_white_yellow_hit">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Helm Breaker (White/Yellow), per hit</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_spirit_helm_breaker_red_hit">
+        <type>long_sword</type>
+        <name>Long Sword: Spirit Helm Breaker (Red), per hit</name>
+        <cut>0.25</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_foresight_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Foresight Slash</name>
+        <cut>0.14</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_jumping_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Jumping Slash</name>
+        <cut>0.26</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_jumping_rising_slash">
+        <type>long_sword</type>
+        <name>Long Sword: Jumping Rising Slash</name>
+        <cut>0.2</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_aerial_draw_spirit_blade">
+        <type>long_sword</type>
+        <name>Long Sword: Aerial Draw Spirit Blade</name>
+        <cut>0.26</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_jumping_spirit_blade">
+        <type>long_sword</type>
+        <name>Long Sword: Jumping Spirit Blade</name>
+        <cut>0.16</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_jumping_spirit_blade_2">
+        <type>long_sword</type>
+        <name>Long Sword: Jumping Spirit Blade II</name>
+        <cut>0.2</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="ls_jumping_spirit_blade_3">
+        <type>long_sword</type>
+        <name>Long Sword: Jumping Spirit Blade III</name>
+        <cut>0.48</cut>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_morph_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Morph Slash</name>
+        <cut>0.29</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_side_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Side Slash</name>
+        <cut>0.23</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_forward_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Forward Slash</name>
+        <cut>0.19</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_rising_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Rising Slash</name>
+        <cut>0.25</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_overhead_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Overhead Slash</name>
+        <cut>0.4</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_wild_swing">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Wild Swing</name>
+        <cut>0.44</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_fade_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Fade Slash</name>
+        <cut>0.23</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_morph_sweep">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Morph Sweep</name>
+        <cut>1.25</cut>
+        <element>3</element>
+        <sharpness_use>3</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_jumping_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Jumping Slash</name>
+        <cut>0.43</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_jumping_morph_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Jumping Morph Slash</name>
+        <cut>0.35</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_axe_jumping_sweep">
+        <type>switch_axe</type>
+        <name>Switch Axe: Axe: Jumping Sweep</name>
+        <cut>0.74</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_morph_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Morph Slash</name>
+        <cut>0.23</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_downward_fade_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Downward Fade Slash</name>
+        <cut>0.45</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_overhead_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Overhead Slash</name>
+        <cut>0.29</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_right_rising_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Right Rising Slash</name>
+        <cut>0.21</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_left_rising_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Left Rising Slash</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_double_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Double Slash</name>
+        <cut>0.48</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_heavensward_flurry">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Heavensward Flurry</name>
+        <cut>0.56</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_element_discharge">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Element Discharge</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_element_discharge_bash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Element Discharge (Bash )</name>
+        <cut>0.06</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_element_discharge_finisher">
+        <type>switch_axe</type>
+        <name>Switch Axe: Element Discharge Finisher</name>
+        <cut>0.8</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_element_discharge_finisher_early_release">
+        <type>switch_axe</type>
+        <name>Switch Axe: Element Discharge Finisher (Early release)</name>
+        <cut>0.67</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_zero_sum_discharge_initial_hit">
+        <type>switch_axe</type>
+        <name>Switch Axe: Zero Sum Discharge (Initial hit)</name>
+        <cut>0.15</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_zero_sum_discharge_bash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Zero Sum Discharge (Bash )</name>
+        <cut>0.12</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_zero_sum_discharge_finisher">
+        <type>switch_axe</type>
+        <name>Switch Axe: Zero Sum Discharge Finisher</name>
+        <cut>0.96</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_jumping_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Jumping Slash</name>
+        <cut>0.35</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_jumping_element_discharge">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Jumping Element Discharge</name>
+        <cut>0.1</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_jumping_morph_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Jumping Morph Slash</name>
+        <cut>0.43</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sa_sword_jumping_rising_slash">
+        <type>switch_axe</type>
+        <name>Switch Axe: Sword: Jumping Rising Slash</name>
+        <cut>0.35</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_chop">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Chop</name>
+        <cut>0.14</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_side_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Side Slash</name>
+        <cut>0.13</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_sword_shield_combo">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Sword/Shield Combo</name>
+        <cut>0.2</cut>
+        <impact>0.1</impact>
+        <element>2</element>
+        <stun>15</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_spiral_slash_right">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Spiral Slash (Right)</name>
+        <cut>0.16</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_spiral_slash_left">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Spiral Slash (Left)</name>
+        <cut>0.16</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_spiral_slash_back">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Spiral Slash (Back)</name>
+        <cut>0.17</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_thrust">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Thrust</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_lateral_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Lateral Slash</name>
+        <cut>0.22</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_return_stroke">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Return Stroke</name>
+        <cut>0.21</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_advancing_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Advancing Slash</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_short_shield_bash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Short Shield Bash</name>
+        <impact>0.06</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_round_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Round Slash</name>
+        <cut>0.3</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_shield_attack">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Shield Attack</name>
+        <impact>0.08</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>10</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_shield_bash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Shield Bash</name>
+        <impact>0.16</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_hard_bash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Hard Bash</name>
+        <impact>0.31</impact>
+        <element>1</element>
+        <stun>30</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_sliding_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Sliding Slash</name>
+        <cut>0.45</cut>
+        <element>2</element>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_guard_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Guard Slash</name>
+        <cut>0.14</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_rising_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Rising Slash</name>
+        <cut>0.14</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_charged_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Charged Slash</name>
+        <cut>0.4</cut>
+        <impact>0.29</impact>
+        <element>2</element>
+        <stun>15</stun>
+        <exhaust>25</exhaust>
+        <sharpness_use>2</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_scaling_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Scaling Slash</name>
+        <cut>0.15</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_jumping_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Jumping Slash</name>
+        <cut>0.2</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_falling_bash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Falling Bash</name>
+        <impact>0.39</impact>
+        <element>1</element>
+        <stun>15</stun>
+        <exhaust>15</exhaust>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_jumping_rising_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Jumping Rising Slash</name>
+        <cut>0.2</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_jumping_advancing_slash">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Jumping Advancing Slash</name>
+        <cut>0.18</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+    <motion_value id="sns_helm_breaker">
+        <type>sword_and_Shield</type>
+        <name>Sword &amp; Shield: Helm Breaker</name>
+        <cut>0.2</cut>
+        <element>1</element>
+        <sharpness_use>1</sharpness_use>
+    </motion_value>
+</data>
