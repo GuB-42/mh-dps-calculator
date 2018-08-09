@@ -17,10 +17,10 @@ QColor GuiElements::elementColor(ElementType e) {
 	}
 }
 
-QBrush GuiElements::elementBrush(const double (&v)[ElementType::ELEMENT_COUNT]) {
+QBrush GuiElements::elementBrush(const double (&v)[ELEMENT_COUNT]) {
 	int ecount = 0;
 	ElementType elast = ELEMENT_COUNT;
-	for (int i = 0; i < ElementType::ELEMENT_COUNT; ++i) {
+	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (v[i] > 0.0) {
 			++ecount;
 			elast = (ElementType)i;
@@ -34,7 +34,7 @@ QBrush GuiElements::elementBrush(const double (&v)[ElementType::ELEMENT_COUNT]) 
 		QLinearGradient grad(0, 0, 10, 10);
 		grad.setSpread(QGradient::ReflectSpread);
 		double pos = 0.0;
-		for (int i = 0; i < ElementType::ELEMENT_COUNT; ++i) {
+		for (int i = 0; i < ELEMENT_COUNT; ++i) {
 			if (v[i] > 0.0) {
 				grad.setColorAt(pos, elementColor((ElementType)i));
 				pos += 1.0 / (double)(ecount - 1);
@@ -62,10 +62,10 @@ QColor GuiElements::statusColor(StatusType t) {
 	}
 }
 
-QBrush GuiElements::statusBrush(const double (&v)[StatusType::STATUS_COUNT]) {
+QBrush GuiElements::statusBrush(const double (&v)[STATUS_COUNT]) {
 	int scount = 0;
 	StatusType slast = STATUS_COUNT;
-	for (int i = 0; i < StatusType::STATUS_COUNT; ++i) {
+	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (v[i] > 0.0 && i != STATUS_STUN &&
 		    i != STATUS_EXHAUST && i != STATUS_MOUNT) {
 			++scount;
@@ -80,7 +80,7 @@ QBrush GuiElements::statusBrush(const double (&v)[StatusType::STATUS_COUNT]) {
 		QLinearGradient grad(0, 0, 10, 10);
 		grad.setSpread(QGradient::ReflectSpread);
 		double pos = 0.0;
-		for (int i = 0; i < StatusType::STATUS_COUNT; ++i) {
+		for (int i = 0; i < STATUS_COUNT; ++i) {
 			if (v[i] > 0.0 && i != STATUS_STUN &&
 			    i != STATUS_EXHAUST && i != STATUS_MOUNT) {
 				grad.setColorAt(pos, statusColor((StatusType)i));

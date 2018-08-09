@@ -3504,27 +3504,27 @@
 	<name_jp>ジャグラスアックスⅢ</name_jp>
 </translation>
 <translation>
-	<name>Jagras Rider I</name>
+	<name>Jagras Raider I</name>
 	<name_fr>Prédateur Jagras</name_fr>
 	<name_jp>ジャグラスレイダーⅠ</name_jp>
 </translation>
 <translation>
-	<name>Jagras Rider II</name>
+	<name>Jagras Raider II</name>
 	<name_fr>Prédateur Jagras II</name_fr>
 	<name_jp>ジャグラスレイダーⅡ</name_jp>
 </translation>
 <translation>
-	<name>Jagras Rider III</name>
+	<name>Jagras Raider III</name>
 	<name_fr>Prédateur Jagras III</name_fr>
 	<name_jp>ジャグラスレイダーⅢ</name_jp>
 </translation>
 <translation>
-	<name>Bazel Rider I</name>
+	<name>Bazel Raider I</name>
 	<name_fr>Prédateur Bazel</name_fr>
 	<name_jp>バゼルレイダーⅠ</name_jp>
 </translation>
 <translation>
-	<name>Bazel Rider II</name>
+	<name>Bazel Raider II</name>
 	<name_fr>Prédateur Bazel II</name_fr>
 	<name_jp>バゼルレイダーⅡ</name_jp>
 </translation>
@@ -5871,6 +5871,10 @@
 	<name>Wyvern Ignition "Impact"</name>
 	<name_jp>竜熱機関式【鋼翼】改</name_jp>
 </translation>
+<translation>
+	<name>Dante's Devil Sword</name>
+	<name_jp>ダンテの魔剣</name_jp>
+</translation>
 
 <!-- monsters -->
 
@@ -6002,6 +6006,18 @@
 <translation>
 	<name>Deviljho</name>
 	<name_jp>イビルジョー</name_jp>
+</translation>
+<translation>
+	<name>Kulve Taroth</name>
+	<name_jp>マム・タロト</name_jp>
+</translation>
+<translation>
+	<name>Lunastra</name>
+	<name_jp>ナナ・テスカトリ</name_jp>
+</translation>
+<translation>
+	<name>Behemoth</name>
+	<name_jp>ベヒーモス</name_jp>
 </translation>
 <!-- parts -->
 

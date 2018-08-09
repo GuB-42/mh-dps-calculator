@@ -62,7 +62,7 @@ bool NamedObject::readXmlName(QXmlStreamReader *xml) {
 		if (tag_name == "name") {
 			names[0] = xml->readElementText();
 			return true;
-		} else if (tag_name.startsWith("name_")) {
+		} else if (tag_name.toString().startsWith("name_")) {
 			for (int i = 0; i < LANG_COUNT; ++i) {
 				if (tag_name == tagName((Language)i)) {
 					names[i] = xml->readElementText();
