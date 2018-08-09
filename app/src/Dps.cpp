@@ -115,15 +115,18 @@ void Dps::computeNoStatus(const MonsterHitData &hit_data,
 void Dps::computeStatus(const Monster &monster,
                         const DamageData &normal_damage,
                         const DamageData &weak_damage,
-                        double defense_multiplier) {
+                        double defense_multiplier,
+                        double status_defense_multiplier,
+                        double status_hit_multiplier) {
 	killFrequency = 0.0;
 	totalStatuses = 0.0;
 	for (int sta = 0; sta < STATUS_COUNT; ++sta) {
 		statusProcRate[sta] = 0.0;
 	}
-	double subtotal = raw + fixed + totalElements;
+	double subtotal = (raw + fixed + totalElements) * defense_multiplier;
 	for (int retry = 0; retry < 3; ++retry) {
-		double real_total = (subtotal + totalStatuses) * defense_multiplier;
+		double real_total =
+			subtotal + totalStatuses * status_defense_multiplier;
 		totalStatuses = 0.0;
 		if (monster.hitPoints > 0.0	&& real_total > 0.0) {
 			killFrequency = real_total / monster.hitPoints;
@@ -138,6 +141,7 @@ void Dps::computeStatus(const Monster &monster,
 					                              1.0 / killFrequency,
 					                              sta == STATUS_POISON);
 					if (hits > 0.0) {
+						hits *= status_hit_multiplier;
 						statusProcRate[sta] = hits;
 						if (monster.tolerances[sta]->damage > 0.0) {
 							double mod_hits = killFrequency *
@@ -179,7 +183,9 @@ void Dps::compute(const Target &target, const Damage &damage)
 			monster_dps.computeStatus(*tmonster->monster,
 			                          *damage.data[MODE_NORMAL_NORMAL],
 			                          *damage.data[MODE_NORMAL_WEAK_SPOT],
-			                          tmonster->defenseMultiplier);
+			                          tmonster->defenseMultiplier,
+			                          tmonster->statusDefenseMultiplier,
+			                          tmonster->statusHitMultiplier);
 			combine(monster_dps, monster_weight);
 		} else {
 			double normal_weight = 0.0;
@@ -205,12 +211,16 @@ void Dps::compute(const Target &target, const Damage &damage)
 			normal_dps.computeStatus(*tmonster->monster,
 			                         *damage.data[MODE_NORMAL_NORMAL],
 			                         *damage.data[MODE_NORMAL_WEAK_SPOT],
-			                         tmonster->defenseMultiplier);
+			                         tmonster->defenseMultiplier,
+			                         tmonster->statusDefenseMultiplier,
+			                         tmonster->statusHitMultiplier);
 			combine(normal_dps, normal_weight);
 			enraged_dps.computeStatus(*tmonster->monster,
 			                          *damage.data[MODE_ENRAGED_NORMAL],
 			                          *damage.data[MODE_ENRAGED_WEAK_SPOT],
-			                          tmonster->defenseMultiplier);
+			                          tmonster->defenseMultiplier,
+			                          tmonster->statusDefenseMultiplier,
+			                          tmonster->statusHitMultiplier);
 			combine(enraged_dps, enraged_weight);
 		}
 	}

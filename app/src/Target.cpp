@@ -22,7 +22,8 @@ void TargetZone::print(QTextStream &stream, QString indent) const {
 }
 
 TargetMonster::TargetMonster() :
-	defenseMultiplier(0.0), monster(NULL)
+	defenseMultiplier(0.0), statusDefenseMultiplier(0.0),
+	statusHitMultiplier(0.0), monster(NULL)
 {
 }
 
@@ -32,6 +33,8 @@ TargetMonster::~TargetMonster() {
 
 void TargetMonster::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- defense multiplier: " << defenseMultiplier << endl;
+	stream << indent << "- status defense multiplier: " << statusDefenseMultiplier << endl;
+	stream << indent << "- status hit multiplier: " << statusHitMultiplier << endl;
 	stream << indent << "- monster: " << monster->getAllNames() << endl;
 	foreach(const TargetZone *targetZone, targetZones) {
 		stream << indent << "- zone" << endl;
@@ -42,6 +45,8 @@ void TargetMonster::print(QTextStream &stream, QString indent) const {
 Target::SubTarget::SubTarget() :
 	weight(1.0),
 	hasDefenseMultiplier(false), defenseMultiplier(0.0),
+	hasStatusDefenseMultiplier(false), statusDefenseMultiplier(0.0),
+	hasStatusHitMultiplier(false), statusHitMultiplier(0.0),
 	hasEnragedRatio(false), enragedRatio(0.0)
 {
 }
@@ -57,6 +62,12 @@ void Target::SubTarget::print(QTextStream &stream, QString indent) const {
 	}
 	if (hasDefenseMultiplier) {
 		stream << indent << "- defense multiplier: " << defenseMultiplier << endl;
+	}
+	if (hasStatusDefenseMultiplier) {
+		stream << indent << "- status defense multiplier: " << statusDefenseMultiplier << endl;
+	}
+	if (hasStatusHitMultiplier) {
+		stream << indent << "- status hit multiplier: " << statusHitMultiplier << endl;
 	}
 	if (!monsterId.isNull()) {
 		stream << indent << "- monster: " << monsterId << endl;
@@ -86,6 +97,12 @@ void Target::SubTarget::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "monster_defense_multiplier") {
 				defenseMultiplier = xml->readElementText().toDouble();
 				hasDefenseMultiplier = true;
+			} else if (tag_name == "monster_status_defense_multiplier") {
+				statusDefenseMultiplier = xml->readElementText().toDouble();
+				hasStatusDefenseMultiplier = true;
+			} else if (tag_name == "status_hit_multiplier") {
+				statusHitMultiplier = xml->readElementText().toDouble();
+				hasStatusHitMultiplier = true;
 			} else if (tag_name == "monster_name") {
 				monsterId = xml->readElementText();
 			} else if (tag_name == "part_name") {
@@ -138,6 +155,14 @@ void Target::readXml(QXmlStreamReader *xml) {
 				rootSubTarget.defenseMultiplier =
 					xml->readElementText().toDouble();
 				rootSubTarget.hasDefenseMultiplier = true;
+			} else if (tag_name == "monster_status_defense_multiplier") {
+				rootSubTarget.statusDefenseMultiplier =
+					xml->readElementText().toDouble();
+				rootSubTarget.hasStatusDefenseMultiplier = true;
+			} else if (tag_name == "status_hit_multiplier") {
+				rootSubTarget.statusHitMultiplier =
+					xml->readElementText().toDouble();
+				rootSubTarget.hasStatusHitMultiplier = true;
 			} else if (tag_name == "monster_name") {
 				rootSubTarget.monsterId = xml->readElementText();
 			} else if (tag_name == "part_name") {
@@ -160,6 +185,8 @@ void Target::readXml(QXmlStreamReader *xml) {
 struct SubTargetLeaf {
 	double weight;
 	double defenseMultiplier;
+	double statusDefenseMultiplier;
+	double statusHitMultiplier;
 	double enragedRatio;
 	QString monsterId;
 	QString partId;
@@ -172,6 +199,12 @@ static void make_flat_subs(QVector<SubTargetLeaf> *subs,
 	data.weight *= st->weight;
 	if (st->hasDefenseMultiplier) {
 		data.defenseMultiplier = st->defenseMultiplier;
+	}
+	if (st->hasStatusDefenseMultiplier) {
+		data.statusDefenseMultiplier = st->statusDefenseMultiplier;
+	}
+	if (st->hasStatusHitMultiplier) {
+		data.statusHitMultiplier = st->statusHitMultiplier;
 	}
 	if (st->hasEnragedRatio) {
 		data.enragedRatio = st->enragedRatio;
@@ -338,6 +371,8 @@ void Target::matchMonsters(const QVector<Monster *> &monsters) {
 	SubTargetLeaf data = {
 		1.0,
 		Constants::instance()->monsterDefenseMultiplier,
+		Constants::instance()->monsterDefenseMultiplier,
+		1.0,
 		Constants::instance()->enragedRatio,
 		QString(),
 		QString(),
@@ -382,6 +417,10 @@ void Target::matchMonsters(const QVector<Monster *> &monsters) {
 							target_monster = new TargetMonster();
 							target_monster->defenseMultiplier =
 								subt.defenseMultiplier;
+							target_monster->statusDefenseMultiplier =
+								subt.statusDefenseMultiplier;
+							target_monster->statusHitMultiplier =
+								subt.statusHitMultiplier;
 							target_monster->monster = monster;
 							tmonsters.append(target_monster);
 						}

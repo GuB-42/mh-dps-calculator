@@ -3,11 +3,13 @@
 
 #include <QClipboard>
 #include <QProgressBar>
+#include <QLibraryInfo>
 
 #include "ResultTableModel.h"
 #include "BuffListModel.h"
 #include "BuffGroupListModel.h"
 #include "Computer.h"
+#include "ComputeDataDialog.h"
 #include "../MainData.h"
 #include "../Target.h"
 #include "../Profile.h"
@@ -68,6 +70,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(ui->calculateDps, SIGNAL(clicked()), this, SLOT(calculate()));
 	connect(ui->action_Quit, SIGNAL(triggered()), this, SLOT(close()));
 	connect(ui->action_Copy, SIGNAL(triggered()), this, SLOT(copy()));
+	connect(ui->action_ShowParameters, SIGNAL(triggered()), this, SLOT(showParameters()));
 
 	connect(ui->addBuff, SIGNAL(clicked()), this, SLOT(addBuff()));
 	connect(ui->removeBuff, SIGNAL(clicked()), this, SLOT(removeBuff()));
@@ -166,9 +169,6 @@ QVector<int> MainWindow::getDecorationSlots() const {
 	for (int i = 0; i < ui->level1Slots->value(); ++i) ret.append(1);
 	return ret;
 }
-
-#include <QFileDialog>
-#include <QLibraryInfo>
 
 static void switchTranslatorQt(QTranslator& translator, const QString& filename)
 {
@@ -331,6 +331,14 @@ void MainWindow::copy() {
 		}
 		QApplication::clipboard()->
 			setMimeData(ui->tableView->model()->mimeData(indexes));
+	}
+}
+
+void MainWindow::showParameters() {
+	if (mainData && getProfile() && getTarget()) {
+		ComputeDataDialog *cdd =
+			new ComputeDataDialog(getProfile(), getTarget(), this);
+		cdd->show();
 	}
 }
 

@@ -40,6 +40,7 @@ public slots:
 	void calculationProgress(int min, int max, int value);
 	void calculationFinished(const QVector<BuildWithDps *> &data);
 	void copy();
+	void showParameters();
 	void addBuff();
 	void removeBuff();
 

@@ -24,6 +24,8 @@ struct TargetZone {
 
 struct TargetMonster {
 	double defenseMultiplier;
+	double statusDefenseMultiplier;
+	double statusHitMultiplier;
 	const Monster *monster;
 	QVector<TargetZone *> targetZones;
 
@@ -37,6 +39,10 @@ struct Target : public NamedObject {
 		double weight;
 		bool hasDefenseMultiplier;
 		double defenseMultiplier;
+		bool hasStatusDefenseMultiplier;
+		double statusDefenseMultiplier;
+		bool hasStatusHitMultiplier;
+		double statusHitMultiplier;
 		bool hasEnragedRatio;
 		double enragedRatio;
 		QString monsterId;

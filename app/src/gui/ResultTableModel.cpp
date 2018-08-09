@@ -189,7 +189,7 @@ QVariant ResultTableModel::headerData(int section, Qt::Orientation orientation, 
 
 QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 	if (!index.isValid()) return QVariant();
-	if (index.row() < 0 && index.row() >= resultData.count()) return QVariant();
+	if (index.row() < 0 || index.row() >= resultData.count()) return QVariant();
 
 	BuildWithDps *bwd = resultData[index.row()];
 	const Dps &dps = bwd->dps;

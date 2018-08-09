@@ -34,7 +34,9 @@ struct Dps {
 	void computeStatus(const Monster &monster,
 	                   const DamageData &normal_damage,
 	                   const DamageData &weak_damage,
-	                   double defense_multiplier);
+	                   double defense_multiplier,
+	                   double status_defense_multiplier,
+	                   double status_hit_multiplier);
 
 	void compute(const Target &target, const Damage &damage);
 

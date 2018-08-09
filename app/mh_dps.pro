@@ -35,6 +35,8 @@ src/main.cpp \
 src/gui/BuffGroupListModel.cpp \
 src/gui/BuffListModel.cpp \
 src/gui/ColumnMenu.cpp \
+src/gui/ComputeDataDialog.cpp \
+src/gui/ComputeDataModel.cpp \
 src/gui/Computer.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainApplication.cpp \
@@ -65,6 +67,8 @@ src/enums.h \
 src/gui/BuffGroupListModel.h \
 src/gui/BuffListModel.h \
 src/gui/ColumnMenu.h \
+src/gui/ComputeDataDialog.h \
+src/gui/ComputeDataModel.h \
 src/gui/Computer.h \
 src/gui/GuiElements.h \
 src/gui/MainApplication.h \
@@ -73,6 +77,7 @@ src/gui/MonsterModeMenu.h \
 src/gui/ResultTableModel.h
 
 FORMS += \
+src/gui/ComputeDataDialog.ui \
 src/gui/MainWindow.ui
 
 TRANSLATIONS += \

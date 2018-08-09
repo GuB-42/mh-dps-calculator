@@ -247,6 +247,7 @@
     </widget>
     <addaction name="menu_Columns"/>
     <addaction name="menu_MonsterMode"/>
+    <addaction name="action_ShowParameters"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -274,6 +275,11 @@
   <action name="actionShow_All">
    <property name="text">
     <string>Show &amp;All</string>
+   </property>
+  </action>
+  <action name="action_ShowParameters">
+   <property name="text">
+    <string>Show &amp;parameters</string>
    </property>
   </action>
  </widget>

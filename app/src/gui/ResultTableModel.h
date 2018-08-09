@@ -3,7 +3,6 @@
 
 #include <QAbstractTableModel>
 #include <QVector>
-#include <QColor>
 #include "../NamedObject.h"
 #include "../enums.h"
 
