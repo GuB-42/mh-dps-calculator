@@ -1,5 +1,6 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
 	<file>../translations/fr.qm</file>
+	<file>../resources/appicon.png</file>
 </qresource>
 </RCC>

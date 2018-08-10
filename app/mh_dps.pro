@@ -100,3 +100,5 @@ for(tsfile, TRANSLATIONS) {
 }
 
 RESOURCES += src/gui/resources.qrc
+
+RC_FILE = src/resources/winapp.rc

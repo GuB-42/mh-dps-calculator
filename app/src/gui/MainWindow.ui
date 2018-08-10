@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>DPS calculator</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/resources/appicon.png</normaloff>:/resources/appicon.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -267,19 +271,9 @@
     <string>&amp;Quit</string>
    </property>
   </action>
-  <action name="action_Show_All">
-   <property name="text">
-    <string>Show &amp;All</string>
-   </property>
-  </action>
-  <action name="actionShow_All">
-   <property name="text">
-    <string>Show &amp;All</string>
-   </property>
-  </action>
   <action name="action_ShowParameters">
    <property name="text">
-    <string>Show &amp;parameters</string>
+    <string>Show &amp;parameters...</string>
    </property>
   </action>
  </widget>
@@ -295,6 +289,8 @@
    <header>src/gui/MonsterModeMenu.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
