@@ -170,6 +170,14 @@ QVector<int> MainWindow::getDecorationSlots() const {
 	return ret;
 }
 
+QVector<int> MainWindow::getUsedSlots() const {
+	QVector<int> ret;
+	for (int i = 0; i < -ui->level3Slots->value(); ++i) ret.append(3);
+	for (int i = 0; i < -ui->level2Slots->value(); ++i) ret.append(2);
+	for (int i = 0; i < -ui->level1Slots->value(); ++i) ret.append(1);
+	return ret;
+}
+
 static void switchTranslatorQt(QTranslator& translator, const QString& filename)
 {
 	qApp->removeTranslator(&translator);
@@ -289,6 +297,7 @@ void MainWindow::calculate() {
 		params.items = mainData->items;
 		params.buffLevels = buffListModel->getBuffLevels();
 		params.decorationSlots = getDecorationSlots();
+		params.usedSlots = getUsedSlots();
 		params.ignoreAugmentations = ui->ignoreAugmentations->isChecked();
 		params.ignoreWeaponSlots = ui->ignoreWeaponSlots->isChecked();
 		params.finalOnly = ui->finalOnly->isChecked();

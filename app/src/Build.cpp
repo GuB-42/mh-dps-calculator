@@ -100,20 +100,7 @@ void Build::addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level)
 	}
 }
 
-void Build::addItem(const Item *item, bool take_slot) {
-	if (take_slot && item->decorationLevel > 0) {
-		int best_idx = -1;
-		int slot_lvl = -1;
-		for (int i = 0; i < decorationSlots.count(); ++i) {
-			if (decorationSlots[i] >= item->decorationLevel) {
-				if (best_idx < 0 || decorationSlots[i] <= slot_lvl) {
-					best_idx = i;
-					slot_lvl = decorationSlots[i];
-				}
-			}
-		}
-		if (best_idx >= 0) decorationSlots.remove(best_idx);
-	}
+void Build::addItem(const Item *item) {
 	foreach(int s, item->decorationSlots) decorationSlots << s;
 	if (item->weaponSlotUpgrade) {
 		if (weaponSlotUpgrade) {
@@ -182,11 +169,63 @@ void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) cons
 	while (!useful_items.isEmpty()) {
 		Build *new_build = new Build(*this);
 		new_build->usedItems.reserve(new_build->usedItems.count() + 1);
-		new_build->addItem(useful_items.last(), true);
+		new_build->useSlot(useful_items.last()->decorationLevel);
+		new_build->addItem(useful_items.last());
 		pout->append(new_build);
 		new_build->fillSlots(pout, useful_items);
 		useful_items.pop_back();
 	}
+}
+
+bool Build::useSlot(int slot_level) {
+	int best_idx = -1;
+	int best_idx_level = -1;
+	int best_idx_count = 0;
+	for (int i = 0; i < decorationSlots.count(); ++i) {
+		if (decorationSlots[i] >= slot_level) {
+			if (best_idx_count == 0 || decorationSlots[i] < best_idx_level) {
+				best_idx = i;
+				best_idx_count = 1;
+				best_idx_level = decorationSlots[i];
+			} else if (decorationSlots[i] == best_idx_level) {
+				best_idx = i;
+				++best_idx_count;
+			}
+		}
+	}
+	if (best_idx >= 0) {
+		if (slot_level == weaponSlotUpgrade && best_idx_count <= 1) {
+			weaponSlotUpgrade = 0;
+		}
+		decorationSlots.remove(best_idx);
+		return true;
+	} else {
+		return false;
+	}
+}
+
+bool Build::limitSlots(QVector<int> limit) {
+	bool downgrade = false;
+	QHash<int, int> counts;
+	foreach (int s, limit) {
+		QHash<int, int>::iterator it = counts.find(s);
+		if (it == counts.end()) counts[s] = 1; else ++*it;
+	}
+	int move_i = 0;
+	for (int i = 0; i < decorationSlots.count(); ++i) {
+		QHash<int, int>::iterator it = counts.find(decorationSlots[i]);
+		if (it != counts.end() && *it) {
+			--*it;
+			decorationSlots[move_i++] = decorationSlots[i];
+		} else {
+			if (decorationSlots[i] == weaponSlotUpgrade) {
+				downgrade = true;
+				weaponSlotUpgrade = 0;
+			}
+		}
+	}
+	decorationSlots.resize(move_i);
+	return downgrade;
 }
 
 void Build::fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const {
@@ -212,7 +251,7 @@ void Build::fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *
 	while (!useful_items.isEmpty()) {
 		Build *new_build = new Build(*this);
 		new_build->usedItems.reserve(new_build->usedItems.count() + 1);
-		new_build->addItem(useful_items.last(), false);
+		new_build->addItem(useful_items.last());
 		new_build->weaponAugmentations -=
 			useful_items.last()->weaponAugmentationLevel;
 		pout->append(new_build);

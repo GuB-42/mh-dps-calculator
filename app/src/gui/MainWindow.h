@@ -33,6 +33,7 @@ public:
 	const BuffGroup *getBuffGroup() const;
 
 	QVector<int> getDecorationSlots() const;
+	QVector<int> getUsedSlots() const;
 	void setDataLanguage(NamedObject::Language lang);
 
 public slots:

@@ -158,6 +158,75 @@
     </message>
 </context>
 <context>
+    <name>GuiElements</name>
+    <message>
+        <location filename="../gui/GuiElements.cpp" line="+49"/>
+        <source>Fire</source>
+        <translation type="unfinished">Feu</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Thunder</source>
+        <translation type="unfinished">Foudre</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Ice</source>
+        <translation type="unfinished">Glace</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Dragon</source>
+        <translation type="unfinished">Dragon</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Water</source>
+        <translation type="unfinished">Eau</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+72"/>
+        <source>, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-16"/>
+        <source>Poison</source>
+        <translation type="unfinished">Poison</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Paralysis</source>
+        <translation type="unfinished">Paralysie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sleep</source>
+        <translation type="unfinished">Sommeil</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stun</source>
+        <translation type="unfinished">KO</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Blast</source>
+        <translation type="unfinished">Explosion</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Exhaust</source>
+        <translation type="unfinished">Fatigue</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Mount</source>
+        <translation type="unfinished">Monte</translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="../gui/MainWindow.ui" line="+40"/>

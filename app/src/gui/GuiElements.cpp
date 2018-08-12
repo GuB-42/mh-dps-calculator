@@ -44,6 +44,28 @@ QBrush GuiElements::elementBrush(const double (&v)[ELEMENT_COUNT]) {
 	}
 }
 
+QString GuiElements::elementName(ElementType e) {
+	switch (e) {
+	case ELEMENT_FIRE: return tr("Fire");
+	case ELEMENT_THUNDER: return tr("Thunder");
+	case ELEMENT_ICE: return tr("Ice");
+	case ELEMENT_DRAGON: return tr("Dragon");
+	case ELEMENT_WATER: return tr("Water");
+	default: return QString();
+	}
+}
+
+QString GuiElements::elementToolTip(const double (&v)[ELEMENT_COUNT]) {
+	QString ret;
+	for (int i = 0; i < ELEMENT_COUNT; ++i) {
+		if (v[i] > 0.0) {
+			if (!ret.isEmpty()) ret += tr(", ");
+			ret += elementName((ElementType)i);
+		}
+	}
+	return ret;
+}
+
 QColor GuiElements::statusColor(StatusType t) {
 	const int full = 255;
 	const int mid3 = 256 - 16;
@@ -91,3 +113,27 @@ QBrush GuiElements::statusBrush(const double (&v)[STATUS_COUNT]) {
 	}
 }
 
+QString GuiElements::statusName(StatusType t) {
+	switch (t) {
+	case STATUS_POISON: return tr("Poison");
+	case STATUS_PARALYSIS: return tr("Paralysis");
+	case STATUS_SLEEP: return tr("Sleep");
+	case STATUS_STUN: return tr("Stun");
+	case STATUS_BLAST: return tr("Blast");
+	case STATUS_EXHAUST: return tr("Exhaust");
+	case STATUS_MOUNT: return tr("Mount");
+	default: return QString();
+	}
+}
+
+QString GuiElements::statusToolTip(const double (&v)[STATUS_COUNT]) {
+	QString ret;
+	for (int i = 0; i < STATUS_COUNT; ++i) {
+		if (v[i] > 0.0 && i != STATUS_STUN &&
+		    i != STATUS_EXHAUST && i != STATUS_MOUNT) {
+			if (!ret.isEmpty()) ret += tr(", ");
+			ret += statusName((StatusType)i);
+		}
+	}
+	return ret;
+}

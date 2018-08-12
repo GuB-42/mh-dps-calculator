@@ -76,13 +76,25 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QSpinBox" name="level3Slots"/>
+           <widget class="QSpinBox" name="level3Slots">
+            <property name="minimum">
+             <number>-99</number>
+            </property>
+           </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QSpinBox" name="level2Slots"/>
+           <widget class="QSpinBox" name="level2Slots">
+            <property name="minimum">
+             <number>-99</number>
+            </property>
+           </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QSpinBox" name="level1Slots"/>
+           <widget class="QSpinBox" name="level1Slots">
+            <property name="minimum">
+             <number>-99</number>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>

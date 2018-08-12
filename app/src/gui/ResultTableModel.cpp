@@ -291,6 +291,16 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 		} else {
 			return QVariant();
 		}
+	} else if (role == Qt::ToolTipRole) {
+		if (index.column() == COLUMN_ELEMENT_DPS ||
+		    index.column() == COLUMN_DMG_ELEMENT) {
+			return GuiElements::elementToolTip(bwd->damage.data[monsterMode]->elements);
+		} else if (index.column() == COLUMN_STATUS_DPS ||
+		           index.column() == COLUMN_DMG_STATUS) {
+			return GuiElements::statusToolTip(bwd->damage.data[monsterMode]->statuses);
+		} else {
+			return QVariant();
+		}
 	} else {
 		return QVariant();
 	}

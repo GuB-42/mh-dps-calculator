@@ -30,6 +30,7 @@ public:
 		QVector<Item *> items;
 		QVector<BuffWithLevel> buffLevels;
 		QVector<int> decorationSlots;
+		QVector<int> usedSlots;
 		bool ignoreAugmentations;
 		bool ignoreWeaponSlots;
 		bool finalOnly;

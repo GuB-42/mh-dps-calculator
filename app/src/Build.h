@@ -44,10 +44,12 @@ struct Build {
 	int getBuffLevel(const BuffGroup *group) const;
 	int addBuffLevel(const BuffGroup *group, int level);
 	void addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level);
-	void addItem(const Item *item, bool take_slot = false);
+	void addItem(const Item *item);
 	void addWeapon(const Weapon *weapon);
 	void getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const;
 	void fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) const;
+	bool useSlot(int slot_level);
+	bool limitSlots(QVector<int> limit);
 	void fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const;
 	bool isBuffUseful(const BuffGroup *group) const;
 	QVector<Item *> listUsefulItems(const QVector<Item *> &items) const;

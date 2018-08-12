@@ -15,7 +15,10 @@ Computer::Computer(QObject *parent) : QObject(parent) {
 
 struct MakeBuilds
 {
-	explicit MakeBuilds(bool ia) : ignoreAugmentations(ia) {};
+	explicit MakeBuilds(bool ia, QVector<int> us,
+	                    bool ls, QVector<int> sl) :
+		ignoreAugmentations(ia), usedSlots(us),
+		limitSlots(ls), slotLimit(sl) {};
 	void operator()(Computer::BuildFutureElt &elt) {
 		QVector<Build *> augmented_builds;
 		foreach(Build *b, elt.builds) {
@@ -24,13 +27,33 @@ struct MakeBuilds
 				b->fillWeaponAugmentations(&augmented_builds, elt.useful_items);
 			}
 		}
-		elt.builds.clear();
+		QVector<Build *> slotted_builds;
 		foreach(Build *b, augmented_builds) {
-			elt.builds << b;
-			b->fillSlots(&elt.builds, elt.useful_items);
+			bool enough_slots = true;
+			foreach(int s, usedSlots) {
+				enough_slots = b->useSlot(s);
+				if (!enough_slots) break;
+			}
+			if (enough_slots) {
+				bool downgrade = false;
+				if (limitSlots) downgrade = b->limitSlots(slotLimit);
+				if (!downgrade) {
+					slotted_builds << b;
+					b->fillSlots(&slotted_builds, elt.useful_items);
+				}
+			}
+		}
+		elt.builds.clear();
+		foreach(Build *b, slotted_builds) {
+			if (b->weaponSlotUpgrade == 0) {
+				elt.builds.append(b);
+			}
 		}
 	}
 	bool ignoreAugmentations;
+	QVector<int> usedSlots;
+	bool limitSlots;
+	QVector<int> slotLimit;
 };
 
 void Computer::compute(const Parameters &params) {
@@ -49,29 +72,19 @@ void Computer::compute(const Parameters &params) {
 		BuildFutureElt elt;
 		Build *build = new Build;
 		build->addWeapon(weapon);
-		if (params.ignoreWeaponSlots) {
-			build->decorationSlots.clear();
-		}
 		build->buffLevels = params.buffLevels;
 		build->decorationSlots << params.decorationSlots;
 		elt.useful_items = build->listUsefulItems(params.items);
-		if (params.ignoreWeaponSlots) {
-			QVector<Item *>::iterator it = elt.useful_items.begin();
-			while (it != elt.useful_items.end()) {
-				if ((*it)->buffRefs.isEmpty()) {
-					it = elt.useful_items.erase(it);
-				} else {
-					++it;
-				}
-			}
-		}
 		elt.builds.append(build);
 		new_future.data.append(elt);
 	}
 
 	new_future.future =
 		QtConcurrent::map(new_future.data,
-		                  MakeBuilds(params.ignoreAugmentations));
+		                  MakeBuilds(params.ignoreAugmentations,
+		                             params.usedSlots,
+		                             params.ignoreWeaponSlots,
+		                             params.decorationSlots));
 	buildFutures.append(new_future);
 	QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
 	watcher->setFuture(new_future.future);
@@ -147,7 +160,7 @@ void Computer::resultFutureProgress(int value) {
 	if (!resultFutures.isEmpty()) {
 		int min = resultFutures.last().future.progressMinimum();
 		int max = resultFutures.last().future.progressMaximum();
-		int offset = (max - min) / 5;
+		int offset = qMax((max - min) / 5, 1);
 		emit progress(min, max + offset, value + offset);
 	}
 }
