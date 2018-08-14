@@ -53,16 +53,6 @@ Constants::Constants() {
 	elementBuffCaps = bcaps;
 	statusBuffCaps = bcaps;
 
-	QHash<QString, double> crit_adj;
-	crit_adj["great_sword"] = 0.8;
-	crit_adj["sword_and_shield"] = 1.4;
-	crit_adj["dual_blades"] = 1.4;
-	crit_adj["light_bowgun"] = 1.4;
-	crit_adj["heavy_bowgun"] = 1.4;
-	crit_adj["bow"] = 1.4;
-	elementCritAdjustment = crit_adj;
-	statusCritAdjustment = crit_adj;
-
 	enragedRatio = 0.4;
 	monsterDefenseMultiplier = 0.5;
 	sharpenPeriod = 150.0;

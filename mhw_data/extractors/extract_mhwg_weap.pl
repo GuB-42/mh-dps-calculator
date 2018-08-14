@@ -21,6 +21,8 @@ my $weapon_type = "";
 my %sharpness = ();
 my %sharpness_plus = ();
 my $fill_sharpness_plus = 0;
+my @ammos = ();
+my @notes = ();
 my @slots = ();
 
 sub process_data_row_bowgun {
@@ -146,7 +148,6 @@ sub process_data_row_melee {
 		$xml_writer->endTag() if ($has_phial);
 	}
 
-
 	my $has_sharpness = 0;
 	my $sharpness_plus_val = 0;
 	for my $sharpness_color ("red", "orange", "yellow", "green", "blue", "white", "purple") {
@@ -166,6 +167,42 @@ sub process_data_row_melee {
 	}
 	$xml_writer->dataElement("plus", $sharpness_plus_val) if ($sharpness_plus_val);
 	$xml_writer->endTag() if ($has_sharpness);
+
+	my $has_ammos = 0;
+	for my $a (@ammos) {
+		unless ($has_ammos) {
+			$xml_writer->startTag("ammos");
+			$has_ammos = 1;
+		}
+		$xml_writer->emptyTag("ammo_ref", "id" => $a);
+	}
+	if ($extra_column) {
+		if ($data_row[4] =~ /(通常|拡散|放射)\s*(\d+)/g) {
+			my %shell_map = (
+				"通常" => "normal",
+				"拡散" => "wide",
+				"放射" => "long"
+			);
+			if ($shell_map{$1}) {
+				unless ($has_ammos) {
+					$xml_writer->startTag("ammos");
+					$has_ammos = 1;
+				}
+				$xml_writer->emptyTag("ammo_ref", "id" => "shell_${shell_map{$1}}_$2");
+			}
+		}
+	}
+	$xml_writer->endTag() if ($has_ammos);
+
+	my $has_notes = 0;
+	for my $n (@notes) {
+		unless ($has_notes) {
+			$xml_writer->startTag("notes");
+			$has_notes = 1;
+		}
+		$xml_writer->emptyTag($n);
+	}
+	$xml_writer->endTag() if ($has_notes);
 
 	my $has_slots = 0;
 	while ($data_row[5 + $extra_column] =~ m/([①②③])/g) {
@@ -191,7 +228,7 @@ sub process_data_row {
 	return unless defined $data_row[1];
 
 	$xml_writer->startTag("weapon");
-	$xml_writer->dataElement("type", $weapon_type);
+	$xml_writer->emptyTag("weapon_type_ref", "id" => $weapon_type);
 
 	my $creatable = 0;
 	my $name = $data_row[1];
@@ -242,12 +279,30 @@ sub start {
 		%sharpness_plus = ();
 		$fill_sharpness_plus = 0;
 		$is_final = 0;
+		@ammos = ();
+		@notes = ();
 		@slots = ();
 	} elsif (lc($tag) eq "span") {
 		$last_span_class = $attr->{"class"};
 		$text_acc_span = "";
-		if ($attr->{"style"} && $attr->{"style"} eq "background-color:#eec3e6;") {
-			$is_final = 1;
+		if ($attr->{"style"}) {
+			if ($attr->{"style"} eq "background-color:#eec3e6;") {
+				$is_final = 1;
+			} elsif ($cur_col == 4) {
+				my %note_map = (
+					"color:#f3f3f3;" => "white",
+					"color:#c778c7;" => "purple",
+					"color:#e0002a;" => "red",
+					"color:blue;" => "blue",
+					"color:#00cc00;" => "green",
+					"color:#eeee00;" => "yellow",
+					"color:#99f8f8;" => "light_blue",
+					"color:#ef810f;" => "orange"
+				);
+				if ($note_map{lc($attr->{"style"})}) {
+					push @notes, $note_map{lc($attr->{"style"})};
+				}
+			}
 		}
 	}
 }
@@ -291,6 +346,21 @@ sub end {
 				} else {
 					$sharpness{$color{$1}} = length($text_acc_span);
 				}
+			} elsif ($last_span_class eq "c_g b" || $last_span_class eq "c_r b") {
+				my %coating_map = (
+					"接" => "coating_close_range",
+					"強" => "coating_power",
+					"麻" => "coating_paralysis",
+					"毒" => "coating_poison",
+					"睡" => "coating_sleep",
+					"爆" => "coating_blast"
+				);
+				my $t = $text_acc_span;
+				utf8::decode($t);
+				if ($coating_map{$t}) {
+					push @ammos, $coating_map{$t};
+				}
+				undef $last_span_class;
 			}
 		}
 	}

@@ -3,10 +3,9 @@
 #include <QTextStream>
 #include "FoldedBuffs.h"
 #include "Weapon.h"
+#include "WeaponType.h"
 #include "Profile.h"
 #include "Constants.h"
-// FIXME : to remove later,if not needed
-#include "ConditionRatios.h"
 
 DamageData::DamageData() :
 	cut(0.0), impact(0.0), piercing(0.0), bullet(0.0), fixed(0.0),
@@ -103,10 +102,12 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 			xaffinity * buffs.normalBuffs[BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER];
 		status_affinity_multiplier = (1.0 - xaffinity) +
 			xaffinity * buffs.normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER];
-		element_affinity_multiplier = 1.0 +
-			(element_affinity_multiplier - 1.0) * weapon.elementCritAdjustment;
-		status_affinity_multiplier = 1.0 +
-			(status_affinity_multiplier - 1.0) * weapon.statusCritAdjustment;
+		if (weapon.type) {
+			element_affinity_multiplier = 1.0 +
+				(element_affinity_multiplier - 1.0) * weapon.type->elementCritAdjustment;
+			status_affinity_multiplier = 1.0 +
+				(status_affinity_multiplier - 1.0) * weapon.type->statusCritAdjustment;
+		}
 	} else if (xaffinity < 0.0) {
 		raw_affinity_multiplier = (1.0 + xaffinity) -
 			xaffinity * Constants::instance()->feebleHitMultiplier;

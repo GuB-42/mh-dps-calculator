@@ -27,7 +27,9 @@ sub process_start
 			"elements" => {},
 			"sharpness" => {},
 			"phial_elements" => {},
-			"slots" => []
+			"slots" => [],
+			"ammos" => [],
+			"notes" => []
 		};
 	} elsif ($xml_stack[0] eq "translation") {
 		$cur_translation = {};
@@ -46,8 +48,14 @@ sub process_val
 		unless ($xml_stack[0] eq "element" ||
 		        $xml_stack[0] eq "sharpness" ||
 		        $xml_stack[0] eq "phial" ||
-		        $xml_stack[0] eq "slots") {
-			$cur_weapon->{$xml_stack[0]} = $val;
+		        $xml_stack[0] eq "slots" ||
+		        $xml_stack[0] eq "ammos" ||
+		        $xml_stack[0] eq "notes") {
+			if ($xml_stack[0] eq "weapon_type_ref") {
+				$cur_weapon->{$xml_stack[0]} = $xml_stack_attr[0]{"id"};
+			} else {
+		        $cur_weapon->{$xml_stack[0]} = $val;
+		    }
 		}
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "element") {
 		$cur_weapon->{"elements"}{$xml_stack[0]} = $val;
@@ -63,6 +71,10 @@ sub process_val
 		}
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "slots" && $xml_stack[0] eq "slot") {
 		push @{$cur_weapon->{"slots"}}, $val;
+	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "ammos" && $xml_stack[0] eq "ammo_ref") {
+		push @{$cur_weapon->{"ammos"}}, $xml_stack_attr[0]{"id"};
+	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "notes") {
+		push @{$cur_weapon->{"notes"}}, $xml_stack[0];
 	} elsif ($xml_stack[0] eq "translation") {
 		push @translations, $cur_translation;
 		for my $k (keys %{$cur_translation}) {
@@ -118,7 +130,7 @@ sub merge_weapons
 	for my $k (keys %{$wep_b}) {
 		push @name_list, $wep_b->{$k} if ($k =~ /^name/);
 	}
-	my $names = $wep_a->{"type"} . ": " . (join " / ", @name_list);
+	my $names = $wep_a->{"weapon_type_ref"} . ": " . (join " / ", @name_list);
 
 	for my $k ("affinity", "awakened", "slots") {
 		if (defined $wep_a->{$k} && !defined $wep_b->{$k}) {
@@ -147,9 +159,9 @@ sub merge_weapons
 						print STDERR "$names: $k/$e mismatch: <null> != $wep_b->{$k}{$e}\n";
 					}
 				}
-			} elsif ($k eq "slots") {
-				my @sa = (sort { $b <=> $a } @{$wep_a->{$k}});
-				my @sb = (sort { $b <=> $a } @{$wep_a->{$k}});
+			} elsif ($k eq "slots" || $k eq "ammos" || $k eq "notes") {
+				my @sa = (sort { $b cmp $a } @{$wep_a->{$k}});
+				my @sb = (sort { $b cmp $a } @{$wep_b->{$k}});
 				my $mismatch = 0;
 				if (@sa == @sb) {
 					for (my $i = 0; $i < @sa; ++$i) {
@@ -306,17 +318,17 @@ sub print_weapon
 	my ($weapon) = @_;
 
 	my @ordered_keys =
-		("type", "name", "name_fr", "name_jp",
+		("weapon_type_ref", "name", "name_fr", "name_jp",
 		 "inflated_attack", "attack",
 		 "affinity", "awakened", "elements", "elderseal", "defense",
-		 "phial", "phial_elements", "sharpness", "slots",
+		 "phial", "phial_elements", "sharpness", "ammos", "notes", "slots",
 		 "rare", "creatable", "final");
 
 	$xml_writer->startTag("weapon");
 	my %used_keys = ();
 	for my $k (@ordered_keys) {
 		next unless (defined $weapon->{$k});
-		if ($k eq "phial" ) {
+		if ($k eq "phial") {
 			$xml_writer->startTag("phial");
 			$xml_writer->emptyTag($weapon->{$k});
 			$xml_writer->endTag();
@@ -355,6 +367,22 @@ sub print_weapon
 				}
 				$xml_writer->endTag();
 			}
+		} elsif ($k eq "ammos") {
+			if (@{$weapon->{$k}}) {
+				$xml_writer->startTag("ammos");
+				for my $s (@{$weapon->{$k}}) {
+					$xml_writer->emptyTag("ammo_ref", "id" => $s);
+				}
+				$xml_writer->endTag();
+			}
+		} elsif ($k eq "notes") {
+			if (@{$weapon->{$k}}) {
+				$xml_writer->startTag("notes");
+				for my $s (@{$weapon->{$k}}) {
+					$xml_writer->emptyTag($s);
+				}
+				$xml_writer->endTag();
+			}
 		} elsif ($k eq "slots") {
 			if (@{$weapon->{$k}}) {
 				$xml_writer->startTag("slots");
@@ -363,6 +391,8 @@ sub print_weapon
 				}
 				$xml_writer->endTag();
 			}
+		} elsif ($k eq "weapon_type_ref") {
+			$xml_writer->emptyTag($k, "id" => $weapon->{$k});
 		} else {
 			$xml_writer->dataElement($k, $weapon->{$k});
 		}
@@ -385,21 +415,3 @@ for my $wkey (sort { $groups{$a}->{"index"} <=> $groups{$b}->{"index"} } (keys %
 	print_weapon($groups{$wkey});
 }
 $xml_writer->endTag();
-
-#    <weapon>
-#        <type>switch_axe</type>
-#        <name>Improved Steel Axe II</name>
-#        <inflated_attack>455</inflated_attack>
-#        <attack>130</attack>
-#        <phial>
-#            <inflated_poison>300</inflated_poison>
-#            <poison>30</poison>
-#        </phial>
-#        <sharpness>
-#            <red>60</red>
-#            <orange>50</orange>
-#            <yellow>80</yellow>
-#            <green>60</green>
-#        </sharpness>
-#        <rare>4</rare>
-#    </weapon>

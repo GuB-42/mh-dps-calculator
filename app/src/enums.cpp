@@ -123,3 +123,17 @@ const char *toString(MonsterMode m) {
 	default: return "???";
 	}
 }
+
+const char *toString(Note n) {
+	switch (n) {
+	case NOTE_WHITE: return "white";
+	case NOTE_PURPLE: return "purple";
+	case NOTE_RED: return "red";
+	case NOTE_BLUE: return "blue";
+	case NOTE_GREEN: return "green";
+	case NOTE_YELLOW: return "yellow";
+	case NOTE_LIGHT_BLUE: return "light_blue";
+	case NOTE_ORANGE: return "orange";
+	default:  return "???";
+	}
+}

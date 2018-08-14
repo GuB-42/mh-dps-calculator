@@ -7,9 +7,12 @@
 
 class QTextStream;
 class QXmlStreamReader;
+struct WeaponType;
 
 struct MotionValue : public NamedObject {
-	QString type;
+	WeaponType *weaponType;
+	QString weaponTypeRefId;
+
 	double cut;
 	double impact;
 	double piercing;

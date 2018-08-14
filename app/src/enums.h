@@ -118,6 +118,19 @@ enum MonsterMode {
 };
 const char *toString(MonsterMode m);
 
+enum Note {
+	NOTE_WHITE,
+	NOTE_PURPLE,
+	NOTE_RED,
+	NOTE_BLUE,
+	NOTE_GREEN,
+	NOTE_YELLOW,
+	NOTE_LIGHT_BLUE,
+	NOTE_ORANGE,
+	NOTE_COUNT
+};
+const char *toString(Note n);
+
 Q_DECLARE_METATYPE(StatusType);
 Q_DECLARE_METATYPE(ElementType);
 Q_DECLARE_METATYPE(NormalBuff);
@@ -127,5 +140,6 @@ Q_DECLARE_METATYPE(Condition);
 Q_DECLARE_METATYPE(PhialType);
 Q_DECLARE_METATYPE(SharpnessLevel);
 Q_DECLARE_METATYPE(MonsterMode);
+Q_DECLARE_METATYPE(Note);
 
 #endif

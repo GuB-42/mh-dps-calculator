@@ -7,9 +7,18 @@
 
 class QTextStream;
 class QXmlStreamReader;
+struct WeaponType;
+struct Ammo;
+
+struct WeaponAmmoRef {
+	WeaponAmmoRef() : ammo(NULL) {};
+	QString id;
+	Ammo *ammo;
+};
 
 struct Weapon : public NamedObject {
-	QString type;
+	WeaponType *type;
+	QString weaponTypeRefId;
 	double attack;
 	double affinity;
 	bool awakened;
@@ -23,9 +32,9 @@ struct Weapon : public NamedObject {
 	QVector<int> decorationSlots;
 	bool final;
 	int rare;
-	double elementCritAdjustment;
-	double statusCritAdjustment;
 	int augmentations;
+	QVector<Note> notes;
+	QVector<WeaponAmmoRef> ammoRefs;
 
 	Weapon();
 	void print(QTextStream &stream, QString indent = QString()) const;

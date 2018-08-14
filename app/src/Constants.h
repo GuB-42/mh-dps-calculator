@@ -32,8 +32,6 @@ struct Constants {
 	double elementSharpnessMultipliers[SHARPNESS_COUNT];
 	QVector<BuffCap> elementBuffCaps;
 	QVector<BuffCap> statusBuffCaps;
-	QHash<QString, double> elementCritAdjustment;
-	QHash<QString, double> statusCritAdjustment;
 
 	const ConditionRatios *conditionRatios;
 	double enragedRatio;

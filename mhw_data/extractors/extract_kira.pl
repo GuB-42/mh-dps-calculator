@@ -14,11 +14,13 @@ my $weapon_type = "";
 my $name_key = "name";
 my %sharpness = ();
 my %sharpness_plus = ();
+my @ammos = ();
+my @notes = ();
 my @slots = ();
 
 sub process_data_row {
 	$xml_writer->startTag("weapon");
-	$xml_writer->dataElement("type", $weapon_type);
+	$xml_writer->emptyTag("weapon_type_ref", "id" => $weapon_type);
 
 	my $creatable = 0;
 	my $name = $data_row[0];
@@ -119,6 +121,33 @@ sub process_data_row {
 		$xml_writer->endTag()
 	}
 
+	my $has_ammos = 0;
+	for my $a (@ammos) {
+		unless ($has_ammos) {
+			$xml_writer->startTag("ammos");
+			$has_ammos = 1;
+		}
+		$xml_writer->emptyTag("ammo_ref", "id" => $a);
+	}
+	if ($data_row[3] =~ /(Normal|Wide|Long)\s+Lv(\d+)/g) {
+		unless ($has_ammos) {
+			$xml_writer->startTag("ammos");
+			$has_ammos = 1;
+		}
+		$xml_writer->emptyTag("ammo_ref", "id" => ("shell_" . lc($1) . "_$2"));
+	}
+	$xml_writer->endTag() if ($has_ammos);
+
+	my $has_notes = 0;
+	for my $n (@notes) {
+		unless ($has_notes) {
+			$xml_writer->startTag("notes");
+			$has_notes = 1;
+		}
+		$xml_writer->emptyTag($n);
+	}
+	$xml_writer->endTag() if ($has_notes);
+
 	my $has_slots = 0;
 	for my $slot_level (@slots) {
 		unless ($has_slots) {
@@ -155,6 +184,8 @@ sub start {
 		@data_row = ();
 		%sharpness = ();
 		%sharpness_plus = ();
+		@ammos = ();
+		@notes = ();
 		@slots = ();
 	} elsif (lc($tag) eq "div") {
 		my $class = $attr->{"class"};
@@ -168,6 +199,35 @@ sub start {
 					}
 					$sharpness_plus{$sharpness_color} = $1;
 				}
+			}
+		}
+	} elsif (lc($tag) eq "span") {
+		my $class = $attr->{"class"};
+		if ($class) {
+			my %coating_map = (
+				"coating-1" => "coating_close_range",
+				"coating-2" => "coating_power",
+				"coating-3" => "coating_paralysis",
+				"coating-4" => "coating_poison",
+				"coating-5" => "coating_sleep",
+				"coating-6" => "coating_blast"
+			);
+			if ($coating_map{$class}) {
+				push @ammos, $coating_map{$class};
+			}
+
+			my %note_map = (
+				"note-1" => "white",
+				"note-2" => "purple",
+				"note-3" => "red",
+				"note-4" => "blue",
+				"note-5" => "green",
+				"note-6" => "yellow",
+				"note-7" => "light_blue",
+				"note-8" => "orange"
+			);
+			if ($note_map{$class}) {
+				push @notes, $note_map{$class};
 			}
 		}
 	} elsif (lc($tag) eq "i") {

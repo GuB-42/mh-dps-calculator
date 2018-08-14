@@ -154,7 +154,7 @@ sub process_data_row {
 	my $mv_data = {
 		"name" => $name,
 		"id" => $id,
-		"type" => $weapon_type_id{$weapon_type}
+		"weapon_type_ref" => $weapon_type_id{$weapon_type}
 	};
 	$mv_data->{"cut"} = $cut / 100 if ($cut);
 	$mv_data->{"impact"} = $impact / 100 if ($impact);
@@ -247,9 +247,15 @@ for my $file (@ARGV) {
 
 for my $mv (@motion_values) {
 	$xml_writer->startTag("motion_value", "id" => $mv->{"id"});
-	for my $k ("type", "name", "cut", "impact", "piercing", "bullet",
+	for my $k ("weapon_type_ref", "name", "cut", "impact", "piercing", "bullet",
 	           "element", "stun", "exhaust", "sharpness_use") {
-		$xml_writer->dataElement($k, $mv->{$k}) if (defined $mv->{$k});
+		if (defined $mv->{$k}) {
+			if ($k eq  "weapon_type_ref") {
+				$xml_writer->emptyTag($k, "id" => $mv->{$k})
+			} else {
+				$xml_writer->dataElement($k, $mv->{$k})
+			}
+		}
 	}
 	$xml_writer->endTag();
 }

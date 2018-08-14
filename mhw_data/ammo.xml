@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <ammo id="coating_close_range">
+    	<name>Close range</name>
+    </ammo>
+    <ammo id="coating_power">
+    	<name>Power</name>
+    </ammo>
+    <ammo id="coating_paralysis">
+    	<name>Paralysis</name>
+    </ammo>
+    <ammo id="coating_poison">
+    	<name>Poison</name>
+    </ammo>
+    <ammo id="coating_sleep">
+    	<name>Sleep</name>
+    </ammo>
+    <ammo id="coating_blast">
+    	<name>Blast</name>
+    </ammo>
+    <ammo id="shell_normal_1">
+    	<name>Normal lv1</name>
+    </ammo>
+    <ammo id="shell_normal_2">
+    	<name>Normal lv2</name>
+    </ammo>
+    <ammo id="shell_normal_3">
+    	<name>Normal lv3</name>
+    </ammo>
+    <ammo id="shell_normal_4">
+    	<name>Normal lv4</name>
+    </ammo>
+    <ammo id="shell_long_1">
+    	<name>Long lv1</name>
+    </ammo>
+    <ammo id="shell_long_2">
+    	<name>Long lv2</name>
+    </ammo>
+    <ammo id="shell_long_3">
+    	<name>Long lv3</name>
+    </ammo>
+    <ammo id="shell_long_4">
+    	<name>Long lv4</name>
+    </ammo>
+    <ammo id="shell_wide_1">
+    	<name>Wide lv1</name>
+    </ammo>
+    <ammo id="shell_wide_2">
+    	<name>Wide lv2</name>
+    </ammo>
+    <ammo id="shell_wide_3">
+    	<name>Wide lv3</name>
+    </ammo>
+    <ammo id="shell_wide_4">
+    	<name>Wide lv4</name>
+    </ammo>
+</data>

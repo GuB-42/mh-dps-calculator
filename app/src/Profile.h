@@ -12,6 +12,7 @@ class QTextStream;
 class QXmlStreamReader;
 struct ConditionRatios;
 struct MotionValue;
+struct WeaponType;
 
 struct MotionValueRef {
 	MotionValueRef() : multiplier(1.0), rawMultiplier(1.0) { }
@@ -78,7 +79,8 @@ private:
 };
 
 struct Profile : public NamedObject {
-	QString type;
+	WeaponType *weaponType;
+	QString weaponTypeRefId;
 	QVector<Pattern *> patterns;
 	double sharpenPeriod;
 

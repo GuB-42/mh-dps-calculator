@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<weapon_type id="great_sword">
+		<name>Great sword</name>
+		<main_attack_type>cut</main_attack_type>
+		<element_crit_adjustment>0.8</element_crit_adjustment>
+		<status_crit_adjustment>0.8</status_crit_adjustment>
+	</weapon_type>
+	<weapon_type id="long_sword">
+		<name>Long sword</name>
+		<main_attack_type>cut</main_attack_type>
+	</weapon_type>
+	<weapon_type id="sword_and_shield">
+		<name>Sword &amp; shield</name>
+		<main_attack_type>cut</main_attack_type>
+		<element_crit_adjustment>1.4</element_crit_adjustment>
+		<status_crit_adjustment>1.4</status_crit_adjustment>
+	</weapon_type>
+	<weapon_type id="dual_blades">
+		<name>Dual blades</name>
+		<main_attack_type>cut</main_attack_type>
+		<element_crit_adjustment>1.4</element_crit_adjustment>
+		<status_crit_adjustment>1.4</status_crit_adjustment>
+	</weapon_type>
+	<weapon_type id="hammer">
+		<name>Hammer</name>
+		<main_attack_type>impact</main_attack_type>
+	</weapon_type>
+	<weapon_type id="hunting_horn">
+		<name>Hunting horn</name>
+		<main_attack_type>impact</main_attack_type>
+	</weapon_type>
+	<weapon_type id="lance">
+		<name>Lance</name>
+		<main_attack_type>cut</main_attack_type>
+	</weapon_type>
+	<weapon_type id="gunlance">
+		<name>Gunlance</name>
+		<main_attack_type>cut</main_attack_type>
+	</weapon_type>
+	<weapon_type id="switch_axe">
+		<name>Switch axe</name>
+		<main_attack_type>cut</main_attack_type>
+	</weapon_type>
+	<weapon_type id="charge_blade">
+		<name>Charge blade</name>
+		<main_attack_type>cut</main_attack_type>
+	</weapon_type>
+	<weapon_type id="insect_glaive">
+		<name>Insect glaive</name>
+		<main_attack_type>cut</main_attack_type>
+	</weapon_type>
+	<weapon_type id="light_bowgun">
+		<name>Light_bowgun</name>
+		<main_attack_type>bullet</main_attack_type>
+		<element_crit_adjustment>1.4</element_crit_adjustment>
+		<status_crit_adjustment>1.4</status_crit_adjustment>
+	</weapon_type>
+	<weapon_type id="heavy_bowgun">
+		<name>Heavy bowgun</name>
+		<main_attack_type>bullet</main_attack_type>
+		<element_crit_adjustment>1.4</element_crit_adjustment>
+		<status_crit_adjustment>1.4</status_crit_adjustment>
+	</weapon_type>
+	<weapon_type id="bow">
+		<name>Bow</name>
+		<main_attack_type>bullet</main_attack_type>
+		<element_crit_adjustment>1.4</element_crit_adjustment>
+		<status_crit_adjustment>1.4</status_crit_adjustment>
+	</weapon_type>
+<data>

@@ -2,8 +2,10 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "WeaponType.h"
 
 MotionValue::MotionValue() :
+	weaponType(NULL),
 	cut(0.0),
 	impact(0.0),
 	piercing(0.0),
@@ -36,6 +38,12 @@ MotionValue::MotionValue() :
 
 void MotionValue::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
+	stream << indent << "- weapon_type: ";
+	if (weaponType) {
+		stream << weaponType->id << endl;
+	} else {
+		stream << "<null, " << weaponTypeRefId << ">" << endl;
+	}
 	stream << indent << "- cut: " << cut << endl;
 	stream << indent << "- impact: " << impact << endl;
 	stream << indent << "- piercing: " << piercing << endl;
@@ -80,8 +88,9 @@ void MotionValue::readXml(QXmlStreamReader *xml) {
 			QStringRef tag_name = xml->name();
 			if (readXmlName(xml)) {
 				; // name
-			} else if (tag_name == "type") {
-				type = xml->readElementText();
+			} else if (tag_name == "weapon_type_ref") {
+				weaponTypeRefId = xml->attributes().value("id").toString();
+				xml->skipCurrentElement();
 			} else if (tag_name == "cut") {
 				cut = xml->readElementText().toDouble();
 			} else if (tag_name == "impact") {

@@ -5,6 +5,7 @@
 #include "../ConditionRatios.h"
 #include "../Constants.h"
 #include "../Monster.h"
+#include "../WeaponType.h"
 
 ComputeDataModel::ComputeDataModel(const Profile *p, const Target *t,
                                    QObject *parent) :
@@ -35,8 +36,13 @@ ComputeDataModel::ComputeDataModel(const Profile *p, const Target *t,
 		foreach(const TargetZone *zone, target_monster->targetZones) {
 			total_weight += zone->weight;
 			ratios[CONDITION_ENRAGED] += zone->weight *	zone->enragedRatio;
-			if (p->type == "hammer" || p->type == "hunting_horn") {
+			if (p->weaponType && p->weaponType->mainAttackType == "impact") {
 				if (zone->hitData->impact >
+				    Constants::instance()->rawWeakSpotThreshold) {
+					ratios[CONDITION_WEAK_SPOT] += zone->weight;
+				}
+			} else if (p->weaponType && p->weaponType->mainAttackType == "bullet") {
+				if (zone->hitData->bullet >
 				    Constants::instance()->rawWeakSpotThreshold) {
 					ratios[CONDITION_WEAK_SPOT] += zone->weight;
 				}

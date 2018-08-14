@@ -2,6 +2,7 @@
 #include "Constants.h"
 #include "ConditionRatios.h"
 #include "MotionValue.h"
+#include "WeaponType.h"
 
 #include <QDebug>
 #include <QMap>
@@ -248,7 +249,9 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 	}
 }
 
-Profile::Profile() : sharpenPeriod(0.0), localRatios(NULL) {
+Profile::Profile() :
+	weaponType(NULL), sharpenPeriod(0.0), localRatios(NULL)
+{
 }
 
 Profile::~Profile() {
@@ -258,7 +261,12 @@ Profile::~Profile() {
 
 void Profile::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
-	stream << indent << "- type: " << type << endl;
+	stream << indent << "- weapon_type: ";
+	if (weaponType) {
+		stream << weaponType->id << endl;
+	} else {
+		stream << "<null, " << weaponTypeRefId << ">" << endl;
+	}
 	stream << indent << "- sharpen_period: " << sharpenPeriod << endl;
 	foreach(const Pattern *pattern, patterns) {
 		stream << indent << "- pattern" << endl;
@@ -279,8 +287,9 @@ void Profile::readXml(QXmlStreamReader *xml) {
 			QStringRef tag_name = xml->name();
 			if (readXmlName(xml)) {
 				; // name
-			} else if (tag_name == "type") {
-				type = xml->readElementText();
+			} else if (tag_name == "weapon_type_ref") {
+				weaponTypeRefId = xml->attributes().value("id").toString();
+				xml->skipCurrentElement();
 			} else if (tag_name == "rate") {
 				glob_rate = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpen_period") {

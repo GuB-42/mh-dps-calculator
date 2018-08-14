@@ -12,6 +12,7 @@ QT = core gui xml concurrent
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 SOURCES += \
+src/Ammo.cpp \
 src/BuffGroup.cpp \
 src/BuffWithCondition.cpp \
 src/Build.cpp \
@@ -30,6 +31,7 @@ src/NamedObject.cpp \
 src/Profile.cpp \
 src/Target.cpp \
 src/Weapon.cpp \
+src/WeaponType.cpp \
 src/enums.cpp \
 src/main.cpp \
 src/gui/BuffGroupListModel.cpp \
@@ -45,6 +47,7 @@ src/gui/MonsterModeMenu.cpp \
 src/gui/ResultTableModel.cpp
 
 HEADERS += \
+src/Ammo.h \
 src/BuffGroup.h \
 src/BuffWithCondition.h \
 src/Build.h \
@@ -63,6 +66,7 @@ src/NamedObject.h \
 src/Profile.h \
 src/Target.h \
 src/Weapon.h \
+src/WeaponType.h \
 src/enums.h \
 src/gui/BuffGroupListModel.h \
 src/gui/BuffListModel.h \

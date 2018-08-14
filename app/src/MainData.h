@@ -7,6 +7,8 @@
 
 class QTextStream;
 class QXmlStreamReader;
+struct WeaponType;
+struct Ammo;
 struct Monster;
 struct Weapon;
 struct BuffGroup;
@@ -17,6 +19,10 @@ struct MotionValue;
 struct BuffSetBonus;
 
 struct MainData {
+	QVector<WeaponType *> weaponTypes;
+	QHash<QString, WeaponType *> weaponTypeHash;
+	QVector<Ammo *> ammos;
+	QHash<QString, Ammo *> ammoHash;
 	QVector<Monster *> monsters;
 	QVector<Weapon *> weapons;
 	QVector<BuffGroup *> buffGroups;

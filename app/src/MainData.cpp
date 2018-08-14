@@ -1,4 +1,6 @@
 #include "MainData.h"
+#include "WeaponType.h"
+#include "Ammo.h"
 #include "Monster.h"
 #include "Weapon.h"
 #include "BuffGroup.h"
@@ -11,6 +13,8 @@
 #include <QXmlStreamReader>
 
 MainData::~MainData() {
+	foreach(WeaponType *weapon_type, weaponTypes) delete weapon_type;
+	foreach(Ammo *ammo, ammos) delete ammo;
 	foreach(Monster *monster, monsters) delete monster;
 	foreach(Weapon *weapon, weapons) delete weapon;
 	foreach(BuffGroup *buffGroup, buffGroups) delete buffGroup;
@@ -22,6 +26,14 @@ MainData::~MainData() {
 }
 
 void MainData::print(QTextStream &stream, QString indent) const {
+	foreach(const WeaponType *weapon_type, weaponTypes) {
+		stream << indent << "[weapon type]" << endl;
+		weapon_type->print(stream, indent + "\t");
+	}
+	foreach(const Ammo *ammo, ammos) {
+		stream << indent << "[ammo]" << endl;
+		ammo->print(stream, indent + "\t");
+	}
 	foreach(const Monster *monster, monsters) {
 		stream << indent << "[monster]" << endl;
 		monster->print(stream, indent + "\t");
@@ -61,7 +73,21 @@ void MainData::readXml(QXmlStreamReader *xml) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
 			QStringRef tag_name = xml->name();
-			if (tag_name == "monster") {
+			if (tag_name == "weapon_type") {
+				WeaponType *weapon_type = new WeaponType;
+				weapon_type->readXml(xml);
+				weaponTypes.append(weapon_type);
+				if (!weapon_type->id.isNull()) {
+					weaponTypeHash[weapon_type->id] = weapon_type;
+				}
+			} else if (tag_name == "ammo") {
+				Ammo *ammo = new Ammo;
+				ammo->readXml(xml);
+				ammos.append(ammo);
+				if (!ammo->id.isNull()) {
+					ammoHash[ammo->id] = ammo;
+				}
+			} else if (tag_name == "monster") {
 				Monster *monster = new Monster;
 				monster->readXml(xml);
 				monsters.append(monster);
@@ -115,6 +141,16 @@ void MainData::readXml(QXmlStreamReader *xml) {
 }
 
 void MainData::matchData() {
+	foreach(Weapon *weapon, weapons) {
+		QHash<QString, WeaponType *>::const_iterator itt =
+			weaponTypeHash.find(weapon->weaponTypeRefId);
+		if (itt != weaponTypeHash.end()) weapon->type = *itt;
+		for (QVector<WeaponAmmoRef>::iterator it = weapon->ammoRefs.begin();
+		     it != weapon->ammoRefs.end(); ++it) {
+			QHash<QString, Ammo *>::const_iterator ita = ammoHash.find(it->id);
+			if (ita != ammoHash.end()) it->ammo = *ita;
+		}
+	}
 	foreach(BuffSetBonus *bsb, buffSetBonuses) {
 		for (QVector<BuffSetBonus::Level>::iterator it = bsb->levels.begin();
 		     it != bsb->levels.end(); ++it) {
@@ -141,7 +177,15 @@ void MainData::matchData() {
 	foreach(Target *target, targets) {
 		target->matchMonsters(monsters);
 	}
+	foreach(MotionValue *mv, motionValues) {
+		QHash<QString, WeaponType *>::const_iterator itt =
+			weaponTypeHash.find(mv->weaponTypeRefId);
+		if (itt != weaponTypeHash.end()) mv->weaponType = *itt;
+	}
 	foreach(Profile *profile, profiles) {
+		QHash<QString, WeaponType *>::const_iterator itt =
+			weaponTypeHash.find(profile->weaponTypeRefId);
+		if (itt != weaponTypeHash.end()) profile->weaponType = *itt;
 		foreach(Pattern *pattern, profile->patterns) {
 			pattern->applyMotionValues(motionValueHash);
 		}

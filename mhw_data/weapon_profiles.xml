@@ -2,7 +2,7 @@
 <data>
 	<weapon_profile>
 		<name>Charge Blade</name>
-		<type>charge_blade</type>
+		<weapon_type_ref id="charge_blade" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>150.0</period>
@@ -18,7 +18,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Dual Blades</name>
-		<type>dual_blades</type>
+		<weapon_type_ref id="dual_blades" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>150.0</period>
@@ -34,7 +34,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Great Sword</name>
-		<type>great_sword</type>
+		<weapon_type_ref id="great_sword" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -52,7 +52,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Hammer</name>
-		<type>hammer</type>
+		<weapon_type_ref id="hammer" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -70,7 +70,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Insect Glaive</name>
-		<type>insect_glaive</type>
+		<weapon_type_ref id="insect_glaive" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -88,7 +88,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Lance</name>
-		<type>lance</type>
+		<weapon_type_ref id="lance" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -106,7 +106,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Sword &amp; Shield</name>
-		<type>sword_and_shield</type>
+		<weapon_type_ref id="sword_and_shield" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -124,7 +124,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Long Sword</name>
-		<type>long_sword</type>
+		<weapon_type_ref id="long_sword" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
@@ -142,7 +142,7 @@
 	</weapon_profile>
 	<weapon_profile>
 		<name>Switch Axe</name>
-		<type>switch_axe</type>
+		<weapon_type_ref id="switch_axe" />
 		<pattern>
 			<rate>1.0</rate>
 			<period>10.0</period>
