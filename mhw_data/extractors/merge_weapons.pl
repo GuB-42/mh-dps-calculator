@@ -307,6 +307,16 @@ for my $k (keys %groups) {
 		for my $tk (keys %{$translation_map{"name"}{$acc->{"name"}}}) {
 			$acc->{$tk} = $translation_map{"name"}{$acc->{"name"}}{$tk};
 		}
+	} else {
+		for my $ntk (keys %translation_map) {
+			if (defined $acc->{$ntk} &&
+			    defined $translation_map{$ntk}->{$acc->{$ntk}}) {
+				for my $tk (keys %{$translation_map{$ntk}{$acc->{$ntk}}}) {
+					$acc->{$tk} = $translation_map{$ntk}{$acc->{$ntk}}{$tk};
+				}
+				last;
+			}
+		}
 	}
 	$groups{$k} = $acc;
 }

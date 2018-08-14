@@ -398,7 +398,7 @@ QMimeData *ResultTableModel::mimeData(const QModelIndexList &indexes) const {
 
 	if (indexes.count() == 1) {
 		if (!mimeData) mimeData = new QMimeData();
-		mimeData->setText(data(indexes[0]).toString().toUtf8());
+		mimeData->setText(data(indexes[0]).toString());
 	}
 	return mimeData;
 }

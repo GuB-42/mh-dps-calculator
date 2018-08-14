@@ -25776,6 +25776,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name>Empress Bow</name>
         <name_jp>エンプレスアロー</name_jp>
         <inflated_attack>216</inflated_attack>
         <attack>180</attack>
@@ -25795,6 +25796,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name>Empress Bow "Blaze"</name>
         <name_jp>エンプレスアロー・炎妃</name_jp>
         <inflated_attack>216</inflated_attack>
         <attack>180</attack>
@@ -25815,6 +25817,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name>Empress Bow "Ruin"</name>
         <name_jp>エンプレスアロー・滅尽</name_jp>
         <inflated_attack>228</inflated_attack>
         <attack>190</attack>
@@ -25836,6 +25839,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name>Empress Bow "Styx"</name>
         <name_jp>エンプレスアロー・冥灯</name_jp>
         <inflated_attack>216</inflated_attack>
         <attack>180</attack>
@@ -25970,6 +25974,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Empress Alma</name>
         <name_jp>エンプレスアルマ</name_jp>
         <inflated_attack>648</inflated_attack>
         <attack>180</attack>
@@ -25997,6 +26002,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Empress Alma "Blaze"</name>
         <name_jp>エンプレスアルマ・炎妃</name_jp>
         <inflated_attack>648</inflated_attack>
         <attack>180</attack>
@@ -26025,6 +26031,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Empress Alma "Ruin"</name>
         <name_jp>エンプレスアルマ・滅尽</name_jp>
         <inflated_attack>684</inflated_attack>
         <attack>190</attack>
@@ -26052,6 +26059,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Empress Alma "Styx"</name>
         <name_jp>エンプレスアルマ・冥灯</name_jp>
         <inflated_attack>648</inflated_attack>
         <attack>180</attack>
@@ -26158,6 +26166,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name>Empress Daggers</name>
         <name_jp>エンプレスダガー</name_jp>
         <inflated_attack>252</inflated_attack>
         <attack>180</attack>
@@ -26182,6 +26191,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name>Empress Daggers "Blaze"</name>
         <name_jp>エンプレスダガー・炎妃</name_jp>
         <inflated_attack>252</inflated_attack>
         <attack>180</attack>
@@ -26207,6 +26217,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name>Empress Daggers "Ruin"</name>
         <name_jp>エンプレスダガー・滅尽</name_jp>
         <inflated_attack>266</inflated_attack>
         <attack>190</attack>
@@ -26231,6 +26242,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name>Empress Daggers "Styx"</name>
         <name_jp>エンプレスダガー・冥灯</name_jp>
         <inflated_attack>252</inflated_attack>
         <attack>180</attack>
@@ -26335,6 +26347,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="great_sword" />
+        <name>Empress Galea</name>
         <name_jp>エンプレスガレア</name_jp>
         <inflated_attack>864</inflated_attack>
         <attack>180</attack>
@@ -26359,6 +26372,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="great_sword" />
+        <name>Empress Galea "Blaze"</name>
         <name_jp>エンプレスガレア・炎妃</name_jp>
         <inflated_attack>864</inflated_attack>
         <attack>180</attack>
@@ -26384,6 +26398,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="great_sword" />
+        <name>Empress Galea "Ruin"</name>
         <name_jp>エンプレスガレア・滅尽</name_jp>
         <inflated_attack>912</inflated_attack>
         <attack>190</attack>
@@ -26408,6 +26423,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="great_sword" />
+        <name>Empress Galea "Styx"</name>
         <name_jp>エンプレスガレア・冥灯</name_jp>
         <inflated_attack>864</inflated_attack>
         <attack>180</attack>
@@ -26546,6 +26562,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="gunlance" />
+        <name>Empress Howl</name>
         <name_jp>エンプレスハウル</name_jp>
         <inflated_attack>437</inflated_attack>
         <attack>190</attack>
@@ -26572,6 +26589,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="gunlance" />
+        <name>Empress Howl "Blaze"</name>
         <name_jp>エンプレスハウル・炎妃</name_jp>
         <inflated_attack>437</inflated_attack>
         <attack>190</attack>
@@ -26599,6 +26617,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="gunlance" />
+        <name>Empress Howl "Ruin"</name>
         <name_jp>エンプレスハウル・滅尽</name_jp>
         <inflated_attack>460</inflated_attack>
         <attack>200</attack>
@@ -26625,6 +26644,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="gunlance" />
+        <name>Empress Howl "Styx"</name>
         <name_jp>エンプレスハウル・冥灯</name_jp>
         <inflated_attack>437</inflated_attack>
         <attack>190</attack>
@@ -26731,6 +26751,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hammer" />
+        <name>Empress Mace</name>
         <name_jp>エンプレスメイス</name_jp>
         <inflated_attack>936</inflated_attack>
         <attack>180</attack>
@@ -26755,6 +26776,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hammer" />
+        <name>Empress Mace "Blaze"</name>
         <name_jp>エンプレスメイス・炎妃</name_jp>
         <inflated_attack>936</inflated_attack>
         <attack>180</attack>
@@ -26780,6 +26802,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hammer" />
+        <name>Empress Mace "Ruin"</name>
         <name_jp>エンプレスメイス・滅尽</name_jp>
         <inflated_attack>988</inflated_attack>
         <attack>190</attack>
@@ -26804,6 +26827,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hammer" />
+        <name>Empress Mace "Styx"</name>
         <name_jp>エンプレスメイス・冥灯</name_jp>
         <inflated_attack>936</inflated_attack>
         <attack>180</attack>
@@ -26877,6 +26901,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name>Empress Cannon</name>
         <name_jp>エンプレスカノン</name_jp>
         <inflated_attack>285</inflated_attack>
         <attack>190</attack>
@@ -26887,6 +26912,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name>Empress Cannon "Blaze"</name>
         <name_jp>エンプレスカノン・炎妃</name_jp>
         <inflated_attack>285</inflated_attack>
         <attack>190</attack>
@@ -26898,6 +26924,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name>Empress Cannon "Ruin"</name>
         <name_jp>エンプレスカノン・滅尽</name_jp>
         <inflated_attack>300</inflated_attack>
         <attack>200</attack>
@@ -26908,6 +26935,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name>Empress Cannon "Styx"</name>
         <name_jp>エンプレスカノン・冥灯</name_jp>
         <inflated_attack>285</inflated_attack>
         <attack>190</attack>
@@ -27014,6 +27042,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name>Empress Roar</name>
         <name_jp>エンプレスドラム</name_jp>
         <inflated_attack>798</inflated_attack>
         <attack>190</attack>
@@ -27042,6 +27071,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name>Empress Roar "Blaze"</name>
         <name_jp>エンプレスドラム・炎妃</name_jp>
         <inflated_attack>798</inflated_attack>
         <attack>190</attack>
@@ -27071,6 +27101,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name>Empress Roar "Ruin"</name>
         <name_jp>エンプレスドラム・滅尽</name_jp>
         <inflated_attack>840</inflated_attack>
         <attack>200</attack>
@@ -27099,6 +27130,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name>Empress Roar "Styx"</name>
         <name_jp>エンプレスドラム・冥灯</name_jp>
         <inflated_attack>798</inflated_attack>
         <attack>190</attack>
@@ -27206,6 +27238,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="insect_glaive" />
+        <name>Empress Cane</name>
         <name_jp>エンプレスケイン</name_jp>
         <inflated_attack>589</inflated_attack>
         <attack>190</attack>
@@ -27229,6 +27262,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="insect_glaive" />
+        <name>Empress Cane "Blaze"</name>
         <name_jp>エンプレスケイン・炎妃</name_jp>
         <inflated_attack>589</inflated_attack>
         <attack>190</attack>
@@ -27253,6 +27287,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="insect_glaive" />
+        <name>Empress Cane "Ruin"</name>
         <name_jp>エンプレスケイン・滅尽</name_jp>
         <inflated_attack>620</inflated_attack>
         <attack>200</attack>
@@ -27276,6 +27311,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="insect_glaive" />
+        <name>Empress Cane "Styx"</name>
         <name_jp>エンプレスケイン・冥灯</name_jp>
         <inflated_attack>589</inflated_attack>
         <attack>190</attack>
@@ -27454,6 +27490,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="lance" />
+        <name>Empress Lance</name>
         <name_jp>エンプレスランス</name_jp>
         <inflated_attack>414</inflated_attack>
         <attack>180</attack>
@@ -27478,6 +27515,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="lance" />
+        <name>Empress Lance "Blaze"</name>
         <name_jp>エンプレスランス・炎妃</name_jp>
         <inflated_attack>414</inflated_attack>
         <attack>180</attack>
@@ -27503,6 +27541,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="lance" />
+        <name>Empress Lance "Ruin"</name>
         <name_jp>エンプレスランス・滅尽</name_jp>
         <inflated_attack>437</inflated_attack>
         <attack>190</attack>
@@ -27527,6 +27566,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="lance" />
+        <name>Empress Lance "Styx"</name>
         <name_jp>エンプレスランス・冥灯</name_jp>
         <inflated_attack>414</inflated_attack>
         <attack>180</attack>
@@ -27627,6 +27667,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name>Empress Shell</name>
         <name_jp>エンプレスシェル</name_jp>
         <inflated_attack>247</inflated_attack>
         <attack>190</attack>
@@ -27637,6 +27678,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name>Empress Shell "Blaze"</name>
         <name_jp>エンプレスシェル・炎妃</name_jp>
         <inflated_attack>247</inflated_attack>
         <attack>190</attack>
@@ -27648,6 +27690,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name>Empress Shell "Ruin"</name>
         <name_jp>エンプレスシェル・滅尽</name_jp>
         <inflated_attack>260</inflated_attack>
         <attack>200</attack>
@@ -27658,6 +27701,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name>Empress Shell "Styx"</name>
         <name_jp>エンプレスシェル・冥灯</name_jp>
         <inflated_attack>247</inflated_attack>
         <attack>190</attack>
@@ -27773,6 +27817,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="long_sword" />
+        <name>Empress Sword</name>
         <name_jp>エンプレスソード</name_jp>
         <inflated_attack>594</inflated_attack>
         <attack>180</attack>
@@ -27797,6 +27842,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="long_sword" />
+        <name>Empress Sword "Blaze"</name>
         <name_jp>エンプレスソード・炎妃</name_jp>
         <inflated_attack>594</inflated_attack>
         <attack>180</attack>
@@ -27822,6 +27868,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="long_sword" />
+        <name>Empress Sword "Ruin"</name>
         <name_jp>エンプレスソード・滅尽</name_jp>
         <inflated_attack>627</inflated_attack>
         <attack>190</attack>
@@ -27846,6 +27893,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="long_sword" />
+        <name>Empress Sword "Styx"</name>
         <name_jp>エンプレスソード・冥灯</name_jp>
         <inflated_attack>594</inflated_attack>
         <attack>180</attack>
@@ -27985,6 +28033,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="switch_axe" />
+        <name>Empress Axe</name>
         <name_jp>エンプレスアクス</name_jp>
         <inflated_attack>630</inflated_attack>
         <attack>180</attack>
@@ -28012,6 +28061,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="switch_axe" />
+        <name>Empress Axe "Blaze"</name>
         <name_jp>エンプレスアクス・炎妃</name_jp>
         <inflated_attack>630</inflated_attack>
         <attack>180</attack>
@@ -28040,6 +28090,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="switch_axe" />
+        <name>Empress Axe "Ruin"</name>
         <name_jp>エンプレスアクス・滅尽</name_jp>
         <inflated_attack>665</inflated_attack>
         <attack>190</attack>
@@ -28067,6 +28118,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="switch_axe" />
+        <name>Empress Axe "Styx"</name>
         <name_jp>エンプレスアクス・冥灯</name_jp>
         <inflated_attack>630</inflated_attack>
         <attack>180</attack>
@@ -28175,6 +28227,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="sword_and_shield" />
+        <name>Empress Edge</name>
         <name_jp>エンプレスエッジ</name_jp>
         <inflated_attack>266</inflated_attack>
         <attack>190</attack>
@@ -28198,6 +28251,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="sword_and_shield" />
+        <name>Empress Edge "Blaze"</name>
         <name_jp>エンプレスエッジ・炎妃</name_jp>
         <inflated_attack>266</inflated_attack>
         <attack>190</attack>
@@ -28222,6 +28276,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="sword_and_shield" />
+        <name>Empress Edge "Ruin"</name>
         <name_jp>エンプレスエッジ・滅尽</name_jp>
         <inflated_attack>280</inflated_attack>
         <attack>200</attack>
@@ -28245,6 +28300,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="sword_and_shield" />
+        <name>Empress Edge "Styx"</name>
         <name_jp>エンプレスエッジ・冥灯</name_jp>
         <inflated_attack>266</inflated_attack>
         <attack>190</attack>
