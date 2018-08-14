@@ -9,6 +9,7 @@ class QTextStream;
 class QXmlStreamReader;
 struct WeaponType;
 struct Ammo;
+struct Song;
 
 struct WeaponAmmoRef {
 	WeaponAmmoRef() : ammo(NULL) {};
@@ -35,6 +36,7 @@ struct Weapon : public NamedObject {
 	int augmentations;
 	QVector<Note> notes;
 	QVector<WeaponAmmoRef> ammoRefs;
+	QVector<Song *> songs;
 
 	Weapon();
 	void print(QTextStream &stream, QString indent = QString()) const;

@@ -8,6 +8,7 @@
 #include "Item.h"
 #include "Target.h"
 #include "MotionValue.h"
+#include "Song.h"
 
 #include <QTextStream>
 #include <QXmlStreamReader>
@@ -65,6 +66,10 @@ void MainData::print(QTextStream &stream, QString indent) const {
 	foreach(const MotionValue *motion_value, motionValues) {
 		stream << indent << "[motion value]" << endl;
 		motion_value->print(stream, indent + "\t");
+	}
+	foreach(const Song *song, songs) {
+		stream << indent << "[song]" << endl;
+		song->print(stream, indent + "\t");
 	}
 }
 
@@ -131,6 +136,10 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				if (!motion_value->id.isNull()) {
 					motionValueHash[motion_value->id] = motion_value;
 				}
+			} else if (tag_name == "song") {
+				Song *song = new Song;
+				song->readXml(xml);
+				songs.append(song);
 			} else {
 				xml->skipCurrentElement();
 			}
@@ -174,6 +183,14 @@ void MainData::matchData() {
 			if (itb != buffSetBonusHash.end()) it->buffSetBonus = *itb;
 		}
 	}
+	foreach(Song *song, songs) {
+		for (QVector<Song::BuffRef>::iterator it = song->buffRefs.begin();
+		     it != song->buffRefs.end(); ++it) {
+			QHash<QString, BuffGroup *>::const_iterator itb =
+				buffGroupHash.find(it->id);
+			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
+		}
+	}
 	foreach(Target *target, targets) {
 		target->matchMonsters(monsters);
 	}
@@ -188,6 +205,19 @@ void MainData::matchData() {
 		if (itt != weaponTypeHash.end()) profile->weaponType = *itt;
 		foreach(Pattern *pattern, profile->patterns) {
 			pattern->applyMotionValues(motionValueHash);
+		}
+	}
+	foreach(Weapon *weapon, weapons) {
+		if (weapon->notes.isEmpty()) continue;
+		foreach(Song *song, songs) {
+			bool found = true;
+			foreach(Note note, song->notes) {
+				if (!weapon->notes.contains(note)) {
+					found = false;
+					break;
+				}
+			}
+			if (found) weapon->songs.append(song);
 		}
 	}
 }

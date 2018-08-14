@@ -29,6 +29,7 @@ src/Monster.cpp \
 src/MotionValue.cpp \
 src/NamedObject.cpp \
 src/Profile.cpp \
+src/Song.cpp \
 src/Target.cpp \
 src/Weapon.cpp \
 src/WeaponType.cpp \
@@ -64,6 +65,7 @@ src/Monster.h \
 src/MotionValue.h \
 src/NamedObject.h \
 src/Profile.h \
+src/Song.h \
 src/Target.h \
 src/Weapon.h \
 src/WeaponType.h \

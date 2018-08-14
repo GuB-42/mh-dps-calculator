@@ -6,6 +6,7 @@
 #include "Constants.h"
 #include "WeaponType.h"
 #include "Ammo.h"
+#include "Song.h"
 
 Weapon::Weapon() :
 	type(NULL),
@@ -75,6 +76,23 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 		stream << toString(notes[i]);
 	}
 	stream << "]" << endl;
+	if (!songs.isEmpty()) {
+		stream << indent << "- songs:" << endl;
+		foreach(Song *song, songs) {
+			stream << indent << "\t" << "- [";
+			for (int i = 0; i < song->notes.count(); ++i) {
+				if (i > 0) stream << ", ";
+				stream << toString(song->notes[i]);
+			}
+			stream << "] (";
+			for (int i = 0; i < song->buffRefs.count(); ++i) {
+				if (i > 0) stream << ", ";
+				stream << song->buffRefs[i].id << "[" <<
+					song->buffRefs[i].level << "]";
+			}
+			stream << ")" << endl;
+		}
+	}
 	stream << indent << "- ammos: [";
 	for (int i = 0; i < ammoRefs.count(); ++i) {
 		if (i > 0) stream << ", ";

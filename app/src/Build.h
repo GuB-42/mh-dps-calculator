@@ -43,6 +43,7 @@ struct Build {
 	Build();
 	int getBuffLevel(const BuffGroup *group) const;
 	int addBuffLevel(const BuffGroup *group, int level);
+	int maxBuffLevel(const BuffGroup *group, int level);
 	void addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level);
 	void addItem(const Item *item);
 	void addWeapon(const Weapon *weapon);

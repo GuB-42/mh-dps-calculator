@@ -3742,6 +3742,18 @@
 		</buff>
 	</buff_group>
 
+	<buff_group id="song_health_boost">
+		<name>Song: Health Boost</name>
+		<buff level="1">
+			<name>Song: Health Boost (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Health Boost (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="song_earplugs">
 		<name>Song: Earplugs</name>
 		<buff level="1">

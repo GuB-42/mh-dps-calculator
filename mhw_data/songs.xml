@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<song>
+		<notes>
+			<light_blue />
+			<light_blue />
+			<light_blue />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>180</extension>
+		<extension_maestro>240</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_scoutfly_power_up"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<light_blue />
+			<green />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_earplugs" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<light_blue />
+			<green />
+			<white />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_earplugs" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<light_blue />
+			<red />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_earplugs" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<light_blue />
+			<red />
+			<white />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_earplugs" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<light_blue />
+			<yellow />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>180</extension>
+		<extension_maestro>210</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_tremors_negated"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<orange />
+			<orange />
+			<purple />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_status_attack_up"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<purple />
+			<blue />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stun_negated"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<purple />
+			<orange />
+			<orange />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_all_ailments_negated"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<red />
+			<light_blue />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>180</extension>
+		<extension_maestro>240</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_muck_resistance"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<yellow />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_paralysis_negated"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<light_blue />
+			<yellow />
+			<white />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_paralysis_negated"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<blue />
+			<blue />
+			<light_blue />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_wind_pressure_negated" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<blue />
+			<blue />
+			<green />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_wind_pressure_negated" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<blue />
+			<blue />
+			<orange />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_wind_pressure_negated" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<blue />
+			<blue />
+			<red />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_wind_pressure_negated" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<blue />
+			<blue />
+			<yellow />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_wind_pressure_negated" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<green />
+			<blue />
+			<purple />
+			<blue />
+		</notes>
+		<!-- Health Recovery (M) + Antidote -->
+	</song>
+	<song>
+		<notes>
+			<green />
+			<blue />
+			<white />
+			<blue />
+		</notes>
+		<!-- Health Recovery (S) + Antidote -->
+	</song>
+	<song>
+		<notes>
+			<green />
+			<green />
+			<purple />
+			<light_blue />
+		</notes>
+		<!-- Health Recovery (L) -->
+	</song>
+	<song>
+		<notes>
+			<green />
+			<green />
+			<red />
+			<purple />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_recovery_speed" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<green />
+			<green />
+			<yellow />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_recovery_speed" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<green />
+			<orange />
+			<purple />
+			<orange />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_affinity_up"/>
+		</buff_refs>
+		<!-- Health Recovery (S) -->
+	</song>
+	<song>
+		<notes>
+			<green />
+			<white />
+			<light_blue />
+			<green />
+		</notes>
+		<!-- Health Recovery (M) -->
+	</song>
+	<song>
+		<notes>
+			<green />
+			<yellow />
+			<purple />
+			<yellow />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_divine_protection"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<orange />
+			<blue />
+			<purple />
+			<blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="1"/>
+			<buff_ref id="song_defense_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<orange />
+			<orange />
+			<green />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>210</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>150</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_earplugs" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<light_blue />
+			<blue />
+			<light_blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<blue />
+			<light_blue />
+		</notes>
+		<duration>60</duration>
+		<duration_maestro>90</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_tool_use_drain_reduced" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<blue />
+			<blue />
+			<purple />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_defense_up" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<blue />
+			<orange />
+			<orange />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="1"/>
+			<buff_ref id="song_defense_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<green />
+			<blue />
+			<green />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<green />
+			<purple />
+		</notes>
+		<!-- Health Recovery (S) -->
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<green />
+			<yellow />
+			<green />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_elemental_attack_boost"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<orange />
+			<blue />
+			<orange />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<orange />
+			<purple />
+			<light_blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_divine_protection"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_self_improvement"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<red />
+			<light_blue />
+			<purple />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<red />
+			<blue />
+			<purple />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<red />
+			<green />
+			<purple />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<red />
+			<yellow />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<yellow />
+			<light_blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_dragon_resistance_boost" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<purple />
+			<yellow />
+			<blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<red />
+			<blue />
+			<red />
+			<purple />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_health_boost" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<red />
+			<blue />
+			<white />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_health_boost" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<red />
+			<red />
+			<light_blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_environment_damage_negated"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<red />
+			<yellow />
+			<purple />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<light_blue />
+			<blue />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<blue />
+			<light_blue />
+		</notes>
+		<duration>30</duration>
+		<duration_maestro>60</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_tool_use_drain_reduced" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<blue />
+			<blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_defense_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<green />
+			<blue />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<green />
+			<white />
+		</notes>
+		<!-- Health Recovery (S) -->
+	</song>
+	<song>
+		<notes>
+			<white />
+			<red />
+			<red />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<white />
+		</notes>
+		<duration>180</duration>
+		<duration_maestro>240</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_self_improvement"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<yellow />
+			<light_blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_dragon_resistance_boost" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<white />
+			<yellow />
+			<blue />
+		</notes>
+		<duration>90</duration>
+		<duration_maestro>120</duration_maestro>
+		<extension>30</extension>
+		<extension_maestro>60</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_stamina_use_reduced" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<light_blue />
+			<purple />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_water_resistance_boost" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<light_blue />
+			<white />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_water_resistance_boost" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<light_blue />
+			<yellow />
+			<light_blue />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>90</extension>
+		<extension_maestro>120</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_elemental_attack_boost"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<blue />
+			<purple />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_ice_resistance_boost" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<blue />
+			<white />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_ice_resistance_boost" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<green />
+			<purple />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_thunder_resistance_boost" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<green />
+			<white />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_thunder_resistance_boost" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<purple />
+			<red />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>150</duration_maestro>
+		<extension>60</extension>
+		<extension_maestro>90</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_attack_up" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<red />
+			<purple />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_fire_resistance_boost" level="2"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<red />
+			<white />
+		</notes>
+		<duration>120</duration>
+		<duration_maestro>180</duration_maestro>
+		<extension>120</extension>
+		<extension_maestro>180</extension_maestro>
+		<buff_refs>
+			<buff_ref id="song_fire_resistance_boost" level="1"/>
+		</buff_refs>
+	</song>
+	<song>
+		<notes>
+			<yellow />
+			<yellow />
+			<yellow />
+		</notes>
+		<!-- Sonic Waves -->
+	</song>
+<data>

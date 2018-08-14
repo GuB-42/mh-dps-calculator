@@ -5,6 +5,7 @@
 #include "Weapon.h"
 #include "BuffGroup.h"
 #include "BuffWithCondition.h"
+#include "Song.h"
 
 Build::Build() :
 	weapon(NULL), weaponAugmentations(0), weaponSlotUpgrade(0)
@@ -71,6 +72,23 @@ int Build::addBuffLevel(const BuffGroup *group, int level)
 	return level;
 }
 
+int Build::maxBuffLevel(const BuffGroup *group, int level)
+{
+	int idx = find_buff_level(buffLevels, group);
+	if (idx != -1) {
+		if (level > buffLevels[idx].level) {
+			if (level > group->levels.count() - 1) {
+				buffLevels[idx].level = group->levels.count() - 1;
+			} else {
+				buffLevels[idx].level = level;
+			}
+		}
+		return buffLevels[idx].level;
+	} else {
+		return addBuffLevel(group, level);
+	}
+}
+
 void Build::addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level)
 {
 	QVector<BuffSetBonusWithLevel>::iterator it = buffSetBonusLevels.begin();
@@ -134,6 +152,17 @@ void Build::addWeapon(const Weapon *weapon) {
 	this->weapon = weapon;
 	foreach(int s, weapon->decorationSlots) decorationSlots << s;
 	weaponAugmentations += weapon->augmentations;
+	foreach(Song *song, weapon->songs) {
+		foreach(const Song::BuffRef &buff_ref, song->buffRefs) {
+			if (buff_ref.buffGroup) {
+				maxBuffLevel(buff_ref.buffGroup, buff_ref.level);
+			}
+		}
+	}
+}
+
+static bool bwc_sort(const BuffWithCondition *a, const BuffWithCondition *b) {
+	return *a < *b;
 }
 
 void Build::getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const {
@@ -146,6 +175,7 @@ void Build::getBuffWithConditions(QVector<const BuffWithCondition *> *pout) cons
 			pout->append(bc);
 		}
 	}
+	std::sort(pout->begin(), pout->end(), bwc_sort);
 }
 
 void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) const {

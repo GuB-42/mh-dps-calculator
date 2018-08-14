@@ -71,8 +71,8 @@ void Computer::compute(const Parameters &params) {
 
 		BuildFutureElt elt;
 		Build *build = new Build;
-		build->addWeapon(weapon);
 		build->buffLevels = params.buffLevels;
+		build->addWeapon(weapon);
 		build->decorationSlots << params.decorationSlots;
 		elt.useful_items = build->listUsefulItems(params.items);
 		elt.builds.append(build);

@@ -40,10 +40,6 @@ struct PatternWithBuffs {
 	FoldedBuffs foldedBuffs;
 };
 
-static bool bwc_sort(const BuffWithCondition *a, const BuffWithCondition *b) {
-	return *a < *b;
-}
-
 void BuildWithDps::compute(const Profile &profile, const Target &target) {
 	damage.sharpenPeriod = profile.sharpenPeriod;
 	if (build->weapon) {
@@ -57,8 +53,6 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 
 		QVector<const BuffWithCondition *> bwc;
 		build->getBuffWithConditions(&bwc);
-
-		std::sort(bwc.begin(), bwc.end(), bwc_sort);
 
 		QVector<PatternWithBuffs *> patterns;
 		foreach(Pattern *pattern, profile.patterns) {
