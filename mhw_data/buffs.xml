@@ -3254,49 +3254,49 @@
 	<!-- canteen base skills -->
 
 	<buff_group id="meal_attack_up">
-		<name>Attack Up</name>
+		<name>Meal: Attack Up</name>
 		<buff level="1">
-			<name>Attack Up (S)</name>
+			<name>Meal: Attack Up (S)</name>
 			<attack_plus>5</attack_plus>
 		</buff>
 		<buff level="2">
-			<name>Attack Up (M)</name>
+			<name>Meal: Attack Up (M)</name>
 			<attack_plus>10</attack_plus>
 		</buff>
 		<buff level="3">
-			<name>Attack Up (L)</name>
+			<name>Meal: Attack Up (L)</name>
 			<attack_plus>15</attack_plus>
 		</buff>
 	</buff_group>
 
 	<buff_group id="meal_defense_up">
-		<name>Defense Up</name>
+		<name>Meal: Defense Up</name>
 		<buff level="1">
-			<name>Defense Up (S)</name>
+			<name>Meal: Defense Up (S)</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Defense Up (M)</name>
+			<name>Meal: Defense Up (M)</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Defense Up (L)</name>
+			<name>Meal: Defense Up (L)</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
 
 	<buff_group id="meal_elemental_resistance_up">
-		<name>Elemental Res Up</name>
+		<name>Meal: Elemental Res Up</name>
 		<buff level="1">
-			<name>Elemental Res Up (S)</name>
+			<name>Meal: Elemental Res Up (S)</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Elemental Res Up (M)</name>
+			<name>Meal: Elemental Res Up (M)</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Elemental Res Up (L)</name>
+			<name>Meal: Elemental Res Up (L)</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3592,6 +3592,281 @@
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
+
+	<!-- hunting horn buffs -->
+
+	<buff_group id="song_self_improvement">
+		<name>Song: Self Improvement</name>
+		<buff>
+			<name>Song: Self Improvement</name>
+			<song_base>
+				<attack_multiplier>1.15</attack_multiplier>
+			</song_base>
+			<song_encore>
+				<attack_multiplier>1.15</attack_multiplier>
+				<minds_eye>1</minds_eye>
+			</song_encore>
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_attack_up">
+		<name>Song: Attack Up</name>
+		<buff level="1">
+			<name>Song: Attack Up (S)</name>
+			<song_base>
+				<attack_multiplier>1.10</attack_multiplier>
+			</song_base>
+			<song_encore>
+				<attack_multiplier>1.15</attack_multiplier>
+			</song_encore>
+		</buff>
+		<buff level="2">
+			<name>Song: Attack Up (L)</name>
+			<song_base>
+				<attack_multiplier>1.15</attack_multiplier>
+			</song_base>
+			<song_encore>
+				<attack_multiplier>1.20</attack_multiplier>
+			</song_encore>
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_status_attack_up">
+		<name>Song: Status Attack Up</name>
+		<buff>
+			<name>Song: Status Attack Up</name>
+			<song_base>
+				<all_statuses_multiplier>1.1</all_statuses_multiplier>
+			</song_base>
+			<song_encore>
+				<all_statuses_multiplier>1.15</all_statuses_multiplier>
+			</song_encore>
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_elemental_attack_boost">
+		<name>Song: Elemental Attack Boost</name>
+		<buff>
+			<name>Song: Elemental Attack Boost</name>
+			<song_base>
+				<all_elements_multiplier>1.1</all_elements_multiplier>
+			</song_base>
+			<song_encore>
+				<all_elements_multiplier>1.15</all_elements_multiplier>
+			</song_encore>
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_affinity_up">
+		<name>Song: Affinity Up</name>
+		<buff>
+			<name>Song: Affinity Up</name>
+			<song_base>
+				<affinity_plus>15</affinity_plus>
+			</song_base>
+			<song_encore>
+				<affinity_plus>20</affinity_plus>
+			</song_encore>
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_defense_up">
+		<name>Song: Defense Up</name>
+		<buff level="1">
+			<name>Song: Defense Up (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Defense Up (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_fire_resistance_boost">
+		<name>Song: Fire Resistance Boost</name>
+		<buff level="1">
+			<name>Song: Fire Resistance Boost (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Fire Resistance Boost (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_water_resistance_boost">
+		<name>Song: Water Resistance Boost</name>
+		<buff level="1">
+			<name>Song: Water Resistance Boost (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Water Resistance Boost (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_ice_resistance_boost">
+		<name>Song: Ice Resistance Boost</name>
+		<buff level="1">
+			<name>Song: Ice Resistance Boost (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Ice Resistance Boost (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_thunder_resistance_boost">
+		<name>Song: Thunder Resistance Boost</name>
+		<buff level="1">
+			<name>Song: Thunder Resistance Boost (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Thunder Resistance Boost (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_dragon_resistance_boost">
+		<name>Song: Dragon Resistance Boost</name>
+		<buff level="1">
+			<name>Song: Dragon Resistance Boost (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Dragon Resistance Boost (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_earplugs">
+		<name>Song: Earplugs</name>
+		<buff level="1">
+			<name>Song: Earplugs (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Earplugs (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_all_ailments_negated">
+		<name>Song: All Ailments Negated</name>
+		<buff>
+			<name>Song: All Ailments Negated</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_wind_pressure_negated">
+		<name>Song: Wind Pressure Negated</name>
+		<buff level="1">
+			<name>Song: Wind Pressure Negated</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: All Wind Pressure Negated</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_environment_damage_negated">
+		<name>Song: Environment Damage Negated</name>
+		<buff>
+			<name>Song: Environment Damage Negated</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_paralysis_negated">
+		<name>Song: Paralysis Negated</name>
+		<buff>
+			<name>Song: Paralysis Negated</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_stun_negated">
+		<name>Song: Stun Negated</name>
+		<buff>
+			<name>Song: Stun Negated</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_tremors_negated">
+		<name>Song: Tremors Negated</name>
+		<buff>
+			<name>Song: Tremors Negated</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_divine_protection">
+		<name>Song: Divine Protection</name>
+		<buff>
+			<name>Song: Divine Protection</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_muck_resistance">
+		<name>Song: Muck Resistance</name>
+		<buff>
+			<name>Song: Muck Resistance</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_recovery_speed">
+		<name>Song: Recovery Speed</name>
+		<buff level="1">
+			<name>Song: Recovery Speed (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Recovery Speed (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_scoutfly_power_up">
+		<name>Song: Scoutfly Power Up</name>
+		<buff>
+			<name>Song: Scoutfly Power Up</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_stamina_use_reduced">
+		<name>Song: Stamina Use Reduced</name>
+		<buff level="1">
+			<name>Song: Stamina Use Reduced (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<name>Song: Stamina Use Reduced (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="song_tool_use_drain_reduced">
+		<name>Song: Tool Use Drain Reduced</name>
+		<buff>
+			<name>Song: Tool Use Drain Reduced (S)</name>
+			<!-- not implemented -->
+		</buff>
+		<buff>
+			<name>Song: Tool Use Drain Reduced (L)</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<!-- set bonus -->
 
 	<set_bonus id="anjanath_will">
 		<name>Anjanath Will</name>

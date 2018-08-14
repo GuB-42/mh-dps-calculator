@@ -78,15 +78,17 @@ const char *toString(Condition c) {
 	case CONDITION_AIRBORNE: return "airborne";
 	case CONDITION_RED_LIFE: return "red_life";
 	case CONDITION_FULL_LIFE: return "full_life";
+	case CONDITION_LOW_LIFE: return "low_life";
 	case CONDITION_DEATH_1: return "death_1";
 	case CONDITION_DEATH_2: return "death_2";
 	case CONDITION_FULL_STAMINA: return "full_stamina";
 	case CONDITION_SLIDING: return "sliding";
-	case CONDITION_LOW_LIFE: return "low_life";
 	case CONDITION_RECEIVED_DAMAGE: return "received_damage";
-	case CONDITION_MIGHT_SEED_USE: return "might_seed_use";
 	case CONDITION_DEMON_POWDER_USE: return "demon_powder_use";
+	case CONDITION_MIGHT_SEED_USE: return "might_seed_use";
 	case CONDITION_MIGHT_PILL_USE: return "might_pill_use";
+	case CONDITION_SONG_BASE: return "song_base";
+	case CONDITION_SONG_ENCORE: return "song_encore";
 	default: return "???";
 	}
 }

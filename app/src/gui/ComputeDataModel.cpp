@@ -79,15 +79,17 @@ QString ComputeDataModel::conditionName(Condition c) {
 	case CONDITION_AIRBORNE: return tr("Ratio: Airborne");
 	case CONDITION_RED_LIFE: return tr("Ratio: Red life (resentment)");
 	case CONDITION_FULL_LIFE: return tr("Ratio: Full life");
+	case CONDITION_LOW_LIFE: return tr("Ratio: Low life (heroics)");
 	case CONDITION_DEATH_1: return tr("Ratio: Fainted once");
 	case CONDITION_DEATH_2: return tr("Ratio: Fainted twice");
 	case CONDITION_FULL_STAMINA: return tr("Ratio: Full stamina");
 	case CONDITION_SLIDING: return tr("Ratio: Sliding");
-	case CONDITION_LOW_LIFE: return tr("Ratio: Low life (heroics)");
 	case CONDITION_RECEIVED_DAMAGE: return tr("Ratio: Received damage (latent power)");
-	case CONDITION_MIGHT_SEED_USE: return tr("Ratio: Using might seed");
 	case CONDITION_DEMON_POWDER_USE: return tr("Ratio: Using demon powder");
+	case CONDITION_MIGHT_SEED_USE: return tr("Ratio: Using might seed");
 	case CONDITION_MIGHT_PILL_USE: return tr("Ratio: Using might pill");
+	case CONDITION_SONG_BASE: return tr("Ratio: Active song (base)");;
+	case CONDITION_SONG_ENCORE: return tr("Ratio: Active song (encore)");;
 	default: return tr("???");
 	}
 }

@@ -65,15 +65,17 @@ Constants::Constants() {
 	(*cond)[CONDITION_AIRBORNE] = 0.1;
 	(*cond)[CONDITION_RED_LIFE] = 0.2;
 	(*cond)[CONDITION_FULL_LIFE] = 0.7;
+	(*cond)[CONDITION_LOW_LIFE] = 0.05;
 	(*cond)[CONDITION_DEATH_1] = 0.0;
 	(*cond)[CONDITION_DEATH_2] = 0.0;
 	(*cond)[CONDITION_FULL_STAMINA] = 0.6;
 	(*cond)[CONDITION_SLIDING] = 0.1;
-	(*cond)[CONDITION_LOW_LIFE] = 0.05;
 	(*cond)[CONDITION_RECEIVED_DAMAGE] = 0.5;
-	(*cond)[CONDITION_MIGHT_SEED_USE] = 0.5;
 	(*cond)[CONDITION_DEMON_POWDER_USE] = 0.5;
+	(*cond)[CONDITION_MIGHT_SEED_USE] = 0.5;
 	(*cond)[CONDITION_MIGHT_PILL_USE] = 0.1;
+	(*cond)[CONDITION_SONG_BASE] = 0.25;
+	(*cond)[CONDITION_SONG_ENCORE] = 0.5;
 	conditionRatios = cond;
 }
 

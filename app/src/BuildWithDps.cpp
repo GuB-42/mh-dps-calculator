@@ -29,7 +29,7 @@ BuildWithDps::~BuildWithDps() {
 struct PatternWithBuffs {
 	PatternWithBuffs(const Pattern *pattern,
 	                 const QVector<const BuffWithCondition *> &buff_conds,
-	                 double raw_weapon, bool awakened_weapon,
+	                 bool raw_weapon, bool awakened_weapon,
 	                 double base_affinity) :
 		pattern(pattern),
 		foldedBuffs(buff_conds, *pattern->conditionRatios,
@@ -39,6 +39,10 @@ struct PatternWithBuffs {
 	const Pattern *pattern;
 	FoldedBuffs foldedBuffs;
 };
+
+static bool bwc_sort(const BuffWithCondition *a, const BuffWithCondition *b) {
+	return *a < *b;
+}
 
 void BuildWithDps::compute(const Profile &profile, const Target &target) {
 	damage.sharpenPeriod = profile.sharpenPeriod;
@@ -53,6 +57,8 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 
 		QVector<const BuffWithCondition *> bwc;
 		build->getBuffWithConditions(&bwc);
+
+		std::sort(bwc.begin(), bwc.end(), bwc_sort);
 
 		QVector<PatternWithBuffs *> patterns;
 		foreach(Pattern *pattern, profile.patterns) {

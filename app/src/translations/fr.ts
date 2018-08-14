@@ -20,7 +20,7 @@
 <context>
     <name>ComputeDataModel</name>
     <message>
-        <location filename="../gui/ComputeDataModel.cpp" line="+68"/>
+        <location filename="../gui/ComputeDataModel.cpp" line="+74"/>
         <source>Ratio: Always</source>
         <translation type="unfinished">Ratio: Toujours</translation>
     </message>
@@ -60,7 +60,7 @@
         <translation type="unfinished">Ratio: Vie pleine</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Ratio: Fainted once</source>
         <translation type="unfinished">Ratio: Évanoui une fois</translation>
     </message>
@@ -80,29 +80,39 @@
         <translation type="unfinished">Ratio: Glissade</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-4"/>
         <source>Ratio: Low life (heroics)</source>
         <translation type="unfinished">Ratio: Vie faible (héroïsme)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+5"/>
         <source>Ratio: Received damage (latent power)</source>
         <translation type="unfinished">Ratio: Dégâts reçus (force latente)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Ratio: Using might seed</source>
         <translation type="unfinished">Ratio: Graine de force active</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-1"/>
         <source>Ratio: Using demon powder</source>
         <translation type="unfinished">Ratio: Poudre du démon active</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Ratio: Using might pill</source>
         <translation type="unfinished">Ratio: Philtre du diable actif</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Ratio: Active song (base)</source>
+        <translation type="unfinished">Ratio: Mélodie active (base)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Ratio: Active song (encore)</source>
+        <translation type="unfinished">Ratio: Mélodie active (encore)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -254,7 +264,7 @@
         <translation type="unfinished">Emplacements 1</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+30"/>
         <source>Skills</source>
         <translation type="unfinished">Talents</translation>
     </message>
@@ -319,12 +329,12 @@
         <translation type="unfinished">&amp;Quitter</translation>
     </message>
     <message>
-        <location line="-254"/>
+        <location line="-266"/>
         <source>DPS calculator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+93"/>
+        <location line="+105"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>

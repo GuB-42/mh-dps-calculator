@@ -32,8 +32,19 @@ struct BuffWithCondition {
 		} status;
 	};
 
+	enum BuffCombineOp {
+		OP_NONE,
+		OP_AFFINITY,
+		OP_PLUS,
+		OP_MULTIPLY,
+		OP_MAX
+	};
+
 	BuffWithCondition();
 	bool isUseful(const Weapon &weapon) const;
+	bool sameBuffAs(const BuffWithCondition &o) const;
+	bool operator<(const BuffWithCondition &o) const;
+	BuffCombineOp combineOp() const;
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 

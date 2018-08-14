@@ -69,6 +69,24 @@
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>
+		<name>Hunting Horn</name>
+		<weapon_type_ref id="hunting_horn" />
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>0</cut>
+			<impact>1.1</impact>
+			<piercing>0</piercing>
+			<element>1.5</element>
+			<stun>15</stun>
+			<exhaust>30</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<draw_attack_ratio>0.1</draw_attack_ratio>
+			<airborne_ratio>0.05</airborne_ratio>
+			<sharpness_use>1.5</sharpness_use>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
 		<name>Insect Glaive</name>
 		<weapon_type_ref id="insect_glaive" />
 		<pattern>

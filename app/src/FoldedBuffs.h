@@ -15,11 +15,13 @@ struct FoldedBuffsData {
 	double statusBuffs[STATUS_BUFF_COUNT][STATUS_COUNT];
 
 	FoldedBuffsData();
-	void applyBuff(const BuffWithCondition *buff_cond,
+	void applyBuff(const BuffWithCondition &buff_cond,
 	               const ConditionRatios &ratios,
 	               bool enraged, bool weak_spot,
 	               double raw_weapon_ratio,
-	               double base_affinity);
+	               double base_affinity,
+	               double *last_value,
+	               bool use_last_value);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 
@@ -28,7 +30,7 @@ struct FoldedBuffs {
 
 	FoldedBuffs(const QVector<const BuffWithCondition *> &buff_conds,
                 const ConditionRatios &ratios,
-                double raw_weapon, bool awakened_weapon,
+                bool raw_weapon, bool awakened_weapon,
                 double base_affinity);
 	~FoldedBuffs();
 	void print(QTextStream &stream, QString indent = QString()) const;

@@ -71,6 +71,100 @@ bool BuffWithCondition::isUseful(const Weapon &weapon) const {
 	return false;
 }
 
+bool BuffWithCondition::sameBuffAs(const BuffWithCondition &o) const {
+	if (buffClass != o.buffClass) return false;
+	switch (buffClass) {
+	case BUFF_CLASS_NONE:
+		return true;
+	case BUFF_CLASS_NORMAL:
+		return normal.buff == o.normal.buff;
+	case BUFF_CLASS_ELEMENT:
+		return element.buff == o.element.buff &&
+			element.type == o.element.type;
+	case BUFF_CLASS_STATUS:
+		return status.buff == o.status.buff &&
+			status.type == o.status.type;
+	}
+	return false;
+}
+
+bool BuffWithCondition::operator<(const BuffWithCondition &o) const {
+	if (buffClass < o.buffClass) return true;
+	if (o.buffClass < buffClass) return false;
+
+	switch (buffClass) {
+	case BuffWithCondition::BUFF_CLASS_NONE:
+		break;
+	case BuffWithCondition::BUFF_CLASS_NORMAL:
+		if (normal.buff < o.normal.buff) return true;
+		if (o.normal.buff < normal.buff) return false;
+		break;
+	case BuffWithCondition::BUFF_CLASS_ELEMENT:
+		if (element.buff < o.element.buff) return true;
+		if (o.element.buff < element.buff) return false;
+		if (element.type < o.element.type) return true;
+		if (o.element.type < element.type) return false;
+		break;
+	case BuffWithCondition::BUFF_CLASS_STATUS:
+		if (status.buff < o.status.buff) return true;
+		if (o.status.buff < status.buff) return false;
+		if (status.type < o.status.type) return true;
+		if (o.status.type < status.type) return false;
+		break;
+	};
+
+	if (condition < o.condition) return true;
+	if (o.condition < condition) return false;
+
+	return value < o.value;
+}
+
+BuffWithCondition::BuffCombineOp BuffWithCondition::combineOp() const {
+	switch (buffClass) {
+	case BuffWithCondition::BUFF_CLASS_NONE:
+		break;
+	case BuffWithCondition::BUFF_CLASS_NORMAL:
+		switch (normal.buff) {
+		case BUFF_ATTACK_PLUS: return OP_PLUS;
+		case BUFF_ATTACK_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_AFFINITY_PLUS: return OP_AFFINITY;
+		case BUFF_ALL_ELEMENTS_PLUS: return OP_PLUS;
+		case BUFF_ALL_ELEMENTS_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_ALL_STATUSES_PLUS: return OP_PLUS;
+		case BUFF_ALL_STATUSES_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_AWAKENING: return OP_PLUS;
+		case BUFF_SHARPNESS_PLUS: return OP_PLUS;
+		case BUFF_MAX_SHARPNESS_TIME: return OP_PLUS;
+		case BUFF_SHARPNESS_USE_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_PUNISHING_DRAW: return OP_PLUS;
+		case BUFF_STUN_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_EXHAUST_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_MOUNT_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_ARTILLERY_MULTIPLIER: return OP_MULTIPLY;
+		case BUFF_RAW_CRITICAL_HIT_MULTIPLIER: return OP_MAX;
+		case BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER: return OP_MAX;
+		case BUFF_STATUS_CRITICAL_HIT_MULTIPLIER: return OP_MAX;
+		case BUFF_MINDS_EYE: return OP_PLUS;
+		case BUFF_ATTACK_PLUS_BEFORE: return OP_PLUS;
+		case NORMAL_BUFF_COUNT: return OP_NONE;
+		}
+	case BuffWithCondition::BUFF_CLASS_ELEMENT:
+		switch (element.buff) {
+		case BUFF_ELEMENT_PLUS: return OP_PLUS;
+		case BUFF_ELEMENT_MULTIPLIER: return OP_MULTIPLY;
+		case ELEMENT_BUFF_COUNT: return OP_NONE;
+		}
+	case BuffWithCondition::BUFF_CLASS_STATUS:
+		switch (status.buff) {
+		case BUFF_STATUS_PLUS: return OP_PLUS;
+		case BUFF_STATUS_MULTIPLIER: return OP_MULTIPLY;
+		case ELEMENT_BUFF_COUNT: return OP_NONE;
+		}
+	}
+	return OP_NONE;
+}
+
 void BuffWithCondition::print(QTextStream &stream, QString indent) const {
 	stream << indent << toString(condition) << ": ";
 	switch (buffClass) {
