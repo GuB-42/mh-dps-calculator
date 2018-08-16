@@ -122,6 +122,7 @@ FoldedBuffsData::FoldedBuffsData() {
 		Constants::instance()->statusCriticalHitMultiplier;
 	normalBuffs[BUFF_MINDS_EYE] = 0.0;
 	normalBuffs[BUFF_ATTACK_PLUS_BEFORE] = 0.0;
+	normalBuffs[BUFF_CAPACITY_UP] = 0.0;
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elementBuffs[BUFF_ELEMENT_PLUS][i] = 0.0;
 		elementBuffs[BUFF_ELEMENT_MULTIPLIER][i] = 1.0;

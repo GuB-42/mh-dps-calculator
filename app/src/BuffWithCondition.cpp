@@ -2,13 +2,14 @@
 
 #include <QTextStream>
 #include "Weapon.h"
+#include "Profile.h"
 
 BuffWithCondition::BuffWithCondition() :
 	buffClass(BUFF_CLASS_NONE), condition(CONDITION_ALWAYS), value(0.0)
 {
 }
 
-bool BuffWithCondition::isUseful(const Weapon &weapon) const {
+bool BuffWithCondition::isUseful(const Weapon &weapon, const Profile &profile) const {
 	if (condition == CONDITION_RAW_WEAPON) {
 		bool raw_weapon = true;
 		for (int i = 0; i < ELEMENT_COUNT; ++i) {
@@ -30,8 +31,11 @@ bool BuffWithCondition::isUseful(const Weapon &weapon) const {
 		case BUFF_SHARPNESS_PLUS:
 			return weapon.sharpnessPlus > 0.0;
 		case BUFF_ARTILLERY_MULTIPLIER:
-			// TODO: gunlance
-			return weapon.phial == PHIAL_IMPACT;
+			if (weapon.phial == PHIAL_IMPACT) return true;
+			foreach(Pattern *pattern, profile.patterns) {
+				if (pattern->shell != 0.0) return true;
+			}
+			return false;
 		case BUFF_ALL_ELEMENTS_PLUS:
 		case BUFF_ALL_ELEMENTS_MULTIPLIER:
 			for (int i = 0; i < ELEMENT_COUNT; ++i) {
@@ -44,6 +48,11 @@ bool BuffWithCondition::isUseful(const Weapon &weapon) const {
 			for (int i = 0; i < STATUS_COUNT; ++i) {
 				if (weapon.statuses[i] > 0.0 ||
 				    weapon.phialStatuses[i] > 0.0) return true;
+			}
+			return false;
+		case BUFF_CAPACITY_UP:
+			foreach(Pattern *pattern, profile.patterns) {
+				if (pattern->capacityUpFilter) return true;
 			}
 			return false;
 		default:
@@ -147,6 +156,7 @@ BuffWithCondition::BuffCombineOp BuffWithCondition::combineOp() const {
 		case BUFF_STATUS_CRITICAL_HIT_MULTIPLIER: return OP_MAX;
 		case BUFF_MINDS_EYE: return OP_PLUS;
 		case BUFF_ATTACK_PLUS_BEFORE: return OP_PLUS;
+		case BUFF_CAPACITY_UP: return OP_PLUS;
 		case NORMAL_BUFF_COUNT: return OP_NONE;
 		}
 	case BuffWithCondition::BUFF_CLASS_ELEMENT:
@@ -159,7 +169,7 @@ BuffWithCondition::BuffCombineOp BuffWithCondition::combineOp() const {
 		switch (status.buff) {
 		case BUFF_STATUS_PLUS: return OP_PLUS;
 		case BUFF_STATUS_MULTIPLIER: return OP_MULTIPLY;
-		case ELEMENT_BUFF_COUNT: return OP_NONE;
+		case STATUS_BUFF_COUNT: return OP_NONE;
 		}
 	}
 	return OP_NONE;

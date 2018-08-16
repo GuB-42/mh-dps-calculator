@@ -1750,7 +1750,7 @@
 			<name>Capacity Boost [1]</name>
 			<name_fr>Prêt à tirer [1]</name_fr>
 			<name_jp>砲弾装填数ＵＰ [1]</name_jp>
-			<!-- not implemented -->
+			<capacity_up>1</capacity_up>
 		</buff>
 	</buff_group>
 

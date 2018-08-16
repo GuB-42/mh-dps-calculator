@@ -205,6 +205,11 @@ void MainData::matchData() {
 		if (itt != weaponTypeHash.end()) profile->weaponType = *itt;
 		foreach(Pattern *pattern, profile->patterns) {
 			pattern->applyMotionValues(motionValueHash);
+			for (QVector<PatternAmmoRef>::iterator it = pattern->ammoRefs.begin();
+			     it != pattern->ammoRefs.end(); ++it) {
+				QHash<QString, Ammo *>::const_iterator ita = ammoHash.find(it->id);
+				if (ita != ammoHash.end()) it->ammo = *ita;
+			}
 		}
 	}
 	foreach(Weapon *weapon, weapons) {

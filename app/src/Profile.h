@@ -13,6 +13,7 @@ class QXmlStreamReader;
 struct ConditionRatios;
 struct MotionValue;
 struct WeaponType;
+struct Ammo;
 
 struct MotionValueRef {
 	MotionValueRef() : multiplier(1.0), rawMultiplier(1.0) { }
@@ -21,13 +22,26 @@ struct MotionValueRef {
 	double rawMultiplier;
 };
 
+struct PatternAmmoRef {
+	PatternAmmoRef() : ammo(NULL) {};
+	QString id;
+	Ammo *ammo;
+};
+
 struct Pattern {
 	double rate;
 	double period;
+	double usage;
+
+	bool capacityUpFilter;
+	bool capacityUpEnabled;
+	QVector<PatternAmmoRef> ammoRefs;
+
 	double cut;
 	double impact;
 	double piercing;
 	double bullet;
+	double shell;
 	double fixed;
 	double element;
 	double status;

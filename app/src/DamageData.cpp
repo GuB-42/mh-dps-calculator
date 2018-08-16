@@ -233,7 +233,8 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		pattern.punishingDrawExhaust * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
 	statuses[STATUS_MOUNT] += pattern.mount;
 
-	fixed = pattern.fixed;
+	fixed = pattern.fixed +
+		pattern.shell * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER];
 
 	if (weapon.phial == PHIAL_IMPACT) {
 		statuses[STATUS_STUN] += pattern.phialImpactStun;

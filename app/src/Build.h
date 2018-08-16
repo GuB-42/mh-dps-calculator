@@ -10,6 +10,7 @@ struct BuffSetBonus;
 struct Item;
 struct BuffWithCondition;
 struct Weapon;
+struct Profile;
 
 struct BuffWithLevel {
 	BuffWithLevel() : group(NULL), level(0) { }
@@ -52,8 +53,8 @@ struct Build {
 	bool useSlot(int slot_level);
 	bool limitSlots(QVector<int> limit);
 	void fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const;
-	bool isBuffUseful(const BuffGroup *group) const;
-	QVector<Item *> listUsefulItems(const QVector<Item *> &items) const;
+	bool isBuffUseful(const BuffGroup *group, const Profile &profile) const;
+	QVector<Item *> listUsefulItems(const QVector<Item *> &items, const Profile &profile) const;
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 

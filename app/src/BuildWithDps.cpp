@@ -33,11 +33,13 @@ struct PatternWithBuffs {
 	                 double base_affinity) :
 		pattern(pattern),
 		foldedBuffs(buff_conds, *pattern->conditionRatios,
-		            raw_weapon, awakened_weapon, base_affinity)
+		            raw_weapon, awakened_weapon, base_affinity),
+		rate(1.0)
 	{
 	}
 	const Pattern *pattern;
 	FoldedBuffs foldedBuffs;
+	double rate;
 };
 
 void BuildWithDps::compute(const Profile &profile, const Target &target) {
@@ -55,16 +57,65 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 		build->getBuffWithConditions(&bwc);
 
 		QVector<PatternWithBuffs *> patterns;
+		double total_usage = 0.0;
 		foreach(Pattern *pattern, profile.patterns) {
+			double usage_rate = 1.0;
 			PatternWithBuffs *pwb =
 				new PatternWithBuffs(pattern, bwc,
 				                     raw_weapon, build->weapon->awakened,
 				                     build->weapon->affinity);
-			damage.addSharpnessUse(pwb->foldedBuffs, *build->weapon, *pattern);
+
+			if (pattern->capacityUpFilter) {
+				double v = pwb->foldedBuffs.data[MODE_NORMAL_NORMAL]->
+					normalBuffs[BUFF_CAPACITY_UP];
+				if (v > 1.0) v = 1.0;
+				if (v < 0.0) v = 0.0;
+				if (pattern->capacityUpEnabled) {
+					usage_rate *= v;
+				} else {
+					usage_rate *= 1.0 - v;
+				}
+			}
+			if (usage_rate == 0.0) continue;
+
+			foreach(const PatternAmmoRef &pa, pattern->ammoRefs) {
+				bool found = false;
+				foreach(const WeaponAmmoRef &wa, build->weapon->ammoRefs) {
+					if (pa.ammo == wa.ammo) {
+						found = true;
+						break;
+					}
+				}
+				if (!found) {
+					usage_rate = 0.0;
+					break;
+				}
+			}
+			if (usage_rate == 0.0) continue;
+
+			if (pattern->usage > 0.0) {
+				if (total_usage < 1.0) {
+					double pur = usage_rate * pattern->usage;
+					if (total_usage + pur <= 1.0) {
+						total_usage += pur;
+					} else {
+						usage_rate *= (1.0 - total_usage) / pur;
+						total_usage = 1.0;
+					}
+				} else {
+					usage_rate = 0.0;
+				}
+			}
+			if (usage_rate == 0.0) continue;
+
+			pwb->rate = usage_rate;
+			damage.addSharpnessUse(pwb->foldedBuffs, *build->weapon, *pattern,
+			                       pwb->rate);
 			patterns.append(pwb);
 		}
 		foreach(PatternWithBuffs *pwb, patterns) {
-			damage.addPattern(pwb->foldedBuffs, *build->weapon, *pwb->pattern);
+			damage.addPattern(pwb->foldedBuffs, *build->weapon, *pwb->pattern,
+			                  pwb->rate);
 			delete pwb;
 		}
 	}

@@ -6,6 +6,7 @@
 
 class QTextStream;
 struct Weapon;
+struct Profile;
 
 struct BuffWithCondition {
 	enum BuffClass {
@@ -41,7 +42,7 @@ struct BuffWithCondition {
 	};
 
 	BuffWithCondition();
-	bool isUseful(const Weapon &weapon) const;
+	bool isUseful(const Weapon &weapon, const Profile &profile) const;
 	bool sameBuffAs(const BuffWithCondition &o) const;
 	bool operator<(const BuffWithCondition &o) const;
 	BuffCombineOp combineOp() const;

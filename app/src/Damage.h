@@ -21,9 +21,11 @@ struct Damage {
 	Damage();
 	~Damage();
 	void addSharpnessUse(const FoldedBuffs &folded_buffs,
-	                     const Weapon &weapon, const Pattern &pattern);
+	                     const Weapon &weapon, const Pattern &pattern,
+	                     double base_rate);
 	void addPattern(const FoldedBuffs &folded_buffs,
-	                const Weapon &weapon, const Pattern &pattern);
+	                const Weapon &weapon, const Pattern &pattern,
+	                double base_rate);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 

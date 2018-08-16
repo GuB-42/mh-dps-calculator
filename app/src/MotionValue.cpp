@@ -10,6 +10,7 @@ MotionValue::MotionValue() :
 	impact(0.0),
 	piercing(0.0),
 	bullet(0.0),
+	shell(0.0),
 	fixed(0.0),
 	element(0.0),
 	status(0.0),
@@ -48,6 +49,7 @@ void MotionValue::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- impact: " << impact << endl;
 	stream << indent << "- piercing: " << piercing << endl;
 	stream << indent << "- bullet: " << bullet << endl;
+	stream << indent << "- shell: " << shell << endl;
 	stream << indent << "- fixed: " << fixed << endl;
 	stream << indent << "- element: " << element << endl;
 	stream << indent << "- status: " << status << endl;
@@ -99,6 +101,8 @@ void MotionValue::readXml(QXmlStreamReader *xml) {
 				piercing = xml->readElementText().toDouble();
 			} else if (tag_name == "bullet") {
 				bullet = xml->readElementText().toDouble();
+			} else if (tag_name == "shell") {
+				shell = xml->readElementText().toDouble();
 			} else if (tag_name == "fixed") {
 				fixed = xml->readElementText().toDouble();
 			} else if (tag_name == "element") {

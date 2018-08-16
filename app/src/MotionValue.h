@@ -17,6 +17,7 @@ struct MotionValue : public NamedObject {
 	double impact;
 	double piercing;
 	double bullet;
+	double shell;
 	double fixed;
 	double element;
 	double status;

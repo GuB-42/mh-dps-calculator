@@ -15,6 +15,12 @@
 			<motion_value_ref id="cb_sword_condensed_element_slash" multiplier="2"/>
 			<motion_value_ref id="cb_axe_ed_1" multiplier="2" raw_multiplier="1.1"/>
 		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>150.0</period>
+			<capacity_up>true</capacity_up>
+			<motion_value_ref id="cb_axe_super_aed_per_phial" multiplier="4"/>
+		</pattern>
 	</weapon_profile>
 	<weapon_profile>
 		<name>Dual Blades</name>
@@ -120,6 +126,96 @@
 			<draw_attack_ratio>0.05</draw_attack_ratio>
 			<airborne_ratio>0.05</airborne_ratio>
 			<sharpness_use>4</sharpness_use>
+		</pattern>
+	</weapon_profile>
+	<weapon_profile>
+		<name>Gunlance</name>
+		<weapon_type_ref id="gunlance" />
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<cut>1</cut>
+			<impact>0</impact>
+			<piercing>0</piercing>
+			<element>4</element>
+			<stun>0</stun>
+			<exhaust>0</exhaust>
+			<sharpness_multiplier>1</sharpness_multiplier>
+			<draw_attack_ratio>0.05</draw_attack_ratio>
+			<airborne_ratio>0.05</airborne_ratio>
+			<sharpness_use>4</sharpness_use>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_normal_1" />
+			<shell>8</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_normal_2" />
+			<shell>12</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_normal_3" />
+			<shell>16</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_normal_4" />
+			<shell>19</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_long_1" />
+			<shell>12</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_long_2" />
+			<shell>18</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_long_3" />
+			<shell>25</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_long_4" />
+			<shell>29</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_wide_1" />
+			<shell>18</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_wide_2" />
+			<shell>26</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_wide_3" />
+			<shell>32</shell>
+		</pattern>
+		<pattern>
+			<rate>1.0</rate>
+			<period>10.0</period>
+			<ammo_ref id="shell_wide_4" />
+			<shell>40</shell>
 		</pattern>
 	</weapon_profile>
 	<weapon_profile>

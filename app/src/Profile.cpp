@@ -3,6 +3,7 @@
 #include "ConditionRatios.h"
 #include "MotionValue.h"
 #include "WeaponType.h"
+#include "Ammo.h"
 
 #include <QDebug>
 #include <QMap>
@@ -12,10 +13,14 @@
 Pattern::Pattern() :
 	rate(1.0),
 	period(1.0),
+	usage(0.0),
+	capacityUpFilter(false),
+	capacityUpEnabled(false),
 	cut(0.0),
 	impact(0.0),
 	piercing(0.0),
 	bullet(0.0),
+	shell(0.0),
 	fixed(0.0),
 	element(0.0),
 	status(0.0),
@@ -47,10 +52,25 @@ Pattern::~Pattern() {
 void Pattern::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- rate: " << rate << endl;
 	stream << indent << "- period: " << period << endl;
+	stream << indent << "- capacityUpFilter: " <<
+		(capacityUpFilter ? "true" : "false") << endl;
+	stream << indent << "- capacityUpEnabled: " <<
+		(capacityUpEnabled ? "true" : "false") << endl;
+	stream << indent << "- ammos: [";
+	for (int i = 0; i < ammoRefs.count(); ++i) {
+		if (i > 0) stream << ", ";
+		if (ammoRefs[i].ammo) {
+			stream << ammoRefs[i].ammo->id;
+		} else {
+			stream << "<null, " << ammoRefs[i].id << ">";
+		}
+	}
+	stream << "]" << endl;
 	stream << indent << "- cut: " << cut << endl;
 	stream << indent << "- impact: " << impact << endl;
 	stream << indent << "- piercing: " << piercing << endl;
 	stream << indent << "- bullet: " << bullet << endl;
+	stream << indent << "- shell: " << shell << endl;
 	stream << indent << "- fixed: " << fixed << endl;
 	stream << indent << "- element: " << element << endl;
 	stream << indent << "- status: " << status << endl;
@@ -91,6 +111,7 @@ void Pattern::applyMotionValue(const MotionValue *mv,
 	impact += mv->impact * multiplier * raw_multiplier;
 	piercing += mv->piercing * multiplier * raw_multiplier;
 	bullet += mv->bullet * multiplier * raw_multiplier;
+	shell += mv->shell * multiplier;
 	fixed += mv->fixed * multiplier;
 	element += mv->element * multiplier;
 	status += mv->status * multiplier;
@@ -177,6 +198,18 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 				rate = xml->readElementText().toDouble();
 			} else if (tag_name == "period") {
 				period = xml->readElementText().toDouble();
+			} else if (tag_name == "usage") {
+				usage = xml->readElementText().toDouble();
+			} else if (tag_name == "capacity_up") {
+				QString v = xml->readElementText().toLower().trimmed();
+				capacityUpFilter = true;
+				capacityUpEnabled =
+					(v != "false" || v != "0" || v != "no" || v != "disabled");
+			} else if (tag_name == "ammo_ref") {
+				PatternAmmoRef ammo_ref;
+				ammo_ref.id = xml->attributes().value("id").toString();
+				ammoRefs.append(ammo_ref);
+				xml->skipCurrentElement();
 			} else if (tag_name == "cut") {
 				cut = xml->readElementText().toDouble();
 			} else if (tag_name == "impact") {
@@ -185,6 +218,8 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 				piercing = xml->readElementText().toDouble();
 			} else if (tag_name == "bullet") {
 				bullet = xml->readElementText().toDouble();
+			} else if (tag_name == "shell") {
+				shell = xml->readElementText().toDouble();
 			} else if (tag_name == "fixed") {
 				fixed = xml->readElementText().toDouble();
 			} else if (tag_name == "element") {

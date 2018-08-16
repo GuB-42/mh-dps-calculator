@@ -29,8 +29,9 @@ Damage::~Damage() {
 }
 
 void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,
-                             const Weapon &weapon, const Pattern &pattern) {
-	double rate = pattern.rate / pattern.period;
+                             const Weapon &weapon, const Pattern &pattern,
+                             double base_rate) {
+	double rate = base_rate * pattern.rate / pattern.period;
 	for (int mode = 0; mode < MODE_COUNT; ++mode) {
 		const FoldedBuffsData *buffs = folded_buffs.data[mode];
 		double xaffinity =
@@ -46,8 +47,9 @@ void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,
 }
 
 void Damage::addPattern(const FoldedBuffs &folded_buffs,
-                        const Weapon &weapon, const Pattern &pattern) {
-	double rate = pattern.rate / pattern.period;
+                        const Weapon &weapon, const Pattern &pattern,
+                        double base_rate) {
+	double rate = base_rate * pattern.rate / pattern.period;
 
 	bool is_set[MODE_COUNT] = { false };
 	for (int mode = 0; mode < MODE_COUNT; ++mode) {
