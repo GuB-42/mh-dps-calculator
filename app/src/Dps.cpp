@@ -17,25 +17,29 @@ double get_status_hits(double status_attack,
 			tolerance.regenValue / tolerance.regenTick;
 	}
 	if (status_attack <= 0.0) return 0.0;
-	double duration = 0.0;
 	double hits = 0.0;
-	for (int retry = 0; retry < 3; ++retry) {
-		hits = 0.0;
-		double dmg = status_attack * (period - duration);
-		double tol = tolerance.initial;
-		while (tol < tolerance.max && dmg > 0.0) {
-			if (dmg > tol) {
-				dmg -= tol;
-				tol += tolerance.plus;
-				hits += 1.0;
+	double time = 0.0;
+	double tol = tolerance.initial;
+	bool first = true;
+	while (1) {
+		if (tol > tolerance.max) tol = tolerance.max;
+		double dt = tol / status_attack;
+		if (!first) {
+			if (overbuild) {
+				if (dt < tolerance.duration) dt = tolerance.duration;
 			} else {
-				hits += dmg / tol;
-				dmg = 0.0;
+				dt += tolerance.duration;
 			}
 		}
-		if (tolerance.max > 0.0) hits += dmg / tolerance.max;
-		duration = hits * tolerance.duration;
-		if (overbuild || duration == 0.0) break;
+		if (time + dt <= period && (first || tol != tolerance.max)) {
+			hits += 1.0;
+			time += dt;
+			tol += tolerance.plus;
+		} else {
+			hits += (period - time) / dt;
+			break;
+		}
+		first = false;
 	}
 	return hits / period;
 }
