@@ -13,6 +13,12 @@
 BuildWithDps::BuildWithDps() : build(NULL) {
 }
 
+BuildWithDps::BuildWithDps(const BuildWithDps &o) :
+	build(o.build ? new Build(*o.build) : NULL),
+	damage(o.damage), dps(o.dps)
+{
+}
+
 BuildWithDps::BuildWithDps(Build *b) : build(b) {
 }
 
@@ -24,6 +30,15 @@ BuildWithDps::BuildWithDps(Build *b, const Profile &profile, const Target &targe
 
 BuildWithDps::~BuildWithDps() {
 	delete build;
+}
+
+BuildWithDps &BuildWithDps::operator=(const BuildWithDps &o) {
+	if (&o == this) return *this;
+	delete build;
+	build = o.build ? new Build(*o.build) : NULL;
+	damage = o.damage;
+	dps = o.dps;
+	return *this;
 }
 
 struct PatternWithBuffs {
@@ -76,7 +91,6 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 					usage_rate *= 1.0 - v;
 				}
 			}
-			if (usage_rate == 0.0) continue;
 
 			foreach(const PatternAmmoRef &pa, pattern->ammoRefs) {
 				bool found = false;
@@ -91,7 +105,6 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 					break;
 				}
 			}
-			if (usage_rate == 0.0) continue;
 
 			if (pattern->usage > 0.0) {
 				if (total_usage < 1.0) {
@@ -106,12 +119,15 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 					usage_rate = 0.0;
 				}
 			}
-			if (usage_rate == 0.0) continue;
 
-			pwb->rate = usage_rate;
-			damage.addSharpnessUse(pwb->foldedBuffs, *build->weapon, *pattern,
-			                       pwb->rate);
-			patterns.append(pwb);
+			if (usage_rate != 0.0) {
+				pwb->rate = usage_rate;
+				damage.addSharpnessUse(pwb->foldedBuffs, *build->weapon, *pattern,
+				                       pwb->rate);
+				patterns.append(pwb);
+			} else {
+				delete pwb;
+			}
 		}
 		foreach(PatternWithBuffs *pwb, patterns) {
 			damage.addPattern(pwb->foldedBuffs, *build->weapon, *pwb->pattern,

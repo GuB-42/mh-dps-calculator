@@ -394,12 +394,12 @@ void Target::matchMonsters(const QVector<Monster *> &monsters) {
 		double total_divider = 0.0;
 		foreach(Monster *monster, monsters) {
 			if (!subt.monsterId.isNull() && subt.monsterId != // FIXME : use ids
-			    monster->getName(NamedObject::LANG_EN)) continue;
+			    monster->getName(LANG_EN)) continue;
 			TargetMonster *target_monster = NULL;
 			double monster_divider = 0.0;
 			foreach(MonsterPart *part, monster->parts) {
 				if (!subt.partId.isNull() && subt.partId != // FIXME : use ids
-				    part->getName(NamedObject::LANG_EN)) continue;
+				    part->getName(LANG_EN)) continue;
 				double part_divider = 0.0;
 				int part_idx =
 					target_monster ? target_monster->targetZones.count() : 0;

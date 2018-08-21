@@ -56,12 +56,13 @@ public:
 	Qt::ItemFlags flags(const QModelIndex &index) const;
 	void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
 
-	void setDataLanguage(NamedObject::Language lang);
+	QVector<BuildWithDps *> resultDataList(const QModelIndexList &indexes) const;
 	void setResultData(const QVector<BuildWithDps *> &d);
 	void clear();
 	void setMimeColumnOrder(QList<int> order);
 
 public slots:
+	void setDataLanguage(Language lang);
 	void setMonsterMode(MonsterMode mode);
 
 private:
@@ -71,7 +72,7 @@ private:
 	QVector<BuildWithDps *> resultData;
 	int itemColumns;
 	QList<int> mimeColumnOrder;
-	NamedObject::Language dataLanguage;
+	Language dataLanguage;
 	MonsterMode monsterMode;
 };
 

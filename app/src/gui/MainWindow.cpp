@@ -10,6 +10,7 @@
 #include "BuffGroupListModel.h"
 #include "Computer.h"
 #include "ComputeDataDialog.h"
+#include "DetailsDialog.h"
 #include "../MainData.h"
 #include "../Target.h"
 #include "../Profile.h"
@@ -23,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	tableModel(new ResultTableModel(this)),
 	buffListModel(new BuffListModel(this)),
 	buffGroupListModel(new BuffGroupListModel(this)),
-	dataLanguage(NamedObject::LANG_EN),
+	dataLanguage(LANG_EN),
 	computer(new Computer(this))
 {
 	ui->setupUi(this);
@@ -32,15 +33,18 @@ MainWindow::MainWindow(QWidget *parent) :
 	                           QSizePolicy::Preferred);
 	ui->statusbar->addWidget(progressBar);
 
-	for (int i = 0; i < NamedObject::LANG_COUNT; ++i) {
-		ui->languageCb->addItem(toString((NamedObject::Language)i));
+	for (int i = 0; i < LANG_COUNT; ++i) {
+		ui->languageCb->addItem(toString((Language)i));
 	}
 	connect(ui->languageCb, SIGNAL(currentIndexChanged(int)),
 	        this, SLOT(changeLanguage(int)));
 
 	tableModel->setDataLanguage(dataLanguage);
+	connect(this, SIGNAL(dataLanguageChanged(Language)),
+	        tableModel, SLOT(setDataLanguage(Language)));
 	ui->tableView->setModel(tableModel);
 	ui->tableView->addAction(ui->action_Copy);
+	ui->tableView->addAction(ui->action_ShowDetails);
 
 	for (int i = 0; i < ResultTableModel::COLUMN_COUNT; ++i) {
 		if (tableModel->isDefaultVisibleColumn((ResultTableModel::Column)i)) {
@@ -56,9 +60,13 @@ MainWindow::MainWindow(QWidget *parent) :
 	        tableModel, SLOT(setMonsterMode(MonsterMode)));
 
 	buffListModel->setDataLanguage(dataLanguage);
+	connect(this, SIGNAL(dataLanguageChanged(Language)),
+	        buffListModel, SLOT(setDataLanguage(Language)));
 	ui->buffListView->setModel(buffListModel);
 
 	buffGroupListModel->setDataLanguage(dataLanguage);
+	connect(this, SIGNAL(dataLanguageChanged(Language)),
+	        buffGroupListModel, SLOT(setDataLanguage(Language)));
 	ui->buffCb->setModel(buffGroupListModel);
 
 	connect(ui->buffListView->selectionModel(),
@@ -71,6 +79,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(ui->action_Quit, SIGNAL(triggered()), this, SLOT(close()));
 	connect(ui->action_Copy, SIGNAL(triggered()), this, SLOT(copy()));
 	connect(ui->action_ShowParameters, SIGNAL(triggered()), this, SLOT(showParameters()));
+	connect(ui->action_ShowDetails, SIGNAL(triggered()), this, SLOT(showDetails()));
 
 	connect(ui->addBuff, SIGNAL(clicked()), this, SLOT(addBuff()));
 	connect(ui->removeBuff, SIGNAL(clicked()), this, SLOT(removeBuff()));
@@ -193,28 +202,25 @@ static void switchTranslator(QTranslator& translator, const QString& filename)
 	}
 }
 
-void MainWindow::setDataLanguage(NamedObject::Language lang) {
+void MainWindow::setDataLanguage(Language lang) {
 	switch (lang) {
-	case NamedObject::LANG_FR:
+	case LANG_FR:
 		switchTranslatorQt(translatorQt, "qt_fr.qm");
 		switchTranslator(translator, ":/translations/fr.qm");
 		break;
-	case NamedObject::LANG_EN:
+	case LANG_EN:
 		switchTranslatorQt(translatorQt, "qt_en.qm");
 		switchTranslator(translator, ":/translations/en.qm");
 		break;
-	case NamedObject::LANG_JP:
+	case LANG_JP:
 		switchTranslatorQt(translatorQt, "qt_ja.qm");
 		switchTranslator(translator, ":/translations/ja.qm");
 		break;
-	case NamedObject::LANG_COUNT:
+	case LANG_COUNT:
 		break;
 	}
 
 	dataLanguage = lang;
-	tableModel->setDataLanguage(dataLanguage);
-	buffListModel->setDataLanguage(dataLanguage);
-	buffGroupListModel->setDataLanguage(dataLanguage);
 	for (int idx = 0; idx < ui->profileCb->count(); ++idx) {
 		if (mainData && idx < mainData->profiles.count()) {
 			ui->profileCb->setItemText(idx, mainData->profiles[idx]->
@@ -227,19 +233,22 @@ void MainWindow::setDataLanguage(NamedObject::Language lang) {
 			                          getName(dataLanguage));
 		}
 	}
+	emit dataLanguageChanged(lang);
 }
 
 void MainWindow::updateCopyAction() {
 	if (ui->tableView->selectionModel()->hasSelection()) {
 		ui->action_Copy->setEnabled(true);
+		ui->action_ShowDetails->setEnabled(true);
 	} else {
 		ui->action_Copy->setEnabled(false);
+		ui->action_ShowDetails->setEnabled(false);
 	}
 }
 
 void MainWindow::changeLanguage(int lang_idx) {
-	if (lang_idx >= 0 && lang_idx < NamedObject::LANG_COUNT) {
-		setDataLanguage((NamedObject::Language)lang_idx);
+	if (lang_idx >= 0 && lang_idx < LANG_COUNT) {
+		setDataLanguage((Language)lang_idx);
 	}
 }
 
@@ -348,6 +357,24 @@ void MainWindow::showParameters() {
 		ComputeDataDialog *cdd =
 			new ComputeDataDialog(getProfile(), getTarget(), this);
 		cdd->show();
+	}
+}
+
+void MainWindow::showDetails() {
+	if (ui->tableView->selectionModel()) {
+		QModelIndexList indexes;
+		foreach(const QModelIndex &index,
+		        ui->tableView->selectionModel()->selectedIndexes()) {
+			if (index.isValid() && index.model() == tableModel) {
+				indexes.append(index);
+			}
+		}
+		DetailsDialog *dd =
+			new DetailsDialog(tableModel->resultDataList(indexes),
+			                  dataLanguage, this);
+		connect(this, SIGNAL(dataLanguageChanged(Language)),
+		        dd, SLOT(setDataLanguage(Language)));
+		dd->show();
 	}
 }
 

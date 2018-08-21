@@ -24,6 +24,7 @@ MainData::~MainData() {
 	foreach(Item *item, items) delete item;
 	foreach(Target *target, targets) delete target;
 	foreach(MotionValue *motion_value, motionValues) delete motion_value;
+	foreach(Song *song, songs) delete song;
 }
 
 void MainData::print(QTextStream &stream, QString indent) const {

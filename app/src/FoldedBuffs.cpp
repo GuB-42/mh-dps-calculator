@@ -29,6 +29,59 @@ static bool exclusive_conditions(Condition c1, Condition c2) {
 	}
 }
 
+FoldedBuffsData::FoldedBuffsData() {
+	normalBuffs[BUFF_ATTACK_PLUS] = 0.0;
+	normalBuffs[BUFF_ATTACK_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_AFFINITY_PLUS] = 0.0;
+	normalBuffs[BUFF_ALL_ELEMENTS_PLUS] = 0.0;
+	normalBuffs[BUFF_ALL_ELEMENTS_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_ALL_STATUSES_PLUS] = 0.0;
+	normalBuffs[BUFF_ALL_STATUSES_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_AWAKENING] = 0.0;
+	normalBuffs[BUFF_SHARPNESS_PLUS] = 0.0;
+	normalBuffs[BUFF_MAX_SHARPNESS_TIME] = 0.0;
+	normalBuffs[BUFF_SHARPNESS_USE_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_PUNISHING_DRAW] = 0.0;
+	normalBuffs[BUFF_STUN_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_EXHAUST_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_MOUNT_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_ARTILLERY_MULTIPLIER] = 1.0;
+	normalBuffs[BUFF_RAW_CRITICAL_HIT_MULTIPLIER] =
+		Constants::instance()->rawCriticalHitMultiplier;
+	normalBuffs[BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER] =
+		Constants::instance()->elementCriticalHitMultiplier;
+	normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER] =
+		Constants::instance()->statusCriticalHitMultiplier;
+	normalBuffs[BUFF_MINDS_EYE] = 0.0;
+	normalBuffs[BUFF_ATTACK_PLUS_BEFORE] = 0.0;
+	normalBuffs[BUFF_CAPACITY_UP] = 0.0;
+	for (int i = 0; i < ELEMENT_COUNT; ++i) {
+		elementBuffs[BUFF_ELEMENT_PLUS][i] = 0.0;
+		elementBuffs[BUFF_ELEMENT_MULTIPLIER][i] = 1.0;
+	}
+	for (int i = 0; i < STATUS_COUNT; ++i) {
+		statusBuffs[BUFF_STATUS_PLUS][i] = 0.0;
+		statusBuffs[BUFF_STATUS_MULTIPLIER][i] = 1.0;
+	}
+}
+
+FoldedBuffsData::FoldedBuffsData(FoldedBuffsData::Zero z)  {
+	for (int i = 0; i < NORMAL_BUFF_COUNT; ++i) {
+			normalBuffs[i] = 0.0;;
+	}
+	for (int i = 0; i < ELEMENT_BUFF_COUNT; ++i) {
+		for (int j = 0; j < ELEMENT_COUNT; ++j) {
+			elementBuffs[i][j] = 0.0;;
+		}
+	}
+	for (int i = 0; i < STATUS_BUFF_COUNT; ++i) {
+		for (int j = 0; j < STATUS_COUNT; ++j) {
+			statusBuffs[i][j] = 0.0;;
+		}
+	}
+}
+
 void FoldedBuffsData::applyBuff(const BuffWithCondition &buff_cond,
                                 const ConditionRatios &ratios,
                                 bool enraged, bool weak_spot,
@@ -96,40 +149,19 @@ void FoldedBuffsData::applyBuff(const BuffWithCondition &buff_cond,
 	}
 }
 
-FoldedBuffsData::FoldedBuffsData() {
-	normalBuffs[BUFF_ATTACK_PLUS] = 0.0;
-	normalBuffs[BUFF_ATTACK_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_AFFINITY_PLUS] = 0.0;
-	normalBuffs[BUFF_ALL_ELEMENTS_PLUS] = 0.0;
-	normalBuffs[BUFF_ALL_ELEMENTS_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_ALL_STATUSES_PLUS] = 0.0;
-	normalBuffs[BUFF_ALL_STATUSES_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_AWAKENING] = 0.0;
-	normalBuffs[BUFF_SHARPNESS_PLUS] = 0.0;
-	normalBuffs[BUFF_MAX_SHARPNESS_TIME] = 0.0;
-	normalBuffs[BUFF_SHARPNESS_USE_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_PUNISHING_DRAW] = 0.0;
-	normalBuffs[BUFF_STUN_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_EXHAUST_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_MOUNT_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_ARTILLERY_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_RAW_CRITICAL_HIT_MULTIPLIER] =
-		Constants::instance()->rawCriticalHitMultiplier;
-	normalBuffs[BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER] =
-		Constants::instance()->elementCriticalHitMultiplier;
-	normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER] =
-		Constants::instance()->statusCriticalHitMultiplier;
-	normalBuffs[BUFF_MINDS_EYE] = 0.0;
-	normalBuffs[BUFF_ATTACK_PLUS_BEFORE] = 0.0;
-	normalBuffs[BUFF_CAPACITY_UP] = 0.0;
-	for (int i = 0; i < ELEMENT_COUNT; ++i) {
-		elementBuffs[BUFF_ELEMENT_PLUS][i] = 0.0;
-		elementBuffs[BUFF_ELEMENT_MULTIPLIER][i] = 1.0;
+void FoldedBuffsData::combine(const FoldedBuffsData &data, double rate) {
+	for (int i = 0; i < NORMAL_BUFF_COUNT; ++i) {
+			normalBuffs[i] += data.normalBuffs[i] * rate;
 	}
-	for (int i = 0; i < STATUS_COUNT; ++i) {
-		statusBuffs[BUFF_STATUS_PLUS][i] = 0.0;
-		statusBuffs[BUFF_STATUS_MULTIPLIER][i] = 1.0;
+	for (int i = 0; i < ELEMENT_BUFF_COUNT; ++i) {
+		for (int j = 0; j < ELEMENT_COUNT; ++j) {
+			elementBuffs[i][j] += data.elementBuffs[i][j] * rate;
+		}
+	}
+	for (int i = 0; i < STATUS_BUFF_COUNT; ++i) {
+		for (int j = 0; j < STATUS_COUNT; ++j) {
+			statusBuffs[i][j] += data.statusBuffs[i][j] * rate;
+		}
 	}
 }
 

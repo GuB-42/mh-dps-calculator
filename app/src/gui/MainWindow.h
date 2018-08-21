@@ -34,7 +34,7 @@ public:
 
 	QVector<int> getDecorationSlots() const;
 	QVector<int> getUsedSlots() const;
-	void setDataLanguage(NamedObject::Language lang);
+	void setDataLanguage(Language lang);
 
 public slots:
 	void calculate();
@@ -42,8 +42,12 @@ public slots:
 	void calculationFinished(const QVector<BuildWithDps *> &data);
 	void copy();
 	void showParameters();
+	void showDetails();
 	void addBuff();
 	void removeBuff();
+
+signals:
+	void dataLanguageChanged(Language lang);
 
 private slots:
 	void updateCopyAction();
@@ -67,7 +71,7 @@ private:
 	ResultTableModel *tableModel;
 	BuffListModel *buffListModel;
 	BuffGroupListModel *buffGroupListModel;
-	NamedObject::Language dataLanguage;
+	Language dataLanguage;
 
 	Computer *computer;
 };

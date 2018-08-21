@@ -3,7 +3,7 @@
 
 #include <QAbstractListModel>
 #include <QList>
-#include "../NamedObject.h"
+#include "../enums.h"
 
 struct BuffGroup;
 
@@ -18,15 +18,16 @@ public:
 	void clear();
 	void addBuffGroup(const BuffGroup *group);
 
-	void setDataLanguage(NamedObject::Language lang);
-
 	const BuffGroup *buffGroup(const QModelIndex &index) const;
 	QModelIndex buffGroupIndex(const BuffGroup *group) const;
+
+public slots:
+	void setDataLanguage(Language lang);
 
 private:
 	QList<const BuffGroup *> listData;
 	QMap<const BuffGroup *, int> listDataMap;
-	NamedObject::Language dataLanguage;
+	Language dataLanguage;
 };
 
 #endif

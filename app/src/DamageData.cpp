@@ -1,7 +1,6 @@
 #include "DamageData.h"
 
 #include <QTextStream>
-#include "FoldedBuffs.h"
 #include "Weapon.h"
 #include "WeaponType.h"
 #include "Profile.h"
@@ -9,7 +8,8 @@
 
 DamageData::DamageData() :
 	cut(0.0), impact(0.0), piercing(0.0), bullet(0.0), fixed(0.0),
-	mindsEyeRate(0.0), critRate(0.0)
+	mindsEyeRate(0.0), critRate(0.0),
+	buffData(FoldedBuffsData::ZERO), totalRate(0.0)
 {
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		elements[i] = 0.0;
@@ -83,7 +83,9 @@ static double compute_buffed_element(double base,
 // and also how it stacks with awakening
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
                        const Pattern &pattern,
-                       double sharpness_use, double sharpen_period) {
+                       double sharpness_use, double sharpen_period) :
+	buffData(buffs), totalRate(0.0)
+{
 	double pre_attack =
 		weapon.attack + buffs.normalBuffs[BUFF_ATTACK_PLUS_BEFORE];
 	double attack = (pre_attack * buffs.normalBuffs[BUFF_ATTACK_MULTIPLIER]) +
@@ -132,8 +134,11 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	                        Constants::instance()->elementSharpnessMultipliers);
 	// WARN: do maybe redesign, TODO, to check
 	raw_sharpness_multiplier *= pattern.sharpnessMultiplier;
-	mindsEyeRate = buffs.normalBuffs[BUFF_MINDS_EYE] +
-		(1.0 - buffs.normalBuffs[BUFF_MINDS_EYE]) * pattern.mindsEyeRatio;
+	double minds_eye_buff = buffs.normalBuffs[BUFF_MINDS_EYE];
+	if (minds_eye_buff < 0.0) minds_eye_buff = 0.0;
+	if (minds_eye_buff > 1.0) minds_eye_buff = 1.0;
+	mindsEyeRate = minds_eye_buff +
+		(1.0 - minds_eye_buff) * pattern.mindsEyeRatio;
 
 
 	double raw_phial_multiplier = 1.0;
@@ -239,7 +244,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	if (weapon.phial == PHIAL_IMPACT) {
 		statuses[STATUS_STUN] += pattern.phialImpactStun;
 		statuses[STATUS_EXHAUST] += pattern.phialImpactExhaust;
-		double impact_attack_buff = (pre_attack - attack) *
+		double impact_attack_buff = (attack - pre_attack) *
 			Constants::instance()->impactPhialRawBonusMultiplier;
 		fixed += ((pre_attack * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER]) +
 		          impact_attack_buff) * pattern.phialImpactAttack;
@@ -293,6 +298,9 @@ void DamageData::combine(const DamageData &o, double rate) {
 		bounceSharpness.append(ns);
 		++ib;
 	}
+
+	buffData.combine(o.buffData, rate);
+	totalRate += rate;
 }
 
 void DamageData::print(QTextStream &stream, QString indent) const {

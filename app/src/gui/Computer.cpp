@@ -37,16 +37,22 @@ struct MakeBuilds
 			if (enough_slots) {
 				bool downgrade = false;
 				if (limitSlots) downgrade = b->limitSlots(slotLimit);
-				if (!downgrade) {
+				if (downgrade) {
+					delete b;
+				} else {
 					slotted_builds << b;
 					b->fillSlots(&slotted_builds, elt.useful_items);
 				}
+			} else {
+				delete b;
 			}
 		}
 		elt.builds.clear();
 		foreach(Build *b, slotted_builds) {
 			if (b->weaponSlotUpgrade == 0) {
 				elt.builds.append(b);
+			} else {
+				delete b;
 			}
 		}
 	}

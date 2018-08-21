@@ -11,7 +11,7 @@
 
 ResultTableModel::ResultTableModel(QObject *parent) :
 	QAbstractTableModel(parent), itemColumns(0),
-	dataLanguage(NamedObject::LANG_EN),
+	dataLanguage(LANG_EN),
 	monsterMode(MODE_ENRAGED_WEAK_SPOT)
 {
 }
@@ -479,10 +479,22 @@ void ResultTableModel::sort(int column, Qt::SortOrder order) {
 	emit layoutChanged();
 }
 
-void ResultTableModel::setDataLanguage(NamedObject::Language lang) {
-	dataLanguage = lang;
-	emit dataChanged(index(0, COLUMN_WEAPON_NAME),
-	                 index(rowCount() - 1, columnCount() - 1));
+struct MapDummy { };
+QVector<BuildWithDps *> ResultTableModel::resultDataList(const QModelIndexList &indexes) const {
+	QMap<int, MapDummy> rows;
+	QVector<BuildWithDps *> ret;
+
+	foreach(const QModelIndex &index, indexes) {
+		if (index.isValid() && index.row() >= 0 && index.row() < rowCount()) {
+			rows.insert(index.row(), MapDummy());
+		}
+	}
+	ret.reserve(rows.count());
+	for (QMap<int, MapDummy>::iterator it = rows.begin();
+	     it != rows.end(); ++it) {
+		ret.append(resultData[it.key()]);
+	}
+	return ret;
 }
 
 void ResultTableModel::setResultData(const QVector<BuildWithDps *> &d) {
@@ -525,6 +537,12 @@ void ResultTableModel::clear() {
 
 void ResultTableModel::setMimeColumnOrder(QList<int> order) {
 	mimeColumnOrder = order;
+}
+
+void ResultTableModel::setDataLanguage(Language lang) {
+	dataLanguage = lang;
+	emit dataChanged(index(0, COLUMN_WEAPON_NAME),
+	                 index(rowCount() - 1, columnCount() - 1));
 }
 
 void ResultTableModel::setMonsterMode(MonsterMode mode) {

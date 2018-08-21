@@ -4,6 +4,7 @@
 #include <QVector>
 #include <QString>
 #include "enums.h"
+#include "FoldedBuffs.h"
 
 struct Weapon;
 struct FoldedBuffsData;
@@ -28,6 +29,8 @@ struct DamageData {
 	double mindsEyeRate;
 	double critRate;
 	QVector<SharpnessMultiplierData> bounceSharpness;
+	FoldedBuffsData buffData;
+	double totalRate;
 
 	DamageData();
 	DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,

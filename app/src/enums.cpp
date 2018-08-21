@@ -1,5 +1,15 @@
 #include "enums.h"
 
+const char *toString(Language t) {
+	switch (t) {
+	case LANG_EN: return "en";
+	case LANG_FR: return "fr";
+	case LANG_JP: return "jp";
+	case LANG_COUNT: return "???";
+	}
+	return "???";
+}
+
 const char *toString(StatusType t) {
 	switch (t) {
 	case STATUS_POISON: return "poison";
@@ -9,8 +19,9 @@ const char *toString(StatusType t) {
 	case STATUS_BLAST: return "blast";
 	case STATUS_EXHAUST: return "exhaust";
 	case STATUS_MOUNT: return "mount";
-	default: return "???";
+	case STATUS_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(ElementType t) {
@@ -20,8 +31,9 @@ const char *toString(ElementType t) {
 	case ELEMENT_ICE: return "ice";
 	case ELEMENT_DRAGON: return "dragon";
 	case ELEMENT_WATER: return "water";
-	default: return "???";
+	case ELEMENT_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(NormalBuff b) {
@@ -49,24 +61,27 @@ const char *toString(NormalBuff b) {
 	case BUFF_MINDS_EYE: return "minds_eye";
 	case BUFF_ATTACK_PLUS_BEFORE: return "attack_plus_before";
 	case BUFF_CAPACITY_UP: return "capacity_up";
-	default: return "???";
+	case NORMAL_BUFF_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(ElementBuff b) {
 	switch (b) {
 	case BUFF_ELEMENT_PLUS: return "element_plus";
 	case BUFF_ELEMENT_MULTIPLIER: return "element_multiplier";
-	default: return "???";
+	case ELEMENT_BUFF_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(StatusBuff b) {
 	switch (b) {
 	case BUFF_STATUS_PLUS: return "status_plus";
 	case BUFF_STATUS_MULTIPLIER: return "status_multiplier";
-	default: return "???";
+	case STATUS_BUFF_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(Condition c) {
@@ -90,8 +105,9 @@ const char *toString(Condition c) {
 	case CONDITION_MIGHT_PILL_USE: return "might_pill_use";
 	case CONDITION_SONG_BASE: return "song_base";
 	case CONDITION_SONG_ENCORE: return "song_encore";
-	default: return "???";
+	case CONDITION_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(PhialType t) {
@@ -100,8 +116,9 @@ const char *toString(PhialType t) {
 	case PHIAL_ELEMENT: return "element";
 	case PHIAL_IMPACT: return "impact";
 	case PHIAL_POWER: return "power";
-	default: return "???";
+	case PHIAL_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(SharpnessLevel t) {
@@ -113,8 +130,9 @@ const char *toString(SharpnessLevel t) {
 	case SHARPNESS_BLUE: return "blue";
 	case SHARPNESS_WHITE: return "white";
 	case SHARPNESS_PURPLE: return "purple";
-	default: return "???";
+	case SHARPNESS_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(MonsterMode m) {
@@ -123,8 +141,9 @@ const char *toString(MonsterMode m) {
 	case MODE_NORMAL_WEAK_SPOT: return "normal_weak_spot";
 	case MODE_ENRAGED_NORMAL: return "enraged_normal";
 	case MODE_ENRAGED_WEAK_SPOT: return "enraged_weak_spot";
-	default: return "???";
+	case MODE_COUNT: return "???";
 	}
+	return "???";
 }
 
 const char *toString(Note n) {
@@ -137,6 +156,7 @@ const char *toString(Note n) {
 	case NOTE_YELLOW: return "yellow";
 	case NOTE_LIGHT_BLUE: return "light_blue";
 	case NOTE_ORANGE: return "orange";
-	default:  return "???";
+	case NOTE_COUNT: return "???";
 	}
+	return "???";
 }

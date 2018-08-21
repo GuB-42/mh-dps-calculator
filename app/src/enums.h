@@ -3,6 +3,14 @@
 
 #include <QMetaType>
 
+enum Language {
+	LANG_EN,
+	LANG_FR,
+	LANG_JP,
+	LANG_COUNT
+};
+const char *toString(Language t);
+
 enum StatusType {
 	STATUS_POISON,
 	STATUS_PARALYSIS,
@@ -134,6 +142,7 @@ enum Note {
 };
 const char *toString(Note n);
 
+Q_DECLARE_METATYPE(Language);
 Q_DECLARE_METATYPE(StatusType);
 Q_DECLARE_METATYPE(ElementType);
 Q_DECLARE_METATYPE(NormalBuff);

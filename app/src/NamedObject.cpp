@@ -3,22 +3,8 @@
 #include <QTextStream>
 #include <QXmlStreamReader>
 
-const char *toString(NamedObject::Language t) {
-	switch (t) {
-	case NamedObject::LANG_EN: return "en";
-	case NamedObject::LANG_FR: return "fr";
-	case NamedObject::LANG_JP: return "jp";
-	default: return "???";
-	}
-}
-
-static QString tagName(NamedObject::Language t) {
-	switch (t) {
-	case NamedObject::LANG_EN: return "name_en";
-	case NamedObject::LANG_FR: return "name_fr";
-	case NamedObject::LANG_JP: return "name_jp";
-	default: return QString();
-	}
+static QString tagName(Language t) {
+	return QString("name_") + toString(t);
 }
 
 QString NamedObject::getName(Language lang) const {

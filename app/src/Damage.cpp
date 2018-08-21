@@ -22,10 +22,54 @@ Damage::Damage() :
 	}
 }
 
+Damage::Damage(const Damage &o) :
+	sharpenPeriod(o.sharpenPeriod)
+{
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		isAlias[i] = o.isAlias[i];
+		if (!isAlias[i]) data[i] = new DamageData(*o.data[i]);
+	}
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		if (!isAlias[i]) {
+			for (int j = 0; j < MODE_COUNT; ++j) {
+				if (isAlias[j] && o.data[i] == o.data[j]) {
+					data[j] = data[i];
+				}
+			}
+		}
+	}
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		sharpnessUse[i] = o.sharpnessUse[i];
+	}
+}
+
 Damage::~Damage() {
 	for (int i = 0; i < MODE_COUNT; ++i) {
 		if (!isAlias[i]) delete data[i];
 	}
+}
+
+Damage &Damage::operator=(const Damage &o) {
+	if (&o == this) return *this;
+	sharpenPeriod = o.sharpenPeriod;
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		if (!isAlias[i]) delete data[i];
+		isAlias[i] = o.isAlias[i];
+		if (!isAlias[i]) data[i] = new DamageData(*o.data[i]);
+	}
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		if (!isAlias[i]) {
+			for (int j = 0; j < MODE_COUNT; ++j) {
+				if (isAlias[j] && o.data[i] == o.data[j]) {
+					data[j] = data[i];
+				}
+			}
+		}
+	}
+	for (int i = 0; i < MODE_COUNT; ++i) {
+		sharpnessUse[i] = o.sharpnessUse[i];
+	}
+	return *this;
 }
 
 void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,

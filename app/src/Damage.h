@@ -19,7 +19,9 @@ struct Damage {
 	bool isAlias[MODE_COUNT];
 
 	Damage();
+	Damage(const Damage &o);
 	~Damage();
+	Damage &operator=(const Damage &o);
 	void addSharpnessUse(const FoldedBuffs &folded_buffs,
 	                     const Weapon &weapon, const Pattern &pattern,
 	                     double base_rate);

@@ -1,5 +1,6 @@
 #include "ComputeDataModel.h"
 
+#include "GuiElements.h"
 #include "../Profile.h"
 #include "../Target.h"
 #include "../ConditionRatios.h"
@@ -69,31 +70,6 @@ ComputeDataModel::ComputeDataModel(const Profile *p, const Target *t,
 	}
 }
 
-QString ComputeDataModel::conditionName(Condition c) {
-	switch (c) {
-	case CONDITION_ALWAYS: return tr("Ratio: Always");
-	case CONDITION_ENRAGED: return tr("Ratio: Enraged");
-	case CONDITION_WEAK_SPOT: return tr("Ratio: Weak spot");
-	case CONDITION_RAW_WEAPON: return tr("Ratio: Raw weapon");
-	case CONDITION_DRAW_ATTACK: return tr("Ratio: Draw attack");
-	case CONDITION_AIRBORNE: return tr("Ratio: Airborne");
-	case CONDITION_RED_LIFE: return tr("Ratio: Red life (resentment)");
-	case CONDITION_FULL_LIFE: return tr("Ratio: Full life");
-	case CONDITION_LOW_LIFE: return tr("Ratio: Low life (heroics)");
-	case CONDITION_DEATH_1: return tr("Ratio: Fainted once");
-	case CONDITION_DEATH_2: return tr("Ratio: Fainted twice");
-	case CONDITION_FULL_STAMINA: return tr("Ratio: Full stamina");
-	case CONDITION_SLIDING: return tr("Ratio: Sliding");
-	case CONDITION_RECEIVED_DAMAGE: return tr("Ratio: Received damage (latent power)");
-	case CONDITION_DEMON_POWDER_USE: return tr("Ratio: Using demon powder");
-	case CONDITION_MIGHT_SEED_USE: return tr("Ratio: Using might seed");
-	case CONDITION_MIGHT_PILL_USE: return tr("Ratio: Using might pill");
-	case CONDITION_SONG_BASE: return tr("Ratio: Active song (base)");;
-	case CONDITION_SONG_ENCORE: return tr("Ratio: Active song (encore)");;
-	default: return tr("???");
-	}
-}
-
 int ComputeDataModel::conditionRow(Condition c) {
 	if (c <= CONDITION_ALWAYS) return -1;
 	if (c == CONDITION_RAW_WEAPON) return -1;
@@ -157,7 +133,7 @@ QVariant ComputeDataModel::data(const QModelIndex &index, int role) const {
 			case 3:
 				return tr("Status buildup multiplier");
 			default:
-				return conditionName(c);
+				return tr("Ratio: %1").arg(GuiElements::conditionName(c));
 			}
 		case 1:
 			switch (xdata) {

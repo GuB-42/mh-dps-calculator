@@ -18,6 +18,10 @@ public:
 	static QBrush statusBrush(const double (&v)[STATUS_COUNT]);
 	static QString statusName(StatusType t);
 	static QString statusToolTip(const double (&v)[STATUS_COUNT]);
+	static QString conditionName(Condition c);
+	static QString normalBuffName(NormalBuff buff);
+	static QString elementBuffName(ElementBuff buff, ElementType type);
+	static QString statusBuffName(StatusBuff buff, StatusType type);
 };
 
 #endif

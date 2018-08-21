@@ -2,15 +2,12 @@
 #define NamedObject_h_
 
 #include <QString>
+#include "enums.h"
 
 class QTextStream;
 class QXmlStreamReader;
 
 struct NamedObject {
-	enum Language {
-		LANG_EN, LANG_FR, LANG_JP, LANG_COUNT
-	};
-
 	QString id;
 	QString names[LANG_COUNT];
 
@@ -20,7 +17,5 @@ struct NamedObject {
 	virtual void print(QTextStream &stream, QString indent = QString()) const;
 	bool readXmlName(QXmlStreamReader *xml);
 };
-
-const char *toString(NamedObject::Language t);
 
 #endif

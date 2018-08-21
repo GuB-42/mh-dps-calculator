@@ -13,7 +13,6 @@ public:
 	explicit ComputeDataModel(const Profile *p, const Target *t,
 	                          QObject *parent = 0);
 
-	static QString conditionName(Condition c);
 	static int conditionRow(Condition c);
 	static Condition rowCondition(int row);
 

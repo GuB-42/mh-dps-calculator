@@ -2,7 +2,7 @@
 #include "../BuffGroup.h"
 
 BuffGroupListModel::BuffGroupListModel(QObject *parent) :
-	QAbstractListModel(parent), dataLanguage(NamedObject::LANG_EN)
+	QAbstractListModel(parent), dataLanguage(LANG_EN)
 {
 }
 
@@ -43,7 +43,7 @@ void BuffGroupListModel::addBuffGroup(const BuffGroup *group) {
 	}
 }
 
-void BuffGroupListModel::setDataLanguage(NamedObject::Language lang) {
+void BuffGroupListModel::setDataLanguage(Language lang) {
 	dataLanguage = lang;
 	emit dataChanged(index(0), index(rowCount() - 1));
 }
