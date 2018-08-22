@@ -9,14 +9,25 @@
 DamageData::DamageData() :
 	cut(0.0), impact(0.0), piercing(0.0), bullet(0.0), fixed(0.0),
 	mindsEyeRate(0.0), critRate(0.0),
-	buffData(FoldedBuffsData::ZERO), totalRate(0.0)
+	buffData(NULL), totalRate(0.0)
 {
-	for (int i = 0; i < ELEMENT_COUNT; ++i) {
-		elements[i] = 0.0;
-	}
-	for (int i = 0; i < STATUS_COUNT; ++i) {
-		statuses[i] = 0.0;
-	}
+	std::fill_n(elements, ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, STATUS_COUNT, 0.0);
+}
+
+DamageData::DamageData(const DamageData &o) :
+	cut(o.cut), impact(o.impact), piercing(o.piercing),
+	bullet(o.bullet), fixed(o.fixed),
+	mindsEyeRate(o.mindsEyeRate), critRate(o.critRate),
+	buffData(NULL), totalRate(o.totalRate)
+{
+	std::copy(o.elements, o.elements + ELEMENT_COUNT, elements);
+	std::copy(o.statuses, o.statuses + STATUS_COUNT, statuses);
+	if (o.buffData) buffData = new FoldedBuffsData(*o.buffData);
+}
+
+DamageData::~DamageData() {
+	delete buffData;
 }
 
 double compute_sharp_bonus(const double levels[SHARPNESS_COUNT],
@@ -84,7 +95,7 @@ static double compute_buffed_element(double base,
 DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
                        const Pattern &pattern,
                        double sharpness_use, double sharpen_period) :
-	buffData(buffs), totalRate(0.0)
+	buffData(NULL), totalRate(0.0)
 {
 	double pre_attack =
 		weapon.attack + buffs.normalBuffs[BUFF_ATTACK_PLUS_BEFORE];
@@ -255,6 +266,49 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	statuses[STATUS_MOUNT] *= buffs.normalBuffs[BUFF_MOUNT_MULTIPLIER];
 }
 
+DamageData &DamageData::operator=(const DamageData &o) {
+	if (&o == this) return *this;
+	cut = o.cut;
+	impact = o.impact;
+	piercing = o.piercing;
+	bullet = o.bullet;
+	fixed = o.fixed;
+	mindsEyeRate = o.mindsEyeRate;
+	critRate = o.critRate;
+	bounceSharpness = o.bounceSharpness;
+	totalRate = o.totalRate;
+	std::copy(o.elements, o.elements + ELEMENT_COUNT, elements);
+	std::copy(o.statuses, o.statuses + STATUS_COUNT, statuses);
+	delete buffData;
+	if (o.buffData) {
+		buffData = new FoldedBuffsData(*o.buffData);
+	} else {
+		buffData = NULL;
+	}
+	return *this;
+}
+
+void DamageData::setBuffs(const FoldedBuffsData &buffs) {
+	delete buffData;
+	buffData = new FoldedBuffsData(buffs);
+}
+
+void DamageData::clear() {
+	cut = 0.0;
+	impact = 0.0;
+	piercing = 0.0;
+	bullet = 0.0;
+	fixed = 0.0;
+	mindsEyeRate = 0.0;
+	critRate = 0.0;
+	bounceSharpness.clear();
+	totalRate = 0.0;
+	std::fill_n(elements, ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, STATUS_COUNT, 0.0);
+	delete buffData;
+	buffData = NULL;
+}
+
 void DamageData::combine(const DamageData &o, double rate) {
 	cut += o.cut * rate;
 	impact += o.impact * rate;
@@ -299,7 +353,10 @@ void DamageData::combine(const DamageData &o, double rate) {
 		++ib;
 	}
 
-	buffData.combine(o.buffData, rate);
+	if (o.buffData) {
+		if (!buffData) buffData = new FoldedBuffsData(FoldedBuffsData::ZERO);
+		buffData->combine(*o.buffData, rate);
+	}
 	totalRate += rate;
 }
 

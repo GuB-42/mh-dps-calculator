@@ -29,13 +29,18 @@ struct DamageData {
 	double mindsEyeRate;
 	double critRate;
 	QVector<SharpnessMultiplierData> bounceSharpness;
-	FoldedBuffsData buffData;
+	FoldedBuffsData *buffData;
 	double totalRate;
 
 	DamageData();
+	DamageData(const DamageData &o);
+	~DamageData();
 	DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	           const Pattern &pattern,
 	           double sharpness_use, double sharpen_period);
+	DamageData &operator=(const DamageData &o);
+	void setBuffs(const FoldedBuffsData &buffs);
+	void clear();
 	void combine(const DamageData &o, double rate);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

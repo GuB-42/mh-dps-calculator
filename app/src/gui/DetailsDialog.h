@@ -4,6 +4,8 @@
 #include <QDialog>
 #include "../NamedObject.h"
 
+struct Profile;
+struct Target;
 struct BuildWithDps;
 struct BuffWithCondition;
 struct Damage;
@@ -17,7 +19,9 @@ namespace Ui {
 class DetailsDialog : public QDialog {
 	Q_OBJECT
 public:
-	DetailsDialog(QVector<BuildWithDps *> rd,
+	DetailsDialog(const Profile *profile,
+	              const Target *target,
+	              QVector<BuildWithDps *> rd,
                   Language lang,
                   QWidget *parent = NULL);
 	virtual ~DetailsDialog();

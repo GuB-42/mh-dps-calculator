@@ -10,7 +10,9 @@
 #include "../DamageData.h"
 #include "../BuffWithCondition.h"
 
-DetailsDialog::DetailsDialog(QVector<BuildWithDps *> rd,
+DetailsDialog::DetailsDialog(const Profile *profile,
+                             const Target *target,
+                             QVector<BuildWithDps *> rd,
                              Language lang,
                              QWidget *parent) :
 	QDialog(parent), ui(new Ui::DetailsDialog),
@@ -19,7 +21,9 @@ DetailsDialog::DetailsDialog(QVector<BuildWithDps *> rd,
 	ui->setupUi(this);
 	resultData.reserve(rd.count());
 	foreach(BuildWithDps *bwd, rd) {
-		resultData.append(new BuildWithDps(*bwd));
+		BuildWithDps *n = new BuildWithDps(*bwd);
+		n->compute(*profile, *target, true);
+		resultData.append(n);
 	}
 	updateContent();
 }
@@ -48,7 +52,11 @@ void DetailsDialog::changeEvent(QEvent *event) {
 }
 
 static QString esc(QString v) {
+#if QT_VERSION >= 0x050000
+	return v.toHtmlEscaped();
+#else
 	return Qt::escape(v);
+#endif
 }
 
 QString DetailsDialog::weaponTableHtml(const Weapon &weapon) {
@@ -411,8 +419,9 @@ QString DetailsDialog::foldedBuffsTableHtml(const Damage &damage) {
 		bool show_value = false;
 		for (int mode = 0; mode < MODE_COUNT; ++mode) {
 			if (damage.isAlias[mode]) continue;
+			if (!damage.data[mode]->buffData) continue;
 			double def = folded_buff_data_val(buff_defaults, row);
-			double val = folded_buff_data_val(damage.data[mode]->buffData, row) /
+			double val = folded_buff_data_val(*damage.data[mode]->buffData, row) /
 				 damage.data[mode]->totalRate;
 			if (def - val > 1e-9 || val - def > 1e-9) {
 				show_value = true;
@@ -425,7 +434,11 @@ QString DetailsDialog::foldedBuffsTableHtml(const Damage &damage) {
 			double d0;
 			for (int mode = 0; mode < MODE_COUNT; ++mode) {
 				if (damage.isAlias[mode]) continue;
-				double d = folded_buff_data_val(damage.data[mode]->buffData, row) /
+				if (!damage.data[mode]->buffData) {
+					ret += QString("<td></td>");
+					continue;
+				}
+				double d = folded_buff_data_val(*damage.data[mode]->buffData, row) /
 					damage.data[mode]->totalRate;
 				if (mode == 0) d0 = d;
 				if (d0 == d) {

@@ -22,11 +22,6 @@ BuildWithDps::BuildWithDps(const BuildWithDps &o) :
 BuildWithDps::BuildWithDps(Build *b) : build(b) {
 }
 
-BuildWithDps::BuildWithDps(Build *b, const Profile &profile, const Target &target) :
-	build(b)
-{
-	compute(profile, target);
-}
 
 BuildWithDps::~BuildWithDps() {
 	delete build;
@@ -57,7 +52,9 @@ struct PatternWithBuffs {
 	double rate;
 };
 
-void BuildWithDps::compute(const Profile &profile, const Target &target) {
+void BuildWithDps::compute(const Profile &profile, const Target &target,
+                           bool with_details) {
+	damage.clear();
 	damage.sharpenPeriod = profile.sharpenPeriod;
 	if (build->weapon) {
 		bool raw_weapon = true;
@@ -131,7 +128,7 @@ void BuildWithDps::compute(const Profile &profile, const Target &target) {
 		}
 		foreach(PatternWithBuffs *pwb, patterns) {
 			damage.addPattern(pwb->foldedBuffs, *build->weapon, *pwb->pattern,
-			                  pwb->rate);
+			                  pwb->rate, with_details);
 			delete pwb;
 		}
 	}

@@ -5,6 +5,8 @@
 #include "ConditionRatios.h"
 #include "Constants.h"
 
+const FoldedBuffsData::Zero FoldedBuffsData::ZERO;
+
 static bool exclusive_conditions(Condition c1, Condition c2) {
 	switch (c1) {
 	case CONDITION_RED_LIFE:
@@ -56,30 +58,18 @@ FoldedBuffsData::FoldedBuffsData() {
 	normalBuffs[BUFF_MINDS_EYE] = 0.0;
 	normalBuffs[BUFF_ATTACK_PLUS_BEFORE] = 0.0;
 	normalBuffs[BUFF_CAPACITY_UP] = 0.0;
-	for (int i = 0; i < ELEMENT_COUNT; ++i) {
-		elementBuffs[BUFF_ELEMENT_PLUS][i] = 0.0;
-		elementBuffs[BUFF_ELEMENT_MULTIPLIER][i] = 1.0;
-	}
-	for (int i = 0; i < STATUS_COUNT; ++i) {
-		statusBuffs[BUFF_STATUS_PLUS][i] = 0.0;
-		statusBuffs[BUFF_STATUS_MULTIPLIER][i] = 1.0;
-	}
+	std::fill_n(elementBuffs[BUFF_ELEMENT_PLUS], ELEMENT_COUNT, 0.0);
+	std::fill_n(elementBuffs[BUFF_ELEMENT_MULTIPLIER], ELEMENT_COUNT, 1.0);
+	std::fill_n(statusBuffs[BUFF_STATUS_PLUS], STATUS_COUNT, 0.0);
+	std::fill_n(statusBuffs[BUFF_STATUS_MULTIPLIER], STATUS_COUNT, 1.0);
 }
 
-FoldedBuffsData::FoldedBuffsData(FoldedBuffsData::Zero z)  {
-	for (int i = 0; i < NORMAL_BUFF_COUNT; ++i) {
-			normalBuffs[i] = 0.0;;
-	}
-	for (int i = 0; i < ELEMENT_BUFF_COUNT; ++i) {
-		for (int j = 0; j < ELEMENT_COUNT; ++j) {
-			elementBuffs[i][j] = 0.0;;
-		}
-	}
-	for (int i = 0; i < STATUS_BUFF_COUNT; ++i) {
-		for (int j = 0; j < STATUS_COUNT; ++j) {
-			statusBuffs[i][j] = 0.0;;
-		}
-	}
+FoldedBuffsData::FoldedBuffsData(FoldedBuffsData::Zero)  {
+	std::fill_n(normalBuffs, NORMAL_BUFF_COUNT, 0.0);
+	std::fill_n(&elementBuffs[0][0],
+	            ELEMENT_BUFF_COUNT * ELEMENT_COUNT, 0.0);
+	std::fill_n(&statusBuffs[0][0],
+	            STATUS_BUFF_COUNT * STATUS_COUNT, 0.0);
 }
 
 void FoldedBuffsData::applyBuff(const BuffWithCondition &buff_cond,

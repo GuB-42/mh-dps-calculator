@@ -22,12 +22,13 @@ struct Damage {
 	Damage(const Damage &o);
 	~Damage();
 	Damage &operator=(const Damage &o);
+	void clear();
 	void addSharpnessUse(const FoldedBuffs &folded_buffs,
 	                     const Weapon &weapon, const Pattern &pattern,
 	                     double base_rate);
 	void addPattern(const FoldedBuffs &folded_buffs,
 	                const Weapon &weapon, const Pattern &pattern,
-	                double base_rate);
+	                double base_rate, bool with_details);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };
 

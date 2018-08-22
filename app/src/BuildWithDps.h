@@ -21,7 +21,8 @@ struct BuildWithDps {
 	BuildWithDps(Build *b, const Profile &profile, const Target &target);
 	~BuildWithDps();
 	BuildWithDps &operator=(const BuildWithDps &o);
-	void compute(const Profile &profile, const Target &target);
+	void compute(const Profile &profile, const Target &target,
+	             bool with_details);
 };
 
 #endif

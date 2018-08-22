@@ -90,7 +90,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	        this, SLOT(updateCopyAction()));
 	updateCopyAction();
 
+#if QT_VERSION >= 0x050000
+	ui->tableView->horizontalHeader()->setSectionsMovable(true);
+#else
 	ui->tableView->horizontalHeader()->setMovable(true);
+#endif
 	connect(ui->tableView->horizontalHeader(), SIGNAL(sectionMoved(int, int, int)),
 	        this, SLOT(updateTableMimeColumnOrder()));
 	updateTableMimeColumnOrder();
@@ -370,7 +374,8 @@ void MainWindow::showDetails() {
 			}
 		}
 		DetailsDialog *dd =
-			new DetailsDialog(tableModel->resultDataList(indexes),
+			new DetailsDialog(getProfile(), getTarget(),
+			                  tableModel->resultDataList(indexes),
 			                  dataLanguage, this);
 		connect(this, SIGNAL(dataLanguageChanged(Language)),
 		        dd, SLOT(setDataLanguage(Language)));

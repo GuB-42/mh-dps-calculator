@@ -18,7 +18,7 @@ struct FoldedBuffsData {
 	static const Zero ZERO;
 
 	FoldedBuffsData();
-	explicit FoldedBuffsData(Zero z);
+	explicit FoldedBuffsData(Zero);
 	void applyBuff(const BuffWithCondition &buff_cond,
 	               const ConditionRatios &ratios,
 	               bool enraged, bool weak_spot,

@@ -235,13 +235,9 @@ Dps::Dps() :
 	bounceRate(0.0), critRate(0.0), killFrequency(0.0),
 	weakSpotRatio(0.0), stunRate(0.0)
 {
-	for (int i = 0; i < ELEMENT_COUNT; ++i) {
-		elements[i] = 0.0;
-	}
-	for (int i = 0; i < STATUS_COUNT; ++i) {
-		statuses[i] = 0.0;
-		statusProcRate[i] = 0.0;
-	}
+	std::fill_n(elements, ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, STATUS_COUNT, 0.0);
+	std::fill_n(statusProcRate, STATUS_COUNT, 0.0);
 }
 
 void Dps::combine(const Dps &o, double rate) {

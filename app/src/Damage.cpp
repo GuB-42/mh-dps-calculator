@@ -17,9 +17,7 @@ Damage::Damage() :
 		data[i] = data[0];
 		isAlias[i] = true;
 	}
-	for (int i = 0; i < MODE_COUNT; ++i) {
-		sharpnessUse[i] = 0.0;
-	}
+	std::fill_n(sharpnessUse, MODE_COUNT, 0.0);
 }
 
 Damage::Damage(const Damage &o) :
@@ -38,9 +36,7 @@ Damage::Damage(const Damage &o) :
 			}
 		}
 	}
-	for (int i = 0; i < MODE_COUNT; ++i) {
-		sharpnessUse[i] = o.sharpnessUse[i];
-	}
+	std::copy(o.sharpnessUse, o.sharpnessUse + MODE_COUNT, sharpnessUse);
 }
 
 Damage::~Damage() {
@@ -66,10 +62,18 @@ Damage &Damage::operator=(const Damage &o) {
 			}
 		}
 	}
-	for (int i = 0; i < MODE_COUNT; ++i) {
-		sharpnessUse[i] = o.sharpnessUse[i];
-	}
+	std::copy(o.sharpnessUse, o.sharpnessUse + MODE_COUNT, sharpnessUse);
 	return *this;
+}
+
+void Damage::clear() {
+	data[0]->clear();
+	for (int i = 1; i < MODE_COUNT; ++i) {
+		if (!isAlias[i]) delete data[i];
+		data[i] = data[0];
+		isAlias[i] = true;
+	}
+	std::fill_n(sharpnessUse, MODE_COUNT, 0.0);
 }
 
 void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,
@@ -92,7 +96,7 @@ void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,
 
 void Damage::addPattern(const FoldedBuffs &folded_buffs,
                         const Weapon &weapon, const Pattern &pattern,
-                        double base_rate) {
+                        double base_rate, bool with_details) {
 	double rate = base_rate * pattern.rate / pattern.period;
 
 	bool is_set[MODE_COUNT] = { false };
@@ -101,6 +105,7 @@ void Damage::addPattern(const FoldedBuffs &folded_buffs,
 			DamageData dmg(weapon, *folded_buffs.data[mode],
 			               pattern, sharpnessUse[mode] * sharpenPeriod,
 			               sharpenPeriod);
+			if (with_details) dmg.setBuffs(*folded_buffs.data[mode]);
 			DamageData *old_data = NULL;
 			DamageData *new_data = data[mode];
 			if (isAlias[mode]) {

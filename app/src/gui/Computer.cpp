@@ -104,7 +104,7 @@ struct MakeResult
 	MakeResult(const Profile &p, const Target &t) :
 		profile(p), target(t) {};
 	void operator()(BuildWithDps *bwd) {
-		bwd->compute(profile, target);
+		bwd->compute(profile, target, false);
 	}
 	const Profile &profile;
 	const Target &target;
