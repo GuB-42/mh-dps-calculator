@@ -66,6 +66,7 @@ src/Monster.h \
 src/MotionValue.h \
 src/NamedObject.h \
 src/Profile.h \
+src/SmallArray.h \
 src/Song.h \
 src/Target.h \
 src/Weapon.h \

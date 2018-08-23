@@ -78,10 +78,10 @@ void Dps::computeNoStatus(const MonsterHitData &hit_data,
 		raw += t_raw;
 		if (weak) weak_raw += t_atk[i] * t_def[i] / 100.0;
 		if (i != 3) {
-			foreach(const SharpnessMultiplierData smd, dmg.bounceSharpness) {
-				double v = t_atk[i] * smd.rate;
+			for (size_t j = 0; j < dmg.bounceSharpness.size(); ++j) {
+				double v = t_atk[i] * dmg.bounceSharpness[i].rate;
 				bounce_divider += v;
-				if (smd.multiplier * t_def[i] <
+				if (dmg.bounceSharpness[i].multiplier * t_def[i] <
 				    Constants::instance()->bounceThreshold) {
 					bounceRate += v;
 				}
@@ -102,14 +102,12 @@ void Dps::computeNoStatus(const MonsterHitData &hit_data,
 
 	fixed = weak_damage.fixed;
 
-	totalElements = 0.0;
 	for (int elt = 0; elt < ELEMENT_COUNT; ++elt) {
 		bool weak = hit_data.element[elt] <
 			Constants::instance()->elementWeakSpotThreshold;
 		const DamageData &dmg = weak ? normal_damage : weak_damage;
 		double v = dmg.elements[elt] * hit_data.element[elt] / 100.0;
 		elements[elt] = v;
-		totalElements += v;
 	}
 
 	stunRate = hit_data.stun / 100.0;
@@ -123,15 +121,15 @@ void Dps::computeStatus(const Monster &monster,
                         double status_defense_multiplier,
                         double status_hit_multiplier) {
 	killFrequency = 0.0;
-	totalStatuses = 0.0;
-	for (int sta = 0; sta < STATUS_COUNT; ++sta) {
-		statusProcRate[sta] = 0.0;
-	}
-	double subtotal = (raw + fixed + totalElements) * defense_multiplier;
+	std::fill_n(statuses, STATUS_COUNT, 0.0);
+	std::fill_n(statusProcRate, STATUS_COUNT, 0.0);
+
+	double subtotal = (raw + fixed + totalElements()) * defense_multiplier;
+	double total_statuses = 0.0;
 	for (int retry = 0; retry < 3; ++retry) {
 		double real_total =
-			subtotal + totalStatuses * status_defense_multiplier;
-		totalStatuses = 0.0;
+			subtotal + total_statuses * status_defense_multiplier;
+		total_statuses = 0.0;
 		if (monster.hitPoints > 0.0	&& real_total > 0.0) {
 			killFrequency = real_total / monster.hitPoints;
 			for (int sta = 0; sta < STATUS_COUNT; ++sta) {
@@ -149,16 +147,16 @@ void Dps::computeStatus(const Monster &monster,
 						statusProcRate[sta] = hits;
 						if (monster.tolerances[sta]->damage > 0.0) {
 							double mod_hits = killFrequency *
-								 Constants::statusDamageCurve(hits / killFrequency);
+								Constants::statusDamageCurve(hits / killFrequency);
 							double v = monster.tolerances[sta]->damage * mod_hits;
 							statuses[sta] = v;
-							totalStatuses += v;
+							total_statuses += v;
 						}
 					}
 				}
 			}
 		}
-		if (totalStatuses == 0.0) break;
+		if (total_statuses == 0.0) break;
 	}
 }
 
@@ -182,7 +180,7 @@ void Dps::compute(const Target &target, const Damage &damage)
 				t_dps.computeNoStatus(*tzone->hitData,
 				                      *damage.data[MODE_NORMAL_NORMAL],
 				                      *damage.data[MODE_NORMAL_WEAK_SPOT]);
-				monster_dps.combine(t_dps, tzone->weight / monster_weight);
+				monster_dps.combineNoStatus(t_dps, tzone->weight / monster_weight);
 			}
 			monster_dps.computeStatus(*tmonster->monster,
 			                          *damage.data[MODE_NORMAL_NORMAL],
@@ -204,13 +202,13 @@ void Dps::compute(const Target &target, const Damage &damage)
 				t_dps.computeNoStatus(*tzone->hitData,
 				                      *damage.data[MODE_NORMAL_NORMAL],
 				                      *damage.data[MODE_NORMAL_WEAK_SPOT]);
-				normal_dps.combine(t_dps, tzone->weight * (1.0 - tzone->enragedRatio) /
-				                   normal_weight);
+				normal_dps.combineNoStatus(t_dps, tzone->weight *
+				                           (1.0 - tzone->enragedRatio) / normal_weight);
 				t_dps.computeNoStatus(*tzone->hitData,
 				                      *damage.data[MODE_ENRAGED_NORMAL],
 				                      *damage.data[MODE_ENRAGED_WEAK_SPOT]);
-				enraged_dps.combine(t_dps, tzone->weight * tzone->enragedRatio /
-				                    enraged_weight);
+				enraged_dps.combineNoStatus(t_dps, tzone->weight *
+				                            tzone->enragedRatio / enraged_weight);
 			}
 			normal_dps.computeStatus(*tmonster->monster,
 			                         *damage.data[MODE_NORMAL_NORMAL],
@@ -231,7 +229,7 @@ void Dps::compute(const Target &target, const Damage &damage)
 }
 
 Dps::Dps() :
-	raw(0.0), totalElements(0.0), totalStatuses(0.0), fixed(0.0),
+	raw(0.0), fixed(0.0),
 	bounceRate(0.0), critRate(0.0), killFrequency(0.0),
 	weakSpotRatio(0.0), stunRate(0.0)
 {
@@ -240,7 +238,7 @@ Dps::Dps() :
 	std::fill_n(statusProcRate, STATUS_COUNT, 0.0);
 }
 
-void Dps::combine(const Dps &o, double rate) {
+void Dps::combineNoStatus(const Dps &o, double rate) {
 	raw += o.raw * rate;
 	fixed += o.fixed * rate;
 	bounceRate += o.bounceRate * rate;
@@ -248,33 +246,48 @@ void Dps::combine(const Dps &o, double rate) {
 	killFrequency += o.killFrequency * rate;
 	weakSpotRatio += o.weakSpotRatio * rate;
 	stunRate += o.stunRate * rate;
-	if (o.totalElements != 0.0) {
-		totalElements += o.totalElements * rate;
-		for (int i = 0; i < ELEMENT_COUNT; ++i) {
-			elements[i] += o.elements[i] * rate;
-		}
+	for (int i = 0; i < ELEMENT_COUNT; ++i) {
+		elements[i] += o.elements[i] * rate;
 	}
-	if (o.totalStatuses != 0.0) {
-		totalStatuses += o.totalStatuses * rate;
-		for (int i = 0; i < STATUS_COUNT; ++i) {
-			statuses[i] += o.statuses[i] * rate;
-		}
+}
+
+void Dps::combine(const Dps &o, double rate) {
+	combineNoStatus(o, rate);
+	for (int i = 0; i < STATUS_COUNT; ++i) {
+		statuses[i] += o.statuses[i] * rate;
 	}
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		statusProcRate[i] += o.statusProcRate[i] * rate;
 	}
 }
 
+double Dps::totalDps() const {
+	double ret = raw + fixed;
+	for (int i = 0; i < ELEMENT_COUNT; ++i) ret += elements[i];
+	for (int i = 0; i < STATUS_COUNT; ++i) ret += statuses[i];
+	return ret;
+}
+
+double Dps::totalElements() const {
+	double ret = 0.0;
+	for (int i = 0; i < ELEMENT_COUNT; ++i) ret += elements[i];
+	return ret;
+}
+
+double Dps::totalStatuses() const {
+	double ret = 0.0;
+	for (int i = 0; i < STATUS_COUNT; ++i) ret += statuses[i];
+	return ret;
+}
+
 void Dps::print(QTextStream &stream, QString indent) {
 	stream << indent << "- raw: " << raw << endl;
-	stream << indent << "- total elements: " << totalElements << endl;
 	stream << indent << "- elements: [";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << elements[i];
 	}
 	stream << "]" << endl;
-	stream << indent << "- total statuses: " << totalStatuses << endl;
 	stream << indent << "- statuses: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";

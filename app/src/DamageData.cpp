@@ -19,6 +19,7 @@ DamageData::DamageData(const DamageData &o) :
 	cut(o.cut), impact(o.impact), piercing(o.piercing),
 	bullet(o.bullet), fixed(o.fixed),
 	mindsEyeRate(o.mindsEyeRate), critRate(o.critRate),
+	bounceSharpness(o.bounceSharpness),
 	buffData(NULL), totalRate(o.totalRate)
 {
 	std::copy(o.elements, o.elements + ELEMENT_COUNT, elements);
@@ -33,7 +34,7 @@ DamageData::~DamageData() {
 double compute_sharp_bonus(const double levels[SHARPNESS_COUNT],
                            double wasted, double use, double max_ratio,
                            const double values[SHARPNESS_COUNT],
-                           QVector<SharpnessMultiplierData> *pmult = NULL) {
+                           DamageData::BounceSharpnessArray *pmult = NULL) {
 	int i = SHARPNESS_COUNT - 1;
 	double cur_level = levels[i];
 
@@ -45,21 +46,30 @@ double compute_sharp_bonus(const double levels[SHARPNESS_COUNT],
 	}
 	cur_level -= wasted;
 
+	if (pmult) pmult->resize(SHARPNESS_COUNT);
+	size_t md_idx = 0;
+	double ret = 0.0;
 	if (i < 0) {
-		if (pmult) pmult->append(SharpnessMultiplierData(1.0, values[0]));
-		return values[0];
+		if (pmult) {
+			(*pmult)[md_idx].rate = 1.0;
+			(*pmult)[md_idx++].multiplier = values[0];
+		}
+		ret = values[0];
 	} else if (use <= 0.0 || max_ratio >= 1.0) {
-		if (pmult) pmult->append(SharpnessMultiplierData(1.0, values[i]));
-		return values[i];
+		if (pmult) {
+			(*pmult)[md_idx].rate = 1.0;
+			(*pmult)[md_idx++].multiplier = values[i];
+		}
+		ret = values[i];
 	} else {
-		double ret = 0.0;
 		double remaining_max = max_ratio;
 		double remaining_use = use * (1.0 - max_ratio);
 		while (remaining_use >= cur_level && i > 0) {
 			double r = remaining_max + cur_level / use;
 			ret += r * values[i];
 			if (r > 0.0 && pmult) {
-				pmult->append(SharpnessMultiplierData(r, values[i]));
+				(*pmult)[md_idx].rate = r;
+				(*pmult)[md_idx++].multiplier = values[i];
 			}
 			remaining_use -= cur_level;
 			cur_level = levels[--i];
@@ -68,10 +78,12 @@ double compute_sharp_bonus(const double levels[SHARPNESS_COUNT],
 		double r = remaining_max + remaining_use / use;
 		ret += r * values[i];
 		if (r > 0.0 && pmult) {
-			pmult->append(SharpnessMultiplierData(r, values[i]));
+			(*pmult)[md_idx].rate = r;
+			(*pmult)[md_idx++].multiplier = values[i];
 		}
-		return ret;
 	}
+	if (pmult) pmult->resize(md_idx);
+	return ret;
 };
 
 static double compute_buffed_element(double base,
@@ -136,7 +148,7 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 	                        sharpness_use, max_sharpness_ratio,
 	                        Constants::instance()->rawSharpnessMultipliers,
 	                        &bounceSharpness);
-	for (int i = 0; i < bounceSharpness.count(); ++i) {
+	for (size_t i = 0; i < bounceSharpness.size(); ++i) {
 		bounceSharpness[i].multiplier *= pattern.sharpnessMultiplier;
 	}
 	double element_sharpness_multiplier =
@@ -279,6 +291,7 @@ DamageData &DamageData::operator=(const DamageData &o) {
 	totalRate = o.totalRate;
 	std::copy(o.elements, o.elements + ELEMENT_COUNT, elements);
 	std::copy(o.statuses, o.statuses + STATUS_COUNT, statuses);
+	bounceSharpness = o.bounceSharpness;
 	delete buffData;
 	if (o.buffData) {
 		buffData = new FoldedBuffsData(*o.buffData);
@@ -309,6 +322,53 @@ void DamageData::clear() {
 	buffData = NULL;
 }
 
+void DamageData::combineBounceSharpness(const DamageData &o, double rate) {
+	if (o.bounceSharpness.isEmpty()) return;
+	if (bounceSharpness.isEmpty()) {
+		bounceSharpness.resize(o.bounceSharpness.size());
+		for (size_t i = 0; i < bounceSharpness.size(); ++i) {
+			bounceSharpness[i].rate = o.bounceSharpness[i].rate * rate;
+			bounceSharpness[i].multiplier = o.bounceSharpness[i].multiplier;
+		}
+	} else {
+		const BounceSharpnessArray &a =
+			bounceSharpness;
+		const BounceSharpnessArray &b =
+			o.bounceSharpness;
+		BounceSharpnessArray n;
+		size_t ia = 0;
+		size_t ib = 0;
+		size_t in = 0;
+		while (ia < a.size() || ib < b.size()) {
+			if (ib >= b.size() || a[ia].multiplier > b[ib].multiplier) {
+				++ia;
+			} else if (ia >= a.size() || a[ia].multiplier < b[ib].multiplier) {
+				++ib;
+			} else {
+				++ia, ++ib;
+			}
+			++in;
+		}
+		n.resize(in);
+		ia = ib = in = 0;
+		while (ia < a.size() || ib < b.size()) {
+			if (ib >= b.size() || a[ia].multiplier > b[ib].multiplier) {
+				n[in++] = a[ia];
+				++ia;
+			} else if (ia >= a.size() || a[ia].multiplier < b[ib].multiplier) {
+				n[in].rate = b[ib].rate * rate;
+				n[in++].multiplier = b[ib].multiplier;
+				++ib;
+			} else {
+				n[in].rate = a[ia].rate + b[ib].rate * rate;
+				n[in++].multiplier = a[ia].multiplier;
+				++ia, ++ib;
+			}
+		}
+		bounceSharpness = n;
+	}
+}
+
 void DamageData::combine(const DamageData &o, double rate) {
 	cut += o.cut * rate;
 	impact += o.impact * rate;
@@ -323,36 +383,7 @@ void DamageData::combine(const DamageData &o, double rate) {
 	}
 	mindsEyeRate += o.mindsEyeRate * rate;
 	critRate += o.critRate * rate;
-
-	QVector<SharpnessMultiplierData> a = bounceSharpness;
-	const QVector<SharpnessMultiplierData> &b = o.bounceSharpness;
-	bounceSharpness.clear();
-	int ia = 0;
-	int ib = 0;
-	while (ia < a.count() && ib < b.count()) {
-		if (a[ia].multiplier > b[ib].multiplier) {
-			bounceSharpness.append(a[ia]);
-			++ia;
-		} else if (a[ia].multiplier < b[ib].multiplier) {
-			SharpnessMultiplierData ns(b[ib].rate * rate,
-			                           b[ib].multiplier);
-			bounceSharpness.append(ns);
-			++ib;
-		} else {
-			SharpnessMultiplierData ns(a[ia].rate + b[ib].rate * rate,
-			                           a[ia].multiplier);
-			bounceSharpness.append(ns);
-			++ia, ++ib;
-		}
-	}
-	while (ia < a.count()) bounceSharpness.append(a[ia++]);
-	while (ib < b.count()) {
-			SharpnessMultiplierData ns(b[ib].rate * rate,
-			                           b[ib].multiplier);
-		bounceSharpness.append(ns);
-		++ib;
-	}
-
+	combineBounceSharpness(o, rate);
 	if (o.buffData) {
 		if (!buffData) buffData = new FoldedBuffsData(FoldedBuffsData::ZERO);
 		buffData->combine(*o.buffData, rate);
@@ -379,7 +410,7 @@ void DamageData::print(QTextStream &stream, QString indent) const {
 	stream << "]" << endl;
 	stream << indent << "- minds eye rate: " << mindsEyeRate << endl;
 	stream << indent << "- bounce sharpness: [";
-	for (int i = 0; i < bounceSharpness.count(); ++i) {
+	for (size_t i = 0; i < bounceSharpness.size(); ++i) {
 		if (i > 0) stream << ", ";
 		stream << "(" << bounceSharpness[i].rate << ", " <<
 			bounceSharpness[i].multiplier << ")";

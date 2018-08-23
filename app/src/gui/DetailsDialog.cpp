@@ -370,6 +370,39 @@ QString DetailsDialog::damageParamsTableHtml(const Damage &damage) {
 			ret += QString("<td align=\"right\"><b>%1</b></td>").arg(d);
 		}
 	}
+	ret += QString("</tr><tr><th>%1</th>").arg(tr("Sharpness multipliers"));
+	for (int mode = 0; mode < MODE_COUNT; ++mode) {
+		if (damage.isAlias[mode]) continue;
+		ret += QString("<td><table border=\"1\">"
+		               "<tr><th>%1</th><th>%2</th></tr>\n").
+			arg(tr("Multiplier")).arg(tr("Rate"));
+		bool diff_bs =
+			damage.data[0]->bounceSharpness.size() !=
+			damage.data[mode]->bounceSharpness.size();
+		for (size_t i = 0; i < damage.data[mode]->bounceSharpness.size(); ++i) {
+			double m0 = 0.0;
+			double r0 = 0.0;
+			if (!diff_bs) {
+				m0 = damage.data[0]->bounceSharpness[i].multiplier;
+				r0 = damage.data[0]->bounceSharpness[i].rate /
+					damage.data[mode]->totalRate;;
+			}
+			double m = damage.data[mode]->bounceSharpness[i].multiplier;
+			if (m0 == m) {
+				ret += QString("<tr><td align=\"right\">%1</td>").arg(m);
+			} else {
+				ret += QString("<tr><td align=\"right\"><b>%1</b></td>").arg(m);
+			}
+			double r = damage.data[mode]->bounceSharpness[i].rate /
+				damage.data[mode]->totalRate;
+			if (r0 == r) {
+				ret += QString("<td align=\"right\">%1</td></tr>").arg(r);
+			} else {
+				ret += QString("<td align=\"right\"><b>%1</b></td></tr>").arg(r);
+			}
+		}
+		ret += "</table></td>\n";
+	}
 	ret += "</tr></table>\n";
 	return ret;
 }
@@ -455,7 +488,7 @@ QString DetailsDialog::foldedBuffsTableHtml(const Damage &damage) {
 
 double dps_val(const Dps &dps, int row) {
 	switch (row) {
-	case 0: return dps.raw + dps.fixed + dps.totalElements + dps.totalStatuses;
+	case 0: return dps.totalDps();
 	case 1: return dps.raw;
 	case 2: return dps.fixed;
 	}

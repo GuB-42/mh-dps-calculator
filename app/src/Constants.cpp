@@ -79,14 +79,17 @@ Constants::Constants() {
 	conditionRatios = cond;
 }
 
+inline static double pow_A(double x) {
+	return x * x * x;
+}
+
 double Constants::statusDamageCurve(double x) {
-	const double A = 3.0;
 	double ox = x - 0.5;
 	double ofpx = ox - floor(ox);
-	double a = pow(ofpx, A);
-	double b = pow(1.0 - ofpx, A);
-	double satxp = pow(x > 1.0 ? 1.0 : x, A);
-	return (a / (a + b) + floor(ox)) * satxp + pow(x * 0.5, A) * (1 - satxp);
+	double a = pow_A(ofpx);
+	double b = pow_A(1.0 - ofpx);
+	double satxp = pow_A(x > 1.0 ? 1.0 : x);
+	return (a / (a + b) + floor(ox)) * satxp + pow_A(x * 0.5) * (1 - satxp);
 }
 
 const Constants *Constants::instancePtr = NULL;

@@ -13,9 +13,7 @@ struct Target;
 
 struct Dps {
 	double raw;
-	double totalElements;
 	double elements[ELEMENT_COUNT];
-	double totalStatuses;
 	double statuses[STATUS_COUNT];
 	double fixed;
 	double bounceRate;
@@ -39,7 +37,13 @@ struct Dps {
 
 	void compute(const Target &target, const Damage &damage);
 
+	void combineNoStatus(const Dps &o, double rate);
 	void combine(const Dps &o, double rate);
+
+	double totalDps() const;
+	double totalElements() const;
+	double totalStatuses() const;
+
 	void print(QTextStream &stream, QString indent = QString());
 };
 

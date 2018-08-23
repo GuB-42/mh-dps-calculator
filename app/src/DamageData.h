@@ -5,6 +5,7 @@
 #include <QString>
 #include "enums.h"
 #include "FoldedBuffs.h"
+#include "SmallArray.h"
 
 struct Weapon;
 struct FoldedBuffsData;
@@ -19,6 +20,8 @@ struct SharpnessMultiplierData {
 };
 
 struct DamageData {
+	typedef SmallArray<SharpnessMultiplierData, 2> BounceSharpnessArray;
+
 	double cut;
 	double impact;
 	double piercing;
@@ -28,7 +31,7 @@ struct DamageData {
 	double statuses[STATUS_COUNT];
 	double mindsEyeRate;
 	double critRate;
-	QVector<SharpnessMultiplierData> bounceSharpness;
+	BounceSharpnessArray bounceSharpness;
 	FoldedBuffsData *buffData;
 	double totalRate;
 
@@ -41,6 +44,7 @@ struct DamageData {
 	DamageData &operator=(const DamageData &o);
 	void setBuffs(const FoldedBuffsData &buffs);
 	void clear();
+	void combineBounceSharpness(const DamageData &o, double rate);
 	void combine(const DamageData &o, double rate);
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

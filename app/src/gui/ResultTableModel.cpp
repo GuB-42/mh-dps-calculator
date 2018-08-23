@@ -202,14 +202,13 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 		} else if (index.column() >= 0) {
 			switch ((Column)index.column()) {
 			case COLUMN_TOTAL_DPS:
-				return dps.raw + dps.totalElements + dps.totalStatuses +
-					dps.fixed;
+				return dps.totalDps();
 			case COLUMN_RAW_DPS:
 				return dps.raw;
 			case COLUMN_ELEMENT_DPS:
-				return dps.totalElements;
+				return dps.totalElements();
 			case COLUMN_STATUS_DPS:
-				return dps.totalStatuses;
+				return dps.totalStatuses();
 			case COLUMN_FIXED_DPS:
 				return dps.fixed;
 			case COLUMN_KILL_TIME:
