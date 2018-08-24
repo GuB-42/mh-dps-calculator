@@ -25,6 +25,7 @@ struct Dps {
 
 	Dps();
 
+	void clear();
 	void computeNoStatus(const MonsterHitData &hit_data,
 	                     const DamageData &normal_damage,
 	                     const DamageData &weak_damage);

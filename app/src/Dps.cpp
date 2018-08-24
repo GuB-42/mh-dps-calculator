@@ -76,7 +76,7 @@ void Dps::computeNoStatus(const MonsterHitData &hit_data,
 		const DamageData &dmg = weak ? weak_damage : normal_damage;
 		double t_raw = t_atk[i] * t_def[i] / 100.0;
 		raw += t_raw;
-		if (weak) weak_raw += t_atk[i] * t_def[i] / 100.0;
+		if (weak) weak_raw += t_raw;
 		if (i != 3) {
 			for (size_t j = 0; j < dmg.bounceSharpness.size(); ++j) {
 				double v = t_atk[i] * dmg.bounceSharpness[i].rate;
@@ -169,6 +169,7 @@ void Dps::compute(const Target &target, const Damage &damage)
 		damage.data[MODE_ENRAGED_WEAK_SPOT];
 
 	Dps t_dps;
+	clear();
 	foreach(TargetMonster *tmonster, target.targetMonsters) {
 		if (enraged_equals_normal) {
 			double monster_weight = 0.0;
@@ -233,6 +234,19 @@ Dps::Dps() :
 	bounceRate(0.0), critRate(0.0), killFrequency(0.0),
 	weakSpotRatio(0.0), stunRate(0.0)
 {
+	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
+	std::fill_n(statusProcRate, (size_t)STATUS_COUNT, 0.0);
+}
+
+void Dps::clear() {
+	raw = 0.0;
+	fixed = 0.0;
+	bounceRate = 0.0;
+	critRate = 0.0;
+	killFrequency = 0.0;
+	weakSpotRatio = 0.0;
+	stunRate = 0.0;
 	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
 	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
 	std::fill_n(statusProcRate, (size_t)STATUS_COUNT, 0.0);
