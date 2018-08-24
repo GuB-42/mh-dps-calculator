@@ -41,6 +41,7 @@ src/gui/ColumnMenu.cpp \
 src/gui/ComputeDataDialog.cpp \
 src/gui/ComputeDataModel.cpp \
 src/gui/Computer.cpp \
+src/gui/DataPrinter.cpp \
 src/gui/DetailsDialog.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainApplication.cpp \
@@ -78,6 +79,7 @@ src/gui/ColumnMenu.h \
 src/gui/ComputeDataDialog.h \
 src/gui/ComputeDataModel.h \
 src/gui/Computer.h \
+src/gui/DataPrinter.h \
 src/gui/DetailsDialog.h \
 src/gui/GuiElements.h \
 src/gui/MainApplication.h \
