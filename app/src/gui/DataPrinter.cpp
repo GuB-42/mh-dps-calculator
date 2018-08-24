@@ -665,16 +665,10 @@ QString DataPrinter::singleDataToHtml(BuildWithDps *bwd, Language lang) {
 	return ret;
 }
 
-#include <QFile>
 QString DataPrinter::dataToHtml(const QVector<BuildWithDps *> &bwds,
                                 Language lang) {
 	QString ret(DPImpl::htmlHeader());
 	ret += DPImpl::dataToHtml(bwds, lang);
 	ret += DPImpl::htmlFooter();
-
-	QFile f("/tmp/r.html");
-	f.open(QFile::WriteOnly);
-	f.write(ret.toUtf8());
-	f.close();
 	return ret;
 }
