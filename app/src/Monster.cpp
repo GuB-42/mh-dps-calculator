@@ -6,7 +6,7 @@
 MonsterHitData::MonsterHitData() :
 	enragedState(0.5), cut(0.0), impact(0.0), bullet(0.0), stun(0.0)
 {
-	std::fill_n(element, ELEMENT_COUNT, 0.0);
+	std::fill_n(element, (size_t)ELEMENT_COUNT, 0.0);
 }
 
 void MonsterHitData::print(QTextStream &stream, QString indent) const {
@@ -143,7 +143,7 @@ void MonsterTolerance::readXml(QXmlStreamReader *xml, StatusType *pstatus_type) 
 }
 
 Monster::Monster() : hitPoints(0.0) {
-	std::fill_n(tolerances, STATUS_COUNT, (MonsterTolerance *)NULL);
+	std::fill_n(tolerances, (size_t)STATUS_COUNT, (MonsterTolerance *)NULL);
 }
 
 Monster::~Monster() {

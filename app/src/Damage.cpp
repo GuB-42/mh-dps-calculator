@@ -17,7 +17,7 @@ Damage::Damage() :
 		data[i] = data[0];
 		isAlias[i] = true;
 	}
-	std::fill_n(sharpnessUse, MODE_COUNT, 0.0);
+	std::fill_n(sharpnessUse, (size_t)MODE_COUNT, 0.0);
 }
 
 Damage::Damage(const Damage &o) :
@@ -73,7 +73,7 @@ void Damage::clear() {
 		data[i] = data[0];
 		isAlias[i] = true;
 	}
-	std::fill_n(sharpnessUse, MODE_COUNT, 0.0);
+	std::fill_n(sharpnessUse, (size_t)MODE_COUNT, 0.0);
 }
 
 void Damage::addSharpnessUse(const FoldedBuffs &folded_buffs,

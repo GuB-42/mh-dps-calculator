@@ -14,11 +14,11 @@ Weapon::Weapon() :
 	sharpnessPlus(0.0), final(false), rare(0),
 	augmentations(0)
 {
-	std::fill_n(elements, ELEMENT_COUNT, 0.0);
-	std::fill_n(statuses, STATUS_COUNT, 0.0);
-	std::fill_n(phialElements, ELEMENT_COUNT, 0.0);
-	std::fill_n(phialStatuses, STATUS_COUNT, 0.0);
-	std::fill_n(sharpness, SHARPNESS_COUNT, 0.0);
+	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
+	std::fill_n(phialElements, (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(phialStatuses, (size_t)STATUS_COUNT, 0.0);
+	std::fill_n(sharpness, (size_t)SHARPNESS_COUNT, 0.0);
 }
 
 void Weapon::print(QTextStream &stream, QString indent) const {

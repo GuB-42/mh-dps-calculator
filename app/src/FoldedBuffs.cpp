@@ -58,18 +58,22 @@ FoldedBuffsData::FoldedBuffsData() {
 	normalBuffs[BUFF_MINDS_EYE] = 0.0;
 	normalBuffs[BUFF_ATTACK_PLUS_BEFORE] = 0.0;
 	normalBuffs[BUFF_CAPACITY_UP] = 0.0;
-	std::fill_n(elementBuffs[BUFF_ELEMENT_PLUS], ELEMENT_COUNT, 0.0);
-	std::fill_n(elementBuffs[BUFF_ELEMENT_MULTIPLIER], ELEMENT_COUNT, 1.0);
-	std::fill_n(statusBuffs[BUFF_STATUS_PLUS], STATUS_COUNT, 0.0);
-	std::fill_n(statusBuffs[BUFF_STATUS_MULTIPLIER], STATUS_COUNT, 1.0);
+	std::fill_n(elementBuffs[BUFF_ELEMENT_PLUS],
+	            (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(elementBuffs[BUFF_ELEMENT_MULTIPLIER],
+	            (size_t)ELEMENT_COUNT, 1.0);
+	std::fill_n(statusBuffs[BUFF_STATUS_PLUS],
+	            (size_t)STATUS_COUNT, 0.0);
+	std::fill_n(statusBuffs[BUFF_STATUS_MULTIPLIER],
+	            (size_t)STATUS_COUNT, 1.0);
 }
 
 FoldedBuffsData::FoldedBuffsData(FoldedBuffsData::Zero)  {
-	std::fill_n(normalBuffs, NORMAL_BUFF_COUNT, 0.0);
+	std::fill_n(normalBuffs, (size_t)NORMAL_BUFF_COUNT, 0.0);
 	std::fill_n(&elementBuffs[0][0],
-	            ELEMENT_BUFF_COUNT * ELEMENT_COUNT, 0.0);
+	            (size_t)(ELEMENT_BUFF_COUNT * ELEMENT_COUNT), 0.0);
 	std::fill_n(&statusBuffs[0][0],
-	            STATUS_BUFF_COUNT * STATUS_COUNT, 0.0);
+	            (size_t)(STATUS_BUFF_COUNT * STATUS_COUNT), 0.0);
 }
 
 void FoldedBuffsData::applyBuff(const BuffWithCondition &buff_cond,

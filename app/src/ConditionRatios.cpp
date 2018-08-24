@@ -4,7 +4,7 @@
 
 ConditionRatios::ConditionRatios()
 {
-	std::fill_n(ratios, CONDITION_COUNT, 0.0);
+	std::fill_n(ratios, (size_t)CONDITION_COUNT, 0.0);
 }
 
 void ConditionRatios::print(QTextStream &stream, QString indent) const

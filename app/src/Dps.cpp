@@ -121,8 +121,8 @@ void Dps::computeStatus(const Monster &monster,
                         double status_defense_multiplier,
                         double status_hit_multiplier) {
 	killFrequency = 0.0;
-	std::fill_n(statuses, STATUS_COUNT, 0.0);
-	std::fill_n(statusProcRate, STATUS_COUNT, 0.0);
+	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
+	std::fill_n(statusProcRate, (size_t)STATUS_COUNT, 0.0);
 
 	double subtotal = (raw + fixed + totalElements()) * defense_multiplier;
 	double total_statuses = 0.0;
@@ -233,9 +233,9 @@ Dps::Dps() :
 	bounceRate(0.0), critRate(0.0), killFrequency(0.0),
 	weakSpotRatio(0.0), stunRate(0.0)
 {
-	std::fill_n(elements, ELEMENT_COUNT, 0.0);
-	std::fill_n(statuses, STATUS_COUNT, 0.0);
-	std::fill_n(statusProcRate, STATUS_COUNT, 0.0);
+	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
+	std::fill_n(statusProcRate, (size_t)STATUS_COUNT, 0.0);
 }
 
 void Dps::combineNoStatus(const Dps &o, double rate) {

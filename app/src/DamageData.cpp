@@ -11,8 +11,8 @@ DamageData::DamageData() :
 	mindsEyeRate(0.0), critRate(0.0),
 	buffData(NULL), totalRate(0.0)
 {
-	std::fill_n(elements, ELEMENT_COUNT, 0.0);
-	std::fill_n(statuses, STATUS_COUNT, 0.0);
+	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
 }
 
 DamageData::DamageData(const DamageData &o) :
@@ -316,8 +316,8 @@ void DamageData::clear() {
 	critRate = 0.0;
 	bounceSharpness.clear();
 	totalRate = 0.0;
-	std::fill_n(elements, ELEMENT_COUNT, 0.0);
-	std::fill_n(statuses, STATUS_COUNT, 0.0);
+	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
+	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
 	delete buffData;
 	buffData = NULL;
 }
