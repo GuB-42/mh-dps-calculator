@@ -255,27 +255,30 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 		statuses[sta] = status_attack * status_multiplier;
 	}
 
-	statuses[STATUS_STUN] += pattern.stun +
+	double t_stun = pattern.stun +
 		pattern.punishingDrawStun * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
-	statuses[STATUS_EXHAUST] += pattern.exhaust +
+	double t_exhaust = pattern.exhaust +
 		pattern.punishingDrawExhaust * buffs.normalBuffs[BUFF_PUNISHING_DRAW];
-	statuses[STATUS_MOUNT] += pattern.mount;
 
 	fixed = pattern.fixed +
 		pattern.shell * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER];
 
 	if (weapon.phial == PHIAL_IMPACT) {
-		statuses[STATUS_STUN] += pattern.phialImpactStun;
-		statuses[STATUS_EXHAUST] += pattern.phialImpactExhaust;
+		t_stun += pattern.phialImpactStun;
+		t_exhaust += pattern.phialImpactExhaust;
 		double impact_attack_buff = (attack - pre_attack) *
 			Constants::instance()->impactPhialRawBonusMultiplier;
 		fixed += ((pre_attack * buffs.normalBuffs[BUFF_ARTILLERY_MULTIPLIER]) +
 		          impact_attack_buff) * pattern.phialImpactAttack;
 	}
 
-	statuses[STATUS_STUN] *= buffs.normalBuffs[BUFF_STUN_MULTIPLIER];
-	statuses[STATUS_EXHAUST] *= buffs.normalBuffs[BUFF_EXHAUST_MULTIPLIER];
-	statuses[STATUS_MOUNT] *= buffs.normalBuffs[BUFF_MOUNT_MULTIPLIER];
+	statuses[STATUS_STUN] += t_stun *
+		buffs.statusBuffs[BUFF_STATUS_MULTIPLIER][STATUS_STUN];
+	statuses[STATUS_EXHAUST] += t_exhaust *
+		buffs.statusBuffs[BUFF_STATUS_MULTIPLIER][STATUS_EXHAUST];
+	statuses[STATUS_MOUNT] += pattern.mount *
+		buffs.statusBuffs[BUFF_STATUS_MULTIPLIER][STATUS_MOUNT];;
+
 }
 
 DamageData &DamageData::operator=(const DamageData &o) {

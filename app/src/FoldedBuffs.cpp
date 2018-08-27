@@ -45,9 +45,6 @@ FoldedBuffsData::FoldedBuffsData() {
 	normalBuffs[BUFF_SHARPNESS_USE_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_PUNISHING_DRAW] = 0.0;
-	normalBuffs[BUFF_STUN_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_EXHAUST_MULTIPLIER] = 1.0;
-	normalBuffs[BUFF_MOUNT_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_ARTILLERY_MULTIPLIER] = 1.0;
 	normalBuffs[BUFF_RAW_CRITICAL_HIT_MULTIPLIER] =
 		Constants::instance()->rawCriticalHitMultiplier;

@@ -184,9 +184,6 @@ QString GuiElements::normalBuffName(NormalBuff buff) {
 	case BUFF_SHARPNESS_USE_MULTIPLIER: return tr("Sharpness use multiplier");
 	case BUFF_SHARPNESS_USE_CRITICAL_MULTIPLIER: return tr("Sharpness use for critical hits");
 	case BUFF_PUNISHING_DRAW: return tr("Punishing draw");
-	case BUFF_STUN_MULTIPLIER: return tr("Stun multiplier");
-	case BUFF_EXHAUST_MULTIPLIER: return tr("Exhaust multiplier");
-	case BUFF_MOUNT_MULTIPLIER: return tr("Mount multiplier");
 	case BUFF_ARTILLERY_MULTIPLIER: return tr("Artillery multiplier");
 	case BUFF_RAW_CRITICAL_HIT_MULTIPLIER: return tr("Critical hit multiplier (raw)");
 	case BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER: return tr("Critical hit multiplier (element)");
