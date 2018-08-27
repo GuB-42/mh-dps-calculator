@@ -9251,4 +9251,394 @@
 	<name_fr>Grande écaille rouge</name_fr>
 </translation>
 
+<!-- Decorations -->
+<translation>
+	<name>Antidote Jewel</name>
+	<name_jp>耐毒珠</name_jp>
+</translation>
+<translation>
+	<name>Geology Jewel</name>
+	<name_jp>地学珠</name_jp>
+</translation>
+<translation>
+	<name>Heavy Artillery Jewel</name>
+	<name_jp>砲手珠</name_jp>
+</translation>
+<translation>
+	<name>Hungerless Jewel</name>
+	<name_jp>無食珠</name_jp>
+</translation>
+<translation>
+	<name>Satiated Jewel</name>
+	<name_jp>節食珠</name_jp>
+</translation>
+<translation>
+	<name>Protection Jewel</name>
+	<name_jp>加護珠</name_jp>
+</translation>
+<translation>
+	<name>Meowster Jewel</name>
+	<name_jp>采配珠</name_jp>
+</translation>
+<translation>
+	<name>Botany Jewel</name>
+	<name_jp>植学珠</name_jp>
+</translation>
+<translation>
+	<name>Tip Toe Jewel</name>
+	<name_jp>潜伏珠</name_jp>
+</translation>
+<translation>
+	<name>Flight Jewel</name>
+	<name_jp>飛燕珠</name_jp>
+</translation>
+<translation>
+	<name>Smoke Jewel</name>
+	<name_jp>煙復珠</name_jp>
+</translation>
+<translation>
+	<name>Mirewalker Jewel</name>
+	<name_jp>沼渡珠</name_jp>
+</translation>
+<translation>
+	<name>Specimen Jewel</name>
+	<name_jp>標本珠</name_jp>
+</translation>
+<translation>
+	<name>Miasma Jewel</name>
+	<name_jp>耐瘴珠</name_jp>
+</translation>
+<translation>
+	<name>Scent Jewel</name>
+	<name_jp>嗅覚珠</name_jp>
+</translation>
+<translation>
+	<name>Intimidator Jewel</name>
+	<name_jp>威嚇珠</name_jp>
+</translation>
+<translation>
+	<name>Crisis Jewel</name>
+	<name_jp>窮地珠</name_jp>
+</translation>
+<translation>
+	<name>Antipara Jewel</name>
+	<name_jp>耐麻珠</name_jp>
+</translation>
+<translation>
+	<name>Fortitude Jewel</name>
+	<name_jp>逆境珠</name_jp>
+</translation>
+<translation>
+	<name>Water Res Jewel</name>
+	<name_jp>耐水珠</name_jp>
+</translation>
+<translation>
+	<name>Suture Jewel</name>
+	<name_jp>耐裂珠</name_jp>
+</translation>
+<translation>
+	<name>Dragon Res Jewel</name>
+	<name_jp>耐龍珠</name_jp>
+</translation>
+<translation>
+	<name>Fire Res Jewel</name>
+	<name_jp>耐火珠</name_jp>
+</translation>
+<translation>
+	<name>Ice Res Jewel</name>
+	<name_jp>耐氷珠</name_jp>
+</translation>
+<translation>
+	<name>Def Lock Jewel</name>
+	<name_jp>耐防珠</name_jp>
+</translation>
+<translation>
+	<name>Thunder Res Jewel</name>
+	<name_jp>耐雷珠</name_jp>
+</translation>
+<translation>
+	<name>Pep Jewel</name>
+	<name_jp>耐眠珠</name_jp>
+</translation>
+<translation>
+	<name>Antiblast Jewel</name>
+	<name_jp>耐爆珠</name_jp>
+</translation>
+<translation>
+	<name>Gobbler Jewel</name>
+	<name_jp>早食珠</name_jp>
+</translation>
+<translation>
+	<name>Physique Jewel</name>
+	<name_jp>体術珠</name_jp>
+</translation>
+<translation>
+	<name>Blaze Jewel</name>
+	<name_jp>火炎珠</name_jp>
+</translation>
+<translation>
+	<name>Evasion Jewel</name>
+	<name_jp>回避珠</name_jp>
+</translation>
+<translation>
+	<name>Jumping Jewel</name>
+	<name_jp>跳躍珠</name_jp>
+</translation>
+<translation>
+	<name>Sheath Jewel</name>
+	<name_jp>速納珠</name_jp>
+</translation>
+<translation>
+	<name>Friendship Jewel</name>
+	<name_jp>友愛珠</name_jp>
+</translation>
+<translation>
+	<name>Enduring Jewel</name>
+	<name_jp>持続珠</name_jp>
+</translation>
+<translation>
+	<name>Medicine Jewel</name>
+	<name_jp>治癒珠</name_jp>
+</translation>
+<translation>
+	<name>Grinder Jewel</name>
+	<name_jp>研磨珠</name_jp>
+</translation>
+<translation>
+	<name>Steadfast Jewel</name>
+	<name_jp>耐絶珠</name_jp>
+</translation>
+<translation>
+	<name>Bomber Jewel</name>
+	<name_jp>爆師珠</name_jp>
+</translation>
+<translation>
+	<name>Recovery Jewel</name>
+	<name_jp>早復珠</name_jp>
+</translation>
+<translation>
+	<name>Slider Jewel</name>
+	<name_jp>滑走珠</name_jp>
+</translation>
+<translation>
+	<name>Defense Jewel</name>
+	<name_jp>防御珠</name_jp>
+</translation>
+<translation>
+	<name>Stonethrower Jewel</name>
+	<name_jp>投石珠</name_jp>
+</translation>
+<translation>
+	<name>Footing Jewel</name>
+	<name_jp>耐震珠</name_jp>
+</translation>
+<translation>
+	<name>Brace Jewel</name>
+	<name_jp>耐衝珠</name_jp>
+</translation>
+<translation>
+	<name>Wind Resist Jewel</name>
+	<name_jp>防風珠</name_jp>
+</translation>
+<translation>
+	<name>Earplug Jewel</name>
+	<name_jp>防音珠</name_jp>
+</translation>
+<translation>
+	<name>Vitality Jewel</name>
+	<name_jp>体力珠</name_jp>
+</translation>
+<translation>
+	<name>Resistor Jewel</name>
+	<name_jp>耐属珠</name_jp>
+</translation>
+<translation>
+	<name>Sonorous Jewel</name>
+	<name_jp>鼓笛珠</name_jp>
+</translation>
+<translation>
+	<name>KO Jewel</name>
+	<name_jp>KO珠</name_jp>
+</translation>
+<translation>
+	<name>Stream Jewel</name>
+	<name_jp>流水珠</name_jp>
+</translation>
+<translation>
+	<name>Frost Jewel</name>
+	<name_jp>氷結珠</name_jp>
+</translation>
+<translation>
+	<name>Bolt Jewel</name>
+	<name_jp>雷光珠</name_jp>
+</translation>
+<translation>
+	<name>Dragon Jewel</name>
+	<name_jp>破龍珠</name_jp>
+</translation>
+<translation>
+	<name>Venom Jewel</name>
+	<name_jp>毒珠</name_jp>
+</translation>
+<translation>
+	<name>Poisoncoat Jewel</name>
+	<name_jp>毒瓶珠</name_jp>
+</translation>
+<translation>
+	<name>Expert Jewel</name>
+	<name_jp>達人珠</name_jp>
+</translation>
+<translation>
+	<name>Tenderizer Jewel</name>
+	<name_jp>痛撃珠</name_jp>
+</translation>
+<translation>
+	<name>Destroyer Jewel</name>
+	<name_jp>重撃珠</name_jp>
+</translation>
+<translation>
+	<name>Elementless Jewel</name>
+	<name_jp>無撃珠</name_jp>
+</translation>
+<translation>
+	<name>Drain Jewel</name>
+	<name_jp>奪気珠</name_jp>
+</translation>
+<translation>
+	<name>Paracoat Jewel</name>
+	<name_jp>痺瓶珠</name_jp>
+</translation>
+<translation>
+	<name>Sharp Jewel</name>
+	<name_jp>剛刃珠</name_jp>
+</translation>
+<translation>
+	<name>Shield Jewel</name>
+	<name_jp>強壁珠</name_jp>
+</translation>
+<translation>
+	<name>Dragonseal Jewel</name>
+	<name_jp>龍封珠</name_jp>
+</translation>
+<translation>
+	<name>Trueshot Jewel</name>
+	<name_jp>特射珠</name_jp>
+</translation>
+<translation>
+	<name>Enhancer Jewel</name>
+	<name_jp>昂揚珠</name_jp>
+</translation>
+<translation>
+	<name>Forceshot Jewel</name>
+	<name_jp>強弾珠</name_jp>
+</translation>
+<translation>
+	<name>Furor Jewel</name>
+	<name_jp>逆上珠</name_jp>
+</translation>
+<translation>
+	<name>Potential Jewel</name>
+	<name_jp>底力珠</name_jp>
+</translation>
+<translation>
+	<name>Paralyzer Jewel</name>
+	<name_jp>麻痺珠</name_jp>
+</translation>
+<translation>
+	<name>Sleep Jewel</name>
+	<name_jp>睡眠珠</name_jp>
+</translation>
+<translation>
+	<name>Ironwall Jewel</name>
+	<name_jp>鉄壁珠</name_jp>
+</translation>
+<translation>
+	<name>Refresh Jewel</name>
+	<name_jp>早気珠</name_jp>
+</translation>
+<translation>
+	<name>Blast Jewel</name>
+	<name_jp>爆破珠</name_jp>
+</translation>
+<translation>
+	<name>Sleepcoat Jewel</name>
+	<name_jp>眠瓶珠</name_jp>
+</translation>
+<translation>
+	<name>Blastcoat Jewel</name>
+	<name_jp>爆瓶珠</name_jp>
+</translation>
+<translation>
+	<name>Throttle Jewel</name>
+	<name_jp>全開珠</name_jp>
+</translation>
+<translation>
+	<name>Challenger Jewel</name>
+	<name_jp>挑戦珠</name_jp>
+</translation>
+<translation>
+	<name>Attack Jewel</name>
+	<name_jp>攻撃珠</name_jp>
+</translation>
+<translation>
+	<name>Flawless Jewel</name>
+	<name_jp>無傷珠</name_jp>
+</translation>
+<translation>
+	<name>Magazine Jewel</name>
+	<name_jp>増弾珠</name_jp>
+</translation>
+<translation>
+	<name>Mighty Jewel</name>
+	<name_jp>渾身珠</name_jp>
+</translation>
+<translation>
+	<name>Sprinter Jewel</name>
+	<name_jp>強走珠</name_jp>
+</translation>
+<translation>
+	<name>Critical Jewel</name>
+	<name_jp>超心珠</name_jp>
+</translation>
+<translation>
+	<name>Artillery Jewel</name>
+	<name_jp>砲術珠</name_jp>
+</translation>
+<translation>
+	<name>Fungiform Jewel</name>
+	<name_jp>茸好珠</name_jp>
+</translation>
+<translation>
+	<name>Release Jewel</name>
+	<name_jp>解放珠</name_jp>
+</translation>
+<translation>
+	<name>Spread Jewel</name>
+	<name_jp>散弾珠</name_jp>
+</translation>
+<translation>
+	<name>Charger Jewel</name>
+	<name_jp>短縮珠</name_jp>
+</translation>
+<translation>
+	<name>Handicraft Jewel</name>
+	<name_jp>匠珠</name_jp>
+</translation>
+<translation>
+	<name>Mighty Bow Jewel</name>
+	<name_jp>強弓珠</name_jp>
+</translation>
+<translation>
+	<name>Mind's Eye Jewel</name>
+	<name_jp>心眼珠</name_jp>
+</translation>
+<translation>
+	<name>Draw Jewel</name>
+	<name_jp>抜刀珠</name_jp>
+</translation>
+<translation>
+	<name>Pierce Jewel</name>
+	<name_jp>貫通珠</name_jp>
+</translation>
+
 </data>

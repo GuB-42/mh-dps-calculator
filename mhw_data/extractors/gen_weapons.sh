@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./extract_kira.pl \
+./extract_kira_weap.pl \
 kiranico_extracts/weapons/bow \
 kiranico_extracts/weapons/charge-blade \
 kiranico_extracts/weapons/dual-blades \
