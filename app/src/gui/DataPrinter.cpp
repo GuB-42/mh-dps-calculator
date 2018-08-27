@@ -470,7 +470,7 @@ QString DPImpl::foldedBuffsTableHtml(const Damage &damage) {
 	const FoldedBuffsData buff_defaults;
 
 	QString ret;
-	bool found;
+	bool found = false;
 	for (int row = 0; row < nb_rows; ++row) {
 		double dt[MODE_COUNT];
 		for (int i = 0; i < MODE_COUNT; ++i) {
