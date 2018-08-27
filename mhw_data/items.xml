@@ -70,6 +70,7 @@
 <item id="antidote_jewel">
 	<type>decoration</type>
 	<name>Antidote Jewel</name>
+	<name_jp>耐毒珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -80,6 +81,7 @@
 <item id="geology_jewel">
 	<type>decoration</type>
 	<name>Geology Jewel</name>
+	<name_jp>地学珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -90,6 +92,7 @@
 <item id="heavy_artillery_jewel">
 	<type>decoration</type>
 	<name>Heavy Artillery Jewel</name>
+	<name_jp>砲手珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -100,6 +103,7 @@
 <item id="hungerless_jewel">
 	<type>decoration</type>
 	<name>Hungerless Jewel</name>
+	<name_jp>無食珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -110,6 +114,7 @@
 <item id="satiated_jewel">
 	<type>decoration</type>
 	<name>Satiated Jewel</name>
+	<name_jp>節食珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -120,6 +125,7 @@
 <item id="protection_jewel">
 	<type>decoration</type>
 	<name>Protection Jewel</name>
+	<name_jp>加護珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -130,6 +136,7 @@
 <item id="meowster_jewel">
 	<type>decoration</type>
 	<name>Meowster Jewel</name>
+	<name_jp>采配珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -140,6 +147,7 @@
 <item id="botany_jewel">
 	<type>decoration</type>
 	<name>Botany Jewel</name>
+	<name_jp>植学珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -150,6 +158,7 @@
 <item id="tip_toe_jewel">
 	<type>decoration</type>
 	<name>Tip Toe Jewel</name>
+	<name_jp>潜伏珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -160,6 +169,7 @@
 <item id="flight_jewel">
 	<type>decoration</type>
 	<name>Flight Jewel</name>
+	<name_jp>飛燕珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -170,6 +180,7 @@
 <item id="smoke_jewel">
 	<type>decoration</type>
 	<name>Smoke Jewel</name>
+	<name_jp>煙復珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -180,6 +191,7 @@
 <item id="mirewalker_jewel">
 	<type>decoration</type>
 	<name>Mirewalker Jewel</name>
+	<name_jp>沼渡珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -190,6 +202,7 @@
 <item id="specimen_jewel">
 	<type>decoration</type>
 	<name>Specimen Jewel</name>
+	<name_jp>標本珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -200,6 +213,7 @@
 <item id="miasma_jewel">
 	<type>decoration</type>
 	<name>Miasma Jewel</name>
+	<name_jp>耐瘴珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -210,6 +224,7 @@
 <item id="scent_jewel">
 	<type>decoration</type>
 	<name>Scent Jewel</name>
+	<name_jp>嗅覚珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -220,6 +235,7 @@
 <item id="intimidator_jewel">
 	<type>decoration</type>
 	<name>Intimidator Jewel</name>
+	<name_jp>威嚇珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -230,6 +246,7 @@
 <item id="crisis_jewel">
 	<type>decoration</type>
 	<name>Crisis Jewel</name>
+	<name_jp>窮地珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -240,6 +257,7 @@
 <item id="antipara_jewel">
 	<type>decoration</type>
 	<name>Antipara Jewel</name>
+	<name_jp>耐麻珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -250,6 +268,7 @@
 <item id="fortitude_jewel">
 	<type>decoration</type>
 	<name>Fortitude Jewel</name>
+	<name_jp>逆境珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -260,6 +279,7 @@
 <item id="water_res_jewel">
 	<type>decoration</type>
 	<name>Water Res Jewel</name>
+	<name_jp>耐水珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -270,6 +290,7 @@
 <item id="suture_jewel">
 	<type>decoration</type>
 	<name>Suture Jewel</name>
+	<name_jp>耐裂珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -280,6 +301,7 @@
 <item id="dragon_res_jewel">
 	<type>decoration</type>
 	<name>Dragon Res Jewel</name>
+	<name_jp>耐龍珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -290,6 +312,7 @@
 <item id="fire_res_jewel">
 	<type>decoration</type>
 	<name>Fire Res Jewel</name>
+	<name_jp>耐火珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -300,6 +323,7 @@
 <item id="ice_res_jewel">
 	<type>decoration</type>
 	<name>Ice Res Jewel</name>
+	<name_jp>耐氷珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -310,6 +334,7 @@
 <item id="def_lock_jewel">
 	<type>decoration</type>
 	<name>Def Lock Jewel</name>
+	<name_jp>耐防珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -320,6 +345,7 @@
 <item id="thunder_res_jewel">
 	<type>decoration</type>
 	<name>Thunder Res Jewel</name>
+	<name_jp>耐雷珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -330,6 +356,7 @@
 <item id="pep_jewel">
 	<type>decoration</type>
 	<name>Pep Jewel</name>
+	<name_jp>耐眠珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -340,6 +367,7 @@
 <item id="antiblast_jewel">
 	<type>decoration</type>
 	<name>Antiblast Jewel</name>
+	<name_jp>耐爆珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>5</rare>
 	<buff_refs>
@@ -350,6 +378,7 @@
 <item id="gobbler_jewel">
 	<type>decoration</type>
 	<name>Gobbler Jewel</name>
+	<name_jp>早食珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -360,6 +389,7 @@
 <item id="physique_jewel">
 	<type>decoration</type>
 	<name>Physique Jewel</name>
+	<name_jp>体術珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -370,6 +400,7 @@
 <item id="blaze_jewel">
 	<type>decoration</type>
 	<name>Blaze Jewel</name>
+	<name_jp>火炎珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -380,6 +411,7 @@
 <item id="evasion_jewel">
 	<type>decoration</type>
 	<name>Evasion Jewel</name>
+	<name_jp>回避珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -390,6 +422,7 @@
 <item id="jumping_jewel">
 	<type>decoration</type>
 	<name>Jumping Jewel</name>
+	<name_jp>跳躍珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -400,6 +433,7 @@
 <item id="sheath_jewel">
 	<type>decoration</type>
 	<name>Sheath Jewel</name>
+	<name_jp>速納珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -410,6 +444,7 @@
 <item id="friendship_jewel">
 	<type>decoration</type>
 	<name>Friendship Jewel</name>
+	<name_jp>友愛珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -420,6 +455,7 @@
 <item id="enduring_jewel">
 	<type>decoration</type>
 	<name>Enduring Jewel</name>
+	<name_jp>持続珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -430,6 +466,7 @@
 <item id="medicine_jewel">
 	<type>decoration</type>
 	<name>Medicine Jewel</name>
+	<name_jp>治癒珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -440,6 +477,7 @@
 <item id="grinder_jewel">
 	<type>decoration</type>
 	<name>Grinder Jewel</name>
+	<name_jp>研磨珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -450,6 +488,7 @@
 <item id="steadfast_jewel">
 	<type>decoration</type>
 	<name>Steadfast Jewel</name>
+	<name_jp>耐絶珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -460,6 +499,7 @@
 <item id="bomber_jewel">
 	<type>decoration</type>
 	<name>Bomber Jewel</name>
+	<name_jp>爆師珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -470,6 +510,7 @@
 <item id="recovery_jewel">
 	<type>decoration</type>
 	<name>Recovery Jewel</name>
+	<name_jp>早復珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -480,6 +521,7 @@
 <item id="slider_jewel">
 	<type>decoration</type>
 	<name>Slider Jewel</name>
+	<name_jp>滑走珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -490,6 +532,7 @@
 <item id="defense_jewel">
 	<type>decoration</type>
 	<name>Defense Jewel</name>
+	<name_jp>防御珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -500,6 +543,7 @@
 <item id="stonethrower_jewel">
 	<type>decoration</type>
 	<name>Stonethrower Jewel</name>
+	<name_jp>投石珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -510,6 +554,7 @@
 <item id="footing_jewel">
 	<type>decoration</type>
 	<name>Footing Jewel</name>
+	<name_jp>耐震珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -520,6 +565,7 @@
 <item id="brace_jewel">
 	<type>decoration</type>
 	<name>Brace Jewel</name>
+	<name_jp>耐衝珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -530,6 +576,7 @@
 <item id="wind_resist_jewel">
 	<type>decoration</type>
 	<name>Wind Resist Jewel</name>
+	<name_jp>防風珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -540,6 +587,7 @@
 <item id="earplug_jewel">
 	<type>decoration</type>
 	<name>Earplug Jewel</name>
+	<name_jp>防音珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -550,6 +598,7 @@
 <item id="vitality_jewel">
 	<type>decoration</type>
 	<name>Vitality Jewel</name>
+	<name_jp>体力珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -560,6 +609,7 @@
 <item id="resistor_jewel">
 	<type>decoration</type>
 	<name>Resistor Jewel</name>
+	<name_jp>耐属珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -570,6 +620,7 @@
 <item id="sonorous_jewel">
 	<type>decoration</type>
 	<name>Sonorous Jewel</name>
+	<name_jp>鼓笛珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -580,6 +631,7 @@
 <item id="ko_jewel">
 	<type>decoration</type>
 	<name>KO Jewel</name>
+	<name_jp>KO珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -590,6 +642,7 @@
 <item id="stream_jewel">
 	<type>decoration</type>
 	<name>Stream Jewel</name>
+	<name_jp>流水珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -600,6 +653,7 @@
 <item id="frost_jewel">
 	<type>decoration</type>
 	<name>Frost Jewel</name>
+	<name_jp>氷結珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -610,6 +664,7 @@
 <item id="bolt_jewel">
 	<type>decoration</type>
 	<name>Bolt Jewel</name>
+	<name_jp>雷光珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -620,6 +675,7 @@
 <item id="dragon_jewel">
 	<type>decoration</type>
 	<name>Dragon Jewel</name>
+	<name_jp>破龍珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -630,6 +686,7 @@
 <item id="venom_jewel">
 	<type>decoration</type>
 	<name>Venom Jewel</name>
+	<name_jp>毒珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -640,6 +697,7 @@
 <item id="poisoncoat_jewel">
 	<type>decoration</type>
 	<name>Poisoncoat Jewel</name>
+	<name_jp>毒瓶珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -650,6 +708,7 @@
 <item id="expert_jewel">
 	<type>decoration</type>
 	<name>Expert Jewel</name>
+	<name_jp>達人珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -660,6 +719,7 @@
 <item id="tenderizer_jewel">
 	<type>decoration</type>
 	<name>Tenderizer Jewel</name>
+	<name_jp>痛撃珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -670,6 +730,7 @@
 <item id="destroyer_jewel">
 	<type>decoration</type>
 	<name>Destroyer Jewel</name>
+	<name_jp>重撃珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -680,6 +741,7 @@
 <item id="elementless_jewel">
 	<type>decoration</type>
 	<name>Elementless Jewel</name>
+	<name_jp>無撃珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -690,6 +752,7 @@
 <item id="drain_jewel">
 	<type>decoration</type>
 	<name>Drain Jewel</name>
+	<name_jp>奪気珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>6</rare>
 	<buff_refs>
@@ -700,6 +763,7 @@
 <item id="paracoat_jewel">
 	<type>decoration</type>
 	<name>Paracoat Jewel</name>
+	<name_jp>痺瓶珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -710,6 +774,7 @@
 <item id="sharp_jewel">
 	<type>decoration</type>
 	<name>Sharp Jewel</name>
+	<name_jp>剛刃珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -720,6 +785,7 @@
 <item id="shield_jewel">
 	<type>decoration</type>
 	<name>Shield Jewel</name>
+	<name_jp>強壁珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -730,6 +796,7 @@
 <item id="dragonseal_jewel">
 	<type>decoration</type>
 	<name>Dragonseal Jewel</name>
+	<name_jp>龍封珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -740,6 +807,7 @@
 <item id="trueshot_jewel">
 	<type>decoration</type>
 	<name>Trueshot Jewel</name>
+	<name_jp>特射珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -750,6 +818,7 @@
 <item id="enhancer_jewel">
 	<type>decoration</type>
 	<name>Enhancer Jewel</name>
+	<name_jp>昂揚珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -760,6 +829,7 @@
 <item id="forceshot_jewel">
 	<type>decoration</type>
 	<name>Forceshot Jewel</name>
+	<name_jp>強弾珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -770,6 +840,7 @@
 <item id="furor_jewel">
 	<type>decoration</type>
 	<name>Furor Jewel</name>
+	<name_jp>逆上珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -780,6 +851,7 @@
 <item id="potential_jewel">
 	<type>decoration</type>
 	<name>Potential Jewel</name>
+	<name_jp>底力珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -790,6 +862,7 @@
 <item id="paralyzer_jewel">
 	<type>decoration</type>
 	<name>Paralyzer Jewel</name>
+	<name_jp>麻痺珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -800,6 +873,7 @@
 <item id="sleep_jewel">
 	<type>decoration</type>
 	<name>Sleep Jewel</name>
+	<name_jp>睡眠珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -810,6 +884,7 @@
 <item id="ironwall_jewel">
 	<type>decoration</type>
 	<name>Ironwall Jewel</name>
+	<name_jp>鉄壁珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -820,6 +895,7 @@
 <item id="refresh_jewel">
 	<type>decoration</type>
 	<name>Refresh Jewel</name>
+	<name_jp>早気珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -830,6 +906,7 @@
 <item id="blast_jewel">
 	<type>decoration</type>
 	<name>Blast Jewel</name>
+	<name_jp>爆破珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -840,6 +917,7 @@
 <item id="sleepcoat_jewel">
 	<type>decoration</type>
 	<name>Sleepcoat Jewel</name>
+	<name_jp>眠瓶珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -850,6 +928,7 @@
 <item id="blastcoat_jewel">
 	<type>decoration</type>
 	<name>Blastcoat Jewel</name>
+	<name_jp>爆瓶珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -860,6 +939,7 @@
 <item id="throttle_jewel">
 	<type>decoration</type>
 	<name>Throttle Jewel</name>
+	<name_jp>全開珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -870,6 +950,7 @@
 <item id="challenger_jewel">
 	<type>decoration</type>
 	<name>Challenger Jewel</name>
+	<name_jp>挑戦珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -880,6 +961,7 @@
 <item id="attack_jewel">
 	<type>decoration</type>
 	<name>Attack Jewel</name>
+	<name_jp>攻撃珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -890,6 +972,7 @@
 <item id="flawless_jewel">
 	<type>decoration</type>
 	<name>Flawless Jewel</name>
+	<name_jp>無傷珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -900,6 +983,7 @@
 <item id="magazine_jewel">
 	<type>decoration</type>
 	<name>Magazine Jewel</name>
+	<name_jp>増弾珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -910,6 +994,7 @@
 <item id="mighty_jewel">
 	<type>decoration</type>
 	<name>Mighty Jewel</name>
+	<name_jp>渾身珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>7</rare>
 	<buff_refs>
@@ -920,6 +1005,7 @@
 <item id="sprinter_jewel">
 	<type>decoration</type>
 	<name>Sprinter Jewel</name>
+	<name_jp>強走珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -930,6 +1016,7 @@
 <item id="critical_jewel">
 	<type>decoration</type>
 	<name>Critical Jewel</name>
+	<name_jp>超心珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -940,6 +1027,7 @@
 <item id="artillery_jewel">
 	<type>decoration</type>
 	<name>Artillery Jewel</name>
+	<name_jp>砲術珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -950,6 +1038,7 @@
 <item id="fungiform_jewel">
 	<type>decoration</type>
 	<name>Fungiform Jewel</name>
+	<name_jp>茸好珠</name_jp>
 	<decoration_level>1</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -960,6 +1049,7 @@
 <item id="release_jewel">
 	<type>decoration</type>
 	<name>Release Jewel</name>
+	<name_jp>解放珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -970,6 +1060,7 @@
 <item id="spread_jewel">
 	<type>decoration</type>
 	<name>Spread Jewel</name>
+	<name_jp>散弾珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -980,6 +1071,7 @@
 <item id="charger_jewel">
 	<type>decoration</type>
 	<name>Charger Jewel</name>
+	<name_jp>短縮珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -990,6 +1082,7 @@
 <item id="handicraft_jewel">
 	<type>decoration</type>
 	<name>Handicraft Jewel</name>
+	<name_jp>匠珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -1000,6 +1093,7 @@
 <item id="mighty_bow_jewel">
 	<type>decoration</type>
 	<name>Mighty Bow Jewel</name>
+	<name_jp>強弓珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -1010,6 +1104,7 @@
 <item id="minds_eye_jewel">
 	<type>decoration</type>
 	<name>Mind's Eye Jewel</name>
+	<name_jp>心眼珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -1020,6 +1115,7 @@
 <item id="draw_jewel">
 	<type>decoration</type>
 	<name>Draw Jewel</name>
+	<name_jp>抜刀珠</name_jp>
 	<decoration_level>2</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
@@ -1030,6 +1126,7 @@
 <item id="pierce_jewel">
 	<type>decoration</type>
 	<name>Pierce Jewel</name>
+	<name_jp>貫通珠</name_jp>
 	<decoration_level>3</decoration_level>
 	<rare>8</rare>
 	<buff_refs>
