@@ -1,6 +1,8 @@
 #include "Build.h"
 
+#include <algorithm>
 #include <QTextStream>
+#include <QHash>
 #include "Item.h"
 #include "Weapon.h"
 #include "BuffGroup.h"

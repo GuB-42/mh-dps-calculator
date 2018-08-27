@@ -5,7 +5,7 @@
 #include "ConditionRatios.h"
 #include "Constants.h"
 
-const FoldedBuffsData::Zero FoldedBuffsData::ZERO;
+const FoldedBuffsData::Zero FoldedBuffsData::ZERO = {};
 
 static bool exclusive_conditions(Condition c1, Condition c2) {
 	switch (c1) {
