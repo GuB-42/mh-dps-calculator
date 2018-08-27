@@ -131,7 +131,7 @@ bool BuffWithCondition::operator<(const BuffWithCondition &o) const {
 BuffWithCondition::BuffCombineOp BuffWithCondition::combineOp() const {
 	switch (buffClass) {
 	case BuffWithCondition::BUFF_CLASS_NONE:
-		break;
+		return OP_NONE;
 	case BuffWithCondition::BUFF_CLASS_NORMAL:
 		switch (normal.buff) {
 		case BUFF_ATTACK_PLUS: return OP_PLUS;
@@ -156,18 +156,21 @@ BuffWithCondition::BuffCombineOp BuffWithCondition::combineOp() const {
 		case BUFF_CAPACITY_UP: return OP_PLUS;
 		case NORMAL_BUFF_COUNT: return OP_NONE;
 		}
+		return OP_NONE;
 	case BuffWithCondition::BUFF_CLASS_ELEMENT:
 		switch (element.buff) {
 		case BUFF_ELEMENT_PLUS: return OP_PLUS;
 		case BUFF_ELEMENT_MULTIPLIER: return OP_MULTIPLY;
 		case ELEMENT_BUFF_COUNT: return OP_NONE;
 		}
+		return OP_NONE;
 	case BuffWithCondition::BUFF_CLASS_STATUS:
 		switch (status.buff) {
 		case BUFF_STATUS_PLUS: return OP_PLUS;
 		case BUFF_STATUS_MULTIPLIER: return OP_MULTIPLY;
 		case STATUS_BUFF_COUNT: return OP_NONE;
 		}
+		return OP_NONE;
 	}
 	return OP_NONE;
 }
