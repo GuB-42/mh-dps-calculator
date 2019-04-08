@@ -9,6 +9,7 @@
 #include <QMap>
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 Pattern::Pattern() :
 	rate(1.0),
@@ -209,7 +210,7 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 				PatternAmmoRef ammo_ref;
 				ammo_ref.id = xml->attributes().value("id").toString();
 				ammoRefs.append(ammo_ref);
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			} else if (tag_name == "cut") {
 				cut = xml->readElementText().toDouble();
 			} else if (tag_name == "impact") {
@@ -265,7 +266,7 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 						toString().toDouble();
 				}
 				motionValueRefs.append(mvr);
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			} else {
 				bool found = false;
 				for (int i = 0; i < CONDITION_COUNT; ++i) {
@@ -276,7 +277,7 @@ void Pattern::readXml(QXmlStreamReader *xml) {
 						break;
 					}
 				}
-				if (!found) xml->skipCurrentElement();
+				if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -324,7 +325,7 @@ void Profile::readXml(QXmlStreamReader *xml) {
 				; // name
 			} else if (tag_name == "weapon_type_ref") {
 				weaponTypeRefId = xml->attributes().value("id").toString();
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			} else if (tag_name == "rate") {
 				glob_rate = xml->readElementText().toDouble();
 			} else if (tag_name == "sharpen_period") {
@@ -359,7 +360,7 @@ void Profile::readXml(QXmlStreamReader *xml) {
 						break;
 					}
 				}
-				if (!found) xml->skipCurrentElement();
+				if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 Song::Song() :
 	duration(0), durationMaestro(0),
@@ -41,7 +42,7 @@ static void parse_buff_refs(QXmlStreamReader *xml, QVector<Song::BuffRef> *pout)
 				}
 				pout->append(br);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -56,7 +57,7 @@ static void parse_notes(QXmlStreamReader *xml, QVector<Note> *dnotes) {
 			for (int i = 0; i < NOTE_COUNT; ++i) {
 				if (tag_name == toString((Note)i)) dnotes->append((Note)i);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -81,7 +82,7 @@ void Song::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "buff_refs") {
 				parse_buff_refs(xml, &buffRefs);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

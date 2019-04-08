@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 void Ammo::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
@@ -18,7 +19,7 @@ void Ammo::readXml(QXmlStreamReader *xml) {
 			if (readXmlName(xml)) {
 				; // name
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

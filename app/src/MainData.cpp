@@ -12,6 +12,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 MainData::~MainData() {
 	foreach(WeaponType *weapon_type, weaponTypes) delete weapon_type;
@@ -142,7 +143,7 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				song->readXml(xml);
 				songs.append(song);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

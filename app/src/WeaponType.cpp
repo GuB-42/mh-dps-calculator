@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 
 WeaponType::WeaponType() :
@@ -33,7 +34,7 @@ void WeaponType::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "status_crit_adjustment") {
 				statusCritAdjustment = xml->readElementText().toDouble();
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

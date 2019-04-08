@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 MonsterHitData::MonsterHitData() :
 	enragedState(0.5), cut(0.0), impact(0.0), bullet(0.0), stun(0.0)
@@ -45,7 +46,7 @@ void MonsterHitData::readXml(QXmlStreamReader *xml) {
 						break;
 					}
 				}
-				if (!found) xml->skipCurrentElement();
+				if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -80,7 +81,7 @@ void MonsterPart::readXml(QXmlStreamReader *xml) {
 				hit_data->readXml(xml);
 				hitData.append(hit_data);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -134,7 +135,7 @@ void MonsterTolerance::readXml(QXmlStreamReader *xml, StatusType *pstatus_type) 
 					}
 				}
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -194,7 +195,7 @@ void Monster::readXml(QXmlStreamReader *xml) {
 				part->readXml(xml);
 				parts.append(part);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

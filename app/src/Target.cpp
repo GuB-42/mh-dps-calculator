@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 #include <QHash>
 #include "Monster.h"
 #include "Constants.h"
@@ -115,7 +116,7 @@ void Target::SubTarget::readXml(QXmlStreamReader *xml) {
 				st->readXml(xml);
 				subTargets.append(st);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -174,7 +175,7 @@ void Target::readXml(QXmlStreamReader *xml) {
 				st->readXml(xml);
 				rootSubTarget.subTargets.append(st);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

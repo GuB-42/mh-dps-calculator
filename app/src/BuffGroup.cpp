@@ -3,6 +3,7 @@
 #include "BuffWithCondition.h"
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 BuffGroupLevel::~BuffGroupLevel() {
 	foreach(BuffWithCondition *b, buffs) delete b;
@@ -111,7 +112,7 @@ static void sub_parse_buff(QXmlStreamReader *xml,
 			return;
 		}
 	}
-	xml->skipCurrentElement();
+	XML_SKIP_CURRENT_ELEMENT(*xml);
 }
 
 void BuffGroupLevel::readXml(QXmlStreamReader *xml, int *plevel) {
@@ -192,7 +193,7 @@ void BuffGroup::readXml(QXmlStreamReader *xml) {
 					levels.append(new_lvl);
 				}
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -226,7 +227,7 @@ static void parse_buff_set_level(QXmlStreamReader *xml,
 				}
 				pout->append(lvl);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -252,7 +253,7 @@ void BuffSetBonus::readXml(QXmlStreamReader *xml) {
 					parse_buff_set_level(xml, &levels, 1);
 				}
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

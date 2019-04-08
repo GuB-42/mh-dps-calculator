@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 Item::Item() :
 	decorationLevel(0), weaponAugmentationLevel(0),
@@ -41,7 +42,7 @@ static void parse_buff_refs(QXmlStreamReader *xml, QVector<Item::BuffRef> *pout)
 				}
 				pout->append(br);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -62,7 +63,7 @@ static void parse_buff_set_bonus_refs(QXmlStreamReader *xml,
 				}
 				pout->append(bsbr);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -77,7 +78,7 @@ static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
 			if (tag_name == "slot") {
 				dslots->append(xml->readElementText().toInt());
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -112,7 +113,7 @@ void Item::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "set_bonus_refs") {
 				parse_buff_set_bonus_refs(xml, &buffSetBonusRefs);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

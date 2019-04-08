@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 #include "WeaponType.h"
 
 MotionValue::MotionValue() :
@@ -92,7 +93,7 @@ void MotionValue::readXml(QXmlStreamReader *xml) {
 				; // name
 			} else if (tag_name == "weapon_type_ref") {
 				weaponTypeRefId = xml->attributes().value("id").toString();
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			} else if (tag_name == "cut") {
 				cut = xml->readElementText().toDouble();
 			} else if (tag_name == "impact") {
@@ -143,7 +144,7 @@ void MotionValue::readXml(QXmlStreamReader *xml) {
 				definedMindsEyeRatio = true;
 				mindsEyeRatio = xml->readElementText().toDouble();
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

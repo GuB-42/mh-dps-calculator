@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 #include <QHash>
 #include "Constants.h"
 #include "WeaponType.h"
@@ -125,7 +126,7 @@ static void parse_sharpness(QXmlStreamReader *xml,
 						break;
 					}
 				}
-				if (!found) xml->skipCurrentElement();
+				if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -146,7 +147,7 @@ static void parse_element_phial(QXmlStreamReader *xml,
 				for (int i = 0; i < PHIAL_COUNT; ++i) {
 					if (tag_name == toString((PhialType)i)) {
 						*pphial = (PhialType)i;
-						xml->skipCurrentElement();
+						XML_SKIP_CURRENT_ELEMENT(*xml);
 						found = true;
 						break;
 					}
@@ -170,7 +171,7 @@ static void parse_element_phial(QXmlStreamReader *xml,
 					}
 				}
 			}
-			if (!found) xml->skipCurrentElement();
+			if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -186,7 +187,7 @@ static void parse_ammos(QXmlStreamReader *xml, QVector<WeaponAmmoRef> *dammo_ref
 				ammo_ref.id = xml->attributes().value("id").toString();
 				dammo_refs->append(ammo_ref);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -201,7 +202,7 @@ static void parse_notes(QXmlStreamReader *xml, QVector<Note> *dnotes) {
 			for (int i = 0; i < NOTE_COUNT; ++i) {
 				if (tag_name == toString((Note)i)) dnotes->append((Note)i);
 			}
-			xml->skipCurrentElement();
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -216,7 +217,7 @@ static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
 			if (tag_name == "slot") {
 				dslots->append(xml->readElementText().toInt());
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
@@ -236,7 +237,7 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 				; // name
 			} else if (tag_name == "weapon_type_ref") {
 				weaponTypeRefId = xml->attributes().value("id").toString();
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			} else if (tag_name == "attack") {
 				attack = xml->readElementText().toDouble();
 			} else if (tag_name == "affinity") {
@@ -262,7 +263,7 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "slots") {
 				parse_slots(xml, &decorationSlots);
 			} else {
-				xml->skipCurrentElement();
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;

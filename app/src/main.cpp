@@ -2,6 +2,7 @@
 
 #include <QFile>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 #include <QTextStream>
 
 #include "MainData.h"

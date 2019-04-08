@@ -2,6 +2,7 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 static QString tagName(Language t) {
 	return QString("name_") + toString(t);
