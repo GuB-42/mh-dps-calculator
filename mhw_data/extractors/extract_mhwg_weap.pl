@@ -237,6 +237,9 @@ sub process_data_row {
 		$name =~ s/\s*\[生産\]\s*//;
 		$creatable = 1;
 	}
+	$name =~ s/\s*\[■A\]\s*//; # TODO arch kulve
+	$name =~ s/\s*\[■B\]\s*//; # TODO wut?
+	$name =~ s/\s*\[■S\]\s*//; # TODO wut?
 	$xml_writer->dataElement("name_jp", $name);
 
 	if ($weapon_type eq "heavy_bowgun" || $weapon_type eq "light_bowgun") {

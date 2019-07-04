@@ -261,6 +261,19 @@ for my $file (@ARGV) {
 	$p->parsefile($file);
 }
 
+for my $weapon (@weapons) {
+	for my $k (keys %{$weapon}) {
+		if ($k =~ /^name/) {
+			(my $typo_k = $k) =~ s/^name/typo/;
+			if (defined $translation_map{$typo_k} &&
+			    defined $translation_map{$typo_k}->{$weapon->{$k}}) {
+				print STDERR "typo: $weapon->{$k} -> $translation_map{$typo_k}->{$weapon->{$k}}{$k}\n";
+				$weapon->{$k} = $translation_map{$typo_k}->{$weapon->{$k}}{$k}
+			}
+		}
+	}
+}
+
 my %groups = ();
 my @unnamed;
 for my $weapon (@weapons) {
@@ -305,6 +318,7 @@ for my $k (keys %groups) {
 	}
 	if ($acc->{"name"} && $translation_map{"name"}{$acc->{"name"}}) {
 		for my $tk (keys %{$translation_map{"name"}{$acc->{"name"}}}) {
+			next unless $tk =~ /^name/;
 			$acc->{$tk} = $translation_map{"name"}{$acc->{"name"}}{$tk};
 		}
 	} else {
@@ -312,6 +326,7 @@ for my $k (keys %groups) {
 			if (defined $acc->{$ntk} &&
 			    defined $translation_map{$ntk}->{$acc->{$ntk}}) {
 				for my $tk (keys %{$translation_map{$ntk}{$acc->{$ntk}}}) {
+					next unless $tk =~ /^name/;
 					$acc->{$tk} = $translation_map{$ntk}{$acc->{$ntk}}{$tk};
 				}
 				last;
@@ -327,8 +342,13 @@ sub print_weapon
 {
 	my ($weapon) = @_;
 
+	my @ordered_names = ("name");
+	for (sort keys %{$weapon}) {
+		push @ordered_names, $_ if (/^name(?:_\w+)/);
+	}
+
 	my @ordered_keys =
-		("weapon_type_ref", "name", "name_fr", "name_jp",
+		("weapon_type_ref", @ordered_names,
 		 "inflated_attack", "attack",
 		 "affinity", "awakened", "elements", "elderseal", "defense",
 		 "phial", "phial_elements", "sharpness", "ammos", "notes", "slots",

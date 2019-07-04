@@ -32,4 +32,10 @@ mhwg_extracts/weapons/4001.html \
 mhwg_extracts/weapons/4008.html \
 mhwg_extracts/weapons/4002.html > /tmp/mhwg_weap.xml
 
-./merge_weapons.pl translations.xml /tmp/kira_weap.xml /tmp/mhwg_weap.xml
+#./extract_mhwd_weap.pl \
+#MHWorldData/source_data/weapons/weapon_base.csv \
+#MHWorldData/source_data/weapons/weapon_bow_ext.csv \
+#MHWorldData/source_data/weapons/weapon_craft_ext.csv > /tmp/mhwd_weap.xml
+
+./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/kira_weap.xml
+# /tmp/mhwd_weap.xml
