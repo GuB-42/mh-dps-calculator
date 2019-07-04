@@ -23976,153 +23976,716 @@
 <!-- monsters -->
 
 <translation>
-	<name>Anjanath</name>
-	<name_jp>アンジャナフ</name_jp>
+	<name>Aptonoth</name>
+	<name_ar>أبتونوث</name_ar>
+	<name_de>Aptonoth</name_de>
+	<name_es>Aptonoth</name_es>
+	<name_fr>Aptonoth</name_fr>
+	<name_it>Aptonoth</name_it>
+	<name_jp>アプトノス</name_jp>
+	<name_ko>아프토노스</name_ko>
+	<name_pl>Aptonoth</name_pl>
+	<name_pt>Aptonote</name_pt>
+	<name_ru>Аптонот</name_ru>
+	<name_zh>草食龍</name_zh>
 </translation>
 <translation>
-	<name>Azure Rathalos</name>
-	<name_fr>Rathalos azur</name_fr>
-	<name_jp>リオレウス亜種</name_jp>
+	<name>Jagras</name>
+	<name_ar>جاغراس</name_ar>
+	<name_de>Jagras</name_de>
+	<name_es>Jagras</name_es>
+	<name_fr>Jagras</name_fr>
+	<name_it>Jagras</name_it>
+	<name_jp>ジャグラス</name_jp>
+	<name_ko>쟈그라스</name_ko>
+	<name_pl>Jagras</name_pl>
+	<name_pt>Jagras</name_pt>
+	<name_ru>Яграс</name_ru>
+	<name_zh>凶豺龍</name_zh>
 </translation>
 <translation>
-	<name>Barroth</name>
-	<name_jp>ボルボロス</name_jp>
+	<name>Mernos</name>
+	<name_ar>ميرنوس</name_ar>
+	<name_de>Mernos</name_de>
+	<name_es>Mernos</name_es>
+	<name_fr>Mernos</name_fr>
+	<name_it>Mernos</name_it>
+	<name_jp>メルノス</name_jp>
+	<name_ko>메르노스</name_ko>
+	<name_pl>Mernos</name_pl>
+	<name_pt>Mernos</name_pt>
+	<name_ru>Мернос</name_ru>
+	<name_zh>行翼龍</name_zh>
 </translation>
 <translation>
-	<name>Bazelgeuse</name>
-	<name_jp>バゼルギウス</name_jp>
+	<name>Vespoid</name>
+	<name_ar>فيسبويد</name_ar>
+	<name_de>Vespoid</name_de>
+	<name_es>Vespoid</name_es>
+	<name_fr>Vespoid</name_fr>
+	<name_it>Vespoid</name_it>
+	<name_jp>ランゴスタ</name_jp>
+	<name_ko>랑고스타</name_ko>
+	<name_pl>Vespoid</name_pl>
+	<name_pt>Vespoidea</name_pt>
+	<name_ru>Осоид</name_ru>
+	<name_zh>巨蜂</name_zh>
 </translation>
 <translation>
-	<name>Black Diablos</name>
-	<name_fr>Diablos noire</name_fr>
-	<name_jp>ディアブロス亜種</name_jp>
+	<name>Mosswine</name>
+	<name_ar>موسواين</name_ar>
+	<name_de>Mosswine</name_de>
+	<name_es>Musgorrino</name_es>
+	<name_fr>Mosswine</name_fr>
+	<name_it>Mosswine</name_it>
+	<name_jp>モス</name_jp>
+	<name_ko>모스</name_ko>
+	<name_pl>Mchoświnia</name_pl>
+	<name_pt>Musgoíno</name_pt>
+	<name_ru>Мохосвин</name_ru>
+	<name_zh>菌豬</name_zh>
 </translation>
 <translation>
-	<name>Diablos</name>
-	<name_jp>ディアブロス</name_jp>
+	<name>Apceros</name>
+	<name_ar>أبكيروس</name_ar>
+	<name_de>Apceros</name_de>
+	<name_es>Apceros</name_es>
+	<name_fr>Apceros</name_fr>
+	<name_it>Apceros</name_it>
+	<name_jp>アプケロス</name_jp>
+	<name_ko>아프케로스</name_ko>
+	<name_pl>Apceros</name_pl>
+	<name_pt>Apceros</name_pt>
+	<name_ru>Апцерос</name_ru>
+	<name_zh>背甲龍</name_zh>
 </translation>
 <translation>
-	<name>Dodogama</name>
-	<name_jp>ドドガマル</name_jp>
+	<name>Kestodon</name>
+	<name_ar>كيستودون</name_ar>
+	<name_de>Kestodon</name_de>
+	<name_es>Kestodon</name_es>
+	<name_fr>Kestodon</name_fr>
+	<name_it>Kestodon</name_it>
+	<name_jp>ケストドン</name_jp>
+	<name_ko>케스토돈</name_ko>
+	<name_pl>Kestodon</name_pl>
+	<name_pt>Kestodonte</name_pt>
+	<name_ru>Кестодон</name_ru>
+	<name_zh>冠突龍</name_zh>
 </translation>
 <translation>
-	<name>Great Girros</name>
-	<name_fr>Grand Girros</name_fr>
-	<name_jp>ドスギルオス</name_jp>
+	<name>Noios</name>
+	<name_ar>نويوس</name_ar>
+	<name_de>Noios</name_de>
+	<name_es>Noios</name_es>
+	<name_fr>Noios</name_fr>
+	<name_it>Noios</name_it>
+	<name_jp>ノイオス</name_jp>
+	<name_ko>노이오스</name_ko>
+	<name_pl>Noios</name_pl>
+	<name_pt>Noios</name_pt>
+	<name_ru>Ноиос</name_ru>
+	<name_zh>響翼龍</name_zh>
+</translation>
+<translation>
+	<name>Gajau</name>
+	<name_ar>غاجاو</name_ar>
+	<name_de>Gajau</name_de>
+	<name_es>Gajau</name_es>
+	<name_fr>Gajau</name_fr>
+	<name_it>Gajau</name_it>
+	<name_jp>ガライーバ</name_jp>
+	<name_ko>가쟈우</name_ko>
+	<name_pl>Gajau</name_pl>
+	<name_pt>Gajau</name_pt>
+	<name_ru>Гаджау</name_ru>
+	<name_zh>咬魚</name_zh>
+</translation>
+<translation>
+	<name>Kelbi</name>
+	<name_ar>كيلبي</name_ar>
+	<name_de>Kelbi</name_de>
+	<name_es>Kelbi</name_es>
+	<name_fr>Kelbi</name_fr>
+	<name_it>Kelbi</name_it>
+	<name_jp>ケルビ</name_jp>
+	<name_ko>켈비</name_ko>
+	<name_pl>Kelbi</name_pl>
+	<name_pt>Kelbi</name_pt>
+	<name_ru>Келби</name_ru>
+	<name_zh>精靈鹿</name_zh>
+</translation>
+<translation>
+	<name>Raphinos</name>
+	<name_ar>رافينوس</name_ar>
+	<name_de>Raphinos</name_de>
+	<name_es>Raphinos</name_es>
+	<name_fr>Raphinos</name_fr>
+	<name_it>Raphinos</name_it>
+	<name_jp>ラフィノス</name_jp>
+	<name_ko>라피노스</name_ko>
+	<name_pl>Raphinos</name_pl>
+	<name_pt>Raphinos</name_pt>
+	<name_ru>Рафинос</name_ru>
+	<name_zh>芳翼龍</name_zh>
+</translation>
+<translation>
+	<name>Shamos</name>
+	<name_ar>شاموس</name_ar>
+	<name_de>Shamos</name_de>
+	<name_es>Shamos</name_es>
+	<name_fr>Shamos</name_fr>
+	<name_it>Shamos</name_it>
+	<name_jp>シャムオス</name_jp>
+	<name_ko>샤무오스</name_ko>
+	<name_pl>Shamos</name_pl>
+	<name_pt>Shamos</name_pt>
+	<name_ru>Шамос</name_ru>
+	<name_zh>貓蜥龍</name_zh>
+</translation>
+<translation>
+	<name>Girros</name>
+	<name_ar>غيروس</name_ar>
+	<name_de>Girros</name_de>
+	<name_es>Girros</name_es>
+	<name_fr>Girros</name_fr>
+	<name_it>Girros</name_it>
+	<name_jp>ギルオス</name_jp>
+	<name_ko>기르오스</name_ko>
+	<name_pl>Girros</name_pl>
+	<name_pt>Girros</name_pt>
+	<name_ru>Гиррос</name_ru>
+	<name_zh>凶顎龍</name_zh>
+</translation>
+<translation>
+	<name>Hornetaur</name>
+	<name_ar>هورنتور</name_ar>
+	<name_de>Hornetaur</name_de>
+	<name_es>Hornetaur</name_es>
+	<name_fr>Hornetaur</name_fr>
+	<name_it>Hornetaur</name_it>
+	<name_jp>カンタロス</name_jp>
+	<name_ko>칸타로스</name_ko>
+	<name_pl>Hornetaur</name_pl>
+	<name_pt>Chifrotauro</name_pt>
+	<name_ru>Роготавр</name_ru>
+	<name_zh>巨甲蟲</name_zh>
+</translation>
+<translation>
+	<name>Gastodon</name>
+	<name_ar>غاستودون</name_ar>
+	<name_de>Gastodon</name_de>
+	<name_es>Gastodon</name_es>
+	<name_fr>Gastodon</name_fr>
+	<name_it>Gastodon</name_it>
+	<name_jp>ガストドン</name_jp>
+	<name_ko>가스토돈</name_ko>
+	<name_pl>Gastodon</name_pl>
+	<name_pt>Gastodonte</name_pt>
+	<name_ru>Гастодон</name_ru>
+	<name_zh>突擊龍</name_zh>
+</translation>
+<translation>
+	<name>Barnos</name>
+	<name_ar>بارنوس</name_ar>
+	<name_de>Barnos</name_de>
+	<name_es>Barnos</name_es>
+	<name_fr>Barnos</name_fr>
+	<name_it>Barnos</name_it>
+	<name_jp>バルノス</name_jp>
+	<name_ko>바르노스</name_ko>
+	<name_pl>Barnos</name_pl>
+	<name_pt>Barnos</name_pt>
+	<name_ru>Барнос</name_ru>
+	<name_zh>酸翼龍</name_zh>
 </translation>
 <translation>
 	<name>Great Jagras</name>
+	<name_ar>جاغراس العظيم</name_ar>
+	<name_de>Groß-Jagras</name_de>
+	<name_es>Gran Jagras</name_es>
 	<name_fr>Grand Jagras</name_fr>
+	<name_it>Gran Jagras</name_it>
 	<name_jp>ドスジャグラス</name_jp>
-</translation>
-<translation>
-	<name>Jyuratodus</name>
-	<name_jp>ジュラトドス</name_jp>
-</translation>
-<translation>
-	<name>Kirin</name>
-	<name_jp>キリン</name_jp>
+	<name_ko>도스쟈그라스</name_ko>
+	<name_pl>Wielki Jagras</name_pl>
+	<name_pt>Grande Jagras</name_pt>
+	<name_ru>Большой яграс</name_ru>
+	<name_zh>大凶豺龍</name_zh>
 </translation>
 <translation>
 	<name>Kulu-Ya-Ku</name>
+	<name_ar>كولو-يا-كو</name_ar>
+	<name_de>Kulu-Ya-Ku</name_de>
+	<name_es>Kulu-Ya-Ku</name_es>
+	<name_fr>Kulu-Ya-Ku</name_fr>
+	<name_it>Kulu-Ya-Ku</name_it>
 	<name_jp>クルルヤック</name_jp>
-</translation>
-<translation>
-	<name>Kushala Daora</name>
-	<name_jp>クシャルダオラ</name_jp>
-</translation>
-<translation>
-	<name>Lavasioth</name>
-	<name_jp>ヴォルガノス</name_jp>
-</translation>
-<translation>
-	<name>Legiana</name>
-	<name_jp>レイギエナ</name_jp>
-</translation>
-<translation>
-	<name>Nergigante</name>
-	<name_jp>ネルギガンテ</name_jp>
-</translation>
-<translation>
-	<name>Odogaron</name>
-	<name_jp>オドガロン</name_jp>
-</translation>
-<translation>
-	<name>Paolumu</name>
-	<name_jp>パオウルムー</name_jp>
-</translation>
-<translation>
-	<name>Pink Rathian</name>
-	<name_fr>Rathian sakura</name_fr>
-	<name_jp>リオレイア亜種</name_jp>
+	<name_ko>쿠루루야크</name_ko>
+	<name_pl>Kulu-Ya-Ku</name_pl>
+	<name_pt>Kulu-Ya-Ku</name_pt>
+	<name_ru>Кулу-йа-ку</name_ru>
+	<name_zh>搔鳥</name_zh>
 </translation>
 <translation>
 	<name>Pukei-Pukei</name>
+	<name_ar>بوكي-بوكي</name_ar>
+	<name_de>Pukei-Pukei</name_de>
+	<name_es>Pukei-Pukei</name_es>
+	<name_fr>Pukei-Pukei</name_fr>
+	<name_it>Pukei-Pukei</name_it>
 	<name_jp>プケプケ</name_jp>
+	<name_ko>푸케푸케</name_ko>
+	<name_pl>Pukei-Pukei</name_pl>
+	<name_pt>Pukei-Pukei</name_pt>
+	<name_ru>Поки-поки</name_ru>
+	<name_zh>毒妖鳥</name_zh>
 </translation>
 <translation>
-	<name>Radobaan</name>
-	<name_jp>ラドバルキン</name_jp>
+	<name>Barroth</name>
+	<name_ar>باروث</name_ar>
+	<name_de>Barroth</name_de>
+	<name_es>Barroth</name_es>
+	<name_fr>Barroth</name_fr>
+	<name_it>Barroth</name_it>
+	<name_jp>ボルボロス</name_jp>
+	<name_ko>볼보로스</name_ko>
+	<name_pl>Barroth</name_pl>
+	<name_pt>Barroth</name_pt>
+	<name_ru>Баррот</name_ru>
+	<name_zh>土砂龍</name_zh>
 </translation>
 <translation>
-	<name>Rathalos</name>
-	<name_jp>リオレウス</name_jp>
-</translation>
-<translation>
-	<name>Rathian</name>
-	<name_jp>リオレイア</name_jp>
-</translation>
-<translation>
-	<name>Teostra</name>
-	<name_jp>テオ・テスカトル</name_jp>
+	<name>Jyuratodus</name>
+	<name_ar>جيوراتودوس</name_ar>
+	<name_de>Jyuratodus</name_de>
+	<name_es>Jyuratodus</name_es>
+	<name_fr>Jyuratodus</name_fr>
+	<name_it>Jyuratodus</name_it>
+	<name_jp>ジュラトドス</name_jp>
+	<name_ko>쥬라토도스</name_ko>
+	<name_pl>Jyuratodus</name_pl>
+	<name_pt>Jyuratodus</name_pt>
+	<name_ru>Юратод</name_ru>
+	<name_zh>泥魚龍</name_zh>
 </translation>
 <translation>
 	<name>Tobi-Kadachi</name>
+	<name_ar>توبي-كاداتشي</name_ar>
+	<name_de>Tobi-Kadachi</name_de>
+	<name_es>Tobi-Kadachi</name_es>
+	<name_fr>Tobi-Kadachi</name_fr>
+	<name_it>Tobi-Kadachi</name_it>
 	<name_jp>トビカガチ</name_jp>
+	<name_ko>토비카가치</name_ko>
+	<name_pl>Tobi-Kadachi</name_pl>
+	<name_pt>Tobi-Kadachi</name_pt>
+	<name_ru>Тоби-кадачи</name_ru>
+	<name_zh>飛雷龍</name_zh>
+</translation>
+<translation>
+	<name>Anjanath</name>
+	<name_ar>أنجاناث</name_ar>
+	<name_de>Anjanath</name_de>
+	<name_es>Anjanath</name_es>
+	<name_fr>Anjanath</name_fr>
+	<name_it>Anjanath</name_it>
+	<name_jp>アンジャナフ</name_jp>
+	<name_ko>안쟈나프</name_ko>
+	<name_pl>Anjanath</name_pl>
+	<name_pt>Anjanath</name_pt>
+	<name_ru>Аньянат</name_ru>
+	<name_zh>蠻顎龍</name_zh>
+</translation>
+<translation>
+	<name>Rathian</name>
+	<name_ar>راثيان</name_ar>
+	<name_de>Rathian</name_de>
+	<name_es>Rathian</name_es>
+	<name_fr>Rathian</name_fr>
+	<name_it>Rathian</name_it>
+	<name_jp>リオレイア</name_jp>
+	<name_ko>리오레이아</name_ko>
+	<name_pl>Rathiana</name_pl>
+	<name_pt>Rathian</name_pt>
+	<name_ru>Ратиана</name_ru>
+	<name_zh>雌火龍</name_zh>
 </translation>
 <translation>
 	<name>Tzitzi-Ya-Ku</name>
+	<name_ar>تسيتسي-يا-كو</name_ar>
+	<name_de>Tzitzi-Ya-Ku</name_de>
+	<name_es>Tzitzi-Ya-Ku</name_es>
+	<name_fr>Tzitzi-Ya-Ku</name_fr>
+	<name_it>Tzitzi-Ya-Ku</name_it>
 	<name_jp>ツィツィヤック</name_jp>
+	<name_ko>치치야크</name_ko>
+	<name_pl>Tzitzi-Ya-Ku</name_pl>
+	<name_pt>Tzitzi-Ya-Ku</name_pt>
+	<name_ru>Цици-йа-ку</name_ru>
+	<name_zh>眩鳥</name_zh>
 </translation>
 <translation>
-	<name>Uragaan</name>
-	<name_jp>ウラガンキン</name_jp>
+	<name>Paolumu</name>
+	<name_ar>باولومو</name_ar>
+	<name_de>Paolumu</name_de>
+	<name_es>Paolumu</name_es>
+	<name_fr>Paolumu</name_fr>
+	<name_it>Paolumu</name_it>
+	<name_jp>パオウルムー</name_jp>
+	<name_ko>파오우르무</name_ko>
+	<name_pl>Paolumu</name_pl>
+	<name_pt>Paolumu</name_pt>
+	<name_ru>Паолуму</name_ru>
+	<name_zh>浮空龍</name_zh>
 </translation>
 <translation>
-	<name>Vaal Hazak</name>
-	<name_jp>ヴァルハザク</name_jp>
+	<name>Great Girros</name>
+	<name_ar>غيروس العظيم</name_ar>
+	<name_de>Groß-Girros</name_de>
+	<name_es>Gran Girros</name_es>
+	<name_fr>Grand Girros</name_fr>
+	<name_it>Gran Girros</name_it>
+	<name_jp>ドスギルオス</name_jp>
+	<name_ko>도스기르오스</name_ko>
+	<name_pl>Wielki Girros</name_pl>
+	<name_pt>Grande Girros</name_pt>
+	<name_ru>Большой гиррос</name_ru>
+	<name_zh>大凶顎龍</name_zh>
 </translation>
 <translation>
-	<name>Xeno'jiiva</name>
-	<name_jp>ゼノ・ジーヴァ</name_jp>
+	<name>Radobaan</name>
+	<name_ar>رادوبان</name_ar>
+	<name_de>Radobaan</name_de>
+	<name_es>Radobaan</name_es>
+	<name_fr>Radobaan</name_fr>
+	<name_it>Radobaan</name_it>
+	<name_jp>ラドバルキン</name_jp>
+	<name_ko>라도발킨</name_ko>
+	<name_pl>Radobaan</name_pl>
+	<name_pt>Radobaan</name_pt>
+	<name_ru>Радобаан</name_ru>
+	<name_zh>骨鎚龍</name_zh>
+</translation>
+<translation>
+	<name>Legiana</name>
+	<name_ar>ليغيانا</name_ar>
+	<name_de>Legiana</name_de>
+	<name_es>Legiana</name_es>
+	<name_fr>Legiana</name_fr>
+	<name_it>Legiana</name_it>
+	<name_jp>レイギエナ</name_jp>
+	<name_ko>레이기에나</name_ko>
+	<name_pl>Legiana</name_pl>
+	<name_pt>Legiana</name_pt>
+	<name_ru>Легиана</name_ru>
+	<name_zh>風漂龍</name_zh>
+</translation>
+<translation>
+	<name>Odogaron</name>
+	<name_ar>أودوغارون</name_ar>
+	<name_de>Odogaron</name_de>
+	<name_es>Odogaron</name_es>
+	<name_fr>Odogaron</name_fr>
+	<name_it>Odogaron</name_it>
+	<name_jp>オドガロン</name_jp>
+	<name_ko>오도가론</name_ko>
+	<name_pl>Odogaron</name_pl>
+	<name_pt>Odogaron</name_pt>
+	<name_ru>Одогарон</name_ru>
+	<name_zh>慘爪龍</name_zh>
+</translation>
+<translation>
+	<name>Rathalos</name>
+	<name_ar>راذالوس</name_ar>
+	<name_de>Rathalos</name_de>
+	<name_es>Rathalos</name_es>
+	<name_fr>Rathalos</name_fr>
+	<name_it>Rathalos</name_it>
+	<name_jp>リオレウス</name_jp>
+	<name_ko>리오레우스</name_ko>
+	<name_pl>Rathalos</name_pl>
+	<name_pt>Rathalos</name_pt>
+	<name_ru>Раталос</name_ru>
+	<name_zh>火龍</name_zh>
+</translation>
+<translation>
+	<name>Diablos</name>
+	<name_ar>ديابلوس</name_ar>
+	<name_de>Diablos</name_de>
+	<name_es>Diablos</name_es>
+	<name_fr>Diablos</name_fr>
+	<name_it>Diablos</name_it>
+	<name_jp>ディアブロス</name_jp>
+	<name_ko>디아블로스</name_ko>
+	<name_pl>Diablos</name_pl>
+	<name_pt>Diablos</name_pt>
+	<name_ru>Диаблос</name_ru>
+	<name_zh>角龍</name_zh>
+</translation>
+<translation>
+	<name>Kirin</name>
+	<name_ar>كيرين</name_ar>
+	<name_de>Kirin</name_de>
+	<name_es>Kirin</name_es>
+	<name_fr>Kirin</name_fr>
+	<name_it>Kirin</name_it>
+	<name_jp>キリン</name_jp>
+	<name_ko>키린</name_ko>
+	<name_pl>Kirin</name_pl>
+	<name_pt>Kirin</name_pt>
+	<name_ru>Кирин</name_ru>
+	<name_zh>麒麟</name_zh>
 </translation>
 <translation>
 	<name>Zorah Magdaros</name>
+	<name_ar>زوراه ماغداروس</name_ar>
+	<name_de>Zorah Magdaros</name_de>
+	<name_es>Zorah Magdaros</name_es>
+	<name_fr>Zorah Magdaros</name_fr>
+	<name_it>Zorah Magdaros</name_it>
 	<name_jp>ゾラ・マグダラオス</name_jp>
+	<name_ko>조라-마그다라오스</name_ko>
+	<name_pl>Zorah Magdaros</name_pl>
+	<name_pt>Zorah Magdaros</name_pt>
+	<name_ru>Дзора Магдарос</name_ru>
+	<name_zh>熔山龍</name_zh>
+</translation>
+<translation>
+	<name>Dodogama</name>
+	<name_ar>دودوغما</name_ar>
+	<name_de>Dodogama</name_de>
+	<name_es>Dodogama</name_es>
+	<name_fr>Dodogama</name_fr>
+	<name_it>Dodogama</name_it>
+	<name_jp>ドドガマル</name_jp>
+	<name_ko>도도가마루</name_ko>
+	<name_pl>Dodogama</name_pl>
+	<name_pt>Dodogama</name_pt>
+	<name_ru>Додогама</name_ru>
+	<name_zh>岩賊龍</name_zh>
+</translation>
+<translation>
+	<name>Pink Rathian</name>
+	<name_ar>راثيان وردية</name_ar>
+	<name_de>Rosa Rathian</name_de>
+	<name_es>Rathian Rosa</name_es>
+	<name_fr>Rathian sakura</name_fr>
+	<name_it>Rathian rosa</name_it>
+	<name_jp>リオレイア亜種</name_jp>
+	<name_ko>리오레이아 아종</name_ko>
+	<name_pl>Różowa Rathiana</name_pl>
+	<name_pt>Rathian Rosa</name_pt>
+	<name_ru>Розовая ратиана</name_ru>
+	<name_zh>櫻火龍</name_zh>
+</translation>
+<translation>
+	<name>Bazelgeuse</name>
+	<name_ar>بازيلغيس</name_ar>
+	<name_de>Bazelgeuse</name_de>
+	<name_es>Bazelgeuse</name_es>
+	<name_fr>Bazelgeuse</name_fr>
+	<name_it>Bazelgeuse</name_it>
+	<name_jp>バゼルギウス</name_jp>
+	<name_ko>바젤기우스</name_ko>
+	<name_pl>Bazelgez</name_pl>
+	<name_pt>Bazelgeuse</name_pt>
+	<name_ru>Базельгейс</name_ru>
+	<name_zh>爆鱗龍</name_zh>
 </translation>
 <translation>
 	<name>Deviljho</name>
+	<name_ar>ديفيلجو</name_ar>
+	<name_de>Dämonjho</name_de>
+	<name_es>Deviljho</name_es>
+	<name_fr>Deviljho</name_fr>
+	<name_it>Deviljho</name_it>
 	<name_jp>イビルジョー</name_jp>
+	<name_ko>이블조</name_ko>
+	<name_pl>Deviljho</name_pl>
+	<name_pt>Deviljho</name_pt>
+	<name_ru>Девильо</name_ru>
+	<name_zh>恐暴龍</name_zh>
 </translation>
 <translation>
-	<name>Kulve Taroth</name>
-	<name_jp>マム・タロト</name_jp>
+	<name>Lavasioth</name>
+	<name_ar>لافاسيوث</name_ar>
+	<name_de>Lavasioth</name_de>
+	<name_es>Lavasioth</name_es>
+	<name_fr>Lavasioth</name_fr>
+	<name_it>Lavasioth</name_it>
+	<name_jp>ヴォルガノス</name_jp>
+	<name_ko>볼가노스</name_ko>
+	<name_pl>Lavasioth</name_pl>
+	<name_pt>Lavasioth</name_pt>
+	<name_ru>Лавасиот</name_ru>
+	<name_zh>熔岩龍</name_zh>
+</translation>
+<translation>
+	<name>Uragaan</name>
+	<name_ar>أوراغان</name_ar>
+	<name_de>Uragaan</name_de>
+	<name_es>Uragaan</name_es>
+	<name_fr>Uragaan</name_fr>
+	<name_it>Uragaan</name_it>
+	<name_jp>ウラガンキン</name_jp>
+	<name_ko>우라간킨</name_ko>
+	<name_pl>Uragaan</name_pl>
+	<name_pt>Uragaan</name_pt>
+	<name_ru>Урагаан</name_ru>
+	<name_zh>爆鎚龍</name_zh>
+</translation>
+<translation>
+	<name>Azure Rathalos</name>
+	<name_ar>راذالوس لازوردي</name_ar>
+	<name_de>Azurner Rathalos</name_de>
+	<name_es>Rathalos Celeste</name_es>
+	<name_fr>Rathalos azur</name_fr>
+	<name_it>Rathalos azzurro</name_it>
+	<name_jp>リオレウス亜種</name_jp>
+	<name_ko>리오레우스 아종</name_ko>
+	<name_pl>Lazurowy Rathalos</name_pl>
+	<name_pt>Rathalos Lazúli</name_pt>
+	<name_ru>Лазурный раталос</name_ru>
+	<name_zh>蒼火龍</name_zh>
+</translation>
+<translation>
+	<name>Black Diablos</name>
+	<name_ar>ديابلوس سوداء</name_ar>
+	<name_de>Schwarze Diablos</name_de>
+	<name_es>Diablos Negra</name_es>
+	<name_fr>Diablos noire</name_fr>
+	<name_it>Diablos nera</name_it>
+	<name_jp>ディアブロス亜種</name_jp>
+	<name_ko>디아블로스 아종</name_ko>
+	<name_pl>Czarna Diabla</name_pl>
+	<name_pt>Diablos Negra</name_pt>
+	<name_ru>Черная диаблос</name_ru>
+	<name_zh>黑角龍</name_zh>
+</translation>
+<translation>
+	<name>Nergigante</name>
+	<name_ar>نيرغي</name_ar>
+	<name_de>Nergigante</name_de>
+	<name_es>Nergigante</name_es>
+	<name_fr>Nergigante</name_fr>
+	<name_it>Nergigante</name_it>
+	<name_jp>ネルギガンテ</name_jp>
+	<name_ko>네르기간테</name_ko>
+	<name_pl>Nergigant</name_pl>
+	<name_pt>Nergigante</name_pt>
+	<name_ru>Нергигант</name_ru>
+	<name_zh>滅盡龍</name_zh>
+</translation>
+<translation>
+	<name>Teostra</name>
+	<name_ar>تيوسترا</name_ar>
+	<name_de>Teostra</name_de>
+	<name_es>Teostra</name_es>
+	<name_fr>Teostra</name_fr>
+	<name_it>Teostra</name_it>
+	<name_jp>テオ・テスカトル</name_jp>
+	<name_ko>테오-테스카토르</name_ko>
+	<name_pl>Teostra</name_pl>
+	<name_pt>Teostra</name_pt>
+	<name_ru>Теостра</name_ru>
+	<name_zh>炎王龍</name_zh>
 </translation>
 <translation>
 	<name>Lunastra</name>
+	<name_ar>لوناسترا</name_ar>
+	<name_de>Lunastra</name_de>
+	<name_es>Lunastra</name_es>
+	<name_fr>Lunastra</name_fr>
+	<name_it>Lunastra</name_it>
 	<name_jp>ナナ・テスカトリ</name_jp>
+	<name_ko>나나-테스카토리</name_ko>
+	<name_pl>Lunastra</name_pl>
+	<name_pt>Lunastra</name_pt>
+	<name_ru>Лунастра</name_ru>
+	<name_zh>炎妃龍</name_zh>
 </translation>
 <translation>
-	<name>Behemoth</name>
-	<name_jp>ベヒーモス</name_jp>
+	<name>Kushala Daora</name>
+	<name_ar>كوشالا داورا</name_ar>
+	<name_de>Kushala Daora</name_de>
+	<name_es>Kushala Daora</name_es>
+	<name_fr>Kushala Daora</name_fr>
+	<name_it>Kushala Daora</name_it>
+	<name_jp>クシャルダオラ</name_jp>
+	<name_ko>크샬다오라</name_ko>
+	<name_pl>Kushala Daora</name_pl>
+	<name_pt>Kushala Daora</name_pt>
+	<name_ru>Кушала-даора</name_ru>
+	<name_zh>鋼龍</name_zh>
 </translation>
 <translation>
-	<name>Leshen</name>
-	<name_jp>レーシェン</name_jp>
+	<name>Vaal Hazak</name>
+	<name_ar>فال هازاك</name_ar>
+	<name_de>Vaal Hazak</name_de>
+	<name_es>Vaal Hazak</name_es>
+	<name_fr>Vaal Hazak</name_fr>
+	<name_it>Vaal Hazak</name_it>
+	<name_jp>ヴァルハザク</name_jp>
+	<name_ko>발하자크</name_ko>
+	<name_pl>Vaal Hazak</name_pl>
+	<name_pt>Vaal Hazak</name_pt>
+	<name_ru>Ваал-хазак</name_ru>
+	<name_zh>屍套龍</name_zh>
 </translation>
 <translation>
-	<name>Ancient Leshen</name>
-	<name_jp>エンシェント・レーシェン</name_jp>
+	<name>Kulve Taroth</name>
+	<name_ar>كولف تاروث</name_ar>
+	<name_de>Kulve Taroth</name_de>
+	<name_es>Kulve Taroth</name_es>
+	<name_fr>Kulve Taroth</name_fr>
+	<name_it>Kulve Taroth</name_it>
+	<name_jp>マム・タロト</name_jp>
+	<name_ko>맘-타로트</name_ko>
+	<name_pl>Kulve Taroth</name_pl>
+	<name_pt>Kulve Taroth</name_pt>
+	<name_ru>Кулве тарот</name_ru>
+	<name_zh>絢輝龍</name_zh>
+</translation>
+<translation>
+	<name>Xeno'jiiva</name>
+	<name_ar>زينوجيفا</name_ar>
+	<name_de>Xeno'jiiva</name_de>
+	<name_es>Xeno'jiiva</name_es>
+	<name_fr>Xeno'jiiva</name_fr>
+	<name_it>Xeno'jiiva</name_it>
+	<name_jp>ゼノ・ジーヴァ</name_jp>
+	<name_ko>제노-지바</name_ko>
+	<name_pl>Xeno'jiiv</name_pl>
+	<name_pt>Xeno'jiiva</name_pt>
+	<name_ru>Ксено'джиива</name_ru>
+	<name_zh>冥燈龍</name_zh>
+</translation>
+<translation>
+	<name>Gajalaka</name>
+	<name_ar>غاجالاكا</name_ar>
+	<name_de>Gajalaka</name_de>
+	<name_es>Gajalaka</name_es>
+	<name_fr>Gajalaka</name_fr>
+	<name_it>Gajalaka</name_it>
+	<name_jp>ガジャブー</name_jp>
+	<name_ko>가쟈부</name_ko>
+	<name_pl>Gajalaka</name_pl>
+	<name_pt>Gajalaka</name_pt>
+	<name_ru>Гаялака</name_ru>
+	<name_zh>奇面族</name_zh>
+</translation>
+<translation>
+    <name>Behemoth</name>
+    <name_jp>ベヒーモス</name_jp>
+</translation>
+<translation>
+    <name>Leshen</name>
+    <name_jp>レーシェン</name_jp>
+</translation>
+<translation>
+    <name>Ancient Leshen</name>
+    <name_jp>エンシェント・レーシェン</name_jp>
 </translation>
 
 <!-- parts -->

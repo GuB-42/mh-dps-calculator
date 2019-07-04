@@ -29,10 +29,12 @@ mhwg_extracts/monsters/4244.html \
 mhwg_extracts/monsters/4256.html \
 mhwg_extracts/monsters/4324.html \
 mhwg_extracts/monsters/3806.html \
-mhwg_extracts/monsters/4254.html > /tmp/mhwg_mons.xml
-#mhwg_extracts/monsters/4358.html \
-#mhwg_extracts/monsters/4321.html \
-#mhwg_extracts/monsters/4361.html
+mhwg_extracts/monsters/4254.html \
+mhwg_extracts/monsters/4358.html \
+mhwg_extracts/monsters/4321.html \
+mhwg_extracts/monsters/4361.html > /tmp/mhwg_mons.xml
+# mhwg_extracts/monsters/4363.html
+# mhwg_extracts/monsters/4364.html
 
 ./extract_kira_monster.pl \
 kiranico_extracts/monsters/anjanath \

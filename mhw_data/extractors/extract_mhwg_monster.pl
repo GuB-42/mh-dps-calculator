@@ -86,14 +86,15 @@ sub process_data_row {
 
 		for (my $i = 0; $i < @lrow_s; ++$i) {
 			my $state = $i == 0 ? "" : "state$i";
-			my $xn = $cur_monster->{"name"} . "/" . $part_name;
+			my $n = $cur_monster->{"name"} || $cur_monster->{"name_jp"};
+			my $xn = $n . "/" . $part_name;
 			if ($monster_states{$xn}) {
 				if (defined $monster_states{$xn}->[$i]) {
 					$state = $monster_states{$xn}->[$i];
 				}
-			} elsif ($monster_states{$cur_monster->{"name"}}) {
-				if (defined $monster_states{$cur_monster->{"name"}}->[$i]) {
-					$state = $monster_states{$cur_monster->{"name"}}->[$i];
+			} elsif ($monster_states{$n}) {
+				if (defined $monster_states{$n}->[$i]) {
+					$state = $monster_states{$n}->[$i];
 				}
 			}
 			$cur_monster->{"hit_data"}{$part_name}{$state} = {
@@ -113,9 +114,9 @@ sub process_data_row {
 				if (defined $monster_enraged_states{$xn}->[$i]) {
 					$enraged_state = $monster_enraged_states{$xn}->[$i];
 				}
-			} elsif ($monster_enraged_states{$cur_monster->{"name"}}) {
-				if (defined $monster_enraged_states{$cur_monster->{"name"}}->[$i]) {
-					$enraged_state = $monster_enraged_states{$cur_monster->{"name"}}->[$i];
+			} elsif ($monster_enraged_states{$n}) {
+				if (defined $monster_enraged_states{$n}->[$i]) {
+					$enraged_state = $monster_enraged_states{$n}->[$i];
 				}
 			}
 			$cur_monster->{"hit_data"}{$part_name}{$state}{"enraged_state"} = $enraged_state;
@@ -235,7 +236,7 @@ sub end {
 			my $t = decode_text($text);
 			$t =~ s/([a-z])([A-Z])/$1 $2/g;
 			$t = "Xeno'jiiva" if ($t eq "Xenojiiva");
-			$cur_monster->{"name"} = decode_text($t);
+			$cur_monster->{"name"} = $t if ($t =~ /\w/);
 		} elsif ($last_th eq "モンスター名") {
 			$cur_monster->{"name_jp"} = decode_text($text);
 		}
@@ -255,7 +256,6 @@ sub end {
 		++$cur_col;
 	} elsif (lc($tag) eq "h1") {
 		$cur_monster = {
-			"name" => decode_text($text),
 			"hit_data" => {},
 			"parts" => []
 		};
@@ -287,8 +287,8 @@ for my $file (@ARGV) {
 
 for my $monster (@monsters) {
 	$xml_writer->startTag("monster");
-	$xml_writer->dataElement("name", $monster->{"name"});
-	$xml_writer->dataElement("name_jp", $monster->{"name_jp"});
+	$xml_writer->dataElement("name", $monster->{"name"}) if ($monster->{"name"});
+	$xml_writer->dataElement("name_jp", $monster->{"name_jp"}) if ($monster->{"name_jp"});
 	$xml_writer->dataElement("hit_points", $monster->{"hit_points"}) if ($monster->{"hit_points"});
 	for my $part_name (@{$monster->{"parts"}}) {
 		$xml_writer->startTag("part");

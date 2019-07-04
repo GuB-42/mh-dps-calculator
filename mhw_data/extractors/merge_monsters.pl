@@ -471,6 +471,19 @@ for my $file (@ARGV) {
 	$p->parsefile($file);
 }
 
+for my $monster (@monsters) {
+	for my $k (keys %{$monster}) {
+		if ($k =~ /^name/) {
+			(my $typo_k = $k) =~ s/^name/typo/;
+			if (defined $translation_map{$typo_k} &&
+				defined $translation_map{$typo_k}->{$monster->{$k}}) {
+				print STDERR "typo: $monster->{$k} -> $translation_map{$typo_k}->{$monster->{$k}}{$k}\n";
+				$monster->{$k} = $translation_map{$typo_k}->{$monster->{$k}}[0]{$k}
+			}
+		}
+	}
+}
+
 my %groups = ();
 my @unnamed;
 for my $monster (@monsters) {
@@ -513,9 +526,21 @@ for my $k (sort keys %groups) {
 			$acc = merge_monsters($acc, $monster);
 		}
 	}
-	if ($translation_map{"name"}{$acc->{"name"}}) {
+	if ($acc->{"name"} && $translation_map{"name"}{$acc->{"name"}}) {
 		for my $tk (keys %{$translation_map{"name"}{$acc->{"name"}}[0]}) {
+			next unless $tk =~ /^name/;
 			$acc->{$tk} = $translation_map{"name"}{$acc->{"name"}}[0]{$tk};
+		}
+	} else {
+		for my $ntk (keys %translation_map) {
+			if (defined $acc->{$ntk} &&
+			    defined $translation_map{$ntk}->{$acc->{$ntk}}) {
+				for my $tk (keys %{$translation_map{$ntk}{$acc->{$ntk}}[0]}) {
+					next unless $tk =~ /^name/;
+					$acc->{$tk} = $translation_map{$ntk}{$acc->{$ntk}}[0]{$tk};
+				}
+				last;
+			}
 		}
 	}
 	$groups{$k} = $acc;
@@ -523,21 +548,58 @@ for my $k (sort keys %groups) {
 
 my $xml_writer;
 
+sub get_id
+{
+	my ($elt) = @_;
+	my $ret = undef;
+	if (defined $elt->{"name"}) {
+		$ret = $elt->{"name"};
+	} else {
+		for my $name_key (sort keys %{$elt}) {
+			next unless ($name_key =~/^name(?:_\w+)/);
+			if ($translation_map{$name_key}{$elt->{$name_key}}) {
+				for my $trans (@{$translation_map{$name_key}{$elt->{$name_key}}}) {
+					if ($trans->{"name"}) {
+						$ret = $trans->{"name"};
+						last;
+					}
+				}
+			}
+			last if $ret;
+		}
+	}
+	return $ret unless ($ret);
+	$ret =~ s/\W+/_/g;
+	$ret =~ s/^_|_$//g;
+	return lc($ret);
+}
+
 sub print_monster
 {
 	my ($monster) = @_;
 
-	my $monster_id = lc($monster->{"name"});
-	$monster_id =~ s/\W+/_/g;
+	my @ordered_names = ("name");
+	for (sort keys %{$monster}) {
+		push @ordered_names, $_ if (/^name(?:_\w+)/);
+	}
+
+	my $monster_id = get_id($monster);
 	$xml_writer->startTag("monster", "id" => $monster_id);
-	$xml_writer->dataElement("name", $monster->{"name"});
-	$xml_writer->dataElement("name_fr", $monster->{"name_fr"}) if ($monster->{"name_fr"});
-	$xml_writer->dataElement("name_jp", $monster->{"name_jp"}) if ($monster->{"name_jp"});
+	for my $name_key (@ordered_names) {
+		$xml_writer->dataElement($name_key, $monster->{$name_key});
+	}
 	$xml_writer->dataElement("hit_points", $monster->{"hit_points"}) if ($monster->{"hit_points"});
 	for my $part (@{$monster->{"parts"}}) {
-		if ($part->{"name_jp"} && !$part->{"name"}) {
-			if ($translation_map{"name_jp"}{$part->{"name_jp"}}) {
-				for my $trans (@{$translation_map{"name_jp"}{$part->{"name_jp"}}}) {
+		my @ordered_part_names = ("name");
+		for (sort keys %{$part}) {
+			push @ordered_part_names, $_ if (/^name(?:_\w+)/);
+		}
+
+		for my $name_key (@ordered_part_names) {
+			next if ($name_key eq "name");
+			last if ($part->{"name"});
+			if ($translation_map{$name_key}{$part->{$name_key}}) {
+				for my $trans (@{$translation_map{$name_key}{$part->{$name_key}}}) {
 					if ($trans->{"name"}) {
 						$part->{"name"} = $trans->{"name"};
 						last;
@@ -545,13 +607,12 @@ sub print_monster
 				}
 			}
 		}
-		my $part_id = lc($part->{"name"});
-		$part_id =~ s/\W+/_/g;
-		$part_id =~ s/^_|_$//g;
+
+		my $part_id = get_id($part);
 		$xml_writer->startTag("part", "id" => $part_id);
-		$xml_writer->dataElement("name", $part->{"name"}) if ($part->{"name"});
-		$xml_writer->dataElement("name_fr", $part->{"name_fr"}) if ($part->{"name_fr"});
-		$xml_writer->dataElement("name_jp", $part->{"name_jp"}) if ($part->{"name_jp"});
+		for my $name_key (@ordered_part_names) {
+			$xml_writer->dataElement($name_key, $part->{$name_key});
+		}
 		for my $state (sort keys %{$part->{"hit_data"}}) {
 			$xml_writer->startTag("hit_data");
 			$xml_writer->dataElement("state", $state) if ($state);
