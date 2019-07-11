@@ -3,6 +3,10 @@ TARGET = mh_dps
 
 CONFIG += debug
 
+# QMAKE_CC = clang
+# QMAKE_CXX = clang++
+# QMAKE_CXX = clang++
+
 # QMAKE_CXXFLAGS_RELEASE += -g
 # QMAKE_CFLAGS_RELEASE += -g
 # QMAKE_LFLAGS_RELEASE =
@@ -43,6 +47,7 @@ src/gui/ComputeDataModel.cpp \
 src/gui/Computer.cpp \
 src/gui/DataPrinter.cpp \
 src/gui/DetailsDialog.cpp \
+src/gui/GeneticComputer.cpp \
 src/gui/GuiElements.cpp \
 src/gui/MainApplication.cpp \
 src/gui/MainWindow.cpp \
@@ -81,6 +86,7 @@ src/gui/ComputeDataModel.h \
 src/gui/Computer.h \
 src/gui/DataPrinter.h \
 src/gui/DetailsDialog.h \
+src/gui/GeneticComputer.h \
 src/gui/GuiElements.h \
 src/gui/MainApplication.h \
 src/gui/MainWindow.h \
