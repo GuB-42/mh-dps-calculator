@@ -8,6 +8,7 @@
 #include "../DamageData.h"
 #include "../Weapon.h"
 #include "../Item.h"
+#include "../BuffGroup.h"
 
 ResultTableModel::ResultTableModel(QObject *parent) :
 	QAbstractTableModel(parent), itemColumns(0),
@@ -291,7 +292,25 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 			return QVariant();
 		}
 	} else if (role == Qt::ToolTipRole) {
-		if (index.column() == COLUMN_ELEMENT_DPS ||
+		if (index.column() >= COLUMN_COUNT + bwd->build->usedItems.count()) {
+			return QVariant();
+		} else if (index.column() >= COLUMN_COUNT) {
+			QString ret;
+			const Item *item = bwd->build->usedItems[index.column() - COLUMN_COUNT];
+			foreach (const Item::BuffRef &buff_ref, item->buffRefs) {
+				if (!ret.isEmpty()) ret += "\n";
+				ret += tr("%1 [%2]").
+					arg(buff_ref.buffGroup->getName(dataLanguage)).
+					arg(buff_ref.level);
+			}
+			foreach (const Item::BuffSetBonusRef &buff_set_ref, item->buffSetBonusRefs) {
+				if (!ret.isEmpty()) ret += "\n";
+				ret += tr("%1 [%2]").
+					arg(buff_set_ref.buffSetBonus->getName(dataLanguage)).
+					arg(buff_set_ref.level);
+			}
+			return ret;
+		} else if (index.column() == COLUMN_ELEMENT_DPS ||
 		    index.column() == COLUMN_DMG_ELEMENT) {
 			return GuiElements::elementToolTip(bwd->damage.data[monsterMode]->elements);
 		} else if (index.column() == COLUMN_STATUS_DPS ||

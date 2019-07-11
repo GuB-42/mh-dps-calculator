@@ -33,8 +33,15 @@ struct BuffSetBonusWithLevel {
 };
 
 struct Build {
+	struct SlotWithCount {
+		SlotWithCount() : level(0), count(0) {}
+		SlotWithCount(int l, int c) : level(l), count(c) {}
+		int level;
+		int count;
+	};
+
 	const Weapon *weapon;
-	QVector<int> decorationSlots;
+	QVector<SlotWithCount> decorationSlots;
 	int weaponAugmentations;
 	int weaponSlotUpgrade;
 	QVector<BuffWithLevel> buffLevels;
@@ -46,6 +53,8 @@ struct Build {
 	int addBuffLevel(const BuffGroup *group, int level);
 	int maxBuffLevel(const BuffGroup *group, int level);
 	void addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level);
+	int getNbSlots() const;
+	void addSlot(int slot_level);
 	void addItem(const Item *item);
 	void addWeapon(const Weapon *weapon);
 	void getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const;
@@ -54,6 +63,8 @@ struct Build {
 	bool limitSlots(QVector<int> limit);
 	void fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const;
 	bool isBuffUseful(const BuffGroup *group, const Profile &profile) const;
+	bool canSlotItem(const Item *item) const;
+	bool canAugmentItem(const Item *item) const;
 	QVector<Item *> listUsefulItems(const QVector<Item *> &items, const Profile &profile) const;
 	void print(QTextStream &stream, QString indent = QString()) const;
 };

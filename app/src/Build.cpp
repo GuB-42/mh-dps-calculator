@@ -16,21 +16,32 @@ Build::Build() :
 
 static int find_buff_level(const QVector<BuffWithLevel> &buff_levels,
                            const BuffGroup *group) {
-	if (buff_levels.count() <= 0) return -1;
-	int bit = buff_levels.count();
-	for (int shift = 1; shift <= 16; shift <<= 1) bit |= bit >> shift;
-	bit &= ~bit >> 1;
+	int count = buff_levels.count();
+	if (count <= 0) return -1;
+
+	if (count < 16) {
+		for (int i = 0; i < count; ++i) {
+			if (group == buff_levels[i].group) return i;
+		}
+		return -1;
+	}
+
+	int bit = count;
+	bit |= bit >> 1;
+	bit |= bit >> 2;
+	bit |= bit >> 4;
+	bit |= bit >> 8;
+	bit |= bit >> 16;
+	bit = (bit + 1) >> 1;
 	int i = 0;
 	while (bit) {
 		int ni = i | bit;
-		if (ni >= buff_levels.count()) {
+		if (ni >= count) {
 			;
-		} else if (buff_levels[ni].group < group) {
-			i = ni;
-		} else if (group < buff_levels[ni].group) {
-			;
-		} else {
+		} else if (buff_levels[ni].group == group) {
 			return ni;
+		} else {
+			i = group < buff_levels[ni].group ? i : ni;
 		}
 		bit >>= 1;
 	}
@@ -120,20 +131,40 @@ void Build::addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level)
 	}
 }
 
+int Build::getNbSlots() const
+{
+	int ret = 0;
+	for (QVector<SlotWithCount>::const_iterator
+	     it = decorationSlots.begin(); it != decorationSlots.end(); ++it) {
+		ret += it->count;
+	}
+	return ret;
+}
+
+void Build::addSlot(int slot_level)
+{
+	for (QVector<SlotWithCount>::iterator
+	     it = decorationSlots.begin(); it != decorationSlots.end(); ++it) {
+		if (it->level == slot_level) {
+			++it->count;
+			return;
+		} else if (it->level < slot_level) {
+			decorationSlots.insert(it, SlotWithCount(slot_level, 1));
+			return;
+		}
+	}
+	decorationSlots.append(SlotWithCount(slot_level, 1));
+}
+
 void Build::addItem(const Item *item) {
-	foreach(int s, item->decorationSlots) decorationSlots << s;
+	foreach(int s, item->decorationSlots) addSlot(s);
 	if (item->weaponSlotUpgrade) {
 		if (weaponSlotUpgrade) {
-			for (QVector<int>::iterator it = decorationSlots.begin();
-			     it != decorationSlots.end(); ++it) {
-				if (*it == weaponSlotUpgrade) {
-					*it += item->weaponSlotUpgrade;
-					weaponSlotUpgrade += item->weaponSlotUpgrade;
-					break;
-				}
-			}
+			useSlot(weaponSlotUpgrade);
+			weaponSlotUpgrade += item->weaponSlotUpgrade;
+			addSlot(weaponSlotUpgrade);
 		} else {
-			decorationSlots << item->weaponSlotUpgrade;
+			addSlot(item->weaponSlotUpgrade);
 			weaponSlotUpgrade = item->weaponSlotUpgrade;
 		}
 	}
@@ -152,7 +183,7 @@ void Build::addItem(const Item *item) {
 
 void Build::addWeapon(const Weapon *weapon) {
 	this->weapon = weapon;
-	foreach(int s, weapon->decorationSlots) decorationSlots << s;
+	foreach(int s, weapon->decorationSlots) addSlot(s);
 	weaponAugmentations += weapon->augmentations;
 	foreach(Song *song, weapon->songs) {
 		foreach(const Song::BuffRef &buff_ref, song->buffRefs) {
@@ -181,22 +212,9 @@ void Build::getBuffWithConditions(QVector<const BuffWithCondition *> *pout) cons
 }
 
 void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) const {
-	int max_slot = 0;
-	foreach(int s, decorationSlots) {
-		if (s > max_slot) max_slot = s;
-	}
-
 	QVector<Item *> useful_items;
 	foreach(Item *item, items) {
-		if (item->decorationLevel && item->decorationLevel <= max_slot) {
-			foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
-				int level = getBuffLevel(buff_ref.buffGroup);
-				if (level < buff_ref.buffGroup->levels.count() - 1) {
-					useful_items.append(item);
-					break;
-				}
-			}
-		}
+		if (canSlotItem(item)) useful_items.append(item);
 	}
 	while (!useful_items.isEmpty()) {
 		Build *new_build = new Build(*this);
@@ -210,30 +228,24 @@ void Build::fillSlots(QVector<Build *> *pout, const QVector<Item *> &items) cons
 }
 
 bool Build::useSlot(int slot_level) {
-	int best_idx = -1;
-	int best_idx_level = -1;
-	int best_idx_count = 0;
-	for (int i = 0; i < decorationSlots.count(); ++i) {
-		if (decorationSlots[i] >= slot_level) {
-			if (best_idx_count == 0 || decorationSlots[i] < best_idx_level) {
-				best_idx = i;
-				best_idx_count = 1;
-				best_idx_level = decorationSlots[i];
-			} else if (decorationSlots[i] == best_idx_level) {
-				best_idx = i;
-				++best_idx_count;
-			}
+	QVector<SlotWithCount>::iterator last_it = decorationSlots.end();
+	for (QVector<SlotWithCount>::iterator
+	     it = decorationSlots.begin(); it != decorationSlots.end(); ++it) {
+		if (it->level == slot_level) {
+			--it->count;
+			if (it->count <= 0) decorationSlots.erase(it);
+			return true;
+		} else if (it->level < slot_level) {
+			break;
 		}
+		last_it = it;
 	}
-	if (best_idx >= 0) {
-		if (slot_level == weaponSlotUpgrade && best_idx_count <= 1) {
-			weaponSlotUpgrade = 0;
-		}
-		decorationSlots.remove(best_idx);
+	if (last_it != decorationSlots.end()) {
+		--last_it->count;
+		if (last_it->count <= 0) decorationSlots.erase(last_it);
 		return true;
-	} else {
-		return false;
 	}
+	return false;
 }
 
 bool Build::limitSlots(QVector<int> limit) {
@@ -243,42 +255,27 @@ bool Build::limitSlots(QVector<int> limit) {
 		QHash<int, int>::iterator it = counts.find(s);
 		if (it == counts.end()) counts[s] = 1; else ++*it;
 	}
-	int move_i = 0;
-	for (int i = 0; i < decorationSlots.count(); ++i) {
-		QHash<int, int>::iterator it = counts.find(decorationSlots[i]);
-		if (it != counts.end() && *it) {
-			--*it;
-			decorationSlots[move_i++] = decorationSlots[i];
-		} else {
-			if (decorationSlots[i] == weaponSlotUpgrade) {
+	QVector<SlotWithCount>::iterator it = decorationSlots.begin();
+	while (it != decorationSlots.end()) {
+		QHash<int, int>::iterator itc = counts.find(it->level);
+		if (itc == counts.end()) {
+			if (it->level == weaponSlotUpgrade) {
 				downgrade = true;
 				weaponSlotUpgrade = 0;
 			}
+			it = decorationSlots.erase(it);
+		} else {
+			if (it->count > itc.value()) it->count = itc.value();
+			++it;
 		}
 	}
-	decorationSlots.resize(move_i);
 	return downgrade;
 }
 
 void Build::fillWeaponAugmentations(QVector<Build *> *pout, const QVector<Item *> &items) const {
 	QVector<Item *> useful_items;
 	foreach(Item *item, items) {
-		if (item->weaponAugmentationLevel &&
-		    item->weaponAugmentationLevel <= weaponAugmentations) {
-			if (item->weaponSlotUpgrade > 0) {
-				useful_items.append(item);
-			} else if (!item->decorationSlots.isEmpty()) {
-				useful_items.append(item);
-			} else {
-				foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
-					int level = getBuffLevel(buff_ref.buffGroup);
-					if (level < buff_ref.buffGroup->levels.count() - 1) {
-						useful_items.append(item);
-						break;
-					}
-				}
-			}
-		}
+		if (canAugmentItem(item)) useful_items.append(item);
 	}
 	while (!useful_items.isEmpty()) {
 		Build *new_build = new Build(*this);
@@ -300,6 +297,31 @@ bool Build::isBuffUseful(const BuffGroup *group,
 		foreach(const BuffWithCondition *bc, bl->buffs) {
 			if (!weapon || bc->isUseful(*weapon, profile)) return true;
 		}
+	}
+	return false;
+}
+
+bool Build::canSlotItem(const Item *item) const {
+	if (!item->decorationLevel) return false;
+	if (decorationSlots.isEmpty()) return false;
+	if (item->decorationLevel > decorationSlots[0].level) return false;
+	for (QVector<Item::BuffRef>::const_iterator it = item->buffRefs.begin();
+	     it != item->buffRefs.end(); ++it) {
+		int level = getBuffLevel(it->buffGroup);
+		if (level < it->buffGroup->levels.count() - 1) return true;
+	}
+	return false;
+}
+
+bool Build::canAugmentItem(const Item *item) const {
+	if (!item->weaponAugmentationLevel) return false;
+	if (item->weaponAugmentationLevel > weaponAugmentations) return false;
+	if (item->weaponSlotUpgrade > 0) return true;
+	if (!item->decorationSlots.isEmpty()) return true;
+	for (QVector<Item::BuffRef>::const_iterator it = item->buffRefs.begin();
+	     it != item->buffRefs.end(); ++it) {
+		int level = getBuffLevel(it->buffGroup);
+		if (level < it->buffGroup->levels.count() - 1) return true;
 	}
 	return false;
 }
@@ -328,9 +350,16 @@ item_is_useful:
 
 void Build::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- slots: [";
-	for (int i = 0; i < decorationSlots.count(); ++i) {
-		if (i > 0) stream << ", ";
-		stream << decorationSlots[i];
+	bool first = true;
+	foreach(const SlotWithCount &swc, decorationSlots) {
+		for (int i = 0; i < swc.count; ++i) {
+			if (first) {
+				first = false;
+			} else {
+				stream << ", ";
+			}
+			stream << swc.level;
+		}
 	}
 	stream << "]" << endl;
 	stream << indent <<
