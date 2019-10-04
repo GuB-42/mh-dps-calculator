@@ -119,13 +119,13 @@ void Build::addBuffSetBonusLevel(const BuffSetBonus *buff_set_bonus, int level)
 		new_level = it->level;
 	}
 	foreach(const BuffSetBonus::Level &bsl, buff_set_bonus->levels) {
-		if (bsl.buffGroup) {
+		if (bsl.buffRef.buffGroup) {
 			if (bsl.buffSetLevel > last_level &&
 			    bsl.buffSetLevel <= new_level) {
-				addBuffLevel(bsl.buffGroup, bsl.buffLevel);
+				addBuffLevel(bsl.buffRef.buffGroup, bsl.buffRef.level);
 			} else if (bsl.buffSetLevel <= last_level &&
 			           bsl.buffSetLevel > new_level) {
-				addBuffLevel(bsl.buffGroup, -bsl.buffLevel);
+				addBuffLevel(bsl.buffRef.buffGroup, -bsl.buffRef.level);
 			}
 		}
 	}
@@ -169,12 +169,12 @@ void Build::addItem(const Item *item) {
 		}
 	}
 	usedItems << item;
-	foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
+	foreach(const BuffRef &buff_ref, item->buffRefs) {
 		if (buff_ref.buffGroup) {
 			addBuffLevel(buff_ref.buffGroup, buff_ref.level);
 		}
 	}
-	foreach(const Item::BuffSetBonusRef &bsbr, item->buffSetBonusRefs) {
+	foreach(const BuffSetBonusRef &bsbr, item->buffSetBonusRefs) {
 		if (bsbr.buffSetBonus) {
 			addBuffSetBonusLevel(bsbr.buffSetBonus, bsbr.level);
 		}
@@ -186,13 +186,13 @@ void Build::addWeapon(const Weapon *weapon) {
 	foreach(int s, weapon->decorationSlots) addSlot(s);
 	weaponAugmentations += weapon->augmentations;
 	foreach(Song *song, weapon->songs) {
-		foreach(const Song::BuffRef &buff_ref, song->buffRefs) {
+		foreach(const BuffRef &buff_ref, song->buffRefs) {
 			if (buff_ref.buffGroup) {
 				maxBuffLevel(buff_ref.buffGroup, buff_ref.level);
 			}
 		}
 	}
-	foreach(const Weapon::BuffRef &buff_ref, weapon->buffRefs) {
+	foreach(const BuffRef &buff_ref, weapon->buffRefs) {
 		if (buff_ref.buffGroup) {
 			addBuffLevel(buff_ref.buffGroup, buff_ref.level);
 		}
@@ -310,7 +310,7 @@ bool Build::canSlotItem(const Item *item) const {
 	if (!item->decorationLevel) return false;
 	if (decorationSlots.isEmpty()) return false;
 	if (item->decorationLevel > decorationSlots[0].level) return false;
-	for (QVector<Item::BuffRef>::const_iterator it = item->buffRefs.begin();
+	for (QVector<BuffRef>::const_iterator it = item->buffRefs.begin();
 	     it != item->buffRefs.end(); ++it) {
 		int level = getBuffLevel(it->buffGroup);
 		if (level < it->buffGroup->levels.count() - 1) return true;
@@ -323,7 +323,7 @@ bool Build::canAugmentItem(const Item *item) const {
 	if (item->weaponAugmentationLevel > weaponAugmentations) return false;
 	if (item->weaponSlotUpgrade > 0) return true;
 	if (!item->decorationSlots.isEmpty()) return true;
-	for (QVector<Item::BuffRef>::const_iterator it = item->buffRefs.begin();
+	for (QVector<BuffRef>::const_iterator it = item->buffRefs.begin();
 	     it != item->buffRefs.end(); ++it) {
 		int level = getBuffLevel(it->buffGroup);
 		if (level < it->buffGroup->levels.count() - 1) return true;
@@ -337,13 +337,17 @@ QVector<Item *> Build::listUsefulItems(const QVector<Item *> &items,
 	foreach(Item *item, items) {
 		if (item->weaponSlotUpgrade) goto item_is_useful;
 		if (!item->decorationSlots.isEmpty()) goto item_is_useful;
-		foreach(const Item::BuffRef &buff_ref, item->buffRefs) {
-			if (isBuffUseful(buff_ref.buffGroup, profile)) goto item_is_useful;
+		foreach(const BuffRef &buff_ref, item->buffRefs) {
+			if (isBuffUseful(buff_ref.buffGroup, profile)) {
+				goto item_is_useful;
+			}
 		}
-		foreach(const Item::BuffSetBonusRef &bsr, item->buffSetBonusRefs) {
+		foreach(const BuffSetBonusRef &bsr, item->buffSetBonusRefs) {
 			if (!bsr.buffSetBonus) continue;
 			foreach(const BuffSetBonus::Level &bsl, bsr.buffSetBonus->levels) {
-				if (isBuffUseful(bsl.buffGroup, profile)) goto item_is_useful;
+				if (isBuffUseful(bsl.buffRef.buffGroup, profile)) {
+					goto item_is_useful;
+				}
 			}
 		}
 		continue;

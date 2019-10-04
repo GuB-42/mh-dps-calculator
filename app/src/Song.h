@@ -6,17 +6,11 @@
 #include <QVector>
 
 #include "enums.h"
+#include "BuffRef.h"
 
 struct BuffGroup;
 
 struct Song {
-	struct BuffRef {
-		BuffRef() : buffGroup(NULL), level(1) {};
-		QString id;
-		BuffGroup *buffGroup;
-		int level;
-	};
-
 	QVector<Note> notes;
 	double duration;
 	double durationMaestro;

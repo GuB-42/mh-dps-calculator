@@ -5,6 +5,7 @@
 #include <QSet>
 #include "enums.h"
 #include "NamedObject.h"
+#include "BuffRef.h"
 
 class QTextStream;
 class QXmlStreamReader;
@@ -21,13 +22,6 @@ struct WeaponAmmoRef {
 };
 
 struct Weapon : public NamedObject {
-	struct BuffRef {
-		BuffRef() : buffGroup(NULL), level(1) {};
-		QString id;
-		BuffGroup *buffGroup;
-		int level;
-	};
-
 	WeaponType *type;
 	QString weaponTypeRefId;
 	double attack;

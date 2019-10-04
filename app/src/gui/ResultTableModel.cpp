@@ -297,13 +297,13 @@ QVariant ResultTableModel::data(const QModelIndex &index, int role) const {
 		} else if (index.column() >= COLUMN_COUNT) {
 			QString ret;
 			const Item *item = bwd->build->usedItems[index.column() - COLUMN_COUNT];
-			foreach (const Item::BuffRef &buff_ref, item->buffRefs) {
+			foreach (const BuffRef &buff_ref, item->buffRefs) {
 				if (!ret.isEmpty()) ret += "\n";
 				ret += tr("%1 [%2]").
 					arg(buff_ref.buffGroup->getName(dataLanguage)).
 					arg(buff_ref.level);
 			}
-			foreach (const Item::BuffSetBonusRef &buff_set_ref, item->buffSetBonusRefs) {
+			foreach (const BuffSetBonusRef &buff_set_ref, item->buffSetBonusRefs) {
 				if (!ret.isEmpty()) ret += "\n";
 				ret += tr("%1 [%2]").
 					arg(buff_set_ref.buffSetBonus->getName(dataLanguage)).

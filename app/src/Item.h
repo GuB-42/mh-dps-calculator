@@ -3,25 +3,12 @@
 
 #include "NamedObject.h"
 #include <QVector>
+#include "BuffRef.h"
 
 struct BuffGroup;
 struct BuffSetBonus;
 
 struct Item : public NamedObject {
-	struct BuffRef {
-		BuffRef() : buffGroup(NULL), level(1) {};
-		QString id;
-		BuffGroup *buffGroup;
-		int level;
-	};
-
-	struct BuffSetBonusRef {
-		BuffSetBonusRef() : buffSetBonus(NULL), level(1) {};
-		QString id;
-		BuffSetBonus *buffSetBonus;
-		int level;
-	};
-
 	QString type;
 	int decorationLevel;
 	int weaponAugmentationLevel;

@@ -15,11 +15,11 @@ void Item::print(QTextStream &stream, QString indent) const {
 	stream << indent << "- type: " << type << endl;
 	stream << indent << "- decoration level: " << decorationLevel << endl;
 	stream << indent << "- rare: " << rare << endl;
-	foreach(const BuffRef &buff_ref, buffRefs) {
-		stream << indent << "- buff ref: " << buff_ref.id <<
-			"[" << buff_ref.level << "]";
-		if (buff_ref.buffGroup) stream << " *";
-		stream << endl;
+	if (!buffRefs.isEmpty()) {
+		stream << indent << "- buff refs:" << endl;
+		foreach(const BuffRef &buff_ref, buffRefs) {
+			buff_ref.print(stream, indent + "\t");
+		}
 	}
 	foreach(const BuffSetBonusRef &bsbr, buffSetBonusRefs) {
 		stream << indent << "- set bonus ref: " << bsbr.id <<
@@ -29,20 +29,18 @@ void Item::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-static void parse_buff_refs(QXmlStreamReader *xml, QVector<Item::BuffRef> *pout)
+static void parse_buff_refs(QXmlStreamReader *xml, QVector<BuffRef> *pout)
 {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
 			if (xml->name() == "buff_ref") {
-				Item::BuffRef br;
-				br.id = xml->attributes().value("id").toString();
-				if (xml->attributes().hasAttribute("level")) {
-					br.level = xml->attributes().value("level").toString().toInt();
-				}
+				BuffRef br;
+				br.readXml(xml);
 				pout->append(br);
+			} else {
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
-			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
@@ -50,20 +48,18 @@ static void parse_buff_refs(QXmlStreamReader *xml, QVector<Item::BuffRef> *pout)
 }
 
 static void parse_buff_set_bonus_refs(QXmlStreamReader *xml,
-                                      QVector<Item::BuffSetBonusRef> *pout)
+                                      QVector<BuffSetBonusRef> *pout)
 {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
 			if (xml->name() == "set_bonus_ref") {
-				Item::BuffSetBonusRef bsbr;
-				bsbr.id = xml->attributes().value("id").toString();
-				if (xml->attributes().hasAttribute("level")) {
-					bsbr.level = xml->attributes().value("level").toString().toInt();
-				}
+				BuffSetBonusRef bsbr;
+				bsbr.readXml(xml);
 				pout->append(bsbr);
+			} else {
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
-			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}

@@ -115,7 +115,7 @@ static void sub_parse_buff(QXmlStreamReader *xml,
 	XML_SKIP_CURRENT_ELEMENT(*xml);
 }
 
-void BuffGroupLevel::readXml(QXmlStreamReader *xml, int *plevel) {
+void BuffGroupLevel::readXmlGetLevel(QXmlStreamReader *xml, int *plevel) {
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
 	}
@@ -142,7 +142,7 @@ void BuffGroupLevel::readXml(QXmlStreamReader *xml, int *plevel) {
 	}
 }
 
-BuffGroup::BuffGroup() {
+BuffGroup::BuffGroup() : levelCap(LEVEL_UNCAPPED) {
 	levels.append(NULL);
 }
 
@@ -169,6 +169,9 @@ void BuffGroup::readXml(QXmlStreamReader *xml) {
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
 	}
+	if (xml->attributes().hasAttribute("level_cap")) {
+		levelCap = xml->attributes().value("level_cap").toString().toInt();
+	}
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
@@ -179,7 +182,7 @@ void BuffGroup::readXml(QXmlStreamReader *xml) {
 				int level = 1;
 				BuffGroupLevel *new_lvl = new BuffGroupLevel;
 				alloc_list.append(new_lvl);
-				new_lvl->readXml(xml, &level);
+				new_lvl->readXmlGetLevel(xml, &level);
 				while (levels.count() < level) {
 					levels.append(levels.last());
 				}
@@ -204,10 +207,8 @@ void BuffGroup::readXml(QXmlStreamReader *xml) {
 void BuffSetBonus::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	foreach (const Level &level, levels) {
-		stream << indent << "- level " << level.buffSetLevel <<
-			": " << level.buffId <<	"[" << level.buffLevel << "]";
-		if (level.buffGroup) stream << " *";
-		stream << endl;
+		stream << indent << "- level " << level.buffSetLevel << endl;
+		level.buffRef.print(stream, indent + "\t");
 	}
 }
 
@@ -221,13 +222,11 @@ static void parse_buff_set_level(QXmlStreamReader *xml,
 			if (xml->name() == "buff_ref") {
 				BuffSetBonus::Level lvl;
 				lvl.buffSetLevel = set_level;
-				lvl.buffId = xml->attributes().value("id").toString();
-				if (xml->attributes().hasAttribute("level")) {
-					lvl.buffLevel = xml->attributes().value("level").toString().toInt();
-				}
+				lvl.buffRef.readXml(xml);
 				pout->append(lvl);
+			} else {
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
-			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}

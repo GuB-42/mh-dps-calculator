@@ -18,6 +18,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 SOURCES += \
 src/Ammo.cpp \
 src/BuffGroup.cpp \
+src/BuffRef.cpp \
 src/BuffWithCondition.cpp \
 src/Build.cpp \
 src/BuildWithDps.cpp \
@@ -57,6 +58,7 @@ src/gui/ResultTableModel.cpp
 HEADERS += \
 src/Ammo.h \
 src/BuffGroup.h \
+src/BuffRef.h \
 src/BuffWithCondition.h \
 src/Build.h \
 src/BuildWithDps.h \

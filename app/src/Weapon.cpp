@@ -105,11 +105,11 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 	}
 	stream << "]" << endl;
 
-	foreach(const BuffRef &buff_ref, buffRefs) {
-		stream << indent << "- buff ref: " << buff_ref.id <<
-			"[" << buff_ref.level << "]";
-		if (buff_ref.buffGroup) stream << " *";
-		stream << endl;
+	if (!buffRefs.isEmpty()) {
+		stream << indent << "- buff refs:" << endl;
+		foreach(const BuffRef &buff_ref, buffRefs) {
+			buff_ref.print(stream, indent + "\t");
+		}
 	}
 
 	stream << indent << "- categories: [";
@@ -242,20 +242,18 @@ static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
 	}
 }
 
-static void parse_buff_refs(QXmlStreamReader *xml, QVector<Weapon::BuffRef> *pout)
+static void parse_buff_refs(QXmlStreamReader *xml, QVector<BuffRef> *pout)
 {
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
 			if (xml->name() == "buff_ref") {
-				Weapon::BuffRef br;
-				br.id = xml->attributes().value("id").toString();
-				if (xml->attributes().hasAttribute("level")) {
-					br.level = xml->attributes().value("level").toString().toInt();
-				}
+				BuffRef br;
+				br.readXml(xml);
 				pout->append(br);
+			} else {
+				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
-			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}

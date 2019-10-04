@@ -169,7 +169,7 @@ void MainData::matchData() {
 			QHash<QString, Ammo *>::const_iterator ita = ammoHash.find(it->id);
 			if (ita != ammoHash.end()) it->ammo = *ita;
 		}
-		for (QVector<Weapon::BuffRef>::iterator it = weapon->buffRefs.begin();
+		for (QVector<BuffRef>::iterator it = weapon->buffRefs.begin();
 		     it != weapon->buffRefs.end(); ++it) {
 			QHash<QString, BuffGroup *>::const_iterator itb =
 				buffGroupHash.find(it->id);
@@ -187,18 +187,18 @@ void MainData::matchData() {
 		for (QVector<BuffSetBonus::Level>::iterator it = bsb->levels.begin();
 		     it != bsb->levels.end(); ++it) {
 			QHash<QString, BuffGroup *>::const_iterator itb =
-				buffGroupHash.find(it->buffId);
-			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
+				buffGroupHash.find(it->buffRef.id);
+			if (itb != buffGroupHash.end()) it->buffRef.buffGroup = *itb;
 		}
 	}
 	foreach(Item *item, items) {
-		for (QVector<Item::BuffRef>::iterator it = item->buffRefs.begin();
+		for (QVector<BuffRef>::iterator it = item->buffRefs.begin();
 		     it != item->buffRefs.end(); ++it) {
 			QHash<QString, BuffGroup *>::const_iterator itb =
 				buffGroupHash.find(it->id);
 			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
 		}
-		for (QVector<Item::BuffSetBonusRef>::iterator it =
+		for (QVector<BuffSetBonusRef>::iterator it =
 		     item->buffSetBonusRefs.begin();
 		     it != item->buffSetBonusRefs.end(); ++it) {
 			QHash<QString, BuffSetBonus *>::const_iterator itb =
@@ -207,7 +207,7 @@ void MainData::matchData() {
 		}
 	}
 	foreach(Song *song, songs) {
-		for (QVector<Song::BuffRef>::iterator it = song->buffRefs.begin();
+		for (QVector<BuffRef>::iterator it = song->buffRefs.begin();
 		     it != song->buffRefs.end(); ++it) {
 			QHash<QString, BuffGroup *>::const_iterator itb =
 				buffGroupHash.find(it->id);

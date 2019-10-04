@@ -3,6 +3,7 @@
 
 #include <QVector>
 #include "NamedObject.h"
+#include "BuffRef.h"
 
 class QTextStream;
 class QXmlStreamReader;
@@ -13,11 +14,13 @@ struct BuffGroupLevel : public NamedObject {
 
 	~BuffGroupLevel();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml, int *plevel);
+	void readXmlGetLevel(QXmlStreamReader *xml, int *plevel);
 };
 
 struct BuffGroup : public NamedObject {
+	const int LEVEL_UNCAPPED = 99999;
 	QVector<BuffGroupLevel *> levels;
+	int levelCap;
 
 	BuffGroup();
 	~BuffGroup();
@@ -30,11 +33,9 @@ private:
 
 struct BuffSetBonus : public NamedObject {
 	struct Level {
-		Level() : buffSetLevel(1), buffGroup(NULL), buffLevel(1) {}
+		Level() : buffSetLevel(1) {}
 		int buffSetLevel;
-		QString buffId;
-		BuffGroup *buffGroup;
-		int buffLevel;
+		BuffRef buffRef;
 	};
 
 	QVector<Level> levels;
