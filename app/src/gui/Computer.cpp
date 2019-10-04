@@ -73,7 +73,16 @@ void Computer::compute(const Parameters &params) {
 	BuildFuture new_future(params.profile, params.target);
 	foreach(const Weapon *weapon, params.weapons) {
 		if (weapon->type != params.profile->weaponType) continue;
-		if (!weapon->final && params.finalOnly) continue;
+		if (params.finalOnly) {
+			bool not_final = false;
+			foreach (const QString &cat, weapon->categoryRefIds) {
+				if (cat == "upgradable") {
+					not_final = true;
+					continue;
+				}
+			}
+			if (not_final) continue;
+		}
 
 		BuildFutureElt elt;
 		Build *build = new Build;

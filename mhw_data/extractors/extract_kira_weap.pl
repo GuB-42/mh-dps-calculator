@@ -162,7 +162,9 @@ sub process_data_row {
 		$xml_writer->dataElement("rare", $1);
 	}
 
-	$xml_writer->dataElement("creatable", "true") if ($creatable);
+	$xml_writer->startTag("categories");
+	$xml_writer->emptyTag("category_ref", "id" => "created") if ($creatable);
+	$xml_writer->endTag();
 
 	$xml_writer->endTag();
 }

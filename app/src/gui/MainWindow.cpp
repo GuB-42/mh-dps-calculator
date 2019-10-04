@@ -8,7 +8,7 @@
 #include "ResultTableModel.h"
 #include "BuffListModel.h"
 #include "BuffGroupListModel.h"
-#include "Computer.h"
+#include "GeneticComputer.h"
 #include "ComputeDataDialog.h"
 #include "DetailsDialog.h"
 #include "../MainData.h"
@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	buffListModel(new BuffListModel(this)),
 	buffGroupListModel(new BuffGroupListModel(this)),
 	dataLanguage(LANG_EN),
-	computer(new Computer(this))
+	computer(new GeneticComputer(this))
 {
 	ui->setupUi(this);
 
@@ -301,7 +301,7 @@ void MainWindow::buffGroupChanged(int new_idx) {
 }
 
 void MainWindow::calculate() {
-	Computer::Parameters params;
+	GeneticComputer::Parameters params;
 
 	if (mainData && getProfile() && getTarget()) {
 		params.profile = getProfile();

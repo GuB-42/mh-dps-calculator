@@ -2,6 +2,7 @@
 #define Weapon_h_
 
 #include <QVector>
+#include <QSet>
 #include "enums.h"
 #include "NamedObject.h"
 
@@ -10,6 +11,8 @@ class QXmlStreamReader;
 struct WeaponType;
 struct Ammo;
 struct Song;
+struct BuffGroup;
+struct Category;
 
 struct WeaponAmmoRef {
 	WeaponAmmoRef() : ammo(NULL) {};
@@ -18,6 +21,13 @@ struct WeaponAmmoRef {
 };
 
 struct Weapon : public NamedObject {
+	struct BuffRef {
+		BuffRef() : buffGroup(NULL), level(1) {};
+		QString id;
+		BuffGroup *buffGroup;
+		int level;
+	};
+
 	WeaponType *type;
 	QString weaponTypeRefId;
 	double attack;
@@ -31,12 +41,14 @@ struct Weapon : public NamedObject {
 	double sharpness[SHARPNESS_COUNT];
 	double sharpnessPlus;
 	QVector<int> decorationSlots;
-	bool final;
+	QVector<BuffRef> buffRefs;
 	int rare;
 	int augmentations;
 	QVector<Note> notes;
 	QVector<WeaponAmmoRef> ammoRefs;
 	QVector<Song *> songs;
+	QVector<QString> categoryRefIds;
+	QVector<Category *> categories;
 
 	Weapon();
 	void print(QTextStream &stream, QString indent = QString()) const;

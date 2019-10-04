@@ -136,7 +136,9 @@ sub translate_func
 		}
 		my $last_elt;
 		for my $k (sort keys %trans_set) {
-			unless ($trans_set{$k}) {
+			if ($trans_set{$k}) {
+				$last_elt = $trans_set{$k};
+			} else {
 				my $ielt = XML::Twig::Elt->new("#PCDATA" => $indent);
 				my $elt = XML::Twig::Elt->new($k => ($sel_trans->{$k} . $suffix));
 				if ($last_elt) {
@@ -146,9 +148,8 @@ sub translate_func
 					$elt->paste(before => $first_elt);
 					$ielt->paste(after => $elt);
 				}
-
+				$last_elt = $elt;
 			}
-			$last_elt = $trans_set{$k};
 		}
 	}
 #	print Dumper($sel_trans);

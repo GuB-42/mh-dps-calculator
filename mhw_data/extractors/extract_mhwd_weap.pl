@@ -221,6 +221,12 @@ sub process_row {
 	}
 	$xml_writer->endTag() if ($has_ammos);
 
+	$xml_writer->startTag("categories");
+	for (sort keys %{$row{"categories"}}) {
+		$xml_writer->emptyTag("category_ref", "id" => $_);
+	}
+	$xml_writer->endTag();
+
 #	my $has_from_monsters = 0;
 #	my %from_monsters = ();
 #	my %from_monsters_inv = ();
@@ -296,20 +302,52 @@ for my $file (@ARGV) {
 					$weap_map{$name} ||= {};
 					push @weapons, $weap_map{$name};
 				}
-				my $prefix = "";
-				if (defined $hline->{"blast"}) {
-					$prefix = "bow_";
-				} elsif (defined $hline->{"white"}) {
-					$prefix = "sharpness_";
-				}
-				for my $k (keys %{$hline}) {
-					$weap_map{$name}->{"$prefix$k"} = $hline->{$k};
+				if (defined $hline->{"item1_name"}) {
+					for my $k (keys %{$hline}) {
+						$weap_map{$name}->{"craft"} ||= [];
+						push @{$weap_map{$name}->{"craft"}}, $hline;
+					}
+				} else {
+					my $prefix = "";
+					if (defined $hline->{"blast"}) {
+						$prefix = "bow_";
+					} elsif (defined $hline->{"white"}) {
+						$prefix = "sharpness_";
+					}
+					for my $k (keys %{$hline}) {
+						$weap_map{$name}->{"$prefix$k"} = $hline->{$k};
+					}
 				}
 			}
 		}
 	}
 	$csv->eof || $csv->error_diag();
 	close $fh;
+}
+
+my %weapons_by_name = ();
+for my $weap (@weapons) {
+	$weap->{"categories"} = {};
+	if ($weap->{"category"}) {
+		$weap->{"categories"}{lc($weap->{"category"})} = 1;
+	}
+	if ($weap->{"craft"}) {
+		for my $craft (@{$weap->{"craft"}}) {
+			if ($craft->{"type"} && $craft->{"type"} eq "Create") {
+				$weap->{"categories"}{"created"} = 1;
+			}
+			if ($craft->{"type"} && $craft->{"type"} eq "Upgrade") {
+				$weap->{"categories"}{"upgraded"} = 1;
+			}
+		}
+	}
+	$weapons_by_name{$weap->{"name_en"}} = $weap;
+}
+
+for (@weapons) {
+	if ($_->{"previous_en"} && $weapons_by_name{$_->{"previous_en"}}) {
+		$weapons_by_name{$_->{"previous_en"}}->{"categories"}{"upgradable"} = 1;
+	}
 }
 
 $xml_writer->startTag("data");

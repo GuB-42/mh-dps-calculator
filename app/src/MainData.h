@@ -18,6 +18,7 @@ struct Target;
 struct MotionValue;
 struct BuffSetBonus;
 struct Song;
+struct Category;
 
 struct MainData {
 	QVector<WeaponType *> weaponTypes;
@@ -37,6 +38,8 @@ struct MainData {
 	QVector<MotionValue *> motionValues;
 	QHash<QString, MotionValue *> motionValueHash;
 	QVector<Song *> songs;
+	QVector<Category *> categories;
+	QHash<QString, Category *> categoryHash;
 
 	~MainData();
 	void print(QTextStream &stream, QString indent = QString()) const;

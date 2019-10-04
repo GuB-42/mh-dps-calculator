@@ -32,9 +32,37 @@ mhwg_extracts/monsters/3806.html \
 mhwg_extracts/monsters/4254.html \
 mhwg_extracts/monsters/4358.html \
 mhwg_extracts/monsters/4321.html \
-mhwg_extracts/monsters/4361.html > /tmp/mhwg_mons.xml
-# mhwg_extracts/monsters/4363.html
-# mhwg_extracts/monsters/4364.html
+mhwg_extracts/monsters/4361.html \
+mhwg_extracts/monsters/4363.html \
+mhwg_extracts/monsters/4364.html \
+mhwg_extracts/monsters/4365.html \
+mhwg_extracts/monsters/4369.html \
+mhwg_extracts/monsters/4372.html \
+mhwg_extracts/monsters/4368.html \
+mhwg_extracts/monsters/4366.html \
+mhwg_extracts/monsters/4367.html \
+mhwg_extracts/monsters/4373.html \
+mhwg_extracts/monsters/4379.html \
+mhwg_extracts/monsters/4380.html \
+mhwg_extracts/monsters/4381.html \
+mhwg_extracts/monsters/4382.html \
+mhwg_extracts/monsters/4385.html \
+mhwg_extracts/monsters/4387.html \
+mhwg_extracts/monsters/4388.html \
+mhwg_extracts/monsters/4389.html \
+mhwg_extracts/monsters/4391.html \
+mhwg_extracts/monsters/4393.html \
+mhwg_extracts/monsters/4401.html \
+mhwg_extracts/monsters/4402.html \
+mhwg_extracts/monsters/4403.html \
+mhwg_extracts/monsters/4404.html \
+mhwg_extracts/monsters/4405.html \
+mhwg_extracts/monsters/4406.html \
+mhwg_extracts/monsters/4407.html \
+mhwg_extracts/monsters/4408.html \
+mhwg_extracts/monsters/4409.html \
+mhwg_extracts/monsters/4413.html \
+mhwg_extracts/monsters/4414.html > /tmp/mhwg_mons.xml
 
 ./extract_kira_monster.pl \
 kiranico_extracts/monsters/anjanath \

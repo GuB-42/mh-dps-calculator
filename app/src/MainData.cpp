@@ -9,6 +9,7 @@
 #include "Target.h"
 #include "MotionValue.h"
 #include "Song.h"
+#include "Category.h"
 
 #include <QTextStream>
 #include <QXmlStreamReader>
@@ -142,6 +143,13 @@ void MainData::readXml(QXmlStreamReader *xml) {
 				Song *song = new Song;
 				song->readXml(xml);
 				songs.append(song);
+			} else if (tag_name == "category") {
+				Category *category = new Category;
+				category->readXml(xml);
+				categories.append(category);
+				if (!category->id.isNull()) {
+					categoryHash[category->id] = category;
+				}
 			} else {
 				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
@@ -160,6 +168,19 @@ void MainData::matchData() {
 		     it != weapon->ammoRefs.end(); ++it) {
 			QHash<QString, Ammo *>::const_iterator ita = ammoHash.find(it->id);
 			if (ita != ammoHash.end()) it->ammo = *ita;
+		}
+		for (QVector<Weapon::BuffRef>::iterator it = weapon->buffRefs.begin();
+		     it != weapon->buffRefs.end(); ++it) {
+			QHash<QString, BuffGroup *>::const_iterator itb =
+				buffGroupHash.find(it->id);
+			if (itb != buffGroupHash.end()) it->buffGroup = *itb;
+		}
+		foreach(const QString &category_id, weapon->categoryRefIds) {
+			QHash<QString, Category *>::const_iterator itc =
+				categoryHash.find(category_id);
+			if (itc != categoryHash.end()) {
+				weapon->categories.append(*itc);
+			}
 		}
 	}
 	foreach(BuffSetBonus *bsb, buffSetBonuses) {

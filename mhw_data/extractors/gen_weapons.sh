@@ -34,6 +34,7 @@ mhwg_extracts/weapons/4002.html > /tmp/mhwg_weap.xml
 
 ./extract_mhwd_weap.pl \
 MHWorldData/source_data/weapons/weapon_base.csv \
+MHWorldData/source_data/weapons/weapon_craft.csv \
 MHWorldData/source_data/weapons/weapon_bow_ext.csv \
 MHWorldData/source_data/weapons/weapon_sharpness.csv > /tmp/mhwd_weap.xml
 

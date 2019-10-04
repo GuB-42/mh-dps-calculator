@@ -31,18 +31,22 @@ my %monster_states = (
 	"Great Jagras/腹膨張" => [ "Inflated" ],
 	"Jyuratodus" => [ "", "Mud" ],
 	"Kirin" => [ "", "Electricity" ],
-	"Lavasioth/頭" => [ "Magma Armor", "Heated" ],
+	"Lavasioth/頭" => [ "Magma Armor", "Wounded", "Heated" ],
 	"Lavasioth/胴" => [ "", "Heated" ],
-	"Lavasioth/背中" => [ "Magma Armor" ],
-	"Lavasioth/脚" => [ "Magma Armor", "Heated" ],
-	"Lavasioth/尻尾" => [ "Magma Armor", "Heated" ],
+	"Lavasioth/背中" => [ "Magma Armor", "Wounded", "Heated" ],
+	"Lavasioth/脚" => [ "Magma Armor", "Wounded", "Heated" ],
+	"Lavasioth/尻尾" => [ "Magma Armor", "Wounded", "Heated" ],
 	"Nergigante/角" => [ "", "Wounded" ],
 	"Nergigante" => [ "", "White", "Black" ],
 	"Uragaan" => [ "", "Wounded" ],
 	"Vaal Hazak" => [ "", "Wounded" ],
 	"Xeno'jiiva" => [ "", "Critical State", "Wounded" ],
 	"Zorah Magdaros/胸" => [ "Before Wounded", "After Wounded" ],
-	"Deviljho" => [ "", "Enraged" ]
+	"Deviljho" => [ "", "Enraged" ],
+	"Kulve Taroth/頭" => [ "Start", "Wounded", "" ],
+	"Kulve Taroth/胸" => [ "Start", "" ],
+	"Kulve Taroth/前脚" => [ "Start", "" ],
+	"Behemoth" => [ "", "Wounded" ]
 );
 
 my %monster_enraged_states = (
@@ -79,44 +83,46 @@ sub process_data_row {
 	}
 
 	for my $part_name (split /・/, $header_row[0]) {
-		unless ($cur_monster->{$part_name}) {
+		unless ($cur_monster->{"hit_data"}{$part_name}) {
 			push @{$cur_monster->{"parts"}}, $part_name;
-			$cur_monster->{"hit_data"}{$part_name} = { }
+			$cur_monster->{"hit_data"}{$part_name} = { };
+			$cur_monster->{"last_state_id"}{$part_name} = 0;
 		}
 
-		for (my $i = 0; $i < @lrow_s; ++$i) {
-			my $state = $i == 0 ? "" : "state$i";
+		for my $row_s (@lrow_s) {
+			my $state_id = $cur_monster->{"last_state_id"}{$part_name}++;
+			my $state = $state_id == 0 ? "" : "state$state_id";
 			my $n = $cur_monster->{"name"} || $cur_monster->{"name_jp"};
 			my $xn = $n . "/" . $part_name;
 			if ($monster_states{$xn}) {
-				if (defined $monster_states{$xn}->[$i]) {
-					$state = $monster_states{$xn}->[$i];
+				if (defined $monster_states{$xn}->[$state_id]) {
+					$state = $monster_states{$xn}->[$state_id];
 				}
 			} elsif ($monster_states{$n}) {
-				if (defined $monster_states{$n}->[$i]) {
-					$state = $monster_states{$n}->[$i];
+				if (defined $monster_states{$n}->[$state_id]) {
+					$state = $monster_states{$n}->[$state_id];
 				}
 			}
 			$cur_monster->{"hit_data"}{$part_name}{$state} = {
-				"cut" => $lrow_s[$i]{"切"},
-				"impact" => $lrow_s[$i]{"打"},
-				"bullet" => $lrow_s[$i]{"弾"},
-				"fire" => $lrow_s[$i]{"火"},
-				"water" => $lrow_s[$i]{"水"},
-				"thunder" => $lrow_s[$i]{"雷"},
-				"ice" => $lrow_s[$i]{"氷"},
-				"dragon" => $lrow_s[$i]{"龍"},
-				"stun" => $lrow_s[$i]{"気絶"}
+				"cut" => $row_s->{"切"},
+				"impact" => $row_s->{"打"},
+				"bullet" => $row_s->{"弾"},
+				"fire" => $row_s->{"火"},
+				"water" => $row_s->{"水"},
+				"thunder" => $row_s->{"雷"},
+				"ice" => $row_s->{"氷"},
+				"dragon" => $row_s->{"龍"},
+				"stun" => $row_s->{"気絶"}
 			};
 
 			my $enraged_state;
 			if ($monster_enraged_states{$xn}) {
-				if (defined $monster_enraged_states{$xn}->[$i]) {
-					$enraged_state = $monster_enraged_states{$xn}->[$i];
+				if (defined $monster_enraged_states{$xn}->[$state_id]) {
+					$enraged_state = $monster_enraged_states{$xn}->[$state_id];
 				}
 			} elsif ($monster_enraged_states{$n}) {
-				if (defined $monster_enraged_states{$n}->[$i]) {
-					$enraged_state = $monster_enraged_states{$n}->[$i];
+				if (defined $monster_enraged_states{$n}->[$state_id]) {
+					$enraged_state = $monster_enraged_states{$n}->[$state_id];
 				}
 			}
 			$cur_monster->{"hit_data"}{$part_name}{$state}{"enraged_state"} = $enraged_state;
@@ -198,6 +204,14 @@ sub start {
 		for my $i (0 .. (@text_stack - 1)) {
 			$text_stack[$i] .= "\n";
 		}
+	} elsif (lc($tag) eq "img") {
+		if (defined $attr->{"alt"}) {
+			my $text = $attr->{"alt"};
+			utf8::decode($text);
+			for my $i (0 .. (@text_stack - 1)) {
+				$text_stack[$i] .= $text;
+			}
+		}
 	}
 
 	return unless $important_tags{$tag};
@@ -257,7 +271,8 @@ sub end {
 	} elsif (lc($tag) eq "h1") {
 		$cur_monster = {
 			"hit_data" => {},
-			"parts" => []
+			"parts" => [],
+			"last_state_id" => {}
 		};
 		push @monsters, $cur_monster;
 	}

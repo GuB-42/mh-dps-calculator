@@ -8,12 +8,12 @@
 #include "WeaponType.h"
 #include "Ammo.h"
 #include "Song.h"
+#include "Category.h"
 
 Weapon::Weapon() :
 	type(NULL),
 	attack(0.0), affinity(0.0), awakened(false), phial(PHIAL_NONE),
-	sharpnessPlus(0.0), final(false), rare(0),
-	augmentations(0)
+	sharpnessPlus(0.0), rare(0), augmentations(0)
 {
 	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
 	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
@@ -104,7 +104,24 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 		stream << decorationSlots[i];
 	}
 	stream << "]" << endl;
-	stream << indent << "- final: " << (final ? "true" : "false") << endl;
+
+	foreach(const BuffRef &buff_ref, buffRefs) {
+		stream << indent << "- buff ref: " << buff_ref.id <<
+			"[" << buff_ref.level << "]";
+		if (buff_ref.buffGroup) stream << " *";
+		stream << endl;
+	}
+
+	stream << indent << "- categories: [";
+	for (int i = 0; i < categoryRefIds.count(); ++i) {
+		if (i > 0) stream << ", ";
+		stream << categoryRefIds[i];
+	}
+	stream << "]" << endl;
+	foreach(Category *category, categories) {
+		stream << indent << "- category: " << category->id << endl;
+	}
+
 	stream << indent << "- rare: " << rare << endl;
 }
 
@@ -225,6 +242,41 @@ static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
 	}
 }
 
+static void parse_buff_refs(QXmlStreamReader *xml, QVector<Weapon::BuffRef> *pout)
+{
+	while (!xml->atEnd()) {
+		QXmlStreamReader::TokenType token_type = xml->readNext();
+		if (token_type == QXmlStreamReader::StartElement) {
+			if (xml->name() == "buff_ref") {
+				Weapon::BuffRef br;
+				br.id = xml->attributes().value("id").toString();
+				if (xml->attributes().hasAttribute("level")) {
+					br.level = xml->attributes().value("level").toString().toInt();
+				}
+				pout->append(br);
+			}
+			XML_SKIP_CURRENT_ELEMENT(*xml);
+		} else if (token_type == QXmlStreamReader::EndElement) {
+			break;
+		}
+	}
+}
+
+static void parse_categories(QXmlStreamReader *xml, QVector<QString> *pout)
+{
+	while (!xml->atEnd()) {
+		QXmlStreamReader::TokenType token_type = xml->readNext();
+		if (token_type == QXmlStreamReader::StartElement) {
+			if (xml->name() == "category_ref") {
+				pout->append(xml->attributes().value("id").toString());
+			}
+			XML_SKIP_CURRENT_ELEMENT(*xml);
+		} else if (token_type == QXmlStreamReader::EndElement) {
+			break;
+		}
+	}
+}
+
 void Weapon::readXml(QXmlStreamReader *xml) {
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
@@ -245,9 +297,6 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 			} else if (tag_name == "awakened") {
 				QString v = xml->readElementText();
 				awakened = !(v.isEmpty() || v.toLower() == "false" || v == "0");
-			} else if (tag_name == "final") {
-				QString v = xml->readElementText();
-				final = !(v.isEmpty() || v.toLower() == "false" || v == "0");
 			} else if (tag_name == "rare") {
 				rare = xml->readElementText().toInt();
 			} else if (tag_name == "sharpness") {
@@ -262,6 +311,10 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 				parse_notes(xml, &notes);
 			} else if (tag_name == "slots") {
 				parse_slots(xml, &decorationSlots);
+			} else if (tag_name == "buff_refs") {
+				parse_buff_refs(xml, &buffRefs);
+			} else if (tag_name == "categories") {
+				parse_categories(xml, &categoryRefIds);
 			} else {
 				XML_SKIP_CURRENT_ELEMENT(*xml);
 			}
@@ -269,9 +322,18 @@ void Weapon::readXml(QXmlStreamReader *xml) {
 			break;
 		}
 	}
-	if (final && rare) {
-		augmentations = 9 - rare;
-		if (augmentations < 0) augmentations = 0;
-		if (augmentations > 3) augmentations = 3;
+	if (rare) {
+		bool augmentable = true;
+		foreach (const QString &cat, categoryRefIds) {
+			if (cat == "upgradable") {
+				augmentable = false;
+				break;
+			}
+		}
+		if (augmentable) {
+			augmentations = 9 - rare;
+			if (augmentations < 0) augmentations = 0;
+			if (augmentations > 3) augmentations = 3;
+		}
 	}
 }

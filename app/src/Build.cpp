@@ -192,6 +192,11 @@ void Build::addWeapon(const Weapon *weapon) {
 			}
 		}
 	}
+	foreach(const Weapon::BuffRef &buff_ref, weapon->buffRefs) {
+		if (buff_ref.buffGroup) {
+			addBuffLevel(buff_ref.buffGroup, buff_ref.level);
+		}
+	}
 }
 
 static bool bwc_sort(const BuffWithCondition *a, const BuffWithCondition *b) {

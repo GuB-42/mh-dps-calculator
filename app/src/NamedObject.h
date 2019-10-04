@@ -16,6 +16,7 @@ struct NamedObject {
 	QString getAllNames() const;
 	virtual void print(QTextStream &stream, QString indent = QString()) const;
 	bool readXmlName(QXmlStreamReader *xml);
+	virtual void readXml(QXmlStreamReader *xml);
 };
 
 #endif

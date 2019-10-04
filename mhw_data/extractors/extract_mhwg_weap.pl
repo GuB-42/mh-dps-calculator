@@ -9,6 +9,7 @@ use open ':std', ':encoding(UTF-8)';
 use XML::Writer;
 use HTML::Parser;
 use HTML::Entities;
+use Data::Dumper;
 
 my $xml_writer;
 
@@ -24,6 +25,7 @@ my $fill_sharpness_plus = 0;
 my @ammos = ();
 my @notes = ();
 my @slots = ();
+my $is_iceborne = 0;
 
 sub process_data_row_bowgun {
 	if ($data_row[2] =~ /攻撃[：:\s]*(\d+)/) {
@@ -225,17 +227,19 @@ sub process_data_row_melee {
 
 
 sub process_data_row {
-	return unless defined $data_row[1];
+	return unless $data_row[1];
 
 	$xml_writer->startTag("weapon");
 	$xml_writer->emptyTag("weapon_type_ref", "id" => $weapon_type);
 
-	my $creatable = 0;
+	my $is_upgraded = ($data_row[1] =~ /[\x{2517}\x{2523}]/);
+	my $is_kulve = ($data_row[0] =~ /マム鑑定/);
+	my $is_created = 0;
 	my $name = $data_row[1];
 	$name =~ s/^[\x{2500}-\x{25ff}\s]*//;
 	if ($name =~ /\[生産\]/) {
 		$name =~ s/\s*\[生産\]\s*//;
-		$creatable = 1;
+		$is_created = 1;
 	}
 	$name =~ s/\s*\[■A\]\s*//; # TODO arch kulve
 	$name =~ s/\s*\[■B\]\s*//; # TODO wut?
@@ -248,8 +252,13 @@ sub process_data_row {
 		process_data_row_melee();
 	}
 
-	$xml_writer->dataElement("creatable", "true") if ($creatable);
-	$xml_writer->dataElement("final", "true") if ($is_final);
+	$xml_writer->startTag("categories");
+	$xml_writer->emptyTag("category_ref", "id" => "created") if ($is_created && !$is_kulve);
+	$xml_writer->emptyTag("category_ref", "id" => "upgradable") unless ($is_final);
+	$xml_writer->emptyTag("category_ref", "id" => "upgraded") if ($is_upgraded);
+	$xml_writer->emptyTag("category_ref", "id" => "iceborne") if ($is_iceborne);
+	$xml_writer->emptyTag("category_ref", "id" => "kulve") if ($is_kulve);
+	$xml_writer->endTag();
 	$xml_writer->endTag();
 }
 
@@ -272,12 +281,15 @@ sub start {
 		$in_td = 1;
 		$text_acc = "";
 		$data_row_span{$cur_col} = ($attr->{"rowspan"} || 1);
+		$is_iceborne = 1 if (defined $attr->{"style"} && $attr->{"style"} eq "background-color:#EFF3FA;");
 	} elsif (lc($tag) eq "tr" && !$in_bullet) {
 		$in_tr = 0;
 		$in_td = 0;
 		$cur_col = 0;
 		++$cur_col while ($data_row_span{$cur_col});
-		@data_row = ();
+		for my $i (0 .. @data_row - 1) {
+			undef $data_row[$i] unless ($data_row_span{$i});
+		}
 		%sharpness = ();
 		%sharpness_plus = ();
 		$fill_sharpness_plus = 0;
@@ -285,6 +297,7 @@ sub start {
 		@ammos = ();
 		@notes = ();
 		@slots = ();
+		$is_iceborne = 0;
 	} elsif (lc($tag) eq "span") {
 		$last_span_class = $attr->{"class"};
 		$text_acc_span = "";

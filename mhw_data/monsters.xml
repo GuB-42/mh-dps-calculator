@@ -2787,7 +2787,7 @@
                 <cut>20</cut>
                 <impact>20</impact>
                 <bullet>20</bullet>
-                <fire>5</fire>
+                <fire>10</fire>
                 <water>15</water>
                 <thunder>0</thunder>
                 <ice>0</ice>
@@ -6903,49 +6903,28 @@
                 <dragon>35</dragon>
                 <stun>100</stun>
             </hit_data>
-        </part>
-        <part id="chest">
-            <name>Chest</name>
-            <name_jp>胸</name_jp>
             <hit_data>
-                <cut>50</cut>
-                <impact>45</impact>
-                <bullet>45</bullet>
-                <fire>0</fire>
-                <water>20</water>
-                <thunder>0</thunder>
-                <ice>40</ice>
-                <dragon>25</dragon>
-                <stun>0</stun>
+                <state>Start</state>
+                <cut>25</cut>
+                <impact>30</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>25</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
             </hit_data>
-        </part>
-        <part id="forelegs">
-            <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
             <hit_data>
-                <cut>50</cut>
-                <impact>40</impact>
+                <state>Wounded</state>
+                <cut>60</cut>
+                <impact>75</impact>
                 <bullet>30</bullet>
-                <fire>0</fire>
-                <water>20</water>
-                <thunder>0</thunder>
-                <ice>40</ice>
-                <dragon>25</dragon>
-                <stun>0</stun>
-            </hit_data>
-        </part>
-        <part id="head">
-            <name>Head</name>
-            <name_jp>頭</name_jp>
-            <hit_data>
-                <cut>80</cut>
-                <impact>85</impact>
-                <bullet>25</bullet>
-                <fire>0</fire>
+                <fire>25</fire>
                 <water>30</water>
-                <thunder>0</thunder>
-                <ice>50</ice>
-                <dragon>35</dragon>
+                <thunder>50</thunder>
+                <ice>0</ice>
+                <dragon>25</dragon>
                 <stun>100</stun>
             </hit_data>
         </part>
@@ -6963,19 +6942,16 @@
                 <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
-        </part>
-        <part id="body">
-            <name>Body</name>
-            <name_jp>胴</name_jp>
             <hit_data>
-                <cut>35</cut>
-                <impact>35</impact>
-                <bullet>20</bullet>
+                <state>Start</state>
+                <cut>50</cut>
+                <impact>45</impact>
+                <bullet>45</bullet>
                 <fire>0</fire>
-                <water>10</water>
+                <water>20</water>
                 <thunder>0</thunder>
-                <ice>30</ice>
-                <dragon>15</dragon>
+                <ice>40</ice>
+                <dragon>25</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -6991,6 +6967,33 @@
                 <thunder>0</thunder>
                 <ice>40</ice>
                 <dragon>25</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>Start</state>
+                <cut>25</cut>
+                <impact>30</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>25</thunder>
+                <ice>0</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+            <hit_data>
+                <cut>35</cut>
+                <impact>35</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>30</ice>
+                <dragon>15</dragon>
                 <stun>0</stun>
             </hit_data>
         </part>
@@ -7174,10 +7177,10 @@
                 <thunder>35</thunder>
                 <ice>40</ice>
                 <dragon>85</dragon>
-                <stun></stun>
+                <stun>100</stun>
             </hit_data>
             <hit_data>
-                <state>state1</state>
+                <state>Wounded</state>
                 <cut>10</cut>
                 <impact>15</impact>
                 <bullet>5</bullet>
@@ -7186,7 +7189,7 @@
                 <thunder>5</thunder>
                 <ice>5</ice>
                 <dragon>25</dragon>
-                <stun></stun>
+                <stun>100</stun>
             </hit_data>
         </part>
         <part id="head">
@@ -7201,7 +7204,67 @@
                 <thunder>10</thunder>
                 <ice>10</ice>
                 <dragon>5</dragon>
-                <stun></stun>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>上半身</name_jp>
+            <hit_data>
+                <cut>15</cut>
+                <impact>22</impact>
+                <bullet>8</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>5</thunder>
+                <ice>5</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>腹</name_jp>
+            <hit_data>
+                <cut>22</cut>
+                <impact>15</impact>
+                <bullet>5</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="hips">
+            <name>Hips</name>
+            <name_jp>腰</name_jp>
+            <hit_data>
+                <cut>22</cut>
+                <impact>15</impact>
+                <bullet>5</bullet>
+                <fire>0</fire>
+                <water>0</water>
+                <thunder>0</thunder>
+                <ice>0</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="upper_arms">
+            <name>Upper Arms</name>
+            <name_jp>上腕</name_jp>
+            <hit_data>
+                <cut>50</cut>
+                <impact>40</impact>
+                <bullet>15</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>5</thunder>
+                <ice>5</ice>
+                <dragon>15</dragon>
+                <stun>0</stun>
             </hit_data>
         </part>
         <part id="forelegs">
@@ -7216,7 +7279,7 @@
                 <thunder>5</thunder>
                 <ice>5</ice>
                 <dragon>15</dragon>
-                <stun></stun>
+                <stun>0</stun>
             </hit_data>
         </part>
         <part id="hindlegs">
@@ -7231,7 +7294,7 @@
                 <thunder>10</thunder>
                 <ice>25</ice>
                 <dragon>5</dragon>
-                <stun></stun>
+                <stun>0</stun>
             </hit_data>
         </part>
         <part id="tail">
@@ -7246,7 +7309,7 @@
                 <thunder>15</thunder>
                 <ice>5</ice>
                 <dragon>5</dragon>
-                <stun></stun>
+                <stun>0</stun>
             </hit_data>
         </part>
         <part id="butt">
@@ -7261,16 +7324,1092 @@
                 <thunder>20</thunder>
                 <ice>20</ice>
                 <dragon>10</dragon>
-                <stun></stun>
+                <stun>0</stun>
             </hit_data>
         </part>
     </monster>
     <monster id="leshen">
         <name>Leshen</name>
         <name_jp>レーシェン</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+            <hit_data>
+                <cut>65</cut>
+                <impact>65</impact>
+                <bullet>50</bullet>
+                <fire>25</fire>
+                <water>0</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>25</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="arms">
+            <name>Arms</name>
+            <name_jp>腕</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>30</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>30</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
     </monster>
     <monster id="ancient_leshen">
         <name>Ancient Leshen</name>
         <name_jp>エンシェント・レーシェン</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+            <hit_data>
+                <cut>65</cut>
+                <impact>65</impact>
+                <bullet>50</bullet>
+                <fire>25</fire>
+                <water>0</water>
+                <thunder>15</thunder>
+                <ice>10</ice>
+                <dragon>15</dragon>
+                <stun>100</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>25</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="arms">
+            <name>Arms</name>
+            <name_jp>腕</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>30</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>30</bullet>
+                <fire>20</fire>
+                <water>0</water>
+                <thunder>10</thunder>
+                <ice>5</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+    </monster>
+    <monster id="velkhana">
+        <name>Velkhana</name>
+        <name_jp>イヴェルカーナ</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="tigrex">
+        <name>Tigrex</name>
+        <name_jp>ティガレックス</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>腹</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>尻尾根元</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="glavenus">
+        <name>Glavenus</name>
+        <name_jp>ディノバルド</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>喉</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>排熱殻</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>尻尾根元</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="nargacuga">
+        <name>Nargacuga</name>
+        <name_jp>ナルガクルガ</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>腹</name_jp>
+        </part>
+        <part id="back">
+            <name>Back</name>
+            <name_jp>背</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+        <part id="tail_tip">
+            <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
+        </part>
+    </monster>
+    <monster id="banbaro">
+        <name>Banbaro</name>
+        <name_jp>バフバロ</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="horn">
+            <name>Horn</name>
+            <name_jp>角</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="beotodus">
+        <name>Beotodus</name>
+        <name_jp>ブラントドス</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="shrieking_legiana">
+        <name>Shrieking Legiana</name>
+        <name_jp>凍て刺すレイギエナ</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="back">
+            <name>Back</name>
+            <name_jp>背</name_jp>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="barioth">
+        <name>Barioth</name>
+        <name_jp>ベリオロス</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>腹</name_jp>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>棘</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+        <part id="tail_tip">
+            <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
+        </part>
+    </monster>
+    <monster id="brachydios">
+        <name>Brachydios</name>
+        <name_jp>ブラキディオス</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+        <part id="tail_tip">
+            <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
+        </part>
+    </monster>
+    <monster id="fulgur_anjanath">
+        <name>Fulgur Anjanath</name>
+        <name_jp>アンジャナフ亜種</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="nose">
+            <name>Nose</name>
+            <name_jp>鼻</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="ebony_odogaron">
+        <name>Ebony Odogaron</name>
+        <name_jp>オドガロン亜種</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="back">
+            <name>Back</name>
+            <name_jp>背</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+        <part id="tail_tip">
+            <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
+        </part>
+    </monster>
+    <monster id="acidic_glavenus">
+        <name>Acidic Glavenus</name>
+        <name_jp>ディノバルド亜種</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>喉</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>排熱殻</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>尻尾根元</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="coral_pukei_pukei">
+        <name>Coral Pukei-Pukei</name>
+        <name_jp>プケプケ亜種</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="viper_tobi_kadachi">
+        <name>Viper Tobi-Kadachi</name>
+        <name_jp>トビカガチ亜種</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="back">
+            <name>Back</name>
+            <name_jp>背中</name_jp>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="nightshade_paolumu">
+        <name>Nightshade Paolumu</name>
+        <name_jp>パオウルムー亜種</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+        </part>
+        <part id="neck_pouch">
+            <name>Neck Pouch</name>
+            <name_jp>顎袋</name_jp>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+        </part>
+    </monster>
+    <monster id="namielle">
+        <name>Namielle</name>
+        <name_jp>ネロミェール</name_jp>
+    </monster>
+    <monster id="yian_garuga">
+        <name>Yian Garuga</name>
+        <name_jp>イャンガルルガ</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+            <hit_data>
+                <cut>65</cut>
+                <impact>60</impact>
+                <bullet>50</bullet>
+                <fire>0</fire>
+                <water>20</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>150</stun>
+            </hit_data>
+        </part>
+        <part id="neck">
+            <name>Neck</name>
+            <name_jp>首</name_jp>
+            <hit_data>
+                <cut>42</cut>
+                <impact>42</impact>
+                <bullet>25</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>腹</name_jp>
+            <hit_data>
+                <cut>29</cut>
+                <impact>25</impact>
+                <bullet>35</bullet>
+                <fire>15</fire>
+                <water>20</water>
+                <thunder>10</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="back">
+            <name>Back</name>
+            <name_jp>背</name_jp>
+            <hit_data>
+                <cut>15</cut>
+                <impact>15</impact>
+                <bullet>10</bullet>
+                <fire>5</fire>
+                <water>50</water>
+                <thunder>10</thunder>
+                <ice>20</ice>
+                <dragon>30</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="wings">
+            <name>Wings</name>
+            <name_jp>翼</name_jp>
+            <hit_data>
+                <cut>32</cut>
+                <impact>45</impact>
+                <bullet>20</bullet>
+                <fire>0</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>脚</name_jp>
+            <hit_data>
+                <cut>32</cut>
+                <impact>32</impact>
+                <bullet>10</bullet>
+                <fire>0</fire>
+                <water>10</water>
+                <thunder>5</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>尾下</name_jp>
+            <hit_data>
+                <cut>50</cut>
+                <impact>30</impact>
+                <bullet>15</bullet>
+                <fire>5</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+    </monster>
+    <monster id="zinogre">
+        <name>Zinogre</name>
+        <name_jp>ジンオウガ</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+            <hit_data>
+                <cut>65</cut>
+                <impact>65</impact>
+                <bullet>70</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>100</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>65</cut>
+                <impact>65</impact>
+                <bullet>70</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>10</dragon>
+                <stun>120</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴</name_jp>
+            <hit_data>
+                <cut>25</cut>
+                <impact>25</impact>
+                <bullet>30</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>30</cut>
+                <impact>30</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="back">
+            <name>Back</name>
+            <name_jp>背</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>35</bullet>
+                <fire>10</fire>
+                <water>20</water>
+                <thunder>0</thunder>
+                <ice>25</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>70</cut>
+                <impact>65</impact>
+                <bullet>55</bullet>
+                <fire>15</fire>
+                <water>25</water>
+                <thunder>0</thunder>
+                <ice>30</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+            <hit_data>
+                <cut>25</cut>
+                <impact>30</impact>
+                <bullet>30</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>43</cut>
+                <impact>46</impact>
+                <bullet>30</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>35</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>50</cut>
+                <impact>50</impact>
+                <bullet>40</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="">
+            <name></name>
+            <name_jp>脚根元</name_jp>
+            <hit_data>
+                <cut>44</cut>
+                <impact>44</impact>
+                <bullet>30</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>10</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>45</cut>
+                <impact>45</impact>
+                <bullet>35</bullet>
+                <fire>10</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+            <hit_data>
+                <cut>30</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>30</cut>
+                <impact>25</impact>
+                <bullet>25</bullet>
+                <fire>5</fire>
+                <water>10</water>
+                <thunder>0</thunder>
+                <ice>5</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="tail_tip">
+            <name>Tail Tip</name>
+            <name_jp>尾先</name_jp>
+            <hit_data>
+                <cut>21</cut>
+                <impact>19</impact>
+                <bullet>10</bullet>
+                <fire>10</fire>
+                <water>15</water>
+                <thunder>0</thunder>
+                <ice>20</ice>
+                <dragon>5</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+    </monster>
+    <monster id="rajang">
+        <name>Rajang</name>
+        <name_jp>ラージャン</name_jp>
+        <part id="head">
+            <name>Head</name>
+            <name_jp>頭</name_jp>
+            <hit_data>
+                <cut>60</cut>
+                <impact>60</impact>
+                <bullet>60</bullet>
+                <fire>5</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>30</ice>
+                <dragon>0</dragon>
+                <stun>50</stun>
+            </hit_data>
+        </part>
+        <part id="body">
+            <name>Body</name>
+            <name_jp>胴体</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>50</impact>
+                <bullet>45</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="forelegs">
+            <name>Forelegs</name>
+            <name_jp>前脚</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>10</cut>
+                <impact>10</impact>
+                <bullet>10</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="hindlegs">
+            <name>Hindlegs</name>
+            <name_jp>後脚</name_jp>
+            <hit_data>
+                <cut>45</cut>
+                <impact>40</impact>
+                <bullet>40</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>55</cut>
+                <impact>48</impact>
+                <bullet>48</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+        <part id="tail">
+            <name>Tail</name>
+            <name_jp>尻尾</name_jp>
+            <hit_data>
+                <cut>50</cut>
+                <impact>40</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+            <hit_data>
+                <state>state1</state>
+                <cut>55</cut>
+                <impact>45</impact>
+                <bullet>30</bullet>
+                <fire>0</fire>
+                <water>5</water>
+                <thunder>0</thunder>
+                <ice>15</ice>
+                <dragon>0</dragon>
+                <stun>0</stun>
+            </hit_data>
+        </part>
+    </monster>
+    <monster id="ruiner_nergigante">
+        <name>Ruiner Nergigante</name>
+        <name_jp>悉くを殲ぼすネルギガンテ</name_jp>
+    </monster>
+    <monster id="silver_rathalos">
+        <name>Silver Rathalos</name>
+        <name_jp>リオレウス希少種</name_jp>
+    </monster>
+    <monster id="gold_rathian">
+        <name>Gold Rathian</name>
+        <name_jp>リオレイア希少種</name_jp>
+    </monster>
+    <monster id="savage_deviljho">
+        <name>Savage Deviljho</name>
+        <name_jp>怒り喰らうイビルジョー</name_jp>
+    </monster>
+    <monster id="shara_ishvalda">
+        <name>Shara Ishvalda</name>
+        <name_jp>アン・イシュワルダ</name_jp>
+    </monster>
+    <monster id="seething_bazelgeuse">
+        <name>Seething Bazelgeuse</name>
+        <name_jp>紅蓮滾るバゼルギウス</name_jp>
+    </monster>
+    <monster id="blackveil_vaal_hazak">
+        <name>Blackveil Vaal Hazak</name>
+        <name_jp>死を纏うヴァルハザク</name_jp>
+    </monster>
+    <monster id="brute_tigrex">
+        <name>Brute Tigrex</name>
+        <name_jp>ティガレックス亜種</name_jp>
+    </monster>
+    <monster id="scarred_yian_garuga">
+        <name>Scarred Yian Garuga</name>
+        <name_jp>傷ついたイャンガルルガ</name_jp>
     </monster>
 </data>

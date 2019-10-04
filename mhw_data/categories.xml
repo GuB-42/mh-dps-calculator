@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <category id="upgraded">
+        <name>Upgraded</name>
+    </category>
+    <category id="created">
+        <name>Created</name>
+    </category>
+    <category id="upgradable">
+        <name>Upgradable</name>
+    </category>
+    <category id="kulve">
+        <name>Kulve Taroth</name>
+    </category>
+    <category id="at_kulve">
+        <name>Arch-Tempered Kulve Taroth</name>
+    </category>
+    <category id="iceborne">
+        <name>Iceborne</name>
+    </category>
+</data>

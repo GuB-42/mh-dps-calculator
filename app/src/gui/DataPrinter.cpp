@@ -8,6 +8,7 @@
 #include "../BuffGroup.h"
 #include "../DamageData.h"
 #include "../BuffWithCondition.h"
+#include "../Category.h"
 #include "GuiElements.h"
 
 static QString esc(const QString &v) {
@@ -572,6 +573,17 @@ QString DPImpl::singleDataToHtml(BuildWithDps *bwd, Language lang) {
 	ret += QString("<h3>%1</h3>\n").arg(esc(tr("Name")));
 	ret += QString("<p>%1</p>\n").
 		arg(esc(bwd->build->weapon->getName(lang)));
+	ret += QString("<h3>%1</h3>\n").arg(esc(tr("Categories")));
+	if (!bwd->build->weapon->categories.isEmpty()) {
+		ret += "<ul>\n";
+		foreach(const Category *cat, bwd->build->weapon->categories) {
+			ret += QString("<li>%1</li>\n").
+				arg(esc(cat->getName(lang)));
+		}
+		ret += "</ul>\n";
+	} else {
+		ret += notApplicable();
+	}
 	ret += QString("<h3>%1</h3>\n").arg(esc(tr("Stats")));
 	ret += weaponTableHtml(*bwd->build->weapon);
 

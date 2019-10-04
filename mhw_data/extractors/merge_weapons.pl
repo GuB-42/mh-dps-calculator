@@ -29,7 +29,8 @@ sub process_start
 			"phial_elements" => {},
 			"slots" => [],
 			"ammos" => [],
-			"notes" => []
+			"notes" => [],
+			"categories" => {}
 		};
 	} elsif ($xml_stack[0] eq "translation") {
 		$cur_translation = {};
@@ -50,7 +51,8 @@ sub process_val
 		        $xml_stack[0] eq "phial" ||
 		        $xml_stack[0] eq "slots" ||
 		        $xml_stack[0] eq "ammos" ||
-		        $xml_stack[0] eq "notes") {
+		        $xml_stack[0] eq "notes" ||
+		        $xml_stack[0] eq "categories") {
 			if ($xml_stack[0] eq "weapon_type_ref") {
 				$cur_weapon->{$xml_stack[0]} = $xml_stack_attr[0]{"id"};
 			} else {
@@ -75,6 +77,8 @@ sub process_val
 		push @{$cur_weapon->{"ammos"}}, $xml_stack_attr[0]{"id"};
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "notes") {
 		push @{$cur_weapon->{"notes"}}, $xml_stack[0];
+	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "categories" && $xml_stack[0] eq "category_ref") {
+		$cur_weapon->{"categories"}{$xml_stack_attr[0]{"id"}} = 1;
 	} elsif ($xml_stack[0] eq "translation") {
 		push @translations, $cur_translation;
 		for my $k (keys %{$cur_translation}) {
@@ -175,6 +179,11 @@ sub merge_weapons
 					print STDERR "$names: $k mismatch: [" . (join ',', @sa) . "] != [" . (join ',', @sb) . "]\n";
 				}
 				$ret->{$k} = $wep_a->{$k};
+			} elsif ($k eq "categories") {
+				$ret->{$k} = $wep_a->{$k};
+				for my $cat (keys %{$wep_b->{$k}}) {
+					$ret->{$k}{$cat} = 1;
+				}
 			} elsif ($k eq "sharpness") {
 				my %sharpness_levels = (
 					"red" => 0,
@@ -352,7 +361,7 @@ sub print_weapon
 		 "inflated_attack", "attack",
 		 "affinity", "awakened", "elements", "elderseal", "defense",
 		 "phial", "phial_elements", "sharpness", "ammos", "notes", "slots",
-		 "rare", "creatable", "final");
+		 "rare", "categories");
 
 	$xml_writer->startTag("weapon");
 	my %used_keys = ();
@@ -418,6 +427,14 @@ sub print_weapon
 				$xml_writer->startTag("slots");
 				for my $s (@{$weapon->{$k}}) {
 					$xml_writer->dataElement("slot", $s);
+				}
+				$xml_writer->endTag();
+			}
+		} elsif ($k eq "categories") {
+			if (%{$weapon->{$k}}) {
+				$xml_writer->startTag("categories");
+				for my $s (sort keys %{$weapon->{$k}}) {
+					$xml_writer->emptyTag("category_ref", "id" => $s);
 				}
 				$xml_writer->endTag();
 			}

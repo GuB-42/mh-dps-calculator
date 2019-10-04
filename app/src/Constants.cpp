@@ -25,15 +25,15 @@ Constants::Constants() {
 	rawSharpnessMultipliers[SHARPNESS_GREEN] = 1.05;
 	rawSharpnessMultipliers[SHARPNESS_BLUE] = 1.2;
 	rawSharpnessMultipliers[SHARPNESS_WHITE] = 1.32;
-	rawSharpnessMultipliers[SHARPNESS_PURPLE] = 1.44;
+	rawSharpnessMultipliers[SHARPNESS_PURPLE] = 1.39;
 
 	elementSharpnessMultipliers[SHARPNESS_RED] = 0.25;
 	elementSharpnessMultipliers[SHARPNESS_ORANGE] = 0.5;
 	elementSharpnessMultipliers[SHARPNESS_YELLOW] = 0.75;
 	elementSharpnessMultipliers[SHARPNESS_GREEN] = 1.0;
 	elementSharpnessMultipliers[SHARPNESS_BLUE] = 1.0625;
-	elementSharpnessMultipliers[SHARPNESS_WHITE] = 1.125;
-	elementSharpnessMultipliers[SHARPNESS_PURPLE] = 1.2;
+	elementSharpnessMultipliers[SHARPNESS_WHITE] = 1.15;
+	elementSharpnessMultipliers[SHARPNESS_PURPLE] = 1.25;
 
 	QVector<BuffCap> bcaps;
 	bcaps <<

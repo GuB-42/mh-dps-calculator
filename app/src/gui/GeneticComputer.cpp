@@ -44,7 +44,16 @@ void GeneticComputer::compute(const Parameters &params) {
 	QVector<const Weapon *> weapons;
 	foreach(const Weapon *weapon, params.weapons) {
 		if (weapon->type != params.profile->weaponType) continue;
-		if (!weapon->final && params.finalOnly) continue;
+		if (params.finalOnly) {
+			bool not_final = false;
+			foreach (const QString &cat, weapon->categoryRefIds) {
+				if (cat == "upgradable") {
+					not_final = true;
+					continue;
+				}
+			}
+			if (not_final) continue;
+		}
 		weapons.append(weapon);
 	}
 
