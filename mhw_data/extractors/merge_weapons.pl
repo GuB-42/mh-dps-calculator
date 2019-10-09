@@ -176,7 +176,7 @@ sub merge_weapons
 						print STDERR "$names: $k/$e mismatch: <null> != $wep_b->{$k}{$e}\n";
 					}
 				}
-			} elsif ($k eq "slots" || $k eq "notes") {
+			} elsif ($k eq "slots") {
 				my @sa = (sort { $b cmp $a } @{$wep_a->{$k}});
 				my @sb = (sort { $b cmp $a } @{$wep_b->{$k}});
 				my $mismatch = 0;
@@ -192,6 +192,28 @@ sub merge_weapons
 					print STDERR "$names: $k mismatch: [" . (join ',', @sa) . "] != [" . (join ',', @sb) . "]\n";
 				}
 				$ret->{$k} = $wep_a->{$k};
+			} elsif ($k eq "notes") {
+				if (!@{$wep_b->{$k}}) {
+					$ret->{$k} = $wep_a->{$k};
+				} elsif (!@{$wep_a->{$k}}) {
+					$ret->{$k} = $wep_b->{$k};
+				} else {
+					my @sa = (sort { $b cmp $a } @{$wep_a->{$k}});
+					my @sb = (sort { $b cmp $a } @{$wep_b->{$k}});
+					my $mismatch = 0;
+					if (@sa == @sb) {
+						for (my $i = 0; $i < @sa; ++$i) {
+							$mismatch = 1 if ($sa[$i] ne $sb[$i]);
+							last;
+						}
+					} else {
+						$mismatch = 1;
+					}
+					if ($mismatch) {
+						print STDERR "$names: $k mismatch: [" . (join ',', @sa) . "] != [" . (join ',', @sb) . "]\n";
+					}
+					$ret->{$k} = $wep_a->{$k};
+				}
 			} elsif ($k eq "ammos") {
 				if (!@{$wep_b->{$k}}) {
 					$ret->{$k} = $wep_a->{$k};
@@ -247,61 +269,67 @@ sub merge_weapons
 					$ret->{$k}{$cat} = 1;
 				}
 			} elsif ($k eq "sharpness") {
-				my %sharpness_levels = (
-					"red" => 0,
-					"orange" => 1,
-					"yellow" => 2,
-					"green" => 3,
-					"blue" => 4,
-					"white" => 5,
-					"purple" => 6
-				);
-				my @sha = ( 0, 0, 0, 0, 0, 0, 0 );
-				my $sha_plus = 0;
-				my @shb = ( 0, 0, 0, 0, 0, 0, 0 );
-				my $shb_plus = 0;
-				for my $sh (keys %{$wep_a->{$k}}) {
-					if (defined $sharpness_levels{$sh}) {
-						$sha[$sharpness_levels{$sh}] = $wep_a->{$k}{$sh};
-					} elsif ($sh eq "plus") {
-						$sha_plus = $wep_a->{$k}{$sh};
-					} elsif (!defined $wep_b->{$k}{$sh}) {
-						print STDERR "$names: $k/$sh mismatch: $wep_a->{$k}{$sh} != <null>\n";
-					} elsif ($wep_a->{$k}{$sh} ne $wep_b->{$k}{$sh}) {
-						print STDERR "$names: $k/$sh mismatch: $wep_a->{$k}{$sh} != $wep_b->{$k}{$sh}\n";
+				if (!%{$wep_b->{$k}}) {
+					$ret->{$k} = $wep_a->{$k};
+				} elsif (!%{$wep_a->{$k}}) {
+					$ret->{$k} = $wep_b->{$k};
+				} else {
+					my %sharpness_levels = (
+						"red" => 0,
+						"orange" => 1,
+						"yellow" => 2,
+						"green" => 3,
+						"blue" => 4,
+						"white" => 5,
+						"purple" => 6
+					);
+					my @sha = ( 0, 0, 0, 0, 0, 0, 0 );
+					my $sha_plus = 0;
+					my @shb = ( 0, 0, 0, 0, 0, 0, 0 );
+					my $shb_plus = 0;
+					for my $sh (keys %{$wep_a->{$k}}) {
+						if (defined $sharpness_levels{$sh}) {
+							$sha[$sharpness_levels{$sh}] = $wep_a->{$k}{$sh};
+						} elsif ($sh eq "plus") {
+							$sha_plus = $wep_a->{$k}{$sh};
+						} elsif (!defined $wep_b->{$k}{$sh}) {
+							print STDERR "$names: $k/$sh mismatch: $wep_a->{$k}{$sh} != <null>\n";
+						} elsif ($wep_a->{$k}{$sh} ne $wep_b->{$k}{$sh}) {
+							print STDERR "$names: $k/$sh mismatch: $wep_a->{$k}{$sh} != $wep_b->{$k}{$sh}\n";
+						}
 					}
-				}
-				for my $sh (keys %{$wep_b->{$k}}) {
-					if (defined $sharpness_levels{$sh}) {
-						$shb[$sharpness_levels{$sh}] = $wep_b->{$k}{$sh};
-					} elsif ($sh eq "plus") {
-						$shb_plus = $wep_b->{$k}{$sh};
-					} elsif (!defined $wep_a->{$k}{$sh}) {
-						print STDERR "$names: $k/$sh mismatch: <null> != $wep_b->{$k}{$sh}\n";
+					for my $sh (keys %{$wep_b->{$k}}) {
+						if (defined $sharpness_levels{$sh}) {
+							$shb[$sharpness_levels{$sh}] = $wep_b->{$k}{$sh};
+						} elsif ($sh eq "plus") {
+							$shb_plus = $wep_b->{$k}{$sh};
+						} elsif (!defined $wep_a->{$k}{$sh}) {
+							print STDERR "$names: $k/$sh mismatch: <null> != $wep_b->{$k}{$sh}\n";
+						}
 					}
-				}
-				my $mismatch = 0;
-				my $in_plus_a = 0;
-				my $in_plus_b = 0;
-				for (my $i = 0; $i < @sha; ++$i) {
-					if ($in_plus_a) {
-						$mismatch = 1 if ($shb[$i] != 0);
-						$in_plus_a += $sha[$i];
-					} elsif ($in_plus_b) {
-						$mismatch = 1 if ($sha[$i] != 0);
-						$in_plus_b += $shb[$i];
-					} elsif ($sha[$i] > $shb[$i]) {
-						$in_plus_a = $sha[$i] - $shb[$i];
-					} elsif ($sha[$i] < $shb[$i]) {
-						$in_plus_b = $shb[$i] - $sha[$i];
+					my $mismatch = 0;
+					my $in_plus_a = 0;
+					my $in_plus_b = 0;
+					for (my $i = 0; $i < @sha; ++$i) {
+						if ($in_plus_a) {
+							$mismatch = 1 if ($shb[$i] != 0);
+							$in_plus_a += $sha[$i];
+						} elsif ($in_plus_b) {
+							$mismatch = 1 if ($sha[$i] != 0);
+							$in_plus_b += $shb[$i];
+						} elsif ($sha[$i] > $shb[$i]) {
+							$in_plus_a = $sha[$i] - $shb[$i];
+						} elsif ($sha[$i] < $shb[$i]) {
+							$in_plus_b = $shb[$i] - $sha[$i];
+						}
 					}
+					$mismatch = 1 if ($sha_plus - $in_plus_a != $shb_plus - $in_plus_b);
+					if ($mismatch) {
+						print STDERR "$names: $k mismatch: [" . (join ',', @sha) .
+							"](+$sha_plus) != [" . (join ',', @shb) . "](+$shb_plus)\n";
+					}
+					$ret->{$k} = $sha_plus >= $shb_plus ? $wep_a->{$k} : $wep_b->{$k};
 				}
-				$mismatch = 1 if ($sha_plus - $in_plus_a != $shb_plus - $in_plus_b);
-				if ($mismatch) {
-					print STDERR "$names: $k mismatch: [" . (join ',', @sha) .
-						"](+$sha_plus) != [" . (join ',', @shb) . "](+$shb_plus)\n";
-				}
-				$ret->{$k} = $sha_plus > $shb_plus ? $wep_a->{$k} : $wep_b->{$k};
 			} elsif ($k eq "index") {
 				$ret->{$k} = $wep_a->{$k} < $wep_b->{$k} ? $wep_a->{$k} : $wep_b->{$k};
 			} elsif ($k eq "file_name") {
@@ -349,32 +377,7 @@ for my $weapon (@weapons) {
 }
 
 my %groups = ();
-my @unnamed;
 for my $weapon (@weapons) {
-	if (0) {
-		my $signature =
-			$weapon->{"weapon_type_ref"} . '/' . $weapon->{"attack"} . '/' .
-			($weapon->{"affinity"} || "0");
-		for my $e (sort keys %{$weapon->{"elements"}}) {
-			$signature .= '/' . $e . $weapon->{"elements"}{$e} unless ($e =~ /inflated_/);
-		}
-		for my $s (@{$weapon->{"slots"}}) {
-			$signature .= '/' . $s;
-		}
-		for my $sk ("red", "orange", "yellow", "green", "blue", "white", "purple", "plus") {
-			if ($weapon->{"sharpness"}{$sk}) {
-				$signature .= '/' . $weapon->{"sharpness"}{$sk};
-			}
-		}
-		for my $ammo (@{$weapon->{"ammos"}}) {
-			$signature .= '/' . $ammo->{"id"};
-			$signature .= ':' . $ammo->{"capacity"} if (defined $ammo->{"capacity"})
-		}
-		$groups{$signature} ||= [];
-		push @{$groups{$signature}}, $weapon;
-		next;
-	}
-
 	if (defined $weapon->{"name"}) {
 		$groups{$weapon->{"name"}} ||= [];
 		push @{$groups{$weapon->{"name"}}}, $weapon;
@@ -397,8 +400,56 @@ for my $weapon (@weapons) {
 				}
 			}
 		}
-		unless ($found) {
-			push @unnamed, $weapon;
+	}
+}
+
+my %grouped_weapons = ();
+for my $k (keys %groups) {
+	if (@{$groups{$k}} < 2) {
+		delete $groups{$k};
+	} else {
+		for my $weapon (@{$groups{$k}}) {
+			$grouped_weapons{$weapon} = 1
+		}
+	}
+}
+
+for my $weapon (@weapons) {
+	next if $grouped_weapons{$weapon};
+	my $signature =
+		$weapon->{"weapon_type_ref"} . '/' . ($weapon->{"attack"} || "0") . '/' .
+		($weapon->{"affinity"} || "0") . '/' . ($weapon->{"affinity"} || "0");
+	for my $e (sort keys %{$weapon->{"elements"}}) {
+		$signature .= '/' . $e . $weapon->{"elements"}{$e} unless ($e =~ /inflated_/);
+	}
+	for my $s (@{$weapon->{"slots"}}) {
+		$signature .= '/' . $s;
+	}
+	for my $sk ("red", "orange", "yellow", "green", "blue", "white", "purple", "plus") {
+		if ($weapon->{"sharpness"}{$sk}) {
+			$signature .= '/' . $weapon->{"sharpness"}{$sk};
+		}
+	}
+	for my $ammo (@{$weapon->{"ammos"}}) {
+		$signature .= '/' . $ammo->{"id"};
+		$signature .= ':' . $ammo->{"capacity"} if (defined $ammo->{"capacity"})
+	}
+	$groups{$signature} ||= [];
+	push @{$groups{$signature}}, $weapon;
+}
+
+my $unique_id = 15948341;
+for my $k (keys %groups) {
+	my %found_f = ();
+	for my $weapon (@{$groups{$k}}) {
+		if ($found_f{$weapon->{"file_name"}}) {
+			for my $w2 (@{$groups{$k}}) {
+				$groups{$unique_id++} = [ $w2 ];
+			}
+			delete $groups{$k};
+			last;
+		} else {
+			$found_f{$weapon->{"file_name"}} = 1;
 		}
 	}
 }

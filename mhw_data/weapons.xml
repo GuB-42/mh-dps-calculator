@@ -9584,8 +9584,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -9627,8 +9627,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -9701,8 +9701,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -9775,8 +9775,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -13265,8 +13265,8 @@
             <water>21</water>
         </element>
         <sharpness>
-            <red>160</red>
-            <orange>100</orange>
+            <red>110</red>
+            <orange>150</orange>
             <yellow>30</yellow>
             <green>30</green>
             <blue>50</blue>
@@ -15525,8 +15525,8 @@
         <sharpness>
             <red>60</red>
             <orange>50</orange>
-            <yellow>60</yellow>
-            <green>120</green>
+            <yellow>70</yellow>
+            <green>110</green>
             <blue>10</blue>
             <plus>50</plus>
         </sharpness>
@@ -15807,11 +15807,11 @@
         </element>
         <defense>20</defense>
         <sharpness>
-            <red>40</red>
+            <red>50</red>
             <orange>50</orange>
             <yellow>60</yellow>
             <green>120</green>
-            <blue>90</blue>
+            <blue>80</blue>
             <white>40</white>
             <plus>50</plus>
         </sharpness>
@@ -16922,8 +16922,8 @@
             <ice>39</ice>
         </element>
         <sharpness>
-            <red>80</red>
-            <orange>60</orange>
+            <red>70</red>
+            <orange>70</orange>
             <yellow>80</yellow>
             <green>80</green>
             <blue>80</blue>
@@ -17934,8 +17934,8 @@
         <sharpness>
             <red>110</red>
             <orange>50</orange>
-            <yellow>50</yellow>
-            <green>80</green>
+            <yellow>40</yellow>
+            <green>90</green>
             <blue>60</blue>
             <plus>50</plus>
         </sharpness>
@@ -29071,7 +29071,8 @@
             <red>60</red>
             <orange>50</orange>
             <yellow>80</yellow>
-            <green>160</green>
+            <green>150</green>
+            <blue>10</blue>
             <plus>50</plus>
         </sharpness>
         <rare>5</rare>
@@ -55950,8 +55951,8 @@
         </element>
         <sharpness>
             <red>90</red>
-            <orange>100</orange>
-            <yellow>40</yellow>
+            <orange>50</orange>
+            <yellow>90</yellow>
             <green>40</green>
             <blue>80</blue>
             <plus>50</plus>
@@ -56769,8 +56770,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -56808,8 +56809,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -56875,8 +56876,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -56942,8 +56943,8 @@
             <red>100</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>90</white>
             <plus>50</plus>
         </sharpness>
@@ -57010,8 +57011,8 @@
         <elderseal>high</elderseal>
         <sharpness>
             <red>80</red>
-            <orange>60</orange>
-            <yellow>80</yellow>
+            <orange>70</orange>
+            <yellow>70</yellow>
             <green>80</green>
             <blue>80</blue>
             <white>20</white>
@@ -58816,7 +58817,8 @@
             <red>60</red>
             <orange>50</orange>
             <yellow>80</yellow>
-            <green>160</green>
+            <green>150</green>
+            <blue>10</blue>
             <plus>50</plus>
         </sharpness>
         <slots>
@@ -85919,8 +85921,8 @@
             <red>130</red>
             <orange>30</orange>
             <yellow>60</yellow>
-            <green>80</green>
-            <blue>40</blue>
+            <green>90</green>
+            <blue>30</blue>
             <white>60</white>
             <plus>50</plus>
         </sharpness>
@@ -92453,8 +92455,8 @@
         </element>
         <defense>20</defense>
         <sharpness>
-            <red>170</red>
-            <orange>70</orange>
+            <red>160</red>
+            <orange>80</orange>
             <yellow>20</yellow>
             <green>20</green>
             <blue>80</blue>
@@ -92493,8 +92495,8 @@
         <elderseal>low</elderseal>
         <defense>20</defense>
         <sharpness>
-            <red>170</red>
-            <orange>70</orange>
+            <red>160</red>
+            <orange>80</orange>
             <yellow>20</yellow>
             <green>20</green>
             <blue>80</blue>
