@@ -54,6 +54,7 @@ my @weapons = ();
 my %weap_map = ();
 my %item_monsters = ();
 my %monster_size = ();
+my %ammo_configs = ();
 
 my $io = IO::Handle->new();
 $io->fdopen(fileno(STDOUT), "w");
@@ -101,6 +102,7 @@ sub process_row {
 	$xml_writer->dataElement("attack", $row{"attack"} / $inflate_by_type{$weapon_type});
 	$xml_writer->dataElement("inflated_attack", $row{"attack"});
 	$row{"affinity"} && $xml_writer->dataElement("affinity", $row{"affinity"});
+	$row{"elderseal"} && $row{"elderseal"} ne "FALSE" && $xml_writer->dataElement("elderseal", $row{"elderseal"});
 	$row{"defense"} && $xml_writer->dataElement("defense", $row{"defense"});
 
 	my $has_element = 0;
@@ -219,6 +221,27 @@ sub process_row {
 		}
 		$xml_writer->emptyTag("ammo_ref", "id" => "shell_$row{shelling}_$row{shelling_level}");
 	}
+	for my $ammo_type ("normal1", "normal2", "normal3",
+	                   "pierce1", "pierce2", "pierce3",
+	                   "spread1", "spread2", "spread3",
+	                   "sticky1", "sticky2", "sticky3",
+	                   "cluster1", "cluster2", "cluster3",
+	                   "recover1", "recover2", "poison1", "poison2",
+	                   "paralysis1", "paralysis2", "sleep1", "sleep2",
+	                   "exhaust1", "exhaust2",
+	                   "flaming", "water", "freeze", "thunder", "dragon",
+	                   "slicing", "wyvern", "demon", "armor", "tranq") {
+		my $at_row = "ammo_${ammo_type}_clip";
+		if ($row{$at_row}) {
+			unless ($has_ammos) {
+				$xml_writer->startTag("ammos");
+				$has_ammos = 1;
+			}
+			$xml_writer->startTag("ammo_ref", "id" => "ammo_$ammo_type");
+			$xml_writer->dataElement("capacity", $row{$at_row});
+			$xml_writer->endTag();
+		}
+	}
 	$xml_writer->endTag() if ($has_ammos);
 
 	$xml_writer->startTag("categories");
@@ -296,6 +319,8 @@ for my $file (@ARGV) {
 				$item_monsters{$hline->{"item_en"}}->{$hline->{"base_name_en"}} = 1;
 			} elsif (defined $hline->{"size"}) {
 				$monster_size{$hline->{"name_en"}} = $hline->{"size"};
+			} elsif (defined $hline->{"normal1_clip"}) {
+				$ammo_configs{$hline->{"key"}} = $hline;
 			} else {
 				my $name = $hline->{"name_en"} || $hline->{"base_name_en"};
 				unless (defined $weap_map{$name}) {
@@ -323,6 +348,15 @@ for my $file (@ARGV) {
 	}
 	$csv->eof || $csv->error_diag();
 	close $fh;
+}
+
+for my $weap (@weapons) {
+	my $ammo_config = $ammo_configs{$weap->{"ammo_config"}};
+	if ($ammo_config) {
+		for my $k (keys %{$ammo_config}) {
+			$weap->{"ammo_$k"} = $ammo_config->{$k};
+		}
+	}
 }
 
 my %weapons_by_name = ();

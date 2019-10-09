@@ -25,6 +25,7 @@ my $fill_sharpness_plus = 0;
 my @ammos = ();
 my @notes = ();
 my @slots = ();
+my %bowgun_ammos = ();
 my $is_iceborne = 0;
 
 sub process_data_row_bowgun {
@@ -40,6 +41,29 @@ sub process_data_row_bowgun {
 	if ($data_row[2] =~ /防御\s*\+?(-?\d+)/) {
 		$xml_writer->dataElement("defense", $1);
 	}
+
+	my $has_ammos = 0;
+	for my $k ("normal1", "normal2", "normal3",
+	           "pierce1", "pierce2", "pierce3",
+	           "spread1", "spread2", "spread3",
+	           "sticky1", "sticky2", "sticky3",
+	           "cluster1", "cluster2", "cluster3",
+	           "recover1", "recover2", "poison1", "poison2",
+	           "paralysis1", "paralysis2", "sleep1", "sleep2",
+	           "exhaust1", "exhaust2",
+	           "flaming", "water", "freeze", "thunder", "dragon",
+	           "slicing", "wyvern", "demon", "armor", "tranq") {
+		if ($bowgun_ammos{$k}) {
+			unless ($has_ammos) {
+				$xml_writer->startTag("ammos");
+				$has_ammos = 1;
+			}
+			$xml_writer->startTag("ammo_ref", "id" => "ammo_$k");
+			$xml_writer->dataElement("capacity", $bowgun_ammos{$k});
+			$xml_writer->endTag();
+		}
+	}
+	$xml_writer->endTag() if ($has_ammos);
 
 	my $has_slots = 0;
 	while ($data_row[2] =~ m/([①②③])/g) {
@@ -100,7 +124,7 @@ sub process_data_row_melee {
 		if ($1 eq "小") {
 			$xml_writer->dataElement("elderseal", "low");
 		} elsif ($1 eq "中") {
-			$xml_writer->dataElement("elderseal", "medium");
+			$xml_writer->dataElement("elderseal", "average");
 		} elsif ($1 eq "大") {
 			$xml_writer->dataElement("elderseal", "high");
 		}
@@ -262,13 +286,12 @@ sub process_data_row {
 	$xml_writer->endTag();
 }
 
-my $in_tr = 0;
-my $in_td = 0;
 my $in_bullet = 0;
 my $last_span_class;
 my $cur_col = 0;
 my $text_acc = "";
 my $text_acc_span = "";
+my $bowgun_ammo_type = "";
 
 my %data_row_span = ();
 my %data_row_span_next = ();
@@ -277,14 +300,13 @@ sub start {
 	my ($self, $tag, $attr, $attrseq, $origtext) = @_;
 	if (lc($tag) eq "table") {
 		$in_bullet = 1 if ($attr->{"class"} eq "in_bullet");
-	} elsif (lc($tag) eq "td" && !$in_bullet) {
-		$in_td = 1;
+	} elsif (lc($tag) eq "td" || lc($tag) eq "th") {
 		$text_acc = "";
-		$data_row_span{$cur_col} = ($attr->{"rowspan"} || 1);
-		$is_iceborne = 1 if (defined $attr->{"style"} && $attr->{"style"} eq "background-color:#EFF3FA;");
+		if (!$in_bullet && lc($tag) eq "td") {
+			$data_row_span{$cur_col} = ($attr->{"rowspan"} || 1);
+			$is_iceborne = 1 if (defined $attr->{"style"} && $attr->{"style"} eq "background-color:#EFF3FA;");
+		}
 	} elsif (lc($tag) eq "tr" && !$in_bullet) {
-		$in_tr = 0;
-		$in_td = 0;
 		$cur_col = 0;
 		++$cur_col while ($data_row_span{$cur_col});
 		for my $i (0 .. @data_row - 1) {
@@ -297,6 +319,7 @@ sub start {
 		@ammos = ();
 		@notes = ();
 		@slots = ();
+		%bowgun_ammos = ();
 		$is_iceborne = 0;
 	} elsif (lc($tag) eq "span") {
 		$last_span_class = $attr->{"class"};
@@ -327,8 +350,7 @@ sub end {
 	my ($self, $tag, $origtext) = @_;
 	if (lc($tag) eq "table") {
 		$in_bullet = 0;
-	} elsif (lc($tag) eq "td" && !$in_bullet) {
-		$in_td = 0;
+	} elsif (lc($tag) eq "td" || lc($tag) eq "th") {
 		my $t = $text_acc;
 		utf8::decode($t);
 		$t =~ s/&#(\d+);/$1 == 9495 ? "" : chr($1)/eg;
@@ -336,13 +358,45 @@ sub end {
 		$t =~ s/\s+/ /g;
 		$t =~ s/^\s+//;
 		$t =~ s/\s+$//;
-		# print "$cur_col: $t\n";
-		$data_row[$cur_col] = $t;
-		++$cur_col;
-		++$cur_col while ($data_row_span{$cur_col});
+#		print "$cur_col: $t\n";
+		if (!$in_bullet && lc($tag) eq "td") {
+			$data_row[$cur_col] = $t;
+			++$cur_col;
+			++$cur_col while ($data_row_span{$cur_col});
+		} elsif ($in_bullet && lc($tag) eq "th") {
+			my %ammo_map = (
+				"通" => "normal1",
+				"回" => "recover1",
+				"火" => "flaming",
+				"斬" => "slicing",
+				"貫" => "pierce1",
+				"毒" => "poison1",
+				"水" => "water",
+				"竜" => "wyvern",
+				"散" => "spread1",
+				"麻" => "paralysis1",
+				"氷" => "freeze",
+				"鬼" => "demon",
+				"徹" => "sticky1",
+				"睡" => "sleep1",
+				"雷" => "thunder",
+				"硬" => "armor",
+				"拡" => "cluster1",
+				"減" => "exhaust1",
+				"龍" => "dragon",
+				"捕" => "tranq"
+			);
+			if ($ammo_map{$t}) {
+				$bowgun_ammo_type = $ammo_map{$t};
+			}
+		} elsif ($in_bullet && lc($tag) eq "td") {
+			if ($t =~ /\d+/) {
+				$bowgun_ammos{$bowgun_ammo_type} = $t;
+			}
+			$bowgun_ammo_type =~ s/(\d+)/$1 + 1/e;
+		}
 	} elsif (lc($tag) eq "tr" && (@data_row > 0) && !$in_bullet) {
 		process_data_row();
-		$in_tr = 0;
 		for  my $k (keys %data_row_span) {
 			if ($data_row_span{$k} > 1) {
 				--$data_row_span{$k};

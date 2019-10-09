@@ -15,6 +15,8 @@ my @xml_stack_attr;
 
 my $cur_translation;
 my $cur_weapon;
+my $cur_ammo = {};
+my $cur_file_name;
 
 my @weapons;
 my @translations;
@@ -24,6 +26,7 @@ sub process_start
 {
 	if ($xml_stack[0] eq "weapon") {
 		$cur_weapon = {
+			"file_name" => $cur_file_name,
 			"elements" => {},
 			"sharpness" => {},
 			"phial_elements" => {},
@@ -74,7 +77,11 @@ sub process_val
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "slots" && $xml_stack[0] eq "slot") {
 		push @{$cur_weapon->{"slots"}}, $val;
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "ammos" && $xml_stack[0] eq "ammo_ref") {
-		push @{$cur_weapon->{"ammos"}}, $xml_stack_attr[0]{"id"};
+		$cur_ammo->{"id"} = $xml_stack_attr[0]{"id"};
+		push @{$cur_weapon->{"ammos"}}, $cur_ammo;
+		$cur_ammo = {};
+	} elsif ($xml_stack[3] eq "weapon" && $xml_stack[2] eq "ammos" && $xml_stack[1] eq "ammo_ref") {
+		$cur_ammo->{$xml_stack[0]} = $val;
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "notes") {
 		push @{$cur_weapon->{"notes"}}, $xml_stack[0];
 	} elsif ($xml_stack[2] eq "weapon" && $xml_stack[1] eq "categories" && $xml_stack[0] eq "category_ref") {
@@ -128,13 +135,19 @@ sub merge_weapons
 	};
 
 	my @name_list = ();
-	for my $k (keys %{$wep_a}) {
-		push @name_list, $wep_a->{$k} if ($k =~ /^name/);
+	my $name_a;
+	if (defined $wep_a->{"name"}) {
+		$name_a = $wep_a->{"name"};
+	} else {
+		$name_a = join " / ", (map { $_ =~ /^name/ ? ( $wep_a->{$_} ) : () } (keys %{$wep_a}))
 	}
-	for my $k (keys %{$wep_b}) {
-		push @name_list, $wep_b->{$k} if ($k =~ /^name/);
+	my $name_b;
+	if (defined $wep_b->{"name"}) {
+		$name_b = $wep_b->{"name"};
+	} else {
+		$name_b = join " / ", (map { $_ =~ /^name/ ? ( $wep_b->{$_} ) : () } (keys %{$wep_b}))
 	}
-	my $names = $wep_a->{"weapon_type_ref"} . ": " . (join " / ", @name_list);
+	my $names = "$wep_a->{weapon_type_ref}: $wep_a->{file_name}\[$name_a\] / $wep_b->{file_name}\[$name_b\]";
 
 	for my $k ("affinity", "awakened", "slots") {
 		if (defined $wep_a->{$k} && !defined $wep_b->{$k}) {
@@ -163,13 +176,13 @@ sub merge_weapons
 						print STDERR "$names: $k/$e mismatch: <null> != $wep_b->{$k}{$e}\n";
 					}
 				}
-			} elsif ($k eq "slots" || $k eq "ammos" || $k eq "notes") {
+			} elsif ($k eq "slots" || $k eq "notes") {
 				my @sa = (sort { $b cmp $a } @{$wep_a->{$k}});
 				my @sb = (sort { $b cmp $a } @{$wep_b->{$k}});
 				my $mismatch = 0;
 				if (@sa == @sb) {
 					for (my $i = 0; $i < @sa; ++$i) {
-						$mismatch = 1 if ($sa[$i] ne $sa[$i]);
+						$mismatch = 1 if ($sa[$i] ne $sb[$i]);
 						last;
 					}
 				} else {
@@ -179,6 +192,55 @@ sub merge_weapons
 					print STDERR "$names: $k mismatch: [" . (join ',', @sa) . "] != [" . (join ',', @sb) . "]\n";
 				}
 				$ret->{$k} = $wep_a->{$k};
+			} elsif ($k eq "ammos") {
+				if (!@{$wep_b->{$k}}) {
+					$ret->{$k} = $wep_a->{$k};
+				} elsif (!@{$wep_a->{$k}}) {
+					$ret->{$k} = $wep_b->{$k};
+				} else {
+					my @sa = (sort { $b->{"id"} cmp $a->{"id"} } @{$wep_a->{$k}});
+					my @sb = (sort { $b->{"id"} cmp $a->{"id"} } @{$wep_b->{$k}});
+					my $mismatch = 0;
+					if (@sa == @sb) {
+						for (my $i = 0; $i < @sa; ++$i) {
+							$mismatch = 1 if ($sa[$i]->{"id"} ne $sb[$i]->{"id"});
+							last;
+						}
+					} else {
+						$mismatch = 1;
+					}
+					if ($mismatch) {
+						print STDERR "$names: $k mismatch: [" .
+							(join ',', (map { $_->{"id"} } @sa)) .
+							"] != [" .
+							(join ',', (map { $_->{"id"} } @sb)) .
+							"]\n";
+					}
+
+					my %b_id_map = ();
+					for my $ammo (@{$wep_b->{$k}}) {
+						$b_id_map{$ammo->{"id"}} = $ammo;
+					}
+					$ret->{$k} = [];
+					for my $ammo (@{$wep_a->{$k}}) {
+						my $other_ammo = $b_id_map{$ammo->{"id"}};
+						if ($other_ammo) {
+							my $ret_ammo = {};
+							for my $ak (keys %{$ammo}) {
+								if ($ammo->{$ak} ne $other_ammo->{$ak}) {
+									print STDERR "$names: $k/$ammo->{id}/$ak mismatch: $ammo->{$ak} != $other_ammo->{$ak}\n";
+								}
+								$ret_ammo->{$ak} = $ammo->{$ak};
+							}
+							for my $ak (keys %{$other_ammo}) {
+								$ret_ammo->{$ak} = $other_ammo->{$ak} unless (defined $ammo->{$ak});
+							}
+							push @{$ret->{$k}}, $ret_ammo;
+						} else {
+							push @{$ret->{$k}}, $ammo;
+						}
+					}
+				}
 			} elsif ($k eq "categories") {
 				$ret->{$k} = $wep_a->{$k};
 				for my $cat (keys %{$wep_b->{$k}}) {
@@ -242,6 +304,8 @@ sub merge_weapons
 				$ret->{$k} = $sha_plus > $shb_plus ? $wep_a->{$k} : $wep_b->{$k};
 			} elsif ($k eq "index") {
 				$ret->{$k} = $wep_a->{$k} < $wep_b->{$k} ? $wep_a->{$k} : $wep_b->{$k};
+			} elsif ($k eq "file_name") {
+				$ret->{$k} = "*";
 			} else {
 				if ($wep_a->{$k} ne $wep_b->{$k}) {
 					print STDERR "$names: $k mismatch: $wep_a->{$k} != $wep_b->{$k}\n";
@@ -260,14 +324,15 @@ sub merge_weapons
 	return $ret;
 }
 
-for my $file (@ARGV) {
+for my $name (@ARGV) {
 	my $p = new XML::Parser(Handlers => {
 		Start => \&handle_start,
 		End => \&handle_end,
 		Char => \&handle_char });
 	@xml_string_stack = ();
 	@xml_stack = ("null", "null", "null");
-	$p->parsefile($file);
+	$cur_file_name = $name;
+	$p->parsefile($name);
 }
 
 for my $weapon (@weapons) {
@@ -286,6 +351,30 @@ for my $weapon (@weapons) {
 my %groups = ();
 my @unnamed;
 for my $weapon (@weapons) {
+	if (0) {
+		my $signature =
+			$weapon->{"weapon_type_ref"} . '/' . $weapon->{"attack"} . '/' .
+			($weapon->{"affinity"} || "0");
+		for my $e (sort keys %{$weapon->{"elements"}}) {
+			$signature .= '/' . $e . $weapon->{"elements"}{$e} unless ($e =~ /inflated_/);
+		}
+		for my $s (@{$weapon->{"slots"}}) {
+			$signature .= '/' . $s;
+		}
+		for my $sk ("red", "orange", "yellow", "green", "blue", "white", "purple", "plus") {
+			if ($weapon->{"sharpness"}{$sk}) {
+				$signature .= '/' . $weapon->{"sharpness"}{$sk};
+			}
+		}
+		for my $ammo (@{$weapon->{"ammos"}}) {
+			$signature .= '/' . $ammo->{"id"};
+			$signature .= ':' . $ammo->{"capacity"} if (defined $ammo->{"capacity"})
+		}
+		$groups{$signature} ||= [];
+		push @{$groups{$signature}}, $weapon;
+		next;
+	}
+
 	if (defined $weapon->{"name"}) {
 		$groups{$weapon->{"name"}} ||= [];
 		push @{$groups{$weapon->{"name"}}}, $weapon;
@@ -409,8 +498,22 @@ sub print_weapon
 		} elsif ($k eq "ammos") {
 			if (@{$weapon->{$k}}) {
 				$xml_writer->startTag("ammos");
-				for my $s (@{$weapon->{$k}}) {
-					$xml_writer->emptyTag("ammo_ref", "id" => $s);
+				for my $ammo (@{$weapon->{$k}}) {
+					my $id = $ammo->{"id"};
+					my $has_tag = 0;
+					for my $ak (sort keys %{$ammo}) {
+						next if ($ak eq "id");
+						unless ($has_tag) {
+							$xml_writer->startTag("ammo_ref", "id" => $id);
+							$has_tag = 1;
+						}
+						$xml_writer->dataElement($ak, $ammo->{$ak});
+					}
+					if ($has_tag) {
+						$xml_writer->endTag();
+					} else {
+						$xml_writer->emptyTag("ammo_ref", "id" => $ammo->{"id"});
+					}
 				}
 				$xml_writer->endTag();
 			}
@@ -446,7 +549,7 @@ sub print_weapon
 		$used_keys{$k} = 1;
 	}
 	for my $k (sort keys %{$weapon}) {
-		unless ($used_keys{$k} || $k eq "index") {
+		unless ($used_keys{$k} || $k eq "index" || $k eq "file_name") {
 			$xml_writer->dataElement($k, $weapon->{$k});
 		}
 	}

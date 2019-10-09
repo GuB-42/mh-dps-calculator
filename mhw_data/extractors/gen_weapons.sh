@@ -36,11 +36,9 @@ mhwg_extracts/weapons/4002.html > /tmp/mhwg_weap.xml
 MHWorldData/source_data/weapons/weapon_base.csv \
 MHWorldData/source_data/weapons/weapon_craft.csv \
 MHWorldData/source_data/weapons/weapon_bow_ext.csv \
+MHWorldData/source_data/weapons/weapon_ammo.csv \
 MHWorldData/source_data/weapons/weapon_sharpness.csv > /tmp/mhwd_weap.xml
 
-#./extract_mhwd_weap.pl \
-#MHWorldData/source_data/weapons/weapon_base.csv \
-#MHWorldData/source_data/weapons/weapon_bow_ext.csv \
-#MHWorldData/source_data/weapons/weapon_craft_ext.csv > /tmp/mhwd_weap.xml
+./extract_new_kira_weap.pl kiranico_extracts/weapon_new_kira.html > /tmp/new_kira_weap.xml
 
-./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/mhwd_weap.xml /tmp/kira_weap.xml
+./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/mhwd_weap.xml  /tmp/kira_weap.xml #/tmp/new_kira_weap.xml
