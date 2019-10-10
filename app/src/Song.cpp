@@ -11,6 +11,7 @@ Song::Song() :
 }
 
 void Song::print(QTextStream &stream, QString indent) const {
+	XmlObject::print(stream, indent);
 	stream << indent << "- notes: [";
 	for (int i = 0; i < notes.count(); ++i) {
 		if (i > 0) stream << ", ";
@@ -62,28 +63,23 @@ static void parse_notes(QXmlStreamReader *xml, QVector<Note> *dnotes) {
 	}
 }
 
-void Song::readXml(QXmlStreamReader *xml) {
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (tag_name == "duration") {
-				duration = xml->readElementText().toDouble();
-			} else if (tag_name == "duration_maestro") {
-				durationMaestro = xml->readElementText().toDouble();
-			} else if (tag_name == "extension") {
-				extension = xml->readElementText().toDouble();
-			} else if (tag_name == "extension_maestro") {
-				extensionMaestro = xml->readElementText().toDouble();
-			} else if (tag_name == "notes") {
-				parse_notes(xml, &notes);
-			} else if (tag_name == "buff_refs") {
-				parse_buff_refs(xml, &buffRefs);
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
+bool Song::readXmlElement(QXmlStreamReader *xml) {
+	if (XmlObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "duration") {
+		duration = xml->readElementText().toDouble();
+	} else if (tag_name == "duration_maestro") {
+		durationMaestro = xml->readElementText().toDouble();
+	} else if (tag_name == "extension") {
+		extension = xml->readElementText().toDouble();
+	} else if (tag_name == "extension_maestro") {
+		extensionMaestro = xml->readElementText().toDouble();
+	} else if (tag_name == "notes") {
+		parse_notes(xml, &notes);
+	} else if (tag_name == "buff_refs") {
+		parse_buff_refs(xml, &buffRefs);
+	} else {
+		return false;
 	}
+	return true;
 }

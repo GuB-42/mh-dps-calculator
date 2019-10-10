@@ -4,7 +4,7 @@
 #include <QVector>
 #include <QSet>
 #include "enums.h"
-#include "NamedObject.h"
+#include "Item.h"
 #include "BuffRef.h"
 
 class QTextStream;
@@ -13,7 +13,6 @@ struct WeaponType;
 struct Ammo;
 struct Song;
 struct BuffGroup;
-struct Category;
 
 struct WeaponAmmoRef {
 	WeaponAmmoRef() : ammo(NULL) {};
@@ -21,8 +20,8 @@ struct WeaponAmmoRef {
 	Ammo *ammo;
 };
 
-struct Weapon : public NamedObject {
-	WeaponType *type;
+struct Weapon : public Item {
+	WeaponType *weaponType;
 	QString weaponTypeRefId;
 	double attack;
 	double affinity;
@@ -34,18 +33,14 @@ struct Weapon : public NamedObject {
 	double phialStatuses[STATUS_COUNT];
 	double sharpness[SHARPNESS_COUNT];
 	double sharpnessPlus;
-	QVector<int> decorationSlots;
-	QVector<BuffRef> buffRefs;
-	int rare;
 	int augmentations;
 	QVector<Note> notes;
 	QVector<WeaponAmmoRef> ammoRefs;
 	QVector<Song *> songs;
-	QVector<QString> categoryRefIds;
-	QVector<Category *> categories;
 
 	Weapon();
 	void print(QTextStream &stream, QString indent = QString()) const;
+	bool readXmlElement(QXmlStreamReader *xml);
 	void readXml(QXmlStreamReader *xml);
 };
 

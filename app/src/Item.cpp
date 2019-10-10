@@ -82,37 +82,45 @@ static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
 	}
 }
 
-void Item::readXml(QXmlStreamReader *xml) {
-	if (xml->attributes().hasAttribute("id")) {
-		id = xml->attributes().value("id").toString();
-	}
+static void parse_categories(QXmlStreamReader *xml, QVector<QString> *pout)
+{
 	while (!xml->atEnd()) {
 		QXmlStreamReader::TokenType token_type = xml->readNext();
 		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (readXmlName(xml)) {
-				; // name
-			} else if (tag_name == "type") {
-				type = xml->readElementText();
-			} else if (tag_name == "slots") {
-				parse_slots(xml, &decorationSlots);
-			} else if (tag_name == "decoration_level") {
-				decorationLevel = xml->readElementText().toInt();
-			} else if (tag_name == "weapon_augmentation_level") {
-				weaponAugmentationLevel = xml->readElementText().toInt();
-			} else if (tag_name == "weapon_slot_upgrade") {
-				weaponSlotUpgrade = xml->readElementText().toInt();
-			} else if (tag_name == "rare") {
-				rare = xml->readElementText().toInt();
-			} else if (tag_name == "buff_refs") {
-				parse_buff_refs(xml, &buffRefs);
-			} else if (tag_name == "set_bonus_refs") {
-				parse_buff_set_bonus_refs(xml, &buffSetBonusRefs);
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
+			if (xml->name() == "category_ref") {
+				pout->append(xml->attributes().value("id").toString());
 			}
+			XML_SKIP_CURRENT_ELEMENT(*xml);
 		} else if (token_type == QXmlStreamReader::EndElement) {
 			break;
 		}
 	}
+}
+
+bool Item::readXmlElement(QXmlStreamReader *xml) {
+	QStringRef tag_name = xml->name();
+	if (NamedObject::readXmlElement(xml)) {
+		; // name
+	} else if (tag_name == "type") {
+		type = xml->readElementText();
+	} else if (tag_name == "slots") {
+		parse_slots(xml, &decorationSlots);
+	} else if (tag_name == "decoration_level") {
+		decorationLevel = xml->readElementText().toInt();
+	} else if (tag_name == "weapon_augmentation_level") {
+		weaponAugmentationLevel = xml->readElementText().toInt();
+	} else if (tag_name == "weapon_slot_upgrade") {
+		weaponSlotUpgrade = xml->readElementText().toInt();
+	} else if (tag_name == "rare") {
+		rare = xml->readElementText().toInt();
+	} else if (tag_name == "buff_refs") {
+		parse_buff_refs(xml, &buffRefs);
+	} else if (tag_name == "set_bonus_refs") {
+		parse_buff_set_bonus_refs(xml, &buffSetBonusRefs);
+	} else if (tag_name == "categories") {
+		parse_categories(xml, &categoryRefIds);
+	} else {
+		return false;
+	}
+	return true;
 }

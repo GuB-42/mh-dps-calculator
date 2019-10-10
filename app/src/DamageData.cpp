@@ -127,11 +127,13 @@ DamageData::DamageData(const Weapon &weapon, const FoldedBuffsData &buffs,
 			xaffinity * buffs.normalBuffs[BUFF_ELEMENT_CRITICAL_HIT_MULTIPLIER];
 		status_affinity_multiplier = (1.0 - xaffinity) +
 			xaffinity * buffs.normalBuffs[BUFF_STATUS_CRITICAL_HIT_MULTIPLIER];
-		if (weapon.type) {
+		if (weapon.weaponType) {
 			element_affinity_multiplier = 1.0 +
-				(element_affinity_multiplier - 1.0) * weapon.type->elementCritAdjustment;
+				(element_affinity_multiplier - 1.0) *
+				weapon.weaponType->elementCritAdjustment;
 			status_affinity_multiplier = 1.0 +
-				(status_affinity_multiplier - 1.0) * weapon.type->statusCritAdjustment;
+				(status_affinity_multiplier - 1.0) *
+				weapon.weaponType->statusCritAdjustment;
 		}
 	} else if (xaffinity < 0.0) {
 		raw_affinity_multiplier = (1.0 + xaffinity) -

@@ -46,7 +46,7 @@ struct MotionValue : public NamedObject {
 
 	MotionValue();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 #endif

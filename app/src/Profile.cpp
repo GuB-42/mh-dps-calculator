@@ -51,6 +51,7 @@ Pattern::~Pattern() {
 }
 
 void Pattern::print(QTextStream &stream, QString indent) const {
+	XmlObject::print(stream, indent);
 	stream << indent << "- rate: " << rate << endl;
 	stream << indent << "- period: " << period << endl;
 	stream << indent << "- capacityUpFilter: " <<
@@ -190,104 +191,98 @@ void Pattern::applyMotionValues(const QHash<QString, MotionValue *> &mv_hash) {
 	}
 }
 
-void Pattern::readXml(QXmlStreamReader *xml) {
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (tag_name == "rate") {
-				rate = xml->readElementText().toDouble();
-			} else if (tag_name == "period") {
-				period = xml->readElementText().toDouble();
-			} else if (tag_name == "usage") {
-				usage = xml->readElementText().toDouble();
-			} else if (tag_name == "capacity_up") {
-				QString v = xml->readElementText().toLower().trimmed();
-				capacityUpFilter = true;
-				capacityUpEnabled =
-					(v != "false" || v != "0" || v != "no" || v != "disabled");
-			} else if (tag_name == "ammo_ref") {
-				PatternAmmoRef ammo_ref;
-				ammo_ref.id = xml->attributes().value("id").toString();
-				ammoRefs.append(ammo_ref);
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			} else if (tag_name == "cut") {
-				cut = xml->readElementText().toDouble();
-			} else if (tag_name == "impact") {
-				impact = xml->readElementText().toDouble();
-			} else if (tag_name == "piercing") {
-				piercing = xml->readElementText().toDouble();
-			} else if (tag_name == "bullet") {
-				bullet = xml->readElementText().toDouble();
-			} else if (tag_name == "shell") {
-				shell = xml->readElementText().toDouble();
-			} else if (tag_name == "fixed") {
-				fixed = xml->readElementText().toDouble();
-			} else if (tag_name == "element") {
-				status = element = xml->readElementText().toDouble();
+bool Pattern::readXmlElement(QXmlStreamReader *xml) {
+	if (XmlObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "rate") {
+		rate = xml->readElementText().toDouble();
+	} else if (tag_name == "period") {
+		period = xml->readElementText().toDouble();
+	} else if (tag_name == "usage") {
+		usage = xml->readElementText().toDouble();
+	} else if (tag_name == "capacity_up") {
+		QString v = xml->readElementText().toLower().trimmed();
+		capacityUpFilter = true;
+		capacityUpEnabled =
+			(v != "false" || v != "0" || v != "no" || v != "disabled");
+	} else if (tag_name == "ammo_ref") {
+		PatternAmmoRef ammo_ref;
+		ammo_ref.id = xml->attributes().value("id").toString();
+		ammoRefs.append(ammo_ref);
+		XML_SKIP_CURRENT_ELEMENT(*xml);
+	} else if (tag_name == "cut") {
+		cut = xml->readElementText().toDouble();
+	} else if (tag_name == "impact") {
+		impact = xml->readElementText().toDouble();
+	} else if (tag_name == "piercing") {
+		piercing = xml->readElementText().toDouble();
+	} else if (tag_name == "bullet") {
+		bullet = xml->readElementText().toDouble();
+	} else if (tag_name == "shell") {
+		shell = xml->readElementText().toDouble();
+	} else if (tag_name == "fixed") {
+		fixed = xml->readElementText().toDouble();
+	} else if (tag_name == "element") {
+		status = element = xml->readElementText().toDouble();
 //			} else if (tag_name == "status") {
 //				status = xml->readElementText().toDouble();
-			} else if (tag_name == "stun") {
-				stun = xml->readElementText().toDouble();
-			} else if (tag_name == "exhaust") {
-				exhaust = xml->readElementText().toDouble();
-			} else if (tag_name == "mount") {
-				mount = xml->readElementText().toDouble();
-			} else if (tag_name == "sharpness_multiplier") {
-				definedSharpnessMultiplier = true;
-				sharpnessMultiplier = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_impact_attack") {
-				phialImpactAttack = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_impact_stun") {
-				phialImpactStun = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_impact_exhaust") {
-				phialImpactExhaust = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_element_attack") {
-				phialElementAttack = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_ratio") {
-				definedPhialRatio = true;
-				phialRatio = xml->readElementText().toDouble();
-			} else if (tag_name == "minds_eye_ratio") {
-				definedMindsEyeRatio = true;
-				mindsEyeRatio = xml->readElementText().toDouble();
-			} else if (tag_name == "sharpness_use") {
-				sharpnessUse = xml->readElementText().toDouble();
-			} else if (tag_name == "motion_value_ref") {
-				MotionValueRef mvr;
-				mvr.id = xml->attributes().value("id").toString();
-				if (xml->attributes().hasAttribute("multiplier")) {
-					mvr.multiplier =
-						xml->attributes().value("multiplier").
-						toString().toDouble();
-				}
-				if (xml->attributes().hasAttribute("raw_multiplier")) {
-					mvr.rawMultiplier =
-						xml->attributes().value("raw_multiplier").
-						toString().toDouble();
-				}
-				motionValueRefs.append(mvr);
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			} else {
-				bool found = false;
-				for (int i = 0; i < CONDITION_COUNT; ++i) {
-					if (tag_name == QString(toString((Condition)i)) + "_ratio") {
-						definedConditionRatios[i] = true;
-						updateConditionRatio((Condition)i, xml->readElementText().toDouble());
-						found = true;
-						break;
-					}
-				}
-				if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
+	} else if (tag_name == "stun") {
+		stun = xml->readElementText().toDouble();
+	} else if (tag_name == "exhaust") {
+		exhaust = xml->readElementText().toDouble();
+	} else if (tag_name == "mount") {
+		mount = xml->readElementText().toDouble();
+	} else if (tag_name == "sharpness_multiplier") {
+		definedSharpnessMultiplier = true;
+		sharpnessMultiplier = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_impact_attack") {
+		phialImpactAttack = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_impact_stun") {
+		phialImpactStun = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_impact_exhaust") {
+		phialImpactExhaust = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_element_attack") {
+		phialElementAttack = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_ratio") {
+		definedPhialRatio = true;
+		phialRatio = xml->readElementText().toDouble();
+	} else if (tag_name == "minds_eye_ratio") {
+		definedMindsEyeRatio = true;
+		mindsEyeRatio = xml->readElementText().toDouble();
+	} else if (tag_name == "sharpness_use") {
+		sharpnessUse = xml->readElementText().toDouble();
+	} else if (tag_name == "motion_value_ref") {
+		MotionValueRef mvr;
+		mvr.id = xml->attributes().value("id").toString();
+		if (xml->attributes().hasAttribute("multiplier")) {
+			mvr.multiplier =
+				xml->attributes().value("multiplier").
+				toString().toDouble();
 		}
+		if (xml->attributes().hasAttribute("raw_multiplier")) {
+			mvr.rawMultiplier =
+				xml->attributes().value("raw_multiplier").
+				toString().toDouble();
+		}
+		motionValueRefs.append(mvr);
+		XML_SKIP_CURRENT_ELEMENT(*xml);
+	} else {
+		for (int i = 0; i < CONDITION_COUNT; ++i) {
+			if (tag_name == QString(toString((Condition)i)) + "_ratio") {
+				definedConditionRatios[i] = true;
+				updateConditionRatio((Condition)i, xml->readElementText().toDouble());
+				return true;
+			}
+		}
+		return false;
 	}
+	return true;
 }
 
 Profile::Profile() :
-	weaponType(NULL), sharpenPeriod(0.0), localRatios(NULL)
+	weaponType(NULL), rate(1.0), localRatios(NULL)
 {
+	sharpenPeriod = Constants::instance()->sharpenPeriod;
 }
 
 Profile::~Profile() {
@@ -310,63 +305,52 @@ void Profile::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-void Profile::readXml(QXmlStreamReader *xml) {
-	double glob_rate = 1.0;
-	sharpenPeriod = Constants::instance()->sharpenPeriod;
-
-	if (xml->attributes().hasAttribute("id")) {
-		id = xml->attributes().value("id").toString();
-	}
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (readXmlName(xml)) {
-				; // name
-			} else if (tag_name == "weapon_type_ref") {
-				weaponTypeRefId = xml->attributes().value("id").toString();
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			} else if (tag_name == "rate") {
-				glob_rate = xml->readElementText().toDouble();
-			} else if (tag_name == "sharpen_period") {
-				sharpenPeriod = xml->readElementText().toDouble();
-			} else if (tag_name == "pattern") {
-				Pattern *pattern = new Pattern;
-				if (localRatios) pattern->conditionRatios = localRatios;
-				pattern->readXml(xml);
-				patterns.append(pattern);
-			} else {
-				bool found = false;
-				for (int i = 0; i < CONDITION_COUNT; ++i) {
-					if (tag_name == QString(toString((Condition)i)) + "_ratio") {
-						if (!localRatios) {
-							const ConditionRatios *def =
-								Constants::instance()->conditionRatios;
-							localRatios = new ConditionRatios(*def);
-							foreach(Pattern *pattern, patterns) {
-								if (pattern->definedConditionRatios.none()) {
-									pattern->conditionRatios = localRatios;
-								}
-							}
+bool Profile::readXmlElement(QXmlStreamReader *xml) {
+	if (NamedObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "weapon_type_ref") {
+		weaponTypeRefId = xml->attributes().value("id").toString();
+		XML_SKIP_CURRENT_ELEMENT(*xml);
+	} else if (tag_name == "rate") {
+		rate = xml->readElementText().toDouble();
+	} else if (tag_name == "sharpen_period") {
+		sharpenPeriod = xml->readElementText().toDouble();
+	} else if (tag_name == "pattern") {
+		Pattern *pattern = new Pattern;
+		if (localRatios) pattern->conditionRatios = localRatios;
+		pattern->readXml(xml);
+		patterns.append(pattern);
+	} else {
+		for (int i = 0; i < CONDITION_COUNT; ++i) {
+			if (tag_name == QString(toString((Condition)i)) + "_ratio") {
+				if (!localRatios) {
+					const ConditionRatios *def =
+						Constants::instance()->conditionRatios;
+					localRatios = new ConditionRatios(*def);
+					foreach(Pattern *pattern, patterns) {
+						if (pattern->definedConditionRatios.none()) {
+							pattern->conditionRatios = localRatios;
 						}
-						double v = xml->readElementText().toDouble();
-						(*localRatios)[(Condition)i] = v;
-						foreach(Pattern *pattern, patterns) {
-							if (!pattern->definedConditionRatios[i]) {
-								pattern->updateConditionRatio((Condition)i, v);
-							}
-						}
-						found = true;
-						break;
 					}
 				}
-				if (!found) XML_SKIP_CURRENT_ELEMENT(*xml);
+				double v = xml->readElementText().toDouble();
+				(*localRatios)[(Condition)i] = v;
+				foreach(Pattern *pattern, patterns) {
+					if (!pattern->definedConditionRatios[i]) {
+						pattern->updateConditionRatio((Condition)i, v);
+					}
+				}
+				return true;
 			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
 		}
+		return false;
 	}
+	return true;
+}
+
+void Profile::readXml(QXmlStreamReader *xml) {
+	NamedObject::readXml(xml);
 	foreach(Pattern *pattern, patterns) {
-		pattern->rate *= glob_rate;
+		pattern->rate *= rate;
 	}
 }

@@ -8,7 +8,7 @@
 class QTextStream;
 class QXmlStreamReader;
 
-struct MonsterHitData {
+struct MonsterHitData : public XmlObject {
 	QString state;
 	double enragedState;
 	double cut;
@@ -19,7 +19,7 @@ struct MonsterHitData {
 
 	MonsterHitData();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 struct MonsterPart : public NamedObject {
@@ -27,10 +27,10 @@ struct MonsterPart : public NamedObject {
 
 	~MonsterPart();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
-struct MonsterTolerance {
+struct MonsterTolerance : public XmlObject {
 	double initial;
 	double plus;
 	double max;
@@ -38,10 +38,11 @@ struct MonsterTolerance {
 	double regenTick;
 	double duration;
 	double damage;
+	StatusType status_type;
 
 	MonsterTolerance();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml, StatusType *pstatus_type);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 struct Monster : public NamedObject {
@@ -52,7 +53,7 @@ struct Monster : public NamedObject {
 	Monster();
 	~Monster();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 #endif

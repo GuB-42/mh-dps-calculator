@@ -30,6 +30,7 @@ MainData::~MainData() {
 }
 
 void MainData::print(QTextStream &stream, QString indent) const {
+	XmlObject::print(stream, indent);
 	foreach(const WeaponType *weapon_type, weaponTypes) {
 		stream << indent << "[weapon type]" << endl;
 		weapon_type->print(stream, indent + "\t");
@@ -76,94 +77,89 @@ void MainData::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-void MainData::readXml(QXmlStreamReader *xml) {
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (tag_name == "weapon_type") {
-				WeaponType *weapon_type = new WeaponType;
-				weapon_type->readXml(xml);
-				weaponTypes.append(weapon_type);
-				if (!weapon_type->id.isNull()) {
-					weaponTypeHash[weapon_type->id] = weapon_type;
-				}
-			} else if (tag_name == "ammo") {
-				Ammo *ammo = new Ammo;
-				ammo->readXml(xml);
-				ammos.append(ammo);
-				if (!ammo->id.isNull()) {
-					ammoHash[ammo->id] = ammo;
-				}
-			} else if (tag_name == "monster") {
-				Monster *monster = new Monster;
-				monster->readXml(xml);
-				monsters.append(monster);
-			} else if (tag_name == "weapon") {
-				Weapon *weapon = new Weapon;
-				weapon->readXml(xml);
-				weapons.append(weapon);
-			} else if (tag_name == "buff_group") {
-				BuffGroup *buff_group = new BuffGroup;
-				buff_group->readXml(xml);
-				buffGroups.append(buff_group);
-				if (!buff_group->id.isNull()) {
-					buffGroupHash[buff_group->id] = buff_group;
-				}
-			} else if (tag_name == "set_bonus") {
-				BuffSetBonus *buff_set_bonus = new BuffSetBonus;
-				buff_set_bonus->readXml(xml);
-				buffSetBonuses.append(buff_set_bonus);
-				if (!buff_set_bonus->id.isNull()) {
-					buffSetBonusHash[buff_set_bonus->id] = buff_set_bonus;
-				}
-			} else if (tag_name == "weapon_profile") {
-				Profile *profile = new Profile;
-				profile->readXml(xml);
-				profiles.append(profile);
-			} else if (tag_name == "item") {
-				Item *item = new Item;
-				item->readXml(xml);
-				items.append(item);
-				if (!item->id.isNull()) {
-					itemHash[item->id] = item;
-				}
-			} else if (tag_name == "target") {
-				Target *target = new Target;
-				target->readXml(xml);
-				targets.append(target);
-			} else if (tag_name == "motion_value") {
-				MotionValue *motion_value = new MotionValue;
-				motion_value->readXml(xml);
-				motionValues.append(motion_value);
-				if (!motion_value->id.isNull()) {
-					motionValueHash[motion_value->id] = motion_value;
-				}
-			} else if (tag_name == "song") {
-				Song *song = new Song;
-				song->readXml(xml);
-				songs.append(song);
-			} else if (tag_name == "category") {
-				Category *category = new Category;
-				category->readXml(xml);
-				categories.append(category);
-				if (!category->id.isNull()) {
-					categoryHash[category->id] = category;
-				}
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
+bool MainData::readXmlElement(QXmlStreamReader *xml) {
+	if (XmlObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "weapon_type") {
+		WeaponType *weapon_type = new WeaponType;
+		weapon_type->readXml(xml);
+		weaponTypes.append(weapon_type);
+		if (!weapon_type->id.isNull()) {
+			weaponTypeHash[weapon_type->id] = weapon_type;
 		}
+	} else if (tag_name == "ammo") {
+		Ammo *ammo = new Ammo;
+		ammo->readXml(xml);
+		ammos.append(ammo);
+		if (!ammo->id.isNull()) {
+			ammoHash[ammo->id] = ammo;
+		}
+	} else if (tag_name == "monster") {
+		Monster *monster = new Monster;
+		monster->readXml(xml);
+		monsters.append(monster);
+	} else if (tag_name == "weapon") {
+		Weapon *weapon = new Weapon;
+		weapon->readXml(xml);
+		weapons.append(weapon);
+	} else if (tag_name == "buff_group") {
+		BuffGroup *buff_group = new BuffGroup;
+		buff_group->readXml(xml);
+		buffGroups.append(buff_group);
+		if (!buff_group->id.isNull()) {
+			buffGroupHash[buff_group->id] = buff_group;
+		}
+	} else if (tag_name == "set_bonus") {
+		BuffSetBonus *buff_set_bonus = new BuffSetBonus;
+		buff_set_bonus->readXml(xml);
+		buffSetBonuses.append(buff_set_bonus);
+		if (!buff_set_bonus->id.isNull()) {
+			buffSetBonusHash[buff_set_bonus->id] = buff_set_bonus;
+		}
+	} else if (tag_name == "weapon_profile") {
+		Profile *profile = new Profile;
+		profile->readXml(xml);
+		profiles.append(profile);
+	} else if (tag_name == "item") {
+		Item *item = new Item;
+		item->readXml(xml);
+		items.append(item);
+		if (!item->id.isNull()) {
+			itemHash[item->id] = item;
+		}
+	} else if (tag_name == "target") {
+		Target *target = new Target;
+		target->readXml(xml);
+		targets.append(target);
+	} else if (tag_name == "motion_value") {
+		MotionValue *motion_value = new MotionValue;
+		motion_value->readXml(xml);
+		motionValues.append(motion_value);
+		if (!motion_value->id.isNull()) {
+			motionValueHash[motion_value->id] = motion_value;
+		}
+	} else if (tag_name == "song") {
+		Song *song = new Song;
+		song->readXml(xml);
+		songs.append(song);
+	} else if (tag_name == "category") {
+		Category *category = new Category;
+		category->readXml(xml);
+		categories.append(category);
+		if (!category->id.isNull()) {
+			categoryHash[category->id] = category;
+		}
+	} else {
+		return false;
 	}
+	return true;
 }
 
 void MainData::matchData() {
 	foreach(Weapon *weapon, weapons) {
 		QHash<QString, WeaponType *>::const_iterator itt =
 			weaponTypeHash.find(weapon->weaponTypeRefId);
-		if (itt != weaponTypeHash.end()) weapon->type = *itt;
+		if (itt != weaponTypeHash.end()) weapon->weaponType = *itt;
 		for (QVector<WeaponAmmoRef>::iterator it = weapon->ammoRefs.begin();
 		     it != weapon->ammoRefs.end(); ++it) {
 			QHash<QString, Ammo *>::const_iterator ita = ammoHash.find(it->id);

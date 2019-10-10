@@ -7,6 +7,7 @@
 
 struct BuffGroup;
 struct BuffSetBonus;
+struct Category;
 
 struct Item : public NamedObject {
 	QString type;
@@ -17,10 +18,12 @@ struct Item : public NamedObject {
 	QVector<int> decorationSlots;
 	QVector<BuffRef> buffRefs;
 	QVector<BuffSetBonusRef> buffSetBonusRefs;
+	QVector<QString> categoryRefIds;
+	QVector<Category *> categories;
 
 	Item();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 #endif

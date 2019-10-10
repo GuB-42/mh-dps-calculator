@@ -4,6 +4,7 @@
 #include <QVector>
 #include <QHash>
 #include <QString>
+#include "XmlObject.h"
 
 class QTextStream;
 class QXmlStreamReader;
@@ -20,7 +21,7 @@ struct BuffSetBonus;
 struct Song;
 struct Category;
 
-struct MainData {
+struct MainData : public XmlObject {
 	QVector<WeaponType *> weaponTypes;
 	QHash<QString, WeaponType *> weaponTypeHash;
 	QVector<Ammo *> ammos;
@@ -43,7 +44,7 @@ struct MainData {
 
 	~MainData();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 	void matchData();
 };
 

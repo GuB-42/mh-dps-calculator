@@ -81,73 +81,63 @@ void MotionValue::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-void MotionValue::readXml(QXmlStreamReader *xml) {
-	if (xml->attributes().hasAttribute("id")) {
-		id = xml->attributes().value("id").toString();
-	}
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (readXmlName(xml)) {
-				; // name
-			} else if (tag_name == "weapon_type_ref") {
-				weaponTypeRefId = xml->attributes().value("id").toString();
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			} else if (tag_name == "cut") {
-				cut = xml->readElementText().toDouble();
-			} else if (tag_name == "impact") {
-				impact = xml->readElementText().toDouble();
-			} else if (tag_name == "piercing") {
-				piercing = xml->readElementText().toDouble();
-			} else if (tag_name == "bullet") {
-				bullet = xml->readElementText().toDouble();
-			} else if (tag_name == "shell") {
-				shell = xml->readElementText().toDouble();
-			} else if (tag_name == "fixed") {
-				fixed = xml->readElementText().toDouble();
-			} else if (tag_name == "element") {
-				status = element = xml->readElementText().toDouble();
+bool MotionValue::readXmlElement(QXmlStreamReader *xml) {
+	if (NamedObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "weapon_type_ref") {
+		weaponTypeRefId = xml->attributes().value("id").toString();
+		XML_SKIP_CURRENT_ELEMENT(*xml);
+	} else if (tag_name == "cut") {
+		cut = xml->readElementText().toDouble();
+	} else if (tag_name == "impact") {
+		impact = xml->readElementText().toDouble();
+	} else if (tag_name == "piercing") {
+		piercing = xml->readElementText().toDouble();
+	} else if (tag_name == "bullet") {
+		bullet = xml->readElementText().toDouble();
+	} else if (tag_name == "shell") {
+		shell = xml->readElementText().toDouble();
+	} else if (tag_name == "fixed") {
+		fixed = xml->readElementText().toDouble();
+	} else if (tag_name == "element") {
+		status = element = xml->readElementText().toDouble();
 //			} else if (tag_name == "status") {
 //				status = xml->readElementText().toDouble();
-			} else if (tag_name == "stun") {
-				stun = xml->readElementText().toDouble();
-			} else if (tag_name == "exhaust") {
-				exhaust = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_impact_attack") {
-				phialImpactAttack = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_impact_stun") {
-				phialImpactStun = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_impact_exhaust") {
-				phialImpactExhaust = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_element_attack") {
-				phialElementAttack = xml->readElementText().toDouble();
-			} else if (tag_name == "sharpness_use") {
-				sharpnessUse = xml->readElementText().toDouble();
-			} else if (tag_name == "punishing_draw_stun") {
-				punishingDrawStun = xml->readElementText().toDouble();
-			} else if (tag_name == "punishing_draw_exhaust") {
-				punishingDrawExhaust = xml->readElementText().toDouble();
-			} else if (tag_name == "sharpness_multiplier") {
-				definedSharpnessMultiplier = true;
-				sharpnessMultiplier = xml->readElementText().toDouble();
-			} else if (tag_name == "draw_attack_ratio") {
-				definedDrawAttackRatio = true;
-				drawAttackRatio = xml->readElementText().toDouble();
-			} else if (tag_name == "airborne_ratio") {
-				definedAirborneRatio = true;
-				airborneRatio = xml->readElementText().toDouble();
-			} else if (tag_name == "phial_ratio") {
-				definedPhialRatio = true;
-				phialRatio = xml->readElementText().toDouble();
-			} else if (tag_name == "minds_eye_ratio") {
-				definedMindsEyeRatio = true;
-				mindsEyeRatio = xml->readElementText().toDouble();
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
+	} else if (tag_name == "stun") {
+		stun = xml->readElementText().toDouble();
+	} else if (tag_name == "exhaust") {
+		exhaust = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_impact_attack") {
+		phialImpactAttack = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_impact_stun") {
+		phialImpactStun = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_impact_exhaust") {
+		phialImpactExhaust = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_element_attack") {
+		phialElementAttack = xml->readElementText().toDouble();
+	} else if (tag_name == "sharpness_use") {
+		sharpnessUse = xml->readElementText().toDouble();
+	} else if (tag_name == "punishing_draw_stun") {
+		punishingDrawStun = xml->readElementText().toDouble();
+	} else if (tag_name == "punishing_draw_exhaust") {
+		punishingDrawExhaust = xml->readElementText().toDouble();
+	} else if (tag_name == "sharpness_multiplier") {
+		definedSharpnessMultiplier = true;
+		sharpnessMultiplier = xml->readElementText().toDouble();
+	} else if (tag_name == "draw_attack_ratio") {
+		definedDrawAttackRatio = true;
+		drawAttackRatio = xml->readElementText().toDouble();
+	} else if (tag_name == "airborne_ratio") {
+		definedAirborneRatio = true;
+		airborneRatio = xml->readElementText().toDouble();
+	} else if (tag_name == "phial_ratio") {
+		definedPhialRatio = true;
+		phialRatio = xml->readElementText().toDouble();
+	} else if (tag_name == "minds_eye_ratio") {
+		definedMindsEyeRatio = true;
+		mindsEyeRatio = xml->readElementText().toDouble();
+	} else {
+		return false;
 	}
+	return true;
 }

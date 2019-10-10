@@ -72,7 +72,7 @@ void Computer::compute(const Parameters &params) {
 
 	BuildFuture new_future(params.profile, params.target);
 	foreach(const Weapon *weapon, params.weapons) {
-		if (weapon->type != params.profile->weaponType) continue;
+		if (weapon->weaponType != params.profile->weaponType) continue;
 		if (params.finalOnly) {
 			bool not_final = false;
 			foreach (const QString &cat, weapon->categoryRefIds) {

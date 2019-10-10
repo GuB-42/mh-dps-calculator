@@ -13,7 +13,7 @@ struct WeaponType : public NamedObject {
 
 	WeaponType();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 #endif

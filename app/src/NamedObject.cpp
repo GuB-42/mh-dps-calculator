@@ -32,6 +32,7 @@ QString NamedObject::getAllNames() const {
 }
 
 void NamedObject::print(QTextStream &stream, QString indent) const {
+	XmlObject::print(stream, indent);
 	if (!id.isNull()) {
 		stream << indent << "- id: " << id << endl;
 	}
@@ -43,18 +44,17 @@ void NamedObject::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-bool NamedObject::readXmlName(QXmlStreamReader *xml) {
-	if (xml->tokenType() == QXmlStreamReader::StartElement) {
-		QStringRef tag_name = xml->name();
-		if (tag_name == "name") {
-			names[0] = xml->readElementText();
-			return true;
-		} else if (tag_name.toString().startsWith("name_")) {
-			for (int i = 0; i < LANG_COUNT; ++i) {
-				if (tag_name == tagName((Language)i)) {
-					names[i] = xml->readElementText();
-					return true;
-				}
+bool NamedObject::readXmlElement(QXmlStreamReader *xml) {
+	if (XmlObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "name") {
+		names[0] = xml->readElementText();
+		return true;
+	} else if (tag_name.toString().startsWith("name_")) {
+		for (int i = 0; i < LANG_COUNT; ++i) {
+			if (tag_name == tagName((Language)i)) {
+				names[i] = xml->readElementText();
+				return true;
 			}
 		}
 	}
@@ -65,17 +65,5 @@ void NamedObject::readXml(QXmlStreamReader *xml) {
 	if (xml->attributes().hasAttribute("id")) {
 		id = xml->attributes().value("id").toString();
 	}
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (readXmlName(xml)) {
-				; // name
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
-	}
+	XmlObject::readXml(xml);
 }

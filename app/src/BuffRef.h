@@ -2,13 +2,14 @@
 #define BuffRef_h_
 
 #include <QString>
+#include "XmlObject.h"
 
 class QTextStream;
 class QXmlStreamReader;
 struct BuffGroup;
 struct BuffSetBonus;
 
-struct BuffRef {
+struct BuffRef : XmlObject {
 	BuffRef() : buffGroup(NULL), level(1), levelCapPlus(0) {};
 	QString id;
 	BuffGroup *buffGroup;
@@ -16,10 +17,11 @@ struct BuffRef {
 	int levelCapPlus;
 
 	void print(QTextStream &stream, QString indent = QString()) const;
+	bool readXmlElement(QXmlStreamReader *xml);
 	void readXml(QXmlStreamReader *xml);
 };
 
-struct BuffSetBonusRef {
+struct BuffSetBonusRef : XmlObject {
 	BuffSetBonusRef() : buffSetBonus(NULL), level(1) {};
 	QString id;
 	BuffSetBonus *buffSetBonus;

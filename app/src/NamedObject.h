@@ -3,11 +3,12 @@
 
 #include <QString>
 #include "enums.h"
+#include "XmlObject.h"
 
 class QTextStream;
 class QXmlStreamReader;
 
-struct NamedObject {
+struct NamedObject : public XmlObject {
 	QString id;
 	QString names[LANG_COUNT];
 
@@ -15,7 +16,7 @@ struct NamedObject {
 	QString getName(Language lang) const;
 	QString getAllNames() const;
 	virtual void print(QTextStream &stream, QString indent = QString()) const;
-	bool readXmlName(QXmlStreamReader *xml);
+	virtual bool readXmlElement(QXmlStreamReader *xml);
 	virtual void readXml(QXmlStreamReader *xml);
 };
 

@@ -35,7 +35,7 @@ struct TargetMonster {
 };
 
 struct Target : public NamedObject {
-	struct SubTarget {
+	struct SubTarget : public XmlObject {
 		double weight;
 		bool hasDefenseMultiplier;
 		double defenseMultiplier;
@@ -53,7 +53,7 @@ struct Target : public NamedObject {
 		SubTarget();
 		~SubTarget();
 		void print(QTextStream &stream, QString indent) const;
-		void readXml(QXmlStreamReader *xml);
+		bool readXmlElement(QXmlStreamReader *xml);
 	};
 
 	QVector<TargetMonster *> targetMonsters;
@@ -61,7 +61,7 @@ struct Target : public NamedObject {
 
 	~Target();
 	void print(QTextStream &stream, QString indent) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 	void matchMonsters(const QVector<Monster *> &monsters);
 };
 

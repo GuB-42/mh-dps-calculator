@@ -28,7 +28,7 @@ struct PatternAmmoRef {
 	Ammo *ammo;
 };
 
-struct Pattern {
+struct Pattern : public XmlObject {
 	double rate;
 	double period;
 	double usage;
@@ -71,7 +71,7 @@ struct Pattern {
 	void print(QTextStream &stream, QString indent = QString()) const;
 	void updateConditionRatio(Condition cond, double v);
 	void applyMotionValues(const QHash<QString, MotionValue *> &mv_hash);
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 private:
 	struct MultiplierTotals {
 		MultiplierTotals() :
@@ -97,10 +97,12 @@ struct Profile : public NamedObject {
 	QString weaponTypeRefId;
 	QVector<Pattern *> patterns;
 	double sharpenPeriod;
+	double rate;
 
 	Profile();
 	~Profile();
 	void print(QTextStream &stream, QString indent = QString()) const;
+	bool readXmlElement(QXmlStreamReader *xml);
 	void readXml(QXmlStreamReader *xml);
 private:
 	ConditionRatios *localRatios;

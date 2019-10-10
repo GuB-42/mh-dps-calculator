@@ -57,6 +57,7 @@ Target::SubTarget::~SubTarget() {
 }
 
 void Target::SubTarget::print(QTextStream &stream, QString indent) const {
+	XmlObject::print(stream, indent);
 	stream << indent << "- weight: " << weight << endl;
 	if (hasEnragedRatio) {
 		stream << indent << "- enraged ratio: " << enragedRatio << endl;
@@ -85,43 +86,38 @@ void Target::SubTarget::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-void Target::SubTarget::readXml(QXmlStreamReader *xml) {
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (tag_name == "weight") {
-				weight = xml->readElementText().toDouble();
-			} else if (tag_name == "enraged_ratio") {
-				enragedRatio = xml->readElementText().toDouble();
-				hasEnragedRatio = true;
-			} else if (tag_name == "monster_defense_multiplier") {
-				defenseMultiplier = xml->readElementText().toDouble();
-				hasDefenseMultiplier = true;
-			} else if (tag_name == "monster_status_defense_multiplier") {
-				statusDefenseMultiplier = xml->readElementText().toDouble();
-				hasStatusDefenseMultiplier = true;
-			} else if (tag_name == "status_hit_multiplier") {
-				statusHitMultiplier = xml->readElementText().toDouble();
-				hasStatusHitMultiplier = true;
-			} else if (tag_name == "monster_name") {
-				monsterId = xml->readElementText();
-			} else if (tag_name == "part_name") {
-				partId = xml->readElementText();
-			} else if (tag_name == "state") {
-				stateId = xml->readElementText();
-				if (stateId.isNull()) stateId = "";
-			} else if (tag_name == "sub_target") {
-				SubTarget *st = new SubTarget();
-				st->readXml(xml);
-				subTargets.append(st);
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
+bool Target::SubTarget::readXmlElement(QXmlStreamReader *xml) {
+	if (XmlObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "weight") {
+		weight = xml->readElementText().toDouble();
+	} else if (tag_name == "enraged_ratio") {
+		enragedRatio = xml->readElementText().toDouble();
+		hasEnragedRatio = true;
+	} else if (tag_name == "monster_defense_multiplier") {
+		defenseMultiplier = xml->readElementText().toDouble();
+		hasDefenseMultiplier = true;
+	} else if (tag_name == "monster_status_defense_multiplier") {
+		statusDefenseMultiplier = xml->readElementText().toDouble();
+		hasStatusDefenseMultiplier = true;
+	} else if (tag_name == "status_hit_multiplier") {
+		statusHitMultiplier = xml->readElementText().toDouble();
+		hasStatusHitMultiplier = true;
+	} else if (tag_name == "monster_name") {
+		monsterId = xml->readElementText();
+	} else if (tag_name == "part_name") {
+		partId = xml->readElementText();
+	} else if (tag_name == "state") {
+		stateId = xml->readElementText();
+		if (stateId.isNull()) stateId = "";
+	} else if (tag_name == "sub_target") {
+		SubTarget *st = new SubTarget();
+		st->readXml(xml);
+		subTargets.append(st);
+	} else {
+		return false;
 	}
+	return true;
 }
 
 Target::~Target() {
@@ -138,49 +134,39 @@ void Target::print(QTextStream &stream, QString indent) const {
 	}
 }
 
-void Target::readXml(QXmlStreamReader *xml) {
-	if (xml->attributes().hasAttribute("id")) {
-		id = xml->attributes().value("id").toString();
+bool Target::readXmlElement(QXmlStreamReader *xml) {
+	if (NamedObject::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "enraged_ratio") {
+		rootSubTarget.enragedRatio =
+			xml->readElementText().toDouble();
+		rootSubTarget.hasEnragedRatio = true;
+	} else if (tag_name == "monster_defense_multiplier") {
+		rootSubTarget.defenseMultiplier =
+			xml->readElementText().toDouble();
+		rootSubTarget.hasDefenseMultiplier = true;
+	} else if (tag_name == "monster_status_defense_multiplier") {
+		rootSubTarget.statusDefenseMultiplier =
+			xml->readElementText().toDouble();
+		rootSubTarget.hasStatusDefenseMultiplier = true;
+	} else if (tag_name == "status_hit_multiplier") {
+		rootSubTarget.statusHitMultiplier =
+			xml->readElementText().toDouble();
+		rootSubTarget.hasStatusHitMultiplier = true;
+	} else if (tag_name == "monster_name") {
+		rootSubTarget.monsterId = xml->readElementText();
+	} else if (tag_name == "part_name") {
+		rootSubTarget.partId = xml->readElementText();
+	} else if (tag_name == "state") {
+		rootSubTarget.stateId = xml->readElementText();
+	} else if (tag_name == "sub_target") {
+		SubTarget *st = new SubTarget();
+		st->readXml(xml);
+		rootSubTarget.subTargets.append(st);
+	} else {
+		return false;
 	}
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (readXmlName(xml)) {
-				; // name
-			} else if (tag_name == "enraged_ratio") {
-				rootSubTarget.enragedRatio =
-					xml->readElementText().toDouble();
-				rootSubTarget.hasEnragedRatio = true;
-			} else if (tag_name == "monster_defense_multiplier") {
-				rootSubTarget.defenseMultiplier =
-					xml->readElementText().toDouble();
-				rootSubTarget.hasDefenseMultiplier = true;
-			} else if (tag_name == "monster_status_defense_multiplier") {
-				rootSubTarget.statusDefenseMultiplier =
-					xml->readElementText().toDouble();
-				rootSubTarget.hasStatusDefenseMultiplier = true;
-			} else if (tag_name == "status_hit_multiplier") {
-				rootSubTarget.statusHitMultiplier =
-					xml->readElementText().toDouble();
-				rootSubTarget.hasStatusHitMultiplier = true;
-			} else if (tag_name == "monster_name") {
-				rootSubTarget.monsterId = xml->readElementText();
-			} else if (tag_name == "part_name") {
-				rootSubTarget.partId = xml->readElementText();
-			} else if (tag_name == "state") {
-				rootSubTarget.stateId = xml->readElementText();
-			} else if (tag_name == "sub_target") {
-				SubTarget *st = new SubTarget();
-				st->readXml(xml);
-				rootSubTarget.subTargets.append(st);
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
-	}
+	return true;
 }
 
 struct SubTargetLeaf {

@@ -14,6 +14,7 @@ struct BuffGroupLevel : public NamedObject {
 
 	~BuffGroupLevel();
 	void print(QTextStream &stream, QString indent = QString()) const;
+	bool readXmlElement(QXmlStreamReader *xml);
 	void readXmlGetLevel(QXmlStreamReader *xml, int *plevel);
 };
 
@@ -26,7 +27,7 @@ struct BuffGroup : public NamedObject {
 	~BuffGroup();
 	bool hasBuffs();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 private:
 	QVector<BuffGroupLevel *> alloc_list;
 };
@@ -41,7 +42,7 @@ struct BuffSetBonus : public NamedObject {
 	QVector<Level> levels;
 
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 #endif

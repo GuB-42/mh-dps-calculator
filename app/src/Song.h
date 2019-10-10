@@ -7,10 +7,11 @@
 
 #include "enums.h"
 #include "BuffRef.h"
+#include "XmlObject.h"
 
 struct BuffGroup;
 
-struct Song {
+struct Song : public XmlObject {
 	QVector<Note> notes;
 	double duration;
 	double durationMaestro;
@@ -20,7 +21,7 @@ struct Song {
 
 	Song();
 	void print(QTextStream &stream, QString indent = QString()) const;
-	void readXml(QXmlStreamReader *xml);
+	bool readXmlElement(QXmlStreamReader *xml);
 };
 
 #endif

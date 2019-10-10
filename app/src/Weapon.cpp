@@ -11,9 +11,9 @@
 #include "Category.h"
 
 Weapon::Weapon() :
-	type(NULL),
+	weaponType(NULL),
 	attack(0.0), affinity(0.0), awakened(false), phial(PHIAL_NONE),
-	sharpnessPlus(0.0), rare(0), augmentations(0)
+	sharpnessPlus(0.0), augmentations(0)
 {
 	std::fill_n(elements, (size_t)ELEMENT_COUNT, 0.0);
 	std::fill_n(statuses, (size_t)STATUS_COUNT, 0.0);
@@ -23,10 +23,10 @@ Weapon::Weapon() :
 }
 
 void Weapon::print(QTextStream &stream, QString indent) const {
-	NamedObject::print(stream, indent);
-	stream << indent << "- type: ";
-	if (type) {
-		stream << type->id << endl;
+	Item::print(stream, indent);
+	stream << indent << "- weaponType: ";
+	if (weaponType) {
+		stream << weaponType->id << endl;
 	} else {
 		stream << "<null, " << weaponTypeRefId << ">" << endl;
 	}
@@ -98,31 +98,6 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 		}
 	}
 	stream << "]" << endl;
-	stream << indent << "- slots: [";
-	for (int i = 0; i < decorationSlots.count(); ++i) {
-		if (i > 0) stream << ", ";
-		stream << decorationSlots[i];
-	}
-	stream << "]" << endl;
-
-	if (!buffRefs.isEmpty()) {
-		stream << indent << "- buff refs:" << endl;
-		foreach(const BuffRef &buff_ref, buffRefs) {
-			buff_ref.print(stream, indent + "\t");
-		}
-	}
-
-	stream << indent << "- categories: [";
-	for (int i = 0; i < categoryRefIds.count(); ++i) {
-		if (i > 0) stream << ", ";
-		stream << categoryRefIds[i];
-	}
-	stream << "]" << endl;
-	foreach(Category *category, categories) {
-		stream << indent << "- category: " << category->id << endl;
-	}
-
-	stream << indent << "- rare: " << rare << endl;
 }
 
 static void parse_sharpness(QXmlStreamReader *xml,
@@ -226,100 +201,37 @@ static void parse_notes(QXmlStreamReader *xml, QVector<Note> *dnotes) {
 	}
 }
 
-static void parse_slots(QXmlStreamReader *xml, QVector<int> *dslots) {
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (tag_name == "slot") {
-				dslots->append(xml->readElementText().toInt());
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
+bool Weapon::readXmlElement(QXmlStreamReader *xml) {
+	if (Item::readXmlElement(xml)) return true;
+	QStringRef tag_name = xml->name();
+	if (tag_name == "weapon_type_ref") {
+		weaponTypeRefId = xml->attributes().value("id").toString();
+		XML_SKIP_CURRENT_ELEMENT(*xml);
+	} else if (tag_name == "attack") {
+		attack = xml->readElementText().toDouble();
+	} else if (tag_name == "affinity") {
+		affinity = xml->readElementText().toDouble();
+	} else if (tag_name == "awakened") {
+		QString v = xml->readElementText();
+		awakened = !(v.isEmpty() || v.toLower() == "false" || v == "0");
+	} else if (tag_name == "sharpness") {
+		parse_sharpness(xml, &sharpness, &sharpnessPlus);
+	} else if (tag_name == "element") {
+		parse_element_phial(xml, &elements, &statuses, NULL);
+	} else if (tag_name == "phial") {
+		parse_element_phial(xml, &phialElements, &phialStatuses, &phial);
+	} else if (tag_name == "ammos") {
+		parse_ammos(xml, &ammoRefs);
+	} else if (tag_name == "notes") {
+		parse_notes(xml, &notes);
+	} else {
+		return false;
 	}
-}
-
-static void parse_buff_refs(QXmlStreamReader *xml, QVector<BuffRef> *pout)
-{
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			if (xml->name() == "buff_ref") {
-				BuffRef br;
-				br.readXml(xml);
-				pout->append(br);
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
-	}
-}
-
-static void parse_categories(QXmlStreamReader *xml, QVector<QString> *pout)
-{
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			if (xml->name() == "category_ref") {
-				pout->append(xml->attributes().value("id").toString());
-			}
-			XML_SKIP_CURRENT_ELEMENT(*xml);
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
-	}
+	return true;
 }
 
 void Weapon::readXml(QXmlStreamReader *xml) {
-	if (xml->attributes().hasAttribute("id")) {
-		id = xml->attributes().value("id").toString();
-	}
-	while (!xml->atEnd()) {
-		QXmlStreamReader::TokenType token_type = xml->readNext();
-		if (token_type == QXmlStreamReader::StartElement) {
-			QStringRef tag_name = xml->name();
-			if (readXmlName(xml)) {
-				; // name
-			} else if (tag_name == "weapon_type_ref") {
-				weaponTypeRefId = xml->attributes().value("id").toString();
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			} else if (tag_name == "attack") {
-				attack = xml->readElementText().toDouble();
-			} else if (tag_name == "affinity") {
-				affinity = xml->readElementText().toDouble();
-			} else if (tag_name == "awakened") {
-				QString v = xml->readElementText();
-				awakened = !(v.isEmpty() || v.toLower() == "false" || v == "0");
-			} else if (tag_name == "rare") {
-				rare = xml->readElementText().toInt();
-			} else if (tag_name == "sharpness") {
-				parse_sharpness(xml, &sharpness, &sharpnessPlus);
-			} else if (tag_name == "element") {
-				parse_element_phial(xml, &elements, &statuses, NULL);
-			} else if (tag_name == "phial") {
-				parse_element_phial(xml, &phialElements, &phialStatuses, &phial);
-			} else if (tag_name == "ammos") {
-				parse_ammos(xml, &ammoRefs);
-			} else if (tag_name == "notes") {
-				parse_notes(xml, &notes);
-			} else if (tag_name == "slots") {
-				parse_slots(xml, &decorationSlots);
-			} else if (tag_name == "buff_refs") {
-				parse_buff_refs(xml, &buffRefs);
-			} else if (tag_name == "categories") {
-				parse_categories(xml, &categoryRefIds);
-			} else {
-				XML_SKIP_CURRENT_ELEMENT(*xml);
-			}
-		} else if (token_type == QXmlStreamReader::EndElement) {
-			break;
-		}
-	}
+	Item::readXml(xml);
 	if (rare) {
 		bool augmentable = true;
 		foreach (const QString &cat, categoryRefIds) {
