@@ -168,7 +168,7 @@ void Build::addItem(const Item *item) {
 			weaponSlotUpgrade = item->weaponSlotUpgrade;
 		}
 	}
-	usedItems << item;
+	if (item != weapon) usedItems << item;
 	foreach(const BuffRef &buff_ref, item->buffRefs) {
 		if (buff_ref.buffGroup) {
 			addBuffLevel(buff_ref.buffGroup, buff_ref.level);
@@ -192,11 +192,7 @@ void Build::addWeapon(const Weapon *weapon) {
 			}
 		}
 	}
-	foreach(const BuffRef &buff_ref, weapon->buffRefs) {
-		if (buff_ref.buffGroup) {
-			addBuffLevel(buff_ref.buffGroup, buff_ref.level);
-		}
-	}
+	addItem(weapon);
 }
 
 static bool bwc_sort(const BuffWithCondition *a, const BuffWithCondition *b) {
