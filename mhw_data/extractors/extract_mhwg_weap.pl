@@ -66,7 +66,7 @@ sub process_data_row_bowgun {
 	$xml_writer->endTag() if ($has_ammos);
 
 	my $has_slots = 0;
-	while ($data_row[2] =~ m/([①②③])/g) {
+	while ($data_row[2] =~ m/([①②③④])/g) {
 		my $slot_level = 0;
 		if ($1 eq "①") {
 			$slot_level = 1;
@@ -74,6 +74,8 @@ sub process_data_row_bowgun {
 			$slot_level = 2;
 		} elsif ($1 eq "③") {
 			$slot_level = 3;
+		} elsif ($1 eq "④") {
+			$slot_level = 4;
 		}
 		unless ($has_slots) {
 			$xml_writer->startTag("slots");
@@ -231,7 +233,7 @@ sub process_data_row_melee {
 	$xml_writer->endTag() if ($has_notes);
 
 	my $has_slots = 0;
-	while ($data_row[5 + $extra_column] =~ m/([①②③])/g) {
+	while ($data_row[5 + $extra_column] =~ m/([①②③④])/g) {
 		my $slot_level = 0;
 		if ($1 eq "①") {
 			$slot_level = 1;
@@ -239,6 +241,8 @@ sub process_data_row_melee {
 			$slot_level = 2;
 		} elsif ($1 eq "③") {
 			$slot_level = 3;
+		} elsif ($1 eq "④") {
+			$slot_level = 4;
 		}
 		unless ($has_slots) {
 			$xml_writer->startTag("slots");

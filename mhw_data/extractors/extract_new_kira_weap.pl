@@ -15,6 +15,7 @@ my $name_key = "name";
 my %sharpness = ();
 my %sharpness_plus = ();
 my @ammos = ();
+my $is_iceborne = 0;
 
 sub process_data_row {
 	$xml_writer->startTag("weapon");
@@ -173,6 +174,10 @@ sub process_data_row {
 	}
 	$xml_writer->endTag() if ($has_slots);
 
+	$xml_writer->startTag("categories");
+	$xml_writer->emptyTag("category_ref", "id" => "iceborne") if ($is_iceborne);
+	$xml_writer->endTag();
+
 	$xml_writer->endTag();
 }
 
@@ -204,6 +209,7 @@ sub start {
 		%sharpness = ();
 		%sharpness_plus = ();
 		@ammos = ();
+		$is_iceborne = 0;
 	} elsif (lc($tag) eq "div") {
 		$in_div = 1;
 		$in_div_class = $attr->{"class"};
@@ -269,6 +275,9 @@ sub start {
 		my $src = $attr->{"src"};
 		if ($img_map{$src}) {
 			$text_acc .= "{$img_map{$src}}";
+		}
+		if ($src =~ /iceborne/) {
+			$is_iceborne = 1;
 		}
 	}
 }

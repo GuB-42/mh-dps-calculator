@@ -41,4 +41,9 @@ MHWorldData/source_data/weapons/weapon_sharpness.csv > /tmp/mhwd_weap.xml
 
 ./extract_new_kira_weap.pl kiranico_extracts/weapon_new_kira.html > /tmp/new_kira_weap.xml
 
-./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/mhwd_weap.xml  /tmp/kira_weap.xml #/tmp/new_kira_weap.xml
+./extract_honey_weap.pl honey_extracts/weapon_honey.json honey_extracts/weapon_honey_sharpness.json >  /tmp/honey_weap.xml
+
+#./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/new_kira_weap.xml > /tmp/ice_weap_1.xml
+#./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/honey_weap.xml > /tmp/ice_weap_2.xml
+#./merge_weapons.pl translations.xml /tmp/new_kira_weap.xml /tmp/honey_weap.xml > /tmp/eng_ice_weap.xml
+./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/mhwd_weap.xml /tmp/new_kira_weap.xml /tmp/kira_weap.xml /tmp/honey_weap.xml

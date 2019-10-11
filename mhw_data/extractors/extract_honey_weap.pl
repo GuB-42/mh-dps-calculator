@@ -63,7 +63,7 @@ for my $weap_name (keys %{$json_data}) {
 	$weap_type =~ s/\s+/_/g;
 	$xml_writer->emptyTag("weapon_type_ref", "id" => $weap_type);
 
-	$weap_name =~ s/'(\w+)'$/"$1"/;
+	$weap_name =~ s/'(\w+)'/"$1"/;
 	$xml_writer->dataElement("name", $weap_name);
 
 	$xml_writer->dataElement("inflated_attack", $weap->{3});
@@ -102,7 +102,7 @@ for my $weap_name (keys %{$json_data}) {
 				$shp_total += $shvp;
 			}
 		}
-		$xml_writer->dataElement("plus", $shp_total - $sh_total);
+		$xml_writer->dataElement("plus", $shp_total - $sh_total) if ($shp_total - $sh_total);
 		$xml_writer->endTag();
 	}
 

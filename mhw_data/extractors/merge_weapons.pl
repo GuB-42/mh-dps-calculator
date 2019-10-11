@@ -328,7 +328,13 @@ sub merge_weapons
 						print STDERR "$names: $k mismatch: [" . (join ',', @sha) .
 							"](+$sha_plus) != [" . (join ',', @shb) . "](+$shb_plus)\n";
 					}
-					$ret->{$k} = $sha_plus >= $shb_plus ? $wep_a->{$k} : $wep_b->{$k};
+					if ($sha_plus == 50) {
+						$ret->{$k} = $wep_a->{$k};
+					} elsif ($shb_plus == 50) {
+						$ret->{$k} = $wep_b->{$k};
+					} else {
+						$ret->{$k} = $sha_plus >= $shb_plus ? $wep_a->{$k} : $wep_b->{$k};
+					}
 				}
 			} elsif ($k eq "index") {
 				$ret->{$k} = $wep_a->{$k} < $wep_b->{$k} ? $wep_a->{$k} : $wep_b->{$k};
@@ -403,53 +409,72 @@ for my $weapon (@weapons) {
 	}
 }
 
-my %grouped_weapons = ();
-for my $k (keys %groups) {
-	if (@{$groups{$k}} < 2) {
-		delete $groups{$k};
-	} else {
-		for my $weapon (@{$groups{$k}}) {
-			$grouped_weapons{$weapon} = 1
-		}
-	}
-}
-
-for my $weapon (@weapons) {
-	next if $grouped_weapons{$weapon};
-	my $signature =
-		$weapon->{"weapon_type_ref"} . '/' . ($weapon->{"attack"} || "0") . '/' .
-		($weapon->{"affinity"} || "0") . '/' . ($weapon->{"affinity"} || "0");
-	for my $e (sort keys %{$weapon->{"elements"}}) {
-		$signature .= '/' . $e . $weapon->{"elements"}{$e} unless ($e =~ /inflated_/);
-	}
-	for my $s (@{$weapon->{"slots"}}) {
-		$signature .= '/' . $s;
-	}
-	for my $sk ("red", "orange", "yellow", "green", "blue", "white", "purple", "plus") {
-		if ($weapon->{"sharpness"}{$sk}) {
-			$signature .= '/' . $weapon->{"sharpness"}{$sk};
-		}
-	}
-	for my $ammo (@{$weapon->{"ammos"}}) {
-		$signature .= '/' . $ammo->{"id"};
-		$signature .= ':' . $ammo->{"capacity"} if (defined $ammo->{"capacity"})
-	}
-	$groups{$signature} ||= [];
-	push @{$groups{$signature}}, $weapon;
-}
-
+my $sign_type = 0;
 my $unique_id = 15948341;
-for my $k (keys %groups) {
-	my %found_f = ();
-	for my $weapon (@{$groups{$k}}) {
-		if ($found_f{$weapon->{"file_name"}}) {
-			for my $w2 (@{$groups{$k}}) {
-				$groups{$unique_id++} = [ $w2 ];
-			}
+
+for my $sign_type (0 .. 127) {
+	my %grouped_weapons = ();
+	for my $k (keys %groups) {
+		if (@{$groups{$k}} < 2) {
 			delete $groups{$k};
-			last;
 		} else {
-			$found_f{$weapon->{"file_name"}} = 1;
+			for my $weapon (@{$groups{$k}}) {
+				$grouped_weapons{$weapon} = 1
+			}
+		}
+	}
+
+	for my $weapon (@weapons) {
+		next if $grouped_weapons{$weapon};
+		my $signature = $sign_type . ":" . $weapon->{"weapon_type_ref"};
+		unless ($sign_type & 64) {
+			$signature .= '/' . ($weapon->{"attack"} || "0");
+		}
+		unless ($sign_type & 32) {
+			$signature .= '/' . ($weapon->{"affinity"} || "0");
+		}
+		unless ($sign_type & 16) {
+			$signature .= '/' . ($weapon->{"defense"} || "0");
+		}
+		unless ($sign_type & 8) {
+			for my $e (sort keys %{$weapon->{"elements"}}) {
+				$signature .= '/' . $e . $weapon->{"elements"}{$e} unless ($e =~ /inflated_/);
+			}
+		}
+		unless ($sign_type & 4) {
+			for my $s (@{$weapon->{"slots"}}) {
+				$signature .= '/' . $s;
+			}
+		}
+		unless ($sign_type & 2) {
+			for my $sk ("red", "orange", "yellow", "green", "blue", "white", "purple", "plus") {
+				if ($weapon->{"sharpness"}{$sk}) {
+					$signature .= '/' . $weapon->{"sharpness"}{$sk};
+				}
+			}
+		}
+		unless ($sign_type & 1) {
+			for my $ammo (@{$weapon->{"ammos"}}) {
+				$signature .= '/' . $ammo->{"id"};
+				$signature .= ':' . $ammo->{"capacity"} if (defined $ammo->{"capacity"})
+			}
+		}
+		$groups{$signature} ||= [];
+		push @{$groups{$signature}}, $weapon;
+	}
+
+	for my $k (keys %groups) {
+		my %found_f = ();
+		for my $weapon (@{$groups{$k}}) {
+			if ($found_f{$weapon->{"file_name"}}) {
+				for my $w2 (@{$groups{$k}}) {
+					$groups{$unique_id++} = [ $w2 ];
+				}
+				delete $groups{$k};
+				last;
+			} else {
+				$found_f{$weapon->{"file_name"}} = 1;
+			}
 		}
 	}
 }

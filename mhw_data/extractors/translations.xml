@@ -28459,4 +28459,4015 @@
 	<name_jp>貫通珠</name_jp>
 </translation>
 
+<!-- iceborne weapons -->
+
+<translation>
+    <name>Dragon Perforator I</name>
+    <name_jp>竜穿弓Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragon Perforator II</name>
+    <name_jp>竜穿弓Ⅱ</name_jp>
+</translation>
+<translation>
+    <name>Dragon Perforator III</name>
+    <name_jp>竜穿弓Ⅲ +</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Rumble</name>
+    <name_jp>王弓エンライ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Rumble+</name>
+    <name_jp>王弓エンライ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Earlybolt</name>
+    <name_jp>王牙弓【稚雷】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Doom</name>
+    <name_jp>必滅の一矢【烈】</name_jp>
+</translation>
+<translation>
+    <name>Alqaws al-Nasr I</name>
+    <name_jp>ネルスアルカウスⅠ</name_jp>
+</translation>
+<translation>
+    <name>Alqaws al-Nasr II</name>
+    <name_jp>ネルスアルカウスⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Bow I</name>
+    <name_jp>レックスボウⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rex Bow II</name>
+    <name_jp>レックスボウⅡ</name_jp>
+</translation>
+<translation>
+    <name>Accursed Arc</name>
+    <name_jp>カーサスアーク +</name_jp>
+</translation>
+<translation>
+    <name>Dios Flier</name>
+    <name_jp>ディオスアロー</name_jp>
+</translation>
+<translation>
+    <name>Tsali Flier</name>
+    <name_jp>爆弓ツァーリアロー</name_jp>
+</translation>
+<translation>
+    <name>Gigacles+</name>
+    <name_jp>重弓ヘラギガス改</name_jp>
+</translation>
+<translation>
+    <name>Gigantomachy</name>
+    <name_jp>剛重弓ギガントマキア</name_jp>
+</translation>
+<translation>
+    <name>Princess Arrow IV</name>
+    <name_jp>プリンセスアローⅣ</name_jp>
+</translation>
+<translation>
+    <name>Rosen Arrow</name>
+    <name_jp>ローゼスアロー</name_jp>
+</translation>
+<translation>
+    <name>Lunatic Arrow</name>
+    <name_jp>ルナティックアロー</name_jp>
+</translation>
+<translation>
+    <name>Rathslinger IV</name>
+    <name_jp>火竜の強弓Ⅳ</name_jp>
+</translation>
+<translation>
+    <name>Azure Mightbow</name>
+    <name_jp>蒼火竜の剛弓</name_jp>
+</translation>
+<translation>
+    <name>Silver Wrathbow</name>
+    <name_jp>銀火竜の烈弓 +</name_jp>
+</translation>
+<translation>
+    <name>Water Shot IV</name>
+    <name_jp>ウォーターシュートⅣ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Shot I</name>
+    <name_jp>ラグーナシュートⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Shot II</name>
+    <name_jp>ラグーナシュートⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Icicle Blizzard I</name>
+    <name_jp>アイシクルブリザードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Icicle Blizzard II</name>
+    <name_jp>アイシクルブリザードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Bow</name>
+    <name_jp>ヒドゥンボウ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Bow+</name>
+    <name_jp>ヒドゥンボウ改</name_jp>
+</translation>
+<translation>
+    <name>Night Flight</name>
+    <name_jp>闇夜弓【影縫】</name_jp>
+</translation>
+<translation>
+    <name>Legia Snowfletcher+</name>
+    <name_jp>レイ＝ファーンライク改</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Snowfletcher</name>
+    <name_jp>ブリーナ＝ファーン</name_jp>
+</translation>
+<translation>
+    <name>Mist Glacia</name>
+    <name_jp>ミスト＝グレイシア</name_jp>
+</translation>
+<translation>
+    <name>Hunter's Bravebow I</name>
+    <name_jp>ワイズハンターボウⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hunter's Bravebow II</name>
+    <name_jp>ワイズハンターボウⅡ</name_jp>
+</translation>
+<translation>
+    <name>Hunter's Bravebow III</name>
+    <name_jp>ワイズハンターボウⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Iceflinger</name>
+    <name_jp>アイスライザー</name_jp>
+</translation>
+<translation>
+    <name>Alluring Evelia</name>
+    <name_jp>氷妖イヴェリア</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Greatbow I</name>
+    <name_jp>巨牛の大弓Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Greatbow II</name>
+    <name_jp>巨牛の大弓Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Arrow I</name>
+    <name_jp>ディノアローⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Arrow II</name>
+    <name_jp>ディノアローⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Acidic Arrow I</name>
+    <name_jp>ザルファーアローⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acidic Arrow II</name>
+    <name_jp>ザルファーアローⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Deathbow Vaal Velos</name>
+    <name_jp>屍弓ヴァルヴェロス +</name_jp>
+</translation>
+<translation>
+    <name>Hydra Planula</name>
+    <name_jp>ヒドラ・プラヌラ</name_jp>
+</translation>
+<translation>
+    <name>Black Planula</name>
+    <name_jp>ネロ・プラヌラ</name_jp>
+</translation>
+<translation>
+    <name>Cera Coilbender+</name>
+    <name_jp>角王弓ゲイルホーン改</name_jp>
+</translation>
+<translation>
+    <name>Cera Cyclord</name>
+    <name_jp>剛角王弓ディアホーン</name_jp>
+</translation>
+<translation>
+    <name>Datura Squall I</name>
+    <name_jp>ダチュラスコールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Squall II</name>
+    <name_jp>ダチュラスコールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nightmare String I</name>
+    <name_jp>ナイトメアストリングⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nightmare String II</name>
+    <name_jp>ナイトメアストリングⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Anjanath Flamebow I</name>
+    <name_jp>蛮顎竜ノ火矢Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Anjanath Flamebow II</name>
+    <name_jp>蛮顎竜ノ火矢Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Fulguring Bow I</name>
+    <name_jp>レラ＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Fulguring Bow II</name>
+    <name_jp>レラ＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Flying Kadachi Strikebow+</name>
+    <name_jp>飛雷弓【羽々矢】改</name_jp>
+</translation>
+<translation>
+    <name>Thundering Strikebow</name>
+    <name_jp>万雷弓【羽々矢】</name_jp>
+</translation>
+<translation>
+    <name>Fellbow Crimson Hail</name>
+    <name_jp>飛毒弓ベニアラシ</name_jp>
+</translation>
+<translation>
+    <name>Fellbow Crimson Hail+</name>
+    <name_jp>飛毒弓ベニアラシ改</name_jp>
+</translation>
+<translation>
+    <name>Fellbow Crimson Storm</name>
+    <name_jp>飛毒弓【紅時雨】</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldbow I</name>
+    <name_jp>龍封じの古弓Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldbow II</name>
+    <name_jp>龍封じの古弓Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Dawning Insight</name>
+    <name_jp>三界双樹－光明－</name_jp>
+</translation>
+<translation>
+    <name>Daora's Toxotes</name>
+    <name_jp>サジタル＝ダオラ</name_jp>
+</translation>
+<translation>
+    <name>Neo Hunter Bow</name>
+    <name_jp>ネオ・ハンターボウ</name_jp>
+</translation>
+<translation>
+    <name>Fate's Thread</name>
+    <name_jp>業弓ジャールート</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Arch "Blaze"</name>
+    <name_jp>魂焔の龍弓・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Arch "Ruin"</name>
+    <name_jp>魂焔の龍弓・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Arch "Styx"</name>
+    <name_jp>魂焔の龍弓・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Chrome Fortress I</name>
+    <name_jp>クロムフォートⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Fortress II</name>
+    <name_jp>クロムフォートⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Fortress III</name>
+    <name_jp>クロムフォートⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Lightning</name>
+    <name_jp>王盾斧ライモン</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Lightning+</name>
+    <name_jp>王盾斧ライモン改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Thundergale</name>
+    <name_jp>王牙盾斧【風雷】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Devastation</name>
+    <name_jp>壊滅の一束【裂】</name_jp>
+</translation>
+<translation>
+    <name>Halberion Blade+</name>
+    <name_jp>焔斧ハルバリオン改</name_jp>
+</translation>
+<translation>
+    <name>Azure Soulbrand</name>
+    <name_jp>蒼炎斧ソウルクラトス</name_jp>
+</translation>
+<translation>
+    <name>Hellsire Blade</name>
+    <name_jp>業火斧ヘルメスレイ</name_jp>
+</translation>
+<translation>
+    <name>Deep Terroir I</name>
+    <name_jp>ディープテロワールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Deep Terroir II</name>
+    <name_jp>ディープテロワールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Guardian I</name>
+    <name_jp>ヒドゥンガーディアンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Guardian II</name>
+    <name_jp>ヒドゥンガーディアンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Deep Schnegel I</name>
+    <name_jp>ディープシュネーゲルⅠ</name_jp>
+</translation>
+<translation>
+    <name>Deep Schnegel II</name>
+    <name_jp>ディープシュネーゲルⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Gigafrost III</name>
+    <name_jp>ギガフロストⅢ</name_jp>
+</translation>
+<translation>
+    <name>Weissritter</name>
+    <name_jp>ヴァイスリッター</name_jp>
+</translation>
+<translation>
+    <name>Weissritter+</name>
+    <name_jp>ヴァイスリッター改</name_jp>
+</translation>
+<translation>
+    <name>Elder Wolf Fang</name>
+    <name_jp>エルガーヴォルフ</name_jp>
+</translation>
+<translation>
+    <name>Dear Rose</name>
+    <name_jp>ディア＝ロゼ</name_jp>
+</translation>
+<translation>
+    <name>Dear Rosetta</name>
+    <name_jp>ディア＝ロゼッタ</name_jp>
+</translation>
+<translation>
+    <name>Luna Eostre</name>
+    <name_jp>ルナ＝エストオレ</name_jp>
+</translation>
+<translation>
+    <name>Wild Force I</name>
+    <name_jp>ワイルドフォースⅠ</name_jp>
+</translation>
+<translation>
+    <name>Wild Force II</name>
+    <name_jp>ワイルドフォースⅡ</name_jp>
+</translation>
+<translation>
+    <name>Wild Force III</name>
+    <name_jp>ワイルドフォースⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Ice Guardian</name>
+    <name_jp>アイスガーディアン</name_jp>
+</translation>
+<translation>
+    <name>Regal Daruq</name>
+    <name_jp>氷臣ダルク</name_jp>
+</translation>
+<translation>
+    <name>Diablos Tyrannis III</name>
+    <name_jp>タイラントブロスⅢ</name_jp>
+</translation>
+<translation>
+    <name>Thanatos Force</name>
+    <name_jp>タナトスフォース +</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Machmar</name>
+    <name_jp>硫鉄のマクマリー</name_jp>
+</translation>
+<translation>
+    <name>The Melting Grasp</name>
+    <name_jp>硫斬合刃メリッサーニ</name_jp>
+</translation>
+<translation>
+    <name>Saber's Maw I</name>
+    <name_jp>牙竜盾斧【荒喰】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Saber's Maw II</name>
+    <name_jp>牙竜盾斧【荒喰】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Scorching Demander</name>
+    <name_jp>灼炎のディマンダー</name_jp>
+</translation>
+<translation>
+    <name>Scorching Demander+</name>
+    <name_jp>灼炎のディマンダー改</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Bardred</name>
+    <name_jp>斬竜合刃バルドレッド</name_jp>
+</translation>
+<translation>
+    <name>Gama Escudo I</name>
+    <name_jp>ガマルエスクードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Gama Escudo II</name>
+    <name_jp>ガマルエスクードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Arms I</name>
+    <name_jp>レックスアームズⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rex Arms II</name>
+    <name_jp>レックスアームズⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Accursed Arms</name>
+    <name_jp>カーサスアームズ +</name_jp>
+</translation>
+<translation>
+    <name>Naaga Ghadab I</name>
+    <name_jp>ナーガ＝ガダブⅠ</name_jp>
+</translation>
+<translation>
+    <name>Naaga Ghadab II</name>
+    <name_jp>ナーガ＝ガダブⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Strongarm</name>
+    <name_jp>ディオスアームズ</name_jp>
+</translation>
+<translation>
+    <name>Volatile Blade</name>
+    <name_jp>爆盾斧バンカームズ</name_jp>
+</translation>
+<translation>
+    <name>Deathaxe Vaal Aspida</name>
+    <name_jp>屍盾斧ヴァルアスピダ +</name_jp>
+</translation>
+<translation>
+    <name>Hydros Kardia</name>
+    <name_jp>ヒュドロスカルディア +</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Soul I</name>
+    <name_jp>カガチノミタマⅠ</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Soul II</name>
+    <name_jp>カガチノミタマⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Viper's Venom I</name>
+    <name_jp>ベニカガチノドクシュⅠ</name_jp>
+</translation>
+<translation>
+    <name>Viper's Venom II</name>
+    <name_jp>ベニカガチノドクシュⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Odium+</name>
+    <name_jp>憎【オディウム】改</name_jp>
+</translation>
+<translation>
+    <name>Animus</name>
+    <name_jp>憎悪【アニムス】</name_jp>
+</translation>
+<translation>
+    <name>Nether Candle</name>
+    <name_jp>冥府の炎</name_jp>
+</translation>
+<translation>
+    <name>Grudge</name>
+    <name_jp>死怨【グラッジ】</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Blade I</name>
+    <name_jp>龍封じの盾斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Blade II</name>
+    <name_jp>龍封じの盾斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Inescapable Karma</name>
+    <name_jp>業力不滅ー閻王ー</name_jp>
+</translation>
+<translation>
+    <name>Magda Manus Reforged</name>
+    <name_jp>真・捲土重来マグマス</name_jp>
+</translation>
+<translation>
+    <name>Daora's Worldbearer</name>
+    <name_jp>ダオラ＝アクパーラ</name_jp>
+</translation>
+<translation>
+    <name>Fate's Curtain</name>
+    <name_jp>業盾グルドレッド</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Brand "Blaze"</name>
+    <name_jp>魂焔の盾斧・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Brand "Ruin"</name>
+    <name_jp>魂焔の盾斧・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Brand "Styx"</name>
+    <name_jp>魂焔の盾斧・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Chrome Cross I</name>
+    <name_jp>クロムクロスⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Cross II</name>
+    <name_jp>クロムクロスⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Cross III</name>
+    <name_jp>クロムクロスⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Fulgur</name>
+    <name_jp>王双刃ハタタカミ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Fulgur+</name>
+    <name_jp>王双刃ハタタカミ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Blitz</name>
+    <name_jp>王牙双刃【土雷】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Decimation</name>
+    <name_jp>残滅の爪【鬼】</name_jp>
+</translation>
+<translation>
+    <name>Cross Destroyers I</name>
+    <name_jp>クロス＝デステリオⅠ</name_jp>
+</translation>
+<translation>
+    <name>Cross Destroyers II</name>
+    <name_jp>クロス＝デステリオⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Tomahawk I</name>
+    <name_jp>ヒドゥントマホークⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Tomahawk II</name>
+    <name_jp>ヒドゥントマホークⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Blazing Warhawks</name>
+    <name_jp>爆炎の双戦斧</name_jp>
+</translation>
+<translation>
+    <name>Bazel Bombers</name>
+    <name_jp>爆炎双斧バゼルボンバー</name_jp>
+</translation>
+<translation>
+    <name>Blizzarioths</name>
+    <name_jp>ニヴルブリザード</name_jp>
+</translation>
+<translation>
+    <name>Blizzarioths+</name>
+    <name_jp>ニヴルブリザード改</name_jp>
+</translation>
+<translation>
+    <name>Mountain Blizzarioths</name>
+    <name_jp>ベルゲルブリザード</name_jp>
+</translation>
+<translation>
+    <name>Asefar al-Nasr I</name>
+    <name_jp>ネスルアーセファーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Asefar al-Nasr II</name>
+    <name_jp>ネスルアーセファーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Chain I</name>
+    <name_jp>レックスチェーンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rex Chain II</name>
+    <name_jp>レックスチェーンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Accursed Chain</name>
+    <name_jp>カーサスチェーン +</name_jp>
+</translation>
+<translation>
+    <name>Twin Flames</name>
+    <name_jp>ツインフレイム</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Lovers</name>
+    <name_jp>双剣リュウノツガイ</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Strife</name>
+    <name_jp>ゲキリュウノツガイ</name_jp>
+</translation>
+<translation>
+    <name>Guild Knight Sabers</name>
+    <name_jp>ギルドナイトセーバー</name_jp>
+</translation>
+<translation>
+    <name>Master Sabers</name>
+    <name_jp>マスターセーバー</name_jp>
+</translation>
+<translation>
+    <name>Holy Guild Knight</name>
+    <name_jp>双聖剣ギルドナイト</name_jp>
+</translation>
+<translation>
+    <name>Hulking Choppers I</name>
+    <name_jp>マッシブチョッパーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hulking Choppers II</name>
+    <name_jp>マッシブチョッパーⅡ</name_jp>
+</translation>
+<translation>
+    <name>Hulking Choppers III</name>
+    <name_jp>マッシブチョッパーⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icefeather</name>
+    <name_jp>アイスフェザー</name_jp>
+</translation>
+<translation>
+    <name>Untouched Hel</name>
+    <name_jp>氷聖ヘル</name_jp>
+</translation>
+<translation>
+    <name>Anja Twinrippers I</name>
+    <name_jp>蛮顎竜ノ烈爪Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Anja Twinrippers II</name>
+    <name_jp>蛮顎竜ノ烈爪Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Fulguring Tornado I</name>
+    <name_jp>トルネ＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Fulguring Tornado II</name>
+    <name_jp>トルネ＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Diablos Clubs III</name>
+    <name_jp>ブロスクラブⅢ</name_jp>
+</translation>
+<translation>
+    <name>Thanatos Mauls</name>
+    <name_jp>タナトスクラブ +</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Ortho</name>
+    <name_jp>硫鉄のオルト</name_jp>
+</translation>
+<translation>
+    <name>The Stripping Shears</name>
+    <name_jp>硫斬双刃ソンドン</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Direbones I</name>
+    <name_jp>巨牛の大骨Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Direbones II</name>
+    <name_jp>巨牛の大骨Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Jyura Keenblades I</name>
+    <name_jp>シュラムグローヴⅠ</name_jp>
+</translation>
+<translation>
+    <name>Jyura Keenblades II</name>
+    <name_jp>シュラムグローヴⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Raven Tessen</name>
+    <name_jp>テッセン【烏】</name_jp>
+</translation>
+<translation>
+    <name>Wolf Tessen</name>
+    <name_jp>テッセン【狼】</name_jp>
+</translation>
+<translation>
+    <name>Beo Hatchets I</name>
+    <name_jp>ブランハチェットⅠ</name_jp>
+</translation>
+<translation>
+    <name>Beo Hatchets II</name>
+    <name_jp>ブランハチェットⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Shattering Flames I</name>
+    <name_jp>火砕双刃Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Shattering Flames II</name>
+    <name_jp>火砕双刃Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Smoldering Cities</name>
+    <name_jp>灼炎のロガー</name_jp>
+</translation>
+<translation>
+    <name>Smoldering Cities+</name>
+    <name_jp>灼炎のロガー改</name_jp>
+</translation>
+<translation>
+    <name>Smoldering Kingdoms</name>
+    <name_jp>斬竜双刃エタンゼル</name_jp>
+</translation>
+<translation>
+    <name>Abyss Eaters I</name>
+    <name_jp>ダークネスイーターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Abyss Eaters II</name>
+    <name_jp>ダークネスイーターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Blasters I</name>
+    <name_jp>ディオスバンガーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Blasters II</name>
+    <name_jp>ディオスバンガーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Greathawks I</name>
+    <name_jp>カガチノオオナタⅠ</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Greathawks II</name>
+    <name_jp>カガチノオオナタⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Crimson Viperclaws I</name>
+    <name_jp>ベニカガチノドクヅメⅠ</name_jp>
+</translation>
+<translation>
+    <name>Crimson Viperclaws III</name>
+    <name_jp>ベニカガチノドクヅメⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Sin+</name>
+    <name_jp>罪【シン】改</name_jp>
+</translation>
+<translation>
+    <name>Crime</name>
+    <name_jp>罪悪【クライム】</name_jp>
+</translation>
+<translation>
+    <name>Nether Chainblades</name>
+    <name_jp>冥府の鎖鎌</name_jp>
+</translation>
+<translation>
+    <name>Death Row</name>
+    <name_jp>死罪【デスロウ】</name_jp>
+</translation>
+<translation>
+    <name>Enduring Sacrifice</name>
+    <name_jp>封龍剣【真絶一門】</name_jp>
+</translation>
+<translation>
+    <name>Enduring Surrender</name>
+    <name_jp>封龍剣【極絶一門】</name_jp>
+</translation>
+<translation>
+    <name>Boundless Farsight</name>
+    <name_jp>邪鬼霧散ー慧眼ー</name_jp>
+</translation>
+<translation>
+    <name>Wunderkirins</name>
+    <name_jp>双雷宝剣【麒麟児】</name_jp>
+</translation>
+<translation>
+    <name>Magdaros Volcancross</name>
+    <name_jp>熔山双剣マグダウング +</name_jp>
+</translation>
+<translation>
+    <name>Blizzard and Blaze</name>
+    <name_jp>氷炎魔剣ヴィルマクス</name_jp>
+</translation>
+<translation>
+    <name>Consummate Pair</name>
+    <name_jp>業双刃ベガモラルタ</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Fangs "Blaze"</name>
+    <name_jp>魂焔の双刃・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Fangs "Ruin"</name>
+    <name_jp>魂焔の双刃・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Fangs "Styx"</name>
+    <name_jp>魂焔の双刃・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Downy Paradise</name>
+    <name_jp>フワフワ天国</name_jp>
+</translation>
+<translation>
+    <name>Chrome Deathscythe I</name>
+    <name_jp>クロームデスサイズⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Deathscythe II</name>
+    <name_jp>クロームデスサイズⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Deathscythe III</name>
+    <name_jp>クロームデスサイズⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Atrocity</name>
+    <name_jp>滅鬼の凶器【断】</name_jp>
+</translation>
+<translation>
+    <name>Lightning Punisher IV</name>
+    <name_jp>ライトニングパニッシュⅣ</name_jp>
+</translation>
+<translation>
+    <name>Severing Bolt I</name>
+    <name_jp>迅雷の断裂斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Severing Bolt II</name>
+    <name_jp>迅雷の断裂斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Frost Blaze III</name>
+    <name_jp>フロストブレイズⅢ</name_jp>
+</translation>
+<translation>
+    <name>Icicle Fang</name>
+    <name_jp>アイシクルファング</name_jp>
+</translation>
+<translation>
+    <name>Icicle Fang+</name>
+    <name_jp>アイシクルファング改</name_jp>
+</translation>
+<translation>
+    <name>Paladire</name>
+    <name_jp>グラシュバリエ</name_jp>
+</translation>
+<translation>
+    <name>Jagras Deathclaw I</name>
+    <name_jp>ジャグラスデスクロウⅠ</name_jp>
+</translation>
+<translation>
+    <name>Jagras Deathclaw II</name>
+    <name_jp>ジャグラスデスクロウⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Greataxe I</name>
+    <name_jp>巨牛の大斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Greataxe II</name>
+    <name_jp>巨牛の大斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Naaga Guillotine I</name>
+    <name_jp>ナーガ＝メクサラⅠ</name_jp>
+</translation>
+<translation>
+    <name>Naaga Guillotine II</name>
+    <name_jp>ナーガ＝メクサラⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Blade I</name>
+    <name_jp>ヒドゥンブレイズⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Blade II</name>
+    <name_jp>ヒドゥンブレイズⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Pyre Cleaver I</name>
+    <name_jp>火砕剣Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Pyre Cleaver II</name>
+    <name_jp>火砕剣Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Blaze I</name>
+    <name_jp>ディノブレイズⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Blaze II</name>
+    <name_jp>ディノブレイズⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Datura Hellspine I</name>
+    <name_jp>ダチュラヘルスパインⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Hellspine II</name>
+    <name_jp>ダチュラヘルスパインⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Razor I</name>
+    <name_jp>ニュクスレイザーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Razor II</name>
+    <name_jp>ニュクスレイザーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rathalos Glinsword+</name>
+    <name_jp>煌剣リオレウス改</name_jp>
+</translation>
+<translation>
+    <name>Rathflame Glinsword</name>
+    <name_jp>煌炎剣リオレウス</name_jp>
+</translation>
+<translation>
+    <name>Rathalos Gleamsword</name>
+    <name_jp>輝剣リオレウス</name_jp>
+</translation>
+<translation>
+    <name>Ogre's Jaw I</name>
+    <name_jp>大鬼のアギトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Ogre's Jaw II</name>
+    <name_jp>大鬼のアギトⅡ</name_jp>
+</translation>
+<translation>
+    <name>Ogre's Jaw III</name>
+    <name_jp>大鬼のアギトⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icewing</name>
+    <name_jp>アイスウィング</name_jp>
+</translation>
+<translation>
+    <name>Winged Seraphyd</name>
+    <name_jp>氷翼セラフィード</name_jp>
+</translation>
+<translation>
+    <name>Tiger Jawblade</name>
+    <name_jp>ティガノアギト</name_jp>
+</translation>
+<translation>
+    <name>Tiger Jawblade+</name>
+    <name_jp>ティガノアギト改</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Great Sword</name>
+    <name_jp>轟大剣【王虎】</name_jp>
+</translation>
+<translation>
+    <name>Accursed Blade</name>
+    <name_jp>カーサスブレイド</name_jp>
+</translation>
+<translation>
+    <name>Wildbite</name>
+    <name_jp>吼大剣【荒咬】</name_jp>
+</translation>
+<translation>
+    <name>Monstrous Madness</name>
+    <name_jp>モンストロの狂気</name_jp>
+</translation>
+<translation>
+    <name>Don Monstro</name>
+    <name_jp>ドネス＝モンストロ</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Flammenzahn+</name>
+    <name_jp>蛮顎大剣フラムヘレヴ改</name_jp>
+</translation>
+<translation>
+    <name>Lohenzahn</name>
+    <name_jp>蛮炎大剣ロギンヘレヴ</name_jp>
+</translation>
+<translation>
+    <name>Donnerzahn</name>
+    <name_jp>雷顎大剣ドネルヘレヴ</name_jp>
+</translation>
+<translation>
+    <name>Donnerzahn+</name>
+    <name_jp>雷顎大剣ドネルヘレヴ改</name_jp>
+</translation>
+<translation>
+    <name>Fulguration's Edge</name>
+    <name_jp>蛮雷大剣カーリヘレヴ</name_jp>
+</translation>
+<translation>
+    <name>Water Golem IV</name>
+    <name_jp>ウォーターゴーレムⅣ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Golem I</name>
+    <name_jp>ラグーナゴーレムⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Golem II</name>
+    <name_jp>ラグーナゴーレムⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Beo Slasher I</name>
+    <name_jp>ブランスラッシャーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Beo Slasher II</name>
+    <name_jp>ブランスラッシャーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Barroth Greatedge I</name>
+    <name_jp>ボルボギガンテⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Greatedge II</name>
+    <name_jp>ボルボギガンテⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Acid Shredder I</name>
+    <name_jp>ザルファシュレッダーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acid Shredder II</name>
+    <name_jp>ザルファシュレッダーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Grindblade I</name>
+    <name_jp>削岩剣ラドバルキンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Grindblade II</name>
+    <name_jp>削岩剣ラドバルキンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Blade</name>
+    <name_jp>ディオスブレイド</name_jp>
+</translation>
+<translation>
+    <name>Brach Attack</name>
+    <name_jp>爆大剣ブリーブレイド</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Sword I</name>
+    <name_jp>龍封じの大剣Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Sword II</name>
+    <name_jp>龍封じの大剣Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Immovable Dharma</name>
+    <name_jp>無相法身ー不動ー</name_jp>
+</translation>
+<translation>
+    <name>Emperor Thundersword</name>
+    <name_jp>召雷剣【麒麟帝】</name_jp>
+</translation>
+<translation>
+    <name>Magdaros Volcanblade</name>
+    <name_jp>熔山剣マグダポテス +</name_jp>
+</translation>
+<translation>
+    <name>Daora's Tugbril Beg</name>
+    <name_jp>ダオラ＝ディグリベグ</name_jp>
+</translation>
+<translation>
+    <name>Ultra Wyvern Jawblade</name>
+    <name_jp>リュウノアギト【絶牙】</name_jp>
+</translation>
+<translation>
+    <name>Consummate Blade</name>
+    <name_jp>業剣グルンディング</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Edge "Blaze"</name>
+    <name_jp>魂焔の剛剣・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Edge "Ruin"</name>
+    <name_jp>魂焔の剛剣・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Edge "Styx"</name>
+    <name_jp>魂焔の剛剣・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Frozen Speatuna</name>
+    <name_jp>レイトウマグロ</name_jp>
+</translation>
+<translation>
+    <name>Freezer Speartuna</name>
+    <name_jp>レイトウ本マグロ</name_jp>
+</translation>
+<translation>
+    <name>Xiphias Gladius</name>
+    <name_jp>瞬間レイトウ本マグロ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Halberd I</name>
+    <name_jp>クロムハルベルトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Halberd II</name>
+    <name_jp>クロムハルベルトⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Halberd III</name>
+    <name_jp>クロムハルベルトⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Gunlance I</name>
+    <name_jp>黒羽の銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Gunlance II</name>
+    <name_jp>黒羽の銃槍Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Mythic Kadachi Striker+</name>
+    <name_jp>飛雷銃槍【蜻蛉切】改</name_jp>
+</translation>
+<translation>
+    <name>Thundering Striker</name>
+    <name_jp>万雷銃槍【蜻蛉切】</name_jp>
+</translation>
+<translation>
+    <name>Crimson Ember</name>
+    <name_jp>飛毒銃槍ベニヒバナ</name_jp>
+</translation>
+<translation>
+    <name>Crimson Ember+</name>
+    <name_jp>飛毒銃槍ベニヒバナ改</name_jp>
+</translation>
+<translation>
+    <name>Crimson Hornet</name>
+    <name_jp>飛毒銃槍【紅火蜂】</name_jp>
+</translation>
+<translation>
+    <name>Blue Chariot+</name>
+    <name_jp>ブルーチャリオット改</name_jp>
+</translation>
+<translation>
+    <name>Soul Chariot</name>
+    <name_jp>ソウルチャリオット</name_jp>
+</translation>
+<translation>
+    <name>Chariot Gun</name>
+    <name_jp>ガンチャリオット</name_jp>
+</translation>
+<translation>
+    <name>Royal Burst+</name>
+    <name_jp>ロイヤルバースト改</name_jp>
+</translation>
+<translation>
+    <name>Highness's Fury</name>
+    <name_jp>ハイネスバースト</name_jp>
+</translation>
+<translation>
+    <name>Queen's Panoply</name>
+    <name_jp>クイーンバースト</name_jp>
+</translation>
+<translation>
+    <name>Jyura Demolisher I</name>
+    <name_jp>シュラムベムスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Jyura Demolisher II</name>
+    <name_jp>シュラムベムスターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Twinfang</name>
+    <name_jp>デュアルトゥース</name_jp>
+</translation>
+<translation>
+    <name>Twinfang+</name>
+    <name_jp>デュアルトゥース改</name_jp>
+</translation>
+<translation>
+    <name>Ambermarch</name>
+    <name_jp>アンバーマーチ</name_jp>
+</translation>
+<translation>
+    <name>Legiana Cannon III</name>
+    <name_jp>ギエナキャノンⅢ</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Cannon</name>
+    <name_jp>ブリーナキャノン +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Cannon I</name>
+    <name_jp>ヒドゥンキャノンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Cannon II</name>
+    <name_jp>ヒドゥンキャノンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dragonpike "Quake" I</name>
+    <name_jp>竜骨銃槍【烈震】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonpike "Quake" II</name>
+    <name_jp>竜骨銃槍【烈震】Ⅱ</name_jp>
+</translation>
+<translation>
+    <name>Dragonpike "Quake" III</name>
+    <name_jp>竜骨銃槍【烈震】Ⅲ +</name_jp>
+</translation>
+<translation>
+    <name>Eisritter</name>
+    <name_jp>アイスリッター</name_jp>
+</translation>
+<translation>
+    <name>Vorpal Icefort</name>
+    <name_jp>氷砦ヴォーパル</name_jp>
+</translation>
+<translation>
+    <name>Bazelpride</name>
+    <name_jp>バゼルプライド +</name_jp>
+</translation>
+<translation>
+    <name>Glutton's Fang I</name>
+    <name_jp>牙竜銃槍【大喰王】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Glutton's Fang II</name>
+    <name_jp>牙竜銃槍【大喰王】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Tiger Blast</name>
+    <name_jp>ティガバースト</name_jp>
+</translation>
+<translation>
+    <name>Tiger Blast+</name>
+    <name_jp>ティガバースト改</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Gunlance</name>
+    <name_jp>轟銃槍【虎砲】</name_jp>
+</translation>
+<translation>
+    <name>Accursed Blast</name>
+    <name_jp>カーサスバースト</name_jp>
+</translation>
+<translation>
+    <name>Flamebite</name>
+    <name_jp>吼銃槍【焔咬】</name_jp>
+</translation>
+<translation>
+    <name>Nightveil Gunlance I</name>
+    <name_jp>痺賊銃槍【闇頭巾】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Nightveil Gunlance II</name>
+    <name_jp>痺賊銃槍【闇頭巾】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Buster I</name>
+    <name_jp>ディノバスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Buster II</name>
+    <name_jp>ディノバスターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Deathlance Vaal Spysa</name>
+    <name_jp>屍銃槍ヴァルスピサ +</name_jp>
+</translation>
+<translation>
+    <name>Acid Buster I</name>
+    <name_jp>ザルファバスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acid Buster II</name>
+    <name_jp>ザルファバスターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Barroth Bluff I</name>
+    <name_jp>ボロスグレモスⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Bluff II</name>
+    <name_jp>ボロスグレモスⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Buster I</name>
+    <name_jp>ディオスバスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Buster II</name>
+    <name_jp>ディオスバスターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Gunlance I</name>
+    <name_jp>巨牛の大銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Gunlance II</name>
+    <name_jp>巨牛の大銃槍Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Roar</name>
+    <name_jp>王銃槍ゴウライ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Roar+</name>
+    <name_jp>王銃槍ゴウライ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Phlogiston</name>
+    <name_jp>王牙銃槍【火雷】</name_jp>
+</translation>
+<translation>
+    <name>Anjanath Flamelance I</name>
+    <name_jp>蛮顎竜ノ炎銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Anjanath Flamelance II</name>
+    <name_jp>蛮顎竜ノ炎銃槍Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Ending Fulgur I</name>
+    <name_jp>ハルマ＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Ending Fulgur II</name>
+    <name_jp>ハルマ＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Gunlance I</name>
+    <name_jp>龍封じの銃槍Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Gunlance II</name>
+    <name_jp>龍封じの銃槍Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Broken Silence</name>
+    <name_jp>金剛宝塔ー寂滅ー</name_jp>
+</translation>
+<translation>
+    <name>Magda Lahat Reforged</name>
+    <name_jp>真・驚天動地マグラハ</name_jp>
+</translation>
+<translation>
+    <name>Hydra Ephyra</name>
+    <name_jp>ヒドラ・エフィーラ</name_jp>
+</translation>
+<translation>
+    <name>Black Ephyra</name>
+    <name_jp>ネロ・エフィーラ</name_jp>
+</translation>
+<translation>
+    <name>Daora's Tempest</name>
+    <name_jp>ダオラ＝テンペスタ</name_jp>
+</translation>
+<translation>
+    <name>Consummate Gunlance</name>
+    <name_jp>業銃槍ディグラトニ</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Talon "Blaze"</name>
+    <name_jp>魂焔の銃槍・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Talon "Ruin"</name>
+    <name_jp>魂焔の銃槍・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Talon "Styx"</name>
+    <name_jp>魂焔の銃槍・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Gajalaka Firestabber</name>
+    <name_jp>奇面族の突火槍</name_jp>
+</translation>
+<translation>
+    <name>Gajalaka Firepike</name>
+    <name_jp>奇面手筒【火祭】</name_jp>
+</translation>
+<translation>
+    <name>Kurogane I</name>
+    <name_jp>クロガネⅠ</name_jp>
+</translation>
+<translation>
+    <name>Kurogane II</name>
+    <name_jp>クロガネⅡ</name_jp>
+</translation>
+<translation>
+    <name>Kurogane III</name>
+    <name_jp>クロガネⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Red Bludgeon</name>
+    <name_jp>レッドビート</name_jp>
+</translation>
+<translation>
+    <name>Huracan Hammer</name>
+    <name_jp>火竜砕フラカン</name_jp>
+</translation>
+<translation>
+    <name>Leonid Starcrusher</name>
+    <name_jp>星砕きプロメテオル</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Obliteration</name>
+    <name_jp>潰滅の一撃【壊】</name_jp>
+</translation>
+<translation>
+    <name>Cocytus+</name>
+    <name_jp>コキュートス改</name_jp>
+</translation>
+<translation>
+    <name>Pykrete Punisher</name>
+    <name_jp>氷鉄ハバク</name_jp>
+</translation>
+<translation>
+    <name>Water Basher IV</name>
+    <name_jp>ウォーターバッシュⅣ</name_jp>
+</translation>
+<translation>
+    <name>Aqua Flora</name>
+    <name_jp>アクア・フローラ</name_jp>
+</translation>
+<translation>
+    <name>Aqua Flora+</name>
+    <name_jp>アクア・フローラ改</name_jp>
+</translation>
+<translation>
+    <name>Aqua Florescence</name>
+    <name_jp>アクア・フローレス</name_jp>
+</translation>
+<translation>
+    <name>Glacial Bash I</name>
+    <name_jp>アイシクルバッシュⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glacial Bash II</name>
+    <name_jp>アイシクルバッシュⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Naaga Matraca I</name>
+    <name_jp>ナーガ＝マトラカⅠ</name_jp>
+</translation>
+<translation>
+    <name>Naaga Matraca II</name>
+    <name_jp>ナーガ＝マトラカⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Hammer I</name>
+    <name_jp>ニュクスハンマーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Hammer II</name>
+    <name_jp>ニュクスハンマーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Buona Flora+</name>
+    <name_jp>ベネ・フローラ改</name_jp>
+</translation>
+<translation>
+    <name>Buona Florescenza</name>
+    <name_jp>ベネ・フローレス</name_jp>
+</translation>
+<translation>
+    <name>Hidden Breaker</name>
+    <name_jp>ヒドゥンブレイカー</name_jp>
+</translation>
+<translation>
+    <name>Hidden Breaker+</name>
+    <name_jp>ヒドゥンブレイカー改</name_jp>
+</translation>
+<translation>
+    <name>Night Eternal</name>
+    <name_jp>夜行槌【常闇】</name_jp>
+</translation>
+<translation>
+    <name>Lightning Bash IV</name>
+    <name_jp>ライトニングバッシュⅣ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Thunder</name>
+    <name_jp>王鎚カミナリ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Thunder+</name>
+    <name_jp>王鎚カミナリ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Crackle</name>
+    <name_jp>王牙鎚【大雷】</name_jp>
+</translation>
+<translation>
+    <name>Earth Ender I</name>
+    <name_jp>ガイアクローザーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Earth Ender II</name>
+    <name_jp>ガイアクローザーⅡ</name_jp>
+</translation>
+<translation>
+    <name>Earth Ender III</name>
+    <name_jp>ガイアクローザーⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Iceshaker</name>
+    <name_jp>アイスシェイカー</name_jp>
+</translation>
+<translation>
+    <name>Victorious Northlein</name>
+    <name_jp>氷軍ノースライン</name_jp>
+</translation>
+<translation>
+    <name>Pandemonium's Wrath</name>
+    <name_jp>デモナスの復讐</name_jp>
+</translation>
+<translation>
+    <name>Pandemonium Unleashed</name>
+    <name_jp>グラド＝デモナス</name_jp>
+</translation>
+<translation>
+    <name>Baan Gavel I</name>
+    <name_jp>バルキンクローザーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Baan Gavel II</name>
+    <name_jp>バルキンクローザーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Striped Striker</name>
+    <name_jp>ストライプストライク</name_jp>
+</translation>
+<translation>
+    <name>Striped Striker+</name>
+    <name_jp>ストライプストライク改</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Hammer</name>
+    <name_jp>轟槌【虎丸】</name_jp>
+</translation>
+<translation>
+    <name>Uragaan Hammer I</name>
+    <name_jp>重甲鎚ガンキンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Uragaan Hammer II</name>
+    <name_jp>重甲鎚ガンキンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Scorching Isshata</name>
+    <name_jp>灼炎のイシャター</name_jp>
+</translation>
+<translation>
+    <name>Scorching Isshata+</name>
+    <name_jp>灼炎のイシャター改</name_jp>
+</translation>
+<translation>
+    <name>Glavenus's Uruga</name>
+    <name_jp>斬竜鎚ウルガ</name_jp>
+</translation>
+<translation>
+    <name>Makhlab al-Nasr I</name>
+    <name_jp>ネスルマクラブⅠ</name_jp>
+</translation>
+<translation>
+    <name>Makhlab al-Nasr II</name>
+    <name_jp>ネスルマクラブⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Hoof I</name>
+    <name_jp>巨牛の大蹄Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Hoof II</name>
+    <name_jp>巨牛の大蹄Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Deathblow I</name>
+    <name_jp>黒羽の凶槌Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Deathblow II</name>
+    <name_jp>黒羽の凶槌Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Diablos Shatterer III</name>
+    <name_jp>ブロスシャッターⅢ</name_jp>
+</translation>
+<translation>
+    <name>Chaos Shatterer</name>
+    <name_jp>カオスシャッター +</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Alcan</name>
+    <name_jp>硫鉄のアルカン</name_jp>
+</translation>
+<translation>
+    <name>The Grinding Mallet</name>
+    <name_jp>硫斬鎚アルタミラ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Crusher I</name>
+    <name_jp>ボルボインパクトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Crusher II</name>
+    <name_jp>ボルボインパクトⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Tailhammer</name>
+    <name_jp>ディオステイル</name_jp>
+</translation>
+<translation>
+    <name>Brachy Tailhammer</name>
+    <name_jp>爆鎚ズーニーテイル</name_jp>
+</translation>
+<translation>
+    <name>Anja Fiercemaul I</name>
+    <name_jp>蛮顎竜ノ猛槌Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Anja Fiercemaul II</name>
+    <name_jp>蛮顎竜ノ猛槌Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Grinding Fulgur I</name>
+    <name_jp>ドンナ＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Grinding Fulgur II</name>
+    <name_jp>ドンナ＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Basher I</name>
+    <name_jp>龍封じの大槌Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Hammer II</name>
+    <name_jp>龍封じの大槌Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Dawning Tranquility</name>
+    <name_jp>明珠在掌－降魔－</name_jp>
+</translation>
+<translation>
+    <name>Magda Floga Reforged</name>
+    <name_jp>真・活火激発マグロガ</name_jp>
+</translation>
+<translation>
+    <name>Daora's Hyperborea</name>
+    <name_jp>ヒュペル＝ダオラ</name_jp>
+</translation>
+<translation>
+    <name>Binding Coffin</name>
+    <name_jp>バインドコフィン</name_jp>
+</translation>
+<translation>
+    <name>Consummate Hammer</name>
+    <name_jp>業鎚ダグザ</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Heel "Blaze"</name>
+    <name_jp>魂焔の剛鎚・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Heel "Ruin"</name>
+    <name_jp>魂焔の剛鎚・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Heel "Styx"</name>
+    <name_jp>魂焔の剛鎚・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Bristly Inferno</name>
+    <name_jp>ゴワゴワ地獄</name_jp>
+</translation>
+<translation>
+    <name>Fatal Assault I</name>
+    <name_jp>フェイタルアサルトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Fatal Assault II</name>
+    <name_jp>フェイタルアサルトⅡ</name_jp>
+</translation>
+<translation>
+    <name>Fatal Assault III</name>
+    <name_jp>フェイタルアサルトⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icicle Assault I</name>
+    <name_jp>アイシクルアサルトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Icicle Assault II</name>
+    <name_jp>アイシクルアサルトⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Destruction</name>
+    <name_jp>撃滅の砲火【戦】</name_jp>
+</translation>
+<translation>
+    <name>Water Cannon IV</name>
+    <name_jp>ウォーターキャノンⅣ</name_jp>
+</translation>
+<translation>
+    <name>Nightmare Cannon I</name>
+    <name_jp>ナイトメアキャノンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nightmare Cannon II</name>
+    <name_jp>ナイトメアキャノンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Gambit</name>
+    <name_jp>ヒドゥンスナイパー</name_jp>
+</translation>
+<translation>
+    <name>Hidden Gambit+</name>
+    <name_jp>ヒドゥンスナイパー改</name_jp>
+</translation>
+<translation>
+    <name>Baleful Night</name>
+    <name_jp>夜砲【黒風】</name_jp>
+</translation>
+<translation>
+    <name>Deadeye Destroyer I</name>
+    <name_jp>エイム＝デステリオⅠ</name_jp>
+</translation>
+<translation>
+    <name>Deadeye Destroyer II</name>
+    <name_jp>エイム＝デステリオⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Mightning</name>
+    <name_jp>王砲ライゴウ</name_jp>
+</translation>
+<translation>
+    <name>Mightning+</name>
+    <name_jp>王砲ライゴウ改</name_jp>
+</translation>
+<translation>
+    <name>Loyal Thunder</name>
+    <name_jp>王牙砲【震雷】</name_jp>
+</translation>
+<translation>
+    <name>Legia Shattercryst+</name>
+    <name_jp>レイ＝ロゼッテス改</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Shattercryst</name>
+    <name_jp>ブリーナ＝ロゼッテス</name_jp>
+</translation>
+<translation>
+    <name>Franz Glacia</name>
+    <name_jp>フランツ＝グレイシア</name_jp>
+</translation>
+<translation>
+    <name>Gluttonous Fangcannon+</name>
+    <name_jp>牙竜重弩【暴食】改</name_jp>
+</translation>
+<translation>
+    <name>Gluttonous Direcannon</name>
+    <name_jp>牙竜重弩【大暴食】</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Howl</name>
+    <name_jp>レックスハウル</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Howl+</name>
+    <name_jp>レックスハウル改</name_jp>
+</translation>
+<translation>
+    <name>Accursed Bellow</name>
+    <name_jp>カーサスハウリング</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Flammenkanone+</name>
+    <name_jp>蛮顎重弩フラムテルマ改</name_jp>
+</translation>
+<translation>
+    <name>Donnerkanone</name>
+    <name_jp>雷顎重弩ドネルテルマ</name_jp>
+</translation>
+<translation>
+    <name>Donnerkanone+</name>
+    <name_jp>雷顎重弩ドネルテルマ改</name_jp>
+</translation>
+<translation>
+    <name>Fulguration's Roar</name>
+    <name_jp>蛮雷重弩カーリテルマ</name_jp>
+</translation>
+<translation>
+    <name>Cartilage Blaster I</name>
+    <name_jp>カルティブラスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Cartilage Blaster II</name>
+    <name_jp>カルティブラスターⅡ</name_jp>
+</translation>
+<translation>
+    <name>Cartilage Blaster III</name>
+    <name_jp>カルティブラスターⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Iceroar</name>
+    <name_jp>アイスエクレール</name_jp>
+</translation>
+<translation>
+    <name>Righteous Varka</name>
+    <name_jp>氷督バルカ</name_jp>
+</translation>
+<translation>
+    <name>Griffon Blazooka+</name>
+    <name_jp>カーディアーカ改</name_jp>
+</translation>
+<translation>
+    <name>Hornking Blazooka</name>
+    <name_jp>角王砲ダムディアーカ</name_jp>
+</translation>
+<translation>
+    <name>Datura Blaster IV</name>
+    <name_jp>ダチュラブラスターⅣ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Blaster I</name>
+    <name_jp>ラグーナブラスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Blaster II</name>
+    <name_jp>ラグーナブラスターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Baan Bazooka I</name>
+    <name_jp>バルキンバズーカⅠ</name_jp>
+</translation>
+<translation>
+    <name>Baan Bazooka II</name>
+    <name_jp>バルキンバズーカⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Cannon</name>
+    <name_jp>ディオスキャノン</name_jp>
+</translation>
+<translation>
+    <name>Atom Cannon</name>
+    <name_jp>爆砲アトミキャノン</name_jp>
+</translation>
+<translation>
+    <name>Gama Turret I</name>
+    <name_jp>ガマル大砲【青蛙】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Gama Turret II</name>
+    <name_jp>ガマル大砲【青蛙】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Burning Igna</name>
+    <name_jp>灼炎のイグナー</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Gyrad</name>
+    <name_jp>硫鉄のジラジカル</name_jp>
+</translation>
+<translation>
+    <name>The Guttering Gasp</name>
+    <name_jp>硫斬砲フィンガル</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Lion IV</name>
+    <name_jp>カガチノシシⅣ</name_jp>
+</translation>
+<translation>
+    <name>Crimson Kadachi Lion I</name>
+    <name_jp>ベニカガチノシシⅠ</name_jp>
+</translation>
+<translation>
+    <name>Crimson Kadachi Lion II</name>
+    <name_jp>ベニカガチノシシⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Cannon I</name>
+    <name_jp>龍封じの砲筒Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Cannon II</name>
+    <name_jp>龍封じの砲筒Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Solemn Reflection</name>
+    <name_jp>回返光照－天道－</name_jp>
+</translation>
+<translation>
+    <name>Shining Quiver</name>
+    <name_jp>ライジングシャフト</name_jp>
+</translation>
+<translation>
+    <name>Magda Gemitus Vulcan</name>
+    <name_jp>熔山大砲マグダゲミド +</name_jp>
+</translation>
+<translation>
+    <name>Hydros Laimos</name>
+    <name_jp>ヒュドロスライモス +</name_jp>
+</translation>
+<translation>
+    <name>Teostra's Firestorm</name>
+    <name_jp>テオ＝フランロンガ</name_jp>
+</translation>
+<translation>
+    <name>Endless Famine</name>
+    <name_jp>業重弩ファミン</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Roar "Blaze"</name>
+    <name_jp>魂煌の龍砲・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Roar "Ruin"</name>
+    <name_jp>魂煌の龍砲・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Roar "Styx"</name>
+    <name_jp>魂煌の龍砲・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Sforzando I</name>
+    <name_jp>スフォルツァンドⅠ</name_jp>
+</translation>
+<translation>
+    <name>Sforzando II</name>
+    <name_jp>スフォルツァンドⅡ</name_jp>
+</translation>
+<translation>
+    <name>Sforzando III</name>
+    <name_jp>スフォルツァンドⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Raven Shamisen</name>
+    <name_jp>シャミセン【烏】</name_jp>
+</translation>
+<translation>
+    <name>Wolf Shamisen</name>
+    <name_jp>シャミセン【狼】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Desolation</name>
+    <name_jp>寂滅の一節【魂】</name_jp>
+</translation>
+<translation>
+    <name>Lightning Drum IV</name>
+    <name_jp>ライトニングドラムⅣ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Growl</name>
+    <name_jp>王琴トドロキ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Growl+</name>
+    <name_jp>王琴トドロキ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Thunderclap</name>
+    <name_jp>王牙琴【鳴雷】</name_jp>
+</translation>
+<translation>
+    <name>Taghrid al-Nasr I</name>
+    <name_jp>ネスルジェレサⅠ</name_jp>
+</translation>
+<translation>
+    <name>Taghrid al-Nasr II</name>
+    <name_jp>ネスルジェレサⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Striped Dragonga</name>
+    <name_jp>ストライプドラゴング</name_jp>
+</translation>
+<translation>
+    <name>Striped Dragonga+</name>
+    <name_jp>ストライプドラゴング改</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Horn</name>
+    <name_jp>轟鼓【虎鐘】</name_jp>
+</translation>
+<translation>
+    <name>Accursed Wail</name>
+    <name_jp>カーサスドラゴング</name_jp>
+</translation>
+<translation>
+    <name>Ogrebite</name>
+    <name_jp>吼鼓【鬼咬】</name_jp>
+</translation>
+<translation>
+    <name>Royal Chordmaker+</name>
+    <name_jp>ロイヤルリコーダー改</name_jp>
+</translation>
+<translation>
+    <name>Regal Flute</name>
+    <name_jp>ハイネスリコーダー</name_jp>
+</translation>
+<translation>
+    <name>Gold Chordmaker</name>
+    <name_jp>ゴルトリコーダー</name_jp>
+</translation>
+<translation>
+    <name>Water Tamtam IV</name>
+    <name_jp>ウォータータムタムⅣ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Drum I</name>
+    <name_jp>ラグーナドラムⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Drum II</name>
+    <name_jp>ラグーナドラムⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Harmonic</name>
+    <name_jp>ヒドゥントーン</name_jp>
+</translation>
+<translation>
+    <name>Hidden Harmonic+</name>
+    <name_jp>ヒドゥントーン改</name_jp>
+</translation>
+<translation>
+    <name>Cry in the Night</name>
+    <name_jp>夜笛【逢魔】</name_jp>
+</translation>
+<translation>
+    <name>Legia Sectored+</name>
+    <name_jp>レイ＝セクタード改</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Sectored</name>
+    <name_jp>ブリーナ＝セクタード</name_jp>
+</translation>
+<translation>
+    <name>Lilim Glacia</name>
+    <name_jp>リルン＝グレイシア</name_jp>
+</translation>
+<translation>
+    <name>Mad Bone Horn I</name>
+    <name_jp>マッドボーンホルンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Mad Bone Horn II</name>
+    <name_jp>マッドボーンホルンⅡ</name_jp>
+</translation>
+<translation>
+    <name>Mad Bone Horn III</name>
+    <name_jp>マッドボーンホルンⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icespiel</name>
+    <name_jp>アイスシュピール</name_jp>
+</translation>
+<translation>
+    <name>Sonorous Eisfyl</name>
+    <name_jp>氷琴アイスフィール</name_jp>
+</translation>
+<translation>
+    <name>Gama Chorus I</name>
+    <name_jp>ガマルコーラスⅠ</name_jp>
+</translation>
+<translation>
+    <name>Gama Chorus II</name>
+    <name_jp>ガマルコーラスⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hell Horn</name>
+    <name_jp>灼炎のフランアニマー</name_jp>
+</translation>
+<translation>
+    <name>Hell Horn+</name>
+    <name_jp>灼炎のフランアニマー改</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Horn</name>
+    <name_jp>斬竜笛イブレス</name_jp>
+</translation>
+<translation>
+    <name>Anjanath Hum I</name>
+    <name_jp>蛮顎竜ノ鼻唄Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Anjanath Hum II</name>
+    <name_jp>蛮顎竜ノ鼻唄Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Fulguring Horn I</name>
+    <name_jp>ホーン＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Fulguring Horn II</name>
+    <name_jp>ホーン＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Svild</name>
+    <name_jp>硫鉄のスフィルド</name_jp>
+</translation>
+<translation>
+    <name>The Rasping Ballad</name>
+    <name_jp>硫斬笛パラドーラ</name_jp>
+</translation>
+<translation>
+    <name>Datura Maestro I</name>
+    <name_jp>ダチュラマエストロⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Maestro II</name>
+    <name_jp>ダチュラマエストロⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Icicle Horn I</name>
+    <name_jp>アイシクルホルンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Icicle Horn II</name>
+    <name_jp>アイシクルホルンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Lumu Drone I</name>
+    <name_jp>ウルムーハミングⅠ</name_jp>
+</translation>
+<translation>
+    <name>Lumu Drone II</name>
+    <name_jp>ウルムーハミングⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Barone I</name>
+    <name_jp>ニュクスバローネⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Barone II</name>
+    <name_jp>ニュクスバローネⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rooksearer Drum</name>
+    <name_jp>爆炎の太鼓</name_jp>
+</translation>
+<translation>
+    <name>Bazel Valdi Rooksearer</name>
+    <name_jp>爆炎鼓バゼルバルディ</name_jp>
+</translation>
+<translation>
+    <name>Queen Vespoid Horn+</name>
+    <name_jp>女王笛ランゴスタ改</name_jp>
+</translation>
+<translation>
+    <name>Queen's Flute II</name>
+    <name_jp>女王笛ランゴスタⅡ世</name_jp>
+</translation>
+<translation>
+    <name>Baan Rattle I</name>
+    <name_jp>バルキンラトリングⅠ</name_jp>
+</translation>
+<translation>
+    <name>Baan Rattle II</name>
+    <name_jp>バルキンラトリングⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Horn I</name>
+    <name_jp>ディオスホルンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Horn II</name>
+    <name_jp>ディオスホルンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldhorn I</name>
+    <name_jp>龍封じの古笛Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldhorn II</name>
+    <name_jp>龍封じの古笛Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Austere Paradise</name>
+    <name_jp>極楽浄土ー華厳ー</name_jp>
+</translation>
+<translation>
+    <name>Thunderwail Feyhorn</name>
+    <name_jp>幻雷ノ魔笛 +</name_jp>
+</translation>
+<translation>
+    <name>Hydros Horn</name>
+    <name_jp>ヒュドロスホルン +</name_jp>
+</translation>
+<translation>
+    <name>Teostra's Musica</name>
+    <name_jp>テスカ・デル・ムシカ</name_jp>
+</translation>
+<translation>
+    <name>Fate's Dirge</name>
+    <name_jp>業奏グレイプニール</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Chorus "Blaze"</name>
+    <name_jp>魂焔の龍笛・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Chorus "Ruin"</name>
+    <name_jp>魂焔の龍笛・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Chorus "Styx"</name>
+    <name_jp>魂焔の龍笛・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Chrome Trident I</name>
+    <name_jp>クロムトライデントⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Trident II</name>
+    <name_jp>クロムトライデントⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Trident III</name>
+    <name_jp>クロムトライデントⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Royal Bolt Scepter</name>
+    <name_jp>王棍イナズマ</name_jp>
+</translation>
+<translation>
+    <name>Royal Bolt Scepter+</name>
+    <name_jp>王棍イナズマ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Twinbolt</name>
+    <name_jp>王牙棍【別雷】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Catastrophe</name>
+    <name_jp>撲滅の導灯【闇】</name_jp>
+</translation>
+<translation>
+    <name>Firedance Rathmaul+</name>
+    <name_jp>火竜棍【炎舞】改</name_jp>
+</translation>
+<translation>
+    <name>Azure Flightmaster</name>
+    <name_jp>蒼炎棍【飛翔】</name_jp>
+</translation>
+<translation>
+    <name>Blossomajesty</name>
+    <name_jp>繚乱の輝竜戟</name_jp>
+</translation>
+<translation>
+    <name>Yatir al-Nasr I</name>
+    <name_jp>ネスルヤティールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Yatir al-Nasr II</name>
+    <name_jp>ネスルヤティールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Rod</name>
+    <name_jp>ディオスロッド</name_jp>
+</translation>
+<translation>
+    <name>Electrorod</name>
+    <name_jp>爆棍エレクトロッド</name_jp>
+</translation>
+<translation>
+    <name>Diving Destroyer I</name>
+    <name_jp>ダイヴ＝デステリオⅠ</name_jp>
+</translation>
+<translation>
+    <name>Diving Destroyer II</name>
+    <name_jp>ダイヴ＝デステリオⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Cane I</name>
+    <name_jp>ヒドゥンケインⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Cane II</name>
+    <name_jp>ヒドゥンケインⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Freeze Gale III</name>
+    <name_jp>フリーズゲイルⅢ</name_jp>
+</translation>
+<translation>
+    <name>Amber Piton</name>
+    <name_jp>アンバーハーケン</name_jp>
+</translation>
+<translation>
+    <name>Amber Piton+</name>
+    <name_jp>アンバーハーケン改</name_jp>
+</translation>
+<translation>
+    <name>Fenrir Storm</name>
+    <name_jp>フェンリルストーム</name_jp>
+</translation>
+<translation>
+    <name>Datura Storm I</name>
+    <name_jp>ダチュラストームⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Storm II</name>
+    <name_jp>ダチュラストームⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Blade I</name>
+    <name_jp>ニュクスブレードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Blade II</name>
+    <name_jp>ニュクスブレードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Gama Magus I</name>
+    <name_jp>ガマルウィザードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Gama Magus II</name>
+    <name_jp>ガマルウィザードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Flaming Teuza</name>
+    <name_jp>灼炎のテウザー</name_jp>
+</translation>
+<translation>
+    <name>Flaming Teuza+</name>
+    <name_jp>灼炎のテウザー改</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Helldait</name>
+    <name_jp>斬竜旋ヘルダイト</name_jp>
+</translation>
+<translation>
+    <name>Aerial Magus I</name>
+    <name_jp>エアリアルウィザードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Aerial Magus II</name>
+    <name_jp>エアリアルウィザードⅡ</name_jp>
+</translation>
+<translation>
+    <name>Aerial Magus III</name>
+    <name_jp>エアリアルウィザードⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icescepter</name>
+    <name_jp>アイスセプター</name_jp>
+</translation>
+<translation>
+    <name>Wise Fylos</name>
+    <name_jp>氷賢フイロス</name_jp>
+</translation>
+<translation>
+    <name>Deathstaff Vaal Entoma</name>
+    <name_jp>屍杖ヴァルエントマ +</name_jp>
+</translation>
+<translation>
+    <name>Hydros Arcana</name>
+    <name_jp>ヒュドロスアーケーン +</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Flammenkaefer+</name>
+    <name_jp>蛮顎棍フラムカラモス改</name_jp>
+</translation>
+<translation>
+    <name>Lohenspire</name>
+    <name_jp>蛮炎棍ロギンカラモス</name_jp>
+</translation>
+<translation>
+    <name>Donnerspitze</name>
+    <name_jp>雷顎棍ドネルカラモス</name_jp>
+</translation>
+<translation>
+    <name>Donnerspitze+</name>
+    <name_jp>雷顎棍ドネルカラモス改</name_jp>
+</translation>
+<translation>
+    <name>Fulguration's Tower</name>
+    <name_jp>蛮雷棍カーリカラモス</name_jp>
+</translation>
+<translation>
+    <name>Water Glaive IV</name>
+    <name_jp>ウォーターグレイブⅣ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Glaive I</name>
+    <name_jp>ラグーナグレイブⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Glaive II</name>
+    <name_jp>ラグーナグレイブⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Rod I</name>
+    <name_jp>レックスロッドⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rex Rod II</name>
+    <name_jp>レックスロッドⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Accursed Rod</name>
+    <name_jp>カーサスロッド +</name_jp>
+</translation>
+<translation>
+    <name>Tyrannis Glaive III</name>
+    <name_jp>タイラントグレイブⅢ</name_jp>
+</translation>
+<translation>
+    <name>Thanatos Glaive</name>
+    <name_jp>タナトスグレイブ +</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Spiran</name>
+    <name_jp>硫鉄のスピラン</name_jp>
+</translation>
+<translation>
+    <name>The Trickling Spiral</name>
+    <name_jp>硫斬旋フォーニャ</name_jp>
+</translation>
+<translation>
+    <name>Beo Glaive I</name>
+    <name_jp>ブラングレイヴⅠ</name_jp>
+</translation>
+<translation>
+    <name>Beo Glaive II</name>
+    <name_jp>ブラングレイヴⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Fury I</name>
+    <name_jp>カガチノイカリⅠ</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Fury II</name>
+    <name_jp>カガチノイカリⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Vipertail I</name>
+    <name_jp>ベニカガチノマヒバシラⅠ</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Vipertail II</name>
+    <name_jp>ベニカガチノマヒバシラⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Vice+</name>
+    <name_jp>悪【ヴァイス】改</name_jp>
+</translation>
+<translation>
+    <name>Cruelty</name>
+    <name_jp>凶悪【ビシャス】</name_jp>
+</translation>
+<translation>
+    <name>Nether Vajra</name>
+    <name_jp>冥府の三鈷杵</name_jp>
+</translation>
+<translation>
+    <name>Deadline</name>
+    <name_jp>死線【デッドライン】</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldstaff I</name>
+    <name_jp>龍封じの古杖Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldstaff II</name>
+    <name_jp>龍封じの古杖Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Infinite Wisdom</name>
+    <name_jp>三世十方－智慧－</name_jp>
+</translation>
+<translation>
+    <name>Celestial Spire</name>
+    <name_jp>天の幻雷</name_jp>
+</translation>
+<translation>
+    <name>Daora's Samudra</name>
+    <name_jp>サムドラ＝ダオラ</name_jp>
+</translation>
+<translation>
+    <name>Fate's Wing</name>
+    <name_jp>業翼ダムドヴィング</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Reach "Blaze"</name>
+    <name_jp>魂焔の龍戟・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Reach "Ruin"</name>
+    <name_jp>魂焔の龍戟・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Reach "Styx"</name>
+    <name_jp>魂焔の龍戟・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Chrome Drill I</name>
+    <name_jp>クロムスクリューⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Drill II</name>
+    <name_jp>クロムスクリューⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Drill III</name>
+    <name_jp>クロムスクリューⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Incessant Raven</name>
+    <name_jp>ホウテンゲキ【烏】</name_jp>
+</translation>
+<translation>
+    <name>Incessant Wolf</name>
+    <name_jp>ホウテンゲキ【狼】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Perdition</name>
+    <name_jp>亡滅の腕【邪】</name_jp>
+</translation>
+<translation>
+    <name>Legiana Halberd III</name>
+    <name_jp>ギエナハルバⅢ</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Halberd</name>
+    <name_jp>ブリーナハルバ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Halberd I</name>
+    <name_jp>ニュクスハルバⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Halberd II</name>
+    <name_jp>ニュクスハルバⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Minqar al-Nasr I</name>
+    <name_jp>ネスルメンカールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Mingar al-Nasr II</name>
+    <name_jp>ネスルメンカールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Tusk Lance</name>
+    <name_jp>トゥースランス</name_jp>
+</translation>
+<translation>
+    <name>Tusk Lance+</name>
+    <name_jp>トゥースランス改</name_jp>
+</translation>
+<translation>
+    <name>Sabertooth</name>
+    <name_jp>セイバートゥース</name_jp>
+</translation>
+<translation>
+    <name>Gama Drill I</name>
+    <name_jp>ガマルスクリューⅠ</name_jp>
+</translation>
+<translation>
+    <name>Gama Drill II</name>
+    <name_jp>ガマルスクリューⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Hastur I</name>
+    <name_jp>ヒドゥンハスターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Hastur II</name>
+    <name_jp>ヒドゥンハスターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Lightning Bolt I</name>
+    <name_jp>ライトニングボルトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Lightning Bolt II</name>
+    <name_jp>ライトニングボルトⅡ</name_jp>
+</translation>
+<translation>
+    <name>Thunderpierce I</name>
+    <name_jp>迅雷の疾槍Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Thunderpierce II</name>
+    <name_jp>迅雷の疾槍Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Datura Stalk I</name>
+    <name_jp>ダチュラスプラウトⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Stalk II</name>
+    <name_jp>ダチュラスプラウトⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Laguna Pike I</name>
+    <name_jp>ラグーナパイクⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Pike II</name>
+    <name_jp>ラグーナパイクⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Blue Prominence+</name>
+    <name_jp>ブループロミネンス改</name_jp>
+</translation>
+<translation>
+    <name>Soul Prominence</name>
+    <name_jp>ソウルプロミネンス</name_jp>
+</translation>
+<translation>
+    <name>Silver Prominence</name>
+    <name_jp>シルバープロミネンス</name_jp>
+</translation>
+<translation>
+    <name>Grand Halberd I</name>
+    <name_jp>グランドハルバードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Grand Halberd II</name>
+    <name_jp>グランドハルバードⅡ</name_jp>
+</translation>
+<translation>
+    <name>Grand Halberd III</name>
+    <name_jp>グランドハルバードⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Iceborer</name>
+    <name_jp>アイスランサー</name_jp>
+</translation>
+<translation>
+    <name>Knightly Ectis</name>
+    <name_jp>氷騎エクティス</name_jp>
+</translation>
+<translation>
+    <name>Love's Tragedy</name>
+    <name_jp>ラ・モールの悲劇</name_jp>
+</translation>
+<translation>
+    <name>Love's End</name>
+    <name_jp>ブレイン＝ラ・モール</name_jp>
+</translation>
+<translation>
+    <name>Abyss Aggressor I</name>
+    <name_jp>ダークネスアグレッサⅠ</name_jp>
+</translation>
+<translation>
+    <name>Abyss Aggressor II</name>
+    <name_jp>ダークネスアグレッサⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Svarog Blazer</name>
+    <name_jp>灼炎のスヴァロー</name_jp>
+</translation>
+<translation>
+    <name>Svarog Blazer+</name>
+    <name_jp>灼炎のスヴァロー改</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Granat</name>
+    <name_jp>斬竜槍グラナト</name_jp>
+</translation>
+<translation>
+    <name>Barroth Halberd I</name>
+    <name_jp>ボロスハルバードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Halberd II</name>
+    <name_jp>ボロスハルバードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Halberd I</name>
+    <name_jp>ディオスハルバードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Dios Halberd II</name>
+    <name_jp>ディオスハルバードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Odogaron's Misery I</name>
+    <name_jp>惨槍オドガロンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Odogaron's Misery II</name>
+    <name_jp>惨槍オドガロンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Death Garon Lance</name>
+    <name_jp>兇槍デスガロン +</name_jp>
+</translation>
+<translation>
+    <name>Water Spike IV</name>
+    <name_jp>ウォータースパイクⅣ</name_jp>
+</translation>
+<translation>
+    <name>Hydros Ullr</name>
+    <name_jp>ヒュドロスウーラ +</name_jp>
+</translation>
+<translation>
+    <name>Tiger Stinger</name>
+    <name_jp>ティガスティンガー</name_jp>
+</translation>
+<translation>
+    <name>Tiger Stinger+</name>
+    <name_jp>ティガスティンガー改</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Lance</name>
+    <name_jp>轟槍【独虎】</name_jp>
+</translation>
+<translation>
+    <name>Accursed Stinger</name>
+    <name_jp>カーサススティンガー</name_jp>
+</translation>
+<translation>
+    <name>Backbite</name>
+    <name_jp>吼槍【逆咬】</name_jp>
+</translation>
+<translation>
+    <name>Sulfurteinn Keton</name>
+    <name_jp>硫鉄のケトン</name_jp>
+</translation>
+<translation>
+    <name>The Solvent Spindle</name>
+    <name_jp>硫斬槍ドリーネ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldspear I</name>
+    <name_jp>龍封じの古槍Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldspear II</name>
+    <name_jp>龍封じの古槍Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Unblinking Gatekeeper</name>
+    <name_jp>金剛輪宝ー仁王ー</name_jp>
+</translation>
+<translation>
+    <name>Blasting Siegespear</name>
+    <name_jp>爆炎の突撃槍</name_jp>
+</translation>
+<translation>
+    <name>Bazel Rocket Rooksearer</name>
+    <name_jp>爆炎槍バゼルロケット</name_jp>
+</translation>
+<translation>
+    <name>Naar Thunderlance</name>
+    <name_jp>雷槍【ナルカミ】</name_jp>
+</translation>
+<translation>
+    <name>Daora's Regulus</name>
+    <name_jp>レグルス＝ダオラ</name_jp>
+</translation>
+<translation>
+    <name>Lost Babel</name>
+    <name_jp>ロストバベル</name_jp>
+</translation>
+<translation>
+    <name>Fate's Spindle</name>
+    <name_jp>業鎗ベルゼべリスク</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Spike "Blaze"</name>
+    <name_jp>魂焔の龍刃・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Spike "Ruin"</name>
+    <name_jp>魂焔の龍刃・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Spike "Styx"</name>
+    <name_jp>魂焔の龍刃・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Shining Star Lance</name>
+    <name_jp>継承の団旗槍【輝星】</name_jp>
+</translation>
+<translation>
+    <name>Sweeping Gale Lance</name>
+    <name_jp>絆の団旗槍【疾風】</name_jp>
+</translation>
+<translation>
+    <name>Crossblitzer I</name>
+    <name_jp>クロスブリッツァⅠ</name_jp>
+</translation>
+<translation>
+    <name>Crossblitzer II</name>
+    <name_jp>クロスブリッツァⅡ</name_jp>
+</translation>
+<translation>
+    <name>Crossblitzer III</name>
+    <name_jp>クロスブリッツァⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Bowgun I</name>
+    <name_jp>黒羽の弩Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Bowgun II</name>
+    <name_jp>黒羽の弩Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Cataclysm</name>
+    <name_jp>破滅の引金【悲】</name_jp>
+</translation>
+<translation>
+    <name>Lumu Typhon IV</name>
+    <name_jp>ウルムーティフォンⅣ</name_jp>
+</translation>
+<translation>
+    <name>Nightmare's Seed I</name>
+    <name_jp>ナイトメアシードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nightmare's Seed II</name>
+    <name_jp>ナイトメアシードⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Blitz</name>
+    <name_jp>ディノブリッツ</name_jp>
+</translation>
+<translation>
+    <name>Acid Blitz I</name>
+    <name_jp>ザルファブリッツⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acid Blitz II</name>
+    <name_jp>ザルファブリッツⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Bazelcore</name>
+    <name_jp>バゼルコア +</name_jp>
+</translation>
+<translation>
+    <name>Saber's Howl I</name>
+    <name_jp>牙竜弩【風喰】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Saber's Howl II</name>
+    <name_jp>牙竜弩【風喰】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Fusillade I</name>
+    <name_jp>レックスファイアⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rex Fusillade II</name>
+    <name_jp>レックスファイアⅡ</name_jp>
+</translation>
+<translation>
+    <name>Accursed Fire</name>
+    <name_jp>カーサスファイア +</name_jp>
+</translation>
+<translation>
+    <name>Rathbuster III</name>
+    <name_jp>レウスバスターⅢ</name_jp>
+</translation>
+<translation>
+    <name>Azure Soulscorcher</name>
+    <name_jp>蒼炎弩ソウルバスター</name_jp>
+</translation>
+<translation>
+    <name>Argent Ray</name>
+    <name_jp>煌竜弩シルバーレイ +</name_jp>
+</translation>
+<translation>
+    <name>Lightning Blitz IV</name>
+    <name_jp>ライトニングブリッツⅣ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Crime</name>
+    <name_jp>王弩ライカン</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Crime+</name>
+    <name_jp>王弩ライカン改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Wildfire</name>
+    <name_jp>王牙弩【野雷】</name_jp>
+</translation>
+<translation>
+    <name>Frost Blitz III</name>
+    <name_jp>フロストブリッツⅢ</name_jp>
+</translation>
+<translation>
+    <name>Blizzard Cannon</name>
+    <name_jp>ブリザードカノン</name_jp>
+</translation>
+<translation>
+    <name>Blizzard Cannon+</name>
+    <name_jp>ブリザードカノン改</name_jp>
+</translation>
+<translation>
+    <name>Blizzard Volley</name>
+    <name_jp>ブリザードヘイル</name_jp>
+</translation>
+<translation>
+    <name>Laguna Blitz I</name>
+    <name_jp>ラグーナブリッツⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Blitz II</name>
+    <name_jp>ラグーナブリッツⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Breakshot I</name>
+    <name_jp>ブレイクシューターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Breakshot II</name>
+    <name_jp>ブレイクシューターⅡ</name_jp>
+</translation>
+<translation>
+    <name>Breakshot III</name>
+    <name_jp>ブレイクシューターⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icehawk</name>
+    <name_jp>アイスイーグル</name_jp>
+</translation>
+<translation>
+    <name>Graceful Almaria</name>
+    <name_jp>氷姫アルマリア</name_jp>
+</translation>
+<translation>
+    <name>Gulgoleth's Despair</name>
+    <name_jp>グルゴレットの絶望</name_jp>
+</translation>
+<translation>
+    <name>Gulgoleth's Ruin</name>
+    <name_jp>ディザ＝グルゴレット</name_jp>
+</translation>
+<translation>
+    <name>Anja Buster IV</name>
+    <name_jp>ジャナフバスターⅣ</name_jp>
+</translation>
+<translation>
+    <name>Fulgurshot I</name>
+    <name_jp>バル＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Fulgurshot II</name>
+    <name_jp>バル＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Jyura Bullet IV</name>
+    <name_jp>シュラムバレットⅣ</name_jp>
+</translation>
+<translation>
+    <name>Beo Shooter I</name>
+    <name_jp>ブランシューターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Beo Shooter II</name>
+    <name_jp>ブランシューターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Bullet I</name>
+    <name_jp>ヒドゥンバレットⅠ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Bullet II</name>
+    <name_jp>ヒドゥンバレットⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Fireshatter I</name>
+    <name_jp>火砕銃Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Fireshatter II</name>
+    <name_jp>火砕銃Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Bowgun I</name>
+    <name_jp>巨牛の大弩Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Bowgun II</name>
+    <name_jp>巨牛の大弩Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Barroth Bazooka I</name>
+    <name_jp>ボロスボローカⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Bazooka II</name>
+    <name_jp>ボロスボローカⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Shot I</name>
+    <name_jp>ディオスショットⅠ</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Shot II</name>
+    <name_jp>ディオスショットⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Karma+</name>
+    <name_jp>業【カルマ】改</name_jp>
+</translation>
+<translation>
+    <name>Nether Salvo</name>
+    <name_jp>冥府の銃火</name_jp>
+</translation>
+<translation>
+    <name>Ghost</name>
+    <name_jp>死霊【ゴースト】</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Bowgun I</name>
+    <name_jp>龍封じの弩Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Bowgun II</name>
+    <name_jp>龍封じの弩Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Fading Blossom</name>
+    <name_jp>盛者必衰－散華－</name_jp>
+</translation>
+<translation>
+    <name>God's Isle</name>
+    <name_jp>神ヶ島</name_jp>
+</translation>
+<translation>
+    <name>Mythical Three-Evils</name>
+    <name_jp>幻獣筒【三界三禍】</name_jp>
+</translation>
+<translation>
+    <name>Hydra Actinula</name>
+    <name_jp>ヒドラ・アクチヌラ</name_jp>
+</translation>
+<translation>
+    <name>Black Actinula</name>
+    <name_jp>ネロ・アクチヌラ</name_jp>
+</translation>
+<translation>
+    <name>Daora's Yellowjacket</name>
+    <name_jp>ザンブル＝ダオラ</name_jp>
+</translation>
+<translation>
+    <name>Neo Cross Bowgun</name>
+    <name_jp>ネオ・クロスボウガン</name_jp>
+</translation>
+<translation>
+    <name>Diregun "Dementia"</name>
+    <name_jp>業弩ダークデメント</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Rasp "Blaze"</name>
+    <name_jp>魂焔の龍弩・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Rasp "Ruin"</name>
+    <name_jp>魂焔の龍弩・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Rasp "Styx"</name>
+    <name_jp>魂焔の龍弩・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Iron Eschaton I</name>
+    <name_jp>鉄刀【神威】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Iron Eschaton II</name>
+    <name_jp>鉄刀【神威】Ⅱ</name_jp>
+</translation>
+<translation>
+    <name>Iron Eschaton III</name>
+    <name_jp>鉄刀【神威】Ⅲ +</name_jp>
+</translation>
+<translation>
+    <name>Daito Crow</name>
+    <name_jp>ダイトウ【烏】</name_jp>
+</translation>
+<translation>
+    <name>Daito Wolf</name>
+    <name_jp>ダイトウ【狼】</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Boltslicer</name>
+    <name_jp>王刀ライキリ</name_jp>
+</translation>
+<translation>
+    <name>Usurper Boltslicer+</name>
+    <name_jp>王刀ライキリ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Boltbreaker</name>
+    <name_jp>王牙刀【伏雷】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Extermination</name>
+    <name_jp>滅尽の一刀【絶】</name_jp>
+</translation>
+<translation>
+    <name>Blinding Blaze I</name>
+    <name_jp>眩惑乱刀【閃光】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Blinding Blaze II</name>
+    <name_jp>眩惑乱刀【閃光】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Ambertooth I</name>
+    <name_jp>氷牙刀【琥珀】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Ambertooth II</name>
+    <name_jp>氷牙刀【琥珀】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Rafiq al-Nasr I</name>
+    <name_jp>ネスルラフィークⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rafiq al-Nasr II</name>
+    <name_jp>ネスルラフィークⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Saber</name>
+    <name_jp>ヒドゥンサーベル</name_jp>
+</translation>
+<translation>
+    <name>Hidden Saber+</name>
+    <name_jp>ヒドゥンサーベル改</name_jp>
+</translation>
+<translation>
+    <name>Deepest Night</name>
+    <name_jp>夜刀【月影】</name_jp>
+</translation>
+<translation>
+    <name>Brazenreach I</name>
+    <name_jp>重刃ブラスⅠ</name_jp>
+</translation>
+<translation>
+    <name>Brazenreach II</name>
+    <name_jp>重刃ブラスⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Spada I</name>
+    <name_jp>ディノスパーダⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Spada II</name>
+    <name_jp>ディノスパーダⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Blade "Blossom"</name>
+    <name_jp>飛竜刀【桜花】</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Blade "Blossom"+</name>
+    <name_jp>飛竜刀【桜花】改</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Blade "Luna"</name>
+    <name_jp>飛竜刀【月】</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Blade "Indigo"+</name>
+    <name_jp>飛竜刀【藍染】改</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Blade "Empyrean"</name>
+    <name_jp>飛竜刀【蒼天】</name_jp>
+</translation>
+<translation>
+    <name>Wyvern Blade "Pale"</name>
+    <name_jp>飛竜刀【銀】</name_jp>
+</translation>
+<translation>
+    <name>Grand Khopesh I</name>
+    <name_jp>グランドケペシュⅠ</name_jp>
+</translation>
+<translation>
+    <name>Grand Khopesh II</name>
+    <name_jp>グランドケペシュⅡ</name_jp>
+</translation>
+<translation>
+    <name>Grand Khopesh III</name>
+    <name_jp>グランドケペシュⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icebrink</name>
+    <name_jp>アイスラーミナ</name_jp>
+</translation>
+<translation>
+    <name>Reverent Elusarca</name>
+    <name_jp>氷霊エルサルカ</name_jp>
+</translation>
+<translation>
+    <name>Tigrine Edge</name>
+    <name_jp>一虎刀</name_jp>
+</translation>
+<translation>
+    <name>Tigrine Edge+</name>
+    <name_jp>一虎刀改</name_jp>
+</translation>
+<translation>
+    <name>Tigrine Need</name>
+    <name_jp>一虎刀【餓刃】</name_jp>
+</translation>
+<translation>
+    <name>Tigerfang</name>
+    <name_jp>吼虎刀</name_jp>
+</translation>
+<translation>
+    <name>Ravenbite</name>
+    <name_jp>吼虎刀【餓咬】</name_jp>
+</translation>
+<translation>
+    <name>Rooksearer Long Sword</name>
+    <name_jp>爆炎の大刀</name_jp>
+</translation>
+<translation>
+    <name>Bazel Prozio Rooksearer</name>
+    <name_jp>爆炎刀バゼルプロジオ</name_jp>
+</translation>
+<translation>
+    <name>Anja Direfang I</name>
+    <name_jp>蛮顎竜ノ激牙Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Anja Direfang II</name>
+    <name_jp>蛮顎竜ノ激牙Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Fulgur I</name>
+    <name_jp>モルダ＝ジャナールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Fulgur II</name>
+    <name_jp>モルダ＝ジャナールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dipterus Varzea I</name>
+    <name_jp>ディプ＝バルゼアⅠ</name_jp>
+</translation>
+<translation>
+    <name>Dipterus Varzea II</name>
+    <name_jp>ディプ＝バルゼアⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Longblade I</name>
+    <name_jp>巨牛の大太刀Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Longblade II</name>
+    <name_jp>巨牛の大太刀Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Deathblade Vaal Grosser</name>
+    <name_jp>屍刀ヴァルグローサ +</name_jp>
+</translation>
+<translation>
+    <name>Acid Scimitar I</name>
+    <name_jp>ザルファシミターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acid Scimitar II</name>
+    <name_jp>ザルファシミターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Daito I</name>
+    <name_jp>カガチノダイトウⅠ</name_jp>
+</translation>
+<translation>
+    <name>Kadachi Daito II</name>
+    <name_jp>カガチノダイトウⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Crimson Viperfang I</name>
+    <name_jp>ベニカガチノマヒガⅠ</name_jp>
+</translation>
+<translation>
+    <name>Crimson Viperfang II</name>
+    <name_jp>ベニカガチノマヒガⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Legia Stealer+</name>
+    <name_jp>レイ＝スティーラー改</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Stealer</name>
+    <name_jp>ブリーナ＝スティーラー</name_jp>
+</translation>
+<translation>
+    <name>Apsara Glacia</name>
+    <name_jp>アプサラ＝グレイシア</name_jp>
+</translation>
+<translation>
+    <name>Abyss Piercer I</name>
+    <name_jp>ダークネスモルダーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Abyss Piercer II</name>
+    <name_jp>ダークネスモルダーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Scimitar I</name>
+    <name_jp>ディオスシミターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Brachydios Scimitar II</name>
+    <name_jp>ディオスシミターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldblade I</name>
+    <name_jp>龍封じの古刀Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldblade II</name>
+    <name_jp>龍封じの古刀Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Radiant Flow</name>
+    <name_jp>行雲流水－和光－</name_jp>
+</translation>
+<translation>
+    <name>Magdaros Volcansword</name>
+    <name_jp>熔山刀マグダファクル +</name_jp>
+</translation>
+<translation>
+    <name>Hydra Tornaria</name>
+    <name_jp>ヒドラ・トルナリア</name_jp>
+</translation>
+<translation>
+    <name>Black Tornaria</name>
+    <name_jp>ネロ・トルナリア</name_jp>
+</translation>
+<translation>
+    <name>Imperial Flickerflame</name>
+    <name_jp>炎帝王刀【蜃気楼】</name_jp>
+</translation>
+<translation>
+    <name>Hellish Slasher</name>
+    <name_jp>天上天下天地無双刀</name_jp>
+</translation>
+<translation>
+    <name>Consummate Katana</name>
+    <name_jp>業刀ダインスレイヴ</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Lash "Blaze"</name>
+    <name_jp>魂焔の龍刀・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Lash "Ruin"</name>
+    <name_jp>魂焔の龍刀・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Lash "Styx"</name>
+    <name_jp>魂焔の龍刀・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Chrome Machina I</name>
+    <name_jp>クロムデスマキナⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Machina II</name>
+    <name_jp>クロムデスマキナⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Machina III</name>
+    <name_jp>クロムデスマキナⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Switch Axe I</name>
+    <name_jp>黒羽の剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Blackwing Switch Axe II</name>
+    <name_jp>黒羽の剣斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Light</name>
+    <name_jp>断滅の一閃【破】</name_jp>
+</translation>
+<translation>
+    <name>Legia Frostreaver+</name>
+    <name_jp>レイ＝ホロウコラム改</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Frostreaver</name>
+    <name_jp>ブリーナ＝ホロウコラム</name_jp>
+</translation>
+<translation>
+    <name>Hector Glacia</name>
+    <name_jp>ヘクター＝グレイシア</name_jp>
+</translation>
+<translation>
+    <name>Lightning Chopper IV</name>
+    <name_jp>ライトニングアクセルⅣ</name_jp>
+</translation>
+<translation>
+    <name>Thundercleave I</name>
+    <name_jp>迅雷の剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Thundercleave II</name>
+    <name_jp>迅雷の剣斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Axe</name>
+    <name_jp>ヒドゥンアックス</name_jp>
+</translation>
+<translation>
+    <name>Hidden Axe+</name>
+    <name_jp>ヒドゥンアックス改</name_jp>
+</translation>
+<translation>
+    <name>Night's Crescent</name>
+    <name_jp>闇夜剣斧【弦月】</name_jp>
+</translation>
+<translation>
+    <name>Datura Garden I</name>
+    <name_jp>ダチュラガーデンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Garden II</name>
+    <name_jp>ダチュラガーデンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Deep Lagoon I</name>
+    <name_jp>ルブラルラグーンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Deep Lagoon II</name>
+    <name_jp>ルブラルラグーンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Gigan Motor I</name>
+    <name_jp>重機ギガントモーターⅠ</name_jp>
+</translation>
+<translation>
+    <name>Gigan Motor II</name>
+    <name_jp>重機ギガントモーターⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Raider I</name>
+    <name_jp>レックスライダーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Rex Raider II</name>
+    <name_jp>レックスライダーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Accursed Raider</name>
+    <name_jp>カーサスレイダー +</name_jp>
+</translation>
+<translation>
+    <name>Saber's Bite I</name>
+    <name_jp>牙竜剣斧【喰裂】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Saber's Bite II</name>
+    <name_jp>牙竜剣斧【喰裂】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Amber Slash</name>
+    <name_jp>アンバースラッシュ</name_jp>
+</translation>
+<translation>
+    <name>Amber Slash+</name>
+    <name_jp>アンバースラッシュ改</name_jp>
+</translation>
+<translation>
+    <name>Amber Hoarfrost</name>
+    <name_jp>ゴアフロストアンバー</name_jp>
+</translation>
+<translation>
+    <name>Bazelheart</name>
+    <name_jp>バゼルハート +</name_jp>
+</translation>
+<translation>
+    <name>Rathbringer Axe III</name>
+    <name_jp>火竜斧レウスギアⅢ</name_jp>
+</translation>
+<translation>
+    <name>Azure Rathbringer</name>
+    <name_jp>蒼炎斧ブルーギア</name_jp>
+</translation>
+<translation>
+    <name>Silver Rathbringer</name>
+    <name_jp>煌竜斧シルバーギア +</name_jp>
+</translation>
+<translation>
+    <name>Dragonmaiden Axe</name>
+    <name_jp>竜姫の剣斧</name_jp>
+</translation>
+<translation>
+    <name>Dragonmaiden Axe+</name>
+    <name_jp>竜姫の剣斧改</name_jp>
+</translation>
+<translation>
+    <name>Golden Crescent</name>
+    <name_jp>煌戦の金剣斧</name_jp>
+</translation>
+<translation>
+    <name>Mighty Gear I</name>
+    <name_jp>マイティ＝ギアⅠ</name_jp>
+</translation>
+<translation>
+    <name>Mighty Gear II</name>
+    <name_jp>マイティ＝ギアⅡ</name_jp>
+</translation>
+<translation>
+    <name>Mighty Gear III</name>
+    <name_jp>マイティ＝ギアⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icerood</name>
+    <name_jp>アイスルード</name_jp>
+</translation>
+<translation>
+    <name>Wicked Niddoq</name>
+    <name_jp>氷魔ニーズウォック</name_jp>
+</translation>
+<translation>
+    <name>Deathedge Vaal Demios</name>
+    <name_jp>屍剣斧ヴァルデミオス +</name_jp>
+</translation>
+<translation>
+    <name>Acid Smasher I</name>
+    <name_jp>ザルファスマッシャーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acid Smasher II</name>
+    <name_jp>ザルファスマッシャーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Jyura Cataclysm I</name>
+    <name_jp>シュラムスヴァーシュⅠ</name_jp>
+</translation>
+<translation>
+    <name>Jyura Cataclysm II</name>
+    <name_jp>シュラムスヴァーシュⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Halberd I</name>
+    <name_jp>巨牛の大剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Mammoth Halberd II</name>
+    <name_jp>巨牛の大剣斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Mechanical Lumu I</name>
+    <name_jp>カラクルウルムーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Mechanical Lumu II</name>
+    <name_jp>カラクルウルムーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Smasher I</name>
+    <name_jp>ニュクススマッシャーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Smasher II</name>
+    <name_jp>ニュクススマッシャーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Smasher I</name>
+    <name_jp>ディノスマッシャーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Smasher II</name>
+    <name_jp>ディノスマッシャーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Barroth Dozer I</name>
+    <name_jp>ボルボドーザーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Dozer II</name>
+    <name_jp>ボルボドーザーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Smasher I</name>
+    <name_jp>ディオススマッシャーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Dios Smasher II</name>
+    <name_jp>ディオススマッシャーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Axe of Demons+</name>
+    <name_jp>デモン改</name_jp>
+</translation>
+<translation>
+    <name>Axe of Hades</name>
+    <name_jp>ハデス</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Flammenbeil+</name>
+    <name_jp>蛮顎剣斧フラムシスカ改</name_jp>
+</translation>
+<translation>
+    <name>Lohenbeil</name>
+    <name_jp>蛮炎剣斧ロギンシスカ</name_jp>
+</translation>
+<translation>
+    <name>Donnerbeil</name>
+    <name_jp>雷顎剣斧ドネルシスカ</name_jp>
+</translation>
+<translation>
+    <name>Donnerbeil+</name>
+    <name_jp>雷顎剣斧ドネルシスカ改</name_jp>
+</translation>
+<translation>
+    <name>Fulguration's Bite</name>
+    <name_jp>蛮雷剣斧カーリシスカ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Axe I</name>
+    <name_jp>龍封じの剣斧Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Axe II</name>
+    <name_jp>龍封じの剣斧Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Evanescent Glow</name>
+    <name_jp>諸行無常－灯籠－</name_jp>
+</translation>
+<translation>
+    <name>Archbeast Kirin</name>
+    <name_jp>雷公宝斧キリン</name_jp>
+</translation>
+<translation>
+    <name>Hydra Strobila</name>
+    <name_jp>ヒドラ・ストロビラ</name_jp>
+</translation>
+<translation>
+    <name>Black Strobila</name>
+    <name_jp>ネロ・ストロビラ</name_jp>
+</translation>
+<translation>
+    <name>Teostra's Hellebarde</name>
+    <name_jp>テスカ・デル・バルテ</name_jp>
+</translation>
+<translation>
+    <name>Saligia Vileaxe</name>
+    <name_jp>業斧グラバリタ</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Scourge "Blaze"</name>
+    <name_jp>魂焔の剣斧・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Scourge "Ruin"</name>
+    <name_jp>魂焔の剣斧・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Scourge "Styx"</name>
+    <name_jp>魂焔の剣斧・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Chrome Knight Sword I</name>
+    <name_jp>クロムナイトソードⅠ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Knight Sword II</name>
+    <name_jp>クロムナイトソードⅡ</name_jp>
+</translation>
+<translation>
+    <name>Chrome Knight Sword III</name>
+    <name_jp>クロムナイトソードⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Corona+</name>
+    <name_jp>コロナ改</name_jp>
+</translation>
+<translation>
+    <name>Blue Corona</name>
+    <name_jp>ブルーコロナ</name_jp>
+</translation>
+<translation>
+    <name>Shining Wyvern Blade</name>
+    <name_jp>煌竜剣</name_jp>
+</translation>
+<translation>
+    <name>Legacy Bang</name>
+    <name_jp>レガシーバング</name_jp>
+</translation>
+<translation>
+    <name>Legendary Bang</name>
+    <name_jp>レジェンドバング</name_jp>
+</translation>
+<translation>
+    <name>Rogue Wave IV</name>
+    <name_jp>フラッドウェイブⅣ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Blossom I</name>
+    <name_jp>ラグーナブロッサムⅠ</name_jp>
+</translation>
+<translation>
+    <name>Laguna Blossom II</name>
+    <name_jp>ラグーナブロッサムⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Icicle Spike</name>
+    <name_jp>アイシクルスパイク</name_jp>
+</translation>
+<translation>
+    <name>Icicle Spike+</name>
+    <name_jp>アイシクルスパイク改</name_jp>
+</translation>
+<translation>
+    <name>Nardebosche</name>
+    <name_jp>ナールドボッシェ</name_jp>
+</translation>
+<translation>
+    <name>Legia Rimespire+</name>
+    <name_jp>レイ＝トリアングラー改</name_jp>
+</translation>
+<translation>
+    <name>Hoarcry Rimespire</name>
+    <name_jp>ブリーナ＝トリアングラー</name_jp>
+</translation>
+<translation>
+    <name>Nephilim Glacia</name>
+    <name_jp>ネフ＝グレイシア</name_jp>
+</translation>
+<translation>
+    <name>Royal Rose+</name>
+    <name_jp>ロイヤルローズ改</name_jp>
+</translation>
+<translation>
+    <name>Rose Highness</name>
+    <name_jp>ハイネスローズ</name_jp>
+</translation>
+<translation>
+    <name>Lunatic Rose</name>
+    <name_jp>ルナティックローズ</name_jp>
+</translation>
+<translation>
+    <name>Lumu Nightmare I</name>
+    <name_jp>ウルムーアーミンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Lumu Nightmare II</name>
+    <name_jp>ウルムーアーミンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Nyx Tabar I</name>
+    <name_jp>ニュクスタバールⅠ</name_jp>
+</translation>
+<translation>
+    <name>Nyx Tabar II</name>
+    <name_jp>ニュクスタバールⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Datura Florescence I</name>
+    <name_jp>ダチュラフルブルームⅠ</name_jp>
+</translation>
+<translation>
+    <name>Datura Florescence II</name>
+    <name_jp>ダチュラフルブルームⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Dios Edge</name>
+    <name_jp>ディオスエッジ</name_jp>
+</translation>
+<translation>
+    <name>Booming Barrage</name>
+    <name_jp>爆剣サーモバレッジ</name_jp>
+</translation>
+<translation>
+    <name>Naaga Seax I</name>
+    <name_jp>ナーガ＝サクスⅠ</name_jp>
+</translation>
+<translation>
+    <name>Naaga Seax II</name>
+    <name_jp>ナーガ＝サクスⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Hidden Edge</name>
+    <name_jp>ヒドゥンエッジ</name_jp>
+</translation>
+<translation>
+    <name>Hidden Edge+</name>
+    <name_jp>ヒドゥンエッジ改</name_jp>
+</translation>
+<translation>
+    <name>Flash in the Night</name>
+    <name_jp>闇夜剣【昏冥】</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Os I</name>
+    <name_jp>ラグドスアッシュⅠ</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Os II</name>
+    <name_jp>ラグドスアッシュⅡ</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Os III</name>
+    <name_jp>ラグドスアッシュⅢ +</name_jp>
+</translation>
+<translation>
+    <name>Icegale</name>
+    <name_jp>アイスブリーゼ</name_jp>
+</translation>
+<translation>
+    <name>Noble Ana Palas</name>
+    <name_jp>氷帝アンナパレス</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Osseus I</name>
+    <name_jp>ラグドスバルキンⅠ</name_jp>
+</translation>
+<translation>
+    <name>Radobaan Osseus II</name>
+    <name_jp>ラグドスバルキンⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Acid Razor I</name>
+    <name_jp>ザルファバトラーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Acid Razor II</name>
+    <name_jp>ザルファバトラーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Saber's Gullet I</name>
+    <name_jp>牙竜剣【悪喰】Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Saber's Gullet II</name>
+    <name_jp>牙竜剣【悪喰】Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Rex Talon</name>
+    <name_jp>レックスクロウ</name_jp>
+</translation>
+<translation>
+    <name>Rex Talon+</name>
+    <name_jp>レックスクロウ改</name_jp>
+</translation>
+<translation>
+    <name>Tigrex Sword</name>
+    <name_jp>轟剣【虎眼】</name_jp>
+</translation>
+<translation>
+    <name>Accursed Claw</name>
+    <name_jp>カーサスクロウ</name_jp>
+</translation>
+<translation>
+    <name>Stonebite</name>
+    <name_jp>吼剣【地咬】</name_jp>
+</translation>
+<translation>
+    <name>Lightning Nemesis IV</name>
+    <name_jp>ライトニングバトラーⅣ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Firebolt</name>
+    <name_jp>王剣シツライ</name_jp>
+</translation>
+<translation>
+    <name>Usurper's Firebolt+</name>
+    <name_jp>王剣シツライ改</name_jp>
+</translation>
+<translation>
+    <name>Despot's Crookbolt</name>
+    <name_jp>王牙剣【折雷】</name_jp>
+</translation>
+<translation>
+    <name>Barroth Slicer I</name>
+    <name_jp>ボルボスクランブルⅠ</name_jp>
+</translation>
+<translation>
+    <name>Barroth Slicer II</name>
+    <name_jp>ボルボスクランブルⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Razor I</name>
+    <name_jp>ディノバトラーⅠ</name_jp>
+</translation>
+<translation>
+    <name>Glavenus Razor II</name>
+    <name_jp>ディノバトラーⅡ +</name_jp>
+</translation>
+<translation>
+    <name>Gnashing Flammensucher+</name>
+    <name_jp>蛮顎剣フラムシーカ改</name_jp>
+</translation>
+<translation>
+    <name>Lohensieger</name>
+    <name_jp>蛮炎剣ロギンシーカ</name_jp>
+</translation>
+<translation>
+    <name>Donnersieger</name>
+    <name_jp>雷顎剣ドネルシーカ</name_jp>
+</translation>
+<translation>
+    <name>Donnersieger+</name>
+    <name_jp>雷顎剣ドネルシーカ改</name_jp>
+</translation>
+<translation>
+    <name>Fulguration's Talon</name>
+    <name_jp>蛮雷剣カーリシーカ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldsword I</name>
+    <name_jp>龍封じの古剣Ⅰ</name_jp>
+</translation>
+<translation>
+    <name>Dragonseal Aldsword II</name>
+    <name_jp>龍封じの古剣Ⅱ +</name_jp>
+</translation>
+<translation>
+    <name>Manifested Lotus</name>
+    <name_jp>妙法応身ー蓮華ー</name_jp>
+</translation>
+<translation>
+    <name>Ephemeral Fulminator</name>
+    <name_jp>幻雷刃 +</name_jp>
+</translation>
+<translation>
+    <name>Hydros Discus</name>
+    <name_jp>ヒュドロスディスク +</name_jp>
+</translation>
+<translation>
+    <name>Teostra's Medal</name>
+    <name_jp>テスカ・デル・メダリ</name_jp>
+</translation>
+<translation>
+    <name>Fate's Shear</name>
+    <name_jp>業鉈アングラム</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Barb "Blaze"</name>
+    <name_jp>魂焔の龍剣・炎妃</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Barb "Ruin"</name>
+    <name_jp>魂焔の龍剣・滅尽</name_jp>
+</translation>
+<translation>
+    <name>Soulfire Barb "Styx"</name>
+    <name_jp>魂焔の龍剣・冥灯</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Eradication</name>
+    <name_jp>焼滅の種火【禍】</name_jp>
+</translation>
+<translation>
+    <name>Ruinous Eradication</name>
+    <name_jp>討滅の尖兵【狂】</name_jp>
+</translation>
+
 </data>
