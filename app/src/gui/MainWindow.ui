@@ -54,43 +54,57 @@
           <item row="1" column="1">
            <widget class="QComboBox" name="targetCb"/>
           </item>
-          <item row="2" column="0">
+          <item row="3" column="0">
            <widget class="QLabel" name="label_3">
             <property name="text">
              <string>Level 3 slots</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
+          <item row="4" column="0">
            <widget class="QLabel" name="label_4">
             <property name="text">
              <string>Level 2 slots</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>Level 1 slots</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
+          <item row="3" column="1">
            <widget class="QSpinBox" name="level3Slots">
             <property name="minimum">
              <number>-99</number>
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
+          <item row="4" column="1">
            <widget class="QSpinBox" name="level2Slots">
             <property name="minimum">
              <number>-99</number>
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
+          <item row="5" column="1">
            <widget class="QSpinBox" name="level1Slots">
+            <property name="minimum">
+             <number>-99</number>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Level 1 slots</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Level 4 slots</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSpinBox" name="level4Slots">
             <property name="minimum">
              <number>-99</number>
             </property>
@@ -171,6 +185,13 @@
            </spacer>
           </item>
           <item>
+           <widget class="QCheckBox" name="geneticMode">
+            <property name="text">
+             <string>Genetic mode</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QCheckBox" name="ignoreAugmentations">
             <property name="text">
              <string>Ignore augmentations</string>
@@ -232,7 +253,7 @@
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

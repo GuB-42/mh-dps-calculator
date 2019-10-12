@@ -8,6 +8,7 @@
 #include "ResultTableModel.h"
 #include "BuffListModel.h"
 #include "BuffGroupListModel.h"
+#include "Computer.h"
 #include "GeneticComputer.h"
 #include "ComputeDataDialog.h"
 #include "DetailsDialog.h"
@@ -25,7 +26,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	buffListModel(new BuffListModel(this)),
 	buffGroupListModel(new BuffGroupListModel(this)),
 	dataLanguage(LANG_EN),
-	computer(new GeneticComputer(this))
+	computer(new Computer(this)),
+	geneticComputer(new GeneticComputer(this))
 {
 	ui->setupUi(this);
 
@@ -105,6 +107,10 @@ MainWindow::MainWindow(QWidget *parent) :
 	        this, SLOT(calculationProgress(int, int, int)));
 	connect(computer, SIGNAL(finished(const QVector<BuildWithDps *> &)),
 	        this, SLOT(calculationFinished(const QVector<BuildWithDps *> &)));
+	connect(geneticComputer, SIGNAL(progress(int, int, int)),
+	        this, SLOT(calculationProgress(int, int, int)));
+	connect(geneticComputer, SIGNAL(finished(const QVector<BuildWithDps *> &)),
+	        this, SLOT(calculationFinished(const QVector<BuildWithDps *> &)));
 }
 
 MainWindow::~MainWindow() {
@@ -177,6 +183,7 @@ const BuffGroup *MainWindow::getBuffGroup() const {
 
 QVector<int> MainWindow::getDecorationSlots() const {
 	QVector<int> ret;
+	for (int i = 0; i < ui->level4Slots->value(); ++i) ret.append(4);
 	for (int i = 0; i < ui->level3Slots->value(); ++i) ret.append(3);
 	for (int i = 0; i < ui->level2Slots->value(); ++i) ret.append(2);
 	for (int i = 0; i < ui->level1Slots->value(); ++i) ret.append(1);
@@ -185,6 +192,7 @@ QVector<int> MainWindow::getDecorationSlots() const {
 
 QVector<int> MainWindow::getUsedSlots() const {
 	QVector<int> ret;
+	for (int i = 0; i < -ui->level4Slots->value(); ++i) ret.append(4);
 	for (int i = 0; i < -ui->level3Slots->value(); ++i) ret.append(3);
 	for (int i = 0; i < -ui->level2Slots->value(); ++i) ret.append(2);
 	for (int i = 0; i < -ui->level1Slots->value(); ++i) ret.append(1);
@@ -301,21 +309,36 @@ void MainWindow::buffGroupChanged(int new_idx) {
 }
 
 void MainWindow::calculate() {
-	GeneticComputer::Parameters params;
-
 	if (mainData && getProfile() && getTarget()) {
-		params.profile = getProfile();
-		params.target = getTarget();
-		params.weapons = mainData->weapons;
-		params.items = mainData->items;
-		params.buffLevels = buffListModel->getBuffLevels();
-		params.decorationSlots = getDecorationSlots();
-		params.usedSlots = getUsedSlots();
-		params.ignoreAugmentations = ui->ignoreAugmentations->isChecked();
-		params.ignoreWeaponSlots = ui->ignoreWeaponSlots->isChecked();
-		params.finalOnly = ui->finalOnly->isChecked();
-		tableModel->clear();
-		computer->compute(params);
+		if (ui->geneticMode->isChecked()) {
+			GeneticComputer::Parameters params;
+			params.profile = getProfile();
+			params.target = getTarget();
+			params.weapons = mainData->weapons;
+			params.items = mainData->items;
+			params.buffLevels = buffListModel->getBuffLevels();
+			params.decorationSlots = getDecorationSlots();
+			params.usedSlots = getUsedSlots();
+			params.ignoreAugmentations = ui->ignoreAugmentations->isChecked();
+			params.ignoreWeaponSlots = ui->ignoreWeaponSlots->isChecked();
+			params.finalOnly = ui->finalOnly->isChecked();
+			tableModel->clear();
+			geneticComputer->compute(params);
+		} else {
+			Computer::Parameters params;
+			params.profile = getProfile();
+			params.target = getTarget();
+			params.weapons = mainData->weapons;
+			params.items = mainData->items;
+			params.buffLevels = buffListModel->getBuffLevels();
+			params.decorationSlots = getDecorationSlots();
+			params.usedSlots = getUsedSlots();
+			params.ignoreAugmentations = ui->ignoreAugmentations->isChecked();
+			params.ignoreWeaponSlots = ui->ignoreWeaponSlots->isChecked();
+			params.finalOnly = ui->finalOnly->isChecked();
+			tableModel->clear();
+			computer->compute(params);
+		}
 	}
 }
 

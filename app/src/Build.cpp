@@ -183,7 +183,6 @@ void Build::addItem(const Item *item) {
 
 void Build::addWeapon(const Weapon *weapon) {
 	this->weapon = weapon;
-	foreach(int s, weapon->decorationSlots) addSlot(s);
 	weaponAugmentations += weapon->augmentations;
 	foreach(Song *song, weapon->songs) {
 		foreach(const BuffRef &buff_ref, song->buffRefs) {

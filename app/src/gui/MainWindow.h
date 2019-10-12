@@ -10,6 +10,7 @@ class QProgressBar;
 class ResultTableModel;
 class BuffListModel;
 class BuffGroupListModel;
+class Computer;
 class GeneticComputer;
 struct MainData;
 struct Profile;
@@ -73,7 +74,8 @@ private:
 	BuffGroupListModel *buffGroupListModel;
 	Language dataLanguage;
 
-	GeneticComputer *computer;
+	Computer *computer;
+	GeneticComputer *geneticComputer;
 };
 
 #endif

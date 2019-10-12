@@ -98,10 +98,9 @@ static void parse_categories(QXmlStreamReader *xml, QVector<QString> *pout)
 }
 
 bool Item::readXmlElement(QXmlStreamReader *xml) {
+	if (NamedObject::readXmlElement(xml)) return true;
 	QStringRef tag_name = xml->name();
-	if (NamedObject::readXmlElement(xml)) {
-		; // name
-	} else if (tag_name == "type") {
+	if (tag_name == "type") {
 		type = xml->readElementText();
 	} else if (tag_name == "slots") {
 		parse_slots(xml, &decorationSlots);
