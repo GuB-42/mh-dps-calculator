@@ -4513,6 +4513,51 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name_jp>雷弓【獣王】</name_jp>
+        <inflated_attack>348</inflated_attack>
+        <attack>290</attack>
+        <affinity>-10</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <ammos>
+            <ammo_ref id="coating_close_range" />
+            <ammo_ref id="coating_power" />
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="bow" />
+        <name_jp>雷弓【百獣王】</name_jp>
+        <inflated_attack>372</inflated_attack>
+        <attack>310</attack>
+        <affinity>-10</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <ammos>
+            <ammo_ref id="coating_close_range" />
+            <ammo_ref id="coating_power" />
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="bow" />
         <name>Taroth Arrow "Fire"</name>
         <name_ar>سهم تاروث "نار"</name_ar>
         <name_de>Taroth-Bogen "Feuer"</name_de>
@@ -10132,6 +10177,67 @@
             <slot>3</slot>
         </slots>
         <rare>12</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="charge_blade" />
+        <name_jp>金剛盾斧</name_jp>
+        <inflated_attack>1044</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>60</inflated_thunder>
+            <thunder>6</thunder>
+        </element>
+        <phial>
+            <impact />
+        </phial>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="charge_blade" />
+        <name_jp>金剛盾斧イカヅチ</name_jp>
+        <inflated_attack>1116</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <phial>
+            <impact />
+        </phial>
+        <sharpness>
+            <red>90</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>70</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -16121,6 +16227,61 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name_jp>闘鬼【高丸】</name_jp>
+        <inflated_attack>406</inflated_attack>
+        <attack>290</attack>
+        <affinity>-10</affinity>
+        <element>
+            <inflated_thunder>60</inflated_thunder>
+            <thunder>6</thunder>
+        </element>
+        <sharpness>
+            <red>90</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>70</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="dual_blades" />
+        <name_jp>闘神鬼【大嶽丸】</name_jp>
+        <inflated_attack>434</inflated_attack>
+        <attack>310</attack>
+        <affinity>-10</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>80</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>80</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="dual_blades" />
         <name>Taroth Daggers "Rage"</name>
         <name_ar>خناجر تاروث "أنجا"</name_ar>
         <name_de>Taroth-Dolche "Anja"</name_de>
@@ -22053,6 +22214,61 @@
             <slot>3</slot>
         </slots>
         <rare>12</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="great_sword" />
+        <name_jp>鬼金棒</name_jp>
+        <inflated_attack>1392</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>150</inflated_thunder>
+            <thunder>15</thunder>
+        </element>
+        <sharpness>
+            <red>110</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="great_sword" />
+        <name_jp>大鬼金棒</name_jp>
+        <inflated_attack>1488</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>180</inflated_thunder>
+            <thunder>18</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -28078,6 +28294,67 @@
             <slot>3</slot>
         </slots>
         <rare>12</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="gunlance" />
+        <name_jp>鬼銃槍</name_jp>
+        <inflated_attack>644</inflated_attack>
+        <attack>280</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <ammos>
+            <ammo_ref id="shell_wide_5" />
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="gunlance" />
+        <name_jp>雷鬼銃槍ドラガン</name_jp>
+        <inflated_attack>656</inflated_attack>
+        <attack>285.217391304348</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <sharpness>
+            <red>90</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>70</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <ammos>
+            <ammo_ref id="shell_wide_6" />
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -34158,6 +34435,61 @@
             <plus>50</plus>
         </sharpness>
         <rare>11</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="hammer" />
+        <name_jp>怒髪鎚</name_jp>
+        <inflated_attack>1508</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>110</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="hammer" />
+        <name_jp>怒髪豪ダイラージャン</name_jp>
+        <inflated_attack>1612</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -45743,6 +46075,135 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name_jp>金獅子砲</name_jp>
+        <inflated_attack>465</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <ammos>
+            <ammo_ref id="ammo_normal1">
+                <capacity>5</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_normal3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread1">
+                <capacity>5</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky1">
+                <capacity>3</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_cluster1">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_cluster3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_paralysis1">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_paralysis2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_exhaust2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_thunder">
+                <capacity>4</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_wyvern">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_demon">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_armor">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_tranq">
+                <capacity>3</capacity>
+            </ammo_ref>
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="heavy_bowgun" />
+        <name_jp>金獅子砲【重雷】</name_jp>
+        <inflated_attack>495</inflated_attack>
+        <attack>330</attack>
+        <affinity>-15</affinity>
+        <ammos>
+            <ammo_ref id="ammo_normal1">
+                <capacity>5</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_normal3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread1">
+                <capacity>5</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky1">
+                <capacity>3</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_cluster1">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_cluster3">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_paralysis1">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_paralysis2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_exhaust2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_thunder">
+                <capacity>4</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_wyvern">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_demon">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_armor">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_tranq">
+                <capacity>3</capacity>
+            </ammo_ref>
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="heavy_bowgun" />
         <name>Taroth Assault "Glutton"</name>
         <name_ar>بطش تاروث "جاغراس"</name_ar>
         <name_de>Taroth-Überfall "Jagras"</name_de>
@@ -52766,6 +53227,71 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name_jp>電電太鼓</name_jp>
+        <inflated_attack>1218</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>110</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <notes>
+            <purple />
+            <blue />
+            <orange />
+        </notes>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="hunting_horn" />
+        <name_jp>電電太鼓【雷轟】</name_jp>
+        <inflated_attack>1302</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <notes>
+            <purple />
+            <blue />
+            <orange />
+        </notes>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="hunting_horn" />
         <name>Taroth Pipe "Water"</name>
         <name_ar>ناي تاروث "الماء"</name_ar>
         <name_de>Taroth-Flöte "Wasser"</name_de>
@@ -58514,6 +59040,61 @@
         </slots>
         <rare>8</rare>
         <categories>
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="insect_glaive" />
+        <name_jp>金砕棍棒</name_jp>
+        <inflated_attack>899</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>60</inflated_thunder>
+            <thunder>6</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="insect_glaive" />
+        <name_jp>金砕棍ゴーデンライ</name_jp>
+        <inflated_attack>961</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>90</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>70</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
             <category_ref id="upgraded" />
         </categories>
     </weapon>
@@ -64345,6 +64926,61 @@
             <plus>50</plus>
         </sharpness>
         <rare>11</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="lance" />
+        <name_jp>鬼槍ラージャン</name_jp>
+        <inflated_attack>667</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>110</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="lance" />
+        <name_jp>大鬼槍ラージャン</name_jp>
+        <inflated_attack>713</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -76224,6 +76860,123 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name_jp>ラージャンデグ</name_jp>
+        <inflated_attack>377</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <ammos>
+            <ammo_ref id="ammo_normal1">
+                <capacity>6</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_normal3">
+                <capacity>3</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread1">
+                <capacity>4</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread3">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky3">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_paralysis2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_exhaust1">
+                <capacity>5</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_exhaust2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_thunder">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_demon">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_armor">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_tranq">
+                <capacity>2</capacity>
+            </ammo_ref>
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="light_bowgun" />
+        <name_jp>金獅子筒【万雷】</name_jp>
+        <inflated_attack>403</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <ammos>
+            <ammo_ref id="ammo_normal1">
+                <capacity>6</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_normal3">
+                <capacity>3</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread1">
+                <capacity>4</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_spread3">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_sticky3">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_paralysis2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_exhaust1">
+                <capacity>5</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_exhaust2">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_thunder">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_demon">
+                <capacity>2</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_armor">
+                <capacity>1</capacity>
+            </ammo_ref>
+            <ammo_ref id="ammo_tranq">
+                <capacity>2</capacity>
+            </ammo_ref>
+        </ammos>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="light_bowgun" />
         <name>Taroth Blitz "Shot"</name>
         <name_ar>غارة تاروث "الطلقات"</name_ar>
         <name_de>Taroth-Blitz "Schuss"</name_de>
@@ -82279,6 +83032,61 @@
             <slot>3</slot>
         </slots>
         <rare>12</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="long_sword" />
+        <name_jp>鬼薙刀</name_jp>
+        <inflated_attack>957</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>110</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="long_sword" />
+        <name_jp>大鬼薙刀</name_jp>
+        <inflated_attack>1023</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -88417,6 +89225,67 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="switch_axe" />
+        <name_jp>金剛角斧</name_jp>
+        <inflated_attack>1015</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <phial>
+            <power />
+        </phial>
+        <sharpness>
+            <red>110</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="switch_axe" />
+        <name_jp>金剛角斧カンナリ</name_jp>
+        <inflated_attack>1085</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>120</inflated_thunder>
+            <thunder>12</thunder>
+        </element>
+        <phial>
+            <power />
+        </phial>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="switch_axe" />
         <name>Taroth Axe "Horn"</name>
         <name_ar>فأس تاروث "ديابلوس"</name_ar>
         <name_de>Taroth-Axt "Diablos"</name_de>
@@ -94546,6 +95415,61 @@
         </slots>
         <rare>8</rare>
         <categories>
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="sword_and_shield" />
+        <name_jp>金獣棍</name_jp>
+        <inflated_attack>406</inflated_attack>
+        <attack>290</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>60</inflated_thunder>
+            <thunder>6</thunder>
+        </element>
+        <sharpness>
+            <red>100</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>60</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="iceborne" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="sword_and_shield" />
+        <name_jp>金獣棍【禁忌】</name_jp>
+        <inflated_attack>434</inflated_attack>
+        <attack>310</attack>
+        <affinity>-15</affinity>
+        <element>
+            <inflated_thunder>90</inflated_thunder>
+            <thunder>9</thunder>
+        </element>
+        <sharpness>
+            <red>90</red>
+            <orange>100</orange>
+            <yellow>40</yellow>
+            <green>50</green>
+            <blue>70</blue>
+            <white>50</white>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>4</slot>
+        </slots>
+        <categories>
+            <category_ref id="iceborne" />
             <category_ref id="upgraded" />
         </categories>
     </weapon>
