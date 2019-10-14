@@ -36,16 +36,38 @@ for my $file (@ARGV) {
 	my $all_data_text;
 	{ local $/; $all_data_text = <$fh>; }
 	my $jd = decode_json($all_data_text);
-	for my $k (keys %{$jd}) {
+	for my $k (sort keys %{$jd}) {
 		$json_data->{$k} ||= {};
-		for my $sk (keys %{$jd->{$k}}) {
-			$json_data->{$k}{$sk} = $jd->{$k}{$sk};
+		for my $sk (sort keys %{$jd->{$k}}) {
+			my %main_kmap = (
+				"2" => "WeaponType",
+				"3" => "WeaponRaw",
+				"4" => "WeaponElement",
+				"5" => "WeaponElemental",
+				"6" => "WeaponElementalHidden",
+				"7" => "WeaponAffinity",
+				"8" => "WeaponDefenseBonus",
+				"9" => "WeaponRarity",
+				"10" => "WeaponSlots",
+				"11" => "Sharpness",
+				"12" => "Handycraftneeded",
+				"SpecMechanics" => "Special"
+			);
+			if ($jd->{$k}{2} || $jd->{$k}{"WeaponType"}) {
+				if ($main_kmap{$sk}) {
+					$json_data->{$k}{$main_kmap{$sk}} = $jd->{$k}{$sk};
+				} else {
+					$json_data->{$k}{$sk} = $jd->{$k}{$sk};
+				}
+			} else {
+				$json_data->{$k}{"x_$sk"} = $jd->{$k}{$sk};
+			}
 		}
 	}
 #	print $all_data_text;
 }
 
-#print Dumper($json_data);
+# print Dumper($json_data);
 
 my $io = IO::Handle->new();
 $io->fdopen(fileno(STDOUT), ">");
@@ -55,39 +77,38 @@ $xml_writer->startTag("data");
 
 for my $weap_name (keys %{$json_data}) {
 	my $weap = $json_data->{$weap_name};
-	next unless $weap->{2};
-	#next unless $weap->{"Handycraftneeded"};
+	next unless $weap->{"WeaponType"};
 
 	$xml_writer->startTag("weapon");
-	my $weap_type = lc($weap->{2});
+	my $weap_type = lc($weap->{"WeaponType"});
 	$weap_type =~ s/\s+/_/g;
 	$xml_writer->emptyTag("weapon_type_ref", "id" => $weap_type);
 
 	$weap_name =~ s/'(\w+)'/"$1"/;
 	$xml_writer->dataElement("name", $weap_name);
 
-	$xml_writer->dataElement("inflated_attack", $weap->{3});
-	$xml_writer->dataElement("attack", $weap->{3} / $inflate_by_type{$weap_type});
-	$xml_writer->dataElement("affinity", $weap->{7}) if ($weap->{7});
-	$xml_writer->dataElement("defense", $weap->{8}) if ($weap->{8});
-	$xml_writer->dataElement("awakened", "true") if ($weap->{6});
+	$xml_writer->dataElement("inflated_attack", $weap->{"WeaponRaw"});
+	$xml_writer->dataElement("attack", $weap->{"WeaponRaw"} / $inflate_by_type{$weap_type});
+	$xml_writer->dataElement("affinity", $weap->{"WeaponAffinity"}) if ($weap->{"WeaponAffinity"});
+	$xml_writer->dataElement("defense", $weap->{"WeaponDefenseBonus"}) if ($weap->{"WeaponDefenseBonus"});
+	$xml_writer->dataElement("awakened", "true") if ($weap->{"WeaponElementalHidden"});
 
 	my $has_elements = 0;
-	for my $elt (split /\+/, lc($weap->{4})) {
+	for my $elt (split /\+/, lc($weap->{"WeaponElement"})) {
 		if ($elt && $elt ne "none") {
 			unless ($has_elements) {
 				$xml_writer->startTag("element");
 				$has_elements = 1;
 			}
-			$xml_writer->dataElement("inflated_$elt", $weap->{5});
-			$xml_writer->dataElement("$elt", $weap->{5} / 10);
+			$xml_writer->dataElement("inflated_$elt", $weap->{"WeaponElemental"});
+			$xml_writer->dataElement("$elt", $weap->{"WeaponElemental"} / 10);
 		}
 	}
 	$xml_writer->endTag() if ($has_elements);
 
-	if ($weap->{"Handycraftneeded"}) {
-		my @sh = (split /,/, $weap->{"Sharpness"});
-		my @sh_plus = (split /,/, $weap->{"Handycraftneeded"});
+	if ($weap->{"x_Handycraftneeded"}) {
+		my @sh = (split /,/, $weap->{"x_Sharpness"});
+		my @sh_plus = (split /,/, $weap->{"x_Handycraftneeded"});
 		shift @sh;
 		shift @sh_plus;
 		$xml_writer->startTag("sharpness");
@@ -107,7 +128,7 @@ for my $weap_name (keys %{$json_data}) {
 	}
 
 	my $has_slots = 0;
-	for my $slot_level (split //, $weap->{10}) {
+	for my $slot_level (split //, $weap->{"WeaponSlots"}) {
 		next unless ($slot_level);
 		unless ($has_slots) {
 			$xml_writer->startTag("slots");
@@ -117,7 +138,7 @@ for my $weap_name (keys %{$json_data}) {
 	}
 	$xml_writer->endTag() if ($has_slots);
 
-	my $rare = $weap->{9};
+	my $rare = $weap->{"WeaponRarity"};
 	$rare =~ s/\|.*//;
 	$xml_writer->dataElement("rare", $rare) if ($rare);
 

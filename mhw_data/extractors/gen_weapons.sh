@@ -47,4 +47,10 @@ EXTRACTS_DIR="mhw-data-extracts"
 "$EXTRACTS_DIR/honey_extracts/weapon.json" \
 "$EXTRACTS_DIR/honey_extracts/ib_kire.json" > /tmp/honey_weap.xml
 
+# ./category_filter.pl iceborne /tmp/mhwg_weap.xml > /tmp/mhwg_weap_ib.xml
+# ./category_filter.pl iceborne /tmp/new_kira_weap.xml > /tmp/new_kira_weap_ib.xml
+# ./merge_weapons.pl translations.xml /tmp/mhwg_weap_ib.xml /tmp/new_kira_weap_ib.xml > /tmp/merge_kira_weap_ib.xml
+# ./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/honey_weap.xml > /tmp/merge_honey_weap.xml
+# ./category_filter.pl iceborne /tmp/merge_honey_weap.xml > /tmp/merge_honey_weap_ib.xml
+
 ./merge_weapons.pl translations.xml /tmp/mhwg_weap.xml /tmp/mhwd_weap.xml /tmp/new_kira_weap.xml /tmp/honey_weap.xml /tmp/kira_weap.xml

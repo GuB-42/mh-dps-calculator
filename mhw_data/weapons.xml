@@ -4513,6 +4513,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name>Beast Thunderbow</name>
         <name_jp>雷弓【獣王】</name_jp>
         <inflated_attack>348</inflated_attack>
         <attack>290</attack>
@@ -4528,6 +4529,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -4536,6 +4538,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="bow" />
+        <name>Beastking Thunderbow</name>
         <name_jp>雷弓【百獣王】</name_jp>
         <inflated_attack>372</inflated_attack>
         <attack>310</attack>
@@ -4551,6 +4554,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -10184,6 +10188,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Rajang Beastblade</name>
         <name_jp>金剛盾斧</name_jp>
         <inflated_attack>1044</inflated_attack>
         <attack>290</attack>
@@ -10207,6 +10212,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -10215,6 +10221,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Rajang Beastblade Ikazuchi</name>
         <name_jp>金剛盾斧イカヅチ</name_jp>
         <inflated_attack>1116</inflated_attack>
         <attack>310</attack>
@@ -10238,6 +10245,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -16227,6 +16235,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name>Suzuka Takamaru</name>
         <name_jp>闘鬼【高丸】</name_jp>
         <inflated_attack>406</inflated_attack>
         <attack>290</attack>
@@ -16247,6 +16256,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -16255,6 +16265,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="dual_blades" />
+        <name>Suzuka Otakemaru</name>
         <name_jp>闘神鬼【大嶽丸】</name_jp>
         <inflated_attack>434</inflated_attack>
         <attack>310</attack>
@@ -16275,6 +16286,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -22221,6 +22233,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="great_sword" />
+        <name>Demon Rod</name>
         <name_jp>鬼金棒</name_jp>
         <inflated_attack>1392</inflated_attack>
         <attack>290</attack>
@@ -22241,6 +22254,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -22249,6 +22263,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="great_sword" />
+        <name>Great Demon Rod</name>
         <name_jp>大鬼金棒</name_jp>
         <inflated_attack>1488</inflated_attack>
         <attack>310</attack>
@@ -22269,6 +22284,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -28301,6 +28317,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="gunlance" />
+        <name>Demon Gunlance</name>
         <name_jp>鬼銃槍</name_jp>
         <inflated_attack>644</inflated_attack>
         <attack>280</attack>
@@ -28324,6 +28341,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -28332,6 +28350,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="gunlance" />
+        <name>Great Demon Gunlance</name>
         <name_jp>雷鬼銃槍ドラガン</name_jp>
         <inflated_attack>656</inflated_attack>
         <attack>285.217391304348</attack>
@@ -28355,6 +28374,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -34442,6 +34462,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hammer" />
+        <name>Mane Malice</name>
         <name_jp>怒髪鎚</name_jp>
         <inflated_attack>1508</inflated_attack>
         <attack>290</attack>
@@ -34462,6 +34483,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -34470,6 +34492,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hammer" />
+        <name>Mane Malice Rajang</name>
         <name_jp>怒髪豪ダイラージャン</name_jp>
         <inflated_attack>1612</inflated_attack>
         <attack>310</attack>
@@ -34490,6 +34513,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -46075,6 +46099,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name>Rajang Blaster</name>
         <name_jp>金獅子砲</name_jp>
         <inflated_attack>465</inflated_attack>
         <attack>310</attack>
@@ -46132,6 +46157,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -46140,6 +46166,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
+        <name>Rajang Destroyer</name>
         <name_jp>金獅子砲【重雷】</name_jp>
         <inflated_attack>495</inflated_attack>
         <attack>330</attack>
@@ -46197,6 +46224,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -53227,6 +53255,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name>Denden Daiko</name>
         <name_jp>電電太鼓</name_jp>
         <inflated_attack>1218</inflated_attack>
         <attack>290</attack>
@@ -53252,6 +53281,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -53260,6 +53290,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="hunting_horn" />
+        <name>Denden Doomsounder</name>
         <name_jp>電電太鼓【雷轟】</name_jp>
         <inflated_attack>1302</inflated_attack>
         <attack>310</attack>
@@ -53285,6 +53316,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -59045,6 +59077,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="insect_glaive" />
+        <name>Metal Mauler</name>
         <name_jp>金砕棍棒</name_jp>
         <inflated_attack>899</inflated_attack>
         <attack>290</attack>
@@ -59065,6 +59098,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -59073,6 +59107,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="insect_glaive" />
+        <name>Metalmangler</name>
         <name_jp>金砕棍ゴーデンライ</name_jp>
         <inflated_attack>961</inflated_attack>
         <attack>310</attack>
@@ -59093,6 +59128,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -64933,6 +64969,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="lance" />
+        <name>Demon Lance</name>
         <name_jp>鬼槍ラージャン</name_jp>
         <inflated_attack>667</inflated_attack>
         <attack>290</attack>
@@ -64953,6 +64990,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -64961,6 +64999,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="lance" />
+        <name>Great Demon Lance</name>
         <name_jp>大鬼槍ラージャン</name_jp>
         <inflated_attack>713</inflated_attack>
         <attack>310</attack>
@@ -64981,6 +65020,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -76860,6 +76900,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name>Rajang Barrage</name>
         <name_jp>ラージャンデグ</name_jp>
         <inflated_attack>377</inflated_attack>
         <attack>290</attack>
@@ -76911,6 +76952,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -76919,6 +76961,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="light_bowgun" />
+        <name>Ten Thousand Volts</name>
         <name_jp>金獅子筒【万雷】</name_jp>
         <inflated_attack>403</inflated_attack>
         <attack>310</attack>
@@ -76970,6 +77013,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -83039,6 +83083,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="long_sword" />
+        <name>Demon Halberd</name>
         <name_jp>鬼薙刀</name_jp>
         <inflated_attack>957</inflated_attack>
         <attack>290</attack>
@@ -83059,6 +83104,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -83067,6 +83113,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="long_sword" />
+        <name>Great Demon Halberd</name>
         <name_jp>大鬼薙刀</name_jp>
         <inflated_attack>1023</inflated_attack>
         <attack>310</attack>
@@ -83087,6 +83134,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -89256,6 +89304,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="switch_axe" />
+        <name>Undying Axe</name>
         <name_jp>金剛角斧カンナリ</name_jp>
         <inflated_attack>1085</inflated_attack>
         <attack>310</attack>
@@ -89279,6 +89328,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
@@ -95420,6 +95470,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="sword_and_shield" />
+        <name>Rajang Club</name>
         <name_jp>金獣棍</name_jp>
         <inflated_attack>406</inflated_attack>
         <attack>290</attack>
@@ -95440,6 +95491,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>11</rare>
         <categories>
             <category_ref id="created" />
             <category_ref id="iceborne" />
@@ -95448,6 +95500,7 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="sword_and_shield" />
+        <name>Banned Rajang Club</name>
         <name_jp>金獣棍【禁忌】</name_jp>
         <inflated_attack>434</inflated_attack>
         <attack>310</attack>
@@ -95468,6 +95521,7 @@
         <slots>
             <slot>4</slot>
         </slots>
+        <rare>12</rare>
         <categories>
             <category_ref id="iceborne" />
             <category_ref id="upgraded" />
