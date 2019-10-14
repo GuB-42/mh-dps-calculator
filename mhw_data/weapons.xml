@@ -86198,6 +86198,10 @@
         <attack>170</attack>
         <elderseal>average</elderseal>
         <defense>10</defense>
+        <phial>
+            <inflated_dragon>300</inflated_dragon>
+            <dragon>30</dragon>
+        </phial>
         <sharpness>
             <red>100</red>
             <orange>100</orange>
@@ -86234,6 +86238,10 @@
         <affinity>10</affinity>
         <elderseal>average</elderseal>
         <defense>10</defense>
+        <phial>
+            <inflated_dragon>420</inflated_dragon>
+            <dragon>42</dragon>
+        </phial>
         <sharpness>
             <red>100</red>
             <orange>120</orange>
@@ -86260,6 +86268,10 @@
         <affinity>10</affinity>
         <elderseal>average</elderseal>
         <defense>35</defense>
+        <phial>
+            <inflated_dragon>480</inflated_dragon>
+            <dragon>48</dragon>
+        </phial>
         <sharpness>
             <red>100</red>
             <orange>100</orange>
@@ -86289,6 +86301,10 @@
         <affinity>10</affinity>
         <elderseal>average</elderseal>
         <defense>35</defense>
+        <phial>
+            <inflated_dragon>510</inflated_dragon>
+            <dragon>51</dragon>
+        </phial>
         <sharpness>
             <red>90</red>
             <orange>100</orange>
@@ -86317,6 +86333,10 @@
         <affinity>10</affinity>
         <elderseal>average</elderseal>
         <defense>35</defense>
+        <phial>
+            <inflated_dragon>510</inflated_dragon>
+            <dragon>51</dragon>
+        </phial>
         <sharpness>
             <red>80</red>
             <orange>100</orange>

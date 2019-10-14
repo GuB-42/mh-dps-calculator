@@ -145,6 +145,7 @@ sub process_data_row_melee {
 				"雷" => "thunder",
 				"氷" => "ice",
 				"龍" => "dragon",
+				"滅龍" => "dragon",
 				"爆破" => "blast",
 				"睡眠" => "sleep",
 				"麻痺" => "paralysis",

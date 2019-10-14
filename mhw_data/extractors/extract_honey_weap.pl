@@ -50,8 +50,7 @@ for my $file (@ARGV) {
 				"9" => "WeaponRarity",
 				"10" => "WeaponSlots",
 				"11" => "Sharpness",
-				"12" => "Handycraftneeded",
-				"SpecMechanics" => "Special"
+				"12" => "Handycraftneeded"
 			);
 			if ($jd->{$k}{2} || $jd->{$k}{"WeaponType"}) {
 				if ($main_kmap{$sk}) {
@@ -74,6 +73,8 @@ $io->fdopen(fileno(STDOUT), ">");
 $xml_writer = XML::Writer->new(OUTPUT => $io, ENCODING => 'utf-8', DATA_MODE => 1, DATA_INDENT => 4);
 $xml_writer->xmlDecl("UTF-8");
 $xml_writer->startTag("data");
+
+my @special_fields = ("Phial", "Special", "SpecMechanics", "Special2");
 
 for my $weap_name (keys %{$json_data}) {
 	my $weap = $json_data->{$weap_name};
@@ -105,6 +106,36 @@ for my $weap_name (keys %{$json_data}) {
 		}
 	}
 	$xml_writer->endTag() if ($has_elements);
+
+	my $has_phial = 0;
+	if ($weap_type eq "switch_axe" || $weap_type eq "charge_blade") {
+		for my $field (@special_fields) {
+			my $field_val = $weap->{$field};
+			next unless ($field_val);
+			if ($field_val =~ /(\w+),(\d+)/) {
+				my $elt = lc($1);
+				$elt = "exhaust" if ($elt eq "exhaus");
+				my $elt_level = $2;
+				unless ($has_phial) {
+					$xml_writer->startTag("phial");
+					$has_phial = 1;
+				}
+				$xml_writer->dataElement("inflated_$elt", $elt_level);
+				$xml_writer->dataElement("$elt", $elt_level / 10);
+			} elsif ($field_val =~ /(Power Element|Power|Impact)/) {
+				my %phmap = (
+					"Power Element" => "element",
+					"Power" => "power",
+					"Impact" => "impact");
+				unless ($has_phial) {
+					$xml_writer->startTag("phial");
+					$has_phial = 1;
+				}
+				$xml_writer->emptyTag($phmap{$1});
+			}
+		}
+	}
+	$xml_writer->endTag() if ($has_phial);
 
 	if ($weap->{"x_Handycraftneeded"}) {
 		my @sh = (split /,/, $weap->{"x_Sharpness"});
