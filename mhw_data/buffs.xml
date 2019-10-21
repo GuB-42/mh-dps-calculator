@@ -2103,6 +2103,15 @@
 		</buff>
 	</buff_group>
 
+	<!-- soul of the dragon -->
+
+	<buff_group id="elemental_airborne">
+		<name>Elemental Airborne</name>
+		<buff>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<!-- new in iceborne -->
 
 	<buff_group id="coalescence">
@@ -2880,6 +2889,48 @@
 
 	<!-- set bonus -->
 
+	<set_bonus id="anjanath_power">
+		<name>Anjanath Power</name>
+		<set_bonus_level level="3">
+			<buff_ref id="adrenaline"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="legiana_blessing">
+		<name>Legiana Blessing</name>
+		<set_bonus_level level="3">
+			<buff_ref id="good_luck"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="odogaron_power">
+		<name>Odogaron Power</name>
+		<set_bonus_level level="3">
+			<buff_ref id="punishing_draw"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="rathalos_power">
+		<name>Rathalos Power</name>
+		<set_bonus_level level="3">
+			<buff_ref id="critical_element"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="diablos_power">
+		<name>Diablos Power</name>
+		<set_bonus_level level="3">
+			<buff_ref id="bludgeoner"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="kirin_blessing">
+		<name>Kirin Blessing</name>
+		<set_bonus_level level="4">
+			<buff_ref id="capture_master"/>
+		</set_bonus_level>
+	</set_bonus>
+
 	<set_bonus id="anjanath_will">
 		<name>Anjanath Will</name>
 		<name_jp>蛮顎竜の闘志</name_jp>
@@ -3023,11 +3074,38 @@
 		</set_bonus_level>
 	</set_bonus>
 
-	<set_bonus id="val_hazak_vitality">
-		<name>Val Hazak Vitality</name>
+	<set_bonus id="vaal_hazak_vitality">
+		<name>Vaal Hazak Vitality</name>
 		<name_jp>屍套龍の命脈</name_jp>
 		<set_bonus_level level="3">
 			<buff_ref id="super_recovery"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="lunastra_favor">
+		<name>Lunastra Favor</name>
+		<set_bonus_level level="2">
+			<buff_ref id="minds_eye_ballistics"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="stamina_cap_up"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="astera_blessing">
+		<name>Astera Blessing</name>
+		<set_bonus_level level="5">
+			<buff_ref id="great_luck"/>
+		</set_bonus_level>
+	</set_bonus>
+
+	<set_bonus id="soul_of_the_dragoon">
+		<name>Soul of the Dragoon</name>
+		<set_bonus_level level="2">
+			<buff_ref id="masters_touch"/>
+		</set_bonus_level>
+		<set_bonus_level level="4">
+			<buff_ref id="elemental_airborne"/>
 		</set_bonus_level>
 	</set_bonus>
 </data>
