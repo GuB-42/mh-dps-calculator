@@ -3,15 +3,12 @@
 	<buff_group id="augmentation_attack_increase">
 		<name>Augmentation: Attack Increase</name>
 		<buff level="1">
-			<name>Augmentation: Attack Increase [1]</name>
 			<attack_plus_before>5</attack_plus_before>
 		</buff>
 		<buff level="2">
-			<name>Augmentation: Attack Increase [2]</name>
 			<attack_plus_before>10</attack_plus_before>
 		</buff>
 		<buff level="3">
-			<name>Augmentation: Attack Increase [3]</name>
 			<attack_plus_before>15</attack_plus_before>
 		</buff>
 	</buff_group>
@@ -19,15 +16,12 @@
 	<buff_group id="augmentation_affinity_increase">
 		<name>Augmentation: Affinity Increase</name>
 		<buff level="1">
-			<name>Augmentation: Affinity Increase [1]</name>
 			<affinity_plus>10</affinity_plus>
 		</buff>
 		<buff level="2">
-			<name>Augmentation: Affinity Increase [2]</name>
 			<affinity_plus>15</affinity_plus>
 		</buff>
 		<buff level="3">
-			<name>Augmentation: Affinity Increase [3]</name>
 			<affinity_plus>20</affinity_plus>
 		</buff>
 	</buff_group>
@@ -35,15 +29,12 @@
 	<buff_group id="augmentation_defense_increase">
 		<name>Augmentation: Defense Increase</name>
 		<buff level="1">
-			<name>Augmentation: Defense Increase [1]</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Augmentation: Defense Increase [2]</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Augmentation: Defense Increase [3]</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -51,15 +42,12 @@
 	<buff_group id="augmentation_health_regen">
 		<name>Augmentation: Health Regen</name>
 		<buff level="1">
-			<name>Augmentation: Health Regen [1]</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Augmentation: Health Regen [2]</name>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Augmentation: Health Regen [3]</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -69,21 +57,12 @@
 		<name_fr>Toxicologie</name_fr>
 		<name_jp>毒耐性</name_jp>
 		<buff level="1">
-			<name>Poison Resistance [1]</name>
-			<name_fr>Toxicologie [1]</name_fr>
-			<name_jp>毒耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Poison Resistance [2]</name>
-			<name_fr>Toxicologie [2]</name_fr>
-			<name_jp>毒耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Poison Resistance [3]</name>
-			<name_fr>Toxicologie [3]</name_fr>
-			<name_jp>毒耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -93,21 +72,12 @@
 		<name_fr>Antiparalysie</name_fr>
 		<name_jp>麻痺耐性</name_jp>
 		<buff level="1">
-			<name>Paralysis Resistance [1]</name>
-			<name_fr>Antiparalysie [1]</name_fr>
-			<name_jp>麻痺耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Paralysis Resistance [2]</name>
-			<name_fr>Antiparalysie [2]</name_fr>
-			<name_jp>麻痺耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Paralysis Resistance [3]</name>
-			<name_fr>Antiparalysie [3]</name_fr>
-			<name_jp>麻痺耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -117,21 +87,12 @@
 		<name_fr>Insomnie</name_fr>
 		<name_jp>睡眠耐性</name_jp>
 		<buff level="1">
-			<name>Sleep Resistance [1]</name>
-			<name_fr>Insomnie [1]</name_fr>
-			<name_jp>睡眠耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Sleep Resistance [2]</name>
-			<name_fr>Insomnie [2]</name_fr>
-			<name_jp>睡眠耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Sleep Resistance [3]</name>
-			<name_fr>Insomnie [3]</name_fr>
-			<name_jp>睡眠耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -141,21 +102,12 @@
 		<name_fr>Crâne d'acier</name_fr>
 		<name_jp>気絶耐性</name_jp>
 		<buff level="1">
-			<name>Stun Resistance [1]</name>
-			<name_fr>Crâne d'acier [1]</name_fr>
-			<name_jp>気絶耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Stun Resistance [2]</name>
-			<name_fr>Crâne d'acier [2]</name_fr>
-			<name_jp>気絶耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Stun Resistance [3]</name>
-			<name_fr>Crâne d'acier [3]</name_fr>
-			<name_jp>気絶耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -165,9 +117,6 @@
 		<name_fr>Anti-fange</name_fr>
 		<name_jp>泥耐性</name_jp>
 		<buff level="1">
-			<name>Muck Resistance [1]</name>
-			<name_fr>Anti-fange [1]</name_fr>
-			<name_jp>泥耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -177,21 +126,12 @@
 		<name_fr>Anti-explosion</name_fr>
 		<name_jp>爆破やられ耐性</name_jp>
 		<buff level="1">
-			<name>Blast Resistance [1]</name>
-			<name_fr>Anti-explosion [1]</name_fr>
-			<name_jp>爆破やられ耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Blast Resistance [2]</name>
-			<name_fr>Anti-explosion [2]</name_fr>
-			<name_jp>爆破やられ耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Blast Resistance [3]</name>
-			<name_fr>Anti-explosion [3]</name_fr>
-			<name_jp>爆破やられ耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -201,21 +141,12 @@
 		<name_fr>Anti-hémorragie</name_fr>
 		<name_jp>裂傷耐性</name_jp>
 		<buff level="1">
-			<name>Bleeding Resistance [1]</name>
-			<name_fr>Anti-hémorragie [1]</name_fr>
-			<name_jp>裂傷耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Bleeding Resistance [2]</name>
-			<name_fr>Anti-hémorragie [2]</name_fr>
-			<name_jp>裂傷耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Bleeding Resistance [3]</name>
-			<name_fr>Anti-hémorragie [3]</name_fr>
-			<name_jp>裂傷耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -225,21 +156,12 @@
 		<name_fr>Peau de fer</name_fr>
 		<name_jp>防御力ＤＯＷＮ耐性</name_jp>
 		<buff level="1">
-			<name>Iron Skin [1]</name>
-			<name_fr>Peau de fer [1]</name_fr>
-			<name_jp>防御力ＤＯＷＮ耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Iron Skin [2]</name>
-			<name_fr>Peau de fer [2]</name_fr>
-			<name_jp>防御力ＤＯＷＮ耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Iron Skin [3]</name>
-			<name_fr>Peau de fer [3]</name_fr>
-			<name_jp>防御力ＤＯＷＮ耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -249,33 +171,18 @@
 		<name_fr>Bouchon d'oreilles</name_fr>
 		<name_jp>耳栓</name_jp>
 		<buff level="1">
-			<name>Earplugs [1]</name>
-			<name_fr>Bouchon d'oreilles [1]</name_fr>
-			<name_jp>耳栓 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Earplugs [2]</name>
-			<name_fr>Bouchon d'oreilles [2]</name_fr>
-			<name_jp>耳栓 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Earplugs [3]</name>
-			<name_fr>Bouchon d'oreilles [3]</name_fr>
-			<name_jp>耳栓 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Earplugs [4]</name>
-			<name_fr>Bouchon d'oreilles [4]</name_fr>
-			<name_jp>耳栓 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Earplugs [5]</name>
-			<name_fr>Bouchon d'oreilles [5]</name_fr>
-			<name_jp>耳栓 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -285,33 +192,18 @@
 		<name_fr>Pare-vent</name_fr>
 		<name_jp>風圧耐性</name_jp>
 		<buff level="1">
-			<name>Windproof [1]</name>
-			<name_fr>Pare-vent [1]</name_fr>
-			<name_jp>風圧耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Windproof [2]</name>
-			<name_fr>Pare-vent [2]</name_fr>
-			<name_jp>風圧耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Windproof [3]</name>
-			<name_fr>Pare-vent [3]</name_fr>
-			<name_jp>風圧耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Windproof [4]</name>
-			<name_fr>Pare-vent [4]</name_fr>
-			<name_jp>風圧耐性 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Windproof [5]</name>
-			<name_fr>Pare-vent [5]</name_fr>
-			<name_jp>風圧耐性 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -321,21 +213,12 @@
 		<name_fr>Sismologie</name_fr>
 		<name_jp>耐震</name_jp>
 		<buff level="1">
-			<name>Tremor Resistance [1]</name>
-			<name_fr>Sismologie [1]</name_fr>
-			<name_jp>耐震 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Tremor Resistance [2]</name>
-			<name_fr>Sismologie [2]</name_fr>
-			<name_jp>耐震 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Tremor Resistance [3]</name>
-			<name_fr>Sismologie [3]</name_fr>
-			<name_jp>耐震 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -345,9 +228,6 @@
 		<name_fr>Grand bousier</name_fr>
 		<name_jp>こやし名人</name_jp>
 		<buff level="1">
-			<name>Dungmaster [1]</name>
-			<name_fr>Grand bousier [1]</name_fr>
-			<name_jp>こやし名人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -357,9 +237,6 @@
 		<name_fr>Aura de purge</name_fr>
 		<name_jp>瘴気環境適応</name_jp>
 		<buff level="1">
-			<name>Effluvial Expert [1]</name>
-			<name_fr>Aura de purge [1]</name_fr>
-			<name_jp>瘴気環境適応 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -369,9 +246,6 @@
 		<name_fr>Thermorésistance</name_fr>
 		<name_jp>熱ダメージ無効</name_jp>
 		<buff level="1">
-			<name>Heat Guard [1]</name>
-			<name_fr>Thermorésistance [1]</name_fr>
-			<name_jp>熱ダメージ無効 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -381,48 +255,27 @@
 		<name_fr>Machine de guerre</name_fr>
 		<name_jp>攻撃</name_jp>
 		<buff level="1">
-			<name>Attack Boost [1]</name>
-			<name_fr>Machine de guerre [1]</name_fr>
-			<name_jp>攻撃 [1]</name_jp>
 			<attack_plus>3</attack_plus>
 		</buff>
 		<buff level="2">
-			<name>Attack Boost [2]</name>
-			<name_fr>Machine de guerre [2]</name_fr>
-			<name_jp>攻撃 [2]</name_jp>
 			<attack_plus>6</attack_plus>
 		</buff>
 		<buff level="3">
-			<name>Attack Boost [3]</name>
-			<name_fr>Machine de guerre [3]</name_fr>
-			<name_jp>攻撃 [3]</name_jp>
 			<attack_plus>9</attack_plus>
 		</buff>
 		<buff level="4">
-			<name>Attack Boost [4]</name>
-			<name_fr>Machine de guerre [4]</name_fr>
-			<name_jp>攻撃 [4]</name_jp>
 			<attack_plus>12</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff level="5">
-			<name>Attack Boost [5]</name>
-			<name_fr>Machine de guerre [5]</name_fr>
-			<name_jp>攻撃 [5]</name_jp>
 			<attack_plus>15</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff level="6">
-			<name>Attack Boost [6]</name>
-			<name_fr>Machine de guerre [6]</name_fr>
-			<name_jp>攻撃 [6]</name_jp>
 			<attack_plus>18</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff level="7">
-			<name>Attack Boost [7]</name>
-			<name_fr>Machine de guerre [7]</name_fr>
-			<name_jp>攻撃 [7]</name_jp>
 			<attack_plus>21</attack_plus>
 			<affinity_plus>5</affinity_plus>
 		</buff>
@@ -433,45 +286,24 @@
 		<name_fr>Bastion</name_fr>
 		<name_jp>防御</name_jp>
 		<buff level="1">
-			<name>Defense Boost [1]</name>
-			<name_fr>Bastion [1]</name_fr>
-			<name_jp>防御 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Defense Boost [2]</name>
-			<name_fr>Bastion [2]</name_fr>
-			<name_jp>防御 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Defense Boost [3]</name>
-			<name_fr>Bastion [3]</name_fr>
-			<name_jp>防御 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Defense Boost [4]</name>
-			<name_fr>Bastion [4]</name_fr>
-			<name_jp>防御 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Defense Boost [5]</name>
-			<name_fr>Bastion [5]</name_fr>
-			<name_jp>防御 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="6">
-			<name>Defense Boost [6]</name>
-			<name_fr>Bastion [6]</name_fr>
-			<name_jp>防御 [6]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="7">
-			<name>Defense Boost [7]</name>
-			<name_fr>Bastion [7]</name_fr>
-			<name_jp>防御 [7]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -481,21 +313,12 @@
 		<name_fr>Afflux de vie</name_fr>
 		<name_jp>体力増強</name_jp>
 		<buff level="1">
-			<name>Health Boost [1]</name>
-			<name_fr>Afflux de vie [1]</name_fr>
-			<name_jp>体力増強 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Health Boost [2]</name>
-			<name_fr>Afflux de vie [2]</name_fr>
-			<name_jp>体力増強 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Health Boost [3]</name>
-			<name_fr>Afflux de vie [3]</name_fr>
-			<name_jp>体力増強 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -505,21 +328,12 @@
 		<name_fr>Cercle de vie</name_fr>
 		<name_jp>体力回復量ＵＰ</name_jp>
 		<buff level="1">
-			<name>Recovery Up [1]</name>
-			<name_fr>Cercle de vie [1]</name_fr>
-			<name_jp>体力回復量ＵＰ [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Recovery Up [2]</name>
-			<name_fr>Cercle de vie [2]</name_fr>
-			<name_jp>体力回復量ＵＰ [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Recovery Up [3]</name>
-			<name_fr>Cercle de vie [3]</name_fr>
-			<name_jp>体力回復量ＵＰ [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -529,21 +343,12 @@
 		<name_fr>Halo de guérison</name_fr>
 		<name_jp>回復速度</name_jp>
 		<buff level="1">
-			<name>Recovery Speed [1]</name>
-			<name_fr>Halo de guérison [1]</name_fr>
-			<name_jp>回復速度 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Recovery Speed [2]</name>
-			<name_fr>Halo de guérison [2]</name_fr>
-			<name_jp>回復速度 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Recovery Speed [3]</name>
-			<name_fr>Halo de guérison [3]</name_fr>
-			<name_jp>回復速度 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -553,21 +358,12 @@
 		<name_fr>Ignifuge</name_fr>
 		<name_jp>火耐性</name_jp>
 		<buff level="1">
-			<name>Fire Resistance [1]</name>
-			<name_fr>Ignifuge [1]</name_fr>
-			<name_jp>火耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Fire Resistance [2]</name>
-			<name_fr>Ignifuge [2]</name_fr>
-			<name_jp>火耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Fire Resistance [3]</name>
-			<name_fr>Ignifuge [3]</name_fr>
-			<name_jp>火耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -577,21 +373,12 @@
 		<name_fr>Étanchéité</name_fr>
 		<name_jp>水耐性</name_jp>
 		<buff level="1">
-			<name>Water Resistance [1]</name>
-			<name_fr>Étanchéité [1]</name_fr>
-			<name_jp>水耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Water Resistance [2]</name>
-			<name_fr>Étanchéité [2]</name_fr>
-			<name_jp>水耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Water Resistance [3]</name>
-			<name_fr>Étanchéité [3]</name_fr>
-			<name_jp>水耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -601,21 +388,12 @@
 		<name_fr>Antigel</name_fr>
 		<name_jp>氷耐性</name_jp>
 		<buff level="1">
-			<name>Ice Resistance [1]</name>
-			<name_fr>Antigel [1]</name_fr>
-			<name_jp>氷耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Ice Resistance [2]</name>
-			<name_fr>Antigel [2]</name_fr>
-			<name_jp>氷耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Ice Resistance [3]</name>
-			<name_fr>Antigel [3]</name_fr>
-			<name_jp>氷耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -625,21 +403,12 @@
 		<name_fr>Paratonnerre</name_fr>
 		<name_jp>雷耐性</name_jp>
 		<buff level="1">
-			<name>Thunder Resistance [1]</name>
-			<name_fr>Paratonnerre [1]</name_fr>
-			<name_jp>雷耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Thunder Resistance [2]</name>
-			<name_fr>Paratonnerre [2]</name_fr>
-			<name_jp>雷耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Thunder Resistance [3]</name>
-			<name_fr>Paratonnerre [3]</name_fr>
-			<name_jp>雷耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -649,21 +418,12 @@
 		<name_fr>Aura draconien</name_fr>
 		<name_jp>龍耐性</name_jp>
 		<buff level="1">
-			<name>Dragon Resistance [1]</name>
-			<name_fr>Aura draconien [1]</name_fr>
-			<name_jp>龍耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Dragon Resistance [2]</name>
-			<name_fr>Aura draconien [2]</name_fr>
-			<name_jp>龍耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Dragon Resistance [3]</name>
-			<name_fr>Aura draconien [3]</name_fr>
-			<name_jp>龍耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -673,21 +433,12 @@
 		<name_fr>Totem élémentaire</name_fr>
 		<name_jp>属性やられ耐性</name_jp>
 		<buff level="1">
-			<name>Blight Resistance [1]</name>
-			<name_fr>Totem élémentaire [1]</name_fr>
-			<name_jp>属性やられ耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Blight Resistance [2]</name>
-			<name_fr>Totem élémentaire [2]</name_fr>
-			<name_jp>属性やられ耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Blight Resistance [3]</name>
-			<name_fr>Totem élémentaire [3]</name_fr>
-			<name_jp>属性やられ耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -697,33 +448,21 @@
 		<name_fr>Pyromane</name_fr>
 		<name_jp>火属性攻撃強化</name_jp>
 		<buff level="1">
-			<name>Fire Attack [1]</name>
-			<name_fr>Pyromane [1]</name_fr>
-			<name_jp>火属性攻撃強化 [1]</name_jp>
 			<element_plus>
 				<fire>3</fire>
 			</element_plus>
 		</buff>
 		<buff level="2">
-			<name>Fire Attack [2]</name>
-			<name_fr>Pyromane [2]</name_fr>
-			<name_jp>火属性攻撃強化 [2]</name_jp>
 			<element_plus>
 				<fire>6</fire>
 			</element_plus>
 		</buff>
 		<buff level="3">
-			<name>Fire Attack [3]</name>
-			<name_fr>Pyromane [3]</name_fr>
-			<name_jp>火属性攻撃強化 [3]</name_jp>
 			<element_plus>
 				<fire>10</fire>
 			</element_plus>
 		</buff>
 		<buff level="4">
-			<name>Fire Attack [4]</name>
-			<name_fr>Pyromane [4]</name_fr>
-			<name_jp>火属性攻撃強化 [4]</name_jp>
 			<element_plus>
 				<fire>10</fire>
 			</element_plus>
@@ -732,9 +471,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="5">
-			<name>Fire Attack [5]</name>
-			<name_fr>Pyromane [5]</name_fr>
-			<name_jp>火属性攻撃強化 [5]</name_jp>
 			<element_plus>
 				<fire>10</fire>
 			</element_plus>
@@ -749,33 +485,21 @@
 		<name_fr>Maelstrom</name_fr>
 		<name_jp>水属性攻撃強化</name_jp>
 		<buff level="1">
-			<name>Water Attack [1]</name>
-			<name_fr>Maelstrom [1]</name_fr>
-			<name_jp>水属性攻撃強化 [1]</name_jp>
 			<element_plus>
 				<water>3</water>
 			</element_plus>
 		</buff>
 		<buff level="2">
-			<name>Water Attack [2]</name>
-			<name_fr>Maelstrom [2]</name_fr>
-			<name_jp>水属性攻撃強化 [2]</name_jp>
 			<element_plus>
 				<water>6</water>
 			</element_plus>
 		</buff>
 		<buff level="3">
-			<name>Water Attack [3]</name>
-			<name_fr>Maelstrom [3]</name_fr>
-			<name_jp>水属性攻撃強化 [3]</name_jp>
 			<element_plus>
 				<water>10</water>
 			</element_plus>
 		</buff>
 		<buff level="4">
-			<name>Water Attack [4]</name>
-			<name_fr>Maelstrom [4]</name_fr>
-			<name_jp>水属性攻撃強化 [4]</name_jp>
 			<element_plus>
 				<water>10</water>
 			</element_plus>
@@ -784,9 +508,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="5">
-			<name>Water Attack [5]</name>
-			<name_fr>Maelstrom [5]</name_fr>
-			<name_jp>水属性攻撃強化 [5]</name_jp>
 			<element_plus>
 				<water>10</water>
 			</element_plus>
@@ -801,33 +522,21 @@
 		<name_fr>Blizzard</name_fr>
 		<name_jp>氷属性攻撃強化</name_jp>
 		<buff level="1">
-			<name>Ice Attack [1]</name>
-			<name_fr>Blizzard [1]</name_fr>
-			<name_jp>氷属性攻撃強化 [1]</name_jp>
 			<element_plus>
 				<ice>3</ice>
 			</element_plus>
 		</buff>
 		<buff level="2">
-			<name>Ice Attack [2]</name>
-			<name_fr>Blizzard [2]</name_fr>
-			<name_jp>氷属性攻撃強化 [2]</name_jp>
 			<element_plus>
 				<ice>6</ice>
 			</element_plus>
 		</buff>
 		<buff level="3">
-			<name>Ice Attack [3]</name>
-			<name_fr>Blizzard [3]</name_fr>
-			<name_jp>氷属性攻撃強化 [3]</name_jp>
 			<element_plus>
 				<ice>10</ice>
 			</element_plus>
 		</buff>
 		<buff level="4">
-			<name>Ice Attack [4]</name>
-			<name_fr>Blizzard [4]</name_fr>
-			<name_jp>氷属性攻撃強化 [4]</name_jp>
 			<element_plus>
 				<ice>10</ice>
 			</element_plus>
@@ -836,9 +545,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="5">
-			<name>Ice Attack [5]</name>
-			<name_fr>Blizzard [5]</name_fr>
-			<name_jp>氷属性攻撃強化 [5]</name_jp>
 			<element_plus>
 				<ice>10</ice>
 			</element_plus>
@@ -853,33 +559,21 @@
 		<name_fr>Feu du ciel</name_fr>
 		<name_jp>雷属性攻撃強化</name_jp>
 		<buff level="1">
-			<name>Thunder Attack [1]</name>
-			<name_fr>Feu du ciel [1]</name_fr>
-			<name_jp>雷属性攻撃強化 [1]</name_jp>
 			<element_plus>
 				<thunder>3</thunder>
 			</element_plus>
 		</buff>
 		<buff level="2">
-			<name>Thunder Attack [2]</name>
-			<name_fr>Feu du ciel [2]</name_fr>
-			<name_jp>雷属性攻撃強化 [2]</name_jp>
 			<element_plus>
 				<thunder>6</thunder>
 			</element_plus>
 		</buff>
 		<buff level="3">
-			<name>Thunder Attack [3]</name>
-			<name_fr>Feu du ciel [3]</name_fr>
-			<name_jp>雷属性攻撃強化 [3]</name_jp>
 			<element_plus>
 				<thunder>10</thunder>
 			</element_plus>
 		</buff>
 		<buff level="4">
-			<name>Thunder Attack [4]</name>
-			<name_fr>Feu du ciel [4]</name_fr>
-			<name_jp>雷属性攻撃強化 [4]</name_jp>
 			<element_plus>
 				<thunder>10</thunder>
 			</element_plus>
@@ -888,9 +582,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="5">
-			<name>Thunder Attack [5]</name>
-			<name_fr>Feu du ciel [5]</name_fr>
-			<name_jp>雷属性攻撃強化 [5]</name_jp>
 			<element_plus>
 				<thunder>10</thunder>
 			</element_plus>
@@ -905,33 +596,21 @@
 		<name_fr>Pourfendeur de dragon</name_fr>
 		<name_jp>龍属性攻撃強化</name_jp>
 		<buff level="1">
-			<name>Dragon Attack [1]</name>
-			<name_fr>Pourfendeur de dragon [1]</name_fr>
-			<name_jp>龍属性攻撃強化 [1]</name_jp>
 			<element_plus>
 				<dragon>3</dragon>
 			</element_plus>
 		</buff>
 		<buff level="2">
-			<name>Dragon Attack [2]</name>
-			<name_fr>Pourfendeur de dragon [2]</name_fr>
-			<name_jp>龍属性攻撃強化 [2]</name_jp>
 			<element_plus>
 				<dragon>6</dragon>
 			</element_plus>
 		</buff>
 		<buff level="3">
-			<name>Dragon Attack [3]</name>
-			<name_fr>Pourfendeur de dragon [3]</name_fr>
-			<name_jp>龍属性攻撃強化 [3]</name_jp>
 			<element_plus>
 				<dragon>10</dragon>
 			</element_plus>
 		</buff>
 		<buff level="4">
-			<name>Dragon Attack [4]</name>
-			<name_fr>Pourfendeur de dragon [4]</name_fr>
-			<name_jp>龍属性攻撃強化 [4]</name_jp>
 			<element_plus>
 				<dragon>10</dragon>
 			</element_plus>
@@ -940,9 +619,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="5">
-			<name>Dragon Attack [5]</name>
-			<name_fr>Pourfendeur de dragon [5]</name_fr>
-			<name_jp>龍属性攻撃強化 [5]</name_jp>
 			<element_plus>
 				<dragon>10</dragon>
 			</element_plus>
@@ -957,9 +633,6 @@
 		<name_fr>Mort-aux-rats</name_fr>
 		<name_jp>毒属性強化</name_jp>
 		<buff level="1">
-			<name>Poison Attack [1]</name>
-			<name_fr>Mort-aux-rats [1]</name_fr>
-			<name_jp>毒属性強化 [1]</name_jp>
 			<element_plus>
 				<poison>3</poison>
 			</element_plus>
@@ -968,9 +641,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Poison Attack [2]</name>
-			<name_fr>Mort-aux-rats [2]</name_fr>
-			<name_jp>毒属性強化 [2]</name_jp>
 			<element_plus>
 				<poison>6</poison>
 			</element_plus>
@@ -979,9 +649,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Poison Attack [3]</name>
-			<name_fr>Mort-aux-rats [3]</name_fr>
-			<name_jp>毒属性強化 [3]</name_jp>
 			<element_plus>
 				<poison>10</poison>
 			</element_plus>
@@ -996,9 +663,6 @@
 		<name_fr>Neutralisation</name_fr>
 		<name_jp>麻痺属性強化</name_jp>
 		<buff level="1">
-			<name>Paralysis Attack [1]</name>
-			<name_fr>Neutralisation [1]</name_fr>
-			<name_jp>麻痺属性強化 [1]</name_jp>
 			<element_plus>
 				<paralysis>3</paralysis>
 			</element_plus>
@@ -1007,9 +671,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Paralysis Attack [2]</name>
-			<name_fr>Neutralisation [2]</name_fr>
-			<name_jp>麻痺属性強化 [2]</name_jp>
 			<element_plus>
 				<paralysis>6</paralysis>
 			</element_plus>
@@ -1018,9 +679,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Paralysis Attack [3]</name>
-			<name_fr>Neutralisation [3]</name_fr>
-			<name_jp>麻痺属性強化 [3]</name_jp>
 			<element_plus>
 				<paralysis>10</paralysis>
 			</element_plus>
@@ -1035,9 +693,6 @@
 		<name_fr>La nuit porte conseil</name_fr>
 		<name_jp>睡眠属性強化</name_jp>
 		<buff level="1">
-			<name>Sleep Attack [1]</name>
-			<name_fr>La nuit porte conseil [1]</name_fr>
-			<name_jp>睡眠属性強化 [1]</name_jp>
 			<element_plus>
 				<sleep>3</sleep>
 			</element_plus>
@@ -1046,9 +701,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Sleep Attack [2]</name>
-			<name_fr>La nuit porte conseil [2]</name_fr>
-			<name_jp>睡眠属性強化 [2]</name_jp>
 			<element_plus>
 				<sleep>6</sleep>
 			</element_plus>
@@ -1057,9 +709,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Sleep Attack [3]</name>
-			<name_fr>La nuit porte conseil [3]</name_fr>
-			<name_jp>睡眠属性強化 [3]</name_jp>
 			<element_plus>
 				<sleep>10</sleep>
 			</element_plus>
@@ -1074,9 +723,6 @@
 		<name_fr>Destruction massive</name_fr>
 		<name_jp>爆破属性強化</name_jp>
 		<buff level="1">
-			<name>Blast Attack [1]</name>
-			<name_fr>Destruction massive [1]</name_fr>
-			<name_jp>爆破属性強化 [1]</name_jp>
 			<element_plus>
 				<blast>3</blast>
 			</element_plus>
@@ -1085,9 +731,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Blast Attack [2]</name>
-			<name_fr>Destruction massive [2]</name_fr>
-			<name_jp>爆破属性強化 [2]</name_jp>
 			<element_plus>
 				<blast>6</blast>
 			</element_plus>
@@ -1096,9 +739,6 @@
 			</element_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Blast Attack [3]</name>
-			<name_fr>Destruction massive [3]</name_fr>
-			<name_jp>爆破属性強化 [3]</name_jp>
 			<element_plus>
 				<blast>10</blast>
 			</element_plus>
@@ -1113,9 +753,6 @@
 		<name_fr>Tir maximum</name_fr>
 		<name_jp>通常弾・通常矢強化</name_jp>
 		<buff level="1">
-			<name>Normal Shots [1]</name>
-			<name_fr>Tir maximum [1]</name_fr>
-			<name_jp>通常弾・通常矢強化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1125,9 +762,6 @@
 		<name_fr>Traque sans merci</name_fr>
 		<name_jp>貫通弾・竜の一矢強化</name_jp>
 		<buff level="1">
-			<name>Piercing Shots [1]</name>
-			<name_fr>Traque sans merci [1]</name_fr>
-			<name_jp>貫通弾・竜の一矢強化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1137,9 +771,6 @@
 		<name_fr>Désigné pour mourir</name_fr>
 		<name_jp>散弾・剛射強化</name_jp>
 		<buff level="1">
-			<name>Spread/Power Shots [1]</name>
-			<name_fr>Désigné pour mourir [1]</name_fr>
-			<name_jp>散弾・剛射強化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1149,21 +780,12 @@
 		<name_fr>Tireur d'élite</name_fr>
 		<name_jp>属性解放／装填拡張</name_jp>
 		<buff level="1">
-			<name>Free Elem/Ammo Up [1]</name>
-			<name_fr>Tireur d'élite [1]</name_fr>
-			<name_jp>属性解放／装填拡張 [1]</name_jp>
 			<awakening>0.33</awakening>
 		</buff>
 		<buff level="2">
-			<name>Free Elem/Ammo Up [2]</name>
-			<name_fr>Tireur d'élite [2]</name_fr>
-			<name_jp>属性解放／装填拡張 [2]</name_jp>
 			<awakening>0.66</awakening>
 		</buff>
 		<buff level="3">
-			<name>Free Elem/Ammo Up [3]</name>
-			<name_fr>Tireur d'élite [3]</name_fr>
-			<name_jp>属性解放／装填拡張 [3]</name_jp>
 			<awakening>1.0</awakening>
 		</buff>
 	</buff_group>
@@ -1173,45 +795,24 @@
 		<name_fr>Maître d'armes</name_fr>
 		<name_jp>見切り</name_jp>
 		<buff level="1">
-			<name>Critical Eye [1]</name>
-			<name_fr>Maître d'armes [1]</name_fr>
-			<name_jp>見切り [1]</name_jp>
 			<affinity_plus>3</affinity_plus>
 		</buff>
 		<buff level="2">
-			<name>Critical Eye [2]</name>
-			<name_fr>Maître d'armes [2]</name_fr>
-			<name_jp>見切り [2]</name_jp>
 			<affinity_plus>6</affinity_plus>
 		</buff>
 		<buff level="3">
-			<name>Critical Eye [3]</name>
-			<name_fr>Maître d'armes [3]</name_fr>
-			<name_jp>見切り [3]</name_jp>
 			<affinity_plus>10</affinity_plus>
 		</buff>
 		<buff level="4">
-			<name>Critical Eye [4]</name>
-			<name_fr>Maître d'armes [4]</name_fr>
-			<name_jp>見切り [4]</name_jp>
 			<affinity_plus>15</affinity_plus>
 		</buff>
 		<buff level="5">
-			<name>Critical Eye [5]</name>
-			<name_fr>Maître d'armes [5]</name_fr>
-			<name_jp>見切り [5]</name_jp>
 			<affinity_plus>20</affinity_plus>
 		</buff>
 		<buff level="6">
-			<name>Critical Eye [6]</name>
-			<name_fr>Maître d'armes [6]</name_fr>
-			<name_jp>見切り [6]</name_jp>
 			<affinity_plus>25</affinity_plus>
 		</buff>
 		<buff level="7">
-			<name>Critical Eye [7]</name>
-			<name_fr>Maître d'armes [7]</name_fr>
-			<name_jp>見切り [7]</name_jp>
 			<affinity_plus>30</affinity_plus>
 		</buff>
 	</buff_group>
@@ -1221,21 +822,12 @@
 		<name_fr>Berserker</name_fr>
 		<name_jp>超会心</name_jp>
 		<buff level="1">
-			<name>Critical Boost [1]</name>
-			<name_fr>Berserker [1]</name_fr>
-			<name_jp>超会心 [1]</name_jp>
 			<raw_critical_hit_multiplier>1.3</raw_critical_hit_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Critical Boost [2]</name>
-			<name_fr>Berserker [2]</name_fr>
-			<name_jp>超会心 [2]</name_jp>
 			<raw_critical_hit_multiplier>1.35</raw_critical_hit_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Critical Boost [3]</name>
-			<name_fr>Berserker [3]</name_fr>
-			<name_jp>超会心 [3]</name_jp>
 			<raw_critical_hit_multiplier>1.40</raw_critical_hit_multiplier>
 		</buff>
 	</buff_group>
@@ -1245,25 +837,16 @@
 		<name_fr>Mise à mort</name_fr>
 		<name_jp>弱点特効</name_jp>
 		<buff level="1">
-			<name>Weakness Exploit [1]</name>
-			<name_fr>Mise à mort [1]</name_fr>
-			<name_jp>弱点特効 [1]</name_jp>
 			<weak_spot>
 				<affinity_plus>15</affinity_plus>
 			</weak_spot>
 		</buff>
 		<buff level="2">
-			<name>Weakness Exploit [2]</name>
-			<name_fr>Mise à mort [2]</name_fr>
-			<name_jp>弱点特効 [2]</name_jp>
 			<weak_spot>
 				<affinity_plus>30</affinity_plus>
 			</weak_spot>
 		</buff>
 		<buff level="3">
-			<name>Weakness Exploit [3]</name>
-			<name_fr>Mise à mort [3]</name_fr>
-			<name_jp>弱点特効 [3]</name_jp>
 			<weak_spot>
 				<affinity_plus>50</affinity_plus>
 			</weak_spot>
@@ -1275,21 +858,12 @@
 		<name_fr>Concentration</name_fr>
 		<name_jp>集中</name_jp>
 		<buff level="1">
-			<name>Focus [1]</name>
-			<name_fr>Concentration [1]</name_fr>
-			<name_jp>集中 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Focus [2]</name>
-			<name_fr>Concentration [2]</name_fr>
-			<name_jp>集中 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Focus [3]</name>
-			<name_fr>Concentration [3]</name_fr>
-			<name_jp>集中 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1299,21 +873,12 @@
 		<name_fr>Puissance absolue</name_fr>
 		<name_jp>強化持続</name_jp>
 		<buff level="1">
-			<name>Power Prolonger [1]</name>
-			<name_fr>Puissance absolue [1]</name_fr>
-			<name_jp>強化持続 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Power Prolonger [2]</name>
-			<name_fr>Puissance absolue [2]</name_fr>
-			<name_jp>強化持続 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Power Prolonger [3]</name>
-			<name_fr>Puissance absolue [3]</name_fr>
-			<name_jp>強化持続 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1323,33 +888,18 @@
 		<name_fr>Savoir-faire</name_fr>
 		<name_jp>匠</name_jp>
 		<buff level="1">
-			<name>Handicraft [1]</name>
-			<name_fr>Savoir-faire [1]</name_fr>
-			<name_jp>匠 [1]</name_jp>
 			<sharpness_plus>10</sharpness_plus>
 		</buff>
 		<buff level="2">
-			<name>Handicraft [2]</name>
-			<name_fr>Savoir-faire [2]</name_fr>
-			<name_jp>匠 [2]</name_jp>
 			<sharpness_plus>20</sharpness_plus>
 		</buff>
 		<buff level="3">
-			<name>Handicraft [3]</name>
-			<name_fr>Savoir-faire [3]</name_fr>
-			<name_jp>匠 [3]</name_jp>
 			<sharpness_plus>30</sharpness_plus>
 		</buff>
 		<buff level="4">
-			<name>Handicraft [4]</name>
-			<name_fr>Savoir-faire [4]</name_fr>
-			<name_jp>匠 [4]</name_jp>
 			<sharpness_plus>40</sharpness_plus>
 		</buff>
 		<buff level="5">
-			<name>Handicraft [5]</name>
-			<name_fr>Savoir-faire [5]</name_fr>
-			<name_jp>匠 [5]</name_jp>
 			<sharpness_plus>50</sharpness_plus>
 		</buff>
 	</buff_group>
@@ -1359,25 +909,16 @@
 		<name_fr>Dégainage éclair</name_fr>
 		<name_jp>抜刀術【技】</name_jp>
 		<buff level="1">
-			<name>Critical Draw [1]</name>
-			<name_fr>Dégainage éclair [1]</name_fr>
-			<name_jp>抜刀術【技】 [1]</name_jp>
 			<draw_attack>
 				<affinity_plus>30</affinity_plus>
 			</draw_attack>
 		</buff>
 		<buff level="2">
-			<name>Critical Draw [2]</name>
-			<name_fr>Dégainage éclair [2]</name_fr>
-			<name_jp>抜刀術【技】 [2]</name_jp>
 			<draw_attack>
 				<affinity_plus>60</affinity_plus>
 			</draw_attack>
 		</buff>
 		<buff level="3">
-			<name>Critical Draw [3]</name>
-			<name_fr>Dégainage éclair [3]</name_fr>
-			<name_jp>抜刀術【技】 [3]</name_jp>
 			<draw_attack>
 				<affinity_plus>100</affinity_plus>
 			</draw_attack>
@@ -1389,21 +930,12 @@
 		<name_fr>Destructeur</name_fr>
 		<name_jp>破壊王</name_jp>
 		<buff level="1">
-			<name>Partbreaker [1]</name>
-			<name_fr>Destructeur [1]</name_fr>
-			<name_jp>破壊王 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Partbreaker [2]</name>
-			<name_fr>Destructeur [2]</name_fr>
-			<name_jp>破壊王 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Partbreaker [3]</name>
-			<name_fr>Destructeur [3]</name_fr>
-			<name_jp>破壊王 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1413,25 +945,16 @@
 		<name_fr>Cogneur</name_fr>
 		<name_jp>ＫＯ術</name_jp>
 		<buff level="1">
-			<name>Slugger [1]</name>
-			<name_fr>Cogneur [1]</name_fr>
-			<name_jp>ＫＯ術 [1]</name_jp>
 			<element_multiplier>
 				<stun>1.1</stun>
 			</element_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Slugger [2]</name>
-			<name_fr>Cogneur [2]</name_fr>
-			<name_jp>ＫＯ術 [2]</name_jp>
 			<element_multiplier>
 				<stun>1.2</stun>
 			</element_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Slugger [3]</name>
-			<name_fr>Cogneur [3]</name_fr>
-			<name_jp>ＫＯ術 [3]</name_jp>
 			<element_multiplier>
 				<stun>1.3</stun>
 			</element_multiplier>
@@ -1443,25 +966,16 @@
 		<name_fr>Vol d'endurance</name_fr>
 		<name_jp>スタミナ奪取</name_jp>
 		<buff level="1">
-			<name>Stamina Thief [1]</name>
-			<name_fr>Vol d'endurance [1]</name_fr>
-			<name_jp>スタミナ奪取 [1]</name_jp>
 			<element_multiplier>
 				<exhaust>1.1</exhaust>
 			</element_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Stamina Thief [2]</name>
-			<name_fr>Vol d'endurance [2]</name_fr>
-			<name_jp>スタミナ奪取 [2]</name_jp>
 			<element_multiplier>
 				<exhaust>1.2</exhaust>
 			</element_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Stamina Thief [3]</name>
-			<name_fr>Vol d'endurance [3]</name_fr>
-			<name_jp>スタミナ奪取 [3]</name_jp>
 			<element_multiplier>
 				<exhaust>1.3</exhaust>
 			</element_multiplier>
@@ -1473,9 +987,6 @@
 		<name_fr>Maître-cavalier</name_fr>
 		<name_jp>乗り名人</name_jp>
 		<buff level="1">
-			<name>Master Mounter [1]</name>
-			<name_fr>Maître-cavalier [1]</name_fr>
-			<name_jp>乗り名人 [1]</name_jp>
 			<element_multiplier>
 				<mount>1.1</mount>
 			</element_multiplier>
@@ -1487,9 +998,6 @@
 		<name_fr>Mort venue d'en haut</name_fr>
 		<name_jp>飛燕</name_jp>
 		<buff level="1">
-			<name>Airborne [1]</name>
-			<name_fr>Mort venue d'en haut [1]</name_fr>
-			<name_jp>飛燕 [1]</name_jp>
 			<airborne>
 				<attack_multiplier>1.1</attack_multiplier>
 			</airborne>
@@ -1501,41 +1009,26 @@
 		<name_fr>Force latente</name_fr>
 		<name_jp>力の解放</name_jp>
 		<buff level="1">
-			<name>Latent Power [1]</name>
-			<name_fr>Force latente [1]</name_fr>
-			<name_jp>力の解放 [1]</name_jp>
 			<received_damage>
 				<affinity_plus>10</affinity_plus>
 			</received_damage>
 		</buff>
 		<buff level="2">
-			<name>Latent Power [2]</name>
-			<name_fr>Force latente [2]</name_fr>
-			<name_jp>力の解放 [2]</name_jp>
 			<received_damage>
 				<affinity_plus>20</affinity_plus>
 			</received_damage>
 		</buff>
 		<buff level="3">
-			<name>Latent Power [3]</name>
-			<name_fr>Force latente [3]</name_fr>
-			<name_jp>力の解放 [3]</name_jp>
 			<received_damage>
 				<affinity_plus>30</affinity_plus>
 			</received_damage>
 		</buff>
 		<buff level="4">
-			<name>Latent Power [4]</name>
-			<name_fr>Force latente [4]</name_fr>
-			<name_jp>力の解放 [4]</name_jp>
 			<received_damage>
 				<affinity_plus>40</affinity_plus>
 			</received_damage>
 		</buff>
 		<buff level="5">
-			<name>Latent Power [5]</name>
-			<name_fr>Force latente [5]</name_fr>
-			<name_jp>力の解放 [5]</name_jp>
 			<received_damage>
 				<affinity_plus>50</affinity_plus>
 			</received_damage>
@@ -1547,45 +1040,30 @@
 		<name_fr>Témérité</name_fr>
 		<name_jp>挑戦者</name_jp>
 		<buff level="1">
-			<name>Agitator [1]</name>
-			<name_fr>Témérité [1]</name_fr>
-			<name_jp>挑戦者 [1]</name_jp>
 			<enraged>
 				<attack_plus>4</attack_plus>
 				<affinity_plus>3</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="2">
-			<name>Agitator [2]</name>
-			<name_fr>Témérité [2]</name_fr>
-			<name_jp>挑戦者 [2]</name_jp>
 			<enraged>
 				<attack_plus>8</attack_plus>
 				<affinity_plus>6</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="3">
-			<name>Agitator [3]</name>
-			<name_fr>Témérité [3]</name_fr>
-			<name_jp>挑戦者 [3]</name_jp>
 			<enraged>
 				<attack_plus>12</attack_plus>
 				<affinity_plus>9</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="4">
-			<name>Agitator [4]</name>
-			<name_fr>Témérité [4]</name_fr>
-			<name_jp>挑戦者 [4]</name_jp>
 			<enraged>
 				<attack_plus>16</attack_plus>
 				<affinity_plus>12</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="5">
-			<name>Agitator [5]</name>
-			<name_fr>Témérité [5]</name_fr>
-			<name_jp>挑戦者 [5]</name_jp>
 			<enraged>
 				<attack_plus>20</attack_plus>
 				<affinity_plus>15</affinity_plus>
@@ -1598,25 +1076,16 @@
 		<name_fr>Performance optimale</name_fr>
 		<name_jp>フルチャージ</name_jp>
 		<buff level="1">
-			<name>Peak Performance [1]</name>
-			<name_fr>Performance optimale [1]</name_fr>
-			<name_jp>フルチャージ [1]</name_jp>
 			<full_life>
 				<attack_plus>5</attack_plus>
 			</full_life>
 		</buff>
 		<buff level="2">
-			<name>Peak Performance [2]</name>
-			<name_fr>Performance optimale [2]</name_fr>
-			<name_jp>フルチャージ [2]</name_jp>
 			<full_life>
 				<attack_plus>10</attack_plus>
 			</full_life>
 		</buff>
 		<buff level="3">
-			<name>Peak Performance [3]</name>
-			<name_fr>Performance optimale [3]</name_fr>
-			<name_jp>フルチャージ [3]</name_jp>
 			<full_life>
 				<attack_plus>15</attack_plus>
 			</full_life>
@@ -1628,41 +1097,26 @@
 		<name_fr>Héroïsme</name_fr>
 		<name_jp>火事場力</name_jp>
 		<buff level="1">
-			<name>Heroics [1]</name>
-			<name_fr>Héroïsme [1]</name_fr>
-			<name_jp>火事場力 [1]</name_jp>
 			<low_life>
 				<attack_multiplier>1.05</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="2">
-			<name>Heroics [2]</name>
-			<name_fr>Héroïsme [2]</name_fr>
-			<name_jp>火事場力 [2]</name_jp>
 			<low_life>
 				<attack_multiplier>1.1</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="3">
-			<name>Heroics [3]</name>
-			<name_fr>Héroïsme [3]</name_fr>
-			<name_jp>火事場力 [3]</name_jp>
 			<low_life>
 				<attack_multiplier>1.15</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="4">
-			<name>Heroics [4]</name>
-			<name_fr>Héroïsme [4]</name_fr>
-			<name_jp>火事場力 [4]</name_jp>
 			<low_life>
 				<attack_multiplier>1.20</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="5">
-			<name>Heroics [5]</name>
-			<name_fr>Héroïsme [5]</name_fr>
-			<name_jp>火事場力 [5]</name_jp>
 			<low_life>
 				<attack_multiplier>1.25</attack_multiplier>
 			</low_life>
@@ -1674,9 +1128,6 @@
 		<name_fr>Jamais vaincu</name_fr>
 		<name_jp>不屈</name_jp>
 		<buff level="1">
-			<name>Fortify [1]</name>
-			<name_fr>Jamais vaincu [1]</name_fr>
-			<name_jp>不屈 [1]</name_jp>
 			<death_1>
 				<attack_multiplier>1.1</attack_multiplier>
 			</death_1>
@@ -1691,41 +1142,26 @@
 		<name_fr>Vengeance</name_fr>
 		<name_jp>逆恨み</name_jp>
 		<buff level="1">
-			<name>Resentment [1]</name>
-			<name_fr>Vengeance [1]</name_fr>
-			<name_jp>逆恨み [1]</name_jp>
 			<red_life>
 				<attack_plus>5</attack_plus>
 			</red_life>
 		</buff>
 		<buff level="2">
-			<name>Resentment [2]</name>
-			<name_fr>Vengeance [2]</name_fr>
-			<name_jp>逆恨み [2]</name_jp>
 			<red_life>
 				<attack_plus>10</attack_plus>
 			</red_life>
 		</buff>
 		<buff level="3">
-			<name>Resentment [3]</name>
-			<name_fr>Vengeance [3]</name_fr>
-			<name_jp>逆恨み [3]</name_jp>
 			<red_life>
 				<attack_plus>15</attack_plus>
 			</red_life>
 		</buff>
 		<buff level="4">
-			<name>Resentment [4]</name>
-			<name_fr>Vengeance [4]</name_fr>
-			<name_jp>逆恨み [4]</name_jp>
 			<red_life>
 				<attack_plus>20</attack_plus>
 			</red_life>
 		</buff>
 		<buff level="5">
-			<name>Resentment [5]</name>
-			<name_fr>Vengeance [5]</name_fr>
-			<name_jp>逆恨み [5]</name_jp>
 			<red_life>
 				<attack_plus>25</attack_plus>
 			</red_life>
@@ -1737,9 +1173,6 @@
 		<name_fr>Esprit indomptable</name_fr>
 		<name_jp>死中に活</name_jp>
 		<buff level="1">
-			<name>Resuscitate [1]</name>
-			<name_fr>Esprit indomptable [1]</name_fr>
-			<name_jp>死中に活 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1749,9 +1182,6 @@
 		<name_fr>Maestro</name_fr>
 		<name_jp>笛吹き名人</name_jp>
 		<buff level="1">
-			<name>Horn Maestro [1]</name>
-			<name_fr>Maestro [1]</name_fr>
-			<name_jp>笛吹き名人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1761,9 +1191,6 @@
 		<name_fr>Prêt à tirer</name_fr>
 		<name_jp>砲弾装填数ＵＰ</name_jp>
 		<buff level="1">
-			<name>Capacity Boost [1]</name>
-			<name_fr>Prêt à tirer [1]</name_fr>
-			<name_jp>砲弾装填数ＵＰ [1]</name_jp>
 			<capacity_up>1</capacity_up>
 		</buff>
 	</buff_group>
@@ -1773,15 +1200,9 @@
 		<name_fr>Salve mortelle</name_fr>
 		<name_jp>特殊射撃強化</name_jp>
 		<buff level="1">
-			<name>Special Ammo Boost [1]</name>
-			<name_fr>Salve mortelle [1]</name_fr>
-			<name_jp>特殊射撃強化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Special Ammo Boost [2]</name>
-			<name_fr>Salve mortelle [2]</name_fr>
-			<name_jp>特殊射撃強化 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1791,21 +1212,12 @@
 		<name_fr>BOUM !</name_fr>
 		<name_jp>砲術</name_jp>
 		<buff level="1">
-			<name>Artillery [1]</name>
-			<name_fr>BOUM ! [1]</name_fr>
-			<name_jp>砲術 [1]</name_jp>
 			<artillery_multiplier>1.1</artillery_multiplier>
 		</buff>
 		<buff level="2">
-			<name>Artillery [2]</name>
-			<name_fr>BOUM ! [2]</name_fr>
-			<name_jp>砲術 [2]</name_jp>
 			<artillery_multiplier>1.2</artillery_multiplier>
 		</buff>
 		<buff level="3">
-			<name>Artillery [3]</name>
-			<name_fr>BOUM ! [3]</name_fr>
-			<name_jp>砲術 [3]</name_jp>
 			<artillery_multiplier>1.3</artillery_multiplier>
 		</buff>
 	</buff_group>
@@ -1815,15 +1227,9 @@
 		<name_fr>Artillerie lourde</name_fr>
 		<name_jp>砲撃手</name_jp>
 		<buff level="1">
-			<name>Heavy Artillery [1]</name>
-			<name_fr>Artillerie lourde [1]</name_fr>
-			<name_jp>砲撃手 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Heavy Artillery [2]</name>
-			<name_fr>Artillerie lourde [2]</name_fr>
-			<name_jp>砲撃手 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1833,21 +1239,12 @@
 		<name_fr>Marathonien</name_fr>
 		<name_jp>ランナー</name_jp>
 		<buff level="1">
-			<name>Marathon Runner [1]</name>
-			<name_fr>Marathonien [1]</name_fr>
-			<name_jp>ランナー [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Marathon Runner [2]</name>
-			<name_fr>Marathonien [2]</name_fr>
-			<name_jp>ランナー [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Marathon Runner [3]</name>
-			<name_fr>Marathonien [3]</name_fr>
-			<name_jp>ランナー [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1857,33 +1254,18 @@
 		<name_fr>Athlète</name_fr>
 		<name_jp>体術</name_jp>
 		<buff level="1">
-			<name>Constitution [1]</name>
-			<name_fr>Athlète [1]</name_fr>
-			<name_jp>体術 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Constitution [2]</name>
-			<name_fr>Athlète [2]</name_fr>
-			<name_jp>体術 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Constitution [3]</name>
-			<name_fr>Athlète [3]</name_fr>
-			<name_jp>体術 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Constitution [4]</name>
-			<name_fr>Athlète [4]</name_fr>
-			<name_jp>体術 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Constitution [5]</name>
-			<name_fr>Athlète [5]</name_fr>
-			<name_jp>体術 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1893,9 +1275,6 @@
 		<name_fr>Saut de la foi</name_fr>
 		<name_jp>飛び込み</name_jp>
 		<buff level="1">
-			<name>Leap of Faith [1]</name>
-			<name_fr>Saut de la foi [1]</name_fr>
-			<name_jp>飛び込み [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1905,21 +1284,12 @@
 		<name_fr>Métabolisme</name_fr>
 		<name_jp>スタミナ急速回復</name_jp>
 		<buff level="1">
-			<name>Stamina Surge [1]</name>
-			<name_fr>Métabolisme [1]</name_fr>
-			<name_jp>スタミナ急速回復 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Stamina Surge [2]</name>
-			<name_fr>Métabolisme [2]</name_fr>
-			<name_jp>スタミナ急速回復 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Stamina Surge [3]</name>
-			<name_fr>Métabolisme [3]</name_fr>
-			<name_jp>スタミナ急速回復 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1929,21 +1299,12 @@
 		<name_fr>Spartiate</name_fr>
 		<name_jp>腹減り耐性</name_jp>
 		<buff level="1">
-			<name>Hunger Resistance [1]</name>
-			<name_fr>Spartiate [1]</name_fr>
-			<name_jp>腹減り耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Hunger Resistance [2]</name>
-			<name_fr>Spartiate [2]</name_fr>
-			<name_jp>腹減り耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Hunger Resistance [3]</name>
-			<name_fr>Spartiate [3]</name_fr>
-			<name_jp>腹減り耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1953,33 +1314,18 @@
 		<name_fr>Invulnérabilité</name_fr>
 		<name_jp>回避性能</name_jp>
 		<buff level="1">
-			<name>Evade Window [1]</name>
-			<name_fr>Invulnérabilité [1]</name_fr>
-			<name_jp>回避性能 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Evade Window [2]</name>
-			<name_fr>Invulnérabilité [2]</name_fr>
-			<name_jp>回避性能 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Evade Window [3]</name>
-			<name_fr>Invulnérabilité [3]</name_fr>
-			<name_jp>回避性能 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Evade Window [4]</name>
-			<name_fr>Invulnérabilité [4]</name_fr>
-			<name_jp>回避性能 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Evade Window [5]</name>
-			<name_fr>Invulnérabilité [5]</name_fr>
-			<name_jp>回避性能 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1989,21 +1335,12 @@
 		<name_fr>Trompe-la-mort</name_fr>
 		<name_jp>回避距離ＵＰ</name_jp>
 		<buff level="1">
-			<name>Evade Extender [1]</name>
-			<name_fr>Trompe-la-mort [1]</name_fr>
-			<name_jp>回避距離ＵＰ [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Evade Extender [2]</name>
-			<name_fr>Trompe-la-mort [2]</name_fr>
-			<name_jp>回避距離ＵＰ [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Evade Extender [3]</name>
-			<name_fr>Trompe-la-mort [3]</name_fr>
-			<name_jp>回避距離ＵＰ [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2013,33 +1350,18 @@
 		<name_fr>Paladin</name_fr>
 		<name_jp>ガード性能</name_jp>
 		<buff level="1">
-			<name>Guard [1]</name>
-			<name_fr>Paladin [1]</name_fr>
-			<name_jp>ガード性能 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Guard [2]</name>
-			<name_fr>Paladin [2]</name_fr>
-			<name_jp>ガード性能 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Guard [3]</name>
-			<name_fr>Paladin [3]</name_fr>
-			<name_jp>ガード性能 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Guard [4]</name>
-			<name_fr>Paladin [4]</name_fr>
-			<name_jp>ガード性能 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Guard [5]</name>
-			<name_fr>Paladin [5]</name_fr>
-			<name_jp>ガード性能 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2049,21 +1371,12 @@
 		<name_fr>Rengainage éclair</name_fr>
 		<name_jp>納刀術</name_jp>
 		<buff level="1">
-			<name>Quick Sheath [1]</name>
-			<name_fr>Rengainage éclair [1]</name_fr>
-			<name_jp>納刀術 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Quick Sheath [2]</name>
-			<name_fr>Rengainage éclair [2]</name_fr>
-			<name_jp>納刀術 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Quick Sheath [3]</name>
-			<name_fr>Rengainage éclair [3]</name_fr>
-			<name_jp>納刀術 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2073,33 +1386,18 @@
 		<name_fr>Un pour tous</name_fr>
 		<name_jp>広域化</name_jp>
 		<buff level="1">
-			<name>Wide-Range [1]</name>
-			<name_fr>Un pour tous [1]</name_fr>
-			<name_jp>広域化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Wide-Range [2]</name>
-			<name_fr>Un pour tous [2]</name_fr>
-			<name_jp>広域化 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Wide-Range [3]</name>
-			<name_fr>Un pour tous [3]</name_fr>
-			<name_jp>広域化 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Wide-Range [4]</name>
-			<name_fr>Un pour tous [4]</name_fr>
-			<name_jp>広域化 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Wide-Range [5]</name>
-			<name_fr>Un pour tous [5]</name_fr>
-			<name_jp>広域化 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2109,21 +1407,12 @@
 		<name_fr>Chimiste</name_fr>
 		<name_jp>アイテム使用強化</name_jp>
 		<buff level="1">
-			<name>Item Prolonger [1]</name>
-			<name_fr>Chimiste [1]</name_fr>
-			<name_jp>アイテム使用強化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Item Prolonger [2]</name>
-			<name_fr>Chimiste [2]</name_fr>
-			<name_jp>アイテム使用強化 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Item Prolonger [3]</name>
-			<name_fr>Chimiste [3]</name_fr>
-			<name_jp>アイテム使用強化 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2133,9 +1422,6 @@
 		<name_fr>Pique-assiette</name_fr>
 		<name_jp>満足感</name_jp>
 		<buff level="1">
-			<name>Free Meal [1]</name>
-			<name_fr>Pique-assiette [1]</name_fr>
-			<name_jp>満足感 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2145,21 +1431,12 @@
 		<name_fr>Carnassier</name_fr>
 		<name_jp>早食い</name_jp>
 		<buff level="1">
-			<name>Speed Eating [1]</name>
-			<name_fr>Carnassier [1]</name_fr>
-			<name_jp>早食い [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Speed Eating [2]</name>
-			<name_fr>Carnassier [2]</name_fr>
-			<name_jp>早食い [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Speed Eating [3]</name>
-			<name_fr>Carnassier [3]</name_fr>
-			<name_jp>早食い [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2169,21 +1446,12 @@
 		<name_fr>Affûtage rapide</name_fr>
 		<name_jp>砥石使用高速化</name_jp>
 		<buff level="1">
-			<name>Speed Sharpening [1]</name>
-			<name_fr>Affûtage rapide [1]</name_fr>
-			<name_jp>砥石使用高速化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Speed Sharpening [2]</name>
-			<name_fr>Affûtage rapide [2]</name_fr>
-			<name_jp>砥石使用高速化 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Speed Sharpening [3]</name>
-			<name_fr>Affûtage rapide [3]</name_fr>
-			<name_jp>砥石使用高速化 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2193,21 +1461,12 @@
 		<name_fr>Bombardier</name_fr>
 		<name_jp>ボマー</name_jp>
 		<buff level="1">
-			<name>Bombardier [1]</name>
-			<name_fr>Bombardier [1]</name_fr>
-			<name_jp>ボマー [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Bombardier [2]</name>
-			<name_fr>Bombardier [2]</name_fr>
-			<name_jp>ボマー [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Bombardier [3]</name>
-			<name_fr>Bombardier [3]</name_fr>
-			<name_jp>ボマー [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2217,21 +1476,12 @@
 		<name_fr>Mycologue extrême</name_fr>
 		<name_jp>キノコ大好き</name_jp>
 		<buff level="1">
-			<name>Mushroomancer [1]</name>
-			<name_fr>Mycologue extrême [1]</name_fr>
-			<name_jp>キノコ大好き [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Mushroomancer [2]</name>
-			<name_fr>Mycologue extrême [2]</name_fr>
-			<name_jp>キノコ大好き [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Mushroomancer [3]</name>
-			<name_fr>Mycologue extrême [3]</name_fr>
-			<name_jp>キノコ大好き [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2241,9 +1491,6 @@
 		<name_fr>Maître de la pêche</name_fr>
 		<name_jp>釣り名人</name_jp>
 		<buff level="1">
-			<name>Master Fisher</name>
-			<name_fr>Maître de la pêche</name_fr>
-			<name_jp>釣り名人</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2253,9 +1500,6 @@
 		<name_fr>Pro du transport</name_fr>
 		<name_jp>運搬の達人</name_jp>
 		<buff level="1">
-			<name>Pro Transporter</name>
-			<name_fr>Pro du transport</name_fr>
-			<name_jp>運搬の達人</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2265,9 +1509,6 @@
 		<name_fr>Prince de la cueillette</name_fr>
 		<name_jp>採集の達人</name_jp>
 		<buff level="1">
-			<name>Master Gatherer [1]</name>
-			<name_fr>Prince de la cueillette [1]</name_fr>
-			<name_jp>採集の達人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2277,9 +1518,6 @@
 		<name_fr>Amoureux du miel</name_fr>
 		<name_jp>ハニーハンター</name_jp>
 		<buff level="1">
-			<name>Honey Hunter [1]</name>
-			<name_fr>Amoureux du miel [1]</name_fr>
-			<name_jp>ハニーハンター [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2289,9 +1527,6 @@
 		<name_fr>Expert en dépeçage</name_fr>
 		<name_jp>剥ぎ取り鉄人</name_jp>
 		<buff level="1">
-			<name>Carving Pro [1]</name>
-			<name_fr>Expert en dépeçage [1]</name_fr>
-			<name_jp>剥ぎ取り鉄人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2301,21 +1536,12 @@
 		<name_fr>Bénédiction</name_fr>
 		<name_jp>精霊の加護</name_jp>
 		<buff level="1">
-			<name>Divine Blessing [1]</name>
-			<name_fr>Bénédiction [1]</name_fr>
-			<name_jp>精霊の加護 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Divine Blessing [2]</name>
-			<name_fr>Bénédiction [2]</name_fr>
-			<name_jp>精霊の加護 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Divine Blessing [3]</name>
-			<name_fr>Bénédiction [3]</name_fr>
-			<name_jp>精霊の加護 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2325,33 +1551,18 @@
 		<name_fr>Esprit Palico</name_fr>
 		<name_jp>オトモへの采配</name_jp>
 		<buff level="1">
-			<name>Palico Rally [1]</name>
-			<name_fr>Esprit Palico [1]</name_fr>
-			<name_jp>オトモへの采配 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Palico Rally [2]</name>
-			<name_fr>Esprit Palico [2]</name_fr>
-			<name_jp>オトモへの采配 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Palico Rally [3]</name>
-			<name_fr>Esprit Palico [3]</name_fr>
-			<name_jp>オトモへの采配 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Palico Rally [4]</name>
-			<name_fr>Esprit Palico [4]</name_fr>
-			<name_jp>オトモへの采配 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="5">
-			<name>Palico Rally [5]</name>
-			<name_fr>Esprit Palico [5]</name_fr>
-			<name_jp>オトモへの采配 [5]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2361,27 +1572,15 @@
 		<name_fr>Botaniste</name_fr>
 		<name_jp>植生学</name_jp>
 		<buff level="1">
-			<name>Botanist [1]</name>
-			<name_fr>Botaniste [1]</name_fr>
-			<name_jp>植生学 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Botanist [2]</name>
-			<name_fr>Botaniste [2]</name_fr>
-			<name_jp>植生学 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Botanist [3]</name>
-			<name_fr>Botaniste [3]</name_fr>
-			<name_jp>植生学 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="4">
-			<name>Botanist [4]</name>
-			<name_fr>Botaniste [4]</name_fr>
-			<name_jp>植生学 [4]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2391,21 +1590,12 @@
 		<name_fr>Géologiste</name_fr>
 		<name_jp>地質学</name_jp>
 		<buff level="1">
-			<name>Geologist [1]</name>
-			<name_fr>Géologiste [1]</name_fr>
-			<name_jp>地質学 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Geologist [2]</name>
-			<name_fr>Géologiste [2]</name_fr>
-			<name_jp>地質学 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Geologist [3]</name>
-			<name_fr>Géologiste [3]</name_fr>
-			<name_jp>地質学 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2415,25 +1605,16 @@
 		<name_fr>Corps et âme</name_fr>
 		<name_jp>渾身</name_jp>
 		<buff level="1">
-			<name>Maximum Might [1]</name>
-			<name_fr>Corps et âme [1]</name_fr>
-			<name_jp>渾身 [1]</name_jp>
 			<full_stamina>
 				<affinity_plus>10</affinity_plus>
 			</full_stamina>
 		</buff>
 		<buff level="2">
-			<name>Maximum Might [2]</name>
-			<name_fr>Corps et âme [2]</name_fr>
-			<name_jp>渾身 [2]</name_jp>
 			<full_stamina>
 				<affinity_plus>20</affinity_plus>
 			</full_stamina>
 		</buff>
 		<buff level="3">
-			<name>Maximum Might [3]</name>
-			<name_fr>Corps et âme [3]</name_fr>
-			<name_jp>渾身 [3]</name_jp>
 			<full_stamina>
 				<affinity_plus>30</affinity_plus>
 			</full_stamina>
@@ -2445,21 +1626,12 @@
 		<name_fr>Fronde +</name_fr>
 		<name_jp>スリンガー装填数ＵＰ</name_jp>
 		<buff level="1">
-			<name>Slinger Capacity [1]</name>
-			<name_fr>Fronde + [1]</name_fr>
-			<name_jp>スリンガー装填数ＵＰ [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Slinger Capacity [2]</name>
-			<name_fr>Fronde + [2]</name_fr>
-			<name_jp>スリンガー装填数ＵＰ [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Slinger Capacity [3]</name>
-			<name_fr>Fronde + [3]</name_fr>
-			<name_jp>スリンガー装填数ＵＰ [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2469,21 +1641,12 @@
 		<name_fr>Furtivité</name_fr>
 		<name_jp>潜伏</name_jp>
 		<buff level="1">
-			<name>Stealth [1]</name>
-			<name_fr>Furtivité [1]</name_fr>
-			<name_jp>潜伏 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Stealth [2]</name>
-			<name_fr>Furtivité [2]</name_fr>
-			<name_jp>潜伏 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Stealth [3]</name>
-			<name_fr>Furtivité [3]</name_fr>
-			<name_jp>潜伏 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2493,21 +1656,12 @@
 		<name_fr>Nerfs d'acier</name_fr>
 		<name_jp>ひるみ軽減</name_jp>
 		<buff level="1">
-			<name>Flinch Free [1]</name>
-			<name_fr>Nerfs d'acier [1]</name_fr>
-			<name_jp>ひるみ軽減 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Flinch Free [2]</name>
-			<name_fr>Nerfs d'acier [2]</name_fr>
-			<name_jp>ひるみ軽減 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Flinch Free [3]</name>
-			<name_fr>Nerfs d'acier [3]</name_fr>
-			<name_jp>ひるみ軽減 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2517,9 +1671,6 @@
 		<name_fr>Pistage</name_fr>
 		<name_jp>導蟲反応距離ＵＰ</name_jp>
 		<buff level="1">
-			<name>Scoutfly Range Up [1]</name>
-			<name_fr>Pistage [1]</name_fr>
-			<name_jp>導蟲反応距離ＵＰ [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2529,9 +1680,6 @@
 		<name_fr>Rampeur rapide</name_fr>
 		<name_jp>しゃがみ移動速度ＵＰ</name_jp>
 		<buff level="1">
-			<name>Speed Crawler</name>
-			<name_fr>Rampeur rapide</name_fr>
-			<name_jp>しゃがみ移動速度ＵＰ</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2541,9 +1689,6 @@
 		<name_fr>Acrobate</name_fr>
 		<name_jp>ジャンプ鉄人</name_jp>
 		<buff level="1">
-			<name>Jump Master [1]</name>
-			<name_fr>Acrobate [1]</name_fr>
-			<name_jp>ジャンプ鉄人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2553,21 +1698,12 @@
 		<name_fr>Expert sporenlit</name_fr>
 		<name_jp>綿胞子草の知識</name_jp>
 		<buff level="1">
-			<name>Sporepuff Expert [1]</name>
-			<name_fr>Expert sporenlit [1]</name_fr>
-			<name_jp>綿胞子草の知識 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Sporepuff Expert [2]</name>
-			<name_fr>Expert sporenlit [2]</name_fr>
-			<name_jp>綿胞子草の知識 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Sporepuff Expert [3]</name>
-			<name_fr>Expert sporenlit [3]</name_fr>
-			<name_jp>綿胞子草の知識 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2577,21 +1713,12 @@
 		<name_fr>Homme-poisson</name_fr>
 		<name_jp>水場適応</name_jp>
 		<buff level="1">
-			<name>Aquatic Expert [1]</name>
-			<name_fr>Homme-poisson [1]</name_fr>
-			<name_jp>水場適応 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Aquatic Expert [2]</name>
-			<name_fr>Homme-poisson [2]</name_fr>
-			<name_jp>水場適応 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Aquatic Expert [3]</name>
-			<name_fr>Homme-poisson [3]</name_fr>
-			<name_jp>水場適応 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2601,9 +1728,6 @@
 		<name_fr>Monte-en-l'air</name_fr>
 		<name_jp>クライマー</name_jp>
 		<buff level="1">
-			<name>Cliffhanger [1]</name>
-			<name_fr>Monte-en-l'air [1]</name_fr>
-			<name_jp>クライマー [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2613,9 +1737,6 @@
 		<name_fr>Aveuglement</name_fr>
 		<name_jp>閃光強化</name_jp>
 		<buff level="1">
-			<name>Blindsider [1]</name>
-			<name_fr>Aveuglement [1]</name_fr>
-			<name_jp>閃光強化 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2625,9 +1746,6 @@
 		<name_fr>Puits de science</name_fr>
 		<name_jp>研究者</name_jp>
 		<buff level="1">
-			<name>Scholar [1]</name>
-			<name_fr>Puits de science [1]</name_fr>
-			<name_jp>研究者 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2637,21 +1755,12 @@
 		<name_fr>Entomologiste</name_fr>
 		<name_jp>昆虫標本の達人</name_jp>
 		<buff level="1">
-			<name>Entomologist [1]</name>
-			<name_fr>Entomologiste [1]</name_fr>
-			<name_jp>昆虫標本の達人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Entomologist [2]</name>
-			<name_fr>Entomologiste [2]</name_fr>
-			<name_jp>昆虫標本の達人 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Entomologist [3]</name>
-			<name_fr>Entomologiste [3]</name_fr>
-			<name_jp>昆虫標本の達人 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2661,21 +1770,12 @@
 		<name_fr>Purification</name_fr>
 		<name_jp>瘴気耐性</name_jp>
 		<buff level="1">
-			<name>Effluvia Resistance [1]</name>
-			<name_fr>Purification [1]</name_fr>
-			<name_jp>瘴気耐性 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Effluvia Resistance [2]</name>
-			<name_fr>Purification [2]</name_fr>
-			<name_jp>瘴気耐性 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Effluvia Resistance [3]</name>
-			<name_fr>Purification [3]</name_fr>
-			<name_jp>瘴気耐性 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2685,9 +1785,6 @@
 		<name_fr>Instinct animal</name_fr>
 		<name_jp>追跡の達人</name_jp>
 		<buff level="1">
-			<name>Scenthound [1]</name>
-			<name_fr>Instinct animal [1]</name_fr>
-			<name_jp>追跡の達人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2697,9 +1794,6 @@
 		<name_fr>Chance du foreur</name_fr>
 		<name_jp>探索者の幸運</name_jp>
 		<buff level="1">
-			<name>Forager's Luck [1]</name>
-			<name_fr>Chance du foreur [1]</name_fr>
-			<name_jp>探索者の幸運 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2709,9 +1803,6 @@
 		<name_fr>Détecteur</name_fr>
 		<name_jp>感知</name_jp>
 		<buff level="1">
-			<name>Detector [1]</name>
-			<name_fr>Détecteur [1]</name_fr>
-			<name_jp>感知 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2721,9 +1812,6 @@
 		<name_fr>Roi du BBQ</name_fr>
 		<name_jp>肉焼き名人</name_jp>
 		<buff level="1">
-			<name>BBQ Master [1]</name>
-			<name_fr>Roi du BBQ [1]</name_fr>
-			<name_jp>肉焼き名人 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2733,21 +1821,12 @@
 		<name_fr>Expert en survie</name_fr>
 		<name_jp>整備</name_jp>
 		<buff level="1">
-			<name>Tool Specialist [1]</name>
-			<name_fr>Expert en survie [1]</name_fr>
-			<name_jp>整備 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Tool Specialist [2]</name>
-			<name_fr>Expert en survie [2]</name_fr>
-			<name_jp>整備 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Tool Specialist [3]</name>
-			<name_fr>Expert en survie [3]</name_fr>
-			<name_jp>整備 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2757,9 +1836,6 @@
 		<name_fr>Roi de la glisse</name_fr>
 		<name_jp>滑走強化</name_jp>
 		<buff level="1">
-			<name>Affinity Sliding [1]</name>
-			<name_fr>Roi de la glisse [1]</name_fr>
-			<name_jp>滑走強化 [1]</name_jp>
 			<sliding>
 				<affinity_plus>30</affinity_plus>
 			</sliding>
@@ -2771,21 +1847,12 @@
 		<name_fr>Intimidation</name_fr>
 		<name_jp>威嚇</name_jp>
 		<buff level="1">
-			<name>Intimidator [1]</name>
-			<name_fr>Intimidation [1]</name_fr>
-			<name_jp>威嚇 [1]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="2">
-			<name>Intimidator [2]</name>
-			<name_fr>Intimidation [2]</name_fr>
-			<name_jp>威嚇 [2]</name_jp>
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
-			<name>Intimidator [3]</name>
-			<name_fr>Intimidation [3]</name_fr>
-			<name_jp>威嚇 [3]</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2795,9 +1862,6 @@
 		<name_fr>Récupération rapide</name_fr>
 		<name_jp>加速再生</name_jp>
 		<buff>
-			<name>Hasten Recovery</name>
-			<name_fr>Récupération rapide</name_fr>
-			<name_jp>加速再生</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2807,9 +1871,6 @@
 		<name_fr>Super récupération</name_fr>
 		<name_jp>超回復力</name_jp>
 		<buff>
-			<name>Super Recovery</name>
-			<name_fr>Super récupération</name_fr>
-			<name_jp>超回復力</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2819,9 +1880,6 @@
 		<name_fr>Poison +</name_fr>
 		<name_jp>毒ダメージ強化</name_jp>
 		<buff>
-			<name>Poison Duration Up</name>
-			<name_fr>Poison +</name_fr>
-			<name_jp>毒ダメージ強化</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2831,9 +1889,6 @@
 		<name_fr>Adrénaline</name_fr>
 		<name_jp>奮起</name_jp>
 		<buff>
-			<name>Adrenaline</name>
-			<name_fr>Adrénaline</name_fr>
-			<name_jp>奮起</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2843,9 +1898,6 @@
 		<name_fr>Stamina +</name_fr>
 		<name_jp>スタミナ上限突破</name_jp>
 		<buff>
-			<name>Stamina Cap Up</name>
-			<name_fr>Stamina +</name_fr>
-			<name_jp>スタミナ上限突破</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2855,9 +1907,6 @@
 		<name_fr>Rage élémentaire</name_fr>
 		<name_jp>会心撃【属性】</name_jp>
 		<buff>
-			<name>Critical Element</name>
-			<name_fr>Rage élémentaire</name_fr>
-			<name_jp>会心撃【属性】</name_jp>
 			<element_critical_hit_multiplier>1.25</element_critical_hit_multiplier>
 		</buff>
 	</buff_group>
@@ -2867,9 +1916,6 @@
 		<name_fr>Œil de l'esprit</name_fr>
 		<name_jp>心眼／弾導強化</name_jp>
 		<buff>
-			<name>Mind's Eye/Ballistics</name>
-			<name_fr>Œil de l'esprit</name_fr>
-			<name_jp>心眼／弾導強化</name_jp>
 			<minds_eye>1</minds_eye>
 		</buff>
 	</buff_group>
@@ -2879,9 +1925,6 @@
 		<name_fr>Matraquage</name_fr>
 		<name_jp>鈍器使い</name_jp>
 		<buff>
-			<name>Bludgeoner</name>
-			<name_fr>Matraquage</name_fr>
-			<name_jp>鈍器使い</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2891,9 +1934,6 @@
 		<name_fr>Secret de l'acier</name_fr>
 		<name_jp>無属性強化</name_jp>
 		<buff>
-			<name>Non-elemental Boost</name>
-			<name_fr>Secret de l'acier</name_fr>
-			<name_jp>無属性強化</name_jp>
 			<raw_weapon>
 				<attack_multiplier>1.1</attack_multiplier>
 			</raw_weapon>
@@ -2905,9 +1945,6 @@
 		<name_fr>Maître capture</name_fr>
 		<name_jp>捕獲名人</name_jp>
 		<buff>
-			<name>Capture Master</name>
-			<name_fr>Maître capture</name_fr>
-			<name_jp>捕獲名人</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2917,9 +1954,6 @@
 		<name_fr>Ultra garde</name_fr>
 		<name_jp>ガード強化</name_jp>
 		<buff>
-			<name>Guard Up</name>
-			<name_fr>Ultra garde</name_fr>
-			<name_jp>ガード強化</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2929,9 +1963,6 @@
 		<name_fr>Bravoure</name_fr>
 		<name_jp>根性</name_jp>
 		<buff>
-			<name>Guts</name>
-			<name_fr>Bravoure</name_fr>
-			<name_jp>根性</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2941,9 +1972,6 @@
 		<name_fr>Main de maître</name_fr>
 		<name_jp>達人芸</name_jp>
 		<buff>
-			<name>Master's Touch</name>
-			<name_fr>Main de maître</name_fr>
-			<name_jp>達人芸</name_jp>
 			<sharpness_use_critical_multiplier>0.0</sharpness_use_critical_multiplier>
 		</buff>
 	</buff_group>
@@ -2953,9 +1981,6 @@
 		<name_fr>Anti-vent</name_fr>
 		<name_jp>風圧完全無効</name_jp>
 		<buff>
-			<name>Nullify Wind Pressure</name>
-			<name_fr>Anti-vent</name_fr>
-			<name_jp>風圧完全無効</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2965,9 +1990,6 @@
 		<name_fr>Samouraï/Franc-tireur</name_fr>
 		<name_jp>業物／弾丸節約</name_jp>
 		<buff>
-			<name>Razor Sharp/Spare Shot</name>
-			<name_fr>Samouraï/Franc-tireur</name_fr>
-			<name_jp>業物／弾丸節約</name_jp>
 			<sharpness_use_multiplier>0.5</sharpness_use_multiplier>
 		</buff>
 	</buff_group>
@@ -2977,9 +1999,6 @@
 		<name_fr>Attaque perfide</name_fr>
 		<name_jp>会心撃【特殊】</name_jp>
 		<buff>
-			<name>Critical Status</name>
-			<name_fr>Attaque perfide</name_fr>
-			<name_jp>会心撃【特殊】</name_jp>
 			<status_critical_hit_multiplier>1.25</status_critical_hit_multiplier>
 		</buff>
 	</buff_group>
@@ -2989,9 +2008,6 @@
 		<name_fr>Chance</name_fr>
 		<name_jp>幸運</name_jp>
 		<buff>
-			<name>Good Luck</name>
-			<name_fr>Chance</name_fr>
-			<name_jp>幸運</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3001,9 +2017,6 @@
 		<name_fr>Maître archer</name_fr>
 		<name_jp>弓溜め段階解放</name_jp>
 		<buff>
-			<name>Bow Charge Plus</name>
-			<name_fr>Maître archer</name_fr>
-			<name_jp>弓溜め段階解放</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3013,9 +2026,6 @@
 		<name_fr>Batto-jutsu</name_fr>
 		<name_jp>抜刀術【力】</name_jp>
 		<buff>
-			<name>Punishing Draw</name>
-			<name_fr>Batto-jutsu</name_fr>
-			<name_jp>抜刀術【力】</name_jp>
 			<draw_attack>
 				<punishing_draw>1</punishing_draw>
 				<attack_plus>5</attack_plus>
@@ -3028,9 +2038,6 @@
 		<name_fr>Acier trempé</name_fr>
 		<name_jp>剛刃研磨</name_jp>
 		<buff>
-			<name>Protective Polish</name>
-			<name_fr>Acier trempé</name_fr>
-			<name_jp>剛刃研磨</name_jp>
 			<max_sharpness_time>60.0</max_sharpness_time>
 		</buff>
 	</buff_group>
@@ -3040,9 +2047,6 @@
 		<name_fr>Apothicaire</name_fr>
 		<name_jp>毒ビン追加</name_jp>
 		<buff>
-			<name>Poison Functionality</name>
-			<name_fr>Apothicaire</name_fr>
-			<name_jp>毒ビン追加</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3052,9 +2056,6 @@
 		<name_fr>Gibier de potence</name_fr>
 		<name_jp>麻痺ビン追加</name_jp>
 		<buff>
-			<name>Para Functionality</name>
-			<name_fr>Gibier de potence</name_fr>
-			<name_jp>麻痺ビン追加</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3064,9 +2065,6 @@
 		<name_fr>Marchand de sable</name_fr>
 		<name_jp>睡眠ビン追加</name_jp>
 		<buff>
-			<name>Sleep Functionality</name>
-			<name_fr>Marchand de sable</name_fr>
-			<name_jp>睡眠ビン追加</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3076,9 +2074,6 @@
 		<name_fr>Maître bombardier</name_fr>
 		<name_jp>爆破ビン追加</name_jp>
 		<buff>
-			<name>Blast Functionality</name>
-			<name_fr>Maître bombardier</name_fr>
-			<name_jp>爆破ビン追加</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3088,9 +2083,6 @@
 		<name_fr>Sceau des anciens +</name_fr>
 		<name_jp>龍封力強化</name_jp>
 		<buff>
-			<name>Elderseal Boost</name>
-			<name_fr>Sceau des anciens +</name_fr>
-			<name_jp>龍封力強化</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3099,8 +2091,6 @@
 		<name>Carving Master</name>
 		<name_jp>剥ぎ取り名人</name_jp>
 		<buff>
-			<name>Carving Master</name>
-			<name_jp>剥ぎ取り名人</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3109,8 +2099,6 @@
 		<name>Great Luck</name>
 		<name_jp>強運</name_jp>
 		<buff>
-			<name>Great Luck</name>
-			<name_jp>強運</name_jp>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3121,8 +2109,6 @@
 		<name>Coalescence</name>
 		<name_fr>Union</name_fr>
 		<buff level="1">
-			<name>Coalescence [1]</name>
-			<name_fr>Union [1]</name_fr>
 			<blight_recovery>
 				<attack_plus>12</attack_plus>
 				<all_elements_plus>3</all_elements_plus>
@@ -3130,8 +2116,6 @@
 			</blight_recovery>
 		</buff>
 		<buff level="2">
-			<name>Coalescence [2]</name>
-			<name_fr>Union [2]</name_fr>
 			<blight_recovery>
 				<attack_plus>15</attack_plus>
 				<all_elements_plus>6</all_elements_plus>
@@ -3139,8 +2123,6 @@
 			</blight_recovery>
 		</buff>
 		<buff level="3">
-			<name>Coalescence [3]</name>
-			<name_fr>Union [3]</name_fr>
 			<blight_recovery>
 				<attack_plus>18</attack_plus>
 				<all_elements_plus>9</all_elements_plus>
@@ -3152,19 +2134,16 @@
 	<buff_group id="offensive_guard">
 		<name>Offensive Guard</name>
 		<buff level="1">
-			<name>Offensive Guard [1]</name>
 			<after_perfect_guard>
 				<attack_multiplier>1.05</attack_multiplier>
 			</after_perfect_guard>
 		</buff>
 		<buff level="2">
-			<name>Offensive Guard [2]</name>
 			<after_perfect_guard>
 				<attack_multiplier>1.1</attack_multiplier>
 			</after_perfect_guard>
 		</buff>
 		<buff level="3">
-			<name>Offensive Guard [3]</name>
 			<after_perfect_guard>
 				<attack_multiplier>1.15</attack_multiplier>
 			</after_perfect_guard>
@@ -3174,7 +2153,6 @@
 	<buff_group id="safe_landing">
 		<name>Safe Landing</name>
 		<buff>
-			<name>Safe Landing</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3183,8 +2161,6 @@
 		<name>Provoker</name>
 		<name_jo>陽動攻撃</name_jo>
 		<buff>
-			<name>Provoker</name>
-			<name_jo>陽動攻撃</name_jo>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3195,8 +2171,6 @@
 		<name>Demondrug</name>
 		<name_fr>Potion du démon</name_fr>
 		<buff>
-			<name>Demondrug</name>
-			<name_fr>Potion du démon</name_fr>
 			<attack_plus>5</attack_plus>
 		</buff>
 	</buff_group>
@@ -3205,8 +2179,6 @@
 		<name>Mega Demondrug</name>
 		<name_fr>Potion du démon +</name_fr>
 		<buff>
-			<name>Mega Demondrug</name>
-			<name_fr>Potion du démon +</name_fr>
 			<attack_plus>7</attack_plus>
 		</buff>
 	</buff_group>
@@ -3215,8 +2187,6 @@
 		<name>Might Seed</name>
 		<name_fr>Graine de force</name_fr>
 		<buff>
-			<name>Might Seed</name>
-			<name_fr>Graine de force</name_fr>
 			<might_seed_use>
 				<attack_plus>10</attack_plus>
 			</might_seed_use>
@@ -3227,8 +2197,6 @@
 		<name>Demon Powder</name>
 		<name_fr>Poudre du démon</name_fr>
 		<buff>
-			<name>Demon Powder</name>
-			<name_fr>Poudre du démon</name_fr>
 			<demon_powder_use>
 				<attack_plus>10</attack_plus>
 			</demon_powder_use>
@@ -3239,8 +2207,6 @@
 		<name>Might Pill</name>
 		<name_fr>Philtre du diable</name_fr>
 		<buff>
-			<name>Might Pill</name>
-			<name_fr>Philtre du diable</name_fr>
 			<might_pill_use>
 				<attack_plus>25</attack_plus>
 			</might_pill_use>
@@ -3251,8 +2217,6 @@
 		<name>Armorskin</name>
 		<name_fr>Potion de pierre</name_fr>
 		<buff>
-			<name>Armorskin</name>
-			<name_fr>Potion de pierre</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3261,8 +2225,6 @@
 		<name>Mega Armorskin</name>
 		<name_fr>Potion de pierre +</name_fr>
 		<buff>
-			<name>Mega Armorskin</name>
-			<name_fr>Potion de pierre +</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3271,8 +2233,6 @@
 		<name>Adamant Seed</name>
 		<name_fr>Graine de ténacité</name_fr>
 		<buff>
-			<name>Adamant Seed</name>
-			<name_fr>Graine de ténacité</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3281,8 +2241,6 @@
 		<name>Hardshell Powder</name>
 		<name_fr>Poudre de pierre</name_fr>
 		<buff>
-			<name>Hardshell Powder</name>
-			<name_fr>Poudre de pierre</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3291,8 +2249,6 @@
 		<name>Adamant Pill</name>
 		<name_fr>Philtre de métal</name_fr>
 		<buff>
-			<name>Adamant Pill</name>
-			<name_fr>Philtre de métal</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3303,8 +2259,6 @@
 		<name>Powercharm</name>
 		<name_fr>Amulette de force</name_fr>
 		<buff>
-			<name>Powercharm</name>
-			<name_fr>Amulette de force</name_fr>
 			<attack_plus>6</attack_plus>
 		</buff>
 	</buff_group>
@@ -3313,8 +2267,6 @@
 		<name>Powertalon</name>
 		<name_fr>Griffe de force</name_fr>
 		<buff>
-			<name>Powertalon</name>
-			<name_fr>Griffe de force</name_fr>
 			<attack_plus>9</attack_plus>
 		</buff>
 	</buff_group>
@@ -3323,8 +2275,6 @@
 		<name>Armorcharm</name>
 		<name_fr>Amulette de défense</name_fr>
 		<buff>
-			<name>Armorcharm</name>
-			<name_fr>Amulette de défense</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3333,8 +2283,6 @@
 		<name>Armortalon</name>
 		<name_fr>Griffe de défense</name_fr>
 		<buff>
-			<name>Armortalon</name>
-			<name_fr>Griffe de défense</name_fr>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3394,7 +2342,6 @@
 	<buff_group id="felyne_polisher">
 		<name>Felyne Polisher</name>
 		<buff>
-			<name>Felyne Polisher</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3402,7 +2349,6 @@
 	<buff_group id="felyne_rider">
 		<name>Felyne Rider</name>
 		<buff>
-			<name>Felyne Rider</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3410,7 +2356,6 @@
 	<buff_group id="felyne_slugger">
 		<name>Felyne Slugger</name>
 		<buff>
-			<name>Felyne Slugger</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3418,7 +2363,6 @@
 	<buff_group id="felyne_acrobat">
 		<name>Felyne Acrobat</name>
 		<buff>
-			<name>Felyne Acrobat</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3426,7 +2370,6 @@
 	<buff_group id="felyne_feet">
 		<name>Felyne Feet</name>
 		<buff>
-			<name>Felyne Feet</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3434,7 +2377,6 @@
 	<buff_group id="felyne_moxie">
 		<name>Felyne Moxie</name>
 		<buff>
-			<name>Felyne Moxie</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3442,7 +2384,6 @@
 	<buff_group id="felyne_riser_hi">
 		<name>Felyne Riser (Hi)</name>
 		<buff>
-			<name>Felyne Riser (Hi)</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3450,7 +2391,6 @@
 	<buff_group id="felyne_black_belt">
 		<name>Felyne Black Belt</name>
 		<buff>
-			<name>Felyne Black Belt</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3458,7 +2398,6 @@
 	<buff_group id="felyne_heroics">
 		<name>Felyne Heroics</name>
 		<buff>
-			<name>Felyne Heroics</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3466,7 +2405,6 @@
 	<buff_group id="felyne_groomer">
 		<name>Felyne Groomer</name>
 		<buff>
-			<name>Felyne Groomer</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3474,7 +2412,6 @@
 	<buff_group id="felyne_medic">
 		<name>Felyne Medic</name>
 		<buff>
-			<name>Felyne Medic</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3482,7 +2419,6 @@
 	<buff_group id="felyne_specialist">
 		<name>Felyne Specialist</name>
 		<buff>
-			<name>Felyne Specialist</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3490,7 +2426,6 @@
 	<buff_group id="felyne_sharpshooter">
 		<name>Felyne Sharpshooter</name>
 		<buff>
-			<name>Felyne Sharpshooter</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3498,7 +2433,6 @@
 	<buff_group id="felyne_bombardier">
 		<name>Felyne Bombardier</name>
 		<buff>
-			<name>Felyne Bombardier</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3506,7 +2440,6 @@
 	<buff_group id="felyne_pyro">
 		<name>Felyne Pyro</name>
 		<buff>
-			<name>Felyne Pyro</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3514,7 +2447,6 @@
 	<buff_group id="felyne_iron_carver">
 		<name>Felyne Iron Carver</name>
 		<buff>
-			<name>Felyne Iron Carver</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3522,7 +2454,6 @@
 	<buff_group id="felyne_exchanger">
 		<name>Felyne Exchanger</name>
 		<buff>
-			<name>Felyne Exchanger</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3530,7 +2461,6 @@
 	<buff_group id="felyne_carver_hi">
 		<name>Felyne Carver (Hi)</name>
 		<buff>
-			<name>Felyne Carver (Hi)</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3538,7 +2468,6 @@
 	<buff_group id="felyne_harvester">
 		<name>Felyne Harvester</name>
 		<buff>
-			<name>Felyne Harvester</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3546,7 +2475,6 @@
 	<buff_group id="felyne_fat_cat">
 		<name>Felyne Fat Cat</name>
 		<buff>
-			<name>Felyne Fat Cat</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3554,7 +2482,6 @@
 	<buff_group id="lucky_cat">
 		<name>Lucky Cat</name>
 		<buff>
-			<name>Lucky Cat</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3564,7 +2491,6 @@
 	<buff_group id="felyne_cliffhanger">
 		<name>Felyne Cliffhanger</name>
 		<buff>
-			<name>Felyne Cliffhanger</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3572,7 +2498,6 @@
 	<buff_group id="felyne_fur_coating">
 		<name>Felyne Fur Coating</name>
 		<buff>
-			<name>Felyne Fur Coating</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3580,7 +2505,6 @@
 	<buff_group id="felyne_booster">
 		<name>Felyne Booster</name>
 		<buff>
-			<name>Felyne Booster</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3588,7 +2512,6 @@
 	<buff_group id="felyne_backer">
 		<name>Felyne Backer</name>
 		<buff>
-			<name>Felyne Backer</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3596,7 +2519,6 @@
 	<buff_group id="felyne_provoker">
 		<name>Felyne Provoker</name>
 		<buff>
-			<name>Felyne Provoker</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3604,7 +2526,6 @@
 	<buff_group id="felyne_researcher">
 		<name>Felyne Researcher</name>
 		<buff>
-			<name>Felyne Researcher</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3612,7 +2533,6 @@
 	<buff_group id="felyne_defender_lo">
 		<name>Felyne Defender (Lo)</name>
 		<buff>
-			<name>Felyne Defender (Lo)</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3620,7 +2540,6 @@
 	<buff_group id="felyne_defender_hi">
 		<name>Felyne Defender (Hi)</name>
 		<buff>
-			<name>Felyne Defender (Hi)</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3628,7 +2547,6 @@
 	<buff_group id="felyne_temper">
 		<name>Felyne Temper</name>
 		<buff>
-			<name>Felyne Temper</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3636,7 +2554,6 @@
 	<buff_group id="felyne_escape_artist">
 		<name>Felyne Escape Artist</name>
 		<buff>
-			<name>Felyne Escape Artist</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3644,7 +2561,6 @@
 	<buff_group id="felyne_weakener">
 		<name>Felyne Weakener</name>
 		<buff>
-			<name>Felyne Weakener</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3652,7 +2568,6 @@
 	<buff_group id="felyne_insurance">
 		<name>Felyne Insurance</name>
 		<buff>
-			<name>Felyne Insurance</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3660,7 +2575,6 @@
 	<buff_group id="felyne_deflector">
 		<name>Felyne Deflector</name>
 		<buff>
-			<name>Felyne Deflector</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3668,7 +2582,6 @@
 	<buff_group id="felyne_bulldozer">
 		<name>Felyne Bulldozer</name>
 		<buff>
-			<name>Felyne Bulldozer</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -3676,7 +2589,6 @@
 	<buff_group id="felyne_trainer">
 		<name>Felyne Trainer</name>
 		<buff>
-			<name>Felyne Trainer</name>
 			<!-- not implemented -->
 		</buff>
 	</buff_group>

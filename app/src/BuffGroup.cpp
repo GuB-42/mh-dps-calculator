@@ -184,6 +184,31 @@ bool BuffGroup::readXmlElement(QXmlStreamReader *xml) {
 	return true;
 }
 
+void BuffGroup::readXml(QXmlStreamReader *xml) {
+	NamedObject::readXml(xml);
+
+	QHash<BuffGroupLevel *, int> levels_hash;
+	for (int i = 0; i < levels.count(); ++i) {
+		if (levels[i] && !levels_hash.contains(levels[i])) {
+			levels_hash[levels[i]] = i;
+		}
+	}
+	bool single_buff = (levels_hash.size() == 1);
+	for (QHash<BuffGroupLevel *, int>::const_iterator it = levels_hash.begin();
+	     it != levels_hash.end(); ++it) {
+		for (int i = 0; i < LANG_COUNT; ++i) {
+			if (!names[i].isNull() && it.key()->names[i].isNull()) {
+				if (single_buff) {
+					it.key()->names[i] = names[i];
+				} else {
+					it.key()->names[i] = QString("%1 [%2]").
+						arg(names[i]).arg(it.value());
+				}
+			}
+		}
+	}
+}
+
 void BuffSetBonus::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	foreach (const Level &level, levels) {

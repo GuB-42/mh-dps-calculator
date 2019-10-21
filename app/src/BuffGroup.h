@@ -28,6 +28,7 @@ struct BuffGroup : public NamedObject {
 	bool hasBuffs();
 	void print(QTextStream &stream, QString indent = QString()) const;
 	bool readXmlElement(QXmlStreamReader *xml);
+	void readXml(QXmlStreamReader *xml);
 private:
 	QVector<BuffGroupLevel *> alloc_list;
 };
