@@ -159,6 +159,8 @@ QString GuiElements::conditionName(Condition c) {
 	case CONDITION_FULL_STAMINA: return tr("Full stamina");
 	case CONDITION_SLIDING: return tr("Sliding");
 	case CONDITION_RECEIVED_DAMAGE: return tr("Received damage (latent power)");
+	case CONDITION_BLIGHT_RECOVERY: return tr("Blight recovery (coalescence)");
+	case CONDITION_AFTER_PERFECT_GUARD: return tr("Perfect guard (offensive guard)");
 	case CONDITION_DEMON_POWDER_USE: return tr("Using demon powder");
 	case CONDITION_MIGHT_SEED_USE: return tr("Using might seed");
 	case CONDITION_MIGHT_PILL_USE: return tr("Using might pill");

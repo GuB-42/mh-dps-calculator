@@ -3115,6 +3115,80 @@
 		</buff>
 	</buff_group>
 
+	<!-- new in iceborne -->
+
+	<buff_group id="coalescence">
+		<name>Coalescence</name>
+		<name_fr>Union</name_fr>
+		<buff level="1">
+			<name>Coalescence [1]</name>
+			<name_fr>Union [1]</name_fr>
+			<blight_recovery>
+				<attack_plus>12</attack_plus>
+				<all_elements_plus>3</all_elements_plus>
+				<all_statuses_multiplier>1.05</all_statuses_multiplier>
+			</blight_recovery>
+		</buff>
+		<buff level="2">
+			<name>Coalescence [2]</name>
+			<name_fr>Union [2]</name_fr>
+			<blight_recovery>
+				<attack_plus>15</attack_plus>
+				<all_elements_plus>6</all_elements_plus>
+				<all_statuses_multiplier>1.1</all_statuses_multiplier>
+			</blight_recovery>
+		</buff>
+		<buff level="3">
+			<name>Coalescence [3]</name>
+			<name_fr>Union [3]</name_fr>
+			<blight_recovery>
+				<attack_plus>18</attack_plus>
+				<all_elements_plus>9</all_elements_plus>
+				<all_statuses_multiplier>1.15</all_statuses_multiplier>
+			</blight_recovery>
+		</buff>
+	</buff_group>
+
+	<buff_group id="offensive_guard">
+		<name>Offensive Guard</name>
+		<buff level="1">
+			<name>Offensive Guard [1]</name>
+			<after_perfect_guard>
+				<attack_multiplier>1.05</attack_multiplier>
+			</after_perfect_guard>
+		</buff>
+		<buff level="2">
+			<name>Offensive Guard [2]</name>
+			<after_perfect_guard>
+				<attack_multiplier>1.1</attack_multiplier>
+			</after_perfect_guard>
+		</buff>
+		<buff level="3">
+			<name>Offensive Guard [3]</name>
+			<after_perfect_guard>
+				<attack_multiplier>1.15</attack_multiplier>
+			</after_perfect_guard>
+		</buff>
+	</buff_group>
+
+	<buff_group id="safe_landing">
+		<name>Safe Landing</name>
+		<buff>
+			<name>Safe Landing</name>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="provoker">
+		<name>Provoker</name>
+		<name_jo>陽動攻撃</name_jo>
+		<buff>
+			<name>Provoker</name>
+			<name_jo>陽動攻撃</name_jo>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<!-- consumables -->
 
 	<buff_group id="demondrug">

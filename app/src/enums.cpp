@@ -97,6 +97,8 @@ const char *toString(Condition c) {
 	case CONDITION_FULL_STAMINA: return "full_stamina";
 	case CONDITION_SLIDING: return "sliding";
 	case CONDITION_RECEIVED_DAMAGE: return "received_damage";
+	case CONDITION_BLIGHT_RECOVERY: return "blight_recovery";
+	case CONDITION_AFTER_PERFECT_GUARD: return "after_perfect_guard";
 	case CONDITION_DEMON_POWDER_USE: return "demon_powder_use";
 	case CONDITION_MIGHT_SEED_USE: return "might_seed_use";
 	case CONDITION_MIGHT_PILL_USE: return "might_pill_use";
