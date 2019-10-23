@@ -156,6 +156,25 @@ my %buff_name_id = (
 	"Offensive Guard" => "offensive_guard",
 	"Safe Landing" => "safe_landing",
 	"Provoker" => "provoker",
+	"Agitator Secret" => "agitator_secret",
+	"Artillery Secret" => "artillery_secret",
+	"Bombardier Secret" => "bombardier_secret",
+	"Frostcraft" => "frostcraft",
+	"Divine Blessing Secret" => "divine_blessing_secret",
+	"True Critical Status" => "true_critical_status",
+	"Element Acceleration" => "element_acceleration",
+	"True Element Acceleration" => "true_element_acceleration",
+	"Free Meal Secret" => "free_meal_secret",
+	"Gaia's Veil" => "gaias_veil",
+	"True Gaia's Veil" => "true_gaias_veil",
+	"Latent Power Secret" => "latent_power_secret",
+	"Maximum Might Secret" => "maximum_might_secret",
+	"Slinger Ammo Secret" => "slinger_ammo_secret",
+	"True Critical Element" => "true_critical_element",
+	"Slugger Secret" => "slugger_secret",
+	"Stamina Thief Secret" => "stamina_thief_secret",
+	"Tool Specialist Secret" => "tool_specialist_secret",
+	"True Razor Sharp/Spare Shot" => "true_razor_sharp_spare_shot",
 
 	"Defence Boost" => "defense_boost",
 	"Paralysis Functionality" => "para_functionality",
@@ -163,7 +182,7 @@ my %buff_name_id = (
 	"Effluvial Resistance" => "effluvia_resistance",
 	"Scent Hound" => "scent_hound",
 	"Aquatic/Polar Mobility" => "aquatic_expert",
-	"陽動攻撃" => "provoker"
+	"陽動攻撃" => "provoker",
 );
 
 my %set_bonus_name_id = (
@@ -192,7 +211,44 @@ my %set_bonus_name_id = (
 	"Vaal Hazak Vitality" => "vaal_hazak_vitality",
 	"Lunastra Favor" => "lunastra_favor",
 	"Astera Blessing" => "astera_blessing",
-	"Soul of the Dragoon" => "soul_of_the_dragoon"
+
+	"Soul of the Dragoon" => "soul_of_the_dragoon",
+	"Brachydios Essence" => "brachydios_essence",
+	"Zorah Magdaros Essence" => "zorah_magdaros_essence",
+	"Commission Alchemy" => "commission_alchemy",
+	"Legiana Ambition" => "legiana_ambition",
+	"Instructor's Guidance" => "instructors_guidance",
+	"Commission Guidance" => "commission_guidance",
+	"Guild Pride" => "guild_pride",
+	"Velkhana Divinity" => "velkhana_divinity",
+	"Ancient Divinity" => "ancient_divinity",
+	"Gold Rathian Essence" => "gold_rathian_essence",
+	"Namielle Divinity" => "namielle_divinity",
+	"Tigrex Essence" => "tigrex_essence",
+	"Shara Ishvalda Divinity" => "shara_ishvalda_divinity",
+	"Kirin Divinity" => "kirin_divinity",
+	"Uragaan Ambition" => "uragaan_ambition",
+	"Bazelgeuse Ambition" => "bazelgeuse_ambition",
+	"Nergigante Ambition" => "nergigante_ambition",
+	"Zinogre Essence" => "zinogre_essence",
+	"Glavenus Essence" => "glavenus_essence",
+	"Rathalos Essence" => "rathalos_essence",
+	"Rajang's Rage" => "rajangs_rage",
+	"Rathian Essence" => "rathian_essence",
+	"Odogaron Essence" => "odogaron_essence",
+	"Barioth Hidden Art" => "barioth_hidden_art",
+	"Silver Rathalos Essence" => "silver_rathalos_essence",
+	"Diablos Ambition" => "diablos_ambition",
+	"Anjanath Dominance" => "anjanath_dominance",
+	"Deviljho Essence" => "deviljho_essence",
+	"Vaal Soulvein" => "vaal_soulvein",
+	"Lunastra Essence" => "lunastra_essence",
+	"Nargacuga Essence" => "nargacuga_essence",
+
+	"Soul of the Dragon" => "soul_of_the_dragoon",
+	"Val Hazak Vitality" => "vaal_hazak_vitality",
+	"Legian Ambition" => "legiana_ambition",
+	"金獅子の怒気" => "rajangs_rage"
 );
 
 my %part_name = (
@@ -213,16 +269,18 @@ my %resist_name = (
 );
 
 sub mod_name {
-	$_[0] =~ s/\s*alpha\s*(\+?)\s*$/ α$1/i;
-	$_[0] =~ s/\s*beta\s*(\+?)\s*$/ β$1/i;
-	$_[0] =~ s/\s*gamma\s*(\+?)\s*$/ γ$1/i;
-	return $_[0];
+	my $n = $_[0];
+	$n =~ s/\s*alpha\s*(\+?)\s*$/ α$1/i;
+	$n =~ s/\s*beta\s*(\+?)\s*$/ β$1/i;
+	$n =~ s/\s*gamma\s*(\+?)\s*$/ γ$1/i;
+	return $n;
 }
 
 sub name_to_id {
-	$_[0] =~ s/[_\W]+/_/g;
-	$_[0] =~ s/^\s*|\s*$//;
-	return lc($_[0]);
+	my $n = $_[0];
+	$n =~ s/[_\W]+/_/g;
+	$n =~ s/^\s*|\s*$//;
+	return lc($n);
 }
 
 my $io = IO::Handle->new();
@@ -230,6 +288,8 @@ $io->fdopen(fileno(STDOUT), ">");
 $xml_writer = XML::Writer->new(OUTPUT => $io, ENCODING => 'utf-8', DATA_MODE => 1, DATA_INDENT => 4);
 $xml_writer->xmlDecl("UTF-8");
 $xml_writer->startTag("data");
+
+my %not_found_skills = ();
 
 my $all_data;
 { local $/; $all_data = <>; }
@@ -263,30 +323,48 @@ while ($all_data =~ /var og=\[([^;]*)\];/g) {
 			}
 			$xml_writer->endTag();
 		}
+
 		my $has_buff_refs = 0;
 		for my $skill (keys %{$elt->{"skills"}}) {
-			unless ($has_buff_refs) {
-				$xml_writer->startTag("buff_refs");
-				$has_buff_refs = 1;
-			}
-
 			my $id = $skill;
 			$id =~ s/\x{2019}/'/g;
+			$id =~ s/\s*$//g;
 			if ($buff_name_id{$id}) {
 				$id = $buff_name_id{$id};
+				my $level = $elt->{"skills"}{$skill};
+				unless ($has_buff_refs) {
+					$xml_writer->startTag("buff_refs");
+					$has_buff_refs = 1;
+				}
+				if ($level > 1) {
+					$xml_writer->emptyTag("buff_ref", "id" => $id, "level" => $level);
+				} else {
+					$xml_writer->emptyTag("buff_ref", "id" => $id);
+				}
 			} else {
 				unless ($set_bonus_name_id{$id}) {
-					print STDERR "unknown skill: $id\n";
+					$not_found_skills{$skill} = 1;
+					print STDERR "unknown skill: \"$id\"\n";
 				}
-			}
-			my $level = $elt->{"skills"}{$skill};
-			if ($level > 1) {
-				$xml_writer->emptyTag("buff_ref", "id" => $id, "level" => $level);
-			} else {
-				$xml_writer->emptyTag("buff_ref", "id" => $id);
 			}
 		}
 		$xml_writer->endTag() if ($has_buff_refs);
+
+		my $has_set_bonus_refs = 0;
+		for my $skill (keys %{$elt->{"skills"}}) {
+			my $id = $skill;
+			$id =~ s/\x{2019}/'/g;
+			$id =~ s/\s*$//g;
+			if ($set_bonus_name_id{$id}) {
+				$id = $set_bonus_name_id{$id};
+				unless ($has_set_bonus_refs) {
+					$xml_writer->startTag("set_bonus_refs");
+					$has_set_bonus_refs = 1;
+				}
+				$xml_writer->emptyTag("set_bonus_ref", "id" => $id);
+			}
+		}
+		$xml_writer->endTag() if ($has_set_bonus_refs);
 
 		if ($elt->{"rare"}) {
 			$xml_writer->dataElement("rare", $elt->{"rare"});
@@ -295,7 +373,9 @@ while ($all_data =~ /var og=\[([^;]*)\];/g) {
 	}
 }
 
-while ($all_data =~ /k.i=\[([^;]*)\];/g) {
+my %set_bonuses = ();
+my @set_bonus_list = ();
+while ($all_data =~ /k.j=\[([^;]*)\];/g) {
 	my $json = "[$1]";
 	$json =~ s/(\w+):/\"$1\":/g;
 	my $data = decode_json($json);
@@ -303,16 +383,36 @@ while ($all_data =~ /k.i=\[([^;]*)\];/g) {
 	#next;
 	for my $elt (@{$data}) {
 		for my $skill (@{$elt->{"skills"}}) {
-			$xml_writer->startTag("set_bonus_level", "level" => $skill->{"points"});
-			$xml_writer->dataElement("name", $skill->{"skill"});
-			$xml_writer->startTag("buff_refs");
-			$xml_writer->dataElement("name", $skill->{"name"});
-			$xml_writer->startTag("buff_ref", "id" => name_to_id($skill->{"name"}));
-			$xml_writer->endTag();
-			$xml_writer->endTag();
+			my $name = $skill->{"skill"};
+			next unless ($not_found_skills{$name});
+			unless ($set_bonuses{$name}) {
+				$set_bonuses{$name} = {};
+				push @set_bonus_list, $name;
+			}
+			$set_bonuses{$name}->{$skill->{"points"}} ||= [];
+			push @{$set_bonuses{$name}->{$skill->{"points"}}}, $skill;
+		}
+	}
+}
+
+for my $set_bonus_name (@set_bonus_list) {
+	$xml_writer->startTag("set_bonus", "id" => name_to_id($set_bonus_name));
+	$xml_writer->dataElement("name", $set_bonus_name);
+	for my $level (sort keys %{$set_bonuses{$set_bonus_name}}) {
+		for my $skill (@{$set_bonuses{$set_bonus_name}->{$level}}) {
+			$xml_writer->startTag("set_bonus_level", "level" => $level);
+			my $n = $skill->{"name"};
+			$n =~ s/\x{2019}/'/g;
+			$n =~ s/\s*\([^(]*\)\s*$//;
+			if ($buff_name_id{$n}) {
+				$xml_writer->emptyTag("buff_ref", "id" => $buff_name_id{$n});
+			} else {
+				print STDERR "unknown skill: $n\n";
+			}
 			$xml_writer->endTag();
 		}
 	}
+	$xml_writer->endTag();
 }
 
 $xml_writer->endTag();
