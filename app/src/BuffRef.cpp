@@ -6,20 +6,8 @@
 void BuffRef::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
 	stream << indent << "- " << id << "[" << level << "]";
-	if (levelCapPlus) stream << " (cap plus: " << levelCapPlus << ")";
 	if (buffGroup) stream << " *";
 	stream << endl;
-}
-
-bool BuffRef::readXmlElement(QXmlStreamReader *xml) {
-	if (XmlObject::readXmlElement(xml)) return true;
-	QStringRef tag_name = xml->name();
-	if (tag_name == "level_cap_plus") {
-		levelCapPlus = xml->readElementText().toInt();
-	} else {
-		return false;
-	}
-	return true;
 }
 
 void BuffRef::readXml(QXmlStreamReader *xml) {

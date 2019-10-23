@@ -95,10 +95,14 @@ const char *toString(Condition c) {
 	case CONDITION_DEATH_1: return "death_1";
 	case CONDITION_DEATH_2: return "death_2";
 	case CONDITION_FULL_STAMINA: return "full_stamina";
+	case CONDITION_FULL_STAMINA_DELAYED: return "full_stamina_delayed";
 	case CONDITION_SLIDING: return "sliding";
 	case CONDITION_RECEIVED_DAMAGE: return "received_damage";
+	case CONDITION_RECEIVED_DAMAGE_SECRET: return "received_damage_secret";
 	case CONDITION_BLIGHT_RECOVERY: return "blight_recovery";
 	case CONDITION_AFTER_PERFECT_GUARD: return "after_perfect_guard";
+	case CONDITION_FROST_AURA: return "frost_aura";
+	case CONDITION_CONSECUTIVE_ATTACKS: return "consecutive_attacks";
 	case CONDITION_DEMON_POWDER_USE: return "demon_powder_use";
 	case CONDITION_MIGHT_SEED_USE: return "might_seed_use";
 	case CONDITION_MIGHT_PILL_USE: return "might_pill_use";

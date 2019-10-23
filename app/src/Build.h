@@ -13,10 +13,12 @@ struct Weapon;
 struct Profile;
 
 struct BuffWithLevel {
-	BuffWithLevel() : group(NULL), level(0) { }
-	BuffWithLevel(const BuffGroup *g, int l) : group(g), level(l) { }
+	BuffWithLevel() : group(NULL), level(0), levelUncapped(false) { }
+	BuffWithLevel(const BuffGroup *g, int l) :
+		group(g), level(l), levelUncapped(false) { }
 	const BuffGroup *group;
 	int level;
+	bool levelUncapped;
 	bool operator<(const BuffWithLevel& o) const {
 		if (group < o.group) return true;
 		if (o.group < group) return false;
@@ -67,6 +69,10 @@ struct Build {
 	bool canAugmentItem(const Item *item) const;
 	QVector<Item *> listUsefulItems(const QVector<Item *> &items, const Profile &profile) const;
 	void print(QTextStream &stream, QString indent = QString()) const;
+
+private:
+	void updateGetUncap(BuffWithLevel *pbl, const BuffGroup *exclude_group = NULL);
+	void updateSetUncap(const BuffGroup *group, int old_level, int new_level);
 };
 
 #endif

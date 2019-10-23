@@ -11,6 +11,7 @@ struct BuffWithCondition;
 
 struct BuffGroupLevel : public NamedObject {
 	QVector<BuffWithCondition *> buffs;
+	QVector<BuffRef> buffUncaps;
 
 	~BuffGroupLevel();
 	void print(QTextStream &stream, QString indent = QString()) const;
@@ -19,7 +20,7 @@ struct BuffGroupLevel : public NamedObject {
 };
 
 struct BuffGroup : public NamedObject {
-	const int LEVEL_UNCAPPED = 99999;
+	static const int LEVEL_UNCAPPED = 99999;
 	QVector<BuffGroupLevel *> levels;
 	int levelCap;
 

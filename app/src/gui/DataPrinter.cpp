@@ -603,14 +603,28 @@ QString DPImpl::singleDataToHtml(BuildWithDps *bwd, Language lang) {
 	if (!bwd->build->buffLevels.isEmpty()) {
 		ret += "<ul>\n";
 		foreach(const BuffWithLevel bwl, bwd->build->buffLevels) {
-			QString buff_name;
-			if (bwl.level >= 0 && bwl.level < bwl.group->levels.count()) {
-				const BuffGroupLevel *group_level = bwl.group->levels[bwl.level];
-				if (group_level) buff_name = group_level->getName(lang);
+			int level = bwl.level;
+			if (bwl.group->levelCap != BuffGroup::LEVEL_UNCAPPED &&
+			    level > bwl.group->levelCap && !bwl.levelUncapped) {
+				level = bwl.group->levelCap;
 			}
-			if (buff_name.isNull()) {
+			while (level > 0 &&
+			       bwl.group->levels[level] == bwl.group->levels[level - 1]) {
+				--level;
+			}
+
+			QString buff_name;
+			const BuffGroupLevel *group_level = bwl.group->levels[level];
+			if (group_level) {
+				if (level < bwl.level) {
+					buff_name = tr("%1 (+%2)").
+						arg(group_level->getName(lang)).arg(bwl.level - level);
+				} else {
+					buff_name = group_level->getName(lang);
+				}
+			} else {
 				buff_name = tr("%1 [%2]").
-					arg(bwl.group->getName(lang)).arg(bwl.level);
+					arg(bwl.group->getName(lang)).arg(level);
 			}
 			ret += QString("<li>%1</li>\n").arg(esc(buff_name));
 		}

@@ -187,6 +187,20 @@ void MainData::matchData() {
 			if (itb != buffGroupHash.end()) it->buffRef.buffGroup = *itb;
 		}
 	}
+	foreach(BuffGroup *buff_group, buffGroups) {
+		QSet<BuffGroupLevel *> dedup;
+		dedup.insert(NULL);
+		foreach(BuffGroupLevel *level, buff_group->levels) {
+			if (dedup.contains(level)) continue;
+			dedup.insert(level);
+			for (QVector<BuffRef>::iterator it = level->buffUncaps.begin();
+			     it != level->buffUncaps.end(); ++it) {
+				QHash<QString, BuffGroup *>::const_iterator itb =
+					buffGroupHash.find(it->id);
+				if (itb != buffGroupHash.end()) it->buffGroup = *itb;
+			}
+		}
+	}
 	foreach(Item *item, items) {
 		for (QVector<BuffRef>::iterator it = item->buffRefs.begin();
 		     it != item->buffRefs.end(); ++it) {

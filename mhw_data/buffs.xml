@@ -944,19 +944,30 @@
 		<name>Slugger</name>
 		<name_fr>Cogneur</name_fr>
 		<name_jp>ＫＯ術</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
-			<element_multiplier>
-				<stun>1.1</stun>
-			</element_multiplier>
-		</buff>
-		<buff level="2">
 			<element_multiplier>
 				<stun>1.2</stun>
 			</element_multiplier>
 		</buff>
-		<buff level="3">
+		<buff level="2">
 			<element_multiplier>
 				<stun>1.3</stun>
+			</element_multiplier>
+		</buff>
+		<buff level="3">
+			<element_multiplier>
+				<stun>1.4</stun>
+			</element_multiplier>
+		</buff>
+		<buff level="4">
+			<element_multiplier>
+				<stun>1.5</stun>
+			</element_multiplier>
+		</buff>
+		<buff level="5">
+			<element_multiplier>
+				<stun>1.6</stun>
 			</element_multiplier>
 		</buff>
 	</buff_group>
@@ -965,19 +976,30 @@
 		<name>Stamina Thief</name>
 		<name_fr>Vol d'endurance</name_fr>
 		<name_jp>スタミナ奪取</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
-			<element_multiplier>
-				<exhaust>1.1</exhaust>
-			</element_multiplier>
-		</buff>
-		<buff level="2">
 			<element_multiplier>
 				<exhaust>1.2</exhaust>
 			</element_multiplier>
 		</buff>
-		<buff level="3">
+		<buff level="2">
 			<element_multiplier>
 				<exhaust>1.3</exhaust>
+			</element_multiplier>
+		</buff>
+		<buff level="3">
+			<element_multiplier>
+				<exhaust>1.4</exhaust>
+			</element_multiplier>
+		</buff>
+		<buff level="4">
+			<element_multiplier>
+				<exhaust>1.5</exhaust>
+			</element_multiplier>
+		</buff>
+		<buff level="5">
+			<element_multiplier>
+				<exhaust>1.6</exhaust>
 			</element_multiplier>
 		</buff>
 	</buff_group>
@@ -1008,6 +1030,7 @@
 		<name>Latent Power</name>
 		<name_fr>Force latente</name_fr>
 		<name_jp>力の解放</name_jp>
+		<level_cap>5</level_cap>
 		<buff level="1">
 			<received_damage>
 				<affinity_plus>10</affinity_plus>
@@ -1033,40 +1056,63 @@
 				<affinity_plus>50</affinity_plus>
 			</received_damage>
 		</buff>
+		<buff level="6">
+			<received_damage_secret>
+				<affinity_plus>50</affinity_plus>
+			</received_damage_secret>
+		</buff>
+		<buff level="7">
+			<received_damage_secret>
+				<affinity_plus>60</affinity_plus>
+			</received_damage_secret>
+		</buff>
 	</buff_group>
 
 	<buff_group id="agitator">
 		<name>Agitator</name>
 		<name_fr>Témérité</name_fr>
 		<name_jp>挑戦者</name_jp>
+		<level_cap>5</level_cap>
 		<buff level="1">
 			<enraged>
 				<attack_plus>4</attack_plus>
-				<affinity_plus>3</affinity_plus>
+				<affinity_plus>5</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="2">
 			<enraged>
 				<attack_plus>8</attack_plus>
-				<affinity_plus>6</affinity_plus>
+				<affinity_plus>5</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="3">
 			<enraged>
 				<attack_plus>12</attack_plus>
-				<affinity_plus>9</affinity_plus>
+				<affinity_plus>7</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="4">
 			<enraged>
 				<attack_plus>16</attack_plus>
-				<affinity_plus>12</affinity_plus>
+				<affinity_plus>7</affinity_plus>
 			</enraged>
 		</buff>
 		<buff level="5">
 			<enraged>
 				<attack_plus>20</attack_plus>
+				<affinity_plus>10</affinity_plus>
+			</enraged>
+		</buff>
+		<buff level="6">
+			<enraged>
+				<attack_plus>24</attack_plus>
 				<affinity_plus>15</affinity_plus>
+			</enraged>
+		</buff>
+		<buff level="7">
+			<enraged>
+				<attack_plus>28</attack_plus>
+				<affinity_plus>20</affinity_plus>
 			</enraged>
 		</buff>
 	</buff_group>
@@ -1211,6 +1257,7 @@
 		<name>Artillery</name>
 		<name_fr>BOUM !</name_fr>
 		<name_jp>砲術</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
 			<artillery_multiplier>1.1</artillery_multiplier>
 		</buff>
@@ -1219,6 +1266,12 @@
 		</buff>
 		<buff level="3">
 			<artillery_multiplier>1.3</artillery_multiplier>
+		</buff>
+		<buff level="4">
+			<artillery_multiplier>1.4</artillery_multiplier>
+		</buff>
+		<buff level="5">
+			<artillery_multiplier>1.5</artillery_multiplier>
 		</buff>
 	</buff_group>
 
@@ -1421,7 +1474,14 @@
 		<name>Free Meal</name>
 		<name_fr>Pique-assiette</name_fr>
 		<name_jp>満足感</name_jp>
+		<level_cap>1</level_cap>
 		<buff level="1">
+			<!-- not implemented -->
+		</buff>
+		<buff level="2">
+			<!-- not implemented -->
+		</buff>
+		<buff level="3">
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1460,6 +1520,7 @@
 		<name>Bombardier</name>
 		<name_fr>Bombardier</name_fr>
 		<name_jp>ボマー</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1467,6 +1528,12 @@
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
+			<!-- not implemented -->
+		</buff>
+		<buff level="4">
+			<!-- not implemented -->
+		</buff>
+		<buff level="5">
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1535,6 +1602,7 @@
 		<name>Divine Blessing</name>
 		<name_fr>Bénédiction</name_fr>
 		<name_jp>精霊の加護</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1542,6 +1610,12 @@
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
+			<!-- not implemented -->
+		</buff>
+		<buff level="4">
+			<!-- not implemented -->
+		</buff>
+		<buff level="5">
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1604,19 +1678,30 @@
 		<name>Maximum Might</name>
 		<name_fr>Corps et âme</name_fr>
 		<name_jp>渾身</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
-			<full_stamina>
+			<full_stamina_delayed>
 				<affinity_plus>10</affinity_plus>
-			</full_stamina>
+			</full_stamina_delayed>
 		</buff>
 		<buff level="2">
-			<full_stamina>
+			<full_stamina_delayed>
 				<affinity_plus>20</affinity_plus>
-			</full_stamina>
+			</full_stamina_delayed>
 		</buff>
 		<buff level="3">
-			<full_stamina>
+			<full_stamina_delayed>
 				<affinity_plus>30</affinity_plus>
+			</full_stamina_delayed>
+		</buff>
+		<buff level="4">
+			<full_stamina_delayed>
+				<affinity_plus>40</affinity_plus>
+			</full_stamina_delayed>
+		</buff>
+		<buff level="5">
+			<full_stamina>
+				<affinity_plus>40</affinity_plus>
 			</full_stamina>
 		</buff>
 	</buff_group>
@@ -1625,6 +1710,7 @@
 		<name>Slinger Capacity</name>
 		<name_fr>Fronde +</name_fr>
 		<name_jp>スリンガー装填数ＵＰ</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1632,6 +1718,12 @@
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
+			<!-- not implemented -->
+		</buff>
+		<buff level="4">
+			<!-- not implemented -->
+		</buff>
+		<buff level="5">
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -1820,6 +1912,7 @@
 		<name>Tool Specialist</name>
 		<name_fr>Expert en survie</name_fr>
 		<name_jp>整備</name_jp>
+		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1827,6 +1920,12 @@
 			<!-- not implemented -->
 		</buff>
 		<buff level="3">
+			<!-- not implemented -->
+		</buff>
+		<buff level="4">
+			<!-- not implemented -->
+		</buff>
+		<buff level="5">
 			<!-- not implemented -->
 		</buff>
 	</buff_group>
@@ -2103,7 +2202,7 @@
 		</buff>
 	</buff_group>
 
-	<!-- soul of the dragon -->
+	<!-- soul of the dragoon -->
 
 	<buff_group id="elemental_airborne">
 		<name>Elemental Airborne</name>
@@ -2171,6 +2270,174 @@
 		<name_jo>陽動攻撃</name_jo>
 		<buff>
 			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<!-- new set in iceborne -->
+
+	<buff_group id="agitator_secret">
+		<name>Agitator Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="agitator" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="artillery_secret">
+		<name>Artillery Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="artillery" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="bombardier_secret">
+		<name>Bombardier Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="bombardier" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="frostcraft">
+		<name>Frostcraft</name>
+		<buff>
+			<frost_aura>
+				<!-- not implemented -->
+				<!-- attack boost -->
+			</frost_aura>
+		</buff>
+	</buff_group>
+
+	<buff_group id="divine_blessing_secret">
+		<name>Divine Blessing Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="divine_blessing" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="true_critical_status">
+		<name>True Critical Status</name>
+		<buff>
+			<status_critical_hit_multiplier>1.5</status_critical_hit_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="element_acceleration">
+		<name>Element Acceleration</name>
+		<buff>
+			<consecutive_attacks>
+				<awakening>0.66</awakening>
+				<!-- not implemented -->
+				<!-- elemental bonus -->
+			</consecutive_attacks>
+		</buff>
+	</buff_group>
+
+	<buff_group id="true_element_acceleration">
+		<name>True Element Acceleration</name>
+		<buff>
+			<consecutive_attacks>
+				<awakening>1.0</awakening>
+				<!-- not implemented -->
+				<!-- elemental bonus -->
+			</consecutive_attacks>
+		</buff>
+	</buff_group>
+
+	<buff_group id="free_meal_secret">
+		<name>Free Meal Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="free_meal" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="gaias_veil">
+		<name>Gaia's Veil</name>
+		<buff>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="true_gaias_veil">
+		<name>True Gaia's Veil</name>
+		<buff>
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
+	<buff_group id="latent_power_secret">
+		<name>Latent Power Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="latent_power" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="maximum_might_secret">
+		<name>Maximum Might Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="maximum_might" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="slinger_ammo_secret">
+		<name>Slinger Ammo Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="slinger_capacity" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="true_critical_element">
+		<name>True Critical Element</name>
+		<buff>
+			<element_critical_hit_multiplier>1.5</element_critical_hit_multiplier>
+		</buff>
+	</buff_group>
+
+	<buff_group id="slugger_secret">
+		<name>Slugger Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="slugger" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="stamina_thief_secret">
+		<name>Stamina Thief Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="stamina_thief" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="tool_specialist_secret">
+		<name>Tool Specialist Secret</name>
+		<buff>
+			<uncap_buff_level>
+				<buff_ref id="tool_specialist" />
+			</uncap_buff_level>
+		</buff>
+	</buff_group>
+
+	<buff_group id="true_razor_sharp_spare_shot">
+		<name>True Razor Sharp/Spare Shot</name>
+		<buff>
+			<sharpness_use_multiplier>0.66</sharpness_use_multiplier>
 		</buff>
 	</buff_group>
 
@@ -3108,4 +3375,238 @@
 			<buff_ref id="elemental_airborne"/>
 		</set_bonus_level>
 	</set_bonus>
+
+	<!-- iceborne set bonuses -->
+
+    <set_bonus id="brachydios_essence">
+        <name>Brachydios Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="agitator_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="zorah_magdaros_essence">
+        <name>Zorah Magdaros Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="artillery_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="commission_alchemy">
+        <name>Commission Alchemy</name>
+        <set_bonus_level level="3">
+            <buff_ref id="bombardier_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="legiana_ambition">
+        <name>Legiana Ambition</name>
+        <set_bonus_level level="3">
+            <buff_ref id="bow_charge_plus" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="instructors_guidance">
+        <name>Instructor's Guidance</name>
+        <set_bonus_level level="2">
+            <buff_ref id="capture_master" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="guild_pride">
+        <name>Guild Pride</name>
+        <set_bonus_level level="2">
+            <buff_ref id="good_luck" />
+        </set_bonus_level>
+        <set_bonus_level level="4">
+            <buff_ref id="carving_master" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="velkhana_divinity">
+        <name>Velkhana Divinity</name>
+        <set_bonus_level level="2">
+            <buff_ref id="critical_element" />
+        </set_bonus_level>
+        <set_bonus_level level="4">
+            <buff_ref id="frostcraft" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="ancient_divinity">
+        <name>Ancient Divinity</name>
+        <set_bonus_level level="2">
+            <buff_ref id="critical_status" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="gold_rathian_essence">
+        <name>Gold Rathian Essence</name>
+        <set_bonus_level level="2">
+            <buff_ref id="divine_blessing_secret" />
+        </set_bonus_level>
+        <set_bonus_level level="4">
+            <buff_ref id="true_critical_status" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="namielle_divinity">
+        <name>Namielle Divinity</name>
+        <set_bonus_level level="2">
+            <buff_ref id="element_acceleration" />
+        </set_bonus_level>
+        <set_bonus_level level="4">
+            <buff_ref id="true_element_acceleration" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="tigrex_essence">
+        <name>Tigrex Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="free_meal_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="shara_ishvalda_divinity">
+        <name>Shara Ishvalda Divinity</name>
+        <set_bonus_level level="4">
+            <buff_ref id="gaias_veil" />
+        </set_bonus_level>
+        <set_bonus_level level="5">
+            <buff_ref id="true_gaias_veil" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="kirin_divinity">
+        <name>Kirin Divinity</name>
+        <set_bonus_level level="3">
+            <buff_ref id="great_luck" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="uragaan_ambition">
+        <name>Uragaan Ambition</name>
+        <set_bonus_level level="2">
+            <buff_ref id="guard_up" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="bazelgeuse_ambition">
+        <name>Bazelgeuse Ambition</name>
+        <set_bonus_level level="2">
+            <buff_ref id="guts" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="nergigante_ambition">
+        <name>Nergigante Ambition</name>
+        <set_bonus_level level="2">
+            <buff_ref id="hasten_recovery" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="zinogre_essence">
+        <name>Zinogre Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="latent_power_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="glavenus_essence">
+        <name>Glavenus Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="maximum_might_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="rathalos_essence">
+        <name>Rathalos Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="minds_eye_ballistics" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="rajangs_rage">
+        <name_jp>Rajang's Rage</name_jp>
+        <name_jp>金獅子の怒気</name_jp>
+        <set_bonus_level level="2">
+            <buff_ref id="minds_eye_ballistics" />
+        </set_bonus_level>
+        <set_bonus_level level="4">
+            <buff_ref id="protective_polish" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="rathian_essence">
+        <name>Rathian Essence</name>
+        <set_bonus_level level="2">
+            <buff_ref id="poison_duration_up" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="odogaron_essence">
+        <name>Odogaron Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="protective_polish" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="barioth_hidden_art">
+        <name>Barioth Hidden Art</name>
+        <set_bonus_level level="2">
+            <buff_ref id="punishing_draw" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="silver_rathalos_essence">
+        <name>Silver Rathalos Essence</name>
+        <set_bonus_level level="2">
+            <buff_ref id="slinger_ammo_secret" />
+        </set_bonus_level>
+        <set_bonus_level level="4">
+            <buff_ref id="true_critical_element" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="diablos_ambition">
+        <name>Diablos Ambition</name>
+        <set_bonus_level level="3">
+            <buff_ref id="slugger_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="anjanath_dominance">
+        <name>Anjanath Dominance</name>
+        <set_bonus_level level="2">
+            <buff_ref id="stamina_cap_up" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="deviljho_essence">
+        <name>Deviljho Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="stamina_thief_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="vaal_soulvein">
+        <name>Vaal Soulvein</name>
+        <set_bonus_level level="2">
+            <buff_ref id="super_recovery" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="lunastra_essence">
+        <name>Lunastra Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="tool_specialist_secret" />
+        </set_bonus_level>
+    </set_bonus>
+
+    <set_bonus id="nargacuga_essence">
+        <name>Nargacuga Essence</name>
+        <set_bonus_level level="3">
+            <buff_ref id="true_razor_sharp_spare_shot" />
+        </set_bonus_level>
+    </set_bonus>
 </data>

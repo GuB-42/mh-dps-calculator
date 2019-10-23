@@ -55,7 +55,61 @@ static int find_buff_level(const QVector<BuffWithLevel> &buff_levels,
 int Build::getBuffLevel(const BuffGroup *group) const
 {
 	int idx = find_buff_level(buffLevels, group);
-	return idx != -1 ? buffLevels[idx].level : 0;
+	if (idx == -1) return 0;
+	if (buffLevels[idx].levelUncapped ||
+	    group->levelCap == BuffGroup::LEVEL_UNCAPPED ||
+	    buffLevels[idx].level <= group->levelCap) {
+		return buffLevels[idx].level;
+	} else {
+		return group->levelCap;
+	}
+}
+
+void Build::updateGetUncap(BuffWithLevel *pbl, const BuffGroup *exclude_group)
+{
+	if (pbl->group->levelCap == BuffGroup::LEVEL_UNCAPPED) return;
+	foreach(const BuffWithLevel &bwl, buffLevels) {
+		if (bwl.group == exclude_group) continue;
+		const BuffGroupLevel *group_level = bwl.group->levels[bwl.level];
+		if (!group_level) continue;
+		foreach(const BuffRef &buff_ref, group_level->buffUncaps) {
+			if (buff_ref.buffGroup == pbl->group) {
+				pbl->levelUncapped = true;
+				return;
+			}
+		}
+	}
+	pbl->levelUncapped = false;
+}
+
+void Build::updateSetUncap(const BuffGroup *group, int old_level, int new_level)
+{
+	if (old_level == new_level) return;
+	const BuffGroupLevel *old_group_level = group->levels[old_level];
+	const BuffGroupLevel *new_group_level = group->levels[new_level];
+	if (old_group_level == new_group_level) return;
+	if (old_group_level) {
+		foreach(const BuffRef &old_uncap_ref, old_group_level->buffUncaps) {
+			int idx;
+			if (!old_uncap_ref.buffGroup) continue;
+			if (new_group_level) {
+				foreach(const BuffRef &new_uncap_ref, new_group_level->buffUncaps) {
+					if (old_uncap_ref.buffGroup == new_uncap_ref.buffGroup) {
+						goto updateSetUncap_end;
+					}
+				}
+			}
+			idx = find_buff_level(buffLevels, old_uncap_ref.buffGroup);
+			if (idx != -1) updateGetUncap(&buffLevels[idx], group);
+updateSetUncap_end:;
+		}
+	} else {
+		foreach(const BuffRef &new_uncap_ref, new_group_level->buffUncaps) {
+			if (!new_uncap_ref.buffGroup) continue;
+			int idx = find_buff_level(buffLevels, new_uncap_ref.buffGroup);
+			if (idx != -1) buffLevels[idx].levelUncapped = true;
+		}
+	}
 }
 
 int Build::addBuffLevel(const BuffGroup *group, int level)
@@ -64,17 +118,21 @@ int Build::addBuffLevel(const BuffGroup *group, int level)
 	if (idx != -1) {
 		int new_level = buffLevels[idx].level + level;
 		if (new_level <= 0) {
+			updateSetUncap(group, buffLevels[idx].level, 0);
 			buffLevels.remove(idx);
 			return 0;
 		} else if (new_level > group->levels.count() - 1) {
 			new_level = group->levels.count() - 1;
 		}
+		updateSetUncap(group, buffLevels[idx].level, new_level);
 		buffLevels[idx].level = new_level;
 		return new_level;
 	}
 	if (level <= 0) return 0;
 	if (level > group->levels.count() - 1) level = group->levels.count() - 1;
 	BuffWithLevel new_bl(group, level);
+	updateGetUncap(&new_bl);
+	updateSetUncap(group, 0, level);
 	for (int i = 0; i < buffLevels.count(); ++i) {
 		if (new_bl.group < buffLevels[i].group) {
 			buffLevels.insert(i, new_bl);
@@ -90,11 +148,11 @@ int Build::maxBuffLevel(const BuffGroup *group, int level)
 	int idx = find_buff_level(buffLevels, group);
 	if (idx != -1) {
 		if (level > buffLevels[idx].level) {
-			if (level > group->levels.count() - 1) {
-				buffLevels[idx].level = group->levels.count() - 1;
-			} else {
-				buffLevels[idx].level = level;
-			}
+			level = group->levels.count() - 1;
+		}
+		if (level != buffLevels[idx].level) {
+			updateSetUncap(group, buffLevels[idx].level, level);
+			buffLevels[idx].level = level;
 		}
 		return buffLevels[idx].level;
 	} else {
@@ -201,8 +259,9 @@ static bool bwc_sort(const BuffWithCondition *a, const BuffWithCondition *b) {
 void Build::getBuffWithConditions(QVector<const BuffWithCondition *> *pout) const {
 	foreach(const BuffWithLevel &bl, buffLevels) {
 		int level = bl.level;
-		if (level >= bl.group->levels.count()) {
-			level = bl.group->levels.count() - 1;
+		if (bl.group->levelCap != BuffGroup::LEVEL_UNCAPPED &&
+		    !bl.levelUncapped && level > bl.group->levelCap) {
+			level = bl.group->levelCap;
 		}
 		foreach(BuffWithCondition *bc, bl.group->levels[level]->buffs) {
 			pout->append(bc);
@@ -297,6 +356,10 @@ bool Build::isBuffUseful(const BuffGroup *group,
 		foreach(const BuffWithCondition *bc, bl->buffs) {
 			if (!weapon || bc->isUseful(*weapon, profile)) return true;
 		}
+		foreach(const BuffRef &ref, bl->buffUncaps) {
+			if (!ref.buffGroup) continue;
+			if (isBuffUseful(ref.buffGroup, profile)) return true;
+		}
 	}
 	return false;
 }
@@ -375,7 +438,15 @@ void Build::print(QTextStream &stream, QString indent) const {
 		item->print(stream, indent + "\t");
 	}
 	foreach(const BuffWithLevel &bl, buffLevels) {
-		stream << indent << "- buff group: " << bl.level << endl;
+		stream << indent << "- buff group: " << bl.level;
+		if (bl.group->levelCap != BuffGroup::LEVEL_UNCAPPED) {
+			if (bl.levelUncapped) {
+				stream << " (uncapped)";
+			} else {
+				stream << " (cap: " << bl.group->levelCap << ")";
+			}
+		}
+		stream << endl;
 		bl.group->print(stream, indent + "\t");
 	}
 }

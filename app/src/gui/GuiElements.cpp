@@ -156,11 +156,15 @@ QString GuiElements::conditionName(Condition c) {
 	case CONDITION_LOW_LIFE: return tr("Low life (heroics)");
 	case CONDITION_DEATH_1: return tr("Fainted once");
 	case CONDITION_DEATH_2: return tr("Fainted twice");
-	case CONDITION_FULL_STAMINA: return tr("Full stamina");
+	case CONDITION_FULL_STAMINA: return tr("Full stamina (immediate)");
+	case CONDITION_FULL_STAMINA_DELAYED: return tr("Full stamina (delayed)");
 	case CONDITION_SLIDING: return tr("Sliding");
 	case CONDITION_RECEIVED_DAMAGE: return tr("Received damage (latent power)");
+	case CONDITION_RECEIVED_DAMAGE_SECRET: return tr("Received damage (latent power secret)");
 	case CONDITION_BLIGHT_RECOVERY: return tr("Blight recovery (coalescence)");
 	case CONDITION_AFTER_PERFECT_GUARD: return tr("Perfect guard (offensive guard)");
+	case CONDITION_FROST_AURA: return tr("Frost aura");
+	case CONDITION_CONSECUTIVE_ATTACKS: return tr("Consecutive attacks (element acceleration)");
 	case CONDITION_DEMON_POWDER_USE: return tr("Using demon powder");
 	case CONDITION_MIGHT_SEED_USE: return tr("Using might seed");
 	case CONDITION_MIGHT_PILL_USE: return tr("Using might pill");

@@ -10,14 +10,12 @@ struct BuffGroup;
 struct BuffSetBonus;
 
 struct BuffRef : XmlObject {
-	BuffRef() : buffGroup(NULL), level(1), levelCapPlus(0) {};
+	BuffRef() : buffGroup(NULL), level(1) {};
 	QString id;
 	BuffGroup *buffGroup;
 	int level;
-	int levelCapPlus;
 
 	void print(QTextStream &stream, QString indent = QString()) const;
-	bool readXmlElement(QXmlStreamReader *xml);
 	void readXml(QXmlStreamReader *xml);
 };
 

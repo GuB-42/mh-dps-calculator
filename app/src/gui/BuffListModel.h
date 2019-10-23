@@ -28,6 +28,8 @@ public slots:
 	void setDataLanguage(Language lang);
 
 private:
+	void updateCaps();
+
 	QList<BuffWithLevel> listData;
 	QMap<const BuffGroup *, int> listDataMap;
 	Language dataLanguage;

@@ -1,5 +1,7 @@
 #include "BuffListModel.h"
 #include <algorithm>
+#include <QBrush>
+#include <QSet>
 #include "../BuffGroup.h"
 
 BuffListModel::BuffListModel(QObject *parent) :
@@ -16,16 +18,41 @@ QVariant BuffListModel::data(const QModelIndex &index, int role) const {
 	if (!index.isValid()) return QVariant();
 	if (index.row() < 0 && index.row() >= listData.count()) return QVariant();
 
+	if (role != Qt::DisplayRole && role != Qt::ForegroundRole) return QVariant();
+
+	const BuffWithLevel &d = listData[index.row()];
+	int level = d.level;
+	if (d.group->levelCap != BuffGroup::LEVEL_UNCAPPED &&
+	    level > d.group->levelCap && !d.levelUncapped) {
+		level = d.group->levelCap;
+	}
+	while (level > 0 && d.group->levels[level] == d.group->levels[level - 1]) {
+		--level;
+	}
+
 	if (role == Qt::DisplayRole) {
-		const BuffWithLevel &d = listData[index.row()];
-		const BuffGroupLevel *group_level = d.group->levels[d.level];
+		const BuffGroupLevel *group_level = d.group->levels[level];
 		if (group_level) {
-			return group_level->getName(dataLanguage);
+			if (level < d.level) {
+				return tr("%1 (+%2)").arg(group_level->getName(dataLanguage)).
+					arg(d.level - level);
+			} else {
+				return group_level->getName(dataLanguage);
+			}
 		} else {
-			return tr("%1 [%2]").arg(d.group->getName(dataLanguage)).arg(d.level);
+			return tr("%1 [%2]").arg(d.group->getName(dataLanguage)).arg(level);
 		}
 	} else {
-		return QVariant();
+		if (d.group->levelCap != BuffGroup::LEVEL_UNCAPPED &&
+		    d.level > d.group->levelCap) {
+			if (level > d.group->levelCap) {
+				return QBrush(Qt::darkMagenta);
+			} else {
+				return QBrush(Qt::darkRed);
+			}
+		} else {
+			return QVariant();
+		}
 	}
 }
 
@@ -60,6 +87,7 @@ void BuffListModel::addBuff(const BuffGroup *group, int level) {
 			emit dataChanged(index(*it), index(*it));
 		}
 	}
+	updateCaps();
 }
 
 void BuffListModel::removeBuff(const BuffGroup *group, int level) {
@@ -83,6 +111,7 @@ void BuffListModel::removeBuff(const BuffGroup *group, int level) {
 			emit dataChanged(index(idx), index(idx));
 		}
 	}
+	updateCaps();
 }
 
 void BuffListModel::setDataLanguage(Language lang) {
@@ -110,5 +139,31 @@ QModelIndex BuffListModel::buffGroupIndex(const BuffGroup *group) const {
 		return QModelIndex();
 	} else {
 		return index(*it);
+	}
+}
+
+void BuffListModel::updateCaps() {
+	QSet<const BuffGroup *> uncapped;
+
+	foreach(const BuffWithLevel &bwl, listData) {
+		const BuffGroupLevel *group_level = bwl.group->levels[bwl.level];
+		if (group_level) {
+			foreach(const BuffRef &buff_ref, group_level->buffUncaps) {
+				if (buff_ref.buffGroup) uncapped.insert(buff_ref.buffGroup);
+			}
+		}
+	}
+	for (int i = 0; i < listData.count(); ++i) {
+		if (uncapped.contains(listData[i].group)) {
+			if (!listData[i].levelUncapped) {
+				listData[i].levelUncapped = true;
+				emit dataChanged(index(i), index(i));
+			}
+		} else {
+			if (listData[i].levelUncapped) {
+				listData[i].levelUncapped = false;
+				emit dataChanged(index(i), index(i));
+			}
+		}
 	}
 }

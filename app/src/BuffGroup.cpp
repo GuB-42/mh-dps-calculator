@@ -15,6 +15,12 @@ void BuffGroupLevel::print(QTextStream &stream, QString indent) const {
 		stream << indent << "- buff " << endl;
 		buff->print(stream, indent + "\t");
 	}
+	if (!buffUncaps.isEmpty()) {
+		stream << indent << "- buff uncap" << endl;
+		foreach (const BuffRef &buff_uncap, buffUncaps) {
+			buff_uncap.print(stream, indent + "\t");
+		}
+	}
 }
 
 static bool sub_parse_buff(QXmlStreamReader *xml,
@@ -116,10 +122,34 @@ static bool sub_parse_buff(QXmlStreamReader *xml,
 	return false;
 }
 
+static void parse_uncap(QXmlStreamReader *xml, QVector<BuffRef> *pout)
+{
+	while (!xml->atEnd()) {
+		QXmlStreamReader::TokenType token_type = xml->readNext();
+		if (token_type == QXmlStreamReader::StartElement) {
+			if (xml->name() == "buff_ref") {
+				BuffRef br;
+				br.readXml(xml);
+				pout->append(br);
+			} else {
+				XML_SKIP_CURRENT_ELEMENT(*xml);
+			}
+		} else if (token_type == QXmlStreamReader::EndElement) {
+			break;
+		}
+	}
+}
+
 bool BuffGroupLevel::readXmlElement(QXmlStreamReader *xml) {
 	if (NamedObject::readXmlElement(xml)) return true;
-	return sub_parse_buff(xml, &buffs, CONDITION_ALWAYS,
-	                      (ElementBuff)-1, (StatusBuff)-1);
+	QStringRef tag_name = xml->name();
+	if (tag_name == "uncap_buff_level") {
+		parse_uncap(xml, &buffUncaps);
+		return true;
+	} else {
+		return sub_parse_buff(xml, &buffs, CONDITION_ALWAYS,
+		                      (ElementBuff)-1, (StatusBuff)-1);
+	}
 }
 
 void BuffGroupLevel::readXmlGetLevel(QXmlStreamReader *xml, int *plevel) {
@@ -143,13 +173,28 @@ BuffGroup::~BuffGroup() {
 
 bool BuffGroup::hasBuffs() {
 	foreach(BuffGroupLevel *level, levels) {
-		if (level && !level->buffs.isEmpty()) return true;
+		if (!level) continue;
+	    if (!level->buffs.isEmpty()) return true;
+		foreach (const BuffRef &buff_ref, level->buffUncaps) {
+			BuffGroup *subgroup = buff_ref.buffGroup;
+			if (subgroup && subgroup->levelCap != BuffGroup::LEVEL_UNCAPPED) {
+				for (int sublevel = subgroup->levelCap;
+				     sublevel < subgroup->levels.count(); ++sublevel) {
+					if (!subgroup->levels[sublevel]->buffs.isEmpty()) {
+						return true;
+					}
+				}
+			}
+		}
 	}
 	return false;
 }
 
 void BuffGroup::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
+	if (levelCap != LEVEL_UNCAPPED) {
+		stream << indent << "- level cap: " << levelCap << endl;
+	}
 	for (int i = 0; i < levels.count(); ++i) {
 		stream << indent << "- level " << i << endl;
 		if (levels[i]) levels[i]->print(stream, indent + "\t");
