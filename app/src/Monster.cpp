@@ -154,12 +154,11 @@ bool Monster::readXmlElement(QXmlStreamReader *xml) {
 	if (tag_name == "hit_points") {
 		hitPoints = xml->readElementText().toDouble();
 	} else if (tag_name == "tolerance") {
-		StatusType type = (StatusType)-1;
 		MonsterTolerance *tol = new MonsterTolerance;
 		tol->readXml(xml);
 		if (tol->status_type >= (StatusType)0 &&
 		    tol->status_type < STATUS_COUNT) {
-			tolerances[type] = tol;
+			tolerances[tol->status_type] = tol;
 		} else {
 			delete tol;
 		}
