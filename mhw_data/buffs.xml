@@ -795,25 +795,25 @@
 		<name_fr>Maître d'armes</name_fr>
 		<name_jp>見切り</name_jp>
 		<buff level="1">
-			<affinity_plus>3</affinity_plus>
+			<affinity_plus>5</affinity_plus>
 		</buff>
 		<buff level="2">
-			<affinity_plus>6</affinity_plus>
-		</buff>
-		<buff level="3">
 			<affinity_plus>10</affinity_plus>
 		</buff>
-		<buff level="4">
+		<buff level="3">
 			<affinity_plus>15</affinity_plus>
 		</buff>
-		<buff level="5">
+		<buff level="4">
 			<affinity_plus>20</affinity_plus>
 		</buff>
-		<buff level="6">
+		<buff level="5">
 			<affinity_plus>25</affinity_plus>
 		</buff>
-		<buff level="7">
+		<buff level="6">
 			<affinity_plus>30</affinity_plus>
+		</buff>
+		<buff level="7">
+			<affinity_plus>40</affinity_plus>
 		</buff>
 	</buff_group>
 
@@ -1144,27 +1144,27 @@
 		<name_jp>火事場力</name_jp>
 		<buff level="1">
 			<low_life>
-				<attack_multiplier>1.05</attack_multiplier>
+				<!-- no more attack boost -->
 			</low_life>
 		</buff>
 		<buff level="2">
 			<low_life>
-				<attack_multiplier>1.1</attack_multiplier>
+				<attack_multiplier>1.05</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="3">
 			<low_life>
-				<attack_multiplier>1.15</attack_multiplier>
+				<attack_multiplier>1.05</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="4">
 			<low_life>
-				<attack_multiplier>1.20</attack_multiplier>
+				<attack_multiplier>1.10</attack_multiplier>
 			</low_life>
 		</buff>
 		<buff level="5">
 			<low_life>
-				<attack_multiplier>1.25</attack_multiplier>
+				<attack_multiplier>1.15</attack_multiplier>
 			</low_life>
 		</buff>
 	</buff_group>
@@ -2034,7 +2034,7 @@
 		<name_jp>無属性強化</name_jp>
 		<buff>
 			<raw_weapon>
-				<attack_multiplier>1.1</attack_multiplier>
+				<attack_multiplier>1.05</attack_multiplier>
 			</raw_weapon>
 		</buff>
 	</buff_group>
