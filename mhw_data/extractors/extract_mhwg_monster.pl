@@ -26,8 +26,11 @@ my $cur_monster;
 
 my %monster_states = (
 	"Anjanath" => [ "", "Wounded" ],
+	"Anjanath//破壊後" => [ "Wounded" ],
 	"Barroth" => [ "", "Mud" ],
 	"Dodogama" => [ "", "Rock 1", "Rock 2" ],
+	"Dodogama//石溜め1" => [ "Rock 1" ],
+	"Dodogama//石溜め2" => [ "Rock 2" ],
 	"Great Jagras/腹膨張" => [ "Inflated" ],
 	"Jyuratodus" => [ "", "Mud" ],
 	"Kirin" => [ "", "Electricity" ],
@@ -39,6 +42,7 @@ my %monster_states = (
 	"Nergigante/角" => [ "", "Wounded" ],
 	"Nergigante" => [ "", "White", "Black" ],
 	"Uragaan" => [ "", "Wounded" ],
+	"Uragaan//破壊後" => [ "Wounded" ],
 	"Vaal Hazak" => [ "", "Wounded" ],
 	"Xeno'jiiva" => [ "", "Critical State", "Wounded" ],
 	"Zorah Magdaros/胸" => [ "Before Wounded", "After Wounded" ],
@@ -46,11 +50,37 @@ my %monster_states = (
 	"Kulve Taroth/頭" => [ "Start", "Wounded", "" ],
 	"Kulve Taroth/胸" => [ "Start", "" ],
 	"Kulve Taroth/前脚" => [ "Start", "" ],
-	"Behemoth" => [ "", "Wounded" ]
+	"Behemoth" => [ "", "Wounded" ],
+	"Glavenus//赤熱" => [ "Heated" ],
+	"Glavenus//サビ" => [ "Rust" ],
+	"Nargacuga//破壊後" => [ "Wounded" ],
+	"Banbaro//破壊後" => [ "Wounded" ],
+	"Beotodus//雪纏い" => [ "Snow" ],
+	"Barioth//破壊後" => [ "Wounded" ],
+	"Ebony Odogaron//破壊後" => [ "Wounded" ],
+	"Acidic Glavenus//結晶" => [ "Crystalized" ],
+	"Acidic Glavenus//研ぎ" => [ "Sharpened" ],
+	"Velkhana" => [ "", "Broken" ],
+	"Fulgur Anjanath" => [ "", "Charged" ],
+	"Fulgur Anjanath/脚" => [ "", "Broken", "Charged" ],
+	"Fulgur Anjanath/尻尾" => [ "", "Broken", "Charged" ],
+	"Namielle" => [ "", "Water" ],
+	"Yian Garuga" => [ "", "Broken" ],
+	"Scarred Yian Garuga" => [ "", "Broken" ],
+	"Zinogre" => [ "", "Charged" ],
+	"Rajang" => [ "", "Enraged" ],
+	"Ruiner Nergigante/角" => [ "", "Wounded" ],
+	"Ruiner Nergigante" => [ "", "Regeneration", "Super Regeneration" ],
+	"Silver Rathalos" => [ "", "Broken" ],
+	"Gold Rathian" => [ "", "Broken" ],
+	"Savage Deviljho" => [ "", "Enraged" ],
+	"Blackveil Vaal Hazak" => [ "", "Wounded" ]
 );
 
 my %monster_enraged_states = (
-	"Deviljho" => [ 0, 1 ]
+	"Deviljho" => [ 0, 1 ],
+	"Savage Deviljho" => [ 0, 1 ],
+	"Rajang" => [ 0, 1 ]
 );
 
 sub process_data_row {
@@ -83,24 +113,31 @@ sub process_data_row {
 	}
 
 	for my $part_name (split /・/, $header_row[0]) {
+		my $state_name = "";
+		if ($part_name =~ /^\s*(.*)\s*\((.*)\)\s*$/) {
+			$part_name = $1;
+			$state_name = $2;
+		}
+
 		unless ($cur_monster->{"hit_data"}{$part_name}) {
 			push @{$cur_monster->{"parts"}}, $part_name;
 			$cur_monster->{"hit_data"}{$part_name} = { };
-			$cur_monster->{"last_state_id"}{$part_name} = 0;
+			$cur_monster->{"last_state_id"}{$part_name} ||= {};
+			$cur_monster->{"last_state_id"}{$part_name}{$state_name} = 0;
 		}
 
 		for my $row_s (@lrow_s) {
-			my $state_id = $cur_monster->{"last_state_id"}{$part_name}++;
-			my $state = $state_id == 0 ? "" : "state$state_id";
+			my $state_id = $cur_monster->{"last_state_id"}{$part_name}{$state_name}++;
+			my $state = $state_id == 0 ? "$state_name" : "state$state_name$state_id";
 			my $n = $cur_monster->{"name"} || $cur_monster->{"name_jp"};
-			my $xn = $n . "/" . $part_name;
-			if ($monster_states{$xn}) {
-				if (defined $monster_states{$xn}->[$state_id]) {
-					$state = $monster_states{$xn}->[$state_id];
-				}
-			} elsif ($monster_states{$n}) {
-				if (defined $monster_states{$n}->[$state_id]) {
-					$state = $monster_states{$n}->[$state_id];
+			my @xns = ($n . "/" . $part_name . "/" . $state_name,
+			           $n . "//" . $state_name, $n . "/" . $part_name, $n);
+			for my $xn (@xns) {
+				if ($monster_states{$xn}) {
+					if (defined $monster_states{$xn}->[$state_id]) {
+						$state = $monster_states{$xn}->[$state_id];
+					}
+					last;
 				}
 			}
 			$cur_monster->{"hit_data"}{$part_name}{$state} = {
@@ -116,13 +153,11 @@ sub process_data_row {
 			};
 
 			my $enraged_state;
-			if ($monster_enraged_states{$xn}) {
-				if (defined $monster_enraged_states{$xn}->[$state_id]) {
-					$enraged_state = $monster_enraged_states{$xn}->[$state_id];
-				}
-			} elsif ($monster_enraged_states{$n}) {
-				if (defined $monster_enraged_states{$n}->[$state_id]) {
-					$enraged_state = $monster_enraged_states{$n}->[$state_id];
+			for my $xn (@xns) {
+				if ($monster_enraged_states{$xn}) {
+					if (defined $monster_enraged_states{$xn}->[$state_id]) {
+						$enraged_state = $monster_enraged_states{$xn}->[$state_id];
+					}
 				}
 			}
 			$cur_monster->{"hit_data"}{$part_name}{$state}{"enraged_state"} = $enraged_state;
@@ -142,23 +177,29 @@ sub process_status_row {
 	);
 	my %xinit = (
 		"◎" => 75,
+		"○" => 150,
 		"◯" => 150,
-		"△" => 300
+		"△" => 300,
+		"×" => 450
 	);
 	my %xplus = (
 		"◎" => 50,
+		"○" => 100,
 		"◯" => 100,
-		"△" => 200
+		"△" => 200,
+		"×" => 300
 	);
 	my %xduration = (
 		"◎" => 60,
+		"○" => 30,
 		"◯" => 30,
-		"△" => 15
+		"△" => 15,
+		"×" => 0
 	);
 	my $sta_name = $xname{$header_row[0]};
 	my $sta_init = ($data_row[1] && $xinit{$data_row[1]}) ? $xinit{$data_row[1]} : 0;
-	my $sta_plus = ($data_row[2] && $xplus{$data_row[2]}) ? $xplus{$data_row[2]} : 0;
-	my $sta_duration = ($data_row[3] && $xduration{$data_row[3]}) ? $xduration{$data_row[3]} : 0;
+	my $sta_plus = ($data_row[1] && $xplus{$data_row[1]}) ? $xplus{$data_row[1]} : 0;
+	my $sta_duration = ($data_row[2] && $xduration{$data_row[2]}) ? $xduration{$data_row[2]} : 0;
 	if ($sta_init) {
 		$cur_monster->{"tolerances"}{$sta_name} = {
 			"initial" => $sta_init,
@@ -258,7 +299,7 @@ sub end {
 	} elsif (lc($tag) eq "tr" && (@data_row > 0)) {
 #		print Dumper(\@header_row);
 		process_data_row() if ($header_row[9]);
-		process_status_row() if ($header_row[3] && $header_row[3] eq "効果時間");
+		process_status_row() if ($header_row[2] && $header_row[2] eq "ダメージ・効果時間");
 		$in_tr = 0;
 	} elsif (lc($tag) eq "h4") {
 		if ($text =~ /\s*(.*\S)\s+hit data/) {

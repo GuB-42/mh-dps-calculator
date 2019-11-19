@@ -45664,7 +45664,7 @@
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
         <name>Soulfire Roar "Blaze"</name>
-        <name_jp>魂煌の龍砲・炎妃</name_jp>
+        <name_jp>魂焔の龍砲・炎妃</name_jp>
         <inflated_attack>420</inflated_attack>
         <attack>280</attack>
         <affinity>20</affinity>
@@ -45839,7 +45839,7 @@
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
         <name>Soulfire Roar "Ruin"</name>
-        <name_jp>魂煌の龍砲・滅尽</name_jp>
+        <name_jp>魂焔の龍砲・滅尽</name_jp>
         <inflated_attack>435</inflated_attack>
         <attack>290</attack>
         <ammos>
@@ -46012,7 +46012,7 @@
     <weapon>
         <weapon_type_ref id="heavy_bowgun" />
         <name>Soulfire Roar "Styx"</name>
-        <name_jp>魂煌の龍砲・冥灯</name_jp>
+        <name_jp>魂焔の龍砲・冥灯</name_jp>
         <inflated_attack>420</inflated_attack>
         <attack>280</attack>
         <affinity>10</affinity>
