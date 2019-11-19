@@ -10253,6 +10253,74 @@
     </weapon>
     <weapon>
         <weapon_type_ref id="charge_blade" />
+        <name>Black Eagle</name>
+        <name_jp>ダークイーグル</name_jp>
+        <inflated_attack>756</inflated_attack>
+        <attack>210</attack>
+        <affinity>10</affinity>
+        <element>
+            <inflated_thunder>210</inflated_thunder>
+            <thunder>21</thunder>
+        </element>
+        <phial>
+            <element />
+        </phial>
+        <sharpness>
+            <red>20</red>
+            <orange>50</orange>
+            <yellow>50</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>100</white>
+            <purple>80</purple>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>1</slot>
+            <slot>1</slot>
+        </slots>
+        <rare>10</rare>
+        <categories>
+            <category_ref id="created" />
+            <category_ref id="upgradable" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="charge_blade" />
+        <name>Black Lightning Eagle</name>
+        <name_jp>雷光のダークイーグル</name_jp>
+        <inflated_attack>864</inflated_attack>
+        <attack>240</attack>
+        <affinity>10</affinity>
+        <element>
+            <inflated_thunder>270</inflated_thunder>
+            <thunder>27</thunder>
+        </element>
+        <phial>
+            <element />
+        </phial>
+        <sharpness>
+            <red>10</red>
+            <orange>10</orange>
+            <yellow>30</yellow>
+            <green>50</green>
+            <blue>50</blue>
+            <white>100</white>
+            <purple>150</purple>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>1</slot>
+            <slot>1</slot>
+        </slots>
+        <rare>12</rare>
+        <categories>
+            <category_ref id="iceborne" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="charge_blade" />
         <name>Taroth Strongarm "Horn"</name>
         <name_ar>نصل تاروث "ديابلوس"</name_ar>
         <name_de>Taroth-Starkarm "Diablos"</name_de>
@@ -21978,6 +22046,39 @@
         </slots>
         <rare>7</rare>
         <categories>
+            <category_ref id="upgradable" />
+            <category_ref id="upgraded" />
+        </categories>
+    </weapon>
+    <weapon>
+        <weapon_type_ref id="great_sword" />
+        <name>Wyvern Impact "Silver"</name>
+        <name_jp>爆熱機関式【銀翼】</name_jp>
+        <inflated_attack>1296</inflated_attack>
+        <attack>270</attack>
+        <affinity>-15</affinity>
+        <awakened>true</awakened>
+        <element>
+            <inflated_fire>690</inflated_fire>
+            <fire>69</fire>
+        </element>
+        <sharpness>
+            <red>160</red>
+            <orange>20</orange>
+            <yellow>20</yellow>
+            <green>70</green>
+            <blue>40</blue>
+            <white>30</white>
+            <purple>60</purple>
+            <plus>50</plus>
+        </sharpness>
+        <slots>
+            <slot>1</slot>
+            <slot>1</slot>
+        </slots>
+        <rare>12</rare>
+        <categories>
+            <category_ref id="iceborne" />
             <category_ref id="upgraded" />
         </categories>
     </weapon>
