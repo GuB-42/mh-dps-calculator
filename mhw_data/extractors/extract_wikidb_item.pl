@@ -10,245 +10,127 @@ use utf8;
 use open ':std', ':encoding(UTF-8)';
 
 use XML::Writer;
+use XML::Parser;
 use JSON;
 use Data::Dumper;
 
 my $xml_writer;
 
-my %buff_name_id = (
-	"Poison Resistance" => "poison_resistance",
-	"Paralysis Resistance" => "paralysis_resistance",
-	"Sleep Resistance" => "sleep_resistance",
-	"Stun Resistance" => "stun_resistance",
-	"Muck Resistance" => "muck_resistance",
-	"Blast Resistance" => "blast_resistance",
-	"Bleeding Resistance" => "bleeding_resistance",
-	"Iron Skin" => "iron_skin",
-	"Earplugs" => "earplugs",
-	"Windproof" => "windproof",
-	"Tremor Resistance" => "tremor_resistance",
-	"Dungmaster" => "dungmaster",
-	"Effluvial Expert" => "effluvial_expert",
-	"Heat Guard" => "heat_guard",
-	"Attack Boost" => "attack_boost",
-	"Defense Boost" => "defense_boost",
-	"Health Boost" => "health_boost",
-	"Recovery Up" => "recovery_up",
-	"Recovery Speed" => "recovery_speed",
-	"Fire Resistance" => "fire_resistance",
-	"Water Resistance" => "water_resistance",
-	"Ice Resistance" => "ice_resistance",
-	"Thunder Resistance" => "thunder_resistance",
-	"Dragon Resistance" => "dragon_resistance",
-	"Blight Resistance" => "blight_resistance",
-	"Fire Attack" => "fire_attack",
-	"Water Attack" => "water_attack",
-	"Ice Attack" => "ice_attack",
-	"Thunder Attack" => "thunder_attack",
-	"Dragon Attack" => "dragon_attack",
-	"Poison Attack" => "poison_attack",
-	"Paralysis Attack" => "paralysis_attack",
-	"Sleep Attack" => "sleep_attack",
-	"Blast Attack" => "blast_attack",
-	"Normal Shots" => "normal_shots",
-	"Piercing Shots" => "piercing_shots",
-	"Spread/Power Shots" => "spread_power_shots",
-	"Free Elem/Ammo Up" => "free_elem_ammo_up",
-	"Critical Eye" => "critical_eye",
-	"Critical Boost" => "critical_boost",
-	"Weakness Exploit" => "weakness_exploit",
-	"Focus" => "focus",
-	"Power Prolonger" => "power_prolonger",
-	"Handicraft" => "handicraft",
-	"Critical Draw" => "critical_draw",
-	"Partbreaker" => "partbreaker",
-	"Slugger" => "slugger",
-	"Stamina Thief" => "stamina_thief",
-	"Master Mounter" => "master_mounter",
-	"Airborne" => "airborne",
-	"Latent Power" => "latent_power",
-	"Agitator" => "agitator",
-	"Peak Performance" => "peak_performance",
-	"Heroics" => "heroics",
-	"Fortify" => "fortify",
-	"Resentment" => "resentment",
-	"Resuscitate" => "resuscitate",
-	"Horn Maestro" => "horn_maestro",
-	"Capacity Boost" => "capacity_boost",
-	"Special Ammo Boost" => "special_ammo_boost",
-	"Artillery" => "artillery",
-	"Heavy Artillery" => "heavy_artillery",
-	"Marathon Runner" => "marathon_runner",
-	"Constitution" => "constitution",
-	"Leap of Faith" => "leap_of_faith",
-	"Stamina Surge" => "stamina_surge",
-	"Hunger Resistance" => "hunger_resistance",
-	"Evade Window" => "evade_window",
-	"Evade Extender" => "evade_extender",
-	"Guard" => "guard",
-	"Quick Sheath" => "quick_sheath",
-	"Wide-Range" => "wide_range",
-	"Item Prolonger" => "item_prolonger",
-	"Free Meal" => "free_meal",
-	"Speed Eating" => "speed_eating",
-	"Speed Sharpening" => "speed_sharpening",
-	"Bombardier" => "bombardier",
-	"Mushroomancer" => "mushroomancer",
-	"Master Fisher" => "master_fisher",
-	"Pro Transporter" => "pro_transporter",
-	"Master Gatherer" => "master_gatherer",
-	"Honey Hunter" => "honey_hunter",
-	"Carving Pro" => "carving_pro",
-	"Divine Blessing" => "divine_blessing",
-	"Palico Rally" => "palico_rally",
-	"Botanist" => "botanist",
-	"Geologist" => "geologist",
-	"Maximum Might" => "maximum_might",
-	"Slinger Capacity" => "slinger_capacity",
-	"Stealth" => "stealth",
-	"Flinch Free" => "flinch_free",
-	"Scoutfly Range Up" => "scoutfly_range_up",
-	"Speed Crawler" => "speed_crawler",
-	"Jump Master" => "jump_master",
-	"Sporepuff Expert" => "sporepuff_expert",
-	"Aquatic Expert" => "aquatic_expert",
-	"Cliffhanger" => "cliffhanger",
-	"Blindsider" => "blindsider",
-	"Scholar" => "scholar",
-	"Entomologist" => "entomologist",
-	"Effluvia Resistance" => "effluvia_resistance",
-	"Scenthound" => "scenthound",
-	"Forager's Luck" => "foragers_luck",
-	"Detector" => "detector",
-	"BBQ Master" => "bbq_master",
-	"Tool Specialist" => "tool_specialist",
-	"Affinity Sliding" => "affinity_sliding",
-	"Intimidator" => "intimidator",
-	"Hasten Recovery" => "hasten_recovery",
-	"Super Recovery" => "super_recovery",
-	"Poison Duration Up" => "poison_duration_up",
-	"Adrenaline" => "adrenaline",
-	"Stamina Cap Up" => "stamina_cap_up",
-	"Critical Element" => "critical_element",
-	"Mind's Eye/Ballistics" => "minds_eye_ballistics",
-	"Bludgeoner" => "bludgeoner",
-	"Non-elemental Boost" => "non_elemental_boost",
-	"Capture Master" => "capture_master",
-	"Guard Up" => "guard_up",
-	"Guts" => "guts",
-	"Master's Touch" => "masters_touch",
-	"Nullify Wind Pressure" => "nullify_wind_pressure",
-	"Razor Sharp/Spare Shot" => "razor_sharp_spare_shot",
-	"Critical Status" => "critical_status",
-	"Good Luck" => "good_luck",
-	"Bow Charge Plus" => "bow_charge_plus",
-	"Punishing Draw" => "punishing_draw",
-	"Protective Polish" => "protective_polish",
-	"Poison Functionality" => "poison_functionality",
-	"Para Functionality" => "para_functionality",
-	"Sleep Functionality" => "sleep_functionality",
-	"Blast Functionality" => "blast_functionality",
-	"Elderseal Boost" => "elderseal_boost",
-	"Carving Master" => "carving_master",
-	"Great Luck" => "great_luck",
-	"Elemental Airborne" => "elemental_airborne",
-	"Coalescence" => "coalescence",
-	"Offensive Guard" => "offensive_guard",
-	"Safe Landing" => "safe_landing",
-	"Provoker" => "provoker",
-	"Agitator Secret" => "agitator_secret",
-	"Artillery Secret" => "artillery_secret",
-	"Bombardier Secret" => "bombardier_secret",
-	"Frostcraft" => "frostcraft",
-	"Divine Blessing Secret" => "divine_blessing_secret",
-	"True Critical Status" => "true_critical_status",
-	"Element Acceleration" => "element_acceleration",
-	"True Element Acceleration" => "true_element_acceleration",
-	"Free Meal Secret" => "free_meal_secret",
-	"Gaia's Veil" => "gaias_veil",
-	"True Gaia's Veil" => "true_gaias_veil",
-	"Latent Power Secret" => "latent_power_secret",
-	"Maximum Might Secret" => "maximum_might_secret",
-	"Slinger Ammo Secret" => "slinger_ammo_secret",
-	"True Critical Element" => "true_critical_element",
-	"Slugger Secret" => "slugger_secret",
-	"Stamina Thief Secret" => "stamina_thief_secret",
-	"Tool Specialist Secret" => "tool_specialist_secret",
-	"True Razor Sharp/Spare Shot" => "true_razor_sharp_spare_shot",
+my %rares = (
+	"antidote_jewel_1" => 5,
+	"geology_jewel_1" => 5,
+	"heavy_artillery_jewel_1" => 5,
+	"hungerless_jewel_1" => 5,
+	"satiated_jewel_1" => 5,
+	"protection_jewel_1" => 5,
+	"meowster_jewel_1" => 5,
+	"botany_jewel_1" => 5,
+	"tip_toe_jewel_1" => 5,
+	"flight_jewel_2" => 5,
+	"smoke_jewel_1" => 5,
+	"mirewalker_jewel_1" => 5,
+	"specimen_jewel_1" => 5,
+	"miasma_jewel_1" => 5,
+	"scent_jewel_1" => 5,
+	"intimidator_jewel_1" => 5,
+	"crisis_jewel_1" => 5,
+	"antipara_jewel_1" => 5,
+	"fortitude_jewel_1" => 5,
+	"water_res_jewel_1" => 5,
+	"suture_jewel_1" => 5,
+	"dragon_res_jewel_1" => 5,
+	"fire_res_jewel_1" => 5,
+	"ice_res_jewel_1" => 5,
+	"def_lock_jewel_1" => 5,
+	"thunder_res_jewel_1" => 5,
+	"pep_jewel_1" => 5,
+	"antiblast_jewel_1" => 5,
+	"gobbler_jewel_1" => 6,
+	"physique_jewel_2" => 6,
+	"blaze_jewel_1" => 6,
+	"evasion_jewel_2" => 6,
+	"jumping_jewel_2" => 6,
+	"sheath_jewel_1" => 6,
+	"friendship_jewel_1" => 6,
+	"enduring_jewel_1" => 6,
+	"medicine_jewel_1" => 6,
+	"grinder_jewel_1" => 6,
+	"steadfast_jewel_1" => 6,
+	"bomber_jewel_1" => 6,
+	"recovery_jewel_1" => 6,
+	"slider_jewel_2" => 6,
+	"defense_jewel_1" => 6,
+	"stonethrower_jewel_1" => 6,
+	"footing_jewel_2" => 6,
+	"brace_jewel_3" => 6,
+	"wind_resist_jewel_2" => 6,
+	"earplug_jewel_3" => 6,
+	"vitality_jewel_1" => 6,
+	"resistor_jewel_1" => 6,
+	"sonorous_jewel_1" => 6,
+	"ko_jewel_2" => 6,
+	"stream_jewel_1" => 6,
+	"frost_jewel_1" => 6,
+	"bolt_jewel_1" => 6,
+	"dragon_jewel_1" => 6,
+	"venom_jewel_1" => 6,
+	"poisoncoat_jewel_3" => 6,
+	"expert_jewel_1" => 6,
+	"tenderizer_jewel_2" => 6,
+	"destroyer_jewel_2" => 6,
+	"elementless_jewel_2" => 6,
+	"drain_jewel_1" => 6,
+	"paracoat_jewel_3" => 7,
+	"sharp_jewel_2" => 7,
+	"shield_jewel_2" => 7,
+	"dragonseal_jewel_3" => 7,
+	"trueshot_jewel_1" => 7,
+	"enhancer_jewel_2" => 7,
+	"forceshot_jewel_3" => 7,
+	"furor_jewel_2" => 7,
+	"potential_jewel_2" => 7,
+	"paralyzer_jewel_1" => 7,
+	"sleep_jewel_1" => 7,
+	"ironwall_jewel_1" => 7,
+	"refresh_jewel_2" => 7,
+	"blast_jewel_1" => 7,
+	"sleepcoat_jewel_3" => 7,
+	"blastcoat_jewel_3" => 7,
+	"throttle_jewel_2" => 7,
+	"challenger_jewel_2" => 7,
+	"attack_jewel_1" => 7,
+	"flawless_jewel_2" => 7,
+	"magazine_jewel_2" => 7,
+	"mighty_jewel_2" => 7,
+	"sprinter_jewel_2" => 8,
+	"critical_jewel_2" => 8,
+	"artillery_jewel_1" => 8,
+	"fungiform_jewel_1" => 8,
+	"release_jewel_3" => 8,
+	"spread_jewel_3" => 8,
+	"charger_jewel_2" => 8,
+	"handicraft_jewel_3" => 8,
+	"mighty_bow_jewel_2" => 8,
+	"minds_eye_jewel_2" => 8,
+	"draw_jewel_2" => 8,
+	"pierce_jewel_3" => 8,
+);
 
+my %buff_name_id = (
 	"Defence Boost" => "defense_boost",
 	"Paralysis Functionality" => "para_functionality",
 	"Survival Expert" => "sporepuff_expert",
 	"Effluvial Resistance" => "effluvia_resistance",
-	"Scent Hound" => "scent_hound",
+	"Scent Hound" => "scenthound",
 	"Aquatic/Polar Mobility" => "aquatic_expert",
-	"陽動攻撃" => "provoker",
+	"環境利用の知識" => "sporepuff_expert",
+	"水場・深雪適応" => => "aquatic_expert",
 );
 
 my %set_bonus_name_id = (
-	"Anjanath Power" => "anjanath_power",
-	"Legiana Blessing" => "legiana_blessing",
-	"Odogaron Power" => "odogaron_power",
-	"Rathalos Power" => "rathalos_power",
-	"Diablos Power" => "diablos_power",
-	"Kirin Blessing" => "kirin_blessing",
-	"Anjanath Will" => "anjanath_will",
-	"Diablos Mastery" => "diablos_mastery",
-	"Legiana Favor" => "legiana_favor",
-	"Kirin Favor" => "kirin_favor",
-	"Commission Guidance" => "commission_guidance",
-	"Rathalos Mastery" => "rathalos_mastery",
-	"Zorah Magdaros Mastery" => "zorah_magdaros_mastery",
-	"Guild Guidance" => "guild_guidance",
-	"Uragaan Protection" => "uragaan_protection",
-	"Bazelgeuse Protection" => "bazelgeuse_protection",
-	"Nergigante Hunger" => "nergigante_hunger",
-	"Teostra Technique" => "teostra_technique",
-	"Kushala Daora Flight" => "kushala_daora_flight",
-	"Pink Rathian Mastery" => "pink_rathian_mastery",
-	"Odogaron Mastery" => "odogaron_mastery",
-	"Xeno'jiiva Divinity" => "xeno_jiiva_divinity",
-	"Vaal Hazak Vitality" => "vaal_hazak_vitality",
-	"Lunastra Favor" => "lunastra_favor",
-	"Astera Blessing" => "astera_blessing",
-
-	"Soul of the Dragoon" => "soul_of_the_dragoon",
-	"Brachydios Essence" => "brachydios_essence",
-	"Zorah Magdaros Essence" => "zorah_magdaros_essence",
-	"Commission Alchemy" => "commission_alchemy",
-	"Legiana Ambition" => "legiana_ambition",
-	"Instructor's Guidance" => "instructors_guidance",
-	"Commission Guidance" => "commission_guidance",
-	"Guild Pride" => "guild_pride",
-	"Velkhana Divinity" => "velkhana_divinity",
-	"Ancient Divinity" => "ancient_divinity",
-	"Gold Rathian Essence" => "gold_rathian_essence",
-	"Namielle Divinity" => "namielle_divinity",
-	"Tigrex Essence" => "tigrex_essence",
-	"Shara Ishvalda Divinity" => "shara_ishvalda_divinity",
-	"Kirin Divinity" => "kirin_divinity",
-	"Uragaan Ambition" => "uragaan_ambition",
-	"Bazelgeuse Ambition" => "bazelgeuse_ambition",
-	"Nergigante Ambition" => "nergigante_ambition",
-	"Zinogre Essence" => "zinogre_essence",
-	"Glavenus Essence" => "glavenus_essence",
-	"Rathalos Essence" => "rathalos_essence",
-	"Rajang's Rage" => "rajangs_rage",
-	"Rathian Essence" => "rathian_essence",
-	"Odogaron Essence" => "odogaron_essence",
-	"Barioth Hidden Art" => "barioth_hidden_art",
-	"Silver Rathalos Essence" => "silver_rathalos_essence",
-	"Diablos Ambition" => "diablos_ambition",
-	"Anjanath Dominance" => "anjanath_dominance",
-	"Deviljho Essence" => "deviljho_essence",
-	"Vaal Soulvein" => "vaal_soulvein",
-	"Lunastra Essence" => "lunastra_essence",
-	"Nargacuga Essence" => "nargacuga_essence",
-
 	"Soul of the Dragon" => "soul_of_the_dragoon",
 	"Val Hazak Vitality" => "vaal_hazak_vitality",
 	"Legian Ambition" => "legiana_ambition",
-	"金獅子の怒気" => "rajangs_rage"
 );
 
 my %part_name = (
@@ -278,9 +160,112 @@ sub mod_name {
 
 sub name_to_id {
 	my $n = $_[0];
+	$n =~ s/'s/s/g;
 	$n =~ s/[_\W]+/_/g;
 	$n =~ s/^\s*|\s*$//;
 	return lc($n);
+}
+
+my @xml_stack;
+my @xml_string_stack;
+my @xml_stack_attr;
+my $cur_buff_id;
+
+sub process_start
+{
+}
+
+sub process_val
+{
+	if ($xml_stack[0] =~ /^name/ && $xml_stack[1] eq "buff_group") {
+		$buff_name_id{$xml_string_stack[0]} = $xml_stack_attr[1]->{"id"};
+	} elsif ($xml_stack[0] =~ /^name/ && $xml_stack[1] eq "set_bonus") {
+		$set_bonus_name_id{$xml_string_stack[0]} = $xml_stack_attr[1]->{"id"};
+	}
+}
+
+sub handle_start
+{
+	my ($expat, $element, @attr) = @_;
+	unshift @xml_stack, $element;
+	unshift @xml_string_stack, "";
+	my $attr_map = {};
+	for (my $i = 0; $i < @attr; $i += 2) {
+		$attr_map->{$attr[$i]} = $attr[$i + 1];
+	}
+	unshift @xml_stack_attr, $attr_map;
+	process_start();
+}
+sub handle_end
+{
+	my ($expat, $element) = @_;
+	process_val();
+	shift @xml_stack;
+	shift @xml_string_stack;
+	shift @xml_stack_attr;
+}
+sub handle_char
+{
+	my ($expat, $string) = @_;
+	$xml_string_stack[0] .= $string;
+}
+
+my $buffs_file = shift @ARGV;
+my $p = new XML::Parser(Handlers => {
+	Start => \&handle_start,
+	End => \&handle_end,
+	Char => \&handle_char });
+@xml_string_stack = ();
+@xml_stack = ("null", "null", "null");
+$p->parsefile($buffs_file);
+
+my %not_found_skills = ();
+
+sub decode_skills {
+	my $xml_writer = $_[0];
+	my $skill_map = $_[1];
+
+	my $has_buff_refs = 0;
+	for my $skill (keys %{$skill_map}) {
+		my $id = $skill;
+		$id =~ s/\x{2019}/'/g;
+		$id =~ s/\s*$//g;
+		if ($buff_name_id{$id}) {
+			$id = $buff_name_id{$id};
+			my $level = $skill_map->{$skill};
+			unless ($has_buff_refs) {
+				$xml_writer->startTag("buff_refs");
+				$has_buff_refs = 1;
+			}
+			if ($level > 1) {
+				$xml_writer->emptyTag("buff_ref", "id" => $id, "level" => $level);
+			} else {
+				$xml_writer->emptyTag("buff_ref", "id" => $id);
+			}
+		} else {
+			unless ($set_bonus_name_id{$id}) {
+				$not_found_skills{$skill} = 1;
+				print STDERR "unknown skill: \"$id\"\n";
+			}
+		}
+	}
+	$xml_writer->endTag() if ($has_buff_refs);
+
+	my $has_set_bonus_refs = 0;
+	for my $skill (keys %{$skill_map}) {
+		my $id = $skill;
+		$id =~ s/\x{2019}/'/g;
+		$id =~ s/\s*$//g;
+		if ($set_bonus_name_id{$id}) {
+			$id = $set_bonus_name_id{$id};
+			unless ($has_set_bonus_refs) {
+				$xml_writer->startTag("set_bonus_refs");
+				$has_set_bonus_refs = 1;
+			}
+			$xml_writer->emptyTag("set_bonus_ref", "id" => $id);
+		}
+	}
+	$xml_writer->endTag() if ($has_set_bonus_refs);
 }
 
 my $io = IO::Handle->new();
@@ -289,12 +274,49 @@ $xml_writer = XML::Writer->new(OUTPUT => $io, ENCODING => 'utf-8', DATA_MODE => 
 $xml_writer->xmlDecl("UTF-8");
 $xml_writer->startTag("data");
 
-my %not_found_skills = ();
-
 my $all_data;
 { local $/; $all_data = <>; }
 $all_data =~ s/[\n\r]//g;
-while ($all_data =~ /var og=\[([^;]*)\];/g) {
+
+while ($all_data =~ /l\.X=\[([^;]*)\];/g) {
+	my $json = "[$1]";
+	$json =~ s/(\w+):/\"$1\":/g;
+	my $data = decode_json($json);
+	for my $elt (@{$data}) {
+		next if ($elt->{"name"} =~ /^(?:Jewel \d|装飾品【\d】)$/);
+		$xml_writer->startTag("item", "id" => name_to_id($elt->{"name"}));
+		$xml_writer->dataElement("type", "decoration");
+		$xml_writer->dataElement("name", $elt->{"name"});
+		$xml_writer->dataElement("decoration_level", $elt->{"level"});
+		if ($rares{name_to_id($elt->{"name"})}) {
+			$xml_writer->dataElement("rare", $rares{name_to_id($elt->{"name"})});
+		}
+		decode_skills($xml_writer, $elt->{"skills"});
+		$xml_writer->endTag();
+	}
+}
+
+while ($all_data =~ /var qg=\[([^;]*)\];/g) {
+	my $json = "[$1]";
+	$json =~ s/(\w+):/\"$1\":/g;
+	my $data = decode_json($json);
+	for my $category (@{$data}) {
+		for my $elt (@{$category->{"decos"}}) {
+			$xml_writer->startTag("item", "id" => name_to_id($elt->{"name"}));
+			$xml_writer->dataElement("type", "decoration");
+			$xml_writer->dataElement("name", $elt->{"name"});
+			$xml_writer->dataElement("decoration_level", 4);
+			decode_skills($xml_writer, $elt->{"skills"});
+			$xml_writer->endTag();
+		}
+	}
+}
+
+$xml_writer->endTag();
+$xml_writer->end();
+exit;
+
+while ($all_data =~ /var pg=\[([^;]*)\];/g) {
 	my $json = "[$1]";
 	$json =~ s/(\w+):/\"$1\":/g;
 	my $data = decode_json($json);
@@ -324,47 +346,7 @@ while ($all_data =~ /var og=\[([^;]*)\];/g) {
 			$xml_writer->endTag();
 		}
 
-		my $has_buff_refs = 0;
-		for my $skill (keys %{$elt->{"skills"}}) {
-			my $id = $skill;
-			$id =~ s/\x{2019}/'/g;
-			$id =~ s/\s*$//g;
-			if ($buff_name_id{$id}) {
-				$id = $buff_name_id{$id};
-				my $level = $elt->{"skills"}{$skill};
-				unless ($has_buff_refs) {
-					$xml_writer->startTag("buff_refs");
-					$has_buff_refs = 1;
-				}
-				if ($level > 1) {
-					$xml_writer->emptyTag("buff_ref", "id" => $id, "level" => $level);
-				} else {
-					$xml_writer->emptyTag("buff_ref", "id" => $id);
-				}
-			} else {
-				unless ($set_bonus_name_id{$id}) {
-					$not_found_skills{$skill} = 1;
-					print STDERR "unknown skill: \"$id\"\n";
-				}
-			}
-		}
-		$xml_writer->endTag() if ($has_buff_refs);
-
-		my $has_set_bonus_refs = 0;
-		for my $skill (keys %{$elt->{"skills"}}) {
-			my $id = $skill;
-			$id =~ s/\x{2019}/'/g;
-			$id =~ s/\s*$//g;
-			if ($set_bonus_name_id{$id}) {
-				$id = $set_bonus_name_id{$id};
-				unless ($has_set_bonus_refs) {
-					$xml_writer->startTag("set_bonus_refs");
-					$has_set_bonus_refs = 1;
-				}
-				$xml_writer->emptyTag("set_bonus_ref", "id" => $id);
-			}
-		}
-		$xml_writer->endTag() if ($has_set_bonus_refs);
+		decode_skills($xml_writer, $elt->{"skills"});
 
 		if ($elt->{"rare"}) {
 			$xml_writer->dataElement("rare", $elt->{"rare"});

@@ -2213,9 +2213,18 @@
 
 	<!-- new in iceborne -->
 
+	<buff_group id="coldproof">
+		<name>Coldproof</name>
+		<name_jp>寒さ耐性</name_jp>
+		<buff level="1">
+			<!-- not implemented -->
+		</buff>
+	</buff_group>
+
 	<buff_group id="coalescence">
 		<name>Coalescence</name>
 		<name_fr>Union</name_fr>
+		<name_jp>災禍転福</name_jp>
 		<buff level="1">
 			<blight_recovery>
 				<attack_plus>12</attack_plus>
@@ -2241,6 +2250,7 @@
 
 	<buff_group id="offensive_guard">
 		<name>Offensive Guard</name>
+		<name_jp>攻めの守勢</name_jp>
 		<buff level="1">
 			<after_perfect_guard>
 				<attack_multiplier>1.05</attack_multiplier>
@@ -2260,6 +2270,7 @@
 
 	<buff_group id="safe_landing">
 		<name>Safe Landing</name>
+		<name_jp>受け身術</name_jp>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2279,7 +2290,7 @@
 		<name>Agitator Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="agitator" />
+				<buff_ref id="agitator"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2288,7 +2299,7 @@
 		<name>Artillery Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="artillery" />
+				<buff_ref id="artillery"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2297,7 +2308,7 @@
 		<name>Bombardier Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="bombardier" />
+				<buff_ref id="bombardier"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2316,7 +2327,7 @@
 		<name>Divine Blessing Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="divine_blessing" />
+				<buff_ref id="divine_blessing"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2354,7 +2365,7 @@
 		<name>Free Meal Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="free_meal" />
+				<buff_ref id="free_meal"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2377,7 +2388,7 @@
 		<name>Latent Power Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="latent_power" />
+				<buff_ref id="latent_power"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2386,7 +2397,7 @@
 		<name>Maximum Might Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="maximum_might" />
+				<buff_ref id="maximum_might"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2395,7 +2406,7 @@
 		<name>Slinger Ammo Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="slinger_capacity" />
+				<buff_ref id="slinger_capacity"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2411,7 +2422,7 @@
 		<name>Slugger Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="slugger" />
+				<buff_ref id="slugger"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2420,7 +2431,7 @@
 		<name>Stamina Thief Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="stamina_thief" />
+				<buff_ref id="stamina_thief"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -2429,7 +2440,7 @@
 		<name>Tool Specialist Secret</name>
 		<buff>
 			<uncap_buff_level>
-				<buff_ref id="tool_specialist" />
+				<buff_ref id="tool_specialist"/>
 			</uncap_buff_level>
 		</buff>
 	</buff_group>
@@ -3158,6 +3169,7 @@
 
 	<set_bonus id="anjanath_power">
 		<name>Anjanath Power</name>
+		<name_jp>蛮顎竜の力</name_jp>
 		<set_bonus_level level="3">
 			<buff_ref id="adrenaline"/>
 		</set_bonus_level>
@@ -3165,6 +3177,7 @@
 
 	<set_bonus id="legiana_blessing">
 		<name>Legiana Blessing</name>
+		<name_jp>風漂竜の恩恵</name_jp>
 		<set_bonus_level level="3">
 			<buff_ref id="good_luck"/>
 		</set_bonus_level>
@@ -3172,6 +3185,7 @@
 
 	<set_bonus id="odogaron_power">
 		<name>Odogaron Power</name>
+		<name_jp>惨爪竜の力</name_jp>
 		<set_bonus_level level="3">
 			<buff_ref id="punishing_draw"/>
 		</set_bonus_level>
@@ -3179,6 +3193,7 @@
 
 	<set_bonus id="rathalos_power">
 		<name>Rathalos Power</name>
+		<name_jp>火竜の力</name_jp>
 		<set_bonus_level level="3">
 			<buff_ref id="critical_element"/>
 		</set_bonus_level>
@@ -3186,6 +3201,7 @@
 
 	<set_bonus id="diablos_power">
 		<name>Diablos Power</name>
+		<name_jp>角竜の力</name_jp>
 		<set_bonus_level level="3">
 			<buff_ref id="bludgeoner"/>
 		</set_bonus_level>
@@ -3193,6 +3209,7 @@
 
 	<set_bonus id="kirin_blessing">
 		<name>Kirin Blessing</name>
+		<name_jp>幻獣の恩恵</name_jp>
 		<set_bonus_level level="4">
 			<buff_ref id="capture_master"/>
 		</set_bonus_level>
@@ -3351,6 +3368,7 @@
 
 	<set_bonus id="lunastra_favor">
 		<name>Lunastra Favor</name>
+		<name_jp>炎妃龍の恩寵</name_jp>
 		<set_bonus_level level="2">
 			<buff_ref id="minds_eye_ballistics"/>
 		</set_bonus_level>
@@ -3361,6 +3379,7 @@
 
 	<set_bonus id="astera_blessing">
 		<name>Astera Blessing</name>
+		<name_jp>アステラの祝福</name_jp>
 		<set_bonus_level level="5">
 			<buff_ref id="great_luck"/>
 		</set_bonus_level>
@@ -3368,6 +3387,7 @@
 
 	<set_bonus id="soul_of_the_dragoon">
 		<name>Soul of the Dragoon</name>
+		<name_jp>竜騎士の証</name_jp>
 		<set_bonus_level level="2">
 			<buff_ref id="masters_touch"/>
 		</set_bonus_level>
@@ -3380,233 +3400,263 @@
 
     <set_bonus id="brachydios_essence">
         <name>Brachydios Essence</name>
+        <name_jp>砕竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="agitator_secret" />
+            <buff_ref id="agitator_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="zorah_magdaros_essence">
         <name>Zorah Magdaros Essence</name>
+        <name_jp>熔山龍の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="artillery_secret" />
+            <buff_ref id="artillery_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="commission_alchemy">
         <name>Commission Alchemy</name>
+        <name_jp>調査団の錬金術</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="bombardier_secret" />
+            <buff_ref id="bombardier_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="legiana_ambition">
         <name>Legiana Ambition</name>
+        <name_jp>風漂竜の覇気</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="bow_charge_plus" />
+            <buff_ref id="bow_charge_plus"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="instructors_guidance">
         <name>Instructor's Guidance</name>
+        <name_jp>教官の導き</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="capture_master" />
+            <buff_ref id="capture_master"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="guild_pride">
         <name>Guild Pride</name>
+        <name_jp>ギルドの見識</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="good_luck" />
+            <buff_ref id="good_luck"/>
         </set_bonus_level>
         <set_bonus_level level="4">
-            <buff_ref id="carving_master" />
+            <buff_ref id="carving_master"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="velkhana_divinity">
         <name>Velkhana Divinity</name>
+        <name_jp>冰龍の神秘</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="critical_element" />
+            <buff_ref id="critical_element"/>
         </set_bonus_level>
         <set_bonus_level level="4">
-            <buff_ref id="frostcraft" />
+            <buff_ref id="frostcraft"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="ancient_divinity">
         <name>Ancient Divinity</name>
+        <name_jp>太古の神秘</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="critical_status" />
+            <buff_ref id="critical_status"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="gold_rathian_essence">
         <name>Gold Rathian Essence</name>
+        <name_jp>金火竜の真髄</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="divine_blessing_secret" />
+            <buff_ref id="divine_blessing_secret"/>
         </set_bonus_level>
         <set_bonus_level level="4">
-            <buff_ref id="true_critical_status" />
+            <buff_ref id="true_critical_status"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="namielle_divinity">
         <name>Namielle Divinity</name>
+        <name_jp>溟龍の神秘</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="element_acceleration" />
+            <buff_ref id="element_acceleration"/>
         </set_bonus_level>
         <set_bonus_level level="4">
-            <buff_ref id="true_element_acceleration" />
+            <buff_ref id="true_element_acceleration"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="tigrex_essence">
         <name>Tigrex Essence</name>
+        <name_jp>轟竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="free_meal_secret" />
+            <buff_ref id="free_meal_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="shara_ishvalda_divinity">
         <name>Shara Ishvalda Divinity</name>
+        <name_jp>地啼龍の神秘</name_jp>
         <set_bonus_level level="4">
-            <buff_ref id="gaias_veil" />
+            <buff_ref id="gaias_veil"/>
         </set_bonus_level>
         <set_bonus_level level="5">
-            <buff_ref id="true_gaias_veil" />
+            <buff_ref id="true_gaias_veil"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="kirin_divinity">
         <name>Kirin Divinity</name>
+        <name_jp>幻獣の神秘</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="great_luck" />
+            <buff_ref id="great_luck"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="uragaan_ambition">
         <name>Uragaan Ambition</name>
+        <name_jp>爆鎚竜の覇気</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="guard_up" />
+            <buff_ref id="guard_up"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="bazelgeuse_ambition">
         <name>Bazelgeuse Ambition</name>
+        <name_jp>爆鱗竜の覇気</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="guts" />
+            <buff_ref id="guts"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="nergigante_ambition">
         <name>Nergigante Ambition</name>
+        <name_jp>滅尽龍の覇気</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="hasten_recovery" />
+            <buff_ref id="hasten_recovery"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="zinogre_essence">
         <name>Zinogre Essence</name>
+        <name_jp>雷狼竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="latent_power_secret" />
+            <buff_ref id="latent_power_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="glavenus_essence">
         <name>Glavenus Essence</name>
+        <name_jp>斬竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="maximum_might_secret" />
+            <buff_ref id="maximum_might_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="rathalos_essence">
         <name>Rathalos Essence</name>
+        <name_jp>火竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="minds_eye_ballistics" />
+            <buff_ref id="minds_eye_ballistics"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="rajangs_rage">
+        <name>Rajang's Rage</name>
         <name_jp>Rajang's Rage</name_jp>
         <name_jp>金獅子の怒気</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="minds_eye_ballistics" />
+            <buff_ref id="minds_eye_ballistics"/>
         </set_bonus_level>
         <set_bonus_level level="4">
-            <buff_ref id="protective_polish" />
+            <buff_ref id="protective_polish"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="rathian_essence">
         <name>Rathian Essence</name>
+        <name_jp>雌火竜の真髄</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="poison_duration_up" />
+            <buff_ref id="poison_duration_up"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="odogaron_essence">
         <name>Odogaron Essence</name>
+        <name_jp>惨爪竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="protective_polish" />
+            <buff_ref id="protective_polish"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="barioth_hidden_art">
         <name>Barioth Hidden Art</name>
+        <name_jp>氷牙竜の秘技</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="punishing_draw" />
+            <buff_ref id="punishing_draw"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="silver_rathalos_essence">
         <name>Silver Rathalos Essence</name>
+        <name_jp>銀火竜の真髄</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="slinger_ammo_secret" />
+            <buff_ref id="slinger_ammo_secret"/>
         </set_bonus_level>
         <set_bonus_level level="4">
-            <buff_ref id="true_critical_element" />
+            <buff_ref id="true_critical_element"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="diablos_ambition">
         <name>Diablos Ambition</name>
+        <name_jp>角竜の覇気</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="slugger_secret" />
+            <buff_ref id="slugger_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="anjanath_dominance">
         <name>Anjanath Dominance</name>
+        <name_jp>蛮顎竜の覇気</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="stamina_cap_up" />
+            <buff_ref id="stamina_cap_up"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="deviljho_essence">
         <name>Deviljho Essence</name>
+        <name_jp>恐暴竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="stamina_thief_secret" />
+            <buff_ref id="stamina_thief_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="vaal_soulvein">
         <name>Vaal Soulvein</name>
+        <name_jp>屍套龍の霊脈</name_jp>
         <set_bonus_level level="2">
-            <buff_ref id="super_recovery" />
+            <buff_ref id="super_recovery"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="lunastra_essence">
         <name>Lunastra Essence</name>
+        <name_jp>炎妃龍の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="tool_specialist_secret" />
+            <buff_ref id="tool_specialist_secret"/>
         </set_bonus_level>
     </set_bonus>
 
     <set_bonus id="nargacuga_essence">
         <name>Nargacuga Essence</name>
+        <name_jp>迅竜の真髄</name_jp>
         <set_bonus_level level="3">
-            <buff_ref id="true_razor_sharp_spare_shot" />
+            <buff_ref id="true_razor_sharp_spare_shot"/>
         </set_bonus_level>
     </set_bonus>
 </data>

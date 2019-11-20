@@ -25548,72 +25548,228 @@
 </translation>
 
 <translation>
+	<name>Ancient Divinity</name>
+	<name_jp>太古の神秘</name_jp>
+</translation>
+<translation>
+	<name>Anjanath Dominance</name>
+	<name_jp>蛮顎竜の覇気</name_jp>
+</translation>
+<translation>
+	<name>Anjanath Power</name>
+	<name_jp>蛮顎竜の力</name_jp>
+</translation>
+<translation>
 	<name>Anjanath Will</name>
 	<name_jp>蛮顎竜の闘志</name_jp>
 </translation>
 <translation>
-	<name>Diablos Mastery</name>
-	<name_jp>角竜の奥義</name_jp>
+	<name>Astera Blessing</name>
+	<name_jp>アステラの祝福</name_jp>
 </translation>
 <translation>
-	<name>Legiana Favor</name>
-	<name_jp>風漂竜の恩寵</name_jp>
+	<name>Barioth Hidden Art</name>
+	<name_jp>氷牙竜の秘技</name_jp>
 </translation>
 <translation>
-	<name>Kirin Favor</name>
-	<name_jp>幻獣の恩寵</name_jp>
-</translation>
-<translation>
-	<name>Commission Guidance</name>
-	<name_jp>調査団の導き</name_jp>
-</translation>
-<translation>
-	<name>Rathalos Mastery</name>
-	<name_jp>火竜の奥義</name_jp>
-</translation>
-<translation>
-	<name>Zorah Magdaros Mastery</name>
-	<name_jp>熔山龍の奥義</name_jp>
-</translation>
-<translation>
-	<name>Guild Guidance</name>
-	<name_jp>ギルドの導き</name_jp>
-</translation>
-<translation>
-	<name>Uragaan Protection</name>
-	<name_jp>爆鎚竜の守護</name_jp>
+	<name>Bazelgeuse Ambition</name>
+	<name_jp>爆鱗竜の覇気</name_jp>
 </translation>
 <translation>
 	<name>Bazelgeuse Protection</name>
 	<name_jp>爆鱗竜の守護</name_jp>
 </translation>
 <translation>
-	<name>Nergigante Hunger</name>
-	<name_jp>滅尽龍の飢餓</name_jp>
+	<name>Brachydios Essence</name>
+	<name_jp>砕竜の真髄</name_jp>
 </translation>
 <translation>
-	<name>Teostra Technique</name>
-	<name_jp>炎王龍の武技</name_jp>
+	<name>Commission Alchemy</name>
+	<name_jp>調査団の錬金術</name_jp>
+</translation>
+<translation>
+	<name>Commission Guidance</name>
+	<name_jp>調査団の導き</name_jp>
+</translation>
+<translation>
+	<name>Deviljho Essence</name>
+	<name_jp>恐暴竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Diablos Ambition</name>
+	<name_jp>角竜の覇気</name_jp>
+</translation>
+<translation>
+	<name>Diablos Mastery</name>
+	<name_jp>角竜の奥義</name_jp>
+</translation>
+<translation>
+	<name>Diablos Power</name>
+	<name_jp>角竜の力</name_jp>
+</translation>
+<translation>
+	<name>Glavenus Essence</name>
+	<name_jp>斬竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Gold Rathian Essence</name>
+	<name_jp>金火竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Guild Guidance</name>
+	<name_jp>ギルドの導き</name_jp>
+</translation>
+<translation>
+	<name>Guild Pride</name>
+	<name_jp>ギルドの見識</name_jp>
+</translation>
+<translation>
+	<name>Instructor's Guidance</name>
+	<name_jp>教官の導き</name_jp>
+</translation>
+<translation>
+	<name>Kirin Blessing</name>
+	<name_jp>幻獣の恩恵</name_jp>
+</translation>
+<translation>
+	<name>Kirin Divinity</name>
+	<name_jp>幻獣の神秘</name_jp>
+</translation>
+<translation>
+	<name>Kirin Favor</name>
+	<name_jp>幻獣の恩寵</name_jp>
 </translation>
 <translation>
 	<name>Kushala Daora Flight</name>
 	<name_jp>鋼龍の飛翔</name_jp>
 </translation>
 <translation>
-	<name>Pink Rathian Mastery</name>
-	<name_jp>桜火竜の奥義</name_jp>
+	<name>Legiana Ambition</name>
+	<name_jp>風漂竜の覇気</name_jp>
+</translation>
+<translation>
+	<name>Legiana Blessing</name>
+	<name_jp>風漂竜の恩恵</name_jp>
+</translation>
+<translation>
+	<name>Legiana Favor</name>
+	<name_jp>風漂竜の恩寵</name_jp>
+</translation>
+<translation>
+	<name>Lunastra Essence</name>
+	<name_jp>炎妃龍の真髄</name_jp>
+</translation>
+<translation>
+	<name>Lunastra Favor</name>
+	<name_jp>炎妃龍の恩寵</name_jp>
+</translation>
+<translation>
+	<name>Namielle Divinity</name>
+	<name_jp>溟龍の神秘</name_jp>
+</translation>
+<translation>
+	<name>Nargacuga Essence</name>
+	<name_jp>迅竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Nergigante Ambition</name>
+	<name_jp>滅尽龍の覇気</name_jp>
+</translation>
+<translation>
+	<name>Nergigante Hunger</name>
+	<name_jp>滅尽龍の飢餓</name_jp>
+</translation>
+<translation>
+	<name>Odogaron Essence</name>
+	<name_jp>惨爪竜の真髄</name_jp>
 </translation>
 <translation>
 	<name>Odogaron Mastery</name>
 	<name_jp>惨爪竜の奥義</name_jp>
 </translation>
 <translation>
+	<name>Odogaron Power</name>
+	<name_jp>惨爪竜の力</name_jp>
+</translation>
+<translation>
+	<name>Pink Rathian Mastery</name>
+	<name_jp>桜火竜の奥義</name_jp>
+</translation>
+<translation>
+	<name>Rajang's Rage</name>
+	<name_jp>金獅子の怒気</name_jp>
+</translation>
+<translation>
+	<name>Rathalos Essence</name>
+	<name_jp>火竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Rathalos Mastery</name>
+	<name_jp>火竜の奥義</name_jp>
+</translation>
+<translation>
+	<name>Rathalos Power</name>
+	<name_jp>火竜の力</name_jp>
+</translation>
+<translation>
+	<name>Rathian Essence</name>
+	<name_jp>雌火竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Shara Ishvalda Divinity</name>
+	<name_jp>地啼龍の神秘</name_jp>
+</translation>
+<translation>
+	<name>Silver Rathalos Essence</name>
+	<name_jp>銀火竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Soul of the Dragoon</name>
+	<name_jp>竜騎士の証</name_jp>
+</translation>
+<translation>
+	<name>Teostra Technique</name>
+	<name_jp>炎王龍の武技</name_jp>
+</translation>
+<translation>
+	<name>Tigrex Essence</name>
+	<name_jp>轟竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Uragaan Ambition</name>
+	<name_jp>爆鎚竜の覇気</name_jp>
+</translation>
+<translation>
+	<name>Uragaan Protection</name>
+	<name_jp>爆鎚竜の守護</name_jp>
+</translation>
+<translation>
+	<name>Vaal Soulvein</name>
+	<name_jp>屍套龍の霊脈</name_jp>
+</translation>
+<translation>
+	<name>Vaal Hazak Vitality</name>
+	<name_jp>屍套龍の命脈</name_jp>
+</translation>
+<translation>
+	<name>Velkhana Divinity</name>
+	<name_jp>冰龍の神秘</name_jp>
+</translation>
+<translation>
 	<name>Xeno'jiiva Divinity</name>
 	<name_jp>冥灯龍の神秘</name_jp>
 </translation>
 <translation>
-	<name>Val Hazak Vitality</name>
-	<name_jp>屍套龍の命脈</name_jp>
+	<name>Zinogre Essence</name>
+	<name_jp>雷狼竜の真髄</name_jp>
+</translation>
+<translation>
+	<name>Zorah Magdaros Essence</name>
+	<name_jp>熔山龍の真髄</name_jp>
+</translation>
+<translation>
+	<name>Zorah Magdaros Mastery</name>
+	<name_jp>熔山龍の奥義</name_jp>
 </translation>
 
 <!-- items -->
@@ -28069,394 +28225,2584 @@
 	<name_fr>Grande écaille rouge</name_fr>
 </translation>
 
-<!-- Decorations -->
+<!-- Decorations (level 1-3) -->
+
+<translation>
+	<name>Flight Jewel 2</name>
+	<name_ar>حلية الطيران 2</name_ar>
+	<name_de>Flug-Juwel 2</name_de>
+	<name_es>Joya de vuelo 2</name_es>
+	<name_fr>Joyau acrobatie [2]</name_fr>
+	<name_it>Gioiello minaccia aerea 2</name_it>
+	<name_jp>飛燕珠【２】</name_jp>
+	<name_ko>비연주【2】</name_ko>
+	<name_pl>Klejnot lotu 2</name_pl>
+	<name_pt>Joia de Voo 2</name_pt>
+	<name_ru>Самоцвет полета 2</name_ru>
+	<name_zh>飛燕珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Antidote Jewel 1</name>
+	<name_ar>حلية الترياق 1</name_ar>
+	<name_de>Gegengift-Juwel 1</name_de>
+	<name_es>Joya antídoto 1</name_es>
+	<name_fr>Joyau antidote [1]</name_fr>
+	<name_it>Gioiello resistenza veleno 1</name_it>
+	<name_jp>耐毒珠【１】</name_jp>
+	<name_ko>내독주【1】</name_ko>
+	<name_pl>Klejnot antidotum 1</name_pl>
+	<name_pt>Joia Antídoto 1</name_pt>
+	<name_ru>Самоцвет-противоядие 1</name_ru>
+	<name_zh>耐毒珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Antipara Jewel 1</name>
+	<name_ar>حلية مضادة للشلل 1</name_ar>
+	<name_de>Anti-Lähm-Juwel 1</name_de>
+	<name_es>Joya antiparálisis 1</name_es>
+	<name_fr>Joyau antiparalysie [1]</name_fr>
+	<name_it>Gioiello resistenza paralisi 1</name_it>
+	<name_jp>耐麻珠【１】</name_jp>
+	<name_ko>내비주【1】</name_ko>
+	<name_pl>Klejnot antyparaliżu 1</name_pl>
+	<name_pt>Joia Antiparalisia 1</name_pt>
+	<name_ru>Самоцвет "Антипаралич" 1</name_ru>
+	<name_zh>耐麻珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Pep Jewel 1</name>
+	<name_ar>حلية الحيوية 1</name_ar>
+	<name_de>Pepp-Juwel 1</name_de>
+	<name_es>Joya del sueño 1</name_es>
+	<name_fr>Joyau insomnie [1]</name_fr>
+	<name_it>Gioiello resistenza sonno 1</name_it>
+	<name_jp>耐眠珠【１】</name_jp>
+	<name_ko>내면주【1】</name_ko>
+	<name_pl>Klejnot rozbudzenia 1</name_pl>
+	<name_pt>Joia Ânimo 1</name_pt>
+	<name_ru>Самоцвет бодрости 1</name_ru>
+	<name_zh>耐眠珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Antiblast Jewel 1</name>
+	<name_ar>حلية مقاومة الانفجار 1</name_ar>
+	<name_de>Anti-Explosion-Juwel 1</name_de>
+	<name_es>Joya antinitro 1</name_es>
+	<name_fr>Joyau blindage [1]</name_fr>
+	<name_it>Gioiello resistenza scoppio 1</name_it>
+	<name_jp>耐爆珠【１】</name_jp>
+	<name_ko>내폭주【1】</name_ko>
+	<name_pl>Klejnot antywybuchowy 1</name_pl>
+	<name_pt>Joia Antiexplosão 1</name_pt>
+	<name_ru>Саперный самоцвет 1</name_ru>
+	<name_zh>耐爆珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Suture Jewel 1</name>
+	<name_ar>حلية التقطيب 1</name_ar>
+	<name_de>Naht-Juwel 1</name_de>
+	<name_es>Joya de sutura 1</name_es>
+	<name_fr>Joyau hémostatique [1]</name_fr>
+	<name_it>Gioiello resistenza sanguinamento 1</name_it>
+	<name_jp>耐裂珠【１】</name_jp>
+	<name_ko>내열주【1】</name_ko>
+	<name_pl>Klejnot szwów 1</name_pl>
+	<name_pt>Joia Sutura 1</name_pt>
+	<name_ru>Самоцвет крови 1</name_ru>
+	<name_zh>耐裂珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Def Lock Jewel 1</name>
+	<name_ar>حلية القفل الدفاعي 1</name_ar>
+	<name_de>Abwehrsperre-Juwel 1</name_de>
+	<name_es>Joya de bloqueo 1</name_es>
+	<name_fr>Joyau de fer [1]</name_fr>
+	<name_it>Gioiello pelle di ferro 1</name_it>
+	<name_jp>耐防珠【１】</name_jp>
+	<name_ko>내방주【1】</name_ko>
+	<name_pl>Klejnot trwałej obrony 1</name_pl>
+	<name_pt>Joia Defesa Ativa 1</name_pt>
+	<name_ru>Защитный самоцвет 1</name_ru>
+	<name_zh>耐防珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Fire Res Jewel 1</name>
+	<name_ar>حلية مقاومة النار 1</name_ar>
+	<name_de>Feuerabwehr-Juwel 1</name_de>
+	<name_es>Joya resist. al fuego 1</name_es>
+	<name_fr>Joyau ignifuge [1]</name_fr>
+	<name_it>Gioiello resistenza fuoco 1</name_it>
+	<name_jp>耐火珠【１】</name_jp>
+	<name_ko>내화주【1】</name_ko>
+	<name_pl>Klejnot ognioodporności 1</name_pl>
+	<name_pt>Joia Resistência a Fogo 1</name_pt>
+	<name_ru>Самоцвет Антиогонь 1</name_ru>
+	<name_zh>耐火珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Water Res Jewel 1</name>
+	<name_ar>حلية مقاومة الماء 1</name_ar>
+	<name_de>Wasserabwehr-Juwel 1</name_de>
+	<name_es>Joya resist. al agua 1</name_es>
+	<name_fr>Joyau étanche [1]</name_fr>
+	<name_it>Gioiello resistenza acqua 1</name_it>
+	<name_jp>耐水珠【１】</name_jp>
+	<name_ko>내수주【1】</name_ko>
+	<name_pl>Klejnot wodoodporności 1</name_pl>
+	<name_pt>Joia Resistência a Água 1</name_pt>
+	<name_ru>Самоцвет Антивода 1</name_ru>
+	<name_zh>耐水珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Ice Res Jewel 1</name>
+	<name_ar>حلية مقاومة الثلج 1</name_ar>
+	<name_de>Eisabwehr-Juwel 1</name_de>
+	<name_es>Joya resist. al hielo 1</name_es>
+	<name_fr>Joyau antigel [1]</name_fr>
+	<name_it>Gioiello resistenza ghiaccio 1</name_it>
+	<name_jp>耐氷珠【１】</name_jp>
+	<name_ko>내빙주【1】</name_ko>
+	<name_pl>Klejnot lodoodporności 1</name_pl>
+	<name_pt>Joia Resistência a Gelo 1</name_pt>
+	<name_ru>Самоцвет Антилед 1</name_ru>
+	<name_zh>耐冰珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Thunder Res Jewel 1</name>
+	<name_ar>حلية مقاومة الرعد 1</name_ar>
+	<name_de>Donnerabwehr-Juwel 1</name_de>
+	<name_es>Joya resist. al rayo 1</name_es>
+	<name_fr>Joyau isolant [1]</name_fr>
+	<name_it>Gioiello resistenza tuono 1</name_it>
+	<name_jp>耐雷珠【１】</name_jp>
+	<name_ko>내뢰주【1】</name_ko>
+	<name_pl>Klejnot gromoodporności 1</name_pl>
+	<name_pt>Joia Resistência a Raio 1</name_pt>
+	<name_ru>Самоцвет Антигроза 1</name_ru>
+	<name_zh>耐雷珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Dragon Res Jewel 1</name>
+	<name_ar>حلية مقاومة التنين 1</name_ar>
+	<name_de>Drachenabwehr-Juwel 1</name_de>
+	<name_es>Joya resist. al draco 1</name_es>
+	<name_fr>Joyau draconien [1]</name_fr>
+	<name_it>Gioiello resistenza drago 1</name_it>
+	<name_jp>耐龍珠【１】</name_jp>
+	<name_ko>내룡주【1】</name_ko>
+	<name_pl>Klejnot smokoodporności 1</name_pl>
+	<name_pt>Joia Resistência a Dragão 1</name_pt>
+	<name_ru>Самоцвет Антидракон 1</name_ru>
+	<name_zh>耐龍珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Fortitude Jewel 1</name>
+	<name_ar>حلية الجَلَد 1</name_ar>
+	<name_de>Kraft-Juwel 1</name_de>
+	<name_es>Joya de supervivencia 1</name_es>
+	<name_fr>Joyau du courage [1]</name_fr>
+	<name_it>Gioiello rafforzamento 1</name_it>
+	<name_jp>逆境珠【１】</name_jp>
+	<name_ko>역경주【1】</name_ko>
+	<name_pl>Klejnot hartu 1</name_pl>
+	<name_pt>Joia da Fortitude 1</name_pt>
+	<name_ru>Самоцвет стойкости 1</name_ru>
+	<name_zh>逆境珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Sonorous Jewel 1</name>
+	<name_ar>حلية الجهور 1</name_ar>
+	<name_de>Klang-Juwel 1</name_de>
+	<name_es>Joya del músico 1</name_es>
+	<name_fr>Joyau de musique [1]</name_fr>
+	<name_it>Gioiello maestro del corno 1</name_it>
+	<name_jp>鼓笛珠【１】</name_jp>
+	<name_ko>고적주【1】</name_ko>
+	<name_pl>Klejnot dźwięku 1</name_pl>
+	<name_pt>Joia Sonora 1</name_pt>
+	<name_ru>Звонкий самоцвет 1</name_ru>
+	<name_zh>鼓笛珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Heavy Artillery Jewel 1</name>
+	<name_ar>حلية المدفعية الثقيلة 1</name_ar>
+	<name_de>Schwere-Artillerie-Juwel 1</name_de>
+	<name_es>Joya tiro pesado 1</name_es>
+	<name_fr>Joyau artillerie [1]</name_fr>
+	<name_it>Gioiello artiglieria pesante 1</name_it>
+	<name_jp>砲手珠【１】</name_jp>
+	<name_ko>포수주【1】</name_ko>
+	<name_pl>Klejnot ciężkiej artylerii 1</name_pl>
+	<name_pt>Joia Artilharia Pesada 1</name_pt>
+	<name_ru>Самоцвет тяжелой артиллерии 1</name_ru>
+	<name_zh>砲手珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Hungerless Jewel 1</name>
+	<name_ar>حلية الشبع 1</name_ar>
+	<name_de>Hungerfrei-Juwel 1</name_de>
+	<name_es>Joya antigula 1</name_es>
+	<name_fr>Joyau du spartiate [1]</name_fr>
+	<name_it>Gioiello resistenza fame 1</name_it>
+	<name_jp>無食珠【１】</name_jp>
+	<name_ko>공복주【1】</name_ko>
+	<name_pl>Klejnot niegłodnego 1</name_pl>
+	<name_pt>Joia da Saciação 1</name_pt>
+	<name_ru>Самоцвет сытости 1</name_ru>
+	<name_zh>無食珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Satiated Jewel 1</name>
+	<name_ar>حلية التخمة 1</name_ar>
+	<name_de>Sattes Juwel 1</name_de>
+	<name_es>Joya saciante 1</name_es>
+	<name_fr>Joyau du parasite [1]</name_fr>
+	<name_it>Gioiello pasto gratuito 1</name_it>
+	<name_jp>節食珠【１】</name_jp>
+	<name_ko>절식주【1】</name_ko>
+	<name_pl>Klejnot nasycenia 1</name_pl>
+	<name_pt>Joia da Saciedade 1</name_pt>
+	<name_ru>Самоцвет пресыщения 1</name_ru>
+	<name_zh>節食珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Protection Jewel 1</name>
+	<name_ar>حلية الحماية 1</name_ar>
+	<name_de>Schutz-Juwel 1</name_de>
+	<name_es>Joya de protección 1</name_es>
+	<name_fr>Joyau de bénédiction [1]</name_fr>
+	<name_it>Gioiello angelo custode 1</name_it>
+	<name_jp>加護珠【１】</name_jp>
+	<name_ko>가호주【1】</name_ko>
+	<name_pl>Klejnot ochrony 1</name_pl>
+	<name_pt>Joia da Proteção 1</name_pt>
+	<name_ru>Самоцвет благословения 1</name_ru>
+	<name_zh>加護珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Meowster Jewel 1</name>
+	<name_ar>حلية السيد 1</name_ar>
+	<name_de>Miauster-Juwel 1</name_de>
+	<name_es>Joya miaunstruo 1</name_es>
+	<name_fr>Joyau Palico [1]</name_fr>
+	<name_it>Gioiello gregario 1</name_it>
+	<name_jp>采配珠【１】</name_jp>
+	<name_ko>지시주【1】</name_ko>
+	<name_pl>Klejnot miaustrza 1</name_pl>
+	<name_pt>Joia de Miaustre 1</name_pt>
+	<name_ru>Самоцвет мяустера 1</name_ru>
+	<name_zh>指示珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Botany Jewel 1</name>
+	<name_ar>حلية علم النبات 1</name_ar>
+	<name_de>Botanik-Juwel 1</name_de>
+	<name_es>Joya botánica 1</name_es>
+	<name_fr>Joyau du botaniste [1]</name_fr>
+	<name_it>Gioiello botanico 1</name_it>
+	<name_jp>植学珠【１】</name_jp>
+	<name_ko>식학주【1】</name_ko>
+	<name_pl>Klejnot botaniki 1</name_pl>
+	<name_pt>Joia Botânica 1</name_pt>
+	<name_ru>Ботанический самоцвет 1</name_ru>
+	<name_zh>植學珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Geology Jewel 1</name>
+	<name_ar>حلية الجيولوجيا 1</name_ar>
+	<name_de>Geologie-Juwel 1</name_de>
+	<name_es>Joya geológica 1</name_es>
+	<name_fr>Joyau géologie [1]</name_fr>
+	<name_it>Gioiello geologo 1</name_it>
+	<name_jp>地学珠【１】</name_jp>
+	<name_ko>지학주【1】</name_ko>
+	<name_pl>Klejnot geologii 1</name_pl>
+	<name_pt>Joia Geológica 1</name_pt>
+	<name_ru>Геологический самоцвет 1</name_ru>
+	<name_zh>地學珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Tip Toe Jewel 1</name>
+	<name_ar>حلية طرف إصبع القدم 1</name_ar>
+	<name_de>Schleich-Juwel 1</name_de>
+	<name_es>Joya de puntillas 1</name_es>
+	<name_fr>Joyau de furtivité [1]</name_fr>
+	<name_it>Gioiello furtivo 1</name_it>
+	<name_jp>潜伏珠【１】</name_jp>
+	<name_ko>잠복주【1】</name_ko>
+	<name_pl>Klejnot skradania 1</name_pl>
+	<name_pt>Joia Ponta dos Pés 1</name_pt>
+	<name_ru>Самоцвет бесшумности 1</name_ru>
+	<name_zh>潛伏珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Survival Jewel 1</name>
+	<name_jp>環境珠【１】</name_jp>
+</translation>
+<translation>
+	<name>Mirewalker Jewel 1</name>
+	<name_ar>حلية سائر الوحل 1</name_ar>
+	<name_de>Sumpfläufer-Juwel 1</name_de>
+	<name_es>Joya lodazal 1</name_es>
+	<name_fr>Joyau d'Atlantis [1]</name_fr>
+	<name_it>Gioiello esperto acquatico 1</name_it>
+	<name_jp>沼渡珠【１】</name_jp>
+	<name_ko>소도주【1】</name_ko>
+	<name_pl>Klejnot bagnołaza 1</name_pl>
+	<name_pt>Joia de Lodo 1</name_pt>
+	<name_ru>Самоцвет трясины 1</name_ru>
+	<name_zh>沼渡珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Specimen Jewel 1</name>
+	<name_ar>حلية العيّنة 1</name_ar>
+	<name_de>Insektenforscher-Juwel 1</name_de>
+	<name_es>Joya espécimen 1</name_es>
+	<name_fr>Joyau insectoïde [1]</name_fr>
+	<name_it>Gioiello entomologo 1</name_it>
+	<name_jp>標本珠【１】</name_jp>
+	<name_ko>표본주【1】</name_ko>
+	<name_pl>Klejnot okazu 1</name_pl>
+	<name_pt>Joia de Espécime 1</name_pt>
+	<name_ru>Самоцвет образцов 1</name_ru>
+	<name_zh>標本珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Scent Jewel 1</name>
+	<name_ar>حلية الرائحة 1</name_ar>
+	<name_de>Geruchs-Juwel 1</name_de>
+	<name_es>Joya olfativa 1</name_es>
+	<name_fr>Joyau de prémonition [1]</name_fr>
+	<name_it>Gioiello segugio 1</name_it>
+	<name_jp>嗅覚珠【１】</name_jp>
+	<name_ko>후각주【1】</name_ko>
+	<name_pl>Klejnot zapachu 1</name_pl>
+	<name_pt>Joia de Aroma 1</name_pt>
+	<name_ru>Самоцвет запаха 1</name_ru>
+	<name_zh>嗅覺珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Intimidator Jewel 1</name>
+	<name_ar>حلية المخيف 1</name_ar>
+	<name_de>Einschüchtern-Juwel 1</name_de>
+	<name_es>Joya intimidante 1</name_es>
+	<name_fr>Joyau intimidation [1]</name_fr>
+	<name_it>Gioiello intimidazione 1</name_it>
+	<name_jp>威嚇珠【１】</name_jp>
+	<name_ko>위하주【1】</name_ko>
+	<name_pl>Klejnot zastraszacza 1</name_pl>
+	<name_pt>Joia Intimidante 1</name_pt>
+	<name_ru>Самоцвет устрашения 1</name_ru>
+	<name_zh>威嚇珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Crisis Jewel 1</name>
+	<name_ar>حلية الكارثة 1</name_ar>
+	<name_de>Krisen-Juwel 1</name_de>
+	<name_es>Joya de crisis 1</name_es>
+	<name_fr>Joyau sauvage [1]</name_fr>
+	<name_it>Gioiello rianimazione 1</name_it>
+	<name_jp>窮地珠【１】</name_jp>
+	<name_ko>궁지주【1】</name_ko>
+	<name_pl>Klejnot kryzysu 1</name_pl>
+	<name_pt>Joia de Crise 1</name_pt>
+	<name_ru>Самоцвет кризиса 1</name_ru>
+	<name_zh>絕路珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Maintenance Jewel 1</name>
+	<name_ar>حلية أعمال الصيانة 1</name_ar>
+	<name_de>Wartungs-Juwel 1</name_de>
+	<name_es>Joya reparadora 1</name_es>
+	<name_fr>Joyau de survie [1]</name_fr>
+	<name_it>Gioiello manutenzione 1</name_it>
+	<name_jp>整備珠【１】</name_jp>
+	<name_ko>정비주【1】</name_ko>
+	<name_pl>Klejnot konserwacji 1</name_pl>
+	<name_pt>Joia de Manutenção 1</name_pt>
+	<name_ru>Самоцвет обслуживания 1</name_ru>
+	<name_zh>整備珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Miasma Jewel 1</name>
+	<name_ar>حلية الخانق 1</name_ar>
+	<name_de>Miasma-Juwel 1</name_de>
+	<name_es>Joya de miasma 1</name_es>
+	<name_fr>Joyau de pureté [1]</name_fr>
+	<name_it>Gioiello resistenza effluvio 1</name_it>
+	<name_jp>耐瘴珠【１】</name_jp>
+	<name_ko>내장주【1】</name_ko>
+	<name_pl>Klejnot miazmatów 1</name_pl>
+	<name_pt>Joia de Miasma 1</name_pt>
+	<name_ru>Самоцвет миазмов 1</name_ru>
+	<name_zh>耐瘴珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Earplug Jewel 3</name>
+	<name_ar>حلية سدادة الأذن 3</name_ar>
+	<name_de>Ohrstöpsel-Juwel 3</name_de>
+	<name_es>Joya de tapones 3</name_es>
+	<name_fr>Joyau insonorisation [3]</name_fr>
+	<name_it>Gioiello udito 3</name_it>
+	<name_jp>防音珠【３】</name_jp>
+	<name_ko>방음주【3】</name_ko>
+	<name_pl>Klejnot zatyczek 3</name_pl>
+	<name_pt>Joia Tampão 3</name_pt>
+	<name_ru>Самоцвет "Беруши" 3</name_ru>
+	<name_zh>防音珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Poisoncoat Jewel 3</name>
+	<name_ar>حلية غطاء السم 3</name_ar>
+	<name_de>Giftbeschichtung-Juwel 3</name_de>
+	<name_es>Joya ponzoñosa 3</name_es>
+	<name_fr>Joyau poison [3]</name_fr>
+	<name_it>Gioiello applica veleno 3</name_it>
+	<name_jp>毒瓶珠【３】</name_jp>
+	<name_ko>독병주【3】</name_ko>
+	<name_pl>Klejnot trującej powłoki 3</name_pl>
+	<name_pt>Joia Camada de Veneno 3</name_pt>
+	<name_ru>Самоцвет улучшения яда 3</name_ru>
+	<name_zh>毒瓶珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Brace Jewel 3</name>
+	<name_ar>حلية الدعامة 3</name_ar>
+	<name_de>Wappnungs-Juwel 3</name_de>
+	<name_es>Joya tenaz 3</name_es>
+	<name_fr>Joyau inflexible [3]</name_fr>
+	<name_it>Gioiello antisussulto 3</name_it>
+	<name_jp>耐衝珠【３】</name_jp>
+	<name_ko>내충주【3】</name_ko>
+	<name_pl>Klejnot gotowości 3</name_pl>
+	<name_pt>Joia do Preparo 3</name_pt>
+	<name_ru>Самоцвет группировки 3</name_ru>
+	<name_zh>耐衝珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Wind Resist Jewel 2</name>
+	<name_ar>حلية مقاومة الرياح 2</name_ar>
+	<name_de>Windresistenz-Juwel 2</name_de>
+	<name_es>Joya antiviento 2</name_es>
+	<name_fr>Joyau anti-vent [2]</name_fr>
+	<name_it>Gioiello paravento 2</name_it>
+	<name_jp>防風珠【２】</name_jp>
+	<name_ko>방풍주【2】</name_ko>
+	<name_pl>Klejnot wiatroodporności 2</name_pl>
+	<name_pt>Joia Resistência a Vento 2</name_pt>
+	<name_ru>Самоцвет "Антиветер" 2</name_ru>
+	<name_zh>防風珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Footing Jewel 2</name>
+	<name_ar>حلية ثبات القدم 2</name_ar>
+	<name_de>Halt-Juwel 2</name_de>
+	<name_es>Joya de firmeza 2</name_es>
+	<name_fr>Joyau anti-séisme [2]</name_fr>
+	<name_it>Gioiello antisismico 2</name_it>
+	<name_jp>耐震珠【２】</name_jp>
+	<name_ko>내진주【2】</name_ko>
+	<name_pl>Klejnot równowagi 2</name_pl>
+	<name_pt>Joia Equilíbrio 2</name_pt>
+	<name_ru>Самоцвет устойчивости 2</name_ru>
+	<name_zh>耐震珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Tenderizer Jewel 2</name>
+	<name_ar>حلية الاستغلال 2</name_ar>
+	<name_de>Aufweich-Juwel 2</name_de>
+	<name_es>Joya ablandadora 2</name_es>
+	<name_fr>Joyau faiblesse [2]</name_fr>
+	<name_it>Gioiello punto debole 2</name_it>
+	<name_jp>痛撃珠【２】</name_jp>
+	<name_ko>통격주【2】</name_ko>
+	<name_pl>Klejnot zmiękczający 2</name_pl>
+	<name_pt>Joia Atenuadora 2</name_pt>
+	<name_ru>Самоцвет размягчения 2</name_ru>
+	<name_zh>痛擊珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Destroyer Jewel 2</name>
+	<name_ar>حلية المدمر 2</name_ar>
+	<name_de>Zerstörer-Juwel 2</name_de>
+	<name_es>Joya de destrucción 2</name_es>
+	<name_fr>Joyau destruction [2]</name_fr>
+	<name_it>Gioiello spaccamostri 2</name_it>
+	<name_jp>重撃珠【２】</name_jp>
+	<name_ko>중격주【2】</name_ko>
+	<name_pl>Klejnot niszczyciela 2</name_pl>
+	<name_pt>Joia Destruidora 2</name_pt>
+	<name_ru>Самоцвет уничтожения 2</name_ru>
+	<name_zh>重擊珠【２】</name_zh>
+</translation>
+<translation>
+	<name>KO Jewel 2</name>
+	<name_ar>حلية الضربة القاضية 2</name_ar>
+	<name_de>Knock-out-Juwel 2</name_de>
+	<name_es>Joya de boxeo 2</name_es>
+	<name_fr>Joyau cogneur [2]</name_fr>
+	<name_it>Gioiello battitore 2</name_it>
+	<name_jp>ＫＯ珠【２】</name_jp>
+	<name_ko>KO주【2】</name_ko>
+	<name_pl>Klejnot nokautu 2</name_pl>
+	<name_pt>Joia de Nocaute 2</name_pt>
+	<name_ru>Самоцвет нокаута 2</name_ru>
+	<name_zh>ＫＯ珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Flawless Jewel 2</name>
+	<name_ar>حلية الكمال 2</name_ar>
+	<name_de>Makellos-Juwel 2</name_de>
+	<name_es>Joya del ileso 2</name_es>
+	<name_fr>Joyau parfait [2]</name_fr>
+	<name_it>Gioiello forma perfetta 2</name_it>
+	<name_jp>無傷珠【２】</name_jp>
+	<name_ko>무결주【2】</name_ko>
+	<name_pl>Klejnot perfekcji 2</name_pl>
+	<name_pt>Joia da Perfeição 2</name_pt>
+	<name_ru>Безупречный самоцвет 2</name_ru>
+	<name_zh>無傷珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Physique Jewel 2</name>
+	<name_ar>حلية بنية الجسم 2</name_ar>
+	<name_de>Figur-Juwel 2</name_de>
+	<name_es>Joya de salud 2</name_es>
+	<name_fr>Joyau de l'athlète [2]</name_fr>
+	<name_it>Gioiello atleta 2</name_it>
+	<name_jp>体術珠【２】</name_jp>
+	<name_ko>체술주【2】</name_ko>
+	<name_pl>Klejnot sylwetki 2</name_pl>
+	<name_pt>Joia do Biotipo 2</name_pt>
+	<name_ru>Самоцвет телосложения 2</name_ru>
+	<name_zh>體術珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Evasion Jewel 2</name>
+	<name_ar>حلية التملص 2</name_ar>
+	<name_de>Ausweich-Juwel 2</name_de>
+	<name_es>Joya de evasión 2</name_es>
+	<name_fr>Joyau d'invulnérabilité [2]</name_fr>
+	<name_it>Gioiello schivata 2</name_it>
+	<name_jp>回避珠【２】</name_jp>
+	<name_ko>회피주【2】</name_ko>
+	<name_pl>Klejnot uniku 2</name_pl>
+	<name_pt>Joia da Evasão 2</name_pt>
+	<name_ru>Самоцвет уклонения 2</name_ru>
+	<name_zh>迴避珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Jumping Jewel 2</name>
+	<name_ar>حلية القفز 2</name_ar>
+	<name_de>Sprung-Juwel 2</name_de>
+	<name_es>Joya de salto 2</name_es>
+	<name_fr>Joyau de l'esquive [2]</name_fr>
+	<name_it>Gioiello schivata estesa 2</name_it>
+	<name_jp>跳躍珠【２】</name_jp>
+	<name_ko>도약주【2】</name_ko>
+	<name_pl>Klejnot skoków 2</name_pl>
+	<name_pt>Joia de Salto 2</name_pt>
+	<name_ru>Самоцвет прыгучести 2</name_ru>
+	<name_zh>跳躍珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Slider Jewel 2</name>
+	<name_ar>حلية المنزلق 2</name_ar>
+	<name_de>Gleiter-Juwel 2</name_de>
+	<name_es>Joya deslizante 2</name_es>
+	<name_fr>Joyau du glisseur [2]</name_fr>
+	<name_it>Gioiello affinità scivolata 2</name_it>
+	<name_jp>滑走珠【２】</name_jp>
+	<name_ko>활주주【2】</name_ko>
+	<name_pl>Klejnot ślizgacza 2</name_pl>
+	<name_pt>Joia Deslizante 2</name_pt>
+	<name_ru>Самоцвет скольжения 2</name_ru>
+	<name_zh>滑走珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Elementless Jewel 2</name>
+	<name_ar>الحلية اللاعنصرية 2</name_ar>
+	<name_de>Elementloses Juwel 2</name_de>
+	<name_es>Joya sin elemento 2</name_es>
+	<name_fr>Joyau d'acier [2]</name_fr>
+	<name_it>Gioiello non elementale 2</name_it>
+	<name_jp>無撃珠【２】</name_jp>
+	<name_ko>무격주【2】</name_ko>
+	<name_pl>Bezżywiołowy klejnot 2</name_pl>
+	<name_pt>Joia Sem Elemento 2</name_pt>
+	<name_ru>Самоцвет без элемента 2</name_ru>
+	<name_zh>無擊珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Steadfast Jewel 1</name>
+	<name_ar>حلية الثبات 1</name_ar>
+	<name_de>Felsenfest-Juwel 1</name_de>
+	<name_es>Joya de voluntad 1</name_es>
+	<name_fr>Joyau volonté [1]</name_fr>
+	<name_it>Gioiello resistenza stordimento 1</name_it>
+	<name_jp>耐絶珠【１】</name_jp>
+	<name_ko>내절주【1】</name_ko>
+	<name_pl>Klejnot niezłomności 1</name_pl>
+	<name_pt>Joia Resoluto 1</name_pt>
+	<name_ru>Самоцвет твердости 1</name_ru>
+	<name_zh>耐絕珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Defense Jewel 1</name>
+	<name_ar>حلية الدفاع 1</name_ar>
+	<name_de>Verteidigung-Juwel 1</name_de>
+	<name_es>Joya de defensa 1</name_es>
+	<name_fr>Joyau défense [1]</name_fr>
+	<name_it>Gioiello difesa 1</name_it>
+	<name_jp>防御珠【１】</name_jp>
+	<name_ko>방어주【1】</name_ko>
+	<name_pl>Klejnot obrony 1</name_pl>
+	<name_pt>Joia Defesa 1</name_pt>
+	<name_ru>Самоцвет защиты 1</name_ru>
+	<name_zh>防禦珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Vitality Jewel 1</name>
+	<name_ar>حلية النشاط 1</name_ar>
+	<name_de>Lebenskraft-Juwel 1</name_de>
+	<name_es>Joya de fuerza 1</name_es>
+	<name_fr>Joyau vitalité [1]</name_fr>
+	<name_it>Gioiello salute 1</name_it>
+	<name_jp>体力珠【１】</name_jp>
+	<name_ko>체력주【1】</name_ko>
+	<name_pl>Klejnot żywotności 1</name_pl>
+	<name_pt>Joia Vitalidade 1</name_pt>
+	<name_ru>Самоцвет живучести 1</name_ru>
+	<name_zh>體力珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Recovery Jewel 1</name>
+	<name_ar>حلية التعافي 1</name_ar>
+	<name_de>Erholung-Juwel 1</name_de>
+	<name_es>Joya de recuperación 1</name_es>
+	<name_fr>Joyau facteur X [1]</name_fr>
+	<name_it>Gioiello guarigione 1</name_it>
+	<name_jp>早復珠【１】</name_jp>
+	<name_ko>조복주【1】</name_ko>
+	<name_pl>Klejnot regeneracji 1</name_pl>
+	<name_pt>Joia Regeneração 1</name_pt>
+	<name_ru>Самоцвет восстановления 1</name_ru>
+	<name_zh>早復珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Resistor Jewel 1</name>
+	<name_ar>حلية المقاوِم 1</name_ar>
+	<name_de>Resistor-Juwel 1</name_de>
+	<name_es>Joya reostato 1</name_es>
+	<name_fr>Joyau fléau [1]</name_fr>
+	<name_it>Gioiello resistenza malus 1</name_it>
+	<name_jp>耐属珠【１】</name_jp>
+	<name_ko>내속주【1】</name_ko>
+	<name_pl>Klejnot plagoodporności 1</name_pl>
+	<name_pt>Joia Resistor 1</name_pt>
+	<name_ru>Самоцвет от сглаза 1</name_ru>
+	<name_zh>耐屬珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Blaze Jewel 1</name>
+	<name_ar>حلية اللهيب 1</name_ar>
+	<name_de>Lohe-Juwel 1</name_de>
+	<name_es>Joya de fuego 1</name_es>
+	<name_fr>Joyau de feu [1]</name_fr>
+	<name_it>Gioiello attacco fuoco 1</name_it>
+	<name_jp>火炎珠【１】</name_jp>
+	<name_ko>화염주【1】</name_ko>
+	<name_pl>Klejnot pożogi 1</name_pl>
+	<name_pt>Joia Chama 1</name_pt>
+	<name_ru>Самоцвет пламени 1</name_ru>
+	<name_zh>火炎珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Stream Jewel 1</name>
+	<name_ar>حلية التيار 1</name_ar>
+	<name_de>Fluss-Juwel 1</name_de>
+	<name_es>Joya de agua 1</name_es>
+	<name_fr>Joyau d'eau [1]</name_fr>
+	<name_it>Gioiello attacco acqua 1</name_it>
+	<name_jp>流水珠【１】</name_jp>
+	<name_ko>유수주【1】</name_ko>
+	<name_pl>Klejnot strumienia 1</name_pl>
+	<name_pt>Joia Riacho 1</name_pt>
+	<name_ru>Самоцвет потока 1</name_ru>
+	<name_zh>流水珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Frost Jewel 1</name>
+	<name_ar>حلية الصقيع 1</name_ar>
+	<name_de>Frost-Juwel 1</name_de>
+	<name_es>Joya de hielo 1</name_es>
+	<name_fr>Joyau de glace [1]</name_fr>
+	<name_it>Gioiello attacco ghiaccio 1</name_it>
+	<name_jp>氷結珠【１】</name_jp>
+	<name_ko>빙결주【1】</name_ko>
+	<name_pl>Klejnot mrozu 1</name_pl>
+	<name_pt>Joia Geada 1</name_pt>
+	<name_ru>Самоцвет мороза 1</name_ru>
+	<name_zh>冰結珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Bolt Jewel 1</name>
+	<name_ar>حلية الصاعقة 1</name_ar>
+	<name_de>Blitz-Juwel 1</name_de>
+	<name_es>Joya de rayo 1</name_es>
+	<name_fr>Joyau de foudre [1]</name_fr>
+	<name_it>Gioiello attacco tuono 1</name_it>
+	<name_jp>雷光珠【１】</name_jp>
+	<name_ko>뇌광주【1】</name_ko>
+	<name_pl>Klejnot gromu 1</name_pl>
+	<name_pt>Joia Relâmpago 1</name_pt>
+	<name_ru>Самоцвет молнии 1</name_ru>
+	<name_zh>雷光珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Dragon Jewel 1</name>
+	<name_ar>حلية التنين 1</name_ar>
+	<name_de>Drachen-Juwel 1</name_de>
+	<name_es>Joya de draco 1</name_es>
+	<name_fr>Joyau tueur de dragon [1]</name_fr>
+	<name_it>Gioiello attacco drago 1</name_it>
+	<name_jp>破龍珠【１】</name_jp>
+	<name_ko>파룡주【1】</name_ko>
+	<name_pl>Klejnot smoka 1</name_pl>
+	<name_pt>Joia Dragão 1</name_pt>
+	<name_ru>Самоцвет дракона 1</name_ru>
+	<name_zh>破龍珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Venom Jewel 1</name>
+	<name_ar>حلية السم 1</name_ar>
+	<name_de>Gift-Juwel 1</name_de>
+	<name_es>Joya venenosa 1</name_es>
+	<name_fr>Joyau venin [1]</name_fr>
+	<name_it>Gioiello attacco veleno 1</name_it>
+	<name_jp>毒珠【１】</name_jp>
+	<name_ko>독주【1】</name_ko>
+	<name_pl>Klejnot jadu 1</name_pl>
+	<name_pt>Joia Veneno 1</name_pt>
+	<name_ru>Самоцвет отравы 1</name_ru>
+	<name_zh>毒珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Expert Jewel 1</name>
+	<name_ar>حلية الخبير 1</name_ar>
+	<name_de>Experten-Juwel 1</name_de>
+	<name_es>Joya del experto 1</name_es>
+	<name_fr>Joyau du maître [1]</name_fr>
+	<name_it>Gioiello occhio critico 1</name_it>
+	<name_jp>達人珠【１】</name_jp>
+	<name_ko>달인주【1】</name_ko>
+	<name_pl>Klejnot eksperta 1</name_pl>
+	<name_pt>Joia Especialista 1</name_pt>
+	<name_ru>Самоцвет эксперта 1</name_ru>
+	<name_zh>達人珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Drain Jewel 1</name>
+	<name_ar>حلية الاستنزاف 1</name_ar>
+	<name_de>Entzug-Juwel 1</name_de>
+	<name_es>Joya débil 1</name_es>
+	<name_fr>Joyau fatigue [1]</name_fr>
+	<name_it>Gioiello ruba resistenza 1</name_it>
+	<name_jp>奪気珠【１】</name_jp>
+	<name_ko>탈기주【1】</name_ko>
+	<name_pl>Klejnot wyssania 1</name_pl>
+	<name_pt>Joia de Drenagem 1</name_pt>
+	<name_ru>Самоцвет высасывания 1</name_ru>
+	<name_zh>奪氣珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Sheath Jewel 1</name>
+	<name_ar>حلية الغمد 1</name_ar>
+	<name_de>Wegsteck-Juwel 1</name_de>
+	<name_es>Joya de enfundado 1</name_es>
+	<name_fr>Joyau rengainage [1]</name_fr>
+	<name_it>Gioiello rinfodero veloce 1</name_it>
+	<name_jp>速納珠【１】</name_jp>
+	<name_ko>속납주【1】</name_ko>
+	<name_pl>Klejnot futerału 1</name_pl>
+	<name_pt>Joia da Bainha 1</name_pt>
+	<name_ru>Самоцвет ножен 1</name_ru>
+	<name_zh>速納珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Friendship Jewel 1</name>
+	<name_ar>حلية الصداقة 1</name_ar>
+	<name_de>Freundschaft-Juwel 1</name_de>
+	<name_es>Joya de amistad 1</name_es>
+	<name_fr>Joyau du mousquetaire [1]</name_fr>
+	<name_it>Gioiello ampia area 1</name_it>
+	<name_jp>友愛珠【１】</name_jp>
+	<name_ko>우애주【1】</name_ko>
+	<name_pl>Klejnot przyjaźni 1</name_pl>
+	<name_pt>Joia da Amizade 1</name_pt>
+	<name_ru>Самоцвет дружбы 1</name_ru>
+	<name_zh>友愛珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Enduring Jewel 1</name>
+	<name_ar>حلية الاستمرار 1</name_ar>
+	<name_de>Dauer-Juwel 1</name_de>
+	<name_es>Joya impasible 1</name_es>
+	<name_fr>Joyau du chimiste [1]</name_fr>
+	<name_it>Gioiello estensione oggetti 1</name_it>
+	<name_jp>持続珠【１】</name_jp>
+	<name_ko>지속주【1】</name_ko>
+	<name_pl>Klejnot wytrwałości 1</name_pl>
+	<name_pt>Joia da Tolerância 1</name_pt>
+	<name_ru>Самоцвет терпения 1</name_ru>
+	<name_zh>持續珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Gobbler Jewel 1</name>
+	<name_ar>حلية الشره 1</name_ar>
+	<name_de>Verschling-Juwel 1</name_de>
+	<name_es>Joya del tragón 1</name_es>
+	<name_fr>Joyau du carnassier [1]</name_fr>
+	<name_it>Gioiello pasto veloce 1</name_it>
+	<name_jp>早食珠【１】</name_jp>
+	<name_ko>흡입주【1】</name_ko>
+	<name_pl>Klejnot żarłoka 1</name_pl>
+	<name_pt>Joia do Glutão 1</name_pt>
+	<name_ru>Самоцвет обжорства 1</name_ru>
+	<name_zh>快吃珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Grinder Jewel 1</name>
+	<name_ar>حلية الطاحونة 1</name_ar>
+	<name_de>Schleif-Juwel 1</name_de>
+	<name_es>Joya afiladora 1</name_es>
+	<name_fr>Joyau de l'aiguiseur [1]</name_fr>
+	<name_it>Gioiello affilatura veloce 1</name_it>
+	<name_jp>研磨珠【１】</name_jp>
+	<name_ko>연마주【1】</name_ko>
+	<name_pl>Klejnot ostrzenia 1</name_pl>
+	<name_pt>Joia do Amolador 1</name_pt>
+	<name_ru>Точильный самоцвет 1</name_ru>
+	<name_zh>研磨珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Bomber Jewel 1</name>
+	<name_ar>حلية قاذف القنابل 1</name_ar>
+	<name_de>Bomber-Juwel 1</name_de>
+	<name_es>Joya bombardera 1</name_es>
+	<name_fr>Joyau du bombardier [1]</name_fr>
+	<name_it>Gioiello bombardiere 1</name_it>
+	<name_jp>爆師珠【１】</name_jp>
+	<name_ko>폭사주【1】</name_ko>
+	<name_pl>Klejnot bombowy 1</name_pl>
+	<name_pt>Joia de Bombardeiro 1</name_pt>
+	<name_ru>Самоцвет "Бомбардировщик" 1</name_ru>
+	<name_zh>爆師珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Stonethrower Jewel 1</name>
+	<name_ar>حلية قاذف الأحجار 1</name_ar>
+	<name_de>Steinwerfer-Juwel 1</name_de>
+	<name_es>Joya lanzapiedras 1</name_es>
+	<name_fr>Joyau de pierre [1]</name_fr>
+	<name_it>Gioiello capienza fionda 1</name_it>
+	<name_jp>投石珠【１】</name_jp>
+	<name_ko>투석주【1】</name_ko>
+	<name_pl>Klejnot ciskacza kamieni 1</name_pl>
+	<name_pt>Joia Apedrejadora 1</name_pt>
+	<name_ru>Самоцвет метателя 1</name_ru>
+	<name_zh>投石珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Medicine Jewel 1</name>
+	<name_ar>حلية الدواء 1</name_ar>
+	<name_de>Medizin-Juwel 1</name_de>
+	<name_es>Joya medicinal 1</name_es>
+	<name_fr>Joyau de médecin [1]</name_fr>
+	<name_it>Gioiello bonus cura 1</name_it>
+	<name_jp>治癒珠【１】</name_jp>
+	<name_ko>치유주【1】</name_ko>
+	<name_pl>Klejnot medycyny 1</name_pl>
+	<name_pt>Joia Medicinal 1</name_pt>
+	<name_ru>Лекарственный самоцвет 1</name_ru>
+	<name_zh>治癒珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Paracoat Jewel 3</name>
+	<name_ar>حلية غطاء الشلل 3</name_ar>
+	<name_de>Lähmbeschichtung-Juwel 3</name_de>
+	<name_es>Joya paralizante 3</name_es>
+	<name_fr>Joyau léthargie [3]</name_fr>
+	<name_it>Gioiello applica paralisi 3</name_it>
+	<name_jp>痺瓶珠【３】</name_jp>
+	<name_ko>마비병주【3】</name_ko>
+	<name_pl>Klejnot powłoki paraliżu 3</name_pl>
+	<name_pt>Joia Camada de Paralisia 3</name_pt>
+	<name_ru>Самоцвет улучшения паралича 3</name_ru>
+	<name_zh>痺瓶珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Sleepcoat Jewel 3</name>
+	<name_ar>حلية غطاء النوم 3</name_ar>
+	<name_de>Schlafbeschichtung-Juwel 3</name_de>
+	<name_es>Joya somnífera 3</name_es>
+	<name_fr>Joyau sporifère [3]</name_fr>
+	<name_it>Gioiello applica sonno 3</name_it>
+	<name_jp>眠瓶珠【３】</name_jp>
+	<name_ko>수면병주【3】</name_ko>
+	<name_pl>Klejnot powłoki snu 3</name_pl>
+	<name_pt>Joia Camada de Sono 3</name_pt>
+	<name_ru>Самоцвет улучшения сна 3</name_ru>
+	<name_zh>眠瓶珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Blastcoat Jewel 3</name>
+	<name_ar>حلية غطاء الانفجار 3</name_ar>
+	<name_de>Sprengbeschichtung-Juwel 3</name_de>
+	<name_es>Joya de nitro 3</name_es>
+	<name_fr>Joyau explosif [3]</name_fr>
+	<name_it>Gioiello applica scoppio 3</name_it>
+	<name_jp>爆瓶珠【３】</name_jp>
+	<name_ko>폭파병주【3】</name_ko>
+	<name_pl>Klejnot powłoki wybuchu 3</name_pl>
+	<name_pt>Joia Camada de Explosão 3</name_pt>
+	<name_ru>Самоцвет улучшения взрыва 3</name_ru>
+	<name_zh>爆瓶珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Forceshot Jewel 3</name>
+	<name_ar>حلية الضربة الإجبارية 3</name_ar>
+	<name_de>Starkschuss-Juwel 3</name_de>
+	<name_es>Joya de disparo 3</name_es>
+	<name_fr>Joyau de l'artilleur [3]</name_fr>
+	<name_it>Gioiello bonus normali 3</name_it>
+	<name_jp>強弾珠【３】</name_jp>
+	<name_ko>강탄주【3】</name_ko>
+	<name_pl>Klejnot silnego strzału 3</name_pl>
+	<name_pt>Joia Tiro Forçado 3</name_pt>
+	<name_ru>Самоцвет мощного выстрела 3</name_ru>
+	<name_zh>強彈珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Dragonseal Jewel 3</name>
+	<name_ar>حلية ختم التنين 3</name_ar>
+	<name_de>Drachensiegel-Juwel 3</name_de>
+	<name_es>Joya sello de dragón 3</name_es>
+	<name_fr>Joyau Sceau-de-dragon [3]</name_fr>
+	<name_it>Gioiello sigillo anziano 3</name_it>
+	<name_jp>龍封珠【３】</name_jp>
+	<name_ko>용봉주【3】</name_ko>
+	<name_pl>Klejnot smoczej pieczęci 3</name_pl>
+	<name_pt>Joia Selo do Dragão 3</name_pt>
+	<name_ru>Самоцвет драконьей печати 3</name_ru>
+	<name_zh>龍封珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Throttle Jewel 2</name>
+	<name_ar>حلية الخنق 2</name_ar>
+	<name_de>Vollgas-Juwel 2</name_de>
+	<name_es>Joya del poder 2</name_es>
+	<name_fr>Joyau occulte [2]</name_fr>
+	<name_it>Gioiello forza latente 2</name_it>
+	<name_jp>全開珠【２】</name_jp>
+	<name_ko>전개주【2】</name_ko>
+	<name_pl>Klejnot przyśpieszenia 2</name_pl>
+	<name_pt>Joia Aceleradora 2</name_pt>
+	<name_ru>Самоцвет удушения 2</name_ru>
+	<name_zh>全開珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Challenger Jewel 2</name>
+	<name_ar>حلية المتحدي 2</name_ar>
+	<name_de>Herausforderer-Juwel 2</name_de>
+	<name_es>Joya desafiante 2</name_es>
+	<name_fr>Joyau de témérité [2]</name_fr>
+	<name_it>Gioiello istigatore 2</name_it>
+	<name_jp>挑戦珠【２】</name_jp>
+	<name_ko>도전주【2】</name_ko>
+	<name_pl>Klejnot prowokatora 2</name_pl>
+	<name_pt>Joia do Desafiante 2</name_pt>
+	<name_ru>Самоцвет вызова 2</name_ru>
+	<name_zh>挑戰珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Potential Jewel 2</name>
+	<name_ar>حلية الإمكانيات 2</name_ar>
+	<name_de>Potenzial-Juwel 2</name_de>
+	<name_es>Joya de potencia 2</name_es>
+	<name_fr>Joyau du héros [2]</name_fr>
+	<name_it>Gioiello eroismo 2</name_it>
+	<name_jp>底力珠【２】</name_jp>
+	<name_ko>저력주【2】</name_ko>
+	<name_pl>Klejnot potencjału 2</name_pl>
+	<name_pt>Joia do Potencial 2</name_pt>
+	<name_ru>Самоцвет потенциала 2</name_ru>
+	<name_zh>底力珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Furor Jewel 2</name>
+	<name_ar>حلية الصياح 2</name_ar>
+	<name_de>Furor-Juwel 2</name_de>
+	<name_es>Joya del furor 2</name_es>
+	<name_fr>Joyau de vengeance [2]</name_fr>
+	<name_it>Gioiello risentimento 2</name_it>
+	<name_jp>逆上珠【２】</name_jp>
+	<name_ko>역상주【2】</name_ko>
+	<name_pl>Klejnot poruszenia 2</name_pl>
+	<name_pt>Joia do Furor 2</name_pt>
+	<name_ru>Самоцвет ярости 2</name_ru>
+	<name_zh>逆上珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Magazine Jewel 2</name>
+	<name_ar>حلية المخزن 2</name_ar>
+	<name_de>Magazin-Juwel 2</name_de>
+	<name_es>Joya almacén 2</name_es>
+	<name_fr>Joyau du franc-tireur [2]</name_fr>
+	<name_it>Gioiello bonus capacità 2</name_it>
+	<name_jp>増弾珠【２】</name_jp>
+	<name_ko>증탄주【2】</name_ko>
+	<name_pl>Klejnot magazynka 2</name_pl>
+	<name_pt>Joia Aljava 2</name_pt>
+	<name_ru>Самоцвет боезапаса 2</name_ru>
+	<name_zh>增彈珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Refresh Jewel 2</name>
+	<name_ar>حلية التجدد 2</name_ar>
+	<name_de>Erfrischungs-Juwel 2</name_de>
+	<name_es>Joya de refresco 2</name_es>
+	<name_fr>Joyau métabolisme [2]</name_fr>
+	<name_it>Gioiello super resistenza 2</name_it>
+	<name_jp>早気珠【２】</name_jp>
+	<name_ko>조기주【2】</name_ko>
+	<name_pl>Klejnot orzeźwienia 2</name_pl>
+	<name_pt>Joia Revigorante 2</name_pt>
+	<name_ru>Самоцвет обновления 2</name_ru>
+	<name_zh>早氣珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Mighty Jewel 2</name>
+	<name_ar>حلية الهائل 2</name_ar>
+	<name_de>Mächtiges Juwel 2</name_de>
+	<name_es>Joya poderosa 2</name_es>
+	<name_fr>Joyau d'omnipotence [2]</name_fr>
+	<name_it>Gioiello massima potenza 2</name_it>
+	<name_jp>渾身珠【２】</name_jp>
+	<name_ko>혼신주【2】</name_ko>
+	<name_pl>Klejnot mocy 2</name_pl>
+	<name_pt>Joia Potente 2</name_pt>
+	<name_ru>Могучий самоцвет 2</name_ru>
+	<name_zh>渾身珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Enhancer Jewel 2</name>
+	<name_ar>حلية المحسّن 2</name_ar>
+	<name_de>Verstärker-Juwel 2</name_de>
+	<name_es>Joya de aumento 2</name_es>
+	<name_fr>Joyau de puissance [2]</name_fr>
+	<name_it>Gioiello estensione di potenza 2</name_it>
+	<name_jp>昂揚珠【２】</name_jp>
+	<name_ko>고양주【2】</name_ko>
+	<name_pl>Klejnot wydłużacza 2</name_pl>
+	<name_pt>Joia Intensificadora 2</name_pt>
+	<name_ru>Самоцвет усиления 2</name_ru>
+	<name_zh>昂揚珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Sharp Jewel 2</name>
+	<name_ar>الحلية الحادة 2</name_ar>
+	<name_de>Scharfes Juwel 2</name_de>
+	<name_es>Joya afilada 2</name_es>
+	<name_fr>Joyau de trempe [2]</name_fr>
+	<name_it>Gioiello strato protettivo 2</name_it>
+	<name_jp>剛刃珠【２】</name_jp>
+	<name_ko>강인주【2】</name_ko>
+	<name_pl>Ostry klejnot 2</name_pl>
+	<name_pt>Joia Afiada 2</name_pt>
+	<name_ru>Острый самоцвет 2</name_ru>
+	<name_zh>剛刃珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Shield Jewel 2</name>
+	<name_ar>حلية الترس 2</name_ar>
+	<name_de>Schild-Juwel 2</name_de>
+	<name_es>Joya escudo 2</name_es>
+	<name_fr>Joyau bouclier [2]</name_fr>
+	<name_it>Gioiello guardia perfetta 2</name_it>
+	<name_jp>強壁珠【２】</name_jp>
+	<name_ko>강벽주【2】</name_ko>
+	<name_pl>Klejnot tarczy 2</name_pl>
+	<name_pt>Joia de Escudo 2</name_pt>
+	<name_ru>Самоцвет щита 2</name_ru>
+	<name_zh>強壁珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Attack Jewel 1</name>
+	<name_ar>حلية الهجوم 1</name_ar>
+	<name_de>Angriff-Juwel 1</name_de>
+	<name_es>Joya de ataque 1</name_es>
+	<name_fr>Joyau attaque [1]</name_fr>
+	<name_it>Gioiello attacco 1</name_it>
+	<name_jp>攻撃珠【１】</name_jp>
+	<name_ko>공격주【1】</name_ko>
+	<name_pl>Klejnot ataku 1</name_pl>
+	<name_pt>Joia Ataque 1</name_pt>
+	<name_ru>Самоцвет атаки 1</name_ru>
+	<name_zh>攻擊珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Paralyzer Jewel 1</name>
+	<name_ar>حلية الشلل 1</name_ar>
+	<name_de>Lähmangriff-Juwel 1</name_de>
+	<name_es>Joya paralizante 1</name_es>
+	<name_fr>Joyau paralysant [1]</name_fr>
+	<name_it>Gioiello attacco paralisi 1</name_it>
+	<name_jp>麻痺珠【１】</name_jp>
+	<name_ko>마비주【1】</name_ko>
+	<name_pl>Klejnot paraliżu 1</name_pl>
+	<name_pt>Joia Paralisadora 1</name_pt>
+	<name_ru>Самоцвет "Парализатор" 1</name_ru>
+	<name_zh>麻痺珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Sleep Jewel 1</name>
+	<name_ar>حلية النوم 1</name_ar>
+	<name_de>Schlaf-Juwel 1</name_de>
+	<name_es>Joya de sueño 1</name_es>
+	<name_fr>Joyau du sommeil [1]</name_fr>
+	<name_it>Gioiello attacco sonno 1</name_it>
+	<name_jp>睡眠珠【１】</name_jp>
+	<name_ko>수면주【1】</name_ko>
+	<name_pl>Klejnot snu 1</name_pl>
+	<name_pt>Joia Sono 1</name_pt>
+	<name_ru>Самоцвет сна 1</name_ru>
+	<name_zh>睡眠珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Blast Jewel 1</name>
+	<name_ar>حلية الانفجار 1</name_ar>
+	<name_de>Explosion-Juwel 1</name_de>
+	<name_es>Joya nitro 1</name_es>
+	<name_fr>Joyau explosion [1]</name_fr>
+	<name_it>Gioiello attacco scoppio 1</name_it>
+	<name_jp>爆破珠【１】</name_jp>
+	<name_ko>폭파주【1】</name_ko>
+	<name_pl>Klejnot wybuchu 1</name_pl>
+	<name_pt>Joia Explosão 1</name_pt>
+	<name_ru>Самоцвет взрыва 1</name_ru>
+	<name_zh>爆破珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Trueshot Jewel 1</name>
+	<name_ar>حلية الضربة الحقيقية 1</name_ar>
+	<name_de>Volltreffer-Juwel 1</name_de>
+	<name_es>Joya tirofijo 1</name_es>
+	<name_fr>Joyau du sniper [1]</name_fr>
+	<name_it>Gioiello munizioni speciali 1</name_it>
+	<name_jp>特射珠【１】</name_jp>
+	<name_ko>특사주【1】</name_ko>
+	<name_pl>Klejnot celnego strzału 1</name_pl>
+	<name_pt>Joia Tiro Certo 1</name_pt>
+	<name_ru>Снайперский самоцвет 1</name_ru>
+	<name_zh>特射珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Ironwall Jewel 1</name>
+	<name_ar>حلية الجدار الحديدي 1</name_ar>
+	<name_de>Eisenmauer-Juwel 1</name_de>
+	<name_es>Joya de guardia 1</name_es>
+	<name_fr>Joyau du paladin [1]</name_fr>
+	<name_it>Gioiello blocco 1</name_it>
+	<name_jp>鉄壁珠【１】</name_jp>
+	<name_ko>철벽주【1】</name_ko>
+	<name_pl>Klejnot żelaznego muru 1</name_pl>
+	<name_pt>Joia Muro de Ferro 1</name_pt>
+	<name_ru>Самоцвет железной стены 1</name_ru>
+	<name_zh>鐵壁珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Release Jewel 3</name>
+	<name_ar>حلية الإطلاق 3</name_ar>
+	<name_de>Freisetzung-Juwel 3</name_de>
+	<name_es>Joya liberadora 3</name_es>
+	<name_fr>Joyau du tireur [3]</name_fr>
+	<name_it>Gioiello rilascio 3</name_it>
+	<name_jp>解放珠【３】</name_jp>
+	<name_ko>해방주【3】</name_ko>
+	<name_pl>Klejnot wyładowania 3</name_pl>
+	<name_pt>Joia Descarregamento 3</name_pt>
+	<name_ru>Самоцвет высвобождения 3</name_ru>
+	<name_zh>解放珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Handicraft Jewel 3</name>
+	<name_ar>حلية الحرفية 3</name_ar>
+	<name_de>Handwerk-Juwel 3</name_de>
+	<name_es>Joya de artesanía 3</name_es>
+	<name_fr>Joyau artisanat [3]</name_fr>
+	<name_it>Gioiello artigiano 3</name_it>
+	<name_jp>匠珠【３】</name_jp>
+	<name_ko>장인주【3】</name_ko>
+	<name_pl>Klejnot rękodzieła 3</name_pl>
+	<name_pt>Joia do Artesanato 3</name_pt>
+	<name_ru>Самоцвет ремесла 3</name_ru>
+	<name_zh>匠珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Pierce Jewel 3</name>
+	<name_ar>حلية الثقب 3</name_ar>
+	<name_de>Perforations-Juwel 3</name_de>
+	<name_es>Joya perforante 3</name_es>
+	<name_fr>Joyau de titane [3]</name_fr>
+	<name_it>Gioiello bonus perforanti 3</name_it>
+	<name_jp>貫通珠【３】</name_jp>
+	<name_ko>관통주【3】</name_ko>
+	<name_pl>Klejnot przebicia 3</name_pl>
+	<name_pt>Joia Perfurante 3</name_pt>
+	<name_ru>Пронзающий самоцвет 3</name_ru>
+	<name_zh>貫通珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Spread Jewel 3</name>
+	<name_ar>حلية الانتشار 3</name_ar>
+	<name_de>Schrot-Juwel 3</name_de>
+	<name_es>Joya abanico 3</name_es>
+	<name_fr>Joyau de plomb [3]</name_fr>
+	<name_it>Gioiello bonus ventaglio 3</name_it>
+	<name_jp>散弾珠【３】</name_jp>
+	<name_ko>산탄주【3】</name_ko>
+	<name_pl>Klejnot rozrzutu 3</name_pl>
+	<name_pt>Joia de Dispersão 3</name_pt>
+	<name_ru>Самоцвет разброса 3</name_ru>
+	<name_zh>散彈珠【３】</name_zh>
+</translation>
+<translation>
+	<name>Critical Jewel 2</name>
+	<name_ar>حلية الحسم 2</name_ar>
+	<name_de>Kritisches Juwel 2</name_de>
+	<name_es>Joya crítica 2</name_es>
+	<name_fr>Joyau du berserk [2]</name_fr>
+	<name_it>Gioiello bonus critico 2</name_it>
+	<name_jp>超心珠【２】</name_jp>
+	<name_ko>초심주【2】</name_ko>
+	<name_pl>Klejnot krytyczny 2</name_pl>
+	<name_pt>Joia Crítica 2</name_pt>
+	<name_ru>Критический самоцвет 2</name_ru>
+	<name_zh>超心珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Charger Jewel 2</name>
+	<name_ar>حلية الشاحن 2</name_ar>
+	<name_de>Ladungs-Juwel 2</name_de>
+	<name_es>Joya cargadora 2</name_es>
+	<name_fr>Joyau concentration [2]</name_fr>
+	<name_it>Gioiello concentrazione 2</name_it>
+	<name_jp>短縮珠【２】</name_jp>
+	<name_ko>단축주【2】</name_ko>
+	<name_pl>Klejnot ładujący 2</name_pl>
+	<name_pt>Joia Energizadora 2</name_pt>
+	<name_ru>Самоцвет заряда 2</name_ru>
+	<name_zh>縮短珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Draw Jewel 2</name>
+	<name_ar>حلية السحب 2</name_ar>
+	<name_de>Ziehen-Juwel 2</name_de>
+	<name_es>Joya de desenfunde 2</name_es>
+	<name_fr>Joyau dégainage [2]</name_fr>
+	<name_it>Gioiello critico rapido 2</name_it>
+	<name_jp>抜刀珠【２】</name_jp>
+	<name_ko>발도주【2】</name_ko>
+	<name_pl>Klejnot dobycia broni 2</name_pl>
+	<name_pt>Joia de Saque 2</name_pt>
+	<name_ru>Самоцвет выхвата 2</name_ru>
+	<name_zh>拔刀珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Sprinter Jewel 2</name>
+	<name_ar>حلية العدّاء 2</name_ar>
+	<name_de>Sprinter-Juwel 2</name_de>
+	<name_es>Joya de impulso 2</name_es>
+	<name_fr>Joyau du marathonien [2]</name_fr>
+	<name_it>Gioiello maratoneta 2</name_it>
+	<name_jp>強走珠【２】</name_jp>
+	<name_ko>강주주【2】</name_ko>
+	<name_pl>Klejnot sprintera 2</name_pl>
+	<name_pt>Joia do Corredor 2</name_pt>
+	<name_ru>Самоцвет бегуна 2</name_ru>
+	<name_zh>強走珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Mighty Bow Jewel 2</name>
+	<name_ar>حلية القوس العظيم 2</name_ar>
+	<name_de>Mächtiger-Bogen-Juwel 2</name_de>
+	<name_es>Joya de arco poderoso 2</name_es>
+	<name_fr>Joyau de l'archer [2]</name_fr>
+	<name_it>Gioiello carica potenziata 2</name_it>
+	<name_jp>強弓珠【２】</name_jp>
+	<name_ko>강궁주【2】</name_ko>
+	<name_pl>Klejnot potężnego łuku 2</name_pl>
+	<name_pt>Joia Arco Magnífico 2</name_pt>
+	<name_ru>Самоцвет могучего лука 2</name_ru>
+	<name_zh>強弓珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Mind's Eye Jewel 2</name>
+	<name_ar>حلية عين العقل 2</name_ar>
+	<name_de>Geistiges-Auge-Juwel 2</name_de>
+	<name_es>Joya ojo mental 2</name_es>
+	<name_fr>Joyau spirituel [2]</name_fr>
+	<name_it>Gioiello preveggenza 2</name_it>
+	<name_jp>心眼珠【２】</name_jp>
+	<name_ko>심안주【2】</name_ko>
+	<name_pl>Klejnot oka umysłu 2</name_pl>
+	<name_pt>Joia Olhos da Mente 2</name_pt>
+	<name_ru>Самоцвет мысленного взгляда 2</name_ru>
+	<name_zh>心眼珠【２】</name_zh>
+</translation>
+<translation>
+	<name>Artillery Jewel 1</name>
+	<name_ar>حلية المدفعية 1</name_ar>
+	<name_de>Artillerie-Juwel 1</name_de>
+	<name_es>Joya de artillería 1</name_es>
+	<name_fr>Joyau dynamite [1]</name_fr>
+	<name_it>Gioiello artigliere 1</name_it>
+	<name_jp>砲術珠【１】</name_jp>
+	<name_ko>포술주【1】</name_ko>
+	<name_pl>Klejnot artylerii 1</name_pl>
+	<name_pt>Joia Artilharia 1</name_pt>
+	<name_ru>Самоцвет артиллерии 1</name_ru>
+	<name_zh>砲術珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Fungiform Jewel 1</name>
+	<name_ar>حلية شكل الفطر 1</name_ar>
+	<name_de>Pilzform-Juwel 1</name_de>
+	<name_es>Joya micótica 1</name_es>
+	<name_fr>Joyau du mycologue [1]</name_fr>
+	<name_it>Gioiello fungomante 1</name_it>
+	<name_jp>茸好珠【１】</name_jp>
+	<name_ko>이호주【1】</name_ko>
+	<name_pl>Grzybny klejnot 1</name_pl>
+	<name_pt>Joia Fungiforme 1</name_pt>
+	<name_ru>Грибной самоцвет 1</name_ru>
+	<name_zh>茸好珠【１】</name_zh>
+</translation>
+<translation>
+	<name>Cooling Jewel 2</name>
+	<name_jp>耐暑珠【２】</name_jp>
+</translation>
+<translation>
+	<name>Warming Jewel 2</name>
+	<name_jp>耐寒珠【２】</name_jp>
+</translation>
+<translation>
+	<name>Guardian Jewel 2</name>
+	<name_jp>守勢珠【２】</name_jp>
+</translation>
+<translation>
+	<name>Phoenix Jewel 3</name>
+	<name_jp>転福珠【３】</name_jp>
+</translation>
+
+<!-- Decorations (level 4) -->
+
+<translation>
+	<name>Defense Jewel+ 4</name>
+	<name_jp>防御珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Defense Jewel 4</name>
+	<name_jp>防御珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Recovery Jewel+ 4</name>
+	<name_jp>早復珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Fire Res Jewel+ 4</name>
+	<name_jp>耐火珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Fire Res Jewel 4</name>
+	<name_jp>耐火珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Water Res Jewel+ 4</name>
+	<name_jp>耐水珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Water Res Jewel 4</name>
+	<name_jp>耐水珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Ice Res Jewel+ 4</name>
+	<name_jp>耐氷珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Ice Res Jewel 4</name>
+	<name_jp>耐氷珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Thunder Res Jewel+ 4</name>
+	<name_jp>耐雷珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Thunder Res Jewel 4</name>
+	<name_jp>耐雷珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Dragon Res Jewel+ 4</name>
+	<name_jp>耐龍珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Dragon Res Jewel 4</name>
+	<name_jp>耐龍珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Antidote Jewel+ 4</name>
+	<name_jp>耐毒珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Antipara Jewel+ 4</name>
+	<name_jp>耐麻珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Pep Jewel+ 4</name>
+	<name_jp>耐眠珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Antiblast Jewel+ 4</name>
+	<name_jp>耐爆珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Steadfast Jewel+ 4</name>
+	<name_jp>耐絶珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Suture Jewel+ 4</name>
+	<name_jp>耐裂珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Def Lock Jewel+ 4</name>
+	<name_jp>耐防珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Miasma Jewel+ 4</name>
+	<name_jp>耐瘴珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Wind Resist Jewel+ 4</name>
+	<name_jp>防風珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Expert Jewel+ 4</name>
+	<name_jp>達人珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Blaze Jewel+ 4</name>
+	<name_jp>火炎珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Stream Jewel+ 4</name>
+	<name_jp>流水珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Frost Jewel+ 4</name>
+	<name_jp>氷結珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Bolt Jewel+ 4</name>
+	<name_jp>雷光珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Dragon Jewel+ 4</name>
+	<name_jp>破龍珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Venom Jewel+ 4</name>
+	<name_jp>毒珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Paralyzer Jewel+ 4</name>
+	<name_jp>麻痺珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Sleep Jewel+ 4</name>
+	<name_jp>睡眠珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Blast Jewel+ 4</name>
+	<name_jp>爆破珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Artillery Jewel+ 4</name>
+	<name_jp>砲術珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Sonorous Jewel+ 4</name>
+	<name_jp>鼓笛珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Potential Jewel+ 4</name>
+	<name_jp>底力珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Physique Jewel+ 4</name>
+	<name_jp>体術珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hungerless Jewel+ 4</name>
+	<name_jp>無食珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Enduring Jewel+ 4</name>
+	<name_jp>持続珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Enduring Jewel 4</name>
+	<name_jp>持続珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Friendship Jewel+ 4</name>
+	<name_jp>友愛珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Specimen Jewel+ 4</name>
+	<name_jp>標本珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Specimen Jewel 4</name>
+	<name_jp>標本珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Botany Jewel+ 4</name>
+	<name_jp>植学珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Botany Jewel 4</name>
+	<name_jp>植学珠Ⅳ【４】</name_jp>
+</translation>
+<translation>
+	<name>Geology Jewel+ 4</name>
+	<name_jp>地学珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Geology Jewel 4</name>
+	<name_jp>地学珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Survival Jewel+ 4</name>
+	<name_jp>環境珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Survival Jewel 4</name>
+	<name_jp>環境珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Mirewalker Jewel+ 4</name>
+	<name_jp>沼渡珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Intimidator Jewel+ 4</name>
+	<name_jp>威嚇珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Intimidator Jewel 4</name>
+	<name_jp>威嚇珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Tip Toe Jewel+ 4</name>
+	<name_jp>潜伏珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Tip Toe Jewel 4</name>
+	<name_jp>潜伏珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Meowster Jewel+ 4</name>
+	<name_jp>采配珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Hard Meowster Jewel 4</name>
+	<name_jp>采配珠Ⅲ【４】</name_jp>
+</translation>
+<translation>
+	<name>Evasion Jewel+ 4</name>
+	<name_jp>回避珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Earplug Jewel+ 4</name>
+	<name_jp>防音珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Ironwall Jewel+ 4</name>
+	<name_jp>鉄壁珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Heavy Artillery Jewel+ 4</name>
+	<name_jp>砲手珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Furor Jewel+ 4</name>
+	<name_jp>逆上珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Attack Jewel+ 4</name>
+	<name_jp>攻撃珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Challenger Jewel+ 4</name>
+	<name_jp>挑戦珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Trueshot Jewel+ 4</name>
+	<name_jp>特射珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Throttle Jewel+ 4</name>
+	<name_jp>全開珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Handicraft Jewel+ 4</name>
+	<name_jp>匠珠Ⅱ【４】</name_jp>
+</translation>
+<translation>
+	<name>Brace/Protection Jewel 4</name>
+	<name_jp>耐衝・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Wind Resist/Protection Jewel 4</name>
+	<name_jp>防風・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Footing/Protection Jewel 4</name>
+	<name_jp>耐震・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Draw/Protection Jewel 4</name>
+	<name_jp>抜刀・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Enhancer/Protection Jewel 4</name>
+	<name_jp>昂揚・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Charger/Protection Jewel 4</name>
+	<name_jp>短縮・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Destroyer/Protection Jewel 4</name>
+	<name_jp>重撃・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>KO/Protection Jewel 4</name>
+	<name_jp>ＫＯ・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Throttle/Protection Jewel 4</name>
+	<name_jp>全開・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Challenger/Protection Jewel 4</name>
+	<name_jp>挑戦・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flawless/Protection Jewel 4</name>
+	<name_jp>無傷・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Potential/Protection Jewel 4</name>
+	<name_jp>底力・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Mighty/Protection Jewel 4</name>
+	<name_jp>渾身・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Furor/Protection Jewel 4</name>
+	<name_jp>逆上・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Phoenix/Protection Jewel 4</name>
+	<name_jp>転福・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Earplug/Protection Jewel 4</name>
+	<name_jp>防音・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Critical/Protection Jewel 4</name>
+	<name_jp>超心・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Tenderizer/Protection Jewel 4</name>
+	<name_jp>痛撃・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Handicraft/Protection Jewel 4</name>
+	<name_jp>匠・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Release/Protection Jewel 4</name>
+	<name_jp>解放・加護珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Brace/Vitality Jewel 4</name>
+	<name_jp>耐衝・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Wind Resist/Vitality Jewel 4</name>
+	<name_jp>防風・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Footing/Vitality Jewel 4</name>
+	<name_jp>耐震・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Draw/Vitality Jewel 4</name>
+	<name_jp>抜刀・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Enhancer/Vitality Jewel 4</name>
+	<name_jp>昂揚・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Charger/Vitality Jewel 4</name>
+	<name_jp>短縮・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Destroyer/Vitality Jewel 4</name>
+	<name_jp>重撃・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>KO/Vitality Jewel 4</name>
+	<name_jp>ＫＯ・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Throttle/Vitality Jewel 4</name>
+	<name_jp>全開・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Challenger/Vitality Jewel 4</name>
+	<name_jp>挑戦・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flawless/Vitality Jewel 4</name>
+	<name_jp>無傷・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Potential/Vitality Jewel 4</name>
+	<name_jp>底力・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Mighty/Vitality Jewel 4</name>
+	<name_jp>渾身・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Furor/Vitality Jewel 4</name>
+	<name_jp>逆上・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Phoenix/Vitality Jewel 4</name>
+	<name_jp>転福・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Earplug/Vitality Jewel 4</name>
+	<name_jp>防音・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Critical/Vitality Jewel 4</name>
+	<name_jp>超心・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Tenderizer/Vitality Jewel 4</name>
+	<name_jp>痛撃・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Handicraft/Vitality Jewel 4</name>
+	<name_jp>匠・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Release/Vitality Jewel 4</name>
+	<name_jp>解放・体力珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Brace/Medicine Jewel 4</name>
+	<name_jp>耐衝・治癒珠【４】</name_jp>
+</translation>
 <translation>
-	<name>Antidote Jewel</name>
-	<name_jp>耐毒珠</name_jp>
+	<name>Wind Resist/Medicine Jewel 4</name>
+	<name_jp>防風・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Geology Jewel</name>
-	<name_jp>地学珠</name_jp>
+	<name>Footing/Medicine Jewel 4</name>
+	<name_jp>耐震・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Heavy Artillery Jewel</name>
-	<name_jp>砲手珠</name_jp>
+	<name>Draw/Medicine Jewel 4</name>
+	<name_jp>抜刀・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Hungerless Jewel</name>
-	<name_jp>無食珠</name_jp>
+	<name>Enhancer/Medicine Jewel 4</name>
+	<name_jp>昂揚・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Satiated Jewel</name>
-	<name_jp>節食珠</name_jp>
+	<name>Charger/Medicine Jewel 4</name>
+	<name_jp>短縮・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Protection Jewel</name>
-	<name_jp>加護珠</name_jp>
+	<name>Destroyer/Medicine Jewel 4</name>
+	<name_jp>重撃・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Meowster Jewel</name>
-	<name_jp>采配珠</name_jp>
+	<name>KO/Medicine Jewel 4</name>
+	<name_jp>ＫＯ・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Botany Jewel</name>
-	<name_jp>植学珠</name_jp>
+	<name>Throttle/Medicine Jewel 4</name>
+	<name_jp>全開・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Tip Toe Jewel</name>
-	<name_jp>潜伏珠</name_jp>
+	<name>Challenger/Medicine Jewel 4</name>
+	<name_jp>挑戦・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Flight Jewel</name>
-	<name_jp>飛燕珠</name_jp>
+	<name>Flawless/Medicine Jewel 4</name>
+	<name_jp>無傷・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Smoke Jewel</name>
-	<name_jp>煙復珠</name_jp>
+	<name>Potential/Medicine Jewel 4</name>
+	<name_jp>底力・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Mirewalker Jewel</name>
-	<name_jp>沼渡珠</name_jp>
+	<name>Mighty/Medicine Jewel 4</name>
+	<name_jp>渾身・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Specimen Jewel</name>
-	<name_jp>標本珠</name_jp>
+	<name>Furor/Medicine Jewel 4</name>
+	<name_jp>逆上・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Miasma Jewel</name>
-	<name_jp>耐瘴珠</name_jp>
+	<name>Phoenix/Medicine Jewel 4</name>
+	<name_jp>転福・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Scent Jewel</name>
-	<name_jp>嗅覚珠</name_jp>
+	<name>Earplug/Medicine Jewel 4</name>
+	<name_jp>防音・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Intimidator Jewel</name>
-	<name_jp>威嚇珠</name_jp>
+	<name>Critical/Medicine Jewel 4</name>
+	<name_jp>超心・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Crisis Jewel</name>
-	<name_jp>窮地珠</name_jp>
+	<name>Tenderizer/Medicine Jewel 4</name>
+	<name_jp>痛撃・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Antipara Jewel</name>
-	<name_jp>耐麻珠</name_jp>
+	<name>Handicraft/Medicine Jewel 4</name>
+	<name_jp>匠・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Fortitude Jewel</name>
-	<name_jp>逆境珠</name_jp>
+	<name>Release/Medicine Jewel 4</name>
+	<name_jp>解放・治癒珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Water Res Jewel</name>
-	<name_jp>耐水珠</name_jp>
+	<name>Resistor/Attack Jewel 4</name>
+	<name_jp>耐属・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Suture Jewel</name>
-	<name_jp>耐裂珠</name_jp>
+	<name>Drain/Attack Jewel 4</name>
+	<name_jp>奪気・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Dragon Res Jewel</name>
-	<name_jp>耐龍珠</name_jp>
+	<name>Flight/Attack Jewel 4</name>
+	<name_jp>飛燕・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Fire Res Jewel</name>
-	<name_jp>耐火珠</name_jp>
+	<name>Sheath/Attack Jewel 4</name>
+	<name_jp>速納・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Ice Res Jewel</name>
-	<name_jp>耐氷珠</name_jp>
+	<name>Fortitude/Attack Jewel 4</name>
+	<name_jp>逆境・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Def Lock Jewel</name>
-	<name_jp>耐防珠</name_jp>
+	<name>Slider/Attack Jewel 4</name>
+	<name_jp>滑走・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Thunder Res Jewel</name>
-	<name_jp>耐雷珠</name_jp>
+	<name>Sprinter/Attack Jewel 4</name>
+	<name_jp>強走・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Pep Jewel</name>
-	<name_jp>耐眠珠</name_jp>
+	<name>Refresh/Attack Jewel 4</name>
+	<name_jp>早気・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Antiblast Jewel</name>
-	<name_jp>耐爆珠</name_jp>
+	<name>Crisis/Attack Jewel 4</name>
+	<name_jp>窮地・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Gobbler Jewel</name>
-	<name_jp>早食珠</name_jp>
+	<name>Jumping/Attack Jewel 4</name>
+	<name_jp>跳躍・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Physique Jewel</name>
-	<name_jp>体術珠</name_jp>
+	<name>Ironwall/Attack Jewel 4</name>
+	<name_jp>鉄壁・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Blaze Jewel</name>
-	<name_jp>火炎珠</name_jp>
+	<name>Guardian/Attack Jewel 4</name>
+	<name_jp>守勢・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Evasion Jewel</name>
-	<name_jp>回避珠</name_jp>
+	<name>Friendship/Attack Jewel 4</name>
+	<name_jp>友愛・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Jumping Jewel</name>
-	<name_jp>跳躍珠</name_jp>
+	<name>Gobbler/Attack Jewel 4</name>
+	<name_jp>早食・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Sheath Jewel</name>
-	<name_jp>速納珠</name_jp>
+	<name>Satiated/Attack Jewel 4</name>
+	<name_jp>節食・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Friendship Jewel</name>
-	<name_jp>友愛珠</name_jp>
+	<name>Grinder/Attack Jewel 4</name>
+	<name_jp>研磨・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Enduring Jewel</name>
-	<name_jp>持続珠</name_jp>
+	<name>Bomber/Attack Jewel 4</name>
+	<name_jp>爆師・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Medicine Jewel</name>
-	<name_jp>治癒珠</name_jp>
+	<name>Fungiform/Attack Jewel 4</name>
+	<name_jp>茸好・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Grinder Jewel</name>
-	<name_jp>研磨珠</name_jp>
+	<name>Stonethrower/Attack Jewel 4</name>
+	<name_jp>投石・攻撃珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Steadfast Jewel</name>
-	<name_jp>耐絶珠</name_jp>
+	<name>Resistor/Expert Jewel 4</name>
+	<name_jp>耐属・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Bomber Jewel</name>
-	<name_jp>爆師珠</name_jp>
+	<name>Drain/Expert Jewel 4</name>
+	<name_jp>奪気・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Recovery Jewel</name>
-	<name_jp>早復珠</name_jp>
+	<name>Flight/Expert Jewel 4</name>
+	<name_jp>飛燕・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Slider Jewel</name>
-	<name_jp>滑走珠</name_jp>
+	<name>Sheath/Expert Jewel 4</name>
+	<name_jp>速納・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Defense Jewel</name>
-	<name_jp>防御珠</name_jp>
+	<name>Fortitude/Expert Jewel 4</name>
+	<name_jp>逆境・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Stonethrower Jewel</name>
-	<name_jp>投石珠</name_jp>
+	<name>Slider/Expert Jewel 4</name>
+	<name_jp>滑走・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Footing Jewel</name>
-	<name_jp>耐震珠</name_jp>
+	<name>Sprinter/Expert Jewel 4</name>
+	<name_jp>強走・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Brace Jewel</name>
-	<name_jp>耐衝珠</name_jp>
+	<name>Refresh/Expert Jewel 4</name>
+	<name_jp>早気・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Wind Resist Jewel</name>
-	<name_jp>防風珠</name_jp>
+	<name>Crisis/Expert Jewel 4</name>
+	<name_jp>窮地・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Earplug Jewel</name>
-	<name_jp>防音珠</name_jp>
+	<name>Jumping/Expert Jewel 4</name>
+	<name_jp>跳躍・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Vitality Jewel</name>
-	<name_jp>体力珠</name_jp>
+	<name>Ironwall/Expert Jewel 4</name>
+	<name_jp>鉄壁・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Resistor Jewel</name>
-	<name_jp>耐属珠</name_jp>
+	<name>Guardian/Expert Jewel 4</name>
+	<name_jp>守勢・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Sonorous Jewel</name>
-	<name_jp>鼓笛珠</name_jp>
+	<name>Friendship/Expert Jewel 4</name>
+	<name_jp>友愛・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>KO Jewel</name>
-	<name_jp>KO珠</name_jp>
+	<name>Gobbler/Expert Jewel 4</name>
+	<name_jp>早食・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Stream Jewel</name>
-	<name_jp>流水珠</name_jp>
+	<name>Satiated/Expert Jewel 4</name>
+	<name_jp>節食・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Frost Jewel</name>
-	<name_jp>氷結珠</name_jp>
+	<name>Grinder/Expert Jewel 4</name>
+	<name_jp>研磨・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Bolt Jewel</name>
-	<name_jp>雷光珠</name_jp>
+	<name>Bomber/Expert Jewel 4</name>
+	<name_jp>爆師・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Dragon Jewel</name>
-	<name_jp>破龍珠</name_jp>
+	<name>Fungiform/Expert Jewel 4</name>
+	<name_jp>茸好・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Venom Jewel</name>
-	<name_jp>毒珠</name_jp>
+	<name>Stonethrower/Expert Jewel 4</name>
+	<name_jp>投石・達人珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Poisoncoat Jewel</name>
-	<name_jp>毒瓶珠</name_jp>
+	<name>Resistor/Handicraft Jewel 4</name>
+	<name_jp>耐属・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Expert Jewel</name>
-	<name_jp>達人珠</name_jp>
+	<name>Drain/Handicraft Jewel 4</name>
+	<name_jp>奪気・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Tenderizer Jewel</name>
-	<name_jp>痛撃珠</name_jp>
+	<name>Flight/Handicraft Jewel 4</name>
+	<name_jp>飛燕・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Destroyer Jewel</name>
-	<name_jp>重撃珠</name_jp>
+	<name>Sheath/Handicraft Jewel 4</name>
+	<name_jp>速納・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Elementless Jewel</name>
-	<name_jp>無撃珠</name_jp>
+	<name>Fortitude/Handicraft Jewel 4</name>
+	<name_jp>逆境・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Drain Jewel</name>
-	<name_jp>奪気珠</name_jp>
+	<name>Slider/Handicraft Jewel 4</name>
+	<name_jp>滑走・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Paracoat Jewel</name>
-	<name_jp>痺瓶珠</name_jp>
+	<name>Sprinter/Handicraft Jewel 4</name>
+	<name_jp>強走・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Sharp Jewel</name>
-	<name_jp>剛刃珠</name_jp>
+	<name>Refresh/Handicraft Jewel 4</name>
+	<name_jp>早気・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Shield Jewel</name>
-	<name_jp>強壁珠</name_jp>
+	<name>Crisis/Handicraft Jewel 4</name>
+	<name_jp>窮地・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Dragonseal Jewel</name>
-	<name_jp>龍封珠</name_jp>
+	<name>Jumping/Handicraft Jewel 4</name>
+	<name_jp>跳躍・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Trueshot Jewel</name>
-	<name_jp>特射珠</name_jp>
+	<name>Ironwall/Handicraft Jewel 4</name>
+	<name_jp>鉄壁・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Enhancer Jewel</name>
-	<name_jp>昂揚珠</name_jp>
+	<name>Guardian/Handicraft Jewel 4</name>
+	<name_jp>守勢・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Forceshot Jewel</name>
-	<name_jp>強弾珠</name_jp>
+	<name>Friendship/Handicraft Jewel 4</name>
+	<name_jp>友愛・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Furor Jewel</name>
-	<name_jp>逆上珠</name_jp>
+	<name>Gobbler/Handicraft Jewel 4</name>
+	<name_jp>早食・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Potential Jewel</name>
-	<name_jp>底力珠</name_jp>
+	<name>Satiated/Handicraft Jewel 4</name>
+	<name_jp>節食・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Paralyzer Jewel</name>
-	<name_jp>麻痺珠</name_jp>
+	<name>Grinder/Handicraft Jewel 4</name>
+	<name_jp>研磨・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Sleep Jewel</name>
-	<name_jp>睡眠珠</name_jp>
+	<name>Bomber/Handicraft Jewel 4</name>
+	<name_jp>爆師・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Ironwall Jewel</name>
-	<name_jp>鉄壁珠</name_jp>
+	<name>Fungiform/Handicraft Jewel 4</name>
+	<name_jp>茸好・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Refresh Jewel</name>
-	<name_jp>早気珠</name_jp>
+	<name>Stonethrower/Handicraft Jewel 4</name>
+	<name_jp>投石・匠珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Blast Jewel</name>
-	<name_jp>爆破珠</name_jp>
+	<name>Resistor/Release Jewel 4</name>
+	<name_jp>耐属・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Sleepcoat Jewel</name>
-	<name_jp>眠瓶珠</name_jp>
+	<name>Drain/Release Jewel 4</name>
+	<name_jp>奪気・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Blastcoat Jewel</name>
-	<name_jp>爆瓶珠</name_jp>
+	<name>Flight/Release Jewel 4</name>
+	<name_jp>飛燕・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Throttle Jewel</name>
-	<name_jp>全開珠</name_jp>
+	<name>Sheath/Release Jewel 4</name>
+	<name_jp>速納・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Challenger Jewel</name>
-	<name_jp>挑戦珠</name_jp>
+	<name>Fortitude/Release Jewel 4</name>
+	<name_jp>逆境・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Attack Jewel</name>
-	<name_jp>攻撃珠</name_jp>
+	<name>Slider/Release Jewel 4</name>
+	<name_jp>滑走・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Flawless Jewel</name>
-	<name_jp>無傷珠</name_jp>
+	<name>Sprinter/Release Jewel 4</name>
+	<name_jp>強走・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Magazine Jewel</name>
-	<name_jp>増弾珠</name_jp>
+	<name>Refresh/Release Jewel 4</name>
+	<name_jp>早気・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Mighty Jewel</name>
-	<name_jp>渾身珠</name_jp>
+	<name>Crisis/Release Jewel 4</name>
+	<name_jp>窮地・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Sprinter Jewel</name>
-	<name_jp>強走珠</name_jp>
+	<name>Jumping/Release Jewel 4</name>
+	<name_jp>跳躍・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Critical Jewel</name>
-	<name_jp>超心珠</name_jp>
+	<name>Ironwall/Release Jewel 4</name>
+	<name_jp>鉄壁・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Artillery Jewel</name>
-	<name_jp>砲術珠</name_jp>
+	<name>Guardian/Release Jewel 4</name>
+	<name_jp>守勢・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Fungiform Jewel</name>
-	<name_jp>茸好珠</name_jp>
+	<name>Friendship/Release Jewel 4</name>
+	<name_jp>友愛・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Release Jewel</name>
-	<name_jp>解放珠</name_jp>
+	<name>Gobbler/Release Jewel 4</name>
+	<name_jp>早食・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Spread Jewel</name>
-	<name_jp>散弾珠</name_jp>
+	<name>Satiated/Release Jewel 4</name>
+	<name_jp>節食・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Charger Jewel</name>
-	<name_jp>短縮珠</name_jp>
+	<name>Grinder/Release Jewel 4</name>
+	<name_jp>研磨・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Handicraft Jewel</name>
-	<name_jp>匠珠</name_jp>
+	<name>Bomber/Release Jewel 4</name>
+	<name_jp>爆師・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Mighty Bow Jewel</name>
-	<name_jp>強弓珠</name_jp>
+	<name>Fungiform/Release Jewel 4</name>
+	<name_jp>茸好・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Mind's Eye Jewel</name>
-	<name_jp>心眼珠</name_jp>
+	<name>Stonethrower/Release Jewel 4</name>
+	<name_jp>投石・解放珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Draw Jewel</name>
-	<name_jp>抜刀珠</name_jp>
+	<name>Brace/Physique Jewel 4</name>
+	<name_jp>耐衝・体術珠【４】</name_jp>
 </translation>
 <translation>
-	<name>Pierce Jewel</name>
-	<name_jp>貫通珠</name_jp>
+	<name>Wind Resist/Physique Jewel 4</name>
+	<name_jp>防風・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Footing/Physique Jewel 4</name>
+	<name_jp>耐震・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Draw/Physique Jewel 4</name>
+	<name_jp>抜刀・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Enhancer/Physique Jewel 4</name>
+	<name_jp>昂揚・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Charger/Physique Jewel 4</name>
+	<name_jp>短縮・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Destroyer/Physique Jewel 4</name>
+	<name_jp>重撃・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>KO/Physique Jewel 4</name>
+	<name_jp>ＫＯ・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Throttle/Physique Jewel 4</name>
+	<name_jp>全開・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Challenger/Physique Jewel 4</name>
+	<name_jp>挑戦・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flawless/Physique Jewel 4</name>
+	<name_jp>無傷・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Potential/Physique Jewel 4</name>
+	<name_jp>底力・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Mighty/Physique Jewel 4</name>
+	<name_jp>渾身・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Furor/Physique Jewel 4</name>
+	<name_jp>逆上・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Phoenix/Physique Jewel 4</name>
+	<name_jp>転福・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Earplug/Physique Jewel 4</name>
+	<name_jp>防音・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Critical/Physique Jewel 4</name>
+	<name_jp>超心・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Tenderizer/Physique Jewel 4</name>
+	<name_jp>痛撃・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Handicraft/Physique Jewel 4</name>
+	<name_jp>匠・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Release/Physique Jewel 4</name>
+	<name_jp>解放・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Resistor/Physique Jewel 4</name>
+	<name_jp>耐属・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Drain/Physique Jewel 4</name>
+	<name_jp>奪気・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flight/Physique Jewel 4</name>
+	<name_jp>飛燕・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Sheath/Physique Jewel 4</name>
+	<name_jp>速納・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Fortitude/Physique Jewel 4</name>
+	<name_jp>逆境・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Slider/Physique Jewel 4</name>
+	<name_jp>滑走・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Sprinter/Physique Jewel 4</name>
+	<name_jp>強走・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Refresh/Physique Jewel 4</name>
+	<name_jp>早気・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Crisis/Physique Jewel 4</name>
+	<name_jp>窮地・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Jumping/Physique Jewel 4</name>
+	<name_jp>跳躍・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Ironwall/Physique Jewel 4</name>
+	<name_jp>鉄壁・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Guardian/Physique Jewel 4</name>
+	<name_jp>守勢・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Friendship/Physique Jewel 4</name>
+	<name_jp>友愛・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Gobbler/Physique Jewel 4</name>
+	<name_jp>早食・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Satiated/Physique Jewel 4</name>
+	<name_jp>節食・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Grinder/Physique Jewel 4</name>
+	<name_jp>研磨・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Bomber/Physique Jewel 4</name>
+	<name_jp>爆師・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Fungiform/Physique Jewel 4</name>
+	<name_jp>茸好・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Stonethrower/Physique Jewel 4</name>
+	<name_jp>投石・体術珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Brace/Evasion Jewel 4</name>
+	<name_jp>耐衝・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Wind Resist/Evasion Jewel 4</name>
+	<name_jp>防風・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Footing/Evasion Jewel 4</name>
+	<name_jp>耐震・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Draw/Evasion Jewel 4</name>
+	<name_jp>抜刀・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Enhancer/Evasion Jewel 4</name>
+	<name_jp>昂揚・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Charger/Evasion Jewel 4</name>
+	<name_jp>短縮・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Destroyer/Evasion Jewel 4</name>
+	<name_jp>重撃・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>KO/Evasion Jewel 4</name>
+	<name_jp>ＫＯ・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Throttle/Evasion Jewel 4</name>
+	<name_jp>全開・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Challenger/Evasion Jewel 4</name>
+	<name_jp>挑戦・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flawless/Evasion Jewel 4</name>
+	<name_jp>無傷・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Potential/Evasion Jewel 4</name>
+	<name_jp>底力・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Mighty/Evasion Jewel 4</name>
+	<name_jp>渾身・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Furor/Evasion Jewel 4</name>
+	<name_jp>逆上・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Phoenix/Evasion Jewel 4</name>
+	<name_jp>転福・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Earplug/Evasion Jewel 4</name>
+	<name_jp>防音・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Critical/Evasion Jewel 4</name>
+	<name_jp>超心・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Tenderizer/Evasion Jewel 4</name>
+	<name_jp>痛撃・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Handicraft/Evasion Jewel 4</name>
+	<name_jp>匠・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Release/Evasion Jewel 4</name>
+	<name_jp>解放・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Resistor/Evasion Jewel 4</name>
+	<name_jp>耐属・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Drain/Evasion Jewel 4</name>
+	<name_jp>奪気・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flight/Evasion Jewel 4</name>
+	<name_jp>飛燕・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Sheath/Evasion Jewel 4</name>
+	<name_jp>速納・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Fortitude/Evasion Jewel 4</name>
+	<name_jp>逆境・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Slider/Evasion Jewel 4</name>
+	<name_jp>滑走・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Sprinter/Evasion Jewel 4</name>
+	<name_jp>強走・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Refresh/Evasion Jewel 4</name>
+	<name_jp>早気・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Crisis/Evasion Jewel 4</name>
+	<name_jp>窮地・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Jumping/Evasion Jewel 4</name>
+	<name_jp>跳躍・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Ironwall/Evasion Jewel 4</name>
+	<name_jp>鉄壁・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Guardian/Evasion Jewel 4</name>
+	<name_jp>守勢・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Friendship/Evasion Jewel 4</name>
+	<name_jp>友愛・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Gobbler/Evasion Jewel 4</name>
+	<name_jp>早食・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Satiated/Evasion Jewel 4</name>
+	<name_jp>節食・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Grinder/Evasion Jewel 4</name>
+	<name_jp>研磨・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Bomber/Evasion Jewel 4</name>
+	<name_jp>爆師・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Fungiform/Evasion Jewel 4</name>
+	<name_jp>茸好・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Stonethrower/Evasion Jewel 4</name>
+	<name_jp>投石・回避珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Brace/Maintenance Jewel 4</name>
+	<name_jp>耐衝・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Wind Resist/Maintenance Jewel 4</name>
+	<name_jp>防風・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Footing/Maintenance Jewel 4</name>
+	<name_jp>耐震・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Draw/Maintenance Jewel 4</name>
+	<name_jp>抜刀・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Enhancer/Maintenance Jewel 4</name>
+	<name_jp>昂揚・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Charger/Maintenance Jewel 4</name>
+	<name_jp>短縮・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Destroyer/Maintenance Jewel 4</name>
+	<name_jp>重撃・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>KO/Maintenance Jewel 4</name>
+	<name_jp>ＫＯ・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Throttle/Maintenance Jewel 4</name>
+	<name_jp>全開・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Challenger/Maintenance Jewel 4</name>
+	<name_jp>挑戦・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Flawless/Maintenance Jewel 4</name>
+	<name_jp>無傷・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Potential/Maintenance Jewel 4</name>
+	<name_jp>底力・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Mighty/Maintenance Jewel 4</name>
+	<name_jp>渾身・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Furor/Maintenance Jewel 4</name>
+	<name_jp>逆上・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Phoenix/Maintenance Jewel 4</name>
+	<name_jp>転福・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Earplug/Maintenance Jewel 4</name>
+	<name_jp>防音・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Critical/Maintenance Jewel 4</name>
+	<name_jp>超心・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Tenderizer/Maintenance Jewel 4</name>
+	<name_jp>痛撃・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Handicraft/Maintenance Jewel 4</name>
+	<name_jp>匠・整備珠【４】</name_jp>
+</translation>
+<translation>
+	<name>Release/Maintenance Jewel 4</name>
+	<name_jp>解放・整備珠【４】</name_jp>
 </translation>
 
 <!-- iceborne weapons -->
