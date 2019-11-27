@@ -23,8 +23,6 @@ MainWindow::MainWindow(QWidget *parent) :
 	progressBar(new QProgressBar(this)),
 	mainData(NULL),
 	tableModel(new ResultTableModel(this)),
-	buffListModel(new BuffListModel(this)),
-	buffGroupListModel(new BuffGroupListModel(this)),
 	dataLanguage(LANG_EN),
 	computer(new Computer(this)),
 	geneticComputer(new GeneticComputer(this))
@@ -59,30 +57,16 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(ui->menu_MonsterMode, SIGNAL(valueSelected(MonsterMode)),
 	        tableModel, SLOT(setMonsterMode(MonsterMode)));
 
-	buffListModel->setDataLanguage(dataLanguage);
 	connect(this, SIGNAL(dataLanguageChanged(Language)),
-	        buffListModel, SLOT(setDataLanguage(Language)));
-	ui->buffListView->setModel(buffListModel);
-
-	buffGroupListModel->setDataLanguage(dataLanguage);
+	        ui->activeBuffs, SLOT(setDataLanguage(Language)));
 	connect(this, SIGNAL(dataLanguageChanged(Language)),
-	        buffGroupListModel, SLOT(setDataLanguage(Language)));
-	ui->buffCb->setModel(buffGroupListModel);
-
-	connect(ui->buffListView->selectionModel(),
-	        SIGNAL(selectionChanged(const QItemSelection &, const QItemSelection &)),
-	        this, SLOT(updateBuffGroupFromListSelection()));
-	connect(ui->buffCb, SIGNAL(currentIndexChanged(int)),
-	        this, SLOT(buffGroupChanged(int)));
+	        ui->requiredBuffs, SLOT(setDataLanguage(Language)));
 
 	connect(ui->calculateDps, SIGNAL(clicked()), this, SLOT(calculate()));
 	connect(ui->action_Quit, SIGNAL(triggered()), this, SLOT(close()));
 	connect(ui->action_Copy, SIGNAL(triggered()), this, SLOT(copy()));
 	connect(ui->action_ShowParameters, SIGNAL(triggered()), this, SLOT(showParameters()));
 	connect(ui->action_ShowDetails, SIGNAL(triggered()), this, SLOT(showDetails()));
-
-	connect(ui->addBuff, SIGNAL(clicked()), this, SLOT(addBuff()));
-	connect(ui->removeBuff, SIGNAL(clicked()), this, SLOT(removeBuff()));
 
 	connect(QApplication::instance(), SIGNAL(focusChanged(QWidget*, QWidget*)),
 	        this, SLOT(updateCopyAction()));
@@ -119,8 +103,10 @@ void MainWindow::clearAll() {
 	ui->profileCb->clear();
 	ui->targetCb->clear();
 	tableModel->clear();
-	buffListModel->clear();
-	buffGroupListModel->clear();
+	ui->activeBuffs->buffListModel()->clear();
+	ui->activeBuffs->buffGroupListModel()->clear();
+	ui->requiredBuffs->buffListModel()->clear();
+	ui->requiredBuffs->buffGroupListModel()->clear();
 }
 
 void MainWindow::setMainData(const MainData *md) {
@@ -136,8 +122,9 @@ void MainWindow::setMainData(const MainData *md) {
 	}
 	foreach(BuffGroup *buff_group, mainData->buffGroups) {
 		if (buff_group->hasBuffs()) {
-			buffGroupListModel->addBuffGroup(buff_group);
+			ui->activeBuffs->buffGroupListModel()->addBuffGroup(buff_group);
 		}
+		ui->requiredBuffs->buffGroupListModel()->addBuffGroup(buff_group);
 	}
 
 	QStringList base_buff_names;
@@ -145,7 +132,7 @@ void MainWindow::setMainData(const MainData *md) {
 	foreach(QString base_buff_name, base_buff_names) {
 		const BuffGroup *bg =
 			mainData->buffGroupHash[base_buff_name];
-		if (bg) buffListModel->addBuff(bg, 1);
+		if (bg) ui->activeBuffs->buffListModel()->addBuff(bg, 1);
 	}
 }
 
@@ -166,17 +153,6 @@ const Target *MainWindow::getTarget() const {
 	} else {
 		return NULL;
 	}
-}
-
-const BuffGroup *MainWindow::getBuffGroup() const {
-	int idx = ui->buffCb->currentIndex();
-
-	if (idx >= 0) {
-		const BuffGroupListModel *model =
-			qobject_cast<const BuffGroupListModel *>(ui->buffCb->model());
-		if (model) return model->buffGroup(model->index(idx));
-	}
-	return NULL;
 }
 
 QVector<int> MainWindow::getDecorationSlots() const {
@@ -224,50 +200,6 @@ void MainWindow::updateCopyAction() {
 	}
 }
 
-void MainWindow::selectBuffGroupFromList(const QModelIndex &index) {
-	if (!mainData) return;
-	if (!index.isValid()) return;
-	const BuffGroup *group = NULL;
-	{
-		const BuffListModel *model =
-			qobject_cast<const BuffListModel *>(index.model());
-		if (model) group = model->buffGroup(index);
-	}
-	if (group) {
-		const BuffGroupListModel *model =
-			qobject_cast<const BuffGroupListModel *>(ui->buffCb->model());
-		if (model) {
-			QModelIndex idx = model->buffGroupIndex(group);
-			if (idx.isValid()) {
-				ui->buffCb->setCurrentIndex(idx.row());
-			}
-		}
-	}
-}
-
-void MainWindow::updateBuffGroupFromListSelection() {
-	QModelIndexList sel = ui->buffListView->selectionModel()->selectedIndexes();
-	if (sel.count() == 1) selectBuffGroupFromList(sel[0]);
-}
-
-void MainWindow::buffGroupChanged(int new_idx) {
-	const BuffGroup *group = NULL;
-	if (new_idx >= 0) {
-		const BuffGroupListModel *model =
-			qobject_cast<const BuffGroupListModel *>(ui->buffCb->model());
-		if (model) group = model->buffGroup(model->index(new_idx));
-	}
-	if (group) {
-		QModelIndex idx = buffListModel->buffGroupIndex(group);
-		if (idx.isValid()) {
-			ui->buffListView->selectionModel()->
-				select(idx, QItemSelectionModel::ClearAndSelect);
-		} else {
-			ui->buffListView->selectionModel()->clearSelection();
-		}
-	}
-}
-
 void MainWindow::calculate() {
 	if (mainData && getProfile() && getTarget()) {
 		if (ui->geneticMode->isChecked()) {
@@ -276,7 +208,7 @@ void MainWindow::calculate() {
 			params.target = getTarget();
 			params.weapons = mainData->weapons;
 			params.items = mainData->items;
-			params.buffLevels = buffListModel->getBuffLevels();
+			params.buffLevels = ui->activeBuffs->buffListModel()->getBuffLevels();
 			params.decorationSlots = getDecorationSlots();
 			params.usedSlots = getUsedSlots();
 			params.ignoreAugmentations = ui->ignoreAugmentations->isChecked();
@@ -290,7 +222,7 @@ void MainWindow::calculate() {
 			params.target = getTarget();
 			params.weapons = mainData->weapons;
 			params.items = mainData->items;
-			params.buffLevels = buffListModel->getBuffLevels();
+			params.buffLevels = ui->activeBuffs->buffListModel()->getBuffLevels();
 			params.decorationSlots = getDecorationSlots();
 			params.usedSlots = getUsedSlots();
 			params.ignoreAugmentations = ui->ignoreAugmentations->isChecked();
@@ -363,30 +295,6 @@ void MainWindow::showDetails() {
 		connect(this, SIGNAL(dataLanguageChanged(Language)),
 		        dd, SLOT(setDataLanguage(Language)));
 		dd->show();
-	}
-}
-
-void MainWindow::addBuff() {
-	const BuffGroup *bg = getBuffGroup();
-	if (bg) {
-		buffListModel->addBuff(bg, 1);
-		QModelIndex idx = buffListModel->buffGroupIndex(bg);
-		if (idx.isValid()) {
-			ui->buffListView->setCurrentIndex(idx);
-			ui->buffListView->scrollTo(idx);
-		}
-	}
-}
-
-void MainWindow::removeBuff() {
-	const BuffGroup *bg = getBuffGroup();
-	if (bg) {
-		buffListModel->removeBuff(bg, 1);
-		QModelIndex idx = buffListModel->buffGroupIndex(bg);
-		if (idx.isValid()) {
-			ui->buffListView->setCurrentIndex(idx);
-			ui->buffListView->scrollTo(idx);
-		}
 	}
 }
 

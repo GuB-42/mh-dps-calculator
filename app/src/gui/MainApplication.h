@@ -13,8 +13,8 @@ public:
 	MainApplication(int &argc, char *argv[]);
 	~MainApplication();
 
-	QTranslator *translator() { return m_translator; }
-	QTranslator *translatorQt() { return m_translatorQt; }
+	QTranslator *translator() const { return m_translator; }
+	QTranslator *translatorQt() const { return m_translatorQt; }
 private:
 	MainWindow *mainWindow;
 	MainData *mainData;

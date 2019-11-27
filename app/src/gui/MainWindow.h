@@ -31,7 +31,6 @@ public:
 	void setMainData(const MainData *md);
 	const Profile *getProfile() const;
 	const Target *getTarget() const;
-	const BuffGroup *getBuffGroup() const;
 
 	QVector<int> getDecorationSlots() const;
 	QVector<int> getUsedSlots() const;
@@ -44,17 +43,12 @@ public slots:
 	void copy();
 	void showParameters();
 	void showDetails();
-	void addBuff();
-	void removeBuff();
 
 signals:
 	void dataLanguageChanged(Language lang);
 
 private slots:
 	void updateCopyAction();
-	void selectBuffGroupFromList(const QModelIndex &index);
-	void updateBuffGroupFromListSelection();
-	void buffGroupChanged(int new_idx);
 	void updateTableMimeColumnOrder();
 
 protected:
@@ -67,8 +61,6 @@ private:
 	const MainData *mainData;
 
 	ResultTableModel *tableModel;
-	BuffListModel *buffListModel;
-	BuffGroupListModel *buffGroupListModel;
 	Language dataLanguage;
 
 	Computer *computer;

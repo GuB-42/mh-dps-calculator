@@ -27,190 +27,198 @@
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
-      <widget class="QWidget" name="layoutWidget">
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <layout class="QFormLayout" name="formLayout">
-          <property name="fieldGrowthPolicy">
-           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-          </property>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Weapon style</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="profileCb"/>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Target</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QComboBox" name="targetCb"/>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_3">
-            <property name="text">
-             <string>Level 3 slots</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_4">
-            <property name="text">
-             <string>Level 2 slots</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QSpinBox" name="level3Slots">
-            <property name="minimum">
-             <number>-99</number>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QSpinBox" name="level2Slots">
-            <property name="minimum">
-             <number>-99</number>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QSpinBox" name="level1Slots">
-            <property name="minimum">
-             <number>-99</number>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>Level 1 slots</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_7">
-            <property name="text">
-             <string>Level 4 slots</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QSpinBox" name="level4Slots">
-            <property name="minimum">
-             <number>-99</number>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QGroupBox" name="groupBox">
-          <property name="title">
-           <string>Skills</string>
-          </property>
-          <layout class="QVBoxLayout" name="verticalLayout_4">
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item>
-              <widget class="QComboBox" name="buffCb">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="addBuff">
-               <property name="text">
-                <string>+</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="removeBuff">
-               <property name="text">
-                <string>-</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="mainTab">
+        <attribute name="title">
+         <string>Main</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="fieldGrowthPolicy">
+            <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Weapon style</string>
+             </property>
+            </widget>
            </item>
-           <item>
-            <widget class="QListView" name="buffListView"/>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="profileCb"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Target</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="targetCb"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Level 3 slots</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Level 2 slots</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QSpinBox" name="level3Slots">
+             <property name="minimum">
+              <number>-99</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QSpinBox" name="level2Slots">
+             <property name="minimum">
+              <number>-99</number>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QSpinBox" name="level1Slots">
+             <property name="minimum">
+              <number>-99</number>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Level 1 slots</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Level 4 slots</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="level4Slots">
+             <property name="minimum">
+              <number>-99</number>
+             </property>
+            </widget>
            </item>
           </layout>
-         </widget>
-        </item>
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2"/>
-          </item>
-          <item>
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Expanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>0</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="geneticMode">
-            <property name="text">
-             <string>Genetic mode</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="ignoreAugmentations">
-            <property name="text">
-             <string>Ignore augmentations</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="ignoreWeaponSlots">
-            <property name="text">
-             <string>Ignore weapon slots</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="finalOnly">
-            <property name="text">
-             <string>Final weapons only</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="calculateDps">
-            <property name="text">
-             <string>Calculate DPS</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Skills</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="BuffChooser" name="activeBuffs" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="geneticMode">
+             <property name="text">
+              <string>Genetic mode</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ignoreAugmentations">
+             <property name="text">
+              <string>Ignore augmentations</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ignoreWeaponSlots">
+             <property name="text">
+              <string>Ignore weapon slots</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="finalOnly">
+             <property name="text">
+              <string>Final weapons only</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="calculateDps">
+             <property name="text">
+              <string>Calculate DPS</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="generatorTab">
+        <attribute name="title">
+         <string>Generator</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>Required skills</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="BuffChooser" name="requiredBuffs" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="inventoryTab">
+        <attribute name="title">
+         <string>Inventory</string>
+        </attribute>
+       </widget>
       </widget>
       <widget class="QTableView" name="tableView">
        <property name="sizePolicy">
@@ -235,6 +243,9 @@
      </widget>
     </item>
    </layout>
+   <zorder>splitter</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>groupBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -327,6 +338,12 @@
    <class>LanguageMenu</class>
    <extends>QMenu</extends>
    <header>src/gui/LanguageMenu.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BuffChooser</class>
+   <extends>QWidget</extends>
+   <header>src/gui/BuffChooser.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
