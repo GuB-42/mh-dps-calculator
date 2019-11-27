@@ -155,18 +155,7 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <item>
-             <widget class="QLabel" name="label_5">
-              <property name="text">
-               <string>Language</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="languageCb"/>
-            </item>
-           </layout>
+           <layout class="QHBoxLayout" name="horizontalLayout_2"/>
           </item>
           <item>
            <spacer name="verticalSpacer">
@@ -253,7 +242,7 @@
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -282,10 +271,17 @@
       <string>&amp;Base values</string>
      </property>
     </widget>
+    <widget class="LanguageMenu" name="menu_Language">
+     <property name="title">
+      <string>Language</string>
+     </property>
+    </widget>
     <addaction name="menu_Columns"/>
     <addaction name="menu_MonsterMode"/>
     <addaction name="action_ShowParameters"/>
     <addaction name="action_ShowDetails"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Language"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -326,6 +322,11 @@
    <class>MonsterModeMenu</class>
    <extends>QMenu</extends>
    <header>src/gui/MonsterModeMenu.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LanguageMenu</class>
+   <extends>QMenu</extends>
+   <header>src/gui/LanguageMenu.h</header>
   </customwidget>
  </customwidgets>
  <resources>

@@ -31,15 +31,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 	ui->setupUi(this);
 
+	ui->menu_Language->setLanguage(dataLanguage);
+	connect(ui->menu_Language, SIGNAL(languageChanged(Language)),
+	        this, SLOT(setDataLanguage(Language)));
+
 	progressBar->setSizePolicy(QSizePolicy::Expanding,
 	                           QSizePolicy::Preferred);
 	ui->statusbar->addWidget(progressBar);
-
-	for (int i = 0; i < LANG_COUNT; ++i) {
-		ui->languageCb->addItem(toString((Language)i));
-	}
-	connect(ui->languageCb, SIGNAL(currentIndexChanged(int)),
-	        this, SLOT(changeLanguage(int)));
 
 	tableModel->setDataLanguage(dataLanguage);
 	connect(this, SIGNAL(dataLanguageChanged(Language)),
@@ -199,39 +197,7 @@ QVector<int> MainWindow::getUsedSlots() const {
 	return ret;
 }
 
-static void switchTranslatorQt(QTranslator& translator, const QString& filename)
-{
-	qApp->removeTranslator(&translator);
-	if (translator.load(filename, QLibraryInfo::location(QLibraryInfo::TranslationsPath))) {
-		qApp->installTranslator(&translator);
-	}
-}
-static void switchTranslator(QTranslator& translator, const QString& filename)
-{
-	qApp->removeTranslator(&translator);
-	if (translator.load(filename)) {
-		qApp->installTranslator(&translator);
-	}
-}
-
 void MainWindow::setDataLanguage(Language lang) {
-	switch (lang) {
-	case LANG_FR:
-		switchTranslatorQt(translatorQt, "qt_fr.qm");
-		switchTranslator(translator, ":/translations/fr.qm");
-		break;
-	case LANG_EN:
-		switchTranslatorQt(translatorQt, "qt_en.qm");
-		switchTranslator(translator, ":/translations/en.qm");
-		break;
-	case LANG_JP:
-		switchTranslatorQt(translatorQt, "qt_ja.qm");
-		switchTranslator(translator, ":/translations/ja.qm");
-		break;
-	case LANG_COUNT:
-		break;
-	}
-
 	dataLanguage = lang;
 	for (int idx = 0; idx < ui->profileCb->count(); ++idx) {
 		if (mainData && idx < mainData->profiles.count()) {
@@ -255,12 +221,6 @@ void MainWindow::updateCopyAction() {
 	} else {
 		ui->action_Copy->setEnabled(false);
 		ui->action_ShowDetails->setEnabled(false);
-	}
-}
-
-void MainWindow::changeLanguage(int lang_idx) {
-	if (lang_idx >= 0 && lang_idx < LANG_COUNT) {
-		setDataLanguage((Language)lang_idx);
 	}
 }
 

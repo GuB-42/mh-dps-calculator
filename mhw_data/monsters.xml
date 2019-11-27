@@ -8,7 +8,7 @@
         <name_es>Anjanath</name_es>
         <name_fr>Anjanath</name_fr>
         <name_it>Anjanath</name_it>
-        <name_jp>アンジャナフ</name_jp>
+        <name_ja>アンジャナフ</name_ja>
         <name_ko>안쟈나프</name_ko>
         <name_pl>Anjanath</name_pl>
         <name_pt>Anjanath</name_pt>
@@ -17,7 +17,7 @@
         <hit_points>2990</hit_points>
         <part id="nose">
             <name>Nose</name>
-            <name_jp>鼻</name_jp>
+            <name_ja>鼻</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>63</impact>
@@ -32,7 +32,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -47,7 +47,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -62,7 +62,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>63</cut>
                 <impact>45</impact>
@@ -77,7 +77,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -92,7 +92,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>21</impact>
@@ -119,7 +119,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>21</impact>
@@ -146,7 +146,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -228,7 +228,7 @@
         <name_es>Rathalos Celeste</name_es>
         <name_fr>Rathalos azur</name_fr>
         <name_it>Rathalos azzurro</name_it>
-        <name_jp>リオレウス亜種</name_jp>
+        <name_ja>リオレウス亜種</name_ja>
         <name_ko>리오레우스 아종</name_ko>
         <name_pl>Lazurowy Rathalos</name_pl>
         <name_pt>Rathalos Lazúli</name_pt>
@@ -237,7 +237,7 @@
         <hit_points>3250</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -252,7 +252,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -267,7 +267,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -282,7 +282,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -297,7 +297,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -312,7 +312,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -327,7 +327,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -342,7 +342,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -357,7 +357,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -372,7 +372,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -442,7 +442,7 @@
         <name_es>Barroth</name_es>
         <name_fr>Barroth</name_fr>
         <name_it>Barroth</name_it>
-        <name_jp>ボルボロス</name_jp>
+        <name_ja>ボルボロス</name_ja>
         <name_ko>볼보로스</name_ko>
         <name_pl>Barroth</name_pl>
         <name_pt>Barroth</name_pt>
@@ -451,7 +451,7 @@
         <hit_points>2450</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>22</impact>
@@ -478,7 +478,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>46</impact>
@@ -505,7 +505,7 @@
         </part>
         <part id="forearms">
             <name>Forearms</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -532,7 +532,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>36</cut>
                 <impact>35</impact>
@@ -559,7 +559,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>36</cut>
                 <impact>35</impact>
@@ -586,7 +586,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -668,7 +668,7 @@
         <name_es>Bazelgeuse</name_es>
         <name_fr>Bazelgeuse</name_fr>
         <name_it>Bazelgeuse</name_it>
-        <name_jp>バゼルギウス</name_jp>
+        <name_ja>バゼルギウス</name_ja>
         <name_ko>바젤기우스</name_ko>
         <name_pl>Bazelgez</name_pl>
         <name_pt>Bazelgeuse</name_pt>
@@ -677,7 +677,7 @@
         <hit_points>4550</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>80</cut>
                 <impact>85</impact>
@@ -692,7 +692,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -707,7 +707,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -722,7 +722,7 @@
         </part>
         <part id="legs">
             <name>Legs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>36</cut>
                 <impact>34</impact>
@@ -737,7 +737,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -752,7 +752,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>75</cut>
                 <impact>70</impact>
@@ -822,7 +822,7 @@
         <name_es>Diablos Negra</name_es>
         <name_fr>Diablos noire</name_fr>
         <name_it>Diablos nera</name_it>
-        <name_jp>ディアブロス亜種</name_jp>
+        <name_ja>ディアブロス亜種</name_ja>
         <name_ko>디아블로스 아종</name_ko>
         <name_pl>Czarna Diabla</name_pl>
         <name_pt>Diablos Negra</name_pt>
@@ -831,7 +831,7 @@
         <hit_points>3450</hit_points>
         <part id="horn">
             <name>Horn</name>
-            <name_jp>角</name_jp>
+            <name_ja>角</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>29</impact>
@@ -846,7 +846,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>43</cut>
                 <impact>55</impact>
@@ -861,7 +861,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -876,7 +876,7 @@
         </part>
         <part id="stomach">
             <name>Stomach</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>58</cut>
                 <impact>63</impact>
@@ -891,7 +891,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>24</cut>
                 <impact>42</impact>
@@ -906,7 +906,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -921,7 +921,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -936,7 +936,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -951,7 +951,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -966,7 +966,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>24</impact>
@@ -981,7 +981,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>19</cut>
                 <impact>20</impact>
@@ -1051,7 +1051,7 @@
         <name_es>Diablos</name_es>
         <name_fr>Diablos</name_fr>
         <name_it>Diablos</name_it>
-        <name_jp>ディアブロス</name_jp>
+        <name_ja>ディアブロス</name_ja>
         <name_ko>디아블로스</name_ko>
         <name_pl>Diablos</name_pl>
         <name_pt>Diablos</name_pt>
@@ -1060,7 +1060,7 @@
         <hit_points>3250</hit_points>
         <part id="horn">
             <name>Horn</name>
-            <name_jp>角</name_jp>
+            <name_ja>角</name_ja>
             <hit_data>
                 <cut>19</cut>
                 <impact>38</impact>
@@ -1075,7 +1075,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>57</impact>
@@ -1090,7 +1090,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -1105,7 +1105,7 @@
         </part>
         <part id="stomach">
             <name>Stomach</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -1120,7 +1120,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>24</cut>
                 <impact>42</impact>
@@ -1135,7 +1135,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -1150,7 +1150,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -1165,7 +1165,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1180,7 +1180,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1195,7 +1195,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>24</impact>
@@ -1210,7 +1210,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>26</impact>
@@ -1280,7 +1280,7 @@
         <name_es>Dodogama</name_es>
         <name_fr>Dodogama</name_fr>
         <name_it>Dodogama</name_it>
-        <name_jp>ドドガマル</name_jp>
+        <name_ja>ドドガマル</name_ja>
         <name_ko>도도가마루</name_ko>
         <name_pl>Dodogama</name_pl>
         <name_pt>Dodogama</name_pt>
@@ -1289,7 +1289,7 @@
         <hit_points>3000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1328,7 +1328,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -1367,7 +1367,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1382,7 +1382,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1397,7 +1397,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1412,7 +1412,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1427,7 +1427,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>48</cut>
                 <impact>48</impact>
@@ -1497,7 +1497,7 @@
         <name_es>Gran Girros</name_es>
         <name_fr>Grand Girros</name_fr>
         <name_it>Gran Girros</name_it>
-        <name_jp>ドスギルオス</name_jp>
+        <name_ja>ドスギルオス</name_ja>
         <name_ko>도스기르오스</name_ko>
         <name_pl>Wielki Girros</name_pl>
         <name_pt>Grande Girros</name_pt>
@@ -1506,7 +1506,7 @@
         <hit_points>2400</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -1521,7 +1521,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>45</impact>
@@ -1536,7 +1536,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1551,7 +1551,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1566,7 +1566,7 @@
         </part>
         <part id="left_foreleg">
             <name>Left Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1581,7 +1581,7 @@
         </part>
         <part id="right_foreleg">
             <name>Right Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -1596,7 +1596,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1611,7 +1611,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1626,7 +1626,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -1696,7 +1696,7 @@
         <name_es>Gran Jagras</name_es>
         <name_fr>Grand Jagras</name_fr>
         <name_it>Gran Jagras</name_it>
-        <name_jp>ドスジャグラス</name_jp>
+        <name_ja>ドスジャグラス</name_ja>
         <name_ko>도스쟈그라스</name_ko>
         <name_pl>Wielki Jagras</name_pl>
         <name_pt>Grande Jagras</name_pt>
@@ -1705,7 +1705,7 @@
         <hit_points>2200</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -1720,7 +1720,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>55</impact>
@@ -1735,7 +1735,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -1750,7 +1750,7 @@
         </part>
         <part id="stomach">
             <name>Stomach</name>
-            <name_jp>腹膨張</name_jp>
+            <name_ja>腹膨張</name_ja>
             <hit_data>
                 <state>Inflated</state>
                 <cut>70</cut>
@@ -1766,7 +1766,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -1781,7 +1781,7 @@
         </part>
         <part id="left_foreleg">
             <name>Left Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -1796,7 +1796,7 @@
         </part>
         <part id="right_foreleg">
             <name>Right Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -1811,7 +1811,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -1826,7 +1826,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -1841,7 +1841,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -1911,7 +1911,7 @@
         <name_es>Jyuratodus</name_es>
         <name_fr>Jyuratodus</name_fr>
         <name_it>Jyuratodus</name_it>
-        <name_jp>ジュラトドス</name_jp>
+        <name_ja>ジュラトドス</name_ja>
         <name_ko>쥬라토도스</name_ko>
         <name_pl>Jyuratodus</name_pl>
         <name_pt>Jyuratodus</name_pt>
@@ -1920,7 +1920,7 @@
         <hit_points>2800</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>58</cut>
                 <impact>58</impact>
@@ -1947,7 +1947,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>43</cut>
                 <impact>43</impact>
@@ -1962,7 +1962,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -1989,7 +1989,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>24</cut>
                 <impact>24</impact>
@@ -2004,7 +2004,7 @@
         </part>
         <part id="fin">
             <name>Fin</name>
-            <name_jp>ヒレ</name_jp>
+            <name_ja>ヒレ</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -2019,7 +2019,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2046,7 +2046,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2073,7 +2073,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -2155,7 +2155,7 @@
         <name_es>Kirin</name_es>
         <name_fr>Kirin</name_fr>
         <name_it>Kirin</name_it>
-        <name_jp>キリン</name_jp>
+        <name_ja>キリン</name_ja>
         <name_ko>키린</name_ko>
         <name_pl>Kirin</name_pl>
         <name_pt>Kirin</name_pt>
@@ -2164,7 +2164,7 @@
         <hit_points>3350</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>55</impact>
@@ -2179,7 +2179,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>上半身</name_jp>
+            <name_ja>上半身</name_ja>
             <hit_data>
                 <cut>31</cut>
                 <impact>31</impact>
@@ -2206,7 +2206,7 @@
         </part>
         <part id="lower_body">
             <name>Lower Body</name>
-            <name_jp>下半身</name_jp>
+            <name_ja>下半身</name_ja>
             <hit_data>
                 <cut>29</cut>
                 <impact>29</impact>
@@ -2272,7 +2272,7 @@
         <name_es>Kulu-Ya-Ku</name_es>
         <name_fr>Kulu-Ya-Ku</name_fr>
         <name_it>Kulu-Ya-Ku</name_it>
-        <name_jp>クルルヤック</name_jp>
+        <name_ja>クルルヤック</name_ja>
         <name_ko>쿠루루야크</name_ko>
         <name_pl>Kulu-Ya-Ku</name_pl>
         <name_pt>Kulu-Ya-Ku</name_pt>
@@ -2281,7 +2281,7 @@
         <hit_points>2650</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>68</cut>
                 <impact>68</impact>
@@ -2296,7 +2296,7 @@
         </part>
         <part id="forearms">
             <name>Forearms</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>52</cut>
                 <impact>56</impact>
@@ -2311,7 +2311,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -2326,7 +2326,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -2410,7 +2410,7 @@
         <name_es>Kushala Daora</name_es>
         <name_fr>Kushala Daora</name_fr>
         <name_it>Kushala Daora</name_it>
-        <name_jp>クシャルダオラ</name_jp>
+        <name_ja>クシャルダオラ</name_ja>
         <name_ko>크샬다오라</name_ko>
         <name_pl>Kushala Daora</name_pl>
         <name_pt>Kushala Daora</name_pt>
@@ -2419,7 +2419,7 @@
         <hit_points>3980</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -2434,7 +2434,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>36</cut>
                 <impact>35</impact>
@@ -2449,7 +2449,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>50</impact>
@@ -2464,7 +2464,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>24</impact>
@@ -2479,7 +2479,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>50</impact>
@@ -2494,7 +2494,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2509,7 +2509,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>15</impact>
@@ -2524,7 +2524,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -2586,7 +2586,7 @@
         <name_es>Lavasioth</name_es>
         <name_fr>Lavasioth</name_fr>
         <name_it>Lavasioth</name_it>
-        <name_jp>ヴォルガノス</name_jp>
+        <name_ja>ヴォルガノス</name_ja>
         <name_ko>볼가노스</name_ko>
         <name_pl>Lavasioth</name_pl>
         <name_pt>Lavasioth</name_pt>
@@ -2595,7 +2595,7 @@
         <hit_points>4000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <state>Heated</state>
                 <cut>55</cut>
@@ -2635,7 +2635,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>15</cut>
                 <impact>15</impact>
@@ -2650,7 +2650,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2677,7 +2677,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <state>Heated</state>
                 <cut>50</cut>
@@ -2717,7 +2717,7 @@
         </part>
         <part id="fins">
             <name>Fins</name>
-            <name_jp>ヒレ</name_jp>
+            <name_ja>ヒレ</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -2732,7 +2732,7 @@
         </part>
         <part id="legs">
             <name>Legs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <state>Heated</state>
                 <cut>40</cut>
@@ -2772,7 +2772,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <state>Heated</state>
                 <cut>45</cut>
@@ -2867,7 +2867,7 @@
         <name_es>Legiana</name_es>
         <name_fr>Legiana</name_fr>
         <name_it>Legiana</name_it>
-        <name_jp>レイギエナ</name_jp>
+        <name_ja>レイギエナ</name_ja>
         <name_ko>레이기에나</name_ko>
         <name_pl>Legiana</name_pl>
         <name_pt>Legiana</name_pt>
@@ -2876,7 +2876,7 @@
         <hit_points>3000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>59</cut>
                 <impact>63</impact>
@@ -2891,7 +2891,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>40</impact>
@@ -2906,7 +2906,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>24</cut>
                 <impact>24</impact>
@@ -2921,7 +2921,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>24</cut>
                 <impact>24</impact>
@@ -2936,7 +2936,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -2951,7 +2951,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -2966,7 +2966,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2981,7 +2981,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -2996,7 +2996,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -3066,7 +3066,7 @@
         <name_es>Nergigante</name_es>
         <name_fr>Nergigante</name_fr>
         <name_it>Nergigante</name_it>
-        <name_jp>ネルギガンテ</name_jp>
+        <name_ja>ネルギガンテ</name_ja>
         <name_ko>네르기간테</name_ko>
         <name_pl>Nergigant</name_pl>
         <name_pt>Nergigante</name_pt>
@@ -3075,7 +3075,7 @@
         <hit_points>3520</hit_points>
         <part id="horn">
             <name>Horn</name>
-            <name_jp>角</name_jp>
+            <name_ja>角</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -3102,7 +3102,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -3153,7 +3153,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -3168,7 +3168,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -3183,7 +3183,7 @@
         </part>
         <part id="forearms">
             <name>Forearms</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3234,7 +3234,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -3249,7 +3249,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -3300,7 +3300,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>45</impact>
@@ -3315,7 +3315,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -3413,7 +3413,7 @@
         <name_es>Odogaron</name_es>
         <name_fr>Odogaron</name_fr>
         <name_it>Odogaron</name_it>
-        <name_jp>オドガロン</name_jp>
+        <name_ja>オドガロン</name_ja>
         <name_ko>오도가론</name_ko>
         <name_pl>Odogaron</name_pl>
         <name_pt>Odogaron</name_pt>
@@ -3422,7 +3422,7 @@
         <hit_points>3000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -3437,7 +3437,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>36</cut>
                 <impact>45</impact>
@@ -3452,7 +3452,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -3467,7 +3467,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -3482,7 +3482,7 @@
         </part>
         <part id="left_foreleg">
             <name>Left Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -3497,7 +3497,7 @@
         </part>
         <part id="right_foreleg">
             <name>Right Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -3512,7 +3512,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>36</impact>
@@ -3527,7 +3527,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>36</impact>
@@ -3542,7 +3542,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>36</impact>
@@ -3612,7 +3612,7 @@
         <name_es>Paolumu</name_es>
         <name_fr>Paolumu</name_fr>
         <name_it>Paolumu</name_it>
-        <name_jp>パオウルムー</name_jp>
+        <name_ja>パオウルムー</name_ja>
         <name_ko>파오우르무</name_ko>
         <name_pl>Paolumu</name_pl>
         <name_pt>Paolumu</name_pt>
@@ -3621,7 +3621,7 @@
         <hit_points>2950</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>55</impact>
@@ -3636,7 +3636,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -3651,7 +3651,7 @@
         </part>
         <part id="neck_pouch">
             <name>Neck Pouch</name>
-            <name_jp>顎袋</name_jp>
+            <name_ja>顎袋</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -3666,7 +3666,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>46</impact>
@@ -3681,7 +3681,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -3696,7 +3696,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -3711,7 +3711,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -3726,7 +3726,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -3741,7 +3741,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -3811,7 +3811,7 @@
         <name_es>Rathian Rosa</name_es>
         <name_fr>Rathian sakura</name_fr>
         <name_it>Rathian rosa</name_it>
-        <name_jp>リオレイア亜種</name_jp>
+        <name_ja>リオレイア亜種</name_ja>
         <name_ko>리오레이아 아종</name_ko>
         <name_pl>Różowa Rathiana</name_pl>
         <name_pt>Rathian Rosa</name_pt>
@@ -3820,7 +3820,7 @@
         <hit_points>3000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -3835,7 +3835,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -3850,7 +3850,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -3865,7 +3865,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -3880,7 +3880,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3895,7 +3895,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -3910,7 +3910,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>37</impact>
@@ -3925,7 +3925,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>37</impact>
@@ -3940,7 +3940,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -3955,7 +3955,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -4025,7 +4025,7 @@
         <name_es>Pukei-Pukei</name_es>
         <name_fr>Pukei-Pukei</name_fr>
         <name_it>Pukei-Pukei</name_it>
-        <name_jp>プケプケ</name_jp>
+        <name_ja>プケプケ</name_ja>
         <name_ko>푸케푸케</name_ko>
         <name_pl>Pukei-Pukei</name_pl>
         <name_pt>Pukei-Pukei</name_pt>
@@ -4034,7 +4034,7 @@
         <hit_points>2800</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>64</impact>
@@ -4049,7 +4049,7 @@
         </part>
         <part id="tongue">
             <name>Tongue</name>
-            <name_jp>舌</name_jp>
+            <name_ja>舌</name_ja>
             <hit_data>
                 <cut>76</cut>
                 <impact>72</impact>
@@ -4064,7 +4064,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -4079,7 +4079,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -4094,7 +4094,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -4109,7 +4109,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -4124,7 +4124,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>23</cut>
                 <impact>23</impact>
@@ -4139,7 +4139,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>23</cut>
                 <impact>23</impact>
@@ -4154,7 +4154,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -4224,7 +4224,7 @@
         <name_es>Radobaan</name_es>
         <name_fr>Radobaan</name_fr>
         <name_it>Radobaan</name_it>
-        <name_jp>ラドバルキン</name_jp>
+        <name_ja>ラドバルキン</name_ja>
         <name_ko>라도발킨</name_ko>
         <name_pl>Radobaan</name_pl>
         <name_pt>Radobaan</name_pt>
@@ -4233,7 +4233,7 @@
         <hit_points>3000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -4248,7 +4248,7 @@
         </part>
         <part id="head_bone">
             <name>Head Bone</name>
-            <name_jp>頭の骨</name_jp>
+            <name_ja>頭の骨</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>23</impact>
@@ -4277,7 +4277,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>50</impact>
@@ -4292,7 +4292,7 @@
         </part>
         <part id="back_bone">
             <name>Back Bone</name>
-            <name_jp>胴と脚の骨</name_jp>
+            <name_ja>胴と脚の骨</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -4307,7 +4307,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>45</impact>
@@ -4322,7 +4322,7 @@
         </part>
         <part id="left_hindleg_bone">
             <name>Left Hindleg Bone</name>
-            <name_jp>胴と脚の骨</name_jp>
+            <name_ja>胴と脚の骨</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -4337,7 +4337,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>45</impact>
@@ -4352,7 +4352,7 @@
         </part>
         <part id="right_hindleg_bone">
             <name>Right Hindleg Bone</name>
-            <name_jp>胴と脚の骨</name_jp>
+            <name_ja>胴と脚の骨</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -4367,7 +4367,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>30</impact>
@@ -4437,7 +4437,7 @@
         <name_es>Rathalos</name_es>
         <name_fr>Rathalos</name_fr>
         <name_it>Rathalos</name_it>
-        <name_jp>リオレウス</name_jp>
+        <name_ja>リオレウス</name_ja>
         <name_ko>리오레우스</name_ko>
         <name_pl>Rathalos</name_pl>
         <name_pt>Rathalos</name_pt>
@@ -4446,7 +4446,7 @@
         <hit_points>3250</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -4461,7 +4461,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>37</impact>
@@ -4476,7 +4476,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4491,7 +4491,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -4506,7 +4506,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>21</impact>
@@ -4521,7 +4521,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>21</impact>
@@ -4536,7 +4536,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -4551,7 +4551,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -4566,7 +4566,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -4636,7 +4636,7 @@
         <name_es>Rathian</name_es>
         <name_fr>Rathian</name_fr>
         <name_it>Rathian</name_it>
-        <name_jp>リオレイア</name_jp>
+        <name_ja>リオレイア</name_ja>
         <name_ko>리오레이아</name_ko>
         <name_pl>Rathiana</name_pl>
         <name_pt>Rathian</name_pt>
@@ -4645,7 +4645,7 @@
         <hit_points>3000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -4660,7 +4660,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>45</impact>
@@ -4675,7 +4675,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -4690,7 +4690,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -4705,7 +4705,7 @@
         </part>
         <part id="left_wing">
             <name>Left Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>21</impact>
@@ -4720,7 +4720,7 @@
         </part>
         <part id="right_wing">
             <name>Right Wing</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>21</impact>
@@ -4735,7 +4735,7 @@
         </part>
         <part id="left_leg">
             <name>Left Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>37</impact>
@@ -4750,7 +4750,7 @@
         </part>
         <part id="right_leg">
             <name>Right Leg</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>37</impact>
@@ -4765,7 +4765,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>37</impact>
@@ -4835,7 +4835,7 @@
         <name_es>Teostra</name_es>
         <name_fr>Teostra</name_fr>
         <name_it>Teostra</name_it>
-        <name_jp>テオ・テスカトル</name_jp>
+        <name_ja>テオ・テスカトル</name_ja>
         <name_ko>테오-테스카토르</name_ko>
         <name_pl>Teostra</name_pl>
         <name_pt>Teostra</name_pt>
@@ -4844,7 +4844,7 @@
         <hit_points>4300</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>60</impact>
@@ -4859,7 +4859,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>33</cut>
                 <impact>38</impact>
@@ -4874,7 +4874,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -4889,7 +4889,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -4904,7 +4904,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>38</cut>
                 <impact>38</impact>
@@ -4919,7 +4919,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>25</impact>
@@ -4934,7 +4934,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -4949,7 +4949,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>38</cut>
                 <impact>33</impact>
@@ -5011,7 +5011,7 @@
         <name_es>Tobi-Kadachi</name_es>
         <name_fr>Tobi-Kadachi</name_fr>
         <name_it>Tobi-Kadachi</name_it>
-        <name_jp>トビカガチ</name_jp>
+        <name_ja>トビカガチ</name_ja>
         <name_ko>토비카가치</name_ko>
         <name_pl>Tobi-Kadachi</name_pl>
         <name_pt>Tobi-Kadachi</name_pt>
@@ -5020,7 +5020,7 @@
         <hit_points>2900</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>48</cut>
                 <impact>48</impact>
@@ -5035,7 +5035,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>48</cut>
                 <impact>48</impact>
@@ -5050,7 +5050,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -5065,7 +5065,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -5080,7 +5080,7 @@
         </part>
         <part id="left_foreleg">
             <name>Left Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -5095,7 +5095,7 @@
         </part>
         <part id="right_foreleg">
             <name>Right Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -5110,7 +5110,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -5125,7 +5125,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -5140,7 +5140,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -5210,7 +5210,7 @@
         <name_es>Tzitzi-Ya-Ku</name_es>
         <name_fr>Tzitzi-Ya-Ku</name_fr>
         <name_it>Tzitzi-Ya-Ku</name_it>
-        <name_jp>ツィツィヤック</name_jp>
+        <name_ja>ツィツィヤック</name_ja>
         <name_ko>치치야크</name_ko>
         <name_pl>Tzitzi-Ya-Ku</name_pl>
         <name_pt>Tzitzi-Ya-Ku</name_pt>
@@ -5219,7 +5219,7 @@
         <hit_points>2650</hit_points>
         <part id="antennae">
             <name>Antennae</name>
-            <name_jp>触覚</name_jp>
+            <name_ja>触覚</name_ja>
             <hit_data>
                 <cut>68</cut>
                 <impact>59</impact>
@@ -5234,7 +5234,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>59</cut>
                 <impact>50</impact>
@@ -5249,7 +5249,7 @@
         </part>
         <part id="forearms">
             <name>Forearms</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -5264,7 +5264,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -5279,7 +5279,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -5349,7 +5349,7 @@
         <name_es>Uragaan</name_es>
         <name_fr>Uragaan</name_fr>
         <name_it>Uragaan</name_it>
-        <name_jp>ウラガンキン</name_jp>
+        <name_ja>ウラガンキン</name_ja>
         <name_ko>우라간킨</name_ko>
         <name_pl>Uragaan</name_pl>
         <name_pt>Uragaan</name_pt>
@@ -5358,7 +5358,7 @@
         <hit_points>4300</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -5373,7 +5373,7 @@
         </part>
         <part id="jaw">
             <name>Jaw</name>
-            <name_jp>顎</name_jp>
+            <name_ja>顎</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>19</impact>
@@ -5400,7 +5400,7 @@
         </part>
         <part id="upper_neck">
             <name>Upper Neck</name>
-            <name_jp>首上</name_jp>
+            <name_ja>首上</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>24</impact>
@@ -5415,7 +5415,7 @@
         </part>
         <part id="lower_neck">
             <name>Lower Neck</name>
-            <name_jp>首下</name_jp>
+            <name_ja>首下</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -5430,7 +5430,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -5445,7 +5445,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>24</impact>
@@ -5460,7 +5460,7 @@
         </part>
         <part id="forearms">
             <name>Forearms</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -5475,7 +5475,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>43</cut>
                 <impact>37</impact>
@@ -5518,7 +5518,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -5533,7 +5533,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>尻尾上</name_jp>
+            <name_ja>尻尾上</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -5548,7 +5548,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>尻尾下</name_jp>
+            <name_ja>尻尾下</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -5618,7 +5618,7 @@
         <name_es>Vaal Hazak</name_es>
         <name_fr>Vaal Hazak</name_fr>
         <name_it>Vaal Hazak</name_it>
-        <name_jp>ヴァルハザク</name_jp>
+        <name_ja>ヴァルハザク</name_ja>
         <name_ko>발하자크</name_ko>
         <name_pl>Vaal Hazak</name_pl>
         <name_pt>Vaal Hazak</name_pt>
@@ -5627,7 +5627,7 @@
         <hit_points>4700</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
@@ -5654,7 +5654,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -5669,7 +5669,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -5684,7 +5684,7 @@
         </part>
         <part id="stomach">
             <name>Stomach</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
@@ -5711,7 +5711,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -5738,7 +5738,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -5753,7 +5753,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -5780,7 +5780,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>24</cut>
                 <impact>23</impact>
@@ -5795,7 +5795,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>30</impact>
@@ -5810,7 +5810,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -5872,7 +5872,7 @@
         <name_es>Xeno'jiiva</name_es>
         <name_fr>Xeno'jiiva</name_fr>
         <name_it>Xeno'jiiva</name_it>
-        <name_jp>ゼノ・ジーヴァ</name_jp>
+        <name_ja>ゼノ・ジーヴァ</name_ja>
         <name_ko>제노-지바</name_ko>
         <name_pl>Xeno'jiiv</name_pl>
         <name_pt>Xeno'jiiva</name_pt>
@@ -5881,7 +5881,7 @@
         <hit_points>7500</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>70</cut>
                 <impact>70</impact>
@@ -5920,7 +5920,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -5947,7 +5947,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -5974,7 +5974,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -6001,7 +6001,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>50</impact>
@@ -6040,7 +6040,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -6067,7 +6067,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>50</impact>
@@ -6106,7 +6106,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -6133,7 +6133,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>70</cut>
                 <impact>70</impact>
@@ -6199,7 +6199,7 @@
         <name_es>Zorah Magdaros</name_es>
         <name_fr>Zorah Magdaros</name_fr>
         <name_it>Zorah Magdaros</name_it>
-        <name_jp>ゾラ・マグダラオス</name_jp>
+        <name_ja>ゾラ・マグダラオス</name_ja>
         <name_ko>조라-마그다라오스</name_ko>
         <name_pl>Zorah Magdaros</name_pl>
         <name_pt>Zorah Magdaros</name_pt>
@@ -6208,7 +6208,7 @@
         <hit_points>12000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -6223,7 +6223,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -6238,7 +6238,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <state>After Wounded</state>
                 <cut>80</cut>
@@ -6266,7 +6266,7 @@
         </part>
         <part id="left_foreleg">
             <name>Left Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -6281,7 +6281,7 @@
         </part>
         <part id="right_foreleg">
             <name>Right Foreleg</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -6296,7 +6296,7 @@
         </part>
         <part id="left_hindleg">
             <name>Left Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -6311,7 +6311,7 @@
         </part>
         <part id="right_hindleg">
             <name>Right Hindleg</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -6326,7 +6326,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -6341,7 +6341,7 @@
         </part>
         <part id="shell">
             <name>Shell</name>
-            <name_jp>外殻</name_jp>
+            <name_ja>外殻</name_ja>
             <hit_data>
                 <cut>1</cut>
                 <impact>1</impact>
@@ -6356,7 +6356,7 @@
         </part>
         <part id="exhaust_organ_crater">
             <name>Exhaust Organ (Crater)</name>
-            <name_jp>排熱器官</name_jp>
+            <name_ja>排熱器官</name_ja>
             <hit_data>
                 <cut>95</cut>
                 <impact>95</impact>
@@ -6371,7 +6371,7 @@
         </part>
         <part id="exhaust_organ_head">
             <name>Exhaust Organ (Head)</name>
-            <name_jp>排熱器官</name_jp>
+            <name_ja>排熱器官</name_ja>
             <hit_data>
                 <cut>95</cut>
                 <impact>95</impact>
@@ -6386,7 +6386,7 @@
         </part>
         <part id="exhaust_organ_central">
             <name>Exhaust Organ (Central)</name>
-            <name_jp>排熱器官</name_jp>
+            <name_ja>排熱器官</name_ja>
             <hit_data>
                 <cut>95</cut>
                 <impact>95</impact>
@@ -6401,7 +6401,7 @@
         </part>
         <part id="exhaust_organ_rear">
             <name>Exhaust Organ (Rear)</name>
-            <name_jp>排熱器官</name_jp>
+            <name_ja>排熱器官</name_ja>
             <hit_data>
                 <cut>95</cut>
                 <impact>95</impact>
@@ -6416,7 +6416,7 @@
         </part>
         <part id="left_weak_shell">
             <name>Left Weak Shell</name>
-            <name_jp>外殻（未発達）</name_jp>
+            <name_ja>外殻（未発達）</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -6431,7 +6431,7 @@
         </part>
         <part id="right_weak_shell">
             <name>Right Weak Shell</name>
-            <name_jp>外殻（未発達）</name_jp>
+            <name_ja>外殻（未発達）</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -6452,7 +6452,7 @@
         <name_es>Deviljho</name_es>
         <name_fr>Deviljho</name_fr>
         <name_it>Deviljho</name_it>
-        <name_jp>イビルジョー</name_jp>
+        <name_ja>イビルジョー</name_ja>
         <name_ko>이블조</name_ko>
         <name_pl>Deviljho</name_pl>
         <name_pt>Deviljho</name_pt>
@@ -6461,7 +6461,7 @@
         <hit_points>5000</hit_points>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>60</cut>
@@ -6490,7 +6490,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>25</cut>
@@ -6519,7 +6519,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>25</cut>
@@ -6548,7 +6548,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>37</cut>
@@ -6577,7 +6577,7 @@
         </part>
         <part id="hips">
             <name>Hips</name>
-            <name_jp>腰</name_jp>
+            <name_ja>腰</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>30</cut>
@@ -6606,7 +6606,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>30</cut>
@@ -6635,7 +6635,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>45</cut>
@@ -6664,7 +6664,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>40</cut>
@@ -6748,7 +6748,7 @@
         <name_es>Kulve Taroth</name_es>
         <name_fr>Kulve Taroth</name_fr>
         <name_it>Kulve Taroth</name_it>
-        <name_jp>マム・タロト</name_jp>
+        <name_ja>マム・タロト</name_ja>
         <name_ko>맘-타로트</name_ko>
         <name_pl>Kulve Taroth</name_pl>
         <name_pt>Kulve Taroth</name_pt>
@@ -6756,7 +6756,7 @@
         <name_zh>絢輝龍</name_zh>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>80</cut>
                 <impact>85</impact>
@@ -6795,7 +6795,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -6822,7 +6822,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
@@ -6849,7 +6849,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -6864,7 +6864,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -6879,7 +6879,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>45</impact>
@@ -6900,7 +6900,7 @@
         <name_es>Lunastra</name_es>
         <name_fr>Lunastra</name_fr>
         <name_it>Lunastra</name_it>
-        <name_jp>ナナ・テスカトリ</name_jp>
+        <name_ja>ナナ・テスカトリ</name_ja>
         <name_ko>나나-테스카토리</name_ko>
         <name_pl>Lunastra</name_pl>
         <name_pt>Lunastra</name_pt>
@@ -6908,7 +6908,7 @@
         <name_zh>炎妃龍</name_zh>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>60</impact>
@@ -6923,7 +6923,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>33</cut>
                 <impact>37</impact>
@@ -6938,7 +6938,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>17</cut>
                 <impact>17</impact>
@@ -6953,7 +6953,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>17</cut>
                 <impact>17</impact>
@@ -6968,7 +6968,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>35</impact>
@@ -6983,7 +6983,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -6998,7 +6998,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>25</impact>
@@ -7013,7 +7013,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>37</impact>
@@ -7070,10 +7070,10 @@
     </monster>
     <monster id="behemoth">
         <name>Behemoth</name>
-        <name_jp>ベヒーモス</name_jp>
+        <name_ja>ベヒーモス</name_ja>
         <part id="horn">
             <name>Horn</name>
-            <name_jp>角</name_jp>
+            <name_ja>角</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>30</impact>
@@ -7100,7 +7100,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>55</impact>
@@ -7115,7 +7115,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>上半身</name_jp>
+            <name_ja>上半身</name_ja>
             <hit_data>
                 <cut>15</cut>
                 <impact>22</impact>
@@ -7130,7 +7130,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>22</cut>
                 <impact>15</impact>
@@ -7145,7 +7145,7 @@
         </part>
         <part id="hips">
             <name>Hips</name>
-            <name_jp>腰</name_jp>
+            <name_ja>腰</name_ja>
             <hit_data>
                 <cut>22</cut>
                 <impact>15</impact>
@@ -7160,7 +7160,7 @@
         </part>
         <part id="upper_arms">
             <name>Upper Arms</name>
-            <name_jp>上腕</name_jp>
+            <name_ja>上腕</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
@@ -7175,7 +7175,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>40</impact>
@@ -7190,7 +7190,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>55</impact>
@@ -7205,7 +7205,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>25</impact>
@@ -7220,7 +7220,7 @@
         </part>
         <part id="butt">
             <name>Butt</name>
-            <name_jp>尻先</name_jp>
+            <name_ja>尻先</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>25</impact>
@@ -7236,10 +7236,10 @@
     </monster>
     <monster id="leshen">
         <name>Leshen</name>
-        <name_jp>レーシェン</name_jp>
+        <name_ja>レーシェン</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -7254,7 +7254,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7269,7 +7269,7 @@
         </part>
         <part id="arms">
             <name>Arms</name>
-            <name_jp>腕</name_jp>
+            <name_ja>腕</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7284,7 +7284,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7300,10 +7300,10 @@
     </monster>
     <monster id="ancient_leshen">
         <name>Ancient Leshen</name>
-        <name_jp>エンシェント・レーシェン</name_jp>
+        <name_ja>エンシェント・レーシェン</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -7318,7 +7318,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7333,7 +7333,7 @@
         </part>
         <part id="arms">
             <name>Arms</name>
-            <name_jp>腕</name_jp>
+            <name_ja>腕</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7348,7 +7348,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7364,10 +7364,10 @@
     </monster>
     <monster id="velkhana">
         <name>Velkhana</name>
-        <name_jp>イヴェルカーナ</name_jp>
+        <name_ja>イヴェルカーナ</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>55</impact>
@@ -7394,7 +7394,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>45</impact>
@@ -7421,7 +7421,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -7436,7 +7436,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -7463,7 +7463,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -7478,7 +7478,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -7493,7 +7493,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -7562,10 +7562,10 @@
     </monster>
     <monster id="tigrex">
         <name>Tigrex</name>
-        <name_jp>ティガレックス</name_jp>
+        <name_ja>ティガレックス</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -7580,7 +7580,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -7595,7 +7595,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -7610,7 +7610,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -7625,7 +7625,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -7640,7 +7640,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>尾根元</name_jp>
+            <name_ja>尾根元</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -7655,7 +7655,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -7720,10 +7720,10 @@
     </monster>
     <monster id="glavenus">
         <name>Glavenus</name>
-        <name_jp>ディノバルド</name_jp>
+        <name_ja>ディノバルド</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>55</impact>
@@ -7738,7 +7738,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>37</impact>
@@ -7753,7 +7753,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>喉</name_jp>
+            <name_ja>喉</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -7768,7 +7768,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>排熱殻</name_jp>
+            <name_ja>排熱殻</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -7783,7 +7783,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -7798,7 +7798,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -7813,7 +7813,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>35</impact>
@@ -7828,7 +7828,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>尾根元</name_jp>
+            <name_ja>尾根元</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>35</impact>
@@ -7843,7 +7843,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>35</impact>
@@ -7932,10 +7932,10 @@
     </monster>
     <monster id="nargacuga">
         <name>Nargacuga</name>
-        <name_jp>ナルガクルガ</name_jp>
+        <name_ja>ナルガクルガ</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -7950,7 +7950,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -7965,7 +7965,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -7980,7 +7980,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>21</impact>
@@ -8007,7 +8007,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -8022,7 +8022,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>40</impact>
@@ -8037,7 +8037,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -8102,10 +8102,10 @@
     </monster>
     <monster id="banbaro">
         <name>Banbaro</name>
-        <name_jp>バフバロ</name_jp>
+        <name_ja>バフバロ</name_ja>
         <part id="horn">
             <name>Horn</name>
-            <name_jp>角</name_jp>
+            <name_ja>角</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>45</impact>
@@ -8132,7 +8132,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -8147,7 +8147,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -8162,7 +8162,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -8177,7 +8177,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -8204,7 +8204,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -8269,10 +8269,10 @@
     </monster>
     <monster id="beotodus">
         <name>Beotodus</name>
-        <name_jp>ブラントドス</name_jp>
+        <name_ja>ブラントドス</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>50</impact>
@@ -8299,7 +8299,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -8326,7 +8326,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>70</cut>
                 <impact>65</impact>
@@ -8341,7 +8341,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -8418,10 +8418,10 @@
     </monster>
     <monster id="shrieking_legiana">
         <name>Shrieking Legiana</name>
-        <name_jp>凍て刺すレイギエナ</name_jp>
+        <name_ja>凍て刺すレイギエナ</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -8436,7 +8436,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>40</impact>
@@ -8451,7 +8451,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -8466,7 +8466,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -8481,7 +8481,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -8496,7 +8496,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -8511,7 +8511,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -8576,10 +8576,10 @@
     </monster>
     <monster id="barioth">
         <name>Barioth</name>
-        <name_jp>ベリオロス</name_jp>
+        <name_ja>ベリオロス</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>70</impact>
@@ -8594,7 +8594,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -8609,7 +8609,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>38</cut>
                 <impact>38</impact>
@@ -8624,7 +8624,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>棘</name_jp>
+            <name_ja>棘</name_ja>
             <hit_data>
                 <cut>21</cut>
                 <impact>45</impact>
@@ -8651,7 +8651,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>45</impact>
@@ -8666,7 +8666,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>45</impact>
@@ -8681,7 +8681,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>24</impact>
@@ -8696,7 +8696,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>23</impact>
@@ -8711,7 +8711,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>40</impact>
@@ -8776,10 +8776,10 @@
     </monster>
     <monster id="brachydios">
         <name>Brachydios</name>
-        <name_jp>ブラキディオス</name_jp>
+        <name_ja>ブラキディオス</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>60</impact>
@@ -8794,7 +8794,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -8809,7 +8809,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -8824,7 +8824,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -8839,7 +8839,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -8854,7 +8854,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -8869,7 +8869,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -8934,10 +8934,10 @@
     </monster>
     <monster id="fulgur_anjanath">
         <name>Fulgur Anjanath</name>
-        <name_jp>アンジャナフ亜種</name_jp>
+        <name_ja>アンジャナフ亜種</name_ja>
         <part id="nose">
             <name>Nose</name>
-            <name_jp>鼻</name_jp>
+            <name_ja>鼻</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>60</impact>
@@ -8964,7 +8964,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -8991,7 +8991,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9018,7 +9018,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>45</impact>
@@ -9045,7 +9045,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9072,7 +9072,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9111,7 +9111,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -9200,10 +9200,10 @@
     </monster>
     <monster id="ebony_odogaron">
         <name>Ebony Odogaron</name>
-        <name_jp>オドガロン亜種</name_jp>
+        <name_ja>オドガロン亜種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>43</cut>
                 <impact>45</impact>
@@ -9230,7 +9230,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -9245,7 +9245,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -9260,7 +9260,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -9275,7 +9275,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>34</cut>
                 <impact>38</impact>
@@ -9302,7 +9302,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9329,7 +9329,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>22</impact>
@@ -9356,7 +9356,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>30</impact>
@@ -9421,10 +9421,10 @@
     </monster>
     <monster id="acidic_glavenus">
         <name>Acidic Glavenus</name>
-        <name_jp>ディノバルド亜種</name_jp>
+        <name_ja>ディノバルド亜種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>43</cut>
                 <impact>55</impact>
@@ -9439,7 +9439,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>37</impact>
@@ -9454,7 +9454,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>喉</name_jp>
+            <name_ja>喉</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>45</impact>
@@ -9469,7 +9469,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>排熱殻</name_jp>
+            <name_ja>排熱殻</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -9484,7 +9484,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>23</cut>
                 <impact>23</impact>
@@ -9499,7 +9499,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>23</cut>
                 <impact>23</impact>
@@ -9514,7 +9514,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9529,7 +9529,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>尾根元</name_jp>
+            <name_ja>尾根元</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>32</impact>
@@ -9544,7 +9544,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>37</cut>
                 <impact>32</impact>
@@ -9633,10 +9633,10 @@
     </monster>
     <monster id="coral_pukei_pukei">
         <name>Coral Pukei-Pukei</name>
-        <name_jp>プケプケ亜種</name_jp>
+        <name_ja>プケプケ亜種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -9651,7 +9651,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9666,7 +9666,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>34</cut>
                 <impact>34</impact>
@@ -9681,7 +9681,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9696,7 +9696,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -9761,10 +9761,10 @@
     </monster>
     <monster id="viper_tobi_kadachi">
         <name>Viper Tobi-Kadachi</name>
-        <name_jp>トビカガチ亜種</name_jp>
+        <name_ja>トビカガチ亜種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -9779,7 +9779,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>60</impact>
@@ -9794,7 +9794,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -9809,7 +9809,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -9824,7 +9824,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>55</impact>
@@ -9839,7 +9839,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9854,7 +9854,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -9919,10 +9919,10 @@
     </monster>
     <monster id="nightshade_paolumu">
         <name>Nightshade Paolumu</name>
-        <name_jp>パオウルムー亜種</name_jp>
+        <name_ja>パオウルムー亜種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>60</impact>
@@ -9937,7 +9937,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>40</impact>
@@ -9952,7 +9952,7 @@
         </part>
         <part id="neck_pouch">
             <name>Neck Pouch</name>
-            <name_jp>顎袋</name_jp>
+            <name_ja>顎袋</name_ja>
             <hit_data>
                 <cut>70</cut>
                 <impact>75</impact>
@@ -9967,7 +9967,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>46</impact>
@@ -9982,7 +9982,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -9997,7 +9997,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10012,7 +10012,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -10077,10 +10077,10 @@
     </monster>
     <monster id="namielle">
         <name>Namielle</name>
-        <name_jp>ネロミェール</name_jp>
+        <name_ja>ネロミェール</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -10107,7 +10107,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -10134,7 +10134,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>60</impact>
@@ -10161,7 +10161,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10188,7 +10188,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -10215,7 +10215,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>55</impact>
@@ -10242,7 +10242,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -10269,7 +10269,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -10338,10 +10338,10 @@
     </monster>
     <monster id="yian_garuga">
         <name>Yian Garuga</name>
-        <name_jp>イャンガルルガ</name_jp>
+        <name_ja>イャンガルルガ</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -10356,7 +10356,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>34</cut>
                 <impact>40</impact>
@@ -10371,7 +10371,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>34</cut>
                 <impact>34</impact>
@@ -10386,7 +10386,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -10401,7 +10401,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -10428,7 +10428,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10443,7 +10443,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -10458,7 +10458,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>40</impact>
@@ -10523,10 +10523,10 @@
     </monster>
     <monster id="zinogre">
         <name>Zinogre</name>
-        <name_jp>ジンオウガ</name_jp>
+        <name_ja>ジンオウガ</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -10553,7 +10553,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -10580,7 +10580,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10607,7 +10607,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10634,7 +10634,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>40</impact>
@@ -10661,7 +10661,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10688,7 +10688,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -10765,10 +10765,10 @@
     </monster>
     <monster id="rajang">
         <name>Rajang</name>
-        <name_jp>ラージャン</name_jp>
+        <name_ja>ラージャン</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>60</cut>
@@ -10784,7 +10784,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴体</name_jp>
+            <name_ja>胴体</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>30</cut>
@@ -10800,7 +10800,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>43</cut>
@@ -10829,7 +10829,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>25</cut>
@@ -10845,7 +10845,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>35</cut>
@@ -10875,10 +10875,10 @@
     </monster>
     <monster id="ruiner_nergigante">
         <name>Ruiner Nergigante</name>
-        <name_jp>悉くを殲ぼすネルギガンテ</name_jp>
+        <name_ja>悉くを殲ぼすネルギガンテ</name_ja>
         <part id="horn">
             <name>Horn</name>
-            <name_jp>角</name_jp>
+            <name_ja>角</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>25</impact>
@@ -10905,7 +10905,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>60</impact>
@@ -10944,7 +10944,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>30</impact>
@@ -10983,7 +10983,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>35</impact>
@@ -10998,7 +10998,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -11013,7 +11013,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -11052,7 +11052,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -11067,7 +11067,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -11082,7 +11082,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>35</impact>
@@ -11163,10 +11163,10 @@
     </monster>
     <monster id="silver_rathalos">
         <name>Silver Rathalos</name>
-        <name_jp>リオレウス希少種</name_jp>
+        <name_ja>リオレウス希少種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -11193,7 +11193,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -11220,7 +11220,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -11235,7 +11235,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>22</cut>
                 <impact>22</impact>
@@ -11250,7 +11250,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>45</impact>
@@ -11265,7 +11265,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>38</cut>
                 <impact>38</impact>
@@ -11280,7 +11280,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -11295,7 +11295,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>50</impact>
@@ -11360,10 +11360,10 @@
     </monster>
     <monster id="gold_rathian">
         <name>Gold Rathian</name>
-        <name_jp>リオレイア希少種</name_jp>
+        <name_ja>リオレイア希少種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -11390,7 +11390,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -11417,7 +11417,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>30</impact>
@@ -11432,7 +11432,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背</name_jp>
+            <name_ja>背</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -11447,7 +11447,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>44</cut>
                 <impact>44</impact>
@@ -11462,7 +11462,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>38</cut>
                 <impact>35</impact>
@@ -11477,7 +11477,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>20</cut>
                 <impact>20</impact>
@@ -11492,7 +11492,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -11557,10 +11557,10 @@
     </monster>
     <monster id="savage_deviljho">
         <name>Savage Deviljho</name>
-        <name_jp>怒り喰らうイビルジョー</name_jp>
+        <name_ja>怒り喰らうイビルジョー</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>40</cut>
@@ -11589,7 +11589,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>22</cut>
@@ -11605,7 +11605,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>45</cut>
@@ -11634,7 +11634,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴</name_jp>
+            <name_ja>胴</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>20</cut>
@@ -11650,7 +11650,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>20</cut>
@@ -11666,7 +11666,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>33</cut>
@@ -11682,7 +11682,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <enraged_state>0</enraged_state>
                 <cut>36</cut>
@@ -11753,10 +11753,10 @@
     </monster>
     <monster id="shara_ishvalda">
         <name>Shara Ishvalda</name>
-        <name_jp>アン・イシュワルダ</name_jp>
+        <name_ja>アン・イシュワルダ</name_ja>
         <part id="">
             <name></name>
-            <name_jp>頭の顔部</name_jp>
+            <name_ja>頭の顔部</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>55</impact>
@@ -11771,7 +11771,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>頭の上部</name_jp>
+            <name_ja>頭の上部</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>60</impact>
@@ -11786,7 +11786,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>頭の下部</name_jp>
+            <name_ja>頭の下部</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>50</impact>
@@ -11801,7 +11801,7 @@
         </part>
         <part id="lower_body">
             <name>Lower Body</name>
-            <name_jp>下半身</name_jp>
+            <name_ja>下半身</name_ja>
             <hit_data>
                 <cut>10</cut>
                 <impact>10</impact>
@@ -11816,7 +11816,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>19</cut>
                 <impact>20</impact>
@@ -11855,7 +11855,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>19</cut>
                 <impact>20</impact>
@@ -11894,7 +11894,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>10</cut>
                 <impact>10</impact>
@@ -11921,7 +11921,7 @@
         </part>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>70</cut>
                 <impact>75</impact>
@@ -11936,7 +11936,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>胴体</name_jp>
+            <name_ja>胴体</name_ja>
             <hit_data>
                 <cut>48</cut>
                 <impact>44</impact>
@@ -11951,7 +11951,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -12000,10 +12000,10 @@
     </monster>
     <monster id="seething_bazelgeuse">
         <name>Seething Bazelgeuse</name>
-        <name_jp>紅蓮滾るバゼルギウス</name_jp>
+        <name_ja>紅蓮滾るバゼルギウス</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -12018,7 +12018,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -12033,7 +12033,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -12048,7 +12048,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>45</impact>
@@ -12063,7 +12063,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>35</impact>
@@ -12078,7 +12078,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>65</impact>
@@ -12143,10 +12143,10 @@
     </monster>
     <monster id="blackveil_vaal_hazak">
         <name>Blackveil Vaal Hazak</name>
-        <name_jp>死を纏うヴァルハザク</name_jp>
+        <name_ja>死を纏うヴァルハザク</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>65</cut>
                 <impact>75</impact>
@@ -12173,7 +12173,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -12188,7 +12188,7 @@
         </part>
         <part id="chest">
             <name>Chest</name>
-            <name_jp>胸</name_jp>
+            <name_ja>胸</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -12203,7 +12203,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>23</cut>
                 <impact>23</impact>
@@ -12218,7 +12218,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>40</impact>
@@ -12245,7 +12245,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>24</impact>
@@ -12272,7 +12272,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -12299,7 +12299,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>23</cut>
                 <impact>23</impact>
@@ -12314,7 +12314,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>24</impact>
@@ -12329,7 +12329,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>50</cut>
                 <impact>25</impact>
@@ -12344,7 +12344,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>胞子嚢</name_jp>
+            <name_ja>胞子嚢</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -12359,7 +12359,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>胞子嚢尻尾</name_jp>
+            <name_ja>胞子嚢尻尾</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>55</impact>
@@ -12416,10 +12416,10 @@
     </monster>
     <monster id="brute_tigrex">
         <name>Brute Tigrex</name>
-        <name_jp>ティガレックス亜種</name_jp>
+        <name_ja>ティガレックス亜種</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>55</cut>
                 <impact>60</impact>
@@ -12434,7 +12434,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -12449,7 +12449,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>25</cut>
                 <impact>25</impact>
@@ -12464,7 +12464,7 @@
         </part>
         <part id="forelegs">
             <name>Forelegs</name>
-            <name_jp>前脚</name_jp>
+            <name_ja>前脚</name_ja>
             <hit_data>
                 <cut>45</cut>
                 <impact>40</impact>
@@ -12479,7 +12479,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>後脚</name_jp>
+            <name_ja>後脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -12494,7 +12494,7 @@
         </part>
         <part id="">
             <name></name>
-            <name_jp>尾根元</name_jp>
+            <name_ja>尾根元</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -12509,7 +12509,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>35</cut>
                 <impact>30</impact>
@@ -12574,10 +12574,10 @@
     </monster>
     <monster id="scarred_yian_garuga">
         <name>Scarred Yian Garuga</name>
-        <name_jp>傷ついたイャンガルルガ</name_jp>
+        <name_ja>傷ついたイャンガルルガ</name_ja>
         <part id="head">
             <name>Head</name>
-            <name_jp>頭</name_jp>
+            <name_ja>頭</name_ja>
             <hit_data>
                 <cut>60</cut>
                 <impact>65</impact>
@@ -12592,7 +12592,7 @@
         </part>
         <part id="neck">
             <name>Neck</name>
-            <name_jp>首</name_jp>
+            <name_ja>首</name_ja>
             <hit_data>
                 <cut>34</cut>
                 <impact>40</impact>
@@ -12607,7 +12607,7 @@
         </part>
         <part id="body">
             <name>Body</name>
-            <name_jp>腹</name_jp>
+            <name_ja>腹</name_ja>
             <hit_data>
                 <cut>34</cut>
                 <impact>34</impact>
@@ -12622,7 +12622,7 @@
         </part>
         <part id="back">
             <name>Back</name>
-            <name_jp>背中</name_jp>
+            <name_ja>背中</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -12637,7 +12637,7 @@
         </part>
         <part id="wings">
             <name>Wings</name>
-            <name_jp>翼</name_jp>
+            <name_ja>翼</name_ja>
             <hit_data>
                 <cut>18</cut>
                 <impact>18</impact>
@@ -12664,7 +12664,7 @@
         </part>
         <part id="hindlegs">
             <name>Hindlegs</name>
-            <name_jp>脚</name_jp>
+            <name_ja>脚</name_ja>
             <hit_data>
                 <cut>30</cut>
                 <impact>30</impact>
@@ -12679,7 +12679,7 @@
         </part>
         <part id="tail">
             <name>Tail</name>
-            <name_jp>尻尾</name_jp>
+            <name_ja>尻尾</name_ja>
             <hit_data>
                 <cut>40</cut>
                 <impact>35</impact>
@@ -12694,7 +12694,7 @@
         </part>
         <part id="tail_tip">
             <name>Tail Tip</name>
-            <name_jp>尾先</name_jp>
+            <name_ja>尾先</name_ja>
             <hit_data>
                 <cut>46</cut>
                 <impact>40</impact>

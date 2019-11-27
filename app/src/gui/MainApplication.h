@@ -12,9 +12,14 @@ class MainApplication : public QApplication
 public:
 	MainApplication(int &argc, char *argv[]);
 	~MainApplication();
+
+	QTranslator *translator() { return m_translator; }
+	QTranslator *translatorQt() { return m_translatorQt; }
 private:
 	MainWindow *mainWindow;
 	MainData *mainData;
+	QTranslator *m_translator;
+	QTranslator *m_translatorQt;
 };
 
 #endif

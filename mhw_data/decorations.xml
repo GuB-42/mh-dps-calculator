@@ -8,7 +8,7 @@
         <name_es>Joya de vuelo 2</name_es>
         <name_fr>Joyau acrobatie [2]</name_fr>
         <name_it>Gioiello minaccia aerea 2</name_it>
-        <name_jp>飛燕珠【２】</name_jp>
+        <name_ja>飛燕珠【２】</name_ja>
         <name_ko>비연주【2】</name_ko>
         <name_pl>Klejnot lotu 2</name_pl>
         <name_pt>Joia de Voo 2</name_pt>
@@ -28,7 +28,7 @@
         <name_es>Joya antídoto 1</name_es>
         <name_fr>Joyau antidote [1]</name_fr>
         <name_it>Gioiello resistenza veleno 1</name_it>
-        <name_jp>耐毒珠【１】</name_jp>
+        <name_ja>耐毒珠【１】</name_ja>
         <name_ko>내독주【1】</name_ko>
         <name_pl>Klejnot antidotum 1</name_pl>
         <name_pt>Joia Antídoto 1</name_pt>
@@ -48,7 +48,7 @@
         <name_es>Joya antiparálisis 1</name_es>
         <name_fr>Joyau antiparalysie [1]</name_fr>
         <name_it>Gioiello resistenza paralisi 1</name_it>
-        <name_jp>耐麻珠【１】</name_jp>
+        <name_ja>耐麻珠【１】</name_ja>
         <name_ko>내비주【1】</name_ko>
         <name_pl>Klejnot antyparaliżu 1</name_pl>
         <name_pt>Joia Antiparalisia 1</name_pt>
@@ -68,7 +68,7 @@
         <name_es>Joya del sueño 1</name_es>
         <name_fr>Joyau insomnie [1]</name_fr>
         <name_it>Gioiello resistenza sonno 1</name_it>
-        <name_jp>耐眠珠【１】</name_jp>
+        <name_ja>耐眠珠【１】</name_ja>
         <name_ko>내면주【1】</name_ko>
         <name_pl>Klejnot rozbudzenia 1</name_pl>
         <name_pt>Joia Ânimo 1</name_pt>
@@ -88,7 +88,7 @@
         <name_es>Joya antinitro 1</name_es>
         <name_fr>Joyau blindage [1]</name_fr>
         <name_it>Gioiello resistenza scoppio 1</name_it>
-        <name_jp>耐爆珠【１】</name_jp>
+        <name_ja>耐爆珠【１】</name_ja>
         <name_ko>내폭주【1】</name_ko>
         <name_pl>Klejnot antywybuchowy 1</name_pl>
         <name_pt>Joia Antiexplosão 1</name_pt>
@@ -108,7 +108,7 @@
         <name_es>Joya de sutura 1</name_es>
         <name_fr>Joyau hémostatique [1]</name_fr>
         <name_it>Gioiello resistenza sanguinamento 1</name_it>
-        <name_jp>耐裂珠【１】</name_jp>
+        <name_ja>耐裂珠【１】</name_ja>
         <name_ko>내열주【1】</name_ko>
         <name_pl>Klejnot szwów 1</name_pl>
         <name_pt>Joia Sutura 1</name_pt>
@@ -128,7 +128,7 @@
         <name_es>Joya de bloqueo 1</name_es>
         <name_fr>Joyau de fer [1]</name_fr>
         <name_it>Gioiello pelle di ferro 1</name_it>
-        <name_jp>耐防珠【１】</name_jp>
+        <name_ja>耐防珠【１】</name_ja>
         <name_ko>내방주【1】</name_ko>
         <name_pl>Klejnot trwałej obrony 1</name_pl>
         <name_pt>Joia Defesa Ativa 1</name_pt>
@@ -148,7 +148,7 @@
         <name_es>Joya resist. al fuego 1</name_es>
         <name_fr>Joyau ignifuge [1]</name_fr>
         <name_it>Gioiello resistenza fuoco 1</name_it>
-        <name_jp>耐火珠【１】</name_jp>
+        <name_ja>耐火珠【１】</name_ja>
         <name_ko>내화주【1】</name_ko>
         <name_pl>Klejnot ognioodporności 1</name_pl>
         <name_pt>Joia Resistência a Fogo 1</name_pt>
@@ -168,7 +168,7 @@
         <name_es>Joya resist. al agua 1</name_es>
         <name_fr>Joyau étanche [1]</name_fr>
         <name_it>Gioiello resistenza acqua 1</name_it>
-        <name_jp>耐水珠【１】</name_jp>
+        <name_ja>耐水珠【１】</name_ja>
         <name_ko>내수주【1】</name_ko>
         <name_pl>Klejnot wodoodporności 1</name_pl>
         <name_pt>Joia Resistência a Água 1</name_pt>
@@ -188,7 +188,7 @@
         <name_es>Joya resist. al hielo 1</name_es>
         <name_fr>Joyau antigel [1]</name_fr>
         <name_it>Gioiello resistenza ghiaccio 1</name_it>
-        <name_jp>耐氷珠【１】</name_jp>
+        <name_ja>耐氷珠【１】</name_ja>
         <name_ko>내빙주【1】</name_ko>
         <name_pl>Klejnot lodoodporności 1</name_pl>
         <name_pt>Joia Resistência a Gelo 1</name_pt>
@@ -208,7 +208,7 @@
         <name_es>Joya resist. al rayo 1</name_es>
         <name_fr>Joyau isolant [1]</name_fr>
         <name_it>Gioiello resistenza tuono 1</name_it>
-        <name_jp>耐雷珠【１】</name_jp>
+        <name_ja>耐雷珠【１】</name_ja>
         <name_ko>내뢰주【1】</name_ko>
         <name_pl>Klejnot gromoodporności 1</name_pl>
         <name_pt>Joia Resistência a Raio 1</name_pt>
@@ -228,7 +228,7 @@
         <name_es>Joya resist. al draco 1</name_es>
         <name_fr>Joyau draconien [1]</name_fr>
         <name_it>Gioiello resistenza drago 1</name_it>
-        <name_jp>耐龍珠【１】</name_jp>
+        <name_ja>耐龍珠【１】</name_ja>
         <name_ko>내룡주【1】</name_ko>
         <name_pl>Klejnot smokoodporności 1</name_pl>
         <name_pt>Joia Resistência a Dragão 1</name_pt>
@@ -248,7 +248,7 @@
         <name_es>Joya de supervivencia 1</name_es>
         <name_fr>Joyau du courage [1]</name_fr>
         <name_it>Gioiello rafforzamento 1</name_it>
-        <name_jp>逆境珠【１】</name_jp>
+        <name_ja>逆境珠【１】</name_ja>
         <name_ko>역경주【1】</name_ko>
         <name_pl>Klejnot hartu 1</name_pl>
         <name_pt>Joia da Fortitude 1</name_pt>
@@ -268,7 +268,7 @@
         <name_es>Joya del músico 1</name_es>
         <name_fr>Joyau de musique [1]</name_fr>
         <name_it>Gioiello maestro del corno 1</name_it>
-        <name_jp>鼓笛珠【１】</name_jp>
+        <name_ja>鼓笛珠【１】</name_ja>
         <name_ko>고적주【1】</name_ko>
         <name_pl>Klejnot dźwięku 1</name_pl>
         <name_pt>Joia Sonora 1</name_pt>
@@ -288,7 +288,7 @@
         <name_es>Joya tiro pesado 1</name_es>
         <name_fr>Joyau artillerie [1]</name_fr>
         <name_it>Gioiello artiglieria pesante 1</name_it>
-        <name_jp>砲手珠【１】</name_jp>
+        <name_ja>砲手珠【１】</name_ja>
         <name_ko>포수주【1】</name_ko>
         <name_pl>Klejnot ciężkiej artylerii 1</name_pl>
         <name_pt>Joia Artilharia Pesada 1</name_pt>
@@ -308,7 +308,7 @@
         <name_es>Joya antigula 1</name_es>
         <name_fr>Joyau du spartiate [1]</name_fr>
         <name_it>Gioiello resistenza fame 1</name_it>
-        <name_jp>無食珠【１】</name_jp>
+        <name_ja>無食珠【１】</name_ja>
         <name_ko>공복주【1】</name_ko>
         <name_pl>Klejnot niegłodnego 1</name_pl>
         <name_pt>Joia da Saciação 1</name_pt>
@@ -328,7 +328,7 @@
         <name_es>Joya saciante 1</name_es>
         <name_fr>Joyau du parasite [1]</name_fr>
         <name_it>Gioiello pasto gratuito 1</name_it>
-        <name_jp>節食珠【１】</name_jp>
+        <name_ja>節食珠【１】</name_ja>
         <name_ko>절식주【1】</name_ko>
         <name_pl>Klejnot nasycenia 1</name_pl>
         <name_pt>Joia da Saciedade 1</name_pt>
@@ -348,7 +348,7 @@
         <name_es>Joya de protección 1</name_es>
         <name_fr>Joyau de bénédiction [1]</name_fr>
         <name_it>Gioiello angelo custode 1</name_it>
-        <name_jp>加護珠【１】</name_jp>
+        <name_ja>加護珠【１】</name_ja>
         <name_ko>가호주【1】</name_ko>
         <name_pl>Klejnot ochrony 1</name_pl>
         <name_pt>Joia da Proteção 1</name_pt>
@@ -368,7 +368,7 @@
         <name_es>Joya miaunstruo 1</name_es>
         <name_fr>Joyau Palico [1]</name_fr>
         <name_it>Gioiello gregario 1</name_it>
-        <name_jp>采配珠【１】</name_jp>
+        <name_ja>采配珠【１】</name_ja>
         <name_ko>지시주【1】</name_ko>
         <name_pl>Klejnot miaustrza 1</name_pl>
         <name_pt>Joia de Miaustre 1</name_pt>
@@ -388,7 +388,7 @@
         <name_es>Joya botánica 1</name_es>
         <name_fr>Joyau du botaniste [1]</name_fr>
         <name_it>Gioiello botanico 1</name_it>
-        <name_jp>植学珠【１】</name_jp>
+        <name_ja>植学珠【１】</name_ja>
         <name_ko>식학주【1】</name_ko>
         <name_pl>Klejnot botaniki 1</name_pl>
         <name_pt>Joia Botânica 1</name_pt>
@@ -408,7 +408,7 @@
         <name_es>Joya geológica 1</name_es>
         <name_fr>Joyau géologie [1]</name_fr>
         <name_it>Gioiello geologo 1</name_it>
-        <name_jp>地学珠【１】</name_jp>
+        <name_ja>地学珠【１】</name_ja>
         <name_ko>지학주【1】</name_ko>
         <name_pl>Klejnot geologii 1</name_pl>
         <name_pt>Joia Geológica 1</name_pt>
@@ -428,7 +428,7 @@
         <name_es>Joya de puntillas 1</name_es>
         <name_fr>Joyau de furtivité [1]</name_fr>
         <name_it>Gioiello furtivo 1</name_it>
-        <name_jp>潜伏珠【１】</name_jp>
+        <name_ja>潜伏珠【１】</name_ja>
         <name_ko>잠복주【1】</name_ko>
         <name_pl>Klejnot skradania 1</name_pl>
         <name_pt>Joia Ponta dos Pés 1</name_pt>
@@ -443,7 +443,7 @@
     <item id="survival_jewel_1">
         <type>decoration</type>
         <name>Survival Jewel 1</name>
-        <name_jp>環境珠【１】</name_jp>
+        <name_ja>環境珠【１】</name_ja>
         <decoration_level>1</decoration_level>
         <buff_refs>
             <buff_ref id="sporepuff_expert"/>
@@ -457,7 +457,7 @@
         <name_es>Joya lodazal 1</name_es>
         <name_fr>Joyau d'Atlantis [1]</name_fr>
         <name_it>Gioiello esperto acquatico 1</name_it>
-        <name_jp>沼渡珠【１】</name_jp>
+        <name_ja>沼渡珠【１】</name_ja>
         <name_ko>소도주【1】</name_ko>
         <name_pl>Klejnot bagnołaza 1</name_pl>
         <name_pt>Joia de Lodo 1</name_pt>
@@ -477,7 +477,7 @@
         <name_es>Joya espécimen 1</name_es>
         <name_fr>Joyau insectoïde [1]</name_fr>
         <name_it>Gioiello entomologo 1</name_it>
-        <name_jp>標本珠【１】</name_jp>
+        <name_ja>標本珠【１】</name_ja>
         <name_ko>표본주【1】</name_ko>
         <name_pl>Klejnot okazu 1</name_pl>
         <name_pt>Joia de Espécime 1</name_pt>
@@ -497,7 +497,7 @@
         <name_es>Joya olfativa 1</name_es>
         <name_fr>Joyau de prémonition [1]</name_fr>
         <name_it>Gioiello segugio 1</name_it>
-        <name_jp>嗅覚珠【１】</name_jp>
+        <name_ja>嗅覚珠【１】</name_ja>
         <name_ko>후각주【1】</name_ko>
         <name_pl>Klejnot zapachu 1</name_pl>
         <name_pt>Joia de Aroma 1</name_pt>
@@ -517,7 +517,7 @@
         <name_es>Joya intimidante 1</name_es>
         <name_fr>Joyau intimidation [1]</name_fr>
         <name_it>Gioiello intimidazione 1</name_it>
-        <name_jp>威嚇珠【１】</name_jp>
+        <name_ja>威嚇珠【１】</name_ja>
         <name_ko>위하주【1】</name_ko>
         <name_pl>Klejnot zastraszacza 1</name_pl>
         <name_pt>Joia Intimidante 1</name_pt>
@@ -537,7 +537,7 @@
         <name_es>Joya de crisis 1</name_es>
         <name_fr>Joyau sauvage [1]</name_fr>
         <name_it>Gioiello rianimazione 1</name_it>
-        <name_jp>窮地珠【１】</name_jp>
+        <name_ja>窮地珠【１】</name_ja>
         <name_ko>궁지주【1】</name_ko>
         <name_pl>Klejnot kryzysu 1</name_pl>
         <name_pt>Joia de Crise 1</name_pt>
@@ -557,7 +557,7 @@
         <name_es>Joya reparadora 1</name_es>
         <name_fr>Joyau de survie [1]</name_fr>
         <name_it>Gioiello manutenzione 1</name_it>
-        <name_jp>整備珠【１】</name_jp>
+        <name_ja>整備珠【１】</name_ja>
         <name_ko>정비주【1】</name_ko>
         <name_pl>Klejnot konserwacji 1</name_pl>
         <name_pt>Joia de Manutenção 1</name_pt>
@@ -576,7 +576,7 @@
         <name_es>Joya de miasma 1</name_es>
         <name_fr>Joyau de pureté [1]</name_fr>
         <name_it>Gioiello resistenza effluvio 1</name_it>
-        <name_jp>耐瘴珠【１】</name_jp>
+        <name_ja>耐瘴珠【１】</name_ja>
         <name_ko>내장주【1】</name_ko>
         <name_pl>Klejnot miazmatów 1</name_pl>
         <name_pt>Joia de Miasma 1</name_pt>
@@ -596,7 +596,7 @@
         <name_es>Joya de tapones 3</name_es>
         <name_fr>Joyau insonorisation [3]</name_fr>
         <name_it>Gioiello udito 3</name_it>
-        <name_jp>防音珠【３】</name_jp>
+        <name_ja>防音珠【３】</name_ja>
         <name_ko>방음주【3】</name_ko>
         <name_pl>Klejnot zatyczek 3</name_pl>
         <name_pt>Joia Tampão 3</name_pt>
@@ -616,7 +616,7 @@
         <name_es>Joya ponzoñosa 3</name_es>
         <name_fr>Joyau poison [3]</name_fr>
         <name_it>Gioiello applica veleno 3</name_it>
-        <name_jp>毒瓶珠【３】</name_jp>
+        <name_ja>毒瓶珠【３】</name_ja>
         <name_ko>독병주【3】</name_ko>
         <name_pl>Klejnot trującej powłoki 3</name_pl>
         <name_pt>Joia Camada de Veneno 3</name_pt>
@@ -636,7 +636,7 @@
         <name_es>Joya tenaz 3</name_es>
         <name_fr>Joyau inflexible [3]</name_fr>
         <name_it>Gioiello antisussulto 3</name_it>
-        <name_jp>耐衝珠【３】</name_jp>
+        <name_ja>耐衝珠【３】</name_ja>
         <name_ko>내충주【3】</name_ko>
         <name_pl>Klejnot gotowości 3</name_pl>
         <name_pt>Joia do Preparo 3</name_pt>
@@ -656,7 +656,7 @@
         <name_es>Joya antiviento 2</name_es>
         <name_fr>Joyau anti-vent [2]</name_fr>
         <name_it>Gioiello paravento 2</name_it>
-        <name_jp>防風珠【２】</name_jp>
+        <name_ja>防風珠【２】</name_ja>
         <name_ko>방풍주【2】</name_ko>
         <name_pl>Klejnot wiatroodporności 2</name_pl>
         <name_pt>Joia Resistência a Vento 2</name_pt>
@@ -676,7 +676,7 @@
         <name_es>Joya de firmeza 2</name_es>
         <name_fr>Joyau anti-séisme [2]</name_fr>
         <name_it>Gioiello antisismico 2</name_it>
-        <name_jp>耐震珠【２】</name_jp>
+        <name_ja>耐震珠【２】</name_ja>
         <name_ko>내진주【2】</name_ko>
         <name_pl>Klejnot równowagi 2</name_pl>
         <name_pt>Joia Equilíbrio 2</name_pt>
@@ -696,7 +696,7 @@
         <name_es>Joya ablandadora 2</name_es>
         <name_fr>Joyau faiblesse [2]</name_fr>
         <name_it>Gioiello punto debole 2</name_it>
-        <name_jp>痛撃珠【２】</name_jp>
+        <name_ja>痛撃珠【２】</name_ja>
         <name_ko>통격주【2】</name_ko>
         <name_pl>Klejnot zmiękczający 2</name_pl>
         <name_pt>Joia Atenuadora 2</name_pt>
@@ -716,7 +716,7 @@
         <name_es>Joya de destrucción 2</name_es>
         <name_fr>Joyau destruction [2]</name_fr>
         <name_it>Gioiello spaccamostri 2</name_it>
-        <name_jp>重撃珠【２】</name_jp>
+        <name_ja>重撃珠【２】</name_ja>
         <name_ko>중격주【2】</name_ko>
         <name_pl>Klejnot niszczyciela 2</name_pl>
         <name_pt>Joia Destruidora 2</name_pt>
@@ -736,7 +736,7 @@
         <name_es>Joya de boxeo 2</name_es>
         <name_fr>Joyau cogneur [2]</name_fr>
         <name_it>Gioiello battitore 2</name_it>
-        <name_jp>ＫＯ珠【２】</name_jp>
+        <name_ja>ＫＯ珠【２】</name_ja>
         <name_ko>KO주【2】</name_ko>
         <name_pl>Klejnot nokautu 2</name_pl>
         <name_pt>Joia de Nocaute 2</name_pt>
@@ -756,7 +756,7 @@
         <name_es>Joya del ileso 2</name_es>
         <name_fr>Joyau parfait [2]</name_fr>
         <name_it>Gioiello forma perfetta 2</name_it>
-        <name_jp>無傷珠【２】</name_jp>
+        <name_ja>無傷珠【２】</name_ja>
         <name_ko>무결주【2】</name_ko>
         <name_pl>Klejnot perfekcji 2</name_pl>
         <name_pt>Joia da Perfeição 2</name_pt>
@@ -776,7 +776,7 @@
         <name_es>Joya de salud 2</name_es>
         <name_fr>Joyau de l'athlète [2]</name_fr>
         <name_it>Gioiello atleta 2</name_it>
-        <name_jp>体術珠【２】</name_jp>
+        <name_ja>体術珠【２】</name_ja>
         <name_ko>체술주【2】</name_ko>
         <name_pl>Klejnot sylwetki 2</name_pl>
         <name_pt>Joia do Biotipo 2</name_pt>
@@ -796,7 +796,7 @@
         <name_es>Joya de evasión 2</name_es>
         <name_fr>Joyau d'invulnérabilité [2]</name_fr>
         <name_it>Gioiello schivata 2</name_it>
-        <name_jp>回避珠【２】</name_jp>
+        <name_ja>回避珠【２】</name_ja>
         <name_ko>회피주【2】</name_ko>
         <name_pl>Klejnot uniku 2</name_pl>
         <name_pt>Joia da Evasão 2</name_pt>
@@ -816,7 +816,7 @@
         <name_es>Joya de salto 2</name_es>
         <name_fr>Joyau de l'esquive [2]</name_fr>
         <name_it>Gioiello schivata estesa 2</name_it>
-        <name_jp>跳躍珠【２】</name_jp>
+        <name_ja>跳躍珠【２】</name_ja>
         <name_ko>도약주【2】</name_ko>
         <name_pl>Klejnot skoków 2</name_pl>
         <name_pt>Joia de Salto 2</name_pt>
@@ -836,7 +836,7 @@
         <name_es>Joya deslizante 2</name_es>
         <name_fr>Joyau du glisseur [2]</name_fr>
         <name_it>Gioiello affinità scivolata 2</name_it>
-        <name_jp>滑走珠【２】</name_jp>
+        <name_ja>滑走珠【２】</name_ja>
         <name_ko>활주주【2】</name_ko>
         <name_pl>Klejnot ślizgacza 2</name_pl>
         <name_pt>Joia Deslizante 2</name_pt>
@@ -856,7 +856,7 @@
         <name_es>Joya sin elemento 2</name_es>
         <name_fr>Joyau d'acier [2]</name_fr>
         <name_it>Gioiello non elementale 2</name_it>
-        <name_jp>無撃珠【２】</name_jp>
+        <name_ja>無撃珠【２】</name_ja>
         <name_ko>무격주【2】</name_ko>
         <name_pl>Bezżywiołowy klejnot 2</name_pl>
         <name_pt>Joia Sem Elemento 2</name_pt>
@@ -876,7 +876,7 @@
         <name_es>Joya de voluntad 1</name_es>
         <name_fr>Joyau volonté [1]</name_fr>
         <name_it>Gioiello resistenza stordimento 1</name_it>
-        <name_jp>耐絶珠【１】</name_jp>
+        <name_ja>耐絶珠【１】</name_ja>
         <name_ko>내절주【1】</name_ko>
         <name_pl>Klejnot niezłomności 1</name_pl>
         <name_pt>Joia Resoluto 1</name_pt>
@@ -896,7 +896,7 @@
         <name_es>Joya de defensa 1</name_es>
         <name_fr>Joyau défense [1]</name_fr>
         <name_it>Gioiello difesa 1</name_it>
-        <name_jp>防御珠【１】</name_jp>
+        <name_ja>防御珠【１】</name_ja>
         <name_ko>방어주【1】</name_ko>
         <name_pl>Klejnot obrony 1</name_pl>
         <name_pt>Joia Defesa 1</name_pt>
@@ -916,7 +916,7 @@
         <name_es>Joya de fuerza 1</name_es>
         <name_fr>Joyau vitalité [1]</name_fr>
         <name_it>Gioiello salute 1</name_it>
-        <name_jp>体力珠【１】</name_jp>
+        <name_ja>体力珠【１】</name_ja>
         <name_ko>체력주【1】</name_ko>
         <name_pl>Klejnot żywotności 1</name_pl>
         <name_pt>Joia Vitalidade 1</name_pt>
@@ -936,7 +936,7 @@
         <name_es>Joya de recuperación 1</name_es>
         <name_fr>Joyau facteur X [1]</name_fr>
         <name_it>Gioiello guarigione 1</name_it>
-        <name_jp>早復珠【１】</name_jp>
+        <name_ja>早復珠【１】</name_ja>
         <name_ko>조복주【1】</name_ko>
         <name_pl>Klejnot regeneracji 1</name_pl>
         <name_pt>Joia Regeneração 1</name_pt>
@@ -956,7 +956,7 @@
         <name_es>Joya reostato 1</name_es>
         <name_fr>Joyau fléau [1]</name_fr>
         <name_it>Gioiello resistenza malus 1</name_it>
-        <name_jp>耐属珠【１】</name_jp>
+        <name_ja>耐属珠【１】</name_ja>
         <name_ko>내속주【1】</name_ko>
         <name_pl>Klejnot plagoodporności 1</name_pl>
         <name_pt>Joia Resistor 1</name_pt>
@@ -976,7 +976,7 @@
         <name_es>Joya de fuego 1</name_es>
         <name_fr>Joyau de feu [1]</name_fr>
         <name_it>Gioiello attacco fuoco 1</name_it>
-        <name_jp>火炎珠【１】</name_jp>
+        <name_ja>火炎珠【１】</name_ja>
         <name_ko>화염주【1】</name_ko>
         <name_pl>Klejnot pożogi 1</name_pl>
         <name_pt>Joia Chama 1</name_pt>
@@ -996,7 +996,7 @@
         <name_es>Joya de agua 1</name_es>
         <name_fr>Joyau d'eau [1]</name_fr>
         <name_it>Gioiello attacco acqua 1</name_it>
-        <name_jp>流水珠【１】</name_jp>
+        <name_ja>流水珠【１】</name_ja>
         <name_ko>유수주【1】</name_ko>
         <name_pl>Klejnot strumienia 1</name_pl>
         <name_pt>Joia Riacho 1</name_pt>
@@ -1016,7 +1016,7 @@
         <name_es>Joya de hielo 1</name_es>
         <name_fr>Joyau de glace [1]</name_fr>
         <name_it>Gioiello attacco ghiaccio 1</name_it>
-        <name_jp>氷結珠【１】</name_jp>
+        <name_ja>氷結珠【１】</name_ja>
         <name_ko>빙결주【1】</name_ko>
         <name_pl>Klejnot mrozu 1</name_pl>
         <name_pt>Joia Geada 1</name_pt>
@@ -1036,7 +1036,7 @@
         <name_es>Joya de rayo 1</name_es>
         <name_fr>Joyau de foudre [1]</name_fr>
         <name_it>Gioiello attacco tuono 1</name_it>
-        <name_jp>雷光珠【１】</name_jp>
+        <name_ja>雷光珠【１】</name_ja>
         <name_ko>뇌광주【1】</name_ko>
         <name_pl>Klejnot gromu 1</name_pl>
         <name_pt>Joia Relâmpago 1</name_pt>
@@ -1056,7 +1056,7 @@
         <name_es>Joya de draco 1</name_es>
         <name_fr>Joyau tueur de dragon [1]</name_fr>
         <name_it>Gioiello attacco drago 1</name_it>
-        <name_jp>破龍珠【１】</name_jp>
+        <name_ja>破龍珠【１】</name_ja>
         <name_ko>파룡주【1】</name_ko>
         <name_pl>Klejnot smoka 1</name_pl>
         <name_pt>Joia Dragão 1</name_pt>
@@ -1076,7 +1076,7 @@
         <name_es>Joya venenosa 1</name_es>
         <name_fr>Joyau venin [1]</name_fr>
         <name_it>Gioiello attacco veleno 1</name_it>
-        <name_jp>毒珠【１】</name_jp>
+        <name_ja>毒珠【１】</name_ja>
         <name_ko>독주【1】</name_ko>
         <name_pl>Klejnot jadu 1</name_pl>
         <name_pt>Joia Veneno 1</name_pt>
@@ -1096,7 +1096,7 @@
         <name_es>Joya del experto 1</name_es>
         <name_fr>Joyau du maître [1]</name_fr>
         <name_it>Gioiello occhio critico 1</name_it>
-        <name_jp>達人珠【１】</name_jp>
+        <name_ja>達人珠【１】</name_ja>
         <name_ko>달인주【1】</name_ko>
         <name_pl>Klejnot eksperta 1</name_pl>
         <name_pt>Joia Especialista 1</name_pt>
@@ -1116,7 +1116,7 @@
         <name_es>Joya débil 1</name_es>
         <name_fr>Joyau fatigue [1]</name_fr>
         <name_it>Gioiello ruba resistenza 1</name_it>
-        <name_jp>奪気珠【１】</name_jp>
+        <name_ja>奪気珠【１】</name_ja>
         <name_ko>탈기주【1】</name_ko>
         <name_pl>Klejnot wyssania 1</name_pl>
         <name_pt>Joia de Drenagem 1</name_pt>
@@ -1136,7 +1136,7 @@
         <name_es>Joya de enfundado 1</name_es>
         <name_fr>Joyau rengainage [1]</name_fr>
         <name_it>Gioiello rinfodero veloce 1</name_it>
-        <name_jp>速納珠【１】</name_jp>
+        <name_ja>速納珠【１】</name_ja>
         <name_ko>속납주【1】</name_ko>
         <name_pl>Klejnot futerału 1</name_pl>
         <name_pt>Joia da Bainha 1</name_pt>
@@ -1156,7 +1156,7 @@
         <name_es>Joya de amistad 1</name_es>
         <name_fr>Joyau du mousquetaire [1]</name_fr>
         <name_it>Gioiello ampia area 1</name_it>
-        <name_jp>友愛珠【１】</name_jp>
+        <name_ja>友愛珠【１】</name_ja>
         <name_ko>우애주【1】</name_ko>
         <name_pl>Klejnot przyjaźni 1</name_pl>
         <name_pt>Joia da Amizade 1</name_pt>
@@ -1176,7 +1176,7 @@
         <name_es>Joya impasible 1</name_es>
         <name_fr>Joyau du chimiste [1]</name_fr>
         <name_it>Gioiello estensione oggetti 1</name_it>
-        <name_jp>持続珠【１】</name_jp>
+        <name_ja>持続珠【１】</name_ja>
         <name_ko>지속주【1】</name_ko>
         <name_pl>Klejnot wytrwałości 1</name_pl>
         <name_pt>Joia da Tolerância 1</name_pt>
@@ -1196,7 +1196,7 @@
         <name_es>Joya del tragón 1</name_es>
         <name_fr>Joyau du carnassier [1]</name_fr>
         <name_it>Gioiello pasto veloce 1</name_it>
-        <name_jp>早食珠【１】</name_jp>
+        <name_ja>早食珠【１】</name_ja>
         <name_ko>흡입주【1】</name_ko>
         <name_pl>Klejnot żarłoka 1</name_pl>
         <name_pt>Joia do Glutão 1</name_pt>
@@ -1216,7 +1216,7 @@
         <name_es>Joya afiladora 1</name_es>
         <name_fr>Joyau de l'aiguiseur [1]</name_fr>
         <name_it>Gioiello affilatura veloce 1</name_it>
-        <name_jp>研磨珠【１】</name_jp>
+        <name_ja>研磨珠【１】</name_ja>
         <name_ko>연마주【1】</name_ko>
         <name_pl>Klejnot ostrzenia 1</name_pl>
         <name_pt>Joia do Amolador 1</name_pt>
@@ -1236,7 +1236,7 @@
         <name_es>Joya bombardera 1</name_es>
         <name_fr>Joyau du bombardier [1]</name_fr>
         <name_it>Gioiello bombardiere 1</name_it>
-        <name_jp>爆師珠【１】</name_jp>
+        <name_ja>爆師珠【１】</name_ja>
         <name_ko>폭사주【1】</name_ko>
         <name_pl>Klejnot bombowy 1</name_pl>
         <name_pt>Joia de Bombardeiro 1</name_pt>
@@ -1256,7 +1256,7 @@
         <name_es>Joya lanzapiedras 1</name_es>
         <name_fr>Joyau de pierre [1]</name_fr>
         <name_it>Gioiello capienza fionda 1</name_it>
-        <name_jp>投石珠【１】</name_jp>
+        <name_ja>投石珠【１】</name_ja>
         <name_ko>투석주【1】</name_ko>
         <name_pl>Klejnot ciskacza kamieni 1</name_pl>
         <name_pt>Joia Apedrejadora 1</name_pt>
@@ -1276,7 +1276,7 @@
         <name_es>Joya medicinal 1</name_es>
         <name_fr>Joyau de médecin [1]</name_fr>
         <name_it>Gioiello bonus cura 1</name_it>
-        <name_jp>治癒珠【１】</name_jp>
+        <name_ja>治癒珠【１】</name_ja>
         <name_ko>치유주【1】</name_ko>
         <name_pl>Klejnot medycyny 1</name_pl>
         <name_pt>Joia Medicinal 1</name_pt>
@@ -1296,7 +1296,7 @@
         <name_es>Joya paralizante 3</name_es>
         <name_fr>Joyau léthargie [3]</name_fr>
         <name_it>Gioiello applica paralisi 3</name_it>
-        <name_jp>痺瓶珠【３】</name_jp>
+        <name_ja>痺瓶珠【３】</name_ja>
         <name_ko>마비병주【3】</name_ko>
         <name_pl>Klejnot powłoki paraliżu 3</name_pl>
         <name_pt>Joia Camada de Paralisia 3</name_pt>
@@ -1316,7 +1316,7 @@
         <name_es>Joya somnífera 3</name_es>
         <name_fr>Joyau sporifère [3]</name_fr>
         <name_it>Gioiello applica sonno 3</name_it>
-        <name_jp>眠瓶珠【３】</name_jp>
+        <name_ja>眠瓶珠【３】</name_ja>
         <name_ko>수면병주【3】</name_ko>
         <name_pl>Klejnot powłoki snu 3</name_pl>
         <name_pt>Joia Camada de Sono 3</name_pt>
@@ -1336,7 +1336,7 @@
         <name_es>Joya de nitro 3</name_es>
         <name_fr>Joyau explosif [3]</name_fr>
         <name_it>Gioiello applica scoppio 3</name_it>
-        <name_jp>爆瓶珠【３】</name_jp>
+        <name_ja>爆瓶珠【３】</name_ja>
         <name_ko>폭파병주【3】</name_ko>
         <name_pl>Klejnot powłoki wybuchu 3</name_pl>
         <name_pt>Joia Camada de Explosão 3</name_pt>
@@ -1356,7 +1356,7 @@
         <name_es>Joya de disparo 3</name_es>
         <name_fr>Joyau de l'artilleur [3]</name_fr>
         <name_it>Gioiello bonus normali 3</name_it>
-        <name_jp>強弾珠【３】</name_jp>
+        <name_ja>強弾珠【３】</name_ja>
         <name_ko>강탄주【3】</name_ko>
         <name_pl>Klejnot silnego strzału 3</name_pl>
         <name_pt>Joia Tiro Forçado 3</name_pt>
@@ -1376,7 +1376,7 @@
         <name_es>Joya sello de dragón 3</name_es>
         <name_fr>Joyau Sceau-de-dragon [3]</name_fr>
         <name_it>Gioiello sigillo anziano 3</name_it>
-        <name_jp>龍封珠【３】</name_jp>
+        <name_ja>龍封珠【３】</name_ja>
         <name_ko>용봉주【3】</name_ko>
         <name_pl>Klejnot smoczej pieczęci 3</name_pl>
         <name_pt>Joia Selo do Dragão 3</name_pt>
@@ -1396,7 +1396,7 @@
         <name_es>Joya del poder 2</name_es>
         <name_fr>Joyau occulte [2]</name_fr>
         <name_it>Gioiello forza latente 2</name_it>
-        <name_jp>全開珠【２】</name_jp>
+        <name_ja>全開珠【２】</name_ja>
         <name_ko>전개주【2】</name_ko>
         <name_pl>Klejnot przyśpieszenia 2</name_pl>
         <name_pt>Joia Aceleradora 2</name_pt>
@@ -1416,7 +1416,7 @@
         <name_es>Joya desafiante 2</name_es>
         <name_fr>Joyau de témérité [2]</name_fr>
         <name_it>Gioiello istigatore 2</name_it>
-        <name_jp>挑戦珠【２】</name_jp>
+        <name_ja>挑戦珠【２】</name_ja>
         <name_ko>도전주【2】</name_ko>
         <name_pl>Klejnot prowokatora 2</name_pl>
         <name_pt>Joia do Desafiante 2</name_pt>
@@ -1436,7 +1436,7 @@
         <name_es>Joya de potencia 2</name_es>
         <name_fr>Joyau du héros [2]</name_fr>
         <name_it>Gioiello eroismo 2</name_it>
-        <name_jp>底力珠【２】</name_jp>
+        <name_ja>底力珠【２】</name_ja>
         <name_ko>저력주【2】</name_ko>
         <name_pl>Klejnot potencjału 2</name_pl>
         <name_pt>Joia do Potencial 2</name_pt>
@@ -1456,7 +1456,7 @@
         <name_es>Joya del furor 2</name_es>
         <name_fr>Joyau de vengeance [2]</name_fr>
         <name_it>Gioiello risentimento 2</name_it>
-        <name_jp>逆上珠【２】</name_jp>
+        <name_ja>逆上珠【２】</name_ja>
         <name_ko>역상주【2】</name_ko>
         <name_pl>Klejnot poruszenia 2</name_pl>
         <name_pt>Joia do Furor 2</name_pt>
@@ -1476,7 +1476,7 @@
         <name_es>Joya almacén 2</name_es>
         <name_fr>Joyau du franc-tireur [2]</name_fr>
         <name_it>Gioiello bonus capacità 2</name_it>
-        <name_jp>増弾珠【２】</name_jp>
+        <name_ja>増弾珠【２】</name_ja>
         <name_ko>증탄주【2】</name_ko>
         <name_pl>Klejnot magazynka 2</name_pl>
         <name_pt>Joia Aljava 2</name_pt>
@@ -1496,7 +1496,7 @@
         <name_es>Joya de refresco 2</name_es>
         <name_fr>Joyau métabolisme [2]</name_fr>
         <name_it>Gioiello super resistenza 2</name_it>
-        <name_jp>早気珠【２】</name_jp>
+        <name_ja>早気珠【２】</name_ja>
         <name_ko>조기주【2】</name_ko>
         <name_pl>Klejnot orzeźwienia 2</name_pl>
         <name_pt>Joia Revigorante 2</name_pt>
@@ -1516,7 +1516,7 @@
         <name_es>Joya poderosa 2</name_es>
         <name_fr>Joyau d'omnipotence [2]</name_fr>
         <name_it>Gioiello massima potenza 2</name_it>
-        <name_jp>渾身珠【２】</name_jp>
+        <name_ja>渾身珠【２】</name_ja>
         <name_ko>혼신주【2】</name_ko>
         <name_pl>Klejnot mocy 2</name_pl>
         <name_pt>Joia Potente 2</name_pt>
@@ -1536,7 +1536,7 @@
         <name_es>Joya de aumento 2</name_es>
         <name_fr>Joyau de puissance [2]</name_fr>
         <name_it>Gioiello estensione di potenza 2</name_it>
-        <name_jp>昂揚珠【２】</name_jp>
+        <name_ja>昂揚珠【２】</name_ja>
         <name_ko>고양주【2】</name_ko>
         <name_pl>Klejnot wydłużacza 2</name_pl>
         <name_pt>Joia Intensificadora 2</name_pt>
@@ -1556,7 +1556,7 @@
         <name_es>Joya afilada 2</name_es>
         <name_fr>Joyau de trempe [2]</name_fr>
         <name_it>Gioiello strato protettivo 2</name_it>
-        <name_jp>剛刃珠【２】</name_jp>
+        <name_ja>剛刃珠【２】</name_ja>
         <name_ko>강인주【2】</name_ko>
         <name_pl>Ostry klejnot 2</name_pl>
         <name_pt>Joia Afiada 2</name_pt>
@@ -1576,7 +1576,7 @@
         <name_es>Joya escudo 2</name_es>
         <name_fr>Joyau bouclier [2]</name_fr>
         <name_it>Gioiello guardia perfetta 2</name_it>
-        <name_jp>強壁珠【２】</name_jp>
+        <name_ja>強壁珠【２】</name_ja>
         <name_ko>강벽주【2】</name_ko>
         <name_pl>Klejnot tarczy 2</name_pl>
         <name_pt>Joia de Escudo 2</name_pt>
@@ -1596,7 +1596,7 @@
         <name_es>Joya de ataque 1</name_es>
         <name_fr>Joyau attaque [1]</name_fr>
         <name_it>Gioiello attacco 1</name_it>
-        <name_jp>攻撃珠【１】</name_jp>
+        <name_ja>攻撃珠【１】</name_ja>
         <name_ko>공격주【1】</name_ko>
         <name_pl>Klejnot ataku 1</name_pl>
         <name_pt>Joia Ataque 1</name_pt>
@@ -1616,7 +1616,7 @@
         <name_es>Joya paralizante 1</name_es>
         <name_fr>Joyau paralysant [1]</name_fr>
         <name_it>Gioiello attacco paralisi 1</name_it>
-        <name_jp>麻痺珠【１】</name_jp>
+        <name_ja>麻痺珠【１】</name_ja>
         <name_ko>마비주【1】</name_ko>
         <name_pl>Klejnot paraliżu 1</name_pl>
         <name_pt>Joia Paralisadora 1</name_pt>
@@ -1636,7 +1636,7 @@
         <name_es>Joya de sueño 1</name_es>
         <name_fr>Joyau du sommeil [1]</name_fr>
         <name_it>Gioiello attacco sonno 1</name_it>
-        <name_jp>睡眠珠【１】</name_jp>
+        <name_ja>睡眠珠【１】</name_ja>
         <name_ko>수면주【1】</name_ko>
         <name_pl>Klejnot snu 1</name_pl>
         <name_pt>Joia Sono 1</name_pt>
@@ -1656,7 +1656,7 @@
         <name_es>Joya nitro 1</name_es>
         <name_fr>Joyau explosion [1]</name_fr>
         <name_it>Gioiello attacco scoppio 1</name_it>
-        <name_jp>爆破珠【１】</name_jp>
+        <name_ja>爆破珠【１】</name_ja>
         <name_ko>폭파주【1】</name_ko>
         <name_pl>Klejnot wybuchu 1</name_pl>
         <name_pt>Joia Explosão 1</name_pt>
@@ -1676,7 +1676,7 @@
         <name_es>Joya tirofijo 1</name_es>
         <name_fr>Joyau du sniper [1]</name_fr>
         <name_it>Gioiello munizioni speciali 1</name_it>
-        <name_jp>特射珠【１】</name_jp>
+        <name_ja>特射珠【１】</name_ja>
         <name_ko>특사주【1】</name_ko>
         <name_pl>Klejnot celnego strzału 1</name_pl>
         <name_pt>Joia Tiro Certo 1</name_pt>
@@ -1696,7 +1696,7 @@
         <name_es>Joya de guardia 1</name_es>
         <name_fr>Joyau du paladin [1]</name_fr>
         <name_it>Gioiello blocco 1</name_it>
-        <name_jp>鉄壁珠【１】</name_jp>
+        <name_ja>鉄壁珠【１】</name_ja>
         <name_ko>철벽주【1】</name_ko>
         <name_pl>Klejnot żelaznego muru 1</name_pl>
         <name_pt>Joia Muro de Ferro 1</name_pt>
@@ -1716,7 +1716,7 @@
         <name_es>Joya liberadora 3</name_es>
         <name_fr>Joyau du tireur [3]</name_fr>
         <name_it>Gioiello rilascio 3</name_it>
-        <name_jp>解放珠【３】</name_jp>
+        <name_ja>解放珠【３】</name_ja>
         <name_ko>해방주【3】</name_ko>
         <name_pl>Klejnot wyładowania 3</name_pl>
         <name_pt>Joia Descarregamento 3</name_pt>
@@ -1736,7 +1736,7 @@
         <name_es>Joya de artesanía 3</name_es>
         <name_fr>Joyau artisanat [3]</name_fr>
         <name_it>Gioiello artigiano 3</name_it>
-        <name_jp>匠珠【３】</name_jp>
+        <name_ja>匠珠【３】</name_ja>
         <name_ko>장인주【3】</name_ko>
         <name_pl>Klejnot rękodzieła 3</name_pl>
         <name_pt>Joia do Artesanato 3</name_pt>
@@ -1756,7 +1756,7 @@
         <name_es>Joya perforante 3</name_es>
         <name_fr>Joyau de titane [3]</name_fr>
         <name_it>Gioiello bonus perforanti 3</name_it>
-        <name_jp>貫通珠【３】</name_jp>
+        <name_ja>貫通珠【３】</name_ja>
         <name_ko>관통주【3】</name_ko>
         <name_pl>Klejnot przebicia 3</name_pl>
         <name_pt>Joia Perfurante 3</name_pt>
@@ -1776,7 +1776,7 @@
         <name_es>Joya abanico 3</name_es>
         <name_fr>Joyau de plomb [3]</name_fr>
         <name_it>Gioiello bonus ventaglio 3</name_it>
-        <name_jp>散弾珠【３】</name_jp>
+        <name_ja>散弾珠【３】</name_ja>
         <name_ko>산탄주【3】</name_ko>
         <name_pl>Klejnot rozrzutu 3</name_pl>
         <name_pt>Joia de Dispersão 3</name_pt>
@@ -1796,7 +1796,7 @@
         <name_es>Joya crítica 2</name_es>
         <name_fr>Joyau du berserk [2]</name_fr>
         <name_it>Gioiello bonus critico 2</name_it>
-        <name_jp>超心珠【２】</name_jp>
+        <name_ja>超心珠【２】</name_ja>
         <name_ko>초심주【2】</name_ko>
         <name_pl>Klejnot krytyczny 2</name_pl>
         <name_pt>Joia Crítica 2</name_pt>
@@ -1816,7 +1816,7 @@
         <name_es>Joya cargadora 2</name_es>
         <name_fr>Joyau concentration [2]</name_fr>
         <name_it>Gioiello concentrazione 2</name_it>
-        <name_jp>短縮珠【２】</name_jp>
+        <name_ja>短縮珠【２】</name_ja>
         <name_ko>단축주【2】</name_ko>
         <name_pl>Klejnot ładujący 2</name_pl>
         <name_pt>Joia Energizadora 2</name_pt>
@@ -1836,7 +1836,7 @@
         <name_es>Joya de desenfunde 2</name_es>
         <name_fr>Joyau dégainage [2]</name_fr>
         <name_it>Gioiello critico rapido 2</name_it>
-        <name_jp>抜刀珠【２】</name_jp>
+        <name_ja>抜刀珠【２】</name_ja>
         <name_ko>발도주【2】</name_ko>
         <name_pl>Klejnot dobycia broni 2</name_pl>
         <name_pt>Joia de Saque 2</name_pt>
@@ -1856,7 +1856,7 @@
         <name_es>Joya de impulso 2</name_es>
         <name_fr>Joyau du marathonien [2]</name_fr>
         <name_it>Gioiello maratoneta 2</name_it>
-        <name_jp>強走珠【２】</name_jp>
+        <name_ja>強走珠【２】</name_ja>
         <name_ko>강주주【2】</name_ko>
         <name_pl>Klejnot sprintera 2</name_pl>
         <name_pt>Joia do Corredor 2</name_pt>
@@ -1876,7 +1876,7 @@
         <name_es>Joya de arco poderoso 2</name_es>
         <name_fr>Joyau de l'archer [2]</name_fr>
         <name_it>Gioiello carica potenziata 2</name_it>
-        <name_jp>強弓珠【２】</name_jp>
+        <name_ja>強弓珠【２】</name_ja>
         <name_ko>강궁주【2】</name_ko>
         <name_pl>Klejnot potężnego łuku 2</name_pl>
         <name_pt>Joia Arco Magnífico 2</name_pt>
@@ -1896,7 +1896,7 @@
         <name_es>Joya ojo mental 2</name_es>
         <name_fr>Joyau spirituel [2]</name_fr>
         <name_it>Gioiello preveggenza 2</name_it>
-        <name_jp>心眼珠【２】</name_jp>
+        <name_ja>心眼珠【２】</name_ja>
         <name_ko>심안주【2】</name_ko>
         <name_pl>Klejnot oka umysłu 2</name_pl>
         <name_pt>Joia Olhos da Mente 2</name_pt>
@@ -1916,7 +1916,7 @@
         <name_es>Joya de artillería 1</name_es>
         <name_fr>Joyau dynamite [1]</name_fr>
         <name_it>Gioiello artigliere 1</name_it>
-        <name_jp>砲術珠【１】</name_jp>
+        <name_ja>砲術珠【１】</name_ja>
         <name_ko>포술주【1】</name_ko>
         <name_pl>Klejnot artylerii 1</name_pl>
         <name_pt>Joia Artilharia 1</name_pt>
@@ -1936,7 +1936,7 @@
         <name_es>Joya micótica 1</name_es>
         <name_fr>Joyau du mycologue [1]</name_fr>
         <name_it>Gioiello fungomante 1</name_it>
-        <name_jp>茸好珠【１】</name_jp>
+        <name_ja>茸好珠【１】</name_ja>
         <name_ko>이호주【1】</name_ko>
         <name_pl>Grzybny klejnot 1</name_pl>
         <name_pt>Joia Fungiforme 1</name_pt>
@@ -1951,7 +1951,7 @@
     <item id="cooling_jewel_2">
         <type>decoration</type>
         <name>Cooling Jewel 2</name>
-        <name_jp>耐暑珠【２】</name_jp>
+        <name_ja>耐暑珠【２】</name_ja>
         <decoration_level>2</decoration_level>
         <buff_refs>
             <buff_ref id="heat_guard"/>
@@ -1960,7 +1960,7 @@
     <item id="warming_jewel_2">
         <type>decoration</type>
         <name>Warming Jewel 2</name>
-        <name_jp>耐寒珠【２】</name_jp>
+        <name_ja>耐寒珠【２】</name_ja>
         <decoration_level>2</decoration_level>
         <buff_refs>
             <buff_ref id="coldproof"/>
@@ -1969,7 +1969,7 @@
     <item id="guardian_jewel_2">
         <type>decoration</type>
         <name>Guardian Jewel 2</name>
-        <name_jp>守勢珠【２】</name_jp>
+        <name_ja>守勢珠【２】</name_ja>
         <decoration_level>2</decoration_level>
         <buff_refs>
             <buff_ref id="offensive_guard"/>
@@ -1978,7 +1978,7 @@
     <item id="phoenix_jewel_3">
         <type>decoration</type>
         <name>Phoenix Jewel 3</name>
-        <name_jp>転福珠【３】</name_jp>
+        <name_ja>転福珠【３】</name_ja>
         <decoration_level>3</decoration_level>
         <buff_refs>
             <buff_ref id="coalescence"/>
@@ -1987,7 +1987,7 @@
     <item id="defense_jewel_4">
         <type>decoration</type>
         <name>Defense Jewel+ 4</name>
-        <name_jp>防御珠Ⅱ【４】</name_jp>
+        <name_ja>防御珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="defense_boost" level="2"/>
@@ -1996,7 +1996,7 @@
     <item id="hard_defense_jewel_4">
         <type>decoration</type>
         <name>Hard Defense Jewel 4</name>
-        <name_jp>防御珠Ⅲ【４】</name_jp>
+        <name_ja>防御珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="defense_boost" level="3"/>
@@ -2005,7 +2005,7 @@
     <item id="recovery_jewel_4">
         <type>decoration</type>
         <name>Recovery Jewel+ 4</name>
-        <name_jp>早復珠Ⅱ【４】</name_jp>
+        <name_ja>早復珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_speed" level="2"/>
@@ -2014,7 +2014,7 @@
     <item id="fire_res_jewel_4">
         <type>decoration</type>
         <name>Fire Res Jewel+ 4</name>
-        <name_jp>耐火珠Ⅱ【４】</name_jp>
+        <name_ja>耐火珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="fire_resistance" level="2"/>
@@ -2023,7 +2023,7 @@
     <item id="hard_fire_res_jewel_4">
         <type>decoration</type>
         <name>Hard Fire Res Jewel 4</name>
-        <name_jp>耐火珠Ⅲ【４】</name_jp>
+        <name_ja>耐火珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="fire_resistance" level="3"/>
@@ -2032,7 +2032,7 @@
     <item id="water_res_jewel_4">
         <type>decoration</type>
         <name>Water Res Jewel+ 4</name>
-        <name_jp>耐水珠Ⅱ【４】</name_jp>
+        <name_ja>耐水珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="water_resistance" level="2"/>
@@ -2041,7 +2041,7 @@
     <item id="hard_water_res_jewel_4">
         <type>decoration</type>
         <name>Hard Water Res Jewel 4</name>
-        <name_jp>耐水珠Ⅲ【４】</name_jp>
+        <name_ja>耐水珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="water_resistance" level="3"/>
@@ -2050,7 +2050,7 @@
     <item id="ice_res_jewel_4">
         <type>decoration</type>
         <name>Ice Res Jewel+ 4</name>
-        <name_jp>耐氷珠Ⅱ【４】</name_jp>
+        <name_ja>耐氷珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="ice_resistance" level="2"/>
@@ -2059,7 +2059,7 @@
     <item id="hard_ice_res_jewel_4">
         <type>decoration</type>
         <name>Hard Ice Res Jewel 4</name>
-        <name_jp>耐氷珠Ⅲ【４】</name_jp>
+        <name_ja>耐氷珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="ice_resistance" level="3"/>
@@ -2068,7 +2068,7 @@
     <item id="thunder_res_jewel_4">
         <type>decoration</type>
         <name>Thunder Res Jewel+ 4</name>
-        <name_jp>耐雷珠Ⅱ【４】</name_jp>
+        <name_ja>耐雷珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="thunder_resistance" level="2"/>
@@ -2077,7 +2077,7 @@
     <item id="hard_thunder_res_jewel_4">
         <type>decoration</type>
         <name>Hard Thunder Res Jewel 4</name>
-        <name_jp>耐雷珠Ⅲ【４】</name_jp>
+        <name_ja>耐雷珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="thunder_resistance" level="3"/>
@@ -2086,7 +2086,7 @@
     <item id="dragon_res_jewel_4">
         <type>decoration</type>
         <name>Dragon Res Jewel+ 4</name>
-        <name_jp>耐龍珠Ⅱ【４】</name_jp>
+        <name_ja>耐龍珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="dragon_resistance" level="2"/>
@@ -2095,7 +2095,7 @@
     <item id="hard_dragon_res_jewel_4">
         <type>decoration</type>
         <name>Hard Dragon Res Jewel 4</name>
-        <name_jp>耐龍珠Ⅲ【４】</name_jp>
+        <name_ja>耐龍珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="dragon_resistance" level="3"/>
@@ -2104,7 +2104,7 @@
     <item id="antidote_jewel_4">
         <type>decoration</type>
         <name>Antidote Jewel+ 4</name>
-        <name_jp>耐毒珠Ⅱ【４】</name_jp>
+        <name_ja>耐毒珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="poison_resistance" level="2"/>
@@ -2113,7 +2113,7 @@
     <item id="antipara_jewel_4">
         <type>decoration</type>
         <name>Antipara Jewel+ 4</name>
-        <name_jp>耐麻珠Ⅱ【４】</name_jp>
+        <name_ja>耐麻珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="paralysis_resistance" level="2"/>
@@ -2122,7 +2122,7 @@
     <item id="pep_jewel_4">
         <type>decoration</type>
         <name>Pep Jewel+ 4</name>
-        <name_jp>耐眠珠Ⅱ【４】</name_jp>
+        <name_ja>耐眠珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="sleep_resistance" level="2"/>
@@ -2131,7 +2131,7 @@
     <item id="antiblast_jewel_4">
         <type>decoration</type>
         <name>Antiblast Jewel+ 4</name>
-        <name_jp>耐爆珠Ⅱ【４】</name_jp>
+        <name_ja>耐爆珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="blast_resistance" level="2"/>
@@ -2140,7 +2140,7 @@
     <item id="steadfast_jewel_4">
         <type>decoration</type>
         <name>Steadfast Jewel+ 4</name>
-        <name_jp>耐絶珠Ⅱ【４】</name_jp>
+        <name_ja>耐絶珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stun_resistance" level="2"/>
@@ -2149,7 +2149,7 @@
     <item id="suture_jewel_4">
         <type>decoration</type>
         <name>Suture Jewel+ 4</name>
-        <name_jp>耐裂珠Ⅱ【４】</name_jp>
+        <name_ja>耐裂珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="bleeding_resistance" level="2"/>
@@ -2158,7 +2158,7 @@
     <item id="def_lock_jewel_4">
         <type>decoration</type>
         <name>Def Lock Jewel+ 4</name>
-        <name_jp>耐防珠Ⅱ【４】</name_jp>
+        <name_ja>耐防珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="iron_skin" level="2"/>
@@ -2167,7 +2167,7 @@
     <item id="miasma_jewel_4">
         <type>decoration</type>
         <name>Miasma Jewel+ 4</name>
-        <name_jp>耐瘴珠Ⅱ【４】</name_jp>
+        <name_ja>耐瘴珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="effluvia_resistance" level="2"/>
@@ -2176,7 +2176,7 @@
     <item id="wind_resist_jewel_4">
         <type>decoration</type>
         <name>Wind Resist Jewel+ 4</name>
-        <name_jp>防風珠Ⅱ【４】</name_jp>
+        <name_ja>防風珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="windproof" level="2"/>
@@ -2185,7 +2185,7 @@
     <item id="expert_jewel_4">
         <type>decoration</type>
         <name>Expert Jewel+ 4</name>
-        <name_jp>達人珠Ⅱ【４】</name_jp>
+        <name_ja>達人珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye" level="2"/>
@@ -2194,7 +2194,7 @@
     <item id="blaze_jewel_4">
         <type>decoration</type>
         <name>Blaze Jewel+ 4</name>
-        <name_jp>火炎珠Ⅱ【４】</name_jp>
+        <name_ja>火炎珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="fire_attack" level="2"/>
@@ -2203,7 +2203,7 @@
     <item id="stream_jewel_4">
         <type>decoration</type>
         <name>Stream Jewel+ 4</name>
-        <name_jp>流水珠Ⅱ【４】</name_jp>
+        <name_ja>流水珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="water_attack" level="2"/>
@@ -2212,7 +2212,7 @@
     <item id="frost_jewel_4">
         <type>decoration</type>
         <name>Frost Jewel+ 4</name>
-        <name_jp>氷結珠Ⅱ【４】</name_jp>
+        <name_ja>氷結珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="ice_attack" level="2"/>
@@ -2221,7 +2221,7 @@
     <item id="bolt_jewel_4">
         <type>decoration</type>
         <name>Bolt Jewel+ 4</name>
-        <name_jp>雷光珠Ⅱ【４】</name_jp>
+        <name_ja>雷光珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="thunder_attack" level="2"/>
@@ -2230,7 +2230,7 @@
     <item id="dragon_jewel_4">
         <type>decoration</type>
         <name>Dragon Jewel+ 4</name>
-        <name_jp>破龍珠Ⅱ【４】</name_jp>
+        <name_ja>破龍珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="dragon_attack" level="2"/>
@@ -2239,7 +2239,7 @@
     <item id="venom_jewel_4">
         <type>decoration</type>
         <name>Venom Jewel+ 4</name>
-        <name_jp>毒珠Ⅱ【４】</name_jp>
+        <name_ja>毒珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="poison_attack" level="2"/>
@@ -2248,7 +2248,7 @@
     <item id="paralyzer_jewel_4">
         <type>decoration</type>
         <name>Paralyzer Jewel+ 4</name>
-        <name_jp>麻痺珠Ⅱ【４】</name_jp>
+        <name_ja>麻痺珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="paralysis_attack" level="2"/>
@@ -2257,7 +2257,7 @@
     <item id="sleep_jewel_4">
         <type>decoration</type>
         <name>Sleep Jewel+ 4</name>
-        <name_jp>睡眠珠Ⅱ【４】</name_jp>
+        <name_ja>睡眠珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="sleep_attack" level="2"/>
@@ -2266,7 +2266,7 @@
     <item id="blast_jewel_4">
         <type>decoration</type>
         <name>Blast Jewel+ 4</name>
-        <name_jp>爆破珠Ⅱ【４】</name_jp>
+        <name_ja>爆破珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="blast_attack" level="2"/>
@@ -2275,7 +2275,7 @@
     <item id="artillery_jewel_4">
         <type>decoration</type>
         <name>Artillery Jewel+ 4</name>
-        <name_jp>砲術珠Ⅱ【４】</name_jp>
+        <name_ja>砲術珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="artillery" level="2"/>
@@ -2284,7 +2284,7 @@
     <item id="sonorous_jewel_4">
         <type>decoration</type>
         <name>Sonorous Jewel+ 4</name>
-        <name_jp>鼓笛珠Ⅱ【４】</name_jp>
+        <name_ja>鼓笛珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="horn_maestro" level="2"/>
@@ -2293,7 +2293,7 @@
     <item id="potential_jewel_4">
         <type>decoration</type>
         <name>Potential Jewel+ 4</name>
-        <name_jp>底力珠Ⅱ【４】</name_jp>
+        <name_ja>底力珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="heroics" level="2"/>
@@ -2302,7 +2302,7 @@
     <item id="physique_jewel_4">
         <type>decoration</type>
         <name>Physique Jewel+ 4</name>
-        <name_jp>体術珠Ⅱ【４】</name_jp>
+        <name_ja>体術珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution" level="2"/>
@@ -2311,7 +2311,7 @@
     <item id="hungerless_jewel_4">
         <type>decoration</type>
         <name>Hungerless Jewel+ 4</name>
-        <name_jp>無食珠Ⅱ【４】</name_jp>
+        <name_ja>無食珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="hunger_resistance" level="2"/>
@@ -2320,7 +2320,7 @@
     <item id="enduring_jewel_4">
         <type>decoration</type>
         <name>Enduring Jewel+ 4</name>
-        <name_jp>持続珠Ⅱ【４】</name_jp>
+        <name_ja>持続珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="item_prolonger" level="2"/>
@@ -2329,7 +2329,7 @@
     <item id="hard_enduring_jewel_4">
         <type>decoration</type>
         <name>Hard Enduring Jewel 4</name>
-        <name_jp>持続珠Ⅲ【４】</name_jp>
+        <name_ja>持続珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="item_prolonger" level="3"/>
@@ -2338,7 +2338,7 @@
     <item id="friendship_jewel_4">
         <type>decoration</type>
         <name>Friendship Jewel+ 4</name>
-        <name_jp>友愛珠Ⅱ【４】</name_jp>
+        <name_ja>友愛珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="wide_range" level="2"/>
@@ -2347,7 +2347,7 @@
     <item id="specimen_jewel_4">
         <type>decoration</type>
         <name>Specimen Jewel+ 4</name>
-        <name_jp>標本珠Ⅱ【４】</name_jp>
+        <name_ja>標本珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="entomologist" level="2"/>
@@ -2356,7 +2356,7 @@
     <item id="hard_specimen_jewel_4">
         <type>decoration</type>
         <name>Hard Specimen Jewel 4</name>
-        <name_jp>標本珠Ⅲ【４】</name_jp>
+        <name_ja>標本珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="entomologist" level="3"/>
@@ -2365,7 +2365,7 @@
     <item id="botany_jewel_4">
         <type>decoration</type>
         <name>Botany Jewel+ 4</name>
-        <name_jp>植学珠Ⅱ【４】</name_jp>
+        <name_ja>植学珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="botanist" level="2"/>
@@ -2374,7 +2374,7 @@
     <item id="hard_botany_jewel_4">
         <type>decoration</type>
         <name>Hard Botany Jewel 4</name>
-        <name_jp>植学珠Ⅳ【４】</name_jp>
+        <name_ja>植学珠Ⅳ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="botanist" level="4"/>
@@ -2383,7 +2383,7 @@
     <item id="geology_jewel_4">
         <type>decoration</type>
         <name>Geology Jewel+ 4</name>
-        <name_jp>地学珠Ⅱ【４】</name_jp>
+        <name_ja>地学珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="geologist" level="2"/>
@@ -2392,7 +2392,7 @@
     <item id="hard_geology_jewel_4">
         <type>decoration</type>
         <name>Hard Geology Jewel 4</name>
-        <name_jp>地学珠Ⅲ【４】</name_jp>
+        <name_ja>地学珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="geologist" level="3"/>
@@ -2401,7 +2401,7 @@
     <item id="survival_jewel_4">
         <type>decoration</type>
         <name>Survival Jewel+ 4</name>
-        <name_jp>環境珠Ⅱ【４】</name_jp>
+        <name_ja>環境珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="sporepuff_expert" level="2"/>
@@ -2410,7 +2410,7 @@
     <item id="hard_survival_jewel_4">
         <type>decoration</type>
         <name>Hard Survival Jewel 4</name>
-        <name_jp>環境珠Ⅲ【４】</name_jp>
+        <name_ja>環境珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="sporepuff_expert" level="3"/>
@@ -2419,7 +2419,7 @@
     <item id="mirewalker_jewel_4">
         <type>decoration</type>
         <name>Mirewalker Jewel+ 4</name>
-        <name_jp>沼渡珠Ⅱ【４】</name_jp>
+        <name_ja>沼渡珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="aquatic_expert" level="2"/>
@@ -2428,7 +2428,7 @@
     <item id="intimidator_jewel_4">
         <type>decoration</type>
         <name>Intimidator Jewel+ 4</name>
-        <name_jp>威嚇珠Ⅱ【４】</name_jp>
+        <name_ja>威嚇珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="intimidator" level="2"/>
@@ -2437,7 +2437,7 @@
     <item id="hard_intimidator_jewel_4">
         <type>decoration</type>
         <name>Hard Intimidator Jewel 4</name>
-        <name_jp>威嚇珠Ⅲ【４】</name_jp>
+        <name_ja>威嚇珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="intimidator" level="3"/>
@@ -2446,7 +2446,7 @@
     <item id="tip_toe_jewel_4">
         <type>decoration</type>
         <name>Tip Toe Jewel+ 4</name>
-        <name_jp>潜伏珠Ⅱ【４】</name_jp>
+        <name_ja>潜伏珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stealth" level="2"/>
@@ -2455,7 +2455,7 @@
     <item id="hard_tip_toe_jewel_4">
         <type>decoration</type>
         <name>Hard Tip Toe Jewel 4</name>
-        <name_jp>潜伏珠Ⅲ【４】</name_jp>
+        <name_ja>潜伏珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stealth" level="3"/>
@@ -2464,7 +2464,7 @@
     <item id="meowster_jewel_4">
         <type>decoration</type>
         <name>Meowster Jewel+ 4</name>
-        <name_jp>采配珠Ⅱ【４】</name_jp>
+        <name_ja>采配珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="palico_rally" level="2"/>
@@ -2473,7 +2473,7 @@
     <item id="hard_meowster_jewel_4">
         <type>decoration</type>
         <name>Hard Meowster Jewel 4</name>
-        <name_jp>采配珠Ⅲ【４】</name_jp>
+        <name_ja>采配珠Ⅲ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="palico_rally" level="3"/>
@@ -2482,7 +2482,7 @@
     <item id="evasion_jewel_4">
         <type>decoration</type>
         <name>Evasion Jewel+ 4</name>
-        <name_jp>回避珠Ⅱ【４】</name_jp>
+        <name_ja>回避珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window" level="2"/>
@@ -2491,7 +2491,7 @@
     <item id="earplug_jewel_4">
         <type>decoration</type>
         <name>Earplug Jewel+ 4</name>
-        <name_jp>防音珠Ⅱ【４】</name_jp>
+        <name_ja>防音珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="earplugs" level="2"/>
@@ -2500,7 +2500,7 @@
     <item id="ironwall_jewel_4">
         <type>decoration</type>
         <name>Ironwall Jewel+ 4</name>
-        <name_jp>鉄壁珠Ⅱ【４】</name_jp>
+        <name_ja>鉄壁珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="guard" level="2"/>
@@ -2509,7 +2509,7 @@
     <item id="heavy_artillery_jewel_4">
         <type>decoration</type>
         <name>Heavy Artillery Jewel+ 4</name>
-        <name_jp>砲手珠Ⅱ【４】</name_jp>
+        <name_ja>砲手珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="heavy_artillery" level="2"/>
@@ -2518,7 +2518,7 @@
     <item id="furor_jewel_4">
         <type>decoration</type>
         <name>Furor Jewel+ 4</name>
-        <name_jp>逆上珠Ⅱ【４】</name_jp>
+        <name_ja>逆上珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resentment" level="2"/>
@@ -2527,7 +2527,7 @@
     <item id="attack_jewel_4">
         <type>decoration</type>
         <name>Attack Jewel+ 4</name>
-        <name_jp>攻撃珠Ⅱ【４】</name_jp>
+        <name_ja>攻撃珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost" level="2"/>
@@ -2536,7 +2536,7 @@
     <item id="challenger_jewel_4">
         <type>decoration</type>
         <name>Challenger Jewel+ 4</name>
-        <name_jp>挑戦珠Ⅱ【４】</name_jp>
+        <name_ja>挑戦珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="agitator" level="2"/>
@@ -2545,7 +2545,7 @@
     <item id="trueshot_jewel_4">
         <type>decoration</type>
         <name>Trueshot Jewel+ 4</name>
-        <name_jp>特射珠Ⅱ【４】</name_jp>
+        <name_ja>特射珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="special_ammo_boost" level="2"/>
@@ -2554,7 +2554,7 @@
     <item id="throttle_jewel_4">
         <type>decoration</type>
         <name>Throttle Jewel+ 4</name>
-        <name_jp>全開珠Ⅱ【４】</name_jp>
+        <name_ja>全開珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="latent_power" level="2"/>
@@ -2563,7 +2563,7 @@
     <item id="handicraft_jewel_4">
         <type>decoration</type>
         <name>Handicraft Jewel+ 4</name>
-        <name_jp>匠珠Ⅱ【４】</name_jp>
+        <name_ja>匠珠Ⅱ【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft" level="2"/>
@@ -2572,7 +2572,7 @@
     <item id="brace_protection_jewel_4">
         <type>decoration</type>
         <name>Brace/Protection Jewel 4</name>
-        <name_jp>耐衝・加護珠【４】</name_jp>
+        <name_ja>耐衝・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="flinch_free"/>
@@ -2582,7 +2582,7 @@
     <item id="wind_resist_protection_jewel_4">
         <type>decoration</type>
         <name>Wind Resist/Protection Jewel 4</name>
-        <name_jp>防風・加護珠【４】</name_jp>
+        <name_ja>防風・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="windproof"/>
@@ -2592,7 +2592,7 @@
     <item id="footing_protection_jewel_4">
         <type>decoration</type>
         <name>Footing/Protection Jewel 4</name>
-        <name_jp>耐震・加護珠【４】</name_jp>
+        <name_ja>耐震・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tremor_resistance"/>
@@ -2602,7 +2602,7 @@
     <item id="draw_protection_jewel_4">
         <type>decoration</type>
         <name>Draw/Protection Jewel 4</name>
-        <name_jp>抜刀・加護珠【４】</name_jp>
+        <name_ja>抜刀・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2612,7 +2612,7 @@
     <item id="enhancer_protection_jewel_4">
         <type>decoration</type>
         <name>Enhancer/Protection Jewel 4</name>
-        <name_jp>昂揚・加護珠【４】</name_jp>
+        <name_ja>昂揚・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2622,7 +2622,7 @@
     <item id="charger_protection_jewel_4">
         <type>decoration</type>
         <name>Charger/Protection Jewel 4</name>
-        <name_jp>短縮・加護珠【４】</name_jp>
+        <name_ja>短縮・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="focus"/>
@@ -2632,7 +2632,7 @@
     <item id="destroyer_protection_jewel_4">
         <type>decoration</type>
         <name>Destroyer/Protection Jewel 4</name>
-        <name_jp>重撃・加護珠【４】</name_jp>
+        <name_ja>重撃・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="partbreaker"/>
@@ -2642,7 +2642,7 @@
     <item id="ko_protection_jewel_4">
         <type>decoration</type>
         <name>KO/Protection Jewel 4</name>
-        <name_jp>ＫＯ・加護珠【４】</name_jp>
+        <name_ja>ＫＯ・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="slugger"/>
@@ -2652,7 +2652,7 @@
     <item id="throttle_protection_jewel_4">
         <type>decoration</type>
         <name>Throttle/Protection Jewel 4</name>
-        <name_jp>全開・加護珠【４】</name_jp>
+        <name_ja>全開・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2662,7 +2662,7 @@
     <item id="challenger_protection_jewel_4">
         <type>decoration</type>
         <name>Challenger/Protection Jewel 4</name>
-        <name_jp>挑戦・加護珠【４】</name_jp>
+        <name_ja>挑戦・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="agitator"/>
@@ -2672,7 +2672,7 @@
     <item id="flawless_protection_jewel_4">
         <type>decoration</type>
         <name>Flawless/Protection Jewel 4</name>
-        <name_jp>無傷・加護珠【４】</name_jp>
+        <name_ja>無傷・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2682,7 +2682,7 @@
     <item id="potential_protection_jewel_4">
         <type>decoration</type>
         <name>Potential/Protection Jewel 4</name>
-        <name_jp>底力・加護珠【４】</name_jp>
+        <name_ja>底力・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2692,7 +2692,7 @@
     <item id="mighty_protection_jewel_4">
         <type>decoration</type>
         <name>Mighty/Protection Jewel 4</name>
-        <name_jp>渾身・加護珠【４】</name_jp>
+        <name_ja>渾身・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2702,7 +2702,7 @@
     <item id="furor_protection_jewel_4">
         <type>decoration</type>
         <name>Furor/Protection Jewel 4</name>
-        <name_jp>逆上・加護珠【４】</name_jp>
+        <name_ja>逆上・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resentment"/>
@@ -2712,7 +2712,7 @@
     <item id="phoenix_protection_jewel_4">
         <type>decoration</type>
         <name>Phoenix/Protection Jewel 4</name>
-        <name_jp>転福・加護珠【４】</name_jp>
+        <name_ja>転福・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2722,7 +2722,7 @@
     <item id="earplug_protection_jewel_4">
         <type>decoration</type>
         <name>Earplug/Protection Jewel 4</name>
-        <name_jp>防音・加護珠【４】</name_jp>
+        <name_ja>防音・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="earplugs"/>
@@ -2732,7 +2732,7 @@
     <item id="critical_protection_jewel_4">
         <type>decoration</type>
         <name>Critical/Protection Jewel 4</name>
-        <name_jp>超心・加護珠【４】</name_jp>
+        <name_ja>超心・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_boost"/>
@@ -2742,7 +2742,7 @@
     <item id="tenderizer_protection_jewel_4">
         <type>decoration</type>
         <name>Tenderizer/Protection Jewel 4</name>
-        <name_jp>痛撃・加護珠【４】</name_jp>
+        <name_ja>痛撃・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2752,7 +2752,7 @@
     <item id="handicraft_protection_jewel_4">
         <type>decoration</type>
         <name>Handicraft/Protection Jewel 4</name>
-        <name_jp>匠・加護珠【４】</name_jp>
+        <name_ja>匠・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2762,7 +2762,7 @@
     <item id="release_protection_jewel_4">
         <type>decoration</type>
         <name>Release/Protection Jewel 4</name>
-        <name_jp>解放・加護珠【４】</name_jp>
+        <name_ja>解放・加護珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="divine_blessing"/>
@@ -2772,7 +2772,7 @@
     <item id="brace_vitality_jewel_4">
         <type>decoration</type>
         <name>Brace/Vitality Jewel 4</name>
-        <name_jp>耐衝・体力珠【４】</name_jp>
+        <name_ja>耐衝・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2782,7 +2782,7 @@
     <item id="wind_resist_vitality_jewel_4">
         <type>decoration</type>
         <name>Wind Resist/Vitality Jewel 4</name>
-        <name_jp>防風・体力珠【４】</name_jp>
+        <name_ja>防風・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="windproof"/>
@@ -2792,7 +2792,7 @@
     <item id="footing_vitality_jewel_4">
         <type>decoration</type>
         <name>Footing/Vitality Jewel 4</name>
-        <name_jp>耐震・体力珠【４】</name_jp>
+        <name_ja>耐震・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2802,7 +2802,7 @@
     <item id="draw_vitality_jewel_4">
         <type>decoration</type>
         <name>Draw/Vitality Jewel 4</name>
-        <name_jp>抜刀・体力珠【４】</name_jp>
+        <name_ja>抜刀・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_draw"/>
@@ -2812,7 +2812,7 @@
     <item id="enhancer_vitality_jewel_4">
         <type>decoration</type>
         <name>Enhancer/Vitality Jewel 4</name>
-        <name_jp>昂揚・体力珠【４】</name_jp>
+        <name_ja>昂揚・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2822,7 +2822,7 @@
     <item id="charger_vitality_jewel_4">
         <type>decoration</type>
         <name>Charger/Vitality Jewel 4</name>
-        <name_jp>短縮・体力珠【４】</name_jp>
+        <name_ja>短縮・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="focus"/>
@@ -2832,7 +2832,7 @@
     <item id="destroyer_vitality_jewel_4">
         <type>decoration</type>
         <name>Destroyer/Vitality Jewel 4</name>
-        <name_jp>重撃・体力珠【４】</name_jp>
+        <name_ja>重撃・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2842,7 +2842,7 @@
     <item id="ko_vitality_jewel_4">
         <type>decoration</type>
         <name>KO/Vitality Jewel 4</name>
-        <name_jp>ＫＯ・体力珠【４】</name_jp>
+        <name_ja>ＫＯ・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2852,7 +2852,7 @@
     <item id="throttle_vitality_jewel_4">
         <type>decoration</type>
         <name>Throttle/Vitality Jewel 4</name>
-        <name_jp>全開・体力珠【４】</name_jp>
+        <name_ja>全開・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="latent_power"/>
@@ -2862,7 +2862,7 @@
     <item id="challenger_vitality_jewel_4">
         <type>decoration</type>
         <name>Challenger/Vitality Jewel 4</name>
-        <name_jp>挑戦・体力珠【４】</name_jp>
+        <name_ja>挑戦・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2872,7 +2872,7 @@
     <item id="flawless_vitality_jewel_4">
         <type>decoration</type>
         <name>Flawless/Vitality Jewel 4</name>
-        <name_jp>無傷・体力珠【４】</name_jp>
+        <name_ja>無傷・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="peak_performance"/>
@@ -2882,7 +2882,7 @@
     <item id="potential_vitality_jewel_4">
         <type>decoration</type>
         <name>Potential/Vitality Jewel 4</name>
-        <name_jp>底力・体力珠【４】</name_jp>
+        <name_ja>底力・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="heroics"/>
@@ -2892,7 +2892,7 @@
     <item id="mighty_vitality_jewel_4">
         <type>decoration</type>
         <name>Mighty/Vitality Jewel 4</name>
-        <name_jp>渾身・体力珠【４】</name_jp>
+        <name_ja>渾身・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="maximum_might"/>
@@ -2902,7 +2902,7 @@
     <item id="furor_vitality_jewel_4">
         <type>decoration</type>
         <name>Furor/Vitality Jewel 4</name>
-        <name_jp>逆上・体力珠【４】</name_jp>
+        <name_ja>逆上・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resentment"/>
@@ -2912,7 +2912,7 @@
     <item id="phoenix_vitality_jewel_4">
         <type>decoration</type>
         <name>Phoenix/Vitality Jewel 4</name>
-        <name_jp>転福・体力珠【４】</name_jp>
+        <name_ja>転福・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="coalescence"/>
@@ -2922,7 +2922,7 @@
     <item id="earplug_vitality_jewel_4">
         <type>decoration</type>
         <name>Earplug/Vitality Jewel 4</name>
-        <name_jp>防音・体力珠【４】</name_jp>
+        <name_ja>防音・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="earplugs"/>
@@ -2932,7 +2932,7 @@
     <item id="critical_vitality_jewel_4">
         <type>decoration</type>
         <name>Critical/Vitality Jewel 4</name>
-        <name_jp>超心・体力珠【４】</name_jp>
+        <name_ja>超心・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_boost"/>
@@ -2942,7 +2942,7 @@
     <item id="tenderizer_vitality_jewel_4">
         <type>decoration</type>
         <name>Tenderizer/Vitality Jewel 4</name>
-        <name_jp>痛撃・体力珠【４】</name_jp>
+        <name_ja>痛撃・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="weakness_exploit"/>
@@ -2952,7 +2952,7 @@
     <item id="handicraft_vitality_jewel_4">
         <type>decoration</type>
         <name>Handicraft/Vitality Jewel 4</name>
-        <name_jp>匠・体力珠【４】</name_jp>
+        <name_ja>匠・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -2962,7 +2962,7 @@
     <item id="release_vitality_jewel_4">
         <type>decoration</type>
         <name>Release/Vitality Jewel 4</name>
-        <name_jp>解放・体力珠【４】</name_jp>
+        <name_ja>解放・体力珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="health_boost"/>
@@ -2972,7 +2972,7 @@
     <item id="brace_medicine_jewel_4">
         <type>decoration</type>
         <name>Brace/Medicine Jewel 4</name>
-        <name_jp>耐衝・治癒珠【４】</name_jp>
+        <name_ja>耐衝・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -2982,7 +2982,7 @@
     <item id="wind_resist_medicine_jewel_4">
         <type>decoration</type>
         <name>Wind Resist/Medicine Jewel 4</name>
-        <name_jp>防風・治癒珠【４】</name_jp>
+        <name_ja>防風・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -2992,7 +2992,7 @@
     <item id="footing_medicine_jewel_4">
         <type>decoration</type>
         <name>Footing/Medicine Jewel 4</name>
-        <name_jp>耐震・治癒珠【４】</name_jp>
+        <name_ja>耐震・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tremor_resistance"/>
@@ -3002,7 +3002,7 @@
     <item id="draw_medicine_jewel_4">
         <type>decoration</type>
         <name>Draw/Medicine Jewel 4</name>
-        <name_jp>抜刀・治癒珠【４】</name_jp>
+        <name_ja>抜刀・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_draw"/>
@@ -3012,7 +3012,7 @@
     <item id="enhancer_medicine_jewel_4">
         <type>decoration</type>
         <name>Enhancer/Medicine Jewel 4</name>
-        <name_jp>昂揚・治癒珠【４】</name_jp>
+        <name_ja>昂揚・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="power_prolonger"/>
@@ -3022,7 +3022,7 @@
     <item id="charger_medicine_jewel_4">
         <type>decoration</type>
         <name>Charger/Medicine Jewel 4</name>
-        <name_jp>短縮・治癒珠【４】</name_jp>
+        <name_ja>短縮・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="focus"/>
@@ -3032,7 +3032,7 @@
     <item id="destroyer_medicine_jewel_4">
         <type>decoration</type>
         <name>Destroyer/Medicine Jewel 4</name>
-        <name_jp>重撃・治癒珠【４】</name_jp>
+        <name_ja>重撃・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3042,7 +3042,7 @@
     <item id="ko_medicine_jewel_4">
         <type>decoration</type>
         <name>KO/Medicine Jewel 4</name>
-        <name_jp>ＫＯ・治癒珠【４】</name_jp>
+        <name_ja>ＫＯ・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3052,7 +3052,7 @@
     <item id="throttle_medicine_jewel_4">
         <type>decoration</type>
         <name>Throttle/Medicine Jewel 4</name>
-        <name_jp>全開・治癒珠【４】</name_jp>
+        <name_ja>全開・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3062,7 +3062,7 @@
     <item id="challenger_medicine_jewel_4">
         <type>decoration</type>
         <name>Challenger/Medicine Jewel 4</name>
-        <name_jp>挑戦・治癒珠【４】</name_jp>
+        <name_ja>挑戦・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3072,7 +3072,7 @@
     <item id="flawless_medicine_jewel_4">
         <type>decoration</type>
         <name>Flawless/Medicine Jewel 4</name>
-        <name_jp>無傷・治癒珠【４】</name_jp>
+        <name_ja>無傷・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3082,7 +3082,7 @@
     <item id="potential_medicine_jewel_4">
         <type>decoration</type>
         <name>Potential/Medicine Jewel 4</name>
-        <name_jp>底力・治癒珠【４】</name_jp>
+        <name_ja>底力・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="heroics"/>
@@ -3092,7 +3092,7 @@
     <item id="mighty_medicine_jewel_4">
         <type>decoration</type>
         <name>Mighty/Medicine Jewel 4</name>
-        <name_jp>渾身・治癒珠【４】</name_jp>
+        <name_ja>渾身・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="maximum_might"/>
@@ -3102,7 +3102,7 @@
     <item id="furor_medicine_jewel_4">
         <type>decoration</type>
         <name>Furor/Medicine Jewel 4</name>
-        <name_jp>逆上・治癒珠【４】</name_jp>
+        <name_ja>逆上・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3112,7 +3112,7 @@
     <item id="phoenix_medicine_jewel_4">
         <type>decoration</type>
         <name>Phoenix/Medicine Jewel 4</name>
-        <name_jp>転福・治癒珠【４】</name_jp>
+        <name_ja>転福・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3122,7 +3122,7 @@
     <item id="earplug_medicine_jewel_4">
         <type>decoration</type>
         <name>Earplug/Medicine Jewel 4</name>
-        <name_jp>防音・治癒珠【４】</name_jp>
+        <name_ja>防音・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3132,7 +3132,7 @@
     <item id="critical_medicine_jewel_4">
         <type>decoration</type>
         <name>Critical/Medicine Jewel 4</name>
-        <name_jp>超心・治癒珠【４】</name_jp>
+        <name_ja>超心・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="recovery_up"/>
@@ -3142,7 +3142,7 @@
     <item id="tenderizer_medicine_jewel_4">
         <type>decoration</type>
         <name>Tenderizer/Medicine Jewel 4</name>
-        <name_jp>痛撃・治癒珠【４】</name_jp>
+        <name_ja>痛撃・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="weakness_exploit"/>
@@ -3152,7 +3152,7 @@
     <item id="handicraft_medicine_jewel_4">
         <type>decoration</type>
         <name>Handicraft/Medicine Jewel 4</name>
-        <name_jp>匠・治癒珠【４】</name_jp>
+        <name_ja>匠・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3162,7 +3162,7 @@
     <item id="release_medicine_jewel_4">
         <type>decoration</type>
         <name>Release/Medicine Jewel 4</name>
-        <name_jp>解放・治癒珠【４】</name_jp>
+        <name_ja>解放・治癒珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3172,7 +3172,7 @@
     <item id="resistor_attack_jewel_4">
         <type>decoration</type>
         <name>Resistor/Attack Jewel 4</name>
-        <name_jp>耐属・攻撃珠【４】</name_jp>
+        <name_ja>耐属・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="blight_resistance"/>
@@ -3182,7 +3182,7 @@
     <item id="drain_attack_jewel_4">
         <type>decoration</type>
         <name>Drain/Attack Jewel 4</name>
-        <name_jp>奪気・攻撃珠【４】</name_jp>
+        <name_ja>奪気・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stamina_thief"/>
@@ -3192,7 +3192,7 @@
     <item id="flight_attack_jewel_4">
         <type>decoration</type>
         <name>Flight/Attack Jewel 4</name>
-        <name_jp>飛燕・攻撃珠【４】</name_jp>
+        <name_ja>飛燕・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="airborne"/>
@@ -3202,7 +3202,7 @@
     <item id="sheath_attack_jewel_4">
         <type>decoration</type>
         <name>Sheath/Attack Jewel 4</name>
-        <name_jp>速納・攻撃珠【４】</name_jp>
+        <name_ja>速納・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3212,7 +3212,7 @@
     <item id="fortitude_attack_jewel_4">
         <type>decoration</type>
         <name>Fortitude/Attack Jewel 4</name>
-        <name_jp>逆境・攻撃珠【４】</name_jp>
+        <name_ja>逆境・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3222,7 +3222,7 @@
     <item id="slider_attack_jewel_4">
         <type>decoration</type>
         <name>Slider/Attack Jewel 4</name>
-        <name_jp>滑走・攻撃珠【４】</name_jp>
+        <name_ja>滑走・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="affinity_sliding"/>
@@ -3232,7 +3232,7 @@
     <item id="sprinter_attack_jewel_4">
         <type>decoration</type>
         <name>Sprinter/Attack Jewel 4</name>
-        <name_jp>強走・攻撃珠【４】</name_jp>
+        <name_ja>強走・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3242,7 +3242,7 @@
     <item id="refresh_attack_jewel_4">
         <type>decoration</type>
         <name>Refresh/Attack Jewel 4</name>
-        <name_jp>早気・攻撃珠【４】</name_jp>
+        <name_ja>早気・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3252,7 +3252,7 @@
     <item id="crisis_attack_jewel_4">
         <type>decoration</type>
         <name>Crisis/Attack Jewel 4</name>
-        <name_jp>窮地・攻撃珠【４】</name_jp>
+        <name_ja>窮地・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resuscitate"/>
@@ -3262,7 +3262,7 @@
     <item id="jumping_attack_jewel_4">
         <type>decoration</type>
         <name>Jumping/Attack Jewel 4</name>
-        <name_jp>跳躍・攻撃珠【４】</name_jp>
+        <name_ja>跳躍・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3272,7 +3272,7 @@
     <item id="ironwall_attack_jewel_4">
         <type>decoration</type>
         <name>Ironwall/Attack Jewel 4</name>
-        <name_jp>鉄壁・攻撃珠【４】</name_jp>
+        <name_ja>鉄壁・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="guard"/>
@@ -3282,7 +3282,7 @@
     <item id="guardian_attack_jewel_4">
         <type>decoration</type>
         <name>Guardian/Attack Jewel 4</name>
-        <name_jp>守勢・攻撃珠【４】</name_jp>
+        <name_ja>守勢・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3292,7 +3292,7 @@
     <item id="friendship_attack_jewel_4">
         <type>decoration</type>
         <name>Friendship/Attack Jewel 4</name>
-        <name_jp>友愛・攻撃珠【４】</name_jp>
+        <name_ja>友愛・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3302,7 +3302,7 @@
     <item id="gobbler_attack_jewel_4">
         <type>decoration</type>
         <name>Gobbler/Attack Jewel 4</name>
-        <name_jp>早食・攻撃珠【４】</name_jp>
+        <name_ja>早食・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_eating"/>
@@ -3312,7 +3312,7 @@
     <item id="satiated_attack_jewel_4">
         <type>decoration</type>
         <name>Satiated/Attack Jewel 4</name>
-        <name_jp>節食・攻撃珠【４】</name_jp>
+        <name_ja>節食・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_meal"/>
@@ -3322,7 +3322,7 @@
     <item id="grinder_attack_jewel_4">
         <type>decoration</type>
         <name>Grinder/Attack Jewel 4</name>
-        <name_jp>研磨・攻撃珠【４】</name_jp>
+        <name_ja>研磨・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_sharpening"/>
@@ -3332,7 +3332,7 @@
     <item id="bomber_attack_jewel_4">
         <type>decoration</type>
         <name>Bomber/Attack Jewel 4</name>
-        <name_jp>爆師・攻撃珠【４】</name_jp>
+        <name_ja>爆師・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="bombardier"/>
@@ -3342,7 +3342,7 @@
     <item id="fungiform_attack_jewel_4">
         <type>decoration</type>
         <name>Fungiform/Attack Jewel 4</name>
-        <name_jp>茸好・攻撃珠【４】</name_jp>
+        <name_ja>茸好・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="mushroomancer"/>
@@ -3352,7 +3352,7 @@
     <item id="stonethrower_attack_jewel_4">
         <type>decoration</type>
         <name>Stonethrower/Attack Jewel 4</name>
-        <name_jp>投石・攻撃珠【４】</name_jp>
+        <name_ja>投石・攻撃珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="attack_boost"/>
@@ -3362,7 +3362,7 @@
     <item id="resistor_expert_jewel_4">
         <type>decoration</type>
         <name>Resistor/Expert Jewel 4</name>
-        <name_jp>耐属・達人珠【４】</name_jp>
+        <name_ja>耐属・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3372,7 +3372,7 @@
     <item id="drain_expert_jewel_4">
         <type>decoration</type>
         <name>Drain/Expert Jewel 4</name>
-        <name_jp>奪気・達人珠【４】</name_jp>
+        <name_ja>奪気・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3382,7 +3382,7 @@
     <item id="flight_expert_jewel_4">
         <type>decoration</type>
         <name>Flight/Expert Jewel 4</name>
-        <name_jp>飛燕・達人珠【４】</name_jp>
+        <name_ja>飛燕・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3392,7 +3392,7 @@
     <item id="sheath_expert_jewel_4">
         <type>decoration</type>
         <name>Sheath/Expert Jewel 4</name>
-        <name_jp>速納・達人珠【４】</name_jp>
+        <name_ja>速納・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3402,7 +3402,7 @@
     <item id="fortitude_expert_jewel_4">
         <type>decoration</type>
         <name>Fortitude/Expert Jewel 4</name>
-        <name_jp>逆境・達人珠【４】</name_jp>
+        <name_ja>逆境・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3412,7 +3412,7 @@
     <item id="slider_expert_jewel_4">
         <type>decoration</type>
         <name>Slider/Expert Jewel 4</name>
-        <name_jp>滑走・達人珠【４】</name_jp>
+        <name_ja>滑走・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3422,7 +3422,7 @@
     <item id="sprinter_expert_jewel_4">
         <type>decoration</type>
         <name>Sprinter/Expert Jewel 4</name>
-        <name_jp>強走・達人珠【４】</name_jp>
+        <name_ja>強走・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="marathon_runner"/>
@@ -3432,7 +3432,7 @@
     <item id="refresh_expert_jewel_4">
         <type>decoration</type>
         <name>Refresh/Expert Jewel 4</name>
-        <name_jp>早気・達人珠【４】</name_jp>
+        <name_ja>早気・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3442,7 +3442,7 @@
     <item id="crisis_expert_jewel_4">
         <type>decoration</type>
         <name>Crisis/Expert Jewel 4</name>
-        <name_jp>窮地・達人珠【４】</name_jp>
+        <name_ja>窮地・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resuscitate"/>
@@ -3452,7 +3452,7 @@
     <item id="jumping_expert_jewel_4">
         <type>decoration</type>
         <name>Jumping/Expert Jewel 4</name>
-        <name_jp>跳躍・達人珠【４】</name_jp>
+        <name_ja>跳躍・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_extender"/>
@@ -3462,7 +3462,7 @@
     <item id="ironwall_expert_jewel_4">
         <type>decoration</type>
         <name>Ironwall/Expert Jewel 4</name>
-        <name_jp>鉄壁・達人珠【４】</name_jp>
+        <name_ja>鉄壁・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3472,7 +3472,7 @@
     <item id="guardian_expert_jewel_4">
         <type>decoration</type>
         <name>Guardian/Expert Jewel 4</name>
-        <name_jp>守勢・達人珠【４】</name_jp>
+        <name_ja>守勢・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="offensive_guard"/>
@@ -3482,7 +3482,7 @@
     <item id="friendship_expert_jewel_4">
         <type>decoration</type>
         <name>Friendship/Expert Jewel 4</name>
-        <name_jp>友愛・達人珠【４】</name_jp>
+        <name_ja>友愛・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3492,7 +3492,7 @@
     <item id="gobbler_expert_jewel_4">
         <type>decoration</type>
         <name>Gobbler/Expert Jewel 4</name>
-        <name_jp>早食・達人珠【４】</name_jp>
+        <name_ja>早食・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_eating"/>
@@ -3502,7 +3502,7 @@
     <item id="satiated_expert_jewel_4">
         <type>decoration</type>
         <name>Satiated/Expert Jewel 4</name>
-        <name_jp>節食・達人珠【４】</name_jp>
+        <name_ja>節食・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3512,7 +3512,7 @@
     <item id="grinder_expert_jewel_4">
         <type>decoration</type>
         <name>Grinder/Expert Jewel 4</name>
-        <name_jp>研磨・達人珠【４】</name_jp>
+        <name_ja>研磨・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3522,7 +3522,7 @@
     <item id="bomber_expert_jewel_4">
         <type>decoration</type>
         <name>Bomber/Expert Jewel 4</name>
-        <name_jp>爆師・達人珠【４】</name_jp>
+        <name_ja>爆師・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3532,7 +3532,7 @@
     <item id="fungiform_expert_jewel_4">
         <type>decoration</type>
         <name>Fungiform/Expert Jewel 4</name>
-        <name_jp>茸好・達人珠【４】</name_jp>
+        <name_ja>茸好・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3542,7 +3542,7 @@
     <item id="stonethrower_expert_jewel_4">
         <type>decoration</type>
         <name>Stonethrower/Expert Jewel 4</name>
-        <name_jp>投石・達人珠【４】</name_jp>
+        <name_ja>投石・達人珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_eye"/>
@@ -3552,7 +3552,7 @@
     <item id="resistor_handicraft_jewel_4">
         <type>decoration</type>
         <name>Resistor/Handicraft Jewel 4</name>
-        <name_jp>耐属・匠珠【４】</name_jp>
+        <name_ja>耐属・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="blight_resistance"/>
@@ -3562,7 +3562,7 @@
     <item id="drain_handicraft_jewel_4">
         <type>decoration</type>
         <name>Drain/Handicraft Jewel 4</name>
-        <name_jp>奪気・匠珠【４】</name_jp>
+        <name_ja>奪気・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stamina_thief"/>
@@ -3572,7 +3572,7 @@
     <item id="flight_handicraft_jewel_4">
         <type>decoration</type>
         <name>Flight/Handicraft Jewel 4</name>
-        <name_jp>飛燕・匠珠【４】</name_jp>
+        <name_ja>飛燕・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="airborne"/>
@@ -3582,7 +3582,7 @@
     <item id="sheath_handicraft_jewel_4">
         <type>decoration</type>
         <name>Sheath/Handicraft Jewel 4</name>
-        <name_jp>速納・匠珠【４】</name_jp>
+        <name_ja>速納・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="quick_sheath"/>
@@ -3592,7 +3592,7 @@
     <item id="fortitude_handicraft_jewel_4">
         <type>decoration</type>
         <name>Fortitude/Handicraft Jewel 4</name>
-        <name_jp>逆境・匠珠【４】</name_jp>
+        <name_ja>逆境・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3602,7 +3602,7 @@
     <item id="slider_handicraft_jewel_4">
         <type>decoration</type>
         <name>Slider/Handicraft Jewel 4</name>
-        <name_jp>滑走・匠珠【４】</name_jp>
+        <name_ja>滑走・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3612,7 +3612,7 @@
     <item id="sprinter_handicraft_jewel_4">
         <type>decoration</type>
         <name>Sprinter/Handicraft Jewel 4</name>
-        <name_jp>強走・匠珠【４】</name_jp>
+        <name_ja>強走・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3622,7 +3622,7 @@
     <item id="refresh_handicraft_jewel_4">
         <type>decoration</type>
         <name>Refresh/Handicraft Jewel 4</name>
-        <name_jp>早気・匠珠【４】</name_jp>
+        <name_ja>早気・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stamina_surge"/>
@@ -3632,7 +3632,7 @@
     <item id="crisis_handicraft_jewel_4">
         <type>decoration</type>
         <name>Crisis/Handicraft Jewel 4</name>
-        <name_jp>窮地・匠珠【４】</name_jp>
+        <name_ja>窮地・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resuscitate"/>
@@ -3642,7 +3642,7 @@
     <item id="jumping_handicraft_jewel_4">
         <type>decoration</type>
         <name>Jumping/Handicraft Jewel 4</name>
-        <name_jp>跳躍・匠珠【４】</name_jp>
+        <name_ja>跳躍・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3652,7 +3652,7 @@
     <item id="ironwall_handicraft_jewel_4">
         <type>decoration</type>
         <name>Ironwall/Handicraft Jewel 4</name>
-        <name_jp>鉄壁・匠珠【４】</name_jp>
+        <name_ja>鉄壁・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="guard"/>
@@ -3662,7 +3662,7 @@
     <item id="guardian_handicraft_jewel_4">
         <type>decoration</type>
         <name>Guardian/Handicraft Jewel 4</name>
-        <name_jp>守勢・匠珠【４】</name_jp>
+        <name_ja>守勢・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="offensive_guard"/>
@@ -3672,7 +3672,7 @@
     <item id="friendship_handicraft_jewel_4">
         <type>decoration</type>
         <name>Friendship/Handicraft Jewel 4</name>
-        <name_jp>友愛・匠珠【４】</name_jp>
+        <name_ja>友愛・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="wide_range"/>
@@ -3682,7 +3682,7 @@
     <item id="gobbler_handicraft_jewel_4">
         <type>decoration</type>
         <name>Gobbler/Handicraft Jewel 4</name>
-        <name_jp>早食・匠珠【４】</name_jp>
+        <name_ja>早食・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3692,7 +3692,7 @@
     <item id="satiated_handicraft_jewel_4">
         <type>decoration</type>
         <name>Satiated/Handicraft Jewel 4</name>
-        <name_jp>節食・匠珠【４】</name_jp>
+        <name_ja>節食・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_meal"/>
@@ -3702,7 +3702,7 @@
     <item id="grinder_handicraft_jewel_4">
         <type>decoration</type>
         <name>Grinder/Handicraft Jewel 4</name>
-        <name_jp>研磨・匠珠【４】</name_jp>
+        <name_ja>研磨・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3712,7 +3712,7 @@
     <item id="bomber_handicraft_jewel_4">
         <type>decoration</type>
         <name>Bomber/Handicraft Jewel 4</name>
-        <name_jp>爆師・匠珠【４】</name_jp>
+        <name_ja>爆師・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3722,7 +3722,7 @@
     <item id="fungiform_handicraft_jewel_4">
         <type>decoration</type>
         <name>Fungiform/Handicraft Jewel 4</name>
-        <name_jp>茸好・匠珠【４】</name_jp>
+        <name_ja>茸好・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -3732,7 +3732,7 @@
     <item id="stonethrower_handicraft_jewel_4">
         <type>decoration</type>
         <name>Stonethrower/Handicraft Jewel 4</name>
-        <name_jp>投石・匠珠【４】</name_jp>
+        <name_ja>投石・匠珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="slinger_capacity"/>
@@ -3742,7 +3742,7 @@
     <item id="resistor_release_jewel_4">
         <type>decoration</type>
         <name>Resistor/Release Jewel 4</name>
-        <name_jp>耐属・解放珠【４】</name_jp>
+        <name_ja>耐属・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3752,7 +3752,7 @@
     <item id="drain_release_jewel_4">
         <type>decoration</type>
         <name>Drain/Release Jewel 4</name>
-        <name_jp>奪気・解放珠【４】</name_jp>
+        <name_ja>奪気・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3762,7 +3762,7 @@
     <item id="flight_release_jewel_4">
         <type>decoration</type>
         <name>Flight/Release Jewel 4</name>
-        <name_jp>飛燕・解放珠【４】</name_jp>
+        <name_ja>飛燕・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3772,7 +3772,7 @@
     <item id="sheath_release_jewel_4">
         <type>decoration</type>
         <name>Sheath/Release Jewel 4</name>
-        <name_jp>速納・解放珠【４】</name_jp>
+        <name_ja>速納・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3782,7 +3782,7 @@
     <item id="fortitude_release_jewel_4">
         <type>decoration</type>
         <name>Fortitude/Release Jewel 4</name>
-        <name_jp>逆境・解放珠【４】</name_jp>
+        <name_ja>逆境・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3792,7 +3792,7 @@
     <item id="slider_release_jewel_4">
         <type>decoration</type>
         <name>Slider/Release Jewel 4</name>
-        <name_jp>滑走・解放珠【４】</name_jp>
+        <name_ja>滑走・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="affinity_sliding"/>
@@ -3802,7 +3802,7 @@
     <item id="sprinter_release_jewel_4">
         <type>decoration</type>
         <name>Sprinter/Release Jewel 4</name>
-        <name_jp>強走・解放珠【４】</name_jp>
+        <name_ja>強走・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="marathon_runner"/>
@@ -3812,7 +3812,7 @@
     <item id="refresh_release_jewel_4">
         <type>decoration</type>
         <name>Refresh/Release Jewel 4</name>
-        <name_jp>早気・解放珠【４】</name_jp>
+        <name_ja>早気・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3822,7 +3822,7 @@
     <item id="crisis_release_jewel_4">
         <type>decoration</type>
         <name>Crisis/Release Jewel 4</name>
-        <name_jp>窮地・解放珠【４】</name_jp>
+        <name_ja>窮地・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resuscitate"/>
@@ -3832,7 +3832,7 @@
     <item id="jumping_release_jewel_4">
         <type>decoration</type>
         <name>Jumping/Release Jewel 4</name>
-        <name_jp>跳躍・解放珠【４】</name_jp>
+        <name_ja>跳躍・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_extender"/>
@@ -3842,7 +3842,7 @@
     <item id="ironwall_release_jewel_4">
         <type>decoration</type>
         <name>Ironwall/Release Jewel 4</name>
-        <name_jp>鉄壁・解放珠【４】</name_jp>
+        <name_ja>鉄壁・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="guard"/>
@@ -3852,7 +3852,7 @@
     <item id="guardian_release_jewel_4">
         <type>decoration</type>
         <name>Guardian/Release Jewel 4</name>
-        <name_jp>守勢・解放珠【４】</name_jp>
+        <name_ja>守勢・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="offensive_guard"/>
@@ -3862,7 +3862,7 @@
     <item id="friendship_release_jewel_4">
         <type>decoration</type>
         <name>Friendship/Release Jewel 4</name>
-        <name_jp>友愛・解放珠【４】</name_jp>
+        <name_ja>友愛・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3872,7 +3872,7 @@
     <item id="gobbler_release_jewel_4">
         <type>decoration</type>
         <name>Gobbler/Release Jewel 4</name>
-        <name_jp>早食・解放珠【４】</name_jp>
+        <name_ja>早食・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -3882,7 +3882,7 @@
     <item id="satiated_release_jewel_4">
         <type>decoration</type>
         <name>Satiated/Release Jewel 4</name>
-        <name_jp>節食・解放珠【４】</name_jp>
+        <name_ja>節食・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_meal"/>
@@ -3892,7 +3892,7 @@
     <item id="grinder_release_jewel_4">
         <type>decoration</type>
         <name>Grinder/Release Jewel 4</name>
-        <name_jp>研磨・解放珠【４】</name_jp>
+        <name_ja>研磨・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_sharpening"/>
@@ -3902,7 +3902,7 @@
     <item id="bomber_release_jewel_4">
         <type>decoration</type>
         <name>Bomber/Release Jewel 4</name>
-        <name_jp>爆師・解放珠【４】</name_jp>
+        <name_ja>爆師・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="bombardier"/>
@@ -3912,7 +3912,7 @@
     <item id="fungiform_release_jewel_4">
         <type>decoration</type>
         <name>Fungiform/Release Jewel 4</name>
-        <name_jp>茸好・解放珠【４】</name_jp>
+        <name_ja>茸好・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="mushroomancer"/>
@@ -3922,7 +3922,7 @@
     <item id="stonethrower_release_jewel_4">
         <type>decoration</type>
         <name>Stonethrower/Release Jewel 4</name>
-        <name_jp>投石・解放珠【４】</name_jp>
+        <name_ja>投石・解放珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="slinger_capacity"/>
@@ -3932,7 +3932,7 @@
     <item id="brace_physique_jewel_4">
         <type>decoration</type>
         <name>Brace/Physique Jewel 4</name>
-        <name_jp>耐衝・体術珠【４】</name_jp>
+        <name_ja>耐衝・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -3942,7 +3942,7 @@
     <item id="wind_resist_physique_jewel_4">
         <type>decoration</type>
         <name>Wind Resist/Physique Jewel 4</name>
-        <name_jp>防風・体術珠【４】</name_jp>
+        <name_ja>防風・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="windproof"/>
@@ -3952,7 +3952,7 @@
     <item id="footing_physique_jewel_4">
         <type>decoration</type>
         <name>Footing/Physique Jewel 4</name>
-        <name_jp>耐震・体術珠【４】</name_jp>
+        <name_ja>耐震・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -3962,7 +3962,7 @@
     <item id="draw_physique_jewel_4">
         <type>decoration</type>
         <name>Draw/Physique Jewel 4</name>
-        <name_jp>抜刀・体術珠【４】</name_jp>
+        <name_ja>抜刀・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -3972,7 +3972,7 @@
     <item id="enhancer_physique_jewel_4">
         <type>decoration</type>
         <name>Enhancer/Physique Jewel 4</name>
-        <name_jp>昂揚・体術珠【４】</name_jp>
+        <name_ja>昂揚・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="power_prolonger"/>
@@ -3982,7 +3982,7 @@
     <item id="charger_physique_jewel_4">
         <type>decoration</type>
         <name>Charger/Physique Jewel 4</name>
-        <name_jp>短縮・体術珠【４】</name_jp>
+        <name_ja>短縮・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -3992,7 +3992,7 @@
     <item id="destroyer_physique_jewel_4">
         <type>decoration</type>
         <name>Destroyer/Physique Jewel 4</name>
-        <name_jp>重撃・体術珠【４】</name_jp>
+        <name_ja>重撃・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="partbreaker"/>
@@ -4002,7 +4002,7 @@
     <item id="ko_physique_jewel_4">
         <type>decoration</type>
         <name>KO/Physique Jewel 4</name>
-        <name_jp>ＫＯ・体術珠【４】</name_jp>
+        <name_ja>ＫＯ・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="slugger"/>
@@ -4012,7 +4012,7 @@
     <item id="throttle_physique_jewel_4">
         <type>decoration</type>
         <name>Throttle/Physique Jewel 4</name>
-        <name_jp>全開・体術珠【４】</name_jp>
+        <name_ja>全開・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="latent_power"/>
@@ -4022,7 +4022,7 @@
     <item id="challenger_physique_jewel_4">
         <type>decoration</type>
         <name>Challenger/Physique Jewel 4</name>
-        <name_jp>挑戦・体術珠【４】</name_jp>
+        <name_ja>挑戦・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4032,7 +4032,7 @@
     <item id="flawless_physique_jewel_4">
         <type>decoration</type>
         <name>Flawless/Physique Jewel 4</name>
-        <name_jp>無傷・体術珠【４】</name_jp>
+        <name_ja>無傷・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4042,7 +4042,7 @@
     <item id="potential_physique_jewel_4">
         <type>decoration</type>
         <name>Potential/Physique Jewel 4</name>
-        <name_jp>底力・体術珠【４】</name_jp>
+        <name_ja>底力・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="heroics"/>
@@ -4052,7 +4052,7 @@
     <item id="mighty_physique_jewel_4">
         <type>decoration</type>
         <name>Mighty/Physique Jewel 4</name>
-        <name_jp>渾身・体術珠【４】</name_jp>
+        <name_ja>渾身・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4062,7 +4062,7 @@
     <item id="furor_physique_jewel_4">
         <type>decoration</type>
         <name>Furor/Physique Jewel 4</name>
-        <name_jp>逆上・体術珠【４】</name_jp>
+        <name_ja>逆上・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resentment"/>
@@ -4072,7 +4072,7 @@
     <item id="phoenix_physique_jewel_4">
         <type>decoration</type>
         <name>Phoenix/Physique Jewel 4</name>
-        <name_jp>転福・体術珠【４】</name_jp>
+        <name_ja>転福・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4082,7 +4082,7 @@
     <item id="earplug_physique_jewel_4">
         <type>decoration</type>
         <name>Earplug/Physique Jewel 4</name>
-        <name_jp>防音・体術珠【４】</name_jp>
+        <name_ja>防音・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4092,7 +4092,7 @@
     <item id="critical_physique_jewel_4">
         <type>decoration</type>
         <name>Critical/Physique Jewel 4</name>
-        <name_jp>超心・体術珠【４】</name_jp>
+        <name_ja>超心・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4102,7 +4102,7 @@
     <item id="tenderizer_physique_jewel_4">
         <type>decoration</type>
         <name>Tenderizer/Physique Jewel 4</name>
-        <name_jp>痛撃・体術珠【４】</name_jp>
+        <name_ja>痛撃・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4112,7 +4112,7 @@
     <item id="handicraft_physique_jewel_4">
         <type>decoration</type>
         <name>Handicraft/Physique Jewel 4</name>
-        <name_jp>匠・体術珠【４】</name_jp>
+        <name_ja>匠・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4122,7 +4122,7 @@
     <item id="release_physique_jewel_4">
         <type>decoration</type>
         <name>Release/Physique Jewel 4</name>
-        <name_jp>解放・体術珠【４】</name_jp>
+        <name_ja>解放・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4132,7 +4132,7 @@
     <item id="resistor_physique_jewel_4">
         <type>decoration</type>
         <name>Resistor/Physique Jewel 4</name>
-        <name_jp>耐属・体術珠【４】</name_jp>
+        <name_ja>耐属・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4142,7 +4142,7 @@
     <item id="drain_physique_jewel_4">
         <type>decoration</type>
         <name>Drain/Physique Jewel 4</name>
-        <name_jp>奪気・体術珠【４】</name_jp>
+        <name_ja>奪気・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stamina_thief"/>
@@ -4152,7 +4152,7 @@
     <item id="flight_physique_jewel_4">
         <type>decoration</type>
         <name>Flight/Physique Jewel 4</name>
-        <name_jp>飛燕・体術珠【４】</name_jp>
+        <name_ja>飛燕・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="airborne"/>
@@ -4162,7 +4162,7 @@
     <item id="sheath_physique_jewel_4">
         <type>decoration</type>
         <name>Sheath/Physique Jewel 4</name>
-        <name_jp>速納・体術珠【４】</name_jp>
+        <name_ja>速納・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4172,7 +4172,7 @@
     <item id="fortitude_physique_jewel_4">
         <type>decoration</type>
         <name>Fortitude/Physique Jewel 4</name>
-        <name_jp>逆境・体術珠【４】</name_jp>
+        <name_ja>逆境・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="fortify"/>
@@ -4182,7 +4182,7 @@
     <item id="slider_physique_jewel_4">
         <type>decoration</type>
         <name>Slider/Physique Jewel 4</name>
-        <name_jp>滑走・体術珠【４】</name_jp>
+        <name_ja>滑走・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="affinity_sliding"/>
@@ -4192,7 +4192,7 @@
     <item id="sprinter_physique_jewel_4">
         <type>decoration</type>
         <name>Sprinter/Physique Jewel 4</name>
-        <name_jp>強走・体術珠【４】</name_jp>
+        <name_ja>強走・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="marathon_runner"/>
@@ -4202,7 +4202,7 @@
     <item id="refresh_physique_jewel_4">
         <type>decoration</type>
         <name>Refresh/Physique Jewel 4</name>
-        <name_jp>早気・体術珠【４】</name_jp>
+        <name_ja>早気・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stamina_surge"/>
@@ -4212,7 +4212,7 @@
     <item id="crisis_physique_jewel_4">
         <type>decoration</type>
         <name>Crisis/Physique Jewel 4</name>
-        <name_jp>窮地・体術珠【４】</name_jp>
+        <name_ja>窮地・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resuscitate"/>
@@ -4222,7 +4222,7 @@
     <item id="jumping_physique_jewel_4">
         <type>decoration</type>
         <name>Jumping/Physique Jewel 4</name>
-        <name_jp>跳躍・体術珠【４】</name_jp>
+        <name_ja>跳躍・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_extender"/>
@@ -4232,7 +4232,7 @@
     <item id="ironwall_physique_jewel_4">
         <type>decoration</type>
         <name>Ironwall/Physique Jewel 4</name>
-        <name_jp>鉄壁・体術珠【４】</name_jp>
+        <name_ja>鉄壁・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4242,7 +4242,7 @@
     <item id="guardian_physique_jewel_4">
         <type>decoration</type>
         <name>Guardian/Physique Jewel 4</name>
-        <name_jp>守勢・体術珠【４】</name_jp>
+        <name_ja>守勢・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4252,7 +4252,7 @@
     <item id="friendship_physique_jewel_4">
         <type>decoration</type>
         <name>Friendship/Physique Jewel 4</name>
-        <name_jp>友愛・体術珠【４】</name_jp>
+        <name_ja>友愛・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4262,7 +4262,7 @@
     <item id="gobbler_physique_jewel_4">
         <type>decoration</type>
         <name>Gobbler/Physique Jewel 4</name>
-        <name_jp>早食・体術珠【４】</name_jp>
+        <name_ja>早食・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_eating"/>
@@ -4272,7 +4272,7 @@
     <item id="satiated_physique_jewel_4">
         <type>decoration</type>
         <name>Satiated/Physique Jewel 4</name>
-        <name_jp>節食・体術珠【４】</name_jp>
+        <name_ja>節食・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4282,7 +4282,7 @@
     <item id="grinder_physique_jewel_4">
         <type>decoration</type>
         <name>Grinder/Physique Jewel 4</name>
-        <name_jp>研磨・体術珠【４】</name_jp>
+        <name_ja>研磨・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_sharpening"/>
@@ -4292,7 +4292,7 @@
     <item id="bomber_physique_jewel_4">
         <type>decoration</type>
         <name>Bomber/Physique Jewel 4</name>
-        <name_jp>爆師・体術珠【４】</name_jp>
+        <name_ja>爆師・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="bombardier"/>
@@ -4302,7 +4302,7 @@
     <item id="fungiform_physique_jewel_4">
         <type>decoration</type>
         <name>Fungiform/Physique Jewel 4</name>
-        <name_jp>茸好・体術珠【４】</name_jp>
+        <name_ja>茸好・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="mushroomancer"/>
@@ -4312,7 +4312,7 @@
     <item id="stonethrower_physique_jewel_4">
         <type>decoration</type>
         <name>Stonethrower/Physique Jewel 4</name>
-        <name_jp>投石・体術珠【４】</name_jp>
+        <name_ja>投石・体術珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="constitution"/>
@@ -4322,7 +4322,7 @@
     <item id="brace_evasion_jewel_4">
         <type>decoration</type>
         <name>Brace/Evasion Jewel 4</name>
-        <name_jp>耐衝・回避珠【４】</name_jp>
+        <name_ja>耐衝・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4332,7 +4332,7 @@
     <item id="wind_resist_evasion_jewel_4">
         <type>decoration</type>
         <name>Wind Resist/Evasion Jewel 4</name>
-        <name_jp>防風・回避珠【４】</name_jp>
+        <name_ja>防風・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="windproof"/>
@@ -4342,7 +4342,7 @@
     <item id="footing_evasion_jewel_4">
         <type>decoration</type>
         <name>Footing/Evasion Jewel 4</name>
-        <name_jp>耐震・回避珠【４】</name_jp>
+        <name_ja>耐震・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4352,7 +4352,7 @@
     <item id="draw_evasion_jewel_4">
         <type>decoration</type>
         <name>Draw/Evasion Jewel 4</name>
-        <name_jp>抜刀・回避珠【４】</name_jp>
+        <name_ja>抜刀・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_draw"/>
@@ -4362,7 +4362,7 @@
     <item id="enhancer_evasion_jewel_4">
         <type>decoration</type>
         <name>Enhancer/Evasion Jewel 4</name>
-        <name_jp>昂揚・回避珠【４】</name_jp>
+        <name_ja>昂揚・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="power_prolonger"/>
@@ -4372,7 +4372,7 @@
     <item id="charger_evasion_jewel_4">
         <type>decoration</type>
         <name>Charger/Evasion Jewel 4</name>
-        <name_jp>短縮・回避珠【４】</name_jp>
+        <name_ja>短縮・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="focus"/>
@@ -4382,7 +4382,7 @@
     <item id="destroyer_evasion_jewel_4">
         <type>decoration</type>
         <name>Destroyer/Evasion Jewel 4</name>
-        <name_jp>重撃・回避珠【４】</name_jp>
+        <name_ja>重撃・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4392,7 +4392,7 @@
     <item id="ko_evasion_jewel_4">
         <type>decoration</type>
         <name>KO/Evasion Jewel 4</name>
-        <name_jp>ＫＯ・回避珠【４】</name_jp>
+        <name_ja>ＫＯ・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4402,7 +4402,7 @@
     <item id="throttle_evasion_jewel_4">
         <type>decoration</type>
         <name>Throttle/Evasion Jewel 4</name>
-        <name_jp>全開・回避珠【４】</name_jp>
+        <name_ja>全開・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="latent_power"/>
@@ -4412,7 +4412,7 @@
     <item id="challenger_evasion_jewel_4">
         <type>decoration</type>
         <name>Challenger/Evasion Jewel 4</name>
-        <name_jp>挑戦・回避珠【４】</name_jp>
+        <name_ja>挑戦・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="agitator"/>
@@ -4422,7 +4422,7 @@
     <item id="flawless_evasion_jewel_4">
         <type>decoration</type>
         <name>Flawless/Evasion Jewel 4</name>
-        <name_jp>無傷・回避珠【４】</name_jp>
+        <name_ja>無傷・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="peak_performance"/>
@@ -4432,7 +4432,7 @@
     <item id="potential_evasion_jewel_4">
         <type>decoration</type>
         <name>Potential/Evasion Jewel 4</name>
-        <name_jp>底力・回避珠【４】</name_jp>
+        <name_ja>底力・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4442,7 +4442,7 @@
     <item id="mighty_evasion_jewel_4">
         <type>decoration</type>
         <name>Mighty/Evasion Jewel 4</name>
-        <name_jp>渾身・回避珠【４】</name_jp>
+        <name_ja>渾身・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="maximum_might"/>
@@ -4452,7 +4452,7 @@
     <item id="furor_evasion_jewel_4">
         <type>decoration</type>
         <name>Furor/Evasion Jewel 4</name>
-        <name_jp>逆上・回避珠【４】</name_jp>
+        <name_ja>逆上・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resentment"/>
@@ -4462,7 +4462,7 @@
     <item id="phoenix_evasion_jewel_4">
         <type>decoration</type>
         <name>Phoenix/Evasion Jewel 4</name>
-        <name_jp>転福・回避珠【４】</name_jp>
+        <name_ja>転福・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4472,7 +4472,7 @@
     <item id="earplug_evasion_jewel_4">
         <type>decoration</type>
         <name>Earplug/Evasion Jewel 4</name>
-        <name_jp>防音・回避珠【４】</name_jp>
+        <name_ja>防音・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="earplugs"/>
@@ -4482,7 +4482,7 @@
     <item id="critical_evasion_jewel_4">
         <type>decoration</type>
         <name>Critical/Evasion Jewel 4</name>
-        <name_jp>超心・回避珠【４】</name_jp>
+        <name_ja>超心・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4492,7 +4492,7 @@
     <item id="tenderizer_evasion_jewel_4">
         <type>decoration</type>
         <name>Tenderizer/Evasion Jewel 4</name>
-        <name_jp>痛撃・回避珠【４】</name_jp>
+        <name_ja>痛撃・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4502,7 +4502,7 @@
     <item id="handicraft_evasion_jewel_4">
         <type>decoration</type>
         <name>Handicraft/Evasion Jewel 4</name>
-        <name_jp>匠・回避珠【４】</name_jp>
+        <name_ja>匠・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="handicraft"/>
@@ -4512,7 +4512,7 @@
     <item id="release_evasion_jewel_4">
         <type>decoration</type>
         <name>Release/Evasion Jewel 4</name>
-        <name_jp>解放・回避珠【４】</name_jp>
+        <name_ja>解放・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="free_elem_ammo_up"/>
@@ -4522,7 +4522,7 @@
     <item id="resistor_evasion_jewel_4">
         <type>decoration</type>
         <name>Resistor/Evasion Jewel 4</name>
-        <name_jp>耐属・回避珠【４】</name_jp>
+        <name_ja>耐属・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4532,7 +4532,7 @@
     <item id="drain_evasion_jewel_4">
         <type>decoration</type>
         <name>Drain/Evasion Jewel 4</name>
-        <name_jp>奪気・回避珠【４】</name_jp>
+        <name_ja>奪気・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="stamina_thief"/>
@@ -4542,7 +4542,7 @@
     <item id="flight_evasion_jewel_4">
         <type>decoration</type>
         <name>Flight/Evasion Jewel 4</name>
-        <name_jp>飛燕・回避珠【４】</name_jp>
+        <name_ja>飛燕・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4552,7 +4552,7 @@
     <item id="sheath_evasion_jewel_4">
         <type>decoration</type>
         <name>Sheath/Evasion Jewel 4</name>
-        <name_jp>速納・回避珠【４】</name_jp>
+        <name_ja>速納・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="quick_sheath"/>
@@ -4562,7 +4562,7 @@
     <item id="fortitude_evasion_jewel_4">
         <type>decoration</type>
         <name>Fortitude/Evasion Jewel 4</name>
-        <name_jp>逆境・回避珠【４】</name_jp>
+        <name_ja>逆境・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4572,7 +4572,7 @@
     <item id="slider_evasion_jewel_4">
         <type>decoration</type>
         <name>Slider/Evasion Jewel 4</name>
-        <name_jp>滑走・回避珠【４】</name_jp>
+        <name_ja>滑走・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4582,7 +4582,7 @@
     <item id="sprinter_evasion_jewel_4">
         <type>decoration</type>
         <name>Sprinter/Evasion Jewel 4</name>
-        <name_jp>強走・回避珠【４】</name_jp>
+        <name_ja>強走・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="marathon_runner"/>
@@ -4592,7 +4592,7 @@
     <item id="refresh_evasion_jewel_4">
         <type>decoration</type>
         <name>Refresh/Evasion Jewel 4</name>
-        <name_jp>早気・回避珠【４】</name_jp>
+        <name_ja>早気・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4602,7 +4602,7 @@
     <item id="crisis_evasion_jewel_4">
         <type>decoration</type>
         <name>Crisis/Evasion Jewel 4</name>
-        <name_jp>窮地・回避珠【４】</name_jp>
+        <name_ja>窮地・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="resuscitate"/>
@@ -4612,7 +4612,7 @@
     <item id="jumping_evasion_jewel_4">
         <type>decoration</type>
         <name>Jumping/Evasion Jewel 4</name>
-        <name_jp>跳躍・回避珠【４】</name_jp>
+        <name_ja>跳躍・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4622,7 +4622,7 @@
     <item id="ironwall_evasion_jewel_4">
         <type>decoration</type>
         <name>Ironwall/Evasion Jewel 4</name>
-        <name_jp>鉄壁・回避珠【４】</name_jp>
+        <name_ja>鉄壁・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="guard"/>
@@ -4632,7 +4632,7 @@
     <item id="guardian_evasion_jewel_4">
         <type>decoration</type>
         <name>Guardian/Evasion Jewel 4</name>
-        <name_jp>守勢・回避珠【４】</name_jp>
+        <name_ja>守勢・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4642,7 +4642,7 @@
     <item id="friendship_evasion_jewel_4">
         <type>decoration</type>
         <name>Friendship/Evasion Jewel 4</name>
-        <name_jp>友愛・回避珠【４】</name_jp>
+        <name_ja>友愛・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4652,7 +4652,7 @@
     <item id="gobbler_evasion_jewel_4">
         <type>decoration</type>
         <name>Gobbler/Evasion Jewel 4</name>
-        <name_jp>早食・回避珠【４】</name_jp>
+        <name_ja>早食・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_eating"/>
@@ -4662,7 +4662,7 @@
     <item id="satiated_evasion_jewel_4">
         <type>decoration</type>
         <name>Satiated/Evasion Jewel 4</name>
-        <name_jp>節食・回避珠【４】</name_jp>
+        <name_ja>節食・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4672,7 +4672,7 @@
     <item id="grinder_evasion_jewel_4">
         <type>decoration</type>
         <name>Grinder/Evasion Jewel 4</name>
-        <name_jp>研磨・回避珠【４】</name_jp>
+        <name_ja>研磨・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="speed_sharpening"/>
@@ -4682,7 +4682,7 @@
     <item id="bomber_evasion_jewel_4">
         <type>decoration</type>
         <name>Bomber/Evasion Jewel 4</name>
-        <name_jp>爆師・回避珠【４】</name_jp>
+        <name_ja>爆師・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4692,7 +4692,7 @@
     <item id="fungiform_evasion_jewel_4">
         <type>decoration</type>
         <name>Fungiform/Evasion Jewel 4</name>
-        <name_jp>茸好・回避珠【４】</name_jp>
+        <name_ja>茸好・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4702,7 +4702,7 @@
     <item id="stonethrower_evasion_jewel_4">
         <type>decoration</type>
         <name>Stonethrower/Evasion Jewel 4</name>
-        <name_jp>投石・回避珠【４】</name_jp>
+        <name_ja>投石・回避珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="evade_window"/>
@@ -4712,7 +4712,7 @@
     <item id="brace_maintenance_jewel_4">
         <type>decoration</type>
         <name>Brace/Maintenance Jewel 4</name>
-        <name_jp>耐衝・整備珠【４】</name_jp>
+        <name_ja>耐衝・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4722,7 +4722,7 @@
     <item id="wind_resist_maintenance_jewel_4">
         <type>decoration</type>
         <name>Wind Resist/Maintenance Jewel 4</name>
-        <name_jp>防風・整備珠【４】</name_jp>
+        <name_ja>防風・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4732,7 +4732,7 @@
     <item id="footing_maintenance_jewel_4">
         <type>decoration</type>
         <name>Footing/Maintenance Jewel 4</name>
-        <name_jp>耐震・整備珠【４】</name_jp>
+        <name_ja>耐震・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4742,7 +4742,7 @@
     <item id="draw_maintenance_jewel_4">
         <type>decoration</type>
         <name>Draw/Maintenance Jewel 4</name>
-        <name_jp>抜刀・整備珠【４】</name_jp>
+        <name_ja>抜刀・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4752,7 +4752,7 @@
     <item id="enhancer_maintenance_jewel_4">
         <type>decoration</type>
         <name>Enhancer/Maintenance Jewel 4</name>
-        <name_jp>昂揚・整備珠【４】</name_jp>
+        <name_ja>昂揚・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="power_prolonger"/>
@@ -4762,7 +4762,7 @@
     <item id="charger_maintenance_jewel_4">
         <type>decoration</type>
         <name>Charger/Maintenance Jewel 4</name>
-        <name_jp>短縮・整備珠【４】</name_jp>
+        <name_ja>短縮・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="focus"/>
@@ -4772,7 +4772,7 @@
     <item id="destroyer_maintenance_jewel_4">
         <type>decoration</type>
         <name>Destroyer/Maintenance Jewel 4</name>
-        <name_jp>重撃・整備珠【４】</name_jp>
+        <name_ja>重撃・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="partbreaker"/>
@@ -4782,7 +4782,7 @@
     <item id="ko_maintenance_jewel_4">
         <type>decoration</type>
         <name>KO/Maintenance Jewel 4</name>
-        <name_jp>ＫＯ・整備珠【４】</name_jp>
+        <name_ja>ＫＯ・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="slugger"/>
@@ -4792,7 +4792,7 @@
     <item id="throttle_maintenance_jewel_4">
         <type>decoration</type>
         <name>Throttle/Maintenance Jewel 4</name>
-        <name_jp>全開・整備珠【４】</name_jp>
+        <name_ja>全開・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="latent_power"/>
@@ -4802,7 +4802,7 @@
     <item id="challenger_maintenance_jewel_4">
         <type>decoration</type>
         <name>Challenger/Maintenance Jewel 4</name>
-        <name_jp>挑戦・整備珠【４】</name_jp>
+        <name_ja>挑戦・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="agitator"/>
@@ -4812,7 +4812,7 @@
     <item id="flawless_maintenance_jewel_4">
         <type>decoration</type>
         <name>Flawless/Maintenance Jewel 4</name>
-        <name_jp>無傷・整備珠【４】</name_jp>
+        <name_ja>無傷・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4822,7 +4822,7 @@
     <item id="potential_maintenance_jewel_4">
         <type>decoration</type>
         <name>Potential/Maintenance Jewel 4</name>
-        <name_jp>底力・整備珠【４】</name_jp>
+        <name_ja>底力・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="heroics"/>
@@ -4832,7 +4832,7 @@
     <item id="mighty_maintenance_jewel_4">
         <type>decoration</type>
         <name>Mighty/Maintenance Jewel 4</name>
-        <name_jp>渾身・整備珠【４】</name_jp>
+        <name_ja>渾身・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="maximum_might"/>
@@ -4842,7 +4842,7 @@
     <item id="furor_maintenance_jewel_4">
         <type>decoration</type>
         <name>Furor/Maintenance Jewel 4</name>
-        <name_jp>逆上・整備珠【４】</name_jp>
+        <name_ja>逆上・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4852,7 +4852,7 @@
     <item id="phoenix_maintenance_jewel_4">
         <type>decoration</type>
         <name>Phoenix/Maintenance Jewel 4</name>
-        <name_jp>転福・整備珠【４】</name_jp>
+        <name_ja>転福・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4862,7 +4862,7 @@
     <item id="earplug_maintenance_jewel_4">
         <type>decoration</type>
         <name>Earplug/Maintenance Jewel 4</name>
-        <name_jp>防音・整備珠【４】</name_jp>
+        <name_ja>防音・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4872,7 +4872,7 @@
     <item id="critical_maintenance_jewel_4">
         <type>decoration</type>
         <name>Critical/Maintenance Jewel 4</name>
-        <name_jp>超心・整備珠【４】</name_jp>
+        <name_ja>超心・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="critical_boost"/>
@@ -4882,7 +4882,7 @@
     <item id="tenderizer_maintenance_jewel_4">
         <type>decoration</type>
         <name>Tenderizer/Maintenance Jewel 4</name>
-        <name_jp>痛撃・整備珠【４】</name_jp>
+        <name_ja>痛撃・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4892,7 +4892,7 @@
     <item id="handicraft_maintenance_jewel_4">
         <type>decoration</type>
         <name>Handicraft/Maintenance Jewel 4</name>
-        <name_jp>匠・整備珠【４】</name_jp>
+        <name_ja>匠・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>
@@ -4902,7 +4902,7 @@
     <item id="release_maintenance_jewel_4">
         <type>decoration</type>
         <name>Release/Maintenance Jewel 4</name>
-        <name_jp>解放・整備珠【４】</name_jp>
+        <name_ja>解放・整備珠【４】</name_ja>
         <decoration_level>4</decoration_level>
         <buff_refs>
             <buff_ref id="tool_specialist"/>

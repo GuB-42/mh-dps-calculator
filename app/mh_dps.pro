@@ -11,6 +11,8 @@ CONFIG += debug
 # QMAKE_CFLAGS_RELEASE += -g
 # QMAKE_LFLAGS_RELEASE =
 
+QMAKE_CXXFLAGS += -Wno-class-memaccess
+
 QT = core gui xml concurrent
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -50,6 +52,7 @@ src/gui/DataPrinter.cpp \
 src/gui/DetailsDialog.cpp \
 src/gui/GeneticComputer.cpp \
 src/gui/GuiElements.cpp \
+src/gui/LanguageMenu.cpp \
 src/gui/MainApplication.cpp \
 src/gui/MainWindow.cpp \
 src/gui/MonsterModeMenu.cpp \
@@ -91,6 +94,7 @@ src/gui/DataPrinter.h \
 src/gui/DetailsDialog.h \
 src/gui/GeneticComputer.h \
 src/gui/GuiElements.h \
+src/gui/LanguageMenu.h \
 src/gui/MainApplication.h \
 src/gui/MainWindow.h \
 src/gui/MonsterModeMenu.h \

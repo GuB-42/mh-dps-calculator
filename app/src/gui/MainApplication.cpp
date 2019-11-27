@@ -11,6 +11,9 @@
 MainApplication::MainApplication(int &argc, char *argv[]) :
 	QApplication(argc, argv)
 {
+	m_translator = new QTranslator();
+	m_translatorQt = new QTranslator();
+
 	mainData = new MainData;
 	{
 		QDir data_dir("data");

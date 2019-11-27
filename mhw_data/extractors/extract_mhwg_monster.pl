@@ -129,7 +129,7 @@ sub process_data_row {
 		for my $row_s (@lrow_s) {
 			my $state_id = $cur_monster->{"last_state_id"}{$part_name}{$state_name}++;
 			my $state = $state_id == 0 ? "$state_name" : "state$state_name$state_id";
-			my $n = $cur_monster->{"name"} || $cur_monster->{"name_jp"};
+			my $n = $cur_monster->{"name"} || $cur_monster->{"name_ja"};
 			my @xns = ($n . "/" . $part_name . "/" . $state_name,
 			           $n . "//" . $state_name, $n . "/" . $part_name, $n);
 			for my $xn (@xns) {
@@ -293,7 +293,7 @@ sub end {
 			$t = "Xeno'jiiva" if ($t eq "Xenojiiva");
 			$cur_monster->{"name"} = $t if ($t =~ /\w/);
 		} elsif ($last_th eq "モンスター名") {
-			$cur_monster->{"name_jp"} = decode_text($text);
+			$cur_monster->{"name_ja"} = decode_text($text);
 		}
 		++$cur_col;
 	} elsif (lc($tag) eq "tr" && (@data_row > 0)) {
@@ -344,11 +344,11 @@ for my $file (@ARGV) {
 for my $monster (@monsters) {
 	$xml_writer->startTag("monster");
 	$xml_writer->dataElement("name", $monster->{"name"}) if ($monster->{"name"});
-	$xml_writer->dataElement("name_jp", $monster->{"name_jp"}) if ($monster->{"name_jp"});
+	$xml_writer->dataElement("name_ja", $monster->{"name_ja"}) if ($monster->{"name_ja"});
 	$xml_writer->dataElement("hit_points", $monster->{"hit_points"}) if ($monster->{"hit_points"});
 	for my $part_name (@{$monster->{"parts"}}) {
 		$xml_writer->startTag("part");
-		$xml_writer->dataElement("name_jp", $part_name);
+		$xml_writer->dataElement("name_ja", $part_name);
 		for my $state (sort keys %{$monster->{"hit_data"}{$part_name}}) {
 			$xml_writer->startTag("hit_data");
 			$xml_writer->dataElement("state", $state) if ($state);

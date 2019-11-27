@@ -35,9 +35,9 @@ public:
 
 	QVector<int> getDecorationSlots() const;
 	QVector<int> getUsedSlots() const;
-	void setDataLanguage(Language lang);
 
 public slots:
+	void setDataLanguage(Language lang);
 	void calculate();
 	void calculationProgress(int min, int max, int value);
 	void calculationFinished(const QVector<BuildWithDps *> &data);
@@ -52,7 +52,6 @@ signals:
 
 private slots:
 	void updateCopyAction();
-	void changeLanguage(int lang_idx);
 	void selectBuffGroupFromList(const QModelIndex &index);
 	void updateBuffGroupFromListSelection();
 	void buffGroupChanged(int new_idx);
@@ -63,8 +62,6 @@ protected:
 
 private:
 	Ui::MainWindow *ui;
-	QTranslator translator;
-	QTranslator translatorQt;
 
 	QProgressBar *progressBar;
 	const MainData *mainData;

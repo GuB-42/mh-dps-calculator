@@ -13,8 +13,7 @@ my $xml_writer = XML::Writer->new(OUTPUT => $io, ENCODING => 'utf-8', DATA_MODE 
 $xml_writer->xmlDecl("UTF-8");
 
 my %col_rename = (
-	"name_en" => "name",
-	"name_ja" => "name_jp",
+	"name_en" => "name"
 );
 
 $xml_writer->startTag("data");

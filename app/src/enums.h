@@ -6,7 +6,7 @@
 enum Language {
 	LANG_EN,
 	LANG_FR,
-	LANG_JP,
+	LANG_JA,
 	LANG_COUNT
 };
 const char *toString(Language t);

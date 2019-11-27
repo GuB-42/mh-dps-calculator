@@ -4,7 +4,7 @@ const char *toString(Language t) {
 	switch (t) {
 	case LANG_EN: return "en";
 	case LANG_FR: return "fr";
-	case LANG_JP: return "jp";
+	case LANG_JA: return "ja";
 	case LANG_COUNT: return "???";
 	}
 	return "???";

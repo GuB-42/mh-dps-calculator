@@ -55,7 +55,7 @@
 	<buff_group id="poison_resistance">
 		<name>Poison Resistance</name>
 		<name_fr>Toxicologie</name_fr>
-		<name_jp>毒耐性</name_jp>
+		<name_ja>毒耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -70,7 +70,7 @@
 	<buff_group id="paralysis_resistance">
 		<name>Paralysis Resistance</name>
 		<name_fr>Antiparalysie</name_fr>
-		<name_jp>麻痺耐性</name_jp>
+		<name_ja>麻痺耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -85,7 +85,7 @@
 	<buff_group id="sleep_resistance">
 		<name>Sleep Resistance</name>
 		<name_fr>Insomnie</name_fr>
-		<name_jp>睡眠耐性</name_jp>
+		<name_ja>睡眠耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -100,7 +100,7 @@
 	<buff_group id="stun_resistance">
 		<name>Stun Resistance</name>
 		<name_fr>Crâne d'acier</name_fr>
-		<name_jp>気絶耐性</name_jp>
+		<name_ja>気絶耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -115,7 +115,7 @@
 	<buff_group id="muck_resistance">
 		<name>Muck Resistance</name>
 		<name_fr>Anti-fange</name_fr>
-		<name_jp>泥耐性</name_jp>
+		<name_ja>泥耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -124,7 +124,7 @@
 	<buff_group id="blast_resistance">
 		<name>Blast Resistance</name>
 		<name_fr>Anti-explosion</name_fr>
-		<name_jp>爆破やられ耐性</name_jp>
+		<name_ja>爆破やられ耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -139,7 +139,7 @@
 	<buff_group id="bleeding_resistance">
 		<name>Bleeding Resistance</name>
 		<name_fr>Anti-hémorragie</name_fr>
-		<name_jp>裂傷耐性</name_jp>
+		<name_ja>裂傷耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -154,7 +154,7 @@
 	<buff_group id="iron_skin">
 		<name>Iron Skin</name>
 		<name_fr>Peau de fer</name_fr>
-		<name_jp>防御力ＤＯＷＮ耐性</name_jp>
+		<name_ja>防御力ＤＯＷＮ耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -169,7 +169,7 @@
 	<buff_group id="earplugs">
 		<name>Earplugs</name>
 		<name_fr>Bouchon d'oreilles</name_fr>
-		<name_jp>耳栓</name_jp>
+		<name_ja>耳栓</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -190,7 +190,7 @@
 	<buff_group id="windproof">
 		<name>Windproof</name>
 		<name_fr>Pare-vent</name_fr>
-		<name_jp>風圧耐性</name_jp>
+		<name_ja>風圧耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -211,7 +211,7 @@
 	<buff_group id="tremor_resistance">
 		<name>Tremor Resistance</name>
 		<name_fr>Sismologie</name_fr>
-		<name_jp>耐震</name_jp>
+		<name_ja>耐震</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -226,7 +226,7 @@
 	<buff_group id="dungmaster">
 		<name>Dungmaster</name>
 		<name_fr>Grand bousier</name_fr>
-		<name_jp>こやし名人</name_jp>
+		<name_ja>こやし名人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -235,7 +235,7 @@
 	<buff_group id="effluvial_expert">
 		<name>Effluvial Expert</name>
 		<name_fr>Aura de purge</name_fr>
-		<name_jp>瘴気環境適応</name_jp>
+		<name_ja>瘴気環境適応</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -244,7 +244,7 @@
 	<buff_group id="heat_guard">
 		<name>Heat Guard</name>
 		<name_fr>Thermorésistance</name_fr>
-		<name_jp>熱ダメージ無効</name_jp>
+		<name_ja>熱ダメージ無効</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -253,7 +253,7 @@
 	<buff_group id="attack_boost">
 		<name>Attack Boost</name>
 		<name_fr>Machine de guerre</name_fr>
-		<name_jp>攻撃</name_jp>
+		<name_ja>攻撃</name_ja>
 		<buff level="1">
 			<attack_plus>3</attack_plus>
 		</buff>
@@ -284,7 +284,7 @@
 	<buff_group id="defense_boost">
 		<name>Defense Boost</name>
 		<name_fr>Bastion</name_fr>
-		<name_jp>防御</name_jp>
+		<name_ja>防御</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -311,7 +311,7 @@
 	<buff_group id="health_boost">
 		<name>Health Boost</name>
 		<name_fr>Afflux de vie</name_fr>
-		<name_jp>体力増強</name_jp>
+		<name_ja>体力増強</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -326,7 +326,7 @@
 	<buff_group id="recovery_up">
 		<name>Recovery Up</name>
 		<name_fr>Cercle de vie</name_fr>
-		<name_jp>体力回復量ＵＰ</name_jp>
+		<name_ja>体力回復量ＵＰ</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -341,7 +341,7 @@
 	<buff_group id="recovery_speed">
 		<name>Recovery Speed</name>
 		<name_fr>Halo de guérison</name_fr>
-		<name_jp>回復速度</name_jp>
+		<name_ja>回復速度</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -356,7 +356,7 @@
 	<buff_group id="fire_resistance">
 		<name>Fire Resistance</name>
 		<name_fr>Ignifuge</name_fr>
-		<name_jp>火耐性</name_jp>
+		<name_ja>火耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -371,7 +371,7 @@
 	<buff_group id="water_resistance">
 		<name>Water Resistance</name>
 		<name_fr>Étanchéité</name_fr>
-		<name_jp>水耐性</name_jp>
+		<name_ja>水耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -386,7 +386,7 @@
 	<buff_group id="ice_resistance">
 		<name>Ice Resistance</name>
 		<name_fr>Antigel</name_fr>
-		<name_jp>氷耐性</name_jp>
+		<name_ja>氷耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -401,7 +401,7 @@
 	<buff_group id="thunder_resistance">
 		<name>Thunder Resistance</name>
 		<name_fr>Paratonnerre</name_fr>
-		<name_jp>雷耐性</name_jp>
+		<name_ja>雷耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -416,7 +416,7 @@
 	<buff_group id="dragon_resistance">
 		<name>Dragon Resistance</name>
 		<name_fr>Aura draconien</name_fr>
-		<name_jp>龍耐性</name_jp>
+		<name_ja>龍耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -431,7 +431,7 @@
 	<buff_group id="blight_resistance">
 		<name>Blight Resistance</name>
 		<name_fr>Totem élémentaire</name_fr>
-		<name_jp>属性やられ耐性</name_jp>
+		<name_ja>属性やられ耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -446,7 +446,7 @@
 	<buff_group id="fire_attack">
 		<name>Fire Attack</name>
 		<name_fr>Pyromane</name_fr>
-		<name_jp>火属性攻撃強化</name_jp>
+		<name_ja>火属性攻撃強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<fire>3</fire>
@@ -483,7 +483,7 @@
 	<buff_group id="water_attack">
 		<name>Water Attack</name>
 		<name_fr>Maelstrom</name_fr>
-		<name_jp>水属性攻撃強化</name_jp>
+		<name_ja>水属性攻撃強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<water>3</water>
@@ -520,7 +520,7 @@
 	<buff_group id="ice_attack">
 		<name>Ice Attack</name>
 		<name_fr>Blizzard</name_fr>
-		<name_jp>氷属性攻撃強化</name_jp>
+		<name_ja>氷属性攻撃強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<ice>3</ice>
@@ -557,7 +557,7 @@
 	<buff_group id="thunder_attack">
 		<name>Thunder Attack</name>
 		<name_fr>Feu du ciel</name_fr>
-		<name_jp>雷属性攻撃強化</name_jp>
+		<name_ja>雷属性攻撃強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<thunder>3</thunder>
@@ -594,7 +594,7 @@
 	<buff_group id="dragon_attack">
 		<name>Dragon Attack</name>
 		<name_fr>Pourfendeur de dragon</name_fr>
-		<name_jp>龍属性攻撃強化</name_jp>
+		<name_ja>龍属性攻撃強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<dragon>3</dragon>
@@ -631,7 +631,7 @@
 	<buff_group id="poison_attack">
 		<name>Poison Attack</name>
 		<name_fr>Mort-aux-rats</name_fr>
-		<name_jp>毒属性強化</name_jp>
+		<name_ja>毒属性強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<poison>3</poison>
@@ -661,7 +661,7 @@
 	<buff_group id="paralysis_attack">
 		<name>Paralysis Attack</name>
 		<name_fr>Neutralisation</name_fr>
-		<name_jp>麻痺属性強化</name_jp>
+		<name_ja>麻痺属性強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<paralysis>3</paralysis>
@@ -691,7 +691,7 @@
 	<buff_group id="sleep_attack">
 		<name>Sleep Attack</name>
 		<name_fr>La nuit porte conseil</name_fr>
-		<name_jp>睡眠属性強化</name_jp>
+		<name_ja>睡眠属性強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<sleep>3</sleep>
@@ -721,7 +721,7 @@
 	<buff_group id="blast_attack">
 		<name>Blast Attack</name>
 		<name_fr>Destruction massive</name_fr>
-		<name_jp>爆破属性強化</name_jp>
+		<name_ja>爆破属性強化</name_ja>
 		<buff level="1">
 			<element_plus>
 				<blast>3</blast>
@@ -751,7 +751,7 @@
 	<buff_group id="normal_shots">
 		<name>Normal Shots</name>
 		<name_fr>Tir maximum</name_fr>
-		<name_jp>通常弾・通常矢強化</name_jp>
+		<name_ja>通常弾・通常矢強化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -760,7 +760,7 @@
 	<buff_group id="piercing_shots">
 		<name>Piercing Shots</name>
 		<name_fr>Traque sans merci</name_fr>
-		<name_jp>貫通弾・竜の一矢強化</name_jp>
+		<name_ja>貫通弾・竜の一矢強化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -769,7 +769,7 @@
 	<buff_group id="spread_power_shots">
 		<name>Spread/Power Shots</name>
 		<name_fr>Désigné pour mourir</name_fr>
-		<name_jp>散弾・剛射強化</name_jp>
+		<name_ja>散弾・剛射強化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -778,7 +778,7 @@
 	<buff_group id="free_elem_ammo_up">
 		<name>Free Elem/Ammo Up</name>
 		<name_fr>Tireur d'élite</name_fr>
-		<name_jp>属性解放／装填拡張</name_jp>
+		<name_ja>属性解放／装填拡張</name_ja>
 		<buff level="1">
 			<awakening>0.33</awakening>
 		</buff>
@@ -793,7 +793,7 @@
 	<buff_group id="critical_eye">
 		<name>Critical Eye</name>
 		<name_fr>Maître d'armes</name_fr>
-		<name_jp>見切り</name_jp>
+		<name_ja>見切り</name_ja>
 		<buff level="1">
 			<affinity_plus>5</affinity_plus>
 		</buff>
@@ -820,7 +820,7 @@
 	<buff_group id="critical_boost">
 		<name>Critical Boost</name>
 		<name_fr>Berserker</name_fr>
-		<name_jp>超会心</name_jp>
+		<name_ja>超会心</name_ja>
 		<buff level="1">
 			<raw_critical_hit_multiplier>1.3</raw_critical_hit_multiplier>
 		</buff>
@@ -835,7 +835,7 @@
 	<buff_group id="weakness_exploit">
 		<name>Weakness Exploit</name>
 		<name_fr>Mise à mort</name_fr>
-		<name_jp>弱点特効</name_jp>
+		<name_ja>弱点特効</name_ja>
 		<buff level="1">
 			<weak_spot>
 				<affinity_plus>15</affinity_plus>
@@ -856,7 +856,7 @@
 	<buff_group id="focus">
 		<name>Focus</name>
 		<name_fr>Concentration</name_fr>
-		<name_jp>集中</name_jp>
+		<name_ja>集中</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -871,7 +871,7 @@
 	<buff_group id="power_prolonger">
 		<name>Power Prolonger</name>
 		<name_fr>Puissance absolue</name_fr>
-		<name_jp>強化持続</name_jp>
+		<name_ja>強化持続</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -886,7 +886,7 @@
 	<buff_group id="handicraft">
 		<name>Handicraft</name>
 		<name_fr>Savoir-faire</name_fr>
-		<name_jp>匠</name_jp>
+		<name_ja>匠</name_ja>
 		<buff level="1">
 			<sharpness_plus>10</sharpness_plus>
 		</buff>
@@ -907,7 +907,7 @@
 	<buff_group id="critical_draw">
 		<name>Critical Draw</name>
 		<name_fr>Dégainage éclair</name_fr>
-		<name_jp>抜刀術【技】</name_jp>
+		<name_ja>抜刀術【技】</name_ja>
 		<buff level="1">
 			<draw_attack>
 				<affinity_plus>30</affinity_plus>
@@ -928,7 +928,7 @@
 	<buff_group id="partbreaker">
 		<name>Partbreaker</name>
 		<name_fr>Destructeur</name_fr>
-		<name_jp>破壊王</name_jp>
+		<name_ja>破壊王</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -943,7 +943,7 @@
 	<buff_group id="slugger">
 		<name>Slugger</name>
 		<name_fr>Cogneur</name_fr>
-		<name_jp>ＫＯ術</name_jp>
+		<name_ja>ＫＯ術</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<element_multiplier>
@@ -975,7 +975,7 @@
 	<buff_group id="stamina_thief">
 		<name>Stamina Thief</name>
 		<name_fr>Vol d'endurance</name_fr>
-		<name_jp>スタミナ奪取</name_jp>
+		<name_ja>スタミナ奪取</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<element_multiplier>
@@ -1007,7 +1007,7 @@
 	<buff_group id="master_mounter">
 		<name>Master Mounter</name>
 		<name_fr>Maître-cavalier</name_fr>
-		<name_jp>乗り名人</name_jp>
+		<name_ja>乗り名人</name_ja>
 		<buff level="1">
 			<element_multiplier>
 				<mount>1.1</mount>
@@ -1018,7 +1018,7 @@
 	<buff_group id="airborne">
 		<name>Airborne</name>
 		<name_fr>Mort venue d'en haut</name_fr>
-		<name_jp>飛燕</name_jp>
+		<name_ja>飛燕</name_ja>
 		<buff level="1">
 			<airborne>
 				<attack_multiplier>1.1</attack_multiplier>
@@ -1029,7 +1029,7 @@
 	<buff_group id="latent_power">
 		<name>Latent Power</name>
 		<name_fr>Force latente</name_fr>
-		<name_jp>力の解放</name_jp>
+		<name_ja>力の解放</name_ja>
 		<level_cap>5</level_cap>
 		<buff level="1">
 			<received_damage>
@@ -1071,7 +1071,7 @@
 	<buff_group id="agitator">
 		<name>Agitator</name>
 		<name_fr>Témérité</name_fr>
-		<name_jp>挑戦者</name_jp>
+		<name_ja>挑戦者</name_ja>
 		<level_cap>5</level_cap>
 		<buff level="1">
 			<enraged>
@@ -1120,7 +1120,7 @@
 	<buff_group id="peak_performance">
 		<name>Peak Performance</name>
 		<name_fr>Performance optimale</name_fr>
-		<name_jp>フルチャージ</name_jp>
+		<name_ja>フルチャージ</name_ja>
 		<buff level="1">
 			<full_life>
 				<attack_plus>5</attack_plus>
@@ -1141,7 +1141,7 @@
 	<buff_group id="heroics">
 		<name>Heroics</name>
 		<name_fr>Héroïsme</name_fr>
-		<name_jp>火事場力</name_jp>
+		<name_ja>火事場力</name_ja>
 		<buff level="1">
 			<low_life>
 				<!-- no more attack boost -->
@@ -1172,7 +1172,7 @@
 	<buff_group id="fortify">
 		<name>Fortify</name>
 		<name_fr>Jamais vaincu</name_fr>
-		<name_jp>不屈</name_jp>
+		<name_ja>不屈</name_ja>
 		<buff level="1">
 			<death_1>
 				<attack_multiplier>1.1</attack_multiplier>
@@ -1186,7 +1186,7 @@
 	<buff_group id="resentment">
 		<name>Resentment</name>
 		<name_fr>Vengeance</name_fr>
-		<name_jp>逆恨み</name_jp>
+		<name_ja>逆恨み</name_ja>
 		<buff level="1">
 			<red_life>
 				<attack_plus>5</attack_plus>
@@ -1217,7 +1217,7 @@
 	<buff_group id="resuscitate">
 		<name>Resuscitate</name>
 		<name_fr>Esprit indomptable</name_fr>
-		<name_jp>死中に活</name_jp>
+		<name_ja>死中に活</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1226,7 +1226,7 @@
 	<buff_group id="horn_maestro">
 		<name>Horn Maestro</name>
 		<name_fr>Maestro</name_fr>
-		<name_jp>笛吹き名人</name_jp>
+		<name_ja>笛吹き名人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1235,7 +1235,7 @@
 	<buff_group id="capacity_boost">
 		<name>Capacity Boost</name>
 		<name_fr>Prêt à tirer</name_fr>
-		<name_jp>砲弾装填数ＵＰ</name_jp>
+		<name_ja>砲弾装填数ＵＰ</name_ja>
 		<buff level="1">
 			<capacity_up>1</capacity_up>
 		</buff>
@@ -1244,7 +1244,7 @@
 	<buff_group id="special_ammo_boost">
 		<name>Special Ammo Boost</name>
 		<name_fr>Salve mortelle</name_fr>
-		<name_jp>特殊射撃強化</name_jp>
+		<name_ja>特殊射撃強化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1256,7 +1256,7 @@
 	<buff_group id="artillery">
 		<name>Artillery</name>
 		<name_fr>BOUM !</name_fr>
-		<name_jp>砲術</name_jp>
+		<name_ja>砲術</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<artillery_multiplier>1.1</artillery_multiplier>
@@ -1278,7 +1278,7 @@
 	<buff_group id="heavy_artillery">
 		<name>Heavy Artillery</name>
 		<name_fr>Artillerie lourde</name_fr>
-		<name_jp>砲撃手</name_jp>
+		<name_ja>砲撃手</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1290,7 +1290,7 @@
 	<buff_group id="marathon_runner">
 		<name>Marathon Runner</name>
 		<name_fr>Marathonien</name_fr>
-		<name_jp>ランナー</name_jp>
+		<name_ja>ランナー</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1305,7 +1305,7 @@
 	<buff_group id="constitution">
 		<name>Constitution</name>
 		<name_fr>Athlète</name_fr>
-		<name_jp>体術</name_jp>
+		<name_ja>体術</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1326,7 +1326,7 @@
 	<buff_group id="leap_of_faith">
 		<name>Leap of Faith</name>
 		<name_fr>Saut de la foi</name_fr>
-		<name_jp>飛び込み</name_jp>
+		<name_ja>飛び込み</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1335,7 +1335,7 @@
 	<buff_group id="stamina_surge">
 		<name>Stamina Surge</name>
 		<name_fr>Métabolisme</name_fr>
-		<name_jp>スタミナ急速回復</name_jp>
+		<name_ja>スタミナ急速回復</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1350,7 +1350,7 @@
 	<buff_group id="hunger_resistance">
 		<name>Hunger Resistance</name>
 		<name_fr>Spartiate</name_fr>
-		<name_jp>腹減り耐性</name_jp>
+		<name_ja>腹減り耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1365,7 +1365,7 @@
 	<buff_group id="evade_window">
 		<name>Evade Window</name>
 		<name_fr>Invulnérabilité</name_fr>
-		<name_jp>回避性能</name_jp>
+		<name_ja>回避性能</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1386,7 +1386,7 @@
 	<buff_group id="evade_extender">
 		<name>Evade Extender</name>
 		<name_fr>Trompe-la-mort</name_fr>
-		<name_jp>回避距離ＵＰ</name_jp>
+		<name_ja>回避距離ＵＰ</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1401,7 +1401,7 @@
 	<buff_group id="guard">
 		<name>Guard</name>
 		<name_fr>Paladin</name_fr>
-		<name_jp>ガード性能</name_jp>
+		<name_ja>ガード性能</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1422,7 +1422,7 @@
 	<buff_group id="quick_sheath">
 		<name>Quick Sheath</name>
 		<name_fr>Rengainage éclair</name_fr>
-		<name_jp>納刀術</name_jp>
+		<name_ja>納刀術</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1437,7 +1437,7 @@
 	<buff_group id="wide_range">
 		<name>Wide-Range</name>
 		<name_fr>Un pour tous</name_fr>
-		<name_jp>広域化</name_jp>
+		<name_ja>広域化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1458,7 +1458,7 @@
 	<buff_group id="item_prolonger">
 		<name>Item Prolonger</name>
 		<name_fr>Chimiste</name_fr>
-		<name_jp>アイテム使用強化</name_jp>
+		<name_ja>アイテム使用強化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1473,7 +1473,7 @@
 	<buff_group id="free_meal">
 		<name>Free Meal</name>
 		<name_fr>Pique-assiette</name_fr>
-		<name_jp>満足感</name_jp>
+		<name_ja>満足感</name_ja>
 		<level_cap>1</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
@@ -1489,7 +1489,7 @@
 	<buff_group id="speed_eating">
 		<name>Speed Eating</name>
 		<name_fr>Carnassier</name_fr>
-		<name_jp>早食い</name_jp>
+		<name_ja>早食い</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1504,7 +1504,7 @@
 	<buff_group id="speed_sharpening">
 		<name>Speed Sharpening</name>
 		<name_fr>Affûtage rapide</name_fr>
-		<name_jp>砥石使用高速化</name_jp>
+		<name_ja>砥石使用高速化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1519,7 +1519,7 @@
 	<buff_group id="bombardier">
 		<name>Bombardier</name>
 		<name_fr>Bombardier</name_fr>
-		<name_jp>ボマー</name_jp>
+		<name_ja>ボマー</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
@@ -1541,7 +1541,7 @@
 	<buff_group id="mushroomancer">
 		<name>Mushroomancer</name>
 		<name_fr>Mycologue extrême</name_fr>
-		<name_jp>キノコ大好き</name_jp>
+		<name_ja>キノコ大好き</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1556,7 +1556,7 @@
 	<buff_group id="master_fisher">
 		<name>Master Fisher</name>
 		<name_fr>Maître de la pêche</name_fr>
-		<name_jp>釣り名人</name_jp>
+		<name_ja>釣り名人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1565,7 +1565,7 @@
 	<buff_group id="pro_transporter">
 		<name>Pro Transporter</name>
 		<name_fr>Pro du transport</name_fr>
-		<name_jp>運搬の達人</name_jp>
+		<name_ja>運搬の達人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1574,7 +1574,7 @@
 	<buff_group id="master_gatherer">
 		<name>Master Gatherer</name>
 		<name_fr>Prince de la cueillette</name_fr>
-		<name_jp>採集の達人</name_jp>
+		<name_ja>採集の達人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1583,7 +1583,7 @@
 	<buff_group id="honey_hunter">
 		<name>Honey Hunter</name>
 		<name_fr>Amoureux du miel</name_fr>
-		<name_jp>ハニーハンター</name_jp>
+		<name_ja>ハニーハンター</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1592,7 +1592,7 @@
 	<buff_group id="carving_pro">
 		<name>Carving Pro</name>
 		<name_fr>Expert en dépeçage</name_fr>
-		<name_jp>剥ぎ取り鉄人</name_jp>
+		<name_ja>剥ぎ取り鉄人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1601,7 +1601,7 @@
 	<buff_group id="divine_blessing">
 		<name>Divine Blessing</name>
 		<name_fr>Bénédiction</name_fr>
-		<name_jp>精霊の加護</name_jp>
+		<name_ja>精霊の加護</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
@@ -1623,7 +1623,7 @@
 	<buff_group id="palico_rally">
 		<name>Palico Rally</name>
 		<name_fr>Esprit Palico</name_fr>
-		<name_jp>オトモへの采配</name_jp>
+		<name_ja>オトモへの采配</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1644,7 +1644,7 @@
 	<buff_group id="botanist">
 		<name>Botanist</name>
 		<name_fr>Botaniste</name_fr>
-		<name_jp>植生学</name_jp>
+		<name_ja>植生学</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1662,7 +1662,7 @@
 	<buff_group id="geologist">
 		<name>Geologist</name>
 		<name_fr>Géologiste</name_fr>
-		<name_jp>地質学</name_jp>
+		<name_ja>地質学</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1677,7 +1677,7 @@
 	<buff_group id="maximum_might">
 		<name>Maximum Might</name>
 		<name_fr>Corps et âme</name_fr>
-		<name_jp>渾身</name_jp>
+		<name_ja>渾身</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<full_stamina_delayed>
@@ -1709,7 +1709,7 @@
 	<buff_group id="slinger_capacity">
 		<name>Slinger Capacity</name>
 		<name_fr>Fronde +</name_fr>
-		<name_jp>スリンガー装填数ＵＰ</name_jp>
+		<name_ja>スリンガー装填数ＵＰ</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
@@ -1731,7 +1731,7 @@
 	<buff_group id="stealth">
 		<name>Stealth</name>
 		<name_fr>Furtivité</name_fr>
-		<name_jp>潜伏</name_jp>
+		<name_ja>潜伏</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1746,7 +1746,7 @@
 	<buff_group id="flinch_free">
 		<name>Flinch Free</name>
 		<name_fr>Nerfs d'acier</name_fr>
-		<name_jp>ひるみ軽減</name_jp>
+		<name_ja>ひるみ軽減</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1761,7 +1761,7 @@
 	<buff_group id="scoutfly_range_up">
 		<name>Scoutfly Range Up</name>
 		<name_fr>Pistage</name_fr>
-		<name_jp>導蟲反応距離ＵＰ</name_jp>
+		<name_ja>導蟲反応距離ＵＰ</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1770,7 +1770,7 @@
 	<buff_group id="speed_crawler">
 		<name>Speed Crawler</name>
 		<name_fr>Rampeur rapide</name_fr>
-		<name_jp>しゃがみ移動速度ＵＰ</name_jp>
+		<name_ja>しゃがみ移動速度ＵＰ</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1779,7 +1779,7 @@
 	<buff_group id="jump_master">
 		<name>Jump Master</name>
 		<name_fr>Acrobate</name_fr>
-		<name_jp>ジャンプ鉄人</name_jp>
+		<name_ja>ジャンプ鉄人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1788,7 +1788,7 @@
 	<buff_group id="sporepuff_expert">
 		<name>Sporepuff Expert</name>
 		<name_fr>Expert sporenlit</name_fr>
-		<name_jp>綿胞子草の知識</name_jp>
+		<name_ja>綿胞子草の知識</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1803,7 +1803,7 @@
 	<buff_group id="aquatic_expert">
 		<name>Aquatic Expert</name>
 		<name_fr>Homme-poisson</name_fr>
-		<name_jp>水場適応</name_jp>
+		<name_ja>水場適応</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1818,7 +1818,7 @@
 	<buff_group id="cliffhanger">
 		<name>Cliffhanger</name>
 		<name_fr>Monte-en-l'air</name_fr>
-		<name_jp>クライマー</name_jp>
+		<name_ja>クライマー</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1827,7 +1827,7 @@
 	<buff_group id="blindsider">
 		<name>Blindsider</name>
 		<name_fr>Aveuglement</name_fr>
-		<name_jp>閃光強化</name_jp>
+		<name_ja>閃光強化</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1836,7 +1836,7 @@
 	<buff_group id="scholar">
 		<name>Scholar</name>
 		<name_fr>Puits de science</name_fr>
-		<name_jp>研究者</name_jp>
+		<name_ja>研究者</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1845,7 +1845,7 @@
 	<buff_group id="entomologist">
 		<name>Entomologist</name>
 		<name_fr>Entomologiste</name_fr>
-		<name_jp>昆虫標本の達人</name_jp>
+		<name_ja>昆虫標本の達人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1860,7 +1860,7 @@
 	<buff_group id="effluvia_resistance">
 		<name>Effluvia Resistance</name>
 		<name_fr>Purification</name_fr>
-		<name_jp>瘴気耐性</name_jp>
+		<name_ja>瘴気耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1875,7 +1875,7 @@
 	<buff_group id="scenthound">
 		<name>Scenthound</name>
 		<name_fr>Instinct animal</name_fr>
-		<name_jp>追跡の達人</name_jp>
+		<name_ja>追跡の達人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1884,7 +1884,7 @@
 	<buff_group id="foragers_luck">
 		<name>Forager's Luck</name>
 		<name_fr>Chance du foreur</name_fr>
-		<name_jp>探索者の幸運</name_jp>
+		<name_ja>探索者の幸運</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1893,7 +1893,7 @@
 	<buff_group id="detector">
 		<name>Detector</name>
 		<name_fr>Détecteur</name_fr>
-		<name_jp>感知</name_jp>
+		<name_ja>感知</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1902,7 +1902,7 @@
 	<buff_group id="bbq_master">
 		<name>BBQ Master</name>
 		<name_fr>Roi du BBQ</name_fr>
-		<name_jp>肉焼き名人</name_jp>
+		<name_ja>肉焼き名人</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1911,7 +1911,7 @@
 	<buff_group id="tool_specialist">
 		<name>Tool Specialist</name>
 		<name_fr>Expert en survie</name_fr>
-		<name_jp>整備</name_jp>
+		<name_ja>整備</name_ja>
 		<level_cap>3</level_cap>
 		<buff level="1">
 			<!-- not implemented -->
@@ -1933,7 +1933,7 @@
 	<buff_group id="affinity_sliding">
 		<name>Affinity Sliding</name>
 		<name_fr>Roi de la glisse</name_fr>
-		<name_jp>滑走強化</name_jp>
+		<name_ja>滑走強化</name_ja>
 		<buff level="1">
 			<sliding>
 				<affinity_plus>30</affinity_plus>
@@ -1944,7 +1944,7 @@
 	<buff_group id="intimidator">
 		<name>Intimidator</name>
 		<name_fr>Intimidation</name_fr>
-		<name_jp>威嚇</name_jp>
+		<name_ja>威嚇</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -1959,7 +1959,7 @@
 	<buff_group id="hasten_recovery">
 		<name>Hasten Recovery</name>
 		<name_fr>Récupération rapide</name_fr>
-		<name_jp>加速再生</name_jp>
+		<name_ja>加速再生</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -1968,7 +1968,7 @@
 	<buff_group id="super_recovery">
 		<name>Super Recovery</name>
 		<name_fr>Super récupération</name_fr>
-		<name_jp>超回復力</name_jp>
+		<name_ja>超回復力</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -1977,7 +1977,7 @@
 	<buff_group id="poison_duration_up">
 		<name>Poison Duration Up</name>
 		<name_fr>Poison +</name_fr>
-		<name_jp>毒ダメージ強化</name_jp>
+		<name_ja>毒ダメージ強化</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -1986,7 +1986,7 @@
 	<buff_group id="adrenaline">
 		<name>Adrenaline</name>
 		<name_fr>Adrénaline</name_fr>
-		<name_jp>奮起</name_jp>
+		<name_ja>奮起</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -1995,7 +1995,7 @@
 	<buff_group id="stamina_cap_up">
 		<name>Stamina Cap Up</name>
 		<name_fr>Stamina +</name_fr>
-		<name_jp>スタミナ上限突破</name_jp>
+		<name_ja>スタミナ上限突破</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2004,7 +2004,7 @@
 	<buff_group id="critical_element">
 		<name>Critical Element</name>
 		<name_fr>Rage élémentaire</name_fr>
-		<name_jp>会心撃【属性】</name_jp>
+		<name_ja>会心撃【属性】</name_ja>
 		<buff>
 			<element_critical_hit_multiplier>1.25</element_critical_hit_multiplier>
 		</buff>
@@ -2013,7 +2013,7 @@
 	<buff_group id="minds_eye_ballistics">
 		<name>Mind's Eye/Ballistics</name>
 		<name_fr>Œil de l'esprit</name_fr>
-		<name_jp>心眼／弾導強化</name_jp>
+		<name_ja>心眼／弾導強化</name_ja>
 		<buff>
 			<minds_eye>1</minds_eye>
 		</buff>
@@ -2022,7 +2022,7 @@
 	<buff_group id="bludgeoner">
 		<name>Bludgeoner</name>
 		<name_fr>Matraquage</name_fr>
-		<name_jp>鈍器使い</name_jp>
+		<name_ja>鈍器使い</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2031,7 +2031,7 @@
 	<buff_group id="non_elemental_boost">
 		<name>Non-elemental Boost</name>
 		<name_fr>Secret de l'acier</name_fr>
-		<name_jp>無属性強化</name_jp>
+		<name_ja>無属性強化</name_ja>
 		<buff>
 			<raw_weapon>
 				<attack_multiplier>1.05</attack_multiplier>
@@ -2042,7 +2042,7 @@
 	<buff_group id="capture_master">
 		<name>Capture Master</name>
 		<name_fr>Maître capture</name_fr>
-		<name_jp>捕獲名人</name_jp>
+		<name_ja>捕獲名人</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2051,7 +2051,7 @@
 	<buff_group id="guard_up">
 		<name>Guard Up</name>
 		<name_fr>Ultra garde</name_fr>
-		<name_jp>ガード強化</name_jp>
+		<name_ja>ガード強化</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2060,7 +2060,7 @@
 	<buff_group id="guts">
 		<name>Guts</name>
 		<name_fr>Bravoure</name_fr>
-		<name_jp>根性</name_jp>
+		<name_ja>根性</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2069,7 +2069,7 @@
 	<buff_group id="masters_touch">
 		<name>Master's Touch</name>
 		<name_fr>Main de maître</name_fr>
-		<name_jp>達人芸</name_jp>
+		<name_ja>達人芸</name_ja>
 		<buff>
 			<sharpness_use_critical_multiplier>0.0</sharpness_use_critical_multiplier>
 		</buff>
@@ -2078,7 +2078,7 @@
 	<buff_group id="nullify_wind_pressure">
 		<name>Nullify Wind Pressure</name>
 		<name_fr>Anti-vent</name_fr>
-		<name_jp>風圧完全無効</name_jp>
+		<name_ja>風圧完全無効</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2087,7 +2087,7 @@
 	<buff_group id="razor_sharp_spare_shot">
 		<name>Razor Sharp/Spare Shot</name>
 		<name_fr>Samouraï/Franc-tireur</name_fr>
-		<name_jp>業物／弾丸節約</name_jp>
+		<name_ja>業物／弾丸節約</name_ja>
 		<buff>
 			<sharpness_use_multiplier>0.5</sharpness_use_multiplier>
 		</buff>
@@ -2096,7 +2096,7 @@
 	<buff_group id="critical_status">
 		<name>Critical Status</name>
 		<name_fr>Attaque perfide</name_fr>
-		<name_jp>会心撃【特殊】</name_jp>
+		<name_ja>会心撃【特殊】</name_ja>
 		<buff>
 			<status_critical_hit_multiplier>1.25</status_critical_hit_multiplier>
 		</buff>
@@ -2105,7 +2105,7 @@
 	<buff_group id="good_luck">
 		<name>Good Luck</name>
 		<name_fr>Chance</name_fr>
-		<name_jp>幸運</name_jp>
+		<name_ja>幸運</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2114,7 +2114,7 @@
 	<buff_group id="bow_charge_plus">
 		<name>Bow Charge Plus</name>
 		<name_fr>Maître archer</name_fr>
-		<name_jp>弓溜め段階解放</name_jp>
+		<name_ja>弓溜め段階解放</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2123,7 +2123,7 @@
 	<buff_group id="punishing_draw">
 		<name>Punishing Draw</name>
 		<name_fr>Batto-jutsu</name_fr>
-		<name_jp>抜刀術【力】</name_jp>
+		<name_ja>抜刀術【力】</name_ja>
 		<buff>
 			<draw_attack>
 				<punishing_draw>1</punishing_draw>
@@ -2135,7 +2135,7 @@
 	<buff_group id="protective_polish">
 		<name>Protective Polish</name>
 		<name_fr>Acier trempé</name_fr>
-		<name_jp>剛刃研磨</name_jp>
+		<name_ja>剛刃研磨</name_ja>
 		<buff>
 			<max_sharpness_time>60.0</max_sharpness_time>
 		</buff>
@@ -2144,7 +2144,7 @@
 	<buff_group id="poison_functionality">
 		<name>Poison Functionality</name>
 		<name_fr>Apothicaire</name_fr>
-		<name_jp>毒ビン追加</name_jp>
+		<name_ja>毒ビン追加</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2153,7 +2153,7 @@
 	<buff_group id="para_functionality">
 		<name>Para Functionality</name>
 		<name_fr>Gibier de potence</name_fr>
-		<name_jp>麻痺ビン追加</name_jp>
+		<name_ja>麻痺ビン追加</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2162,7 +2162,7 @@
 	<buff_group id="sleep_functionality">
 		<name>Sleep Functionality</name>
 		<name_fr>Marchand de sable</name_fr>
-		<name_jp>睡眠ビン追加</name_jp>
+		<name_ja>睡眠ビン追加</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2171,7 +2171,7 @@
 	<buff_group id="blast_functionality">
 		<name>Blast Functionality</name>
 		<name_fr>Maître bombardier</name_fr>
-		<name_jp>爆破ビン追加</name_jp>
+		<name_ja>爆破ビン追加</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2180,7 +2180,7 @@
 	<buff_group id="elderseal_boost">
 		<name>Elderseal Boost</name>
 		<name_fr>Sceau des anciens +</name_fr>
-		<name_jp>龍封力強化</name_jp>
+		<name_ja>龍封力強化</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2188,7 +2188,7 @@
 
 	<buff_group id="carving_master">
 		<name>Carving Master</name>
-		<name_jp>剥ぎ取り名人</name_jp>
+		<name_ja>剥ぎ取り名人</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2196,7 +2196,7 @@
 
 	<buff_group id="great_luck">
 		<name>Great Luck</name>
-		<name_jp>強運</name_jp>
+		<name_ja>強運</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -2215,7 +2215,7 @@
 
 	<buff_group id="coldproof">
 		<name>Coldproof</name>
-		<name_jp>寒さ耐性</name_jp>
+		<name_ja>寒さ耐性</name_ja>
 		<buff level="1">
 			<!-- not implemented -->
 		</buff>
@@ -2224,7 +2224,7 @@
 	<buff_group id="coalescence">
 		<name>Coalescence</name>
 		<name_fr>Union</name_fr>
-		<name_jp>災禍転福</name_jp>
+		<name_ja>災禍転福</name_ja>
 		<buff level="1">
 			<blight_recovery>
 				<attack_plus>12</attack_plus>
@@ -2250,7 +2250,7 @@
 
 	<buff_group id="offensive_guard">
 		<name>Offensive Guard</name>
-		<name_jp>攻めの守勢</name_jp>
+		<name_ja>攻めの守勢</name_ja>
 		<buff level="1">
 			<after_perfect_guard>
 				<attack_multiplier>1.05</attack_multiplier>
@@ -2270,7 +2270,7 @@
 
 	<buff_group id="safe_landing">
 		<name>Safe Landing</name>
-		<name_jp>受け身術</name_jp>
+		<name_ja>受け身術</name_ja>
 		<buff>
 			<!-- not implemented -->
 		</buff>
@@ -3169,7 +3169,7 @@
 
 	<set_bonus id="anjanath_power">
 		<name>Anjanath Power</name>
-		<name_jp>蛮顎竜の力</name_jp>
+		<name_ja>蛮顎竜の力</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="adrenaline"/>
 		</set_bonus_level>
@@ -3177,7 +3177,7 @@
 
 	<set_bonus id="legiana_blessing">
 		<name>Legiana Blessing</name>
-		<name_jp>風漂竜の恩恵</name_jp>
+		<name_ja>風漂竜の恩恵</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="good_luck"/>
 		</set_bonus_level>
@@ -3185,7 +3185,7 @@
 
 	<set_bonus id="odogaron_power">
 		<name>Odogaron Power</name>
-		<name_jp>惨爪竜の力</name_jp>
+		<name_ja>惨爪竜の力</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="punishing_draw"/>
 		</set_bonus_level>
@@ -3193,7 +3193,7 @@
 
 	<set_bonus id="rathalos_power">
 		<name>Rathalos Power</name>
-		<name_jp>火竜の力</name_jp>
+		<name_ja>火竜の力</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="critical_element"/>
 		</set_bonus_level>
@@ -3201,7 +3201,7 @@
 
 	<set_bonus id="diablos_power">
 		<name>Diablos Power</name>
-		<name_jp>角竜の力</name_jp>
+		<name_ja>角竜の力</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="bludgeoner"/>
 		</set_bonus_level>
@@ -3209,7 +3209,7 @@
 
 	<set_bonus id="kirin_blessing">
 		<name>Kirin Blessing</name>
-		<name_jp>幻獣の恩恵</name_jp>
+		<name_ja>幻獣の恩恵</name_ja>
 		<set_bonus_level level="4">
 			<buff_ref id="capture_master"/>
 		</set_bonus_level>
@@ -3217,7 +3217,7 @@
 
 	<set_bonus id="anjanath_will">
 		<name>Anjanath Will</name>
-		<name_jp>蛮顎竜の闘志</name_jp>
+		<name_ja>蛮顎竜の闘志</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="adrenaline"/>
 		</set_bonus_level>
@@ -3228,7 +3228,7 @@
 
 	<set_bonus id="diablos_mastery">
 		<name>Diablos Mastery</name>
-		<name_jp>角竜の奥義</name_jp>
+		<name_ja>角竜の奥義</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="bludgeoner"/>
 		</set_bonus_level>
@@ -3239,7 +3239,7 @@
 
 	<set_bonus id="legiana_favor">
 		<name>Legiana Favor</name>
-		<name_jp>風漂竜の恩寵</name_jp>
+		<name_ja>風漂竜の恩寵</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="good_luck"/>
 		</set_bonus_level>
@@ -3250,7 +3250,7 @@
 
 	<set_bonus id="kirin_favor">
 		<name>Kirin Favor</name>
-		<name_jp>幻獣の恩寵</name_jp>
+		<name_ja>幻獣の恩寵</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="capture_master"/>
 		</set_bonus_level>
@@ -3258,7 +3258,7 @@
 
 	<set_bonus id="commission_guidance">
 		<name>Commission Guidance</name>
-		<name_jp>調査団の導き</name_jp>
+		<name_ja>調査団の導き</name_ja>
 		<set_bonus_level level="4">
 			<buff_ref id="carving_master"/>
 		</set_bonus_level>
@@ -3266,7 +3266,7 @@
 
 	<set_bonus id="rathalos_mastery">
 		<name>Rathalos Mastery</name>
-		<name_jp>火竜の奥義</name_jp>
+		<name_ja>火竜の奥義</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="critical_element"/>
 		</set_bonus_level>
@@ -3277,7 +3277,7 @@
 
 	<set_bonus id="zorah_magdaros_mastery">
 		<name>Zorah Magdaros Mastery</name>
-		<name_jp>熔山龍の奥義</name_jp>
+		<name_ja>熔山龍の奥義</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="critical_status"/>
 		</set_bonus_level>
@@ -3285,7 +3285,7 @@
 
 	<set_bonus id="guild_guidance">
 		<name>Guild Guidance</name>
-		<name_jp>ギルドの導き</name_jp>
+		<name_ja>ギルドの導き</name_ja>
 		<set_bonus_level level="4">
 			<buff_ref id="great_luck"/>
 		</set_bonus_level>
@@ -3293,7 +3293,7 @@
 
 	<set_bonus id="uragaan_protection">
 		<name>Uragaan Protection</name>
-		<name_jp>爆鎚竜の守護</name_jp>
+		<name_ja>爆鎚竜の守護</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="guard_up"/>
 		</set_bonus_level>
@@ -3301,7 +3301,7 @@
 
 	<set_bonus id="bazelgeuse_protection">
 		<name>Bazelgeuse Protection</name>
-		<name_jp>爆鱗竜の守護</name_jp>
+		<name_ja>爆鱗竜の守護</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="guts"/>
 		</set_bonus_level>
@@ -3309,7 +3309,7 @@
 
 	<set_bonus id="nergigante_hunger">
 		<name>Nergigante Hunger</name>
-		<name_jp>滅尽龍の飢餓</name_jp>
+		<name_ja>滅尽龍の飢餓</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="hasten_recovery"/>
 		</set_bonus_level>
@@ -3317,7 +3317,7 @@
 
 	<set_bonus id="teostra_technique">
 		<name>Teostra Technique</name>
-		<name_jp>炎王龍の武技</name_jp>
+		<name_ja>炎王龍の武技</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="masters_touch"/>
 		</set_bonus_level>
@@ -3325,7 +3325,7 @@
 
 	<set_bonus id="kushala_daora_flight">
 		<name>Kushala Daora Flight</name>
-		<name_jp>鋼龍の飛翔</name_jp>
+		<name_ja>鋼龍の飛翔</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="nullify_wind_pressure"/>
 		</set_bonus_level>
@@ -3333,7 +3333,7 @@
 
 	<set_bonus id="pink_rathian_mastery">
 		<name>Pink Rathian Mastery</name>
-		<name_jp>桜火竜の奥義</name_jp>
+		<name_ja>桜火竜の奥義</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="poison_duration_up"/>
 		</set_bonus_level>
@@ -3341,7 +3341,7 @@
 
 	<set_bonus id="odogaron_mastery">
 		<name>Odogaron Mastery</name>
-		<name_jp>惨爪竜の奥義</name_jp>
+		<name_ja>惨爪竜の奥義</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="punishing_draw"/>
 		</set_bonus_level>
@@ -3352,7 +3352,7 @@
 
 	<set_bonus id="xeno_jiiva_divinity">
 		<name>Xeno'jiiva Divinity</name>
-		<name_jp>冥灯龍の神秘</name_jp>
+		<name_ja>冥灯龍の神秘</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="razor_sharp_spare_shot"/>
 		</set_bonus_level>
@@ -3360,7 +3360,7 @@
 
 	<set_bonus id="vaal_hazak_vitality">
 		<name>Vaal Hazak Vitality</name>
-		<name_jp>屍套龍の命脈</name_jp>
+		<name_ja>屍套龍の命脈</name_ja>
 		<set_bonus_level level="3">
 			<buff_ref id="super_recovery"/>
 		</set_bonus_level>
@@ -3368,7 +3368,7 @@
 
 	<set_bonus id="lunastra_favor">
 		<name>Lunastra Favor</name>
-		<name_jp>炎妃龍の恩寵</name_jp>
+		<name_ja>炎妃龍の恩寵</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="minds_eye_ballistics"/>
 		</set_bonus_level>
@@ -3379,7 +3379,7 @@
 
 	<set_bonus id="astera_blessing">
 		<name>Astera Blessing</name>
-		<name_jp>アステラの祝福</name_jp>
+		<name_ja>アステラの祝福</name_ja>
 		<set_bonus_level level="5">
 			<buff_ref id="great_luck"/>
 		</set_bonus_level>
@@ -3387,7 +3387,7 @@
 
 	<set_bonus id="soul_of_the_dragoon">
 		<name>Soul of the Dragoon</name>
-		<name_jp>竜騎士の証</name_jp>
+		<name_ja>竜騎士の証</name_ja>
 		<set_bonus_level level="2">
 			<buff_ref id="masters_touch"/>
 		</set_bonus_level>
@@ -3400,7 +3400,7 @@
 
     <set_bonus id="brachydios_essence">
         <name>Brachydios Essence</name>
-        <name_jp>砕竜の真髄</name_jp>
+        <name_ja>砕竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="agitator_secret"/>
         </set_bonus_level>
@@ -3408,7 +3408,7 @@
 
     <set_bonus id="zorah_magdaros_essence">
         <name>Zorah Magdaros Essence</name>
-        <name_jp>熔山龍の真髄</name_jp>
+        <name_ja>熔山龍の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="artillery_secret"/>
         </set_bonus_level>
@@ -3416,7 +3416,7 @@
 
     <set_bonus id="commission_alchemy">
         <name>Commission Alchemy</name>
-        <name_jp>調査団の錬金術</name_jp>
+        <name_ja>調査団の錬金術</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="bombardier_secret"/>
         </set_bonus_level>
@@ -3424,7 +3424,7 @@
 
     <set_bonus id="legiana_ambition">
         <name>Legiana Ambition</name>
-        <name_jp>風漂竜の覇気</name_jp>
+        <name_ja>風漂竜の覇気</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="bow_charge_plus"/>
         </set_bonus_level>
@@ -3432,7 +3432,7 @@
 
     <set_bonus id="instructors_guidance">
         <name>Instructor's Guidance</name>
-        <name_jp>教官の導き</name_jp>
+        <name_ja>教官の導き</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="capture_master"/>
         </set_bonus_level>
@@ -3440,7 +3440,7 @@
 
     <set_bonus id="guild_pride">
         <name>Guild Pride</name>
-        <name_jp>ギルドの見識</name_jp>
+        <name_ja>ギルドの見識</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="good_luck"/>
         </set_bonus_level>
@@ -3451,7 +3451,7 @@
 
     <set_bonus id="velkhana_divinity">
         <name>Velkhana Divinity</name>
-        <name_jp>冰龍の神秘</name_jp>
+        <name_ja>冰龍の神秘</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="critical_element"/>
         </set_bonus_level>
@@ -3462,7 +3462,7 @@
 
     <set_bonus id="ancient_divinity">
         <name>Ancient Divinity</name>
-        <name_jp>太古の神秘</name_jp>
+        <name_ja>太古の神秘</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="critical_status"/>
         </set_bonus_level>
@@ -3470,7 +3470,7 @@
 
     <set_bonus id="gold_rathian_essence">
         <name>Gold Rathian Essence</name>
-        <name_jp>金火竜の真髄</name_jp>
+        <name_ja>金火竜の真髄</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="divine_blessing_secret"/>
         </set_bonus_level>
@@ -3481,7 +3481,7 @@
 
     <set_bonus id="namielle_divinity">
         <name>Namielle Divinity</name>
-        <name_jp>溟龍の神秘</name_jp>
+        <name_ja>溟龍の神秘</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="element_acceleration"/>
         </set_bonus_level>
@@ -3492,7 +3492,7 @@
 
     <set_bonus id="tigrex_essence">
         <name>Tigrex Essence</name>
-        <name_jp>轟竜の真髄</name_jp>
+        <name_ja>轟竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="free_meal_secret"/>
         </set_bonus_level>
@@ -3500,7 +3500,7 @@
 
     <set_bonus id="shara_ishvalda_divinity">
         <name>Shara Ishvalda Divinity</name>
-        <name_jp>地啼龍の神秘</name_jp>
+        <name_ja>地啼龍の神秘</name_ja>
         <set_bonus_level level="4">
             <buff_ref id="gaias_veil"/>
         </set_bonus_level>
@@ -3511,7 +3511,7 @@
 
     <set_bonus id="kirin_divinity">
         <name>Kirin Divinity</name>
-        <name_jp>幻獣の神秘</name_jp>
+        <name_ja>幻獣の神秘</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="great_luck"/>
         </set_bonus_level>
@@ -3519,7 +3519,7 @@
 
     <set_bonus id="uragaan_ambition">
         <name>Uragaan Ambition</name>
-        <name_jp>爆鎚竜の覇気</name_jp>
+        <name_ja>爆鎚竜の覇気</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="guard_up"/>
         </set_bonus_level>
@@ -3527,7 +3527,7 @@
 
     <set_bonus id="bazelgeuse_ambition">
         <name>Bazelgeuse Ambition</name>
-        <name_jp>爆鱗竜の覇気</name_jp>
+        <name_ja>爆鱗竜の覇気</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="guts"/>
         </set_bonus_level>
@@ -3535,7 +3535,7 @@
 
     <set_bonus id="nergigante_ambition">
         <name>Nergigante Ambition</name>
-        <name_jp>滅尽龍の覇気</name_jp>
+        <name_ja>滅尽龍の覇気</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="hasten_recovery"/>
         </set_bonus_level>
@@ -3543,7 +3543,7 @@
 
     <set_bonus id="zinogre_essence">
         <name>Zinogre Essence</name>
-        <name_jp>雷狼竜の真髄</name_jp>
+        <name_ja>雷狼竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="latent_power_secret"/>
         </set_bonus_level>
@@ -3551,7 +3551,7 @@
 
     <set_bonus id="glavenus_essence">
         <name>Glavenus Essence</name>
-        <name_jp>斬竜の真髄</name_jp>
+        <name_ja>斬竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="maximum_might_secret"/>
         </set_bonus_level>
@@ -3559,7 +3559,7 @@
 
     <set_bonus id="rathalos_essence">
         <name>Rathalos Essence</name>
-        <name_jp>火竜の真髄</name_jp>
+        <name_ja>火竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="minds_eye_ballistics"/>
         </set_bonus_level>
@@ -3567,8 +3567,8 @@
 
     <set_bonus id="rajangs_rage">
         <name>Rajang's Rage</name>
-        <name_jp>Rajang's Rage</name_jp>
-        <name_jp>金獅子の怒気</name_jp>
+        <name_ja>Rajang's Rage</name_ja>
+        <name_ja>金獅子の怒気</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="minds_eye_ballistics"/>
         </set_bonus_level>
@@ -3579,7 +3579,7 @@
 
     <set_bonus id="rathian_essence">
         <name>Rathian Essence</name>
-        <name_jp>雌火竜の真髄</name_jp>
+        <name_ja>雌火竜の真髄</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="poison_duration_up"/>
         </set_bonus_level>
@@ -3587,7 +3587,7 @@
 
     <set_bonus id="odogaron_essence">
         <name>Odogaron Essence</name>
-        <name_jp>惨爪竜の真髄</name_jp>
+        <name_ja>惨爪竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="protective_polish"/>
         </set_bonus_level>
@@ -3595,7 +3595,7 @@
 
     <set_bonus id="barioth_hidden_art">
         <name>Barioth Hidden Art</name>
-        <name_jp>氷牙竜の秘技</name_jp>
+        <name_ja>氷牙竜の秘技</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="punishing_draw"/>
         </set_bonus_level>
@@ -3603,7 +3603,7 @@
 
     <set_bonus id="silver_rathalos_essence">
         <name>Silver Rathalos Essence</name>
-        <name_jp>銀火竜の真髄</name_jp>
+        <name_ja>銀火竜の真髄</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="slinger_ammo_secret"/>
         </set_bonus_level>
@@ -3614,7 +3614,7 @@
 
     <set_bonus id="diablos_ambition">
         <name>Diablos Ambition</name>
-        <name_jp>角竜の覇気</name_jp>
+        <name_ja>角竜の覇気</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="slugger_secret"/>
         </set_bonus_level>
@@ -3622,7 +3622,7 @@
 
     <set_bonus id="anjanath_dominance">
         <name>Anjanath Dominance</name>
-        <name_jp>蛮顎竜の覇気</name_jp>
+        <name_ja>蛮顎竜の覇気</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="stamina_cap_up"/>
         </set_bonus_level>
@@ -3630,7 +3630,7 @@
 
     <set_bonus id="deviljho_essence">
         <name>Deviljho Essence</name>
-        <name_jp>恐暴竜の真髄</name_jp>
+        <name_ja>恐暴竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="stamina_thief_secret"/>
         </set_bonus_level>
@@ -3638,7 +3638,7 @@
 
     <set_bonus id="vaal_soulvein">
         <name>Vaal Soulvein</name>
-        <name_jp>屍套龍の霊脈</name_jp>
+        <name_ja>屍套龍の霊脈</name_ja>
         <set_bonus_level level="2">
             <buff_ref id="super_recovery"/>
         </set_bonus_level>
@@ -3646,7 +3646,7 @@
 
     <set_bonus id="lunastra_essence">
         <name>Lunastra Essence</name>
-        <name_jp>炎妃龍の真髄</name_jp>
+        <name_ja>炎妃龍の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="tool_specialist_secret"/>
         </set_bonus_level>
@@ -3654,7 +3654,7 @@
 
     <set_bonus id="nargacuga_essence">
         <name>Nargacuga Essence</name>
-        <name_jp>迅竜の真髄</name_jp>
+        <name_ja>迅竜の真髄</name_ja>
         <set_bonus_level level="3">
             <buff_ref id="true_razor_sharp_spare_shot"/>
         </set_bonus_level>
