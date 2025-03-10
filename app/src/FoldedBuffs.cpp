@@ -1,6 +1,7 @@
 #include "FoldedBuffs.h"
 
 #include <QTextStream>
+#include "QtCompatibility.h"
 #include "BuffWithCondition.h"
 #include "ConditionRatios.h"
 #include "Constants.h"
@@ -159,7 +160,7 @@ void FoldedBuffsData::combine(const FoldedBuffsData &data, double rate) {
 void FoldedBuffsData::print(QTextStream &stream, QString indent) const {
 	for (int i = 0; i < NORMAL_BUFF_COUNT; ++i) {
 		stream << indent << "- " << toString((NormalBuff)i) << ": " <<
-			normalBuffs[i] << endl;
+			normalBuffs[i] << ENDL;
 	}
 	for (int i = 0; i < ELEMENT_BUFF_COUNT; ++i) {
 		stream << indent << "- " << toString((ElementBuff)i) << ": [";
@@ -167,7 +168,7 @@ void FoldedBuffsData::print(QTextStream &stream, QString indent) const {
 			if (j > 0) stream << ", ";
 			stream << elementBuffs[i][j];
 		}
-		stream << "]" << endl;
+		stream << "]" << ENDL;
 	}
 	for (int i = 0; i < STATUS_BUFF_COUNT; ++i) {
 		stream << indent << "- " << toString((StatusBuff)i) << ": [";
@@ -175,7 +176,7 @@ void FoldedBuffsData::print(QTextStream &stream, QString indent) const {
 			if (j > 0) stream << ", ";
 			stream << statusBuffs[i][j];
 		}
-		stream << "]" << endl;
+		stream << "]" << ENDL;
 	}
 }
 
@@ -316,10 +317,10 @@ void FoldedBuffs::print(QTextStream &stream, QString indent) const {
 	bool found[MODE_COUNT] = { false };
 	for (int i = 0; i < MODE_COUNT; ++i) {
 		if (found[i]) continue;
-		stream << indent << "- " << toString((MonsterMode)i) << endl;
+		stream << indent << "- " << toString((MonsterMode)i) << ENDL;
 		for (int j = i + 1; j < MODE_COUNT; ++j) {
 			if (data[i] == data[j]) {
-				stream << indent << "- " << toString((MonsterMode)j) << endl;
+				stream << indent << "- " << toString((MonsterMode)j) << ENDL;
 			}
 			found[j] = true;
 		}

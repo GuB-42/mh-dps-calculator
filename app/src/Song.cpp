@@ -17,13 +17,13 @@ void Song::print(QTextStream &stream, QString indent) const {
 		if (i > 0) stream << ", ";
 		stream << toString(notes[i]);
 	}
-	stream << "]" << endl;
-	stream << indent << "- duration: " << duration << endl;
-	stream << indent << "- duration_maestro: " << durationMaestro << endl;
-	stream << indent << "- extension: " << extension << endl;
-	stream << indent << "- extension_maestro: " << extensionMaestro << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- duration: " << duration << ENDL;
+	stream << indent << "- duration_maestro: " << durationMaestro << ENDL;
+	stream << indent << "- extension: " << extension << ENDL;
+	stream << indent << "- extension_maestro: " << extensionMaestro << ENDL;
 	if (!buffRefs.isEmpty()) {
-		stream << indent << "- buff refs:" << endl;
+		stream << indent << "- buff refs:" << ENDL;
 		foreach(const BuffRef &buff_ref, buffRefs) {
 			buff_ref.print(stream, indent + "\t");
 		}

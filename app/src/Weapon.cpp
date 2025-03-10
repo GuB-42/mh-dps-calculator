@@ -26,53 +26,53 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 	Item::print(stream, indent);
 	stream << indent << "- weaponType: ";
 	if (weaponType) {
-		stream << weaponType->id << endl;
+		stream << weaponType->id << ENDL;
 	} else {
-		stream << "<null, " << weaponTypeRefId << ">" << endl;
+		stream << "<null, " << weaponTypeRefId << ">" << ENDL;
 	}
-	stream << indent << "- attack: " << attack << endl;
-	stream << indent << "- affinity: " << affinity << endl;
-	stream << indent << "- awakened: " << (awakened ? "true" : "false") << endl;
+	stream << indent << "- attack: " << attack << ENDL;
+	stream << indent << "- affinity: " << affinity << ENDL;
+	stream << indent << "- awakened: " << (awakened ? "true" : "false") << ENDL;
 	stream << indent << "- elements: [";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << elements[i];
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	stream << indent << "- statuses: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << statuses[i];
 	}
-	stream << "]" << endl;
-	stream << indent << "- phial: " << toString(phial) << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- phial: " << toString(phial) << ENDL;
 	stream << indent << "- phialElements: [";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << phialElements[i];
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	stream << indent << "- phialStatuses: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << phialStatuses[i];
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	stream << indent << "- sharpness: [";
 	for (int i = 0; i < SHARPNESS_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << sharpness[i];
 	}
-	stream << "]" << endl;
-	stream << indent << "- sharpnessPlus: " << sharpnessPlus << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- sharpnessPlus: " << sharpnessPlus << ENDL;
 	stream << indent << "- notes: [";
 	for (int i = 0; i < notes.count(); ++i) {
 		if (i > 0) stream << ", ";
 		stream << toString(notes[i]);
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	if (!songs.isEmpty()) {
-		stream << indent << "- songs:" << endl;
+		stream << indent << "- songs:" << ENDL;
 		foreach(Song *song, songs) {
 			stream << indent << "\t" << "- [";
 			for (int i = 0; i < song->notes.count(); ++i) {
@@ -85,7 +85,7 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 				stream << song->buffRefs[i].id << "[" <<
 					song->buffRefs[i].level << "]";
 			}
-			stream << ")" << endl;
+			stream << ")" << ENDL;
 		}
 	}
 	stream << indent << "- ammos: [";
@@ -97,7 +97,7 @@ void Weapon::print(QTextStream &stream, QString indent) const {
 			stream << "<null, " << ammoRefs[i].id << ">";
 		}
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 }
 
 static void parse_sharpness(QXmlStreamReader *xml,

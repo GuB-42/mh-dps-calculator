@@ -1,6 +1,7 @@
 #include "BuffWithCondition.h"
 
 #include <QTextStream>
+#include "QtCompatibility.h"
 #include "Weapon.h"
 #include "Profile.h"
 
@@ -179,18 +180,18 @@ void BuffWithCondition::print(QTextStream &stream, QString indent) const {
 	stream << indent << toString(condition) << ": ";
 	switch (buffClass) {
 	case BUFF_CLASS_NONE:
-		stream << "<none>" << endl;
+		stream << "<none>" << ENDL;
 		break;
 	case BUFF_CLASS_NORMAL:
-		stream << toString(normal.buff) << ": " << value << endl;
+		stream << toString(normal.buff) << ": " << value << ENDL;
 		break;
 	case BUFF_CLASS_ELEMENT:
 		stream << toString(element.buff) << " / " <<
-			toString(element.type) << ": " << value << endl;
+			toString(element.type) << ": " << value << ENDL;
 		break;
 	case BUFF_CLASS_STATUS:
 		stream << toString(status.buff) << " / " <<
-			toString(status.type) << ": " << value << endl;
+			toString(status.type) << ": " << value << ENDL;
 		break;
 	}
 }

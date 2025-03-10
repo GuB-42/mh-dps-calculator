@@ -18,7 +18,7 @@ void MonsterHitData::print(QTextStream &stream, QString indent) const {
 		stream << element[i] << ", ";
 
 	}
-	stream << stun << "]" << endl;
+	stream << stun << "]" << ENDL;
 }
 
 bool MonsterHitData::readXmlElement(QXmlStreamReader *xml) {
@@ -55,7 +55,7 @@ MonsterPart::~MonsterPart() {
 void MonsterPart::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	foreach(const MonsterHitData *hit_data, hitData) {
-		stream << indent << "- hit data" << endl;
+		stream << indent << "- hit data" << ENDL;
 		hit_data->print(stream, indent + "\t");
 	}
 }
@@ -89,7 +89,7 @@ void MonsterTolerance::print(QTextStream &stream, QString indent) const {
 		regenValue << ", " <<
 		regenTick << ", " <<
 		duration << ", " <<
-		damage << "]" << endl;
+		damage << "]" << ENDL;
 }
 
 bool MonsterTolerance::readXmlElement(QXmlStreamReader *xml) {
@@ -135,14 +135,14 @@ Monster::~Monster() {
 
 void Monster::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
-	stream << indent << "- hit points: " << hitPoints << endl;
+	stream << indent << "- hit points: " << hitPoints << ENDL;
 	foreach(const MonsterPart *part, parts) {
-		stream << indent << "- part" << endl;
+		stream << indent << "- part" << ENDL;
 		part->print(stream, indent + "\t");
 	}
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (tolerances[i]) {
-			stream << indent << "- tolerance: " << toString((StatusType)i) << endl;
+			stream << indent << "- tolerance: " << toString((StatusType)i) << ENDL;
 			tolerances[i]->print(stream, indent + "\t");
 		}
 	}

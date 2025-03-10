@@ -14,11 +14,11 @@ TargetZone::TargetZone() :
 }
 
 void TargetZone::print(QTextStream &stream, QString indent) const {
-	stream << indent << "- weight: " << weight << endl;
-	stream << indent << "- enraged ratio: " << enragedRatio << endl;
-	stream << indent << "- expected enraged ratio: " << expectedEnragedRatio << endl;
-	stream << indent << "- part: " << part->getAllNames() << endl;
-	stream << indent << "- hit data" << endl;
+	stream << indent << "- weight: " << weight << ENDL;
+	stream << indent << "- enraged ratio: " << enragedRatio << ENDL;
+	stream << indent << "- expected enraged ratio: " << expectedEnragedRatio << ENDL;
+	stream << indent << "- part: " << part->getAllNames() << ENDL;
+	stream << indent << "- hit data" << ENDL;
 	hitData->print(stream, indent + "\t");
 }
 
@@ -33,12 +33,12 @@ TargetMonster::~TargetMonster() {
 }
 
 void TargetMonster::print(QTextStream &stream, QString indent) const {
-	stream << indent << "- defense multiplier: " << defenseMultiplier << endl;
-	stream << indent << "- status defense multiplier: " << statusDefenseMultiplier << endl;
-	stream << indent << "- status hit multiplier: " << statusHitMultiplier << endl;
-	stream << indent << "- monster: " << monster->getAllNames() << endl;
+	stream << indent << "- defense multiplier: " << defenseMultiplier << ENDL;
+	stream << indent << "- status defense multiplier: " << statusDefenseMultiplier << ENDL;
+	stream << indent << "- status hit multiplier: " << statusHitMultiplier << ENDL;
+	stream << indent << "- monster: " << monster->getAllNames() << ENDL;
 	foreach(const TargetZone *targetZone, targetZones) {
-		stream << indent << "- zone" << endl;
+		stream << indent << "- zone" << ENDL;
 		targetZone->print(stream, indent + "\t");
 	}
 }
@@ -58,30 +58,30 @@ Target::SubTarget::~SubTarget() {
 
 void Target::SubTarget::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
-	stream << indent << "- weight: " << weight << endl;
+	stream << indent << "- weight: " << weight << ENDL;
 	if (hasEnragedRatio) {
-		stream << indent << "- enraged ratio: " << enragedRatio << endl;
+		stream << indent << "- enraged ratio: " << enragedRatio << ENDL;
 	}
 	if (hasDefenseMultiplier) {
-		stream << indent << "- defense multiplier: " << defenseMultiplier << endl;
+		stream << indent << "- defense multiplier: " << defenseMultiplier << ENDL;
 	}
 	if (hasStatusDefenseMultiplier) {
-		stream << indent << "- status defense multiplier: " << statusDefenseMultiplier << endl;
+		stream << indent << "- status defense multiplier: " << statusDefenseMultiplier << ENDL;
 	}
 	if (hasStatusHitMultiplier) {
-		stream << indent << "- status hit multiplier: " << statusHitMultiplier << endl;
+		stream << indent << "- status hit multiplier: " << statusHitMultiplier << ENDL;
 	}
 	if (!monsterId.isNull()) {
-		stream << indent << "- monster: " << monsterId << endl;
+		stream << indent << "- monster: " << monsterId << ENDL;
 	}
 	if (!partId.isNull()) {
-		stream << indent << "- part: " << partId << endl;
+		stream << indent << "- part: " << partId << ENDL;
 	}
 	if (!stateId.isNull()) {
-		stream << indent << "- state: " << stateId << endl;
+		stream << indent << "- state: " << stateId << ENDL;
 	}
 	foreach(const SubTarget *subTarget, subTargets) {
-		stream << indent << "- sub target" << endl;
+		stream << indent << "- sub target" << ENDL;
 		subTarget->print(stream, indent + "\t");
 	}
 }
@@ -126,10 +126,10 @@ Target::~Target() {
 
 void Target::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
-	stream << indent << "- sub target" << endl;
+	stream << indent << "- sub target" << ENDL;
 	rootSubTarget.print(stream, indent + "\t");
 	foreach(const TargetMonster *targetMonster, targetMonsters) {
-		stream << indent << "- monster" << endl;
+		stream << indent << "- monster" << ENDL;
 		targetMonster->print(stream, indent + "\t");
 	}
 }

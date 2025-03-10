@@ -1,6 +1,7 @@
 #include "Dps.h"
 
 #include <QTextStream>
+#include "QtCompatibility.h"
 #include "Monster.h"
 #include "Target.h"
 #include "DamageData.h"
@@ -295,26 +296,26 @@ double Dps::totalStatuses() const {
 }
 
 void Dps::print(QTextStream &stream, QString indent) {
-	stream << indent << "- raw: " << raw << endl;
+	stream << indent << "- raw: " << raw << ENDL;
 	stream << indent << "- elements: [";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << elements[i];
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	stream << indent << "- statuses: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << statuses[i];
 	}
-	stream << "]" << endl;
-	stream << indent << "- fixed: " << fixed << endl;
-	stream << indent << "- bounce rate: " << bounceRate << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- fixed: " << fixed << ENDL;
+	stream << indent << "- bounce rate: " << bounceRate << ENDL;
 	stream << indent << "- status proc rate: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << statusProcRate[i];
 	}
-	stream << "]" << endl;
-	stream << indent << "- kill frequency: " << killFrequency << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- kill frequency: " << killFrequency << ENDL;
 }

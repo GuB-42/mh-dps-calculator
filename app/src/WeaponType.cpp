@@ -12,9 +12,9 @@ WeaponType::WeaponType() :
 
 void WeaponType::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
-	stream << indent << "- main_attack_type: " << mainAttackType << endl;
-	stream << indent << "- element_crit_adjustment: " << elementCritAdjustment << endl;
-	stream << indent << "- status_crit_adjustment: " << statusCritAdjustment << endl;
+	stream << indent << "- main_attack_type: " << mainAttackType << ENDL;
+	stream << indent << "- element_crit_adjustment: " << elementCritAdjustment << ENDL;
+	stream << indent << "- status_crit_adjustment: " << statusCritAdjustment << ENDL;
 }
 
 bool WeaponType::readXmlElement(QXmlStreamReader *xml) {

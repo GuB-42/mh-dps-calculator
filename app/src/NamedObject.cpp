@@ -34,12 +34,12 @@ QString NamedObject::getAllNames() const {
 void NamedObject::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
 	if (!id.isNull()) {
-		stream << indent << "- id: " << id << endl;
+		stream << indent << "- id: " << id << ENDL;
 	}
 	for (int i = 0; i < LANG_COUNT; ++i) {
 		if (!names[i].isNull()) {
 			stream << indent << "- name (" <<
-				toString((Language)i) << "): " << names[i] << endl;
+				toString((Language)i) << "): " << names[i] << ENDL;
 		}
 	}
 }

@@ -2,12 +2,13 @@
 
 #include <QTextStream>
 #include <QXmlStreamReader>
+#include "QtCompatibility.h"
 
 void BuffRef::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
 	stream << indent << "- " << id << "[" << level << "]";
 	if (buffGroup) stream << " *";
-	stream << endl;
+	stream << ENDL;
 }
 
 void BuffRef::readXml(QXmlStreamReader *xml) {
@@ -24,7 +25,7 @@ void BuffSetBonusRef::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
 	stream << indent << "- " << id << "[" << level << "]";
 	if (buffSetBonus) stream << " *";
-	stream << endl;
+	stream << ENDL;
 }
 
 void BuffSetBonusRef::readXml(QXmlStreamReader *xml) {

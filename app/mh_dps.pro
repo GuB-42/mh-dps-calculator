@@ -42,6 +42,7 @@ src/WeaponType.cpp \
 src/XmlObject.cpp \
 src/enums.cpp \
 src/main.cpp \
+src/gui/BuffChooser.cpp \
 src/gui/BuffGroupListModel.cpp \
 src/gui/BuffListModel.cpp \
 src/gui/ColumnMenu.cpp \
@@ -84,6 +85,7 @@ src/Weapon.h \
 src/WeaponType.h \
 src/XmlObject.h \
 src/enums.h \
+src/gui/BuffChooser.h \
 src/gui/BuffGroupListModel.h \
 src/gui/BuffListModel.h \
 src/gui/ColumnMenu.h \
@@ -101,6 +103,7 @@ src/gui/MonsterModeMenu.h \
 src/gui/ResultTableModel.h
 
 FORMS += \
+src/gui/BuffChooser.ui \
 src/gui/ComputeDataDialog.ui \
 src/gui/DetailsDialog.ui \
 src/gui/MainWindow.ui

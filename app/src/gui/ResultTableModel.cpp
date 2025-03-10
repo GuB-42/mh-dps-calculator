@@ -428,7 +428,7 @@ Qt::ItemFlags ResultTableModel::flags(const QModelIndex &index) const {
 		return Qt::ItemIsSelectable | Qt::ItemIsEnabled |
 			Qt::ItemIsDragEnabled;
 	} else {
-		return 0;
+		return Qt::ItemFlags();
 	}
 }
 

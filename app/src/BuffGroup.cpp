@@ -12,11 +12,11 @@ BuffGroupLevel::~BuffGroupLevel() {
 void BuffGroupLevel::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	foreach (const BuffWithCondition *buff, buffs) {
-		stream << indent << "- buff " << endl;
+		stream << indent << "- buff " << ENDL;
 		buff->print(stream, indent + "\t");
 	}
 	if (!buffUncaps.isEmpty()) {
-		stream << indent << "- buff uncap" << endl;
+		stream << indent << "- buff uncap" << ENDL;
 		foreach (const BuffRef &buff_uncap, buffUncaps) {
 			buff_uncap.print(stream, indent + "\t");
 		}
@@ -193,10 +193,10 @@ bool BuffGroup::hasBuffs() {
 void BuffGroup::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	if (levelCap != LEVEL_UNCAPPED) {
-		stream << indent << "- level cap: " << levelCap << endl;
+		stream << indent << "- level cap: " << levelCap << ENDL;
 	}
 	for (int i = 0; i < levels.count(); ++i) {
-		stream << indent << "- level " << i << endl;
+		stream << indent << "- level " << i << ENDL;
 		if (levels[i]) levels[i]->print(stream, indent + "\t");
 	}
 }
@@ -257,7 +257,7 @@ void BuffGroup::readXml(QXmlStreamReader *xml) {
 void BuffSetBonus::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	foreach (const Level &level, levels) {
-		stream << indent << "- level " << level.buffSetLevel << endl;
+		stream << indent << "- level " << level.buffSetLevel << ENDL;
 		level.buffRef.print(stream, indent + "\t");
 	}
 }

@@ -17,4 +17,10 @@
 } while (0)
 #endif
 
+#if (QT_VERSION >= 0x050d00)
+#define ENDL Qt::endl
+#else
+#define ENDL endl
+#endif
+
 #endif

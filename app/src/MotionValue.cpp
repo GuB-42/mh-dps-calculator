@@ -42,42 +42,42 @@ void MotionValue::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	stream << indent << "- weapon_type: ";
 	if (weaponType) {
-		stream << weaponType->id << endl;
+		stream << weaponType->id << ENDL;
 	} else {
-		stream << "<null, " << weaponTypeRefId << ">" << endl;
+		stream << "<null, " << weaponTypeRefId << ">" << ENDL;
 	}
-	stream << indent << "- cut: " << cut << endl;
-	stream << indent << "- impact: " << impact << endl;
-	stream << indent << "- piercing: " << piercing << endl;
-	stream << indent << "- bullet: " << bullet << endl;
-	stream << indent << "- shell: " << shell << endl;
-	stream << indent << "- fixed: " << fixed << endl;
-	stream << indent << "- element: " << element << endl;
-	stream << indent << "- status: " << status << endl;
-	stream << indent << "- stun: " << stun << endl;
-	stream << indent << "- exhaust: " << exhaust << endl;
-	stream << indent << "- mount: " << mount << endl;
-	stream << indent << "- phial_impact_attack: " << phialImpactAttack << endl;
-	stream << indent << "- phial_impact_stun: " << phialImpactStun << endl;
-	stream << indent << "- phial_impact_exhaust: " << phialImpactExhaust << endl;
-	stream << indent << "- phial_element_attack: " << phialElementAttack << endl;
-	stream << indent << "- sharpness_use: " << sharpnessUse << endl;
-	stream << indent << "- punishing_draw_stun: " << punishingDrawStun << endl;
-	stream << indent << "- punishing_draw_exhaust: " << punishingDrawExhaust << endl;
+	stream << indent << "- cut: " << cut << ENDL;
+	stream << indent << "- impact: " << impact << ENDL;
+	stream << indent << "- piercing: " << piercing << ENDL;
+	stream << indent << "- bullet: " << bullet << ENDL;
+	stream << indent << "- shell: " << shell << ENDL;
+	stream << indent << "- fixed: " << fixed << ENDL;
+	stream << indent << "- element: " << element << ENDL;
+	stream << indent << "- status: " << status << ENDL;
+	stream << indent << "- stun: " << stun << ENDL;
+	stream << indent << "- exhaust: " << exhaust << ENDL;
+	stream << indent << "- mount: " << mount << ENDL;
+	stream << indent << "- phial_impact_attack: " << phialImpactAttack << ENDL;
+	stream << indent << "- phial_impact_stun: " << phialImpactStun << ENDL;
+	stream << indent << "- phial_impact_exhaust: " << phialImpactExhaust << ENDL;
+	stream << indent << "- phial_element_attack: " << phialElementAttack << ENDL;
+	stream << indent << "- sharpness_use: " << sharpnessUse << ENDL;
+	stream << indent << "- punishing_draw_stun: " << punishingDrawStun << ENDL;
+	stream << indent << "- punishing_draw_exhaust: " << punishingDrawExhaust << ENDL;
 	if (definedSharpnessMultiplier) {
-		stream << indent << "- sharpness_multiplier: " << sharpnessMultiplier << endl;
+		stream << indent << "- sharpness_multiplier: " << sharpnessMultiplier << ENDL;
 	}
 	if (definedDrawAttackRatio) {
-		stream << indent << "- draw_attack_ratio: " << drawAttackRatio << endl;
+		stream << indent << "- draw_attack_ratio: " << drawAttackRatio << ENDL;
 	}
 	if (definedAirborneRatio) {
-		stream << indent << "- airborne_ratio: " << airborneRatio << endl;
+		stream << indent << "- airborne_ratio: " << airborneRatio << ENDL;
 	}
 	if (definedPhialRatio) {
-		stream << indent << "- phial_ratio: " << phialRatio << endl;
+		stream << indent << "- phial_ratio: " << phialRatio << ENDL;
 	}
 	if (definedMindsEyeRatio) {
-		stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << endl;
+		stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << ENDL;
 	}
 }
 

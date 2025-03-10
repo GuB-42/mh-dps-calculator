@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <QTextStream>
+#include "QtCompatibility.h"
 #include <QHash>
 #include "Item.h"
 #include "Weapon.h"
@@ -428,13 +429,13 @@ void Build::print(QTextStream &stream, QString indent) const {
 			stream << swc.level;
 		}
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	stream << indent <<
-		"- weapon augmentations: " << weaponAugmentations << endl;
+		"- weapon augmentations: " << weaponAugmentations << ENDL;
 	stream << indent <<
-		"- weapon slot upgrade: " << weaponSlotUpgrade << endl;
+		"- weapon slot upgrade: " << weaponSlotUpgrade << ENDL;
 	foreach(const Item *item, usedItems) {
-		stream << indent << "- used item:" << endl;
+		stream << indent << "- used item:" << ENDL;
 		item->print(stream, indent + "\t");
 	}
 	foreach(const BuffWithLevel &bl, buffLevels) {
@@ -446,7 +447,7 @@ void Build::print(QTextStream &stream, QString indent) const {
 				stream << " (cap: " << bl.group->levelCap << ")";
 			}
 		}
-		stream << endl;
+		stream << ENDL;
 		bl.group->print(stream, indent + "\t");
 	}
 }

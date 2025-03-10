@@ -1,6 +1,7 @@
 #include "Damage.h"
 
 #include <QTextStream>
+#include "QtCompatibility.h"
 #include "DamageData.h"
 #include "BuffWithCondition.h"
 #include "Weapon.h"
@@ -147,10 +148,10 @@ void Damage::addPattern(const FoldedBuffs &folded_buffs,
 void Damage::print(QTextStream &stream, QString indent) const {
 	for (int i = 0; i < MODE_COUNT; ++i) {
 		if (isAlias[i]) continue;
-		stream << indent << "- " << toString((MonsterMode)i) << endl;
+		stream << indent << "- " << toString((MonsterMode)i) << ENDL;
 		for (int j = i + 1; j < MODE_COUNT; ++j) {
 			if (data[i] == data[j]) {
-				stream << indent << "- " << toString((MonsterMode)j) << endl;
+				stream << indent << "- " << toString((MonsterMode)j) << ENDL;
 			}
 		}
 		data[i]->print(stream, indent + "\t");

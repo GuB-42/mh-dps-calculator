@@ -12,11 +12,11 @@ Item::Item() :
 
 void Item::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
-	stream << indent << "- type: " << type << endl;
-	stream << indent << "- decoration level: " << decorationLevel << endl;
-	stream << indent << "- rare: " << rare << endl;
+	stream << indent << "- type: " << type << ENDL;
+	stream << indent << "- decoration level: " << decorationLevel << ENDL;
+	stream << indent << "- rare: " << rare << ENDL;
 	if (!buffRefs.isEmpty()) {
-		stream << indent << "- buff refs:" << endl;
+		stream << indent << "- buff refs:" << ENDL;
 		foreach(const BuffRef &buff_ref, buffRefs) {
 			buff_ref.print(stream, indent + "\t");
 		}
@@ -25,7 +25,7 @@ void Item::print(QTextStream &stream, QString indent) const {
 		stream << indent << "- set bonus ref: " << bsbr.id <<
 			"[" << bsbr.level << "]";
 		if (bsbr.buffSetBonus) stream << " *";
-		stream << endl;
+		stream << ENDL;
 	}
 }
 

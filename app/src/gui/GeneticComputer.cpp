@@ -10,6 +10,19 @@
 #include "../Item.h"
 #include "../BuildWithDps.h"
 
+#if (QT_VERSION >= 0x050d00)
+#include <QRandomGenerator>
+#endif
+
+static int getRand(int n) {
+#if (QT_VERSION >= 0x050d00)
+#define ENDL Qt::endl
+	return QRandomGenerator::global()->generate() % n;
+#else
+	return qrand() % n;
+#endif
+}
+
 GeneticComputer::GeneticComputer(QObject *parent) : QObject(parent) {
 }
 
@@ -75,8 +88,8 @@ void GeneticComputer::compute(const Parameters &params) {
 	for (int gen = 0; gen < 100; ++gen) {
 		if (!first) {
 			for (int i = 0; i < bwds.count(); ++i) {
-				int oi = qrand() % bwds.count();
-				int oi2 = qrand() % bwds.count();
+				int oi = getRand(bwds.count());
+				int oi2 = getRand(bwds.count());
 				if (oi > oi2) {
 					int t = oi;
 					oi = oi2;
@@ -95,8 +108,8 @@ void GeneticComputer::compute(const Parameters &params) {
 		for (int i = 0; i < bwds.count(); ++i) {
 			if (i < bwds.count() / 50 && bwds[i]) continue;
 
-			const Weapon *weapon = weapons[qrand() % weapons.count()];
-			if (bwds[i] && (qrand() % 100) < 90) {
+			const Weapon *weapon = weapons[getRand(weapons.count())];
+			if (bwds[i] && getRand(100) < 90) {
 				weapon = bwds[i]->build->weapon;
 			}
 
@@ -124,13 +137,13 @@ void GeneticComputer::compute(const Parameters &params) {
 				if (already_items.isEmpty() && new_items.isEmpty()) break;
 				const Item *item;
 				if (already_items.isEmpty()) {
-					item = new_items[qrand() % new_items.count()];
+					item = new_items[getRand(new_items.count())];
 				} else if (new_items.isEmpty()) {
-					item = already_items[qrand() % already_items.count()];
-				} else if ((qrand() % 100) < 3) {
-					item = new_items[qrand() % new_items.count()];
+					item = already_items[getRand(already_items.count())];
+				} else if (getRand(100) < 3) {
+					item = new_items[getRand(new_items.count())];
 				} else {
-					item = already_items[qrand() % already_items.count()];
+					item = already_items[getRand(already_items.count())];
 				}
 				build->weaponAugmentations -=
 					item->weaponAugmentationLevel;
@@ -158,13 +171,13 @@ void GeneticComputer::compute(const Parameters &params) {
 				if (already_items.isEmpty() && new_items.isEmpty()) break;
 				const Item *item;
 				if (already_items.isEmpty()) {
-					item = new_items[qrand() % new_items.count()];
+					item = new_items[getRand(new_items.count())];
 				} else if (new_items.isEmpty()) {
-					item = already_items[qrand() % already_items.count()];
-				} else if ((qrand() % 100) < 3) {
-					item = new_items[qrand() % new_items.count()];
+					item = already_items[getRand(already_items.count())];
+				} else if (getRand(100) < 3) {
+					item = new_items[getRand(new_items.count())];
 				} else {
-					item = already_items[qrand() % already_items.count()];
+					item = already_items[getRand(already_items.count())];
 				}
 				build->useSlot(item->decorationLevel);
 				build->addItem(item);

@@ -52,12 +52,12 @@ Pattern::~Pattern() {
 
 void Pattern::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
-	stream << indent << "- rate: " << rate << endl;
-	stream << indent << "- period: " << period << endl;
+	stream << indent << "- rate: " << rate << ENDL;
+	stream << indent << "- period: " << period << ENDL;
 	stream << indent << "- capacityUpFilter: " <<
-		(capacityUpFilter ? "true" : "false") << endl;
+		(capacityUpFilter ? "true" : "false") << ENDL;
 	stream << indent << "- capacityUpEnabled: " <<
-		(capacityUpEnabled ? "true" : "false") << endl;
+		(capacityUpEnabled ? "true" : "false") << ENDL;
 	stream << indent << "- ammos: [";
 	for (int i = 0; i < ammoRefs.count(); ++i) {
 		if (i > 0) stream << ", ";
@@ -67,36 +67,36 @@ void Pattern::print(QTextStream &stream, QString indent) const {
 			stream << "<null, " << ammoRefs[i].id << ">";
 		}
 	}
-	stream << "]" << endl;
-	stream << indent << "- cut: " << cut << endl;
-	stream << indent << "- impact: " << impact << endl;
-	stream << indent << "- piercing: " << piercing << endl;
-	stream << indent << "- bullet: " << bullet << endl;
-	stream << indent << "- shell: " << shell << endl;
-	stream << indent << "- fixed: " << fixed << endl;
-	stream << indent << "- element: " << element << endl;
-	stream << indent << "- status: " << status << endl;
-	stream << indent << "- stun: " << stun << endl;
-	stream << indent << "- exhaust: " << exhaust << endl;
-	stream << indent << "- mount: " << mount << endl;
-	stream << indent << "- sharpness_multiplier: " << sharpnessMultiplier << endl;
-	stream << indent << "- phial_impact_attack: " << phialImpactAttack << endl;
-	stream << indent << "- phial_impact_stun: " << phialImpactStun << endl;
-	stream << indent << "- phial_impact_exhaust: " << phialImpactExhaust << endl;
-	stream << indent << "- phial_element_attack: " << phialElementAttack << endl;
-	stream << indent << "- phial_ratio: " << phialRatio << endl;
-	stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << endl;
-	stream << indent << "- sharpness_use: " << sharpnessUse << endl;
-	stream << indent << "- punishing_draw_stun: " << punishingDrawStun << endl;
-	stream << indent << "- punishing_draw_exhaust: " << punishingDrawExhaust << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- cut: " << cut << ENDL;
+	stream << indent << "- impact: " << impact << ENDL;
+	stream << indent << "- piercing: " << piercing << ENDL;
+	stream << indent << "- bullet: " << bullet << ENDL;
+	stream << indent << "- shell: " << shell << ENDL;
+	stream << indent << "- fixed: " << fixed << ENDL;
+	stream << indent << "- element: " << element << ENDL;
+	stream << indent << "- status: " << status << ENDL;
+	stream << indent << "- stun: " << stun << ENDL;
+	stream << indent << "- exhaust: " << exhaust << ENDL;
+	stream << indent << "- mount: " << mount << ENDL;
+	stream << indent << "- sharpness_multiplier: " << sharpnessMultiplier << ENDL;
+	stream << indent << "- phial_impact_attack: " << phialImpactAttack << ENDL;
+	stream << indent << "- phial_impact_stun: " << phialImpactStun << ENDL;
+	stream << indent << "- phial_impact_exhaust: " << phialImpactExhaust << ENDL;
+	stream << indent << "- phial_element_attack: " << phialElementAttack << ENDL;
+	stream << indent << "- phial_ratio: " << phialRatio << ENDL;
+	stream << indent << "- minds_eye_ratio: " << mindsEyeRatio << ENDL;
+	stream << indent << "- sharpness_use: " << sharpnessUse << ENDL;
+	stream << indent << "- punishing_draw_stun: " << punishingDrawStun << ENDL;
+	stream << indent << "- punishing_draw_exhaust: " << punishingDrawExhaust << ENDL;
 	foreach(const MotionValueRef &mvr, motionValueRefs) {
 		stream << indent << "- motion value: " << mvr.id <<
 			" (multiplier: " << mvr.multiplier << ") (raw multiplier: " <<
-			mvr.rawMultiplier << ")" << endl;
+			mvr.rawMultiplier << ")" << ENDL;
 	}
 	stream << indent << "- condition ratios";
 	if (localRatios) stream << " *";
-	stream << endl;
+	stream << ENDL;
 	conditionRatios->print(stream, indent + "\t");
 }
 
@@ -294,13 +294,13 @@ void Profile::print(QTextStream &stream, QString indent) const {
 	NamedObject::print(stream, indent);
 	stream << indent << "- weapon_type: ";
 	if (weaponType) {
-		stream << weaponType->id << endl;
+		stream << weaponType->id << ENDL;
 	} else {
-		stream << "<null, " << weaponTypeRefId << ">" << endl;
+		stream << "<null, " << weaponTypeRefId << ">" << ENDL;
 	}
-	stream << indent << "- sharpen_period: " << sharpenPeriod << endl;
+	stream << indent << "- sharpen_period: " << sharpenPeriod << ENDL;
 	foreach(const Pattern *pattern, patterns) {
-		stream << indent << "- pattern" << endl;
+		stream << indent << "- pattern" << ENDL;
 		pattern->print(stream, indent + "\t");
 	}
 }

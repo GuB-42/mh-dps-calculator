@@ -1,6 +1,7 @@
 #include "DamageData.h"
 
 #include <QTextStream>
+#include "QtCompatibility.h"
 #include "Weapon.h"
 #include "WeaponType.h"
 #include "Profile.h"
@@ -397,28 +398,28 @@ void DamageData::combine(const DamageData &o, double rate) {
 }
 
 void DamageData::print(QTextStream &stream, QString indent) const {
-	stream << indent << "- cut: " << cut << endl;
-	stream << indent << "- impact: " << impact << endl;
-	stream << indent << "- piercing: " << piercing << endl;
-	stream << indent << "- fixed: " << fixed << endl;
+	stream << indent << "- cut: " << cut << ENDL;
+	stream << indent << "- impact: " << impact << ENDL;
+	stream << indent << "- piercing: " << piercing << ENDL;
+	stream << indent << "- fixed: " << fixed << ENDL;
 	stream << indent << "- elements: [";
 	for (int i = 0; i < ELEMENT_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << elements[i];
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 	stream << indent << "- statuses: [";
 	for (int i = 0; i < STATUS_COUNT; ++i) {
 		if (i > 0) stream << ", ";
 		stream << statuses[i];
 	}
-	stream << "]" << endl;
-	stream << indent << "- minds eye rate: " << mindsEyeRate << endl;
+	stream << "]" << ENDL;
+	stream << indent << "- minds eye rate: " << mindsEyeRate << ENDL;
 	stream << indent << "- bounce sharpness: [";
 	for (size_t i = 0; i < bounceSharpness.size(); ++i) {
 		if (i > 0) stream << ", ";
 		stream << "(" << bounceSharpness[i].rate << ", " <<
 			bounceSharpness[i].multiplier << ")";
 	}
-	stream << "]" << endl;
+	stream << "]" << ENDL;
 }

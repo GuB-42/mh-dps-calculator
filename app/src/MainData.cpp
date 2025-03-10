@@ -33,47 +33,47 @@ MainData::~MainData() {
 void MainData::print(QTextStream &stream, QString indent) const {
 	XmlObject::print(stream, indent);
 	foreach(const WeaponType *weapon_type, weaponTypes) {
-		stream << indent << "[weapon type]" << endl;
+		stream << indent << "[weapon type]" << ENDL;
 		weapon_type->print(stream, indent + "\t");
 	}
 	foreach(const Ammo *ammo, ammos) {
-		stream << indent << "[ammo]" << endl;
+		stream << indent << "[ammo]" << ENDL;
 		ammo->print(stream, indent + "\t");
 	}
 	foreach(const Monster *monster, monsters) {
-		stream << indent << "[monster]" << endl;
+		stream << indent << "[monster]" << ENDL;
 		monster->print(stream, indent + "\t");
 	}
 	foreach(const Weapon *weapon, weapons) {
-		stream << indent << "[weapon]" << endl;
+		stream << indent << "[weapon]" << ENDL;
 		weapon->print(stream, indent + "\t");
 	}
 	foreach(const BuffGroup *buff_group, buffGroups) {
-		stream << indent << "[buff group]" << endl;
+		stream << indent << "[buff group]" << ENDL;
 		buff_group->print(stream, indent + "\t");
 	}
 	foreach(const BuffSetBonus *buff_set_bonus, buffSetBonuses) {
-		stream << indent << "[buff set bonus]" << endl;
+		stream << indent << "[buff set bonus]" << ENDL;
 		buff_set_bonus->print(stream, indent + "\t");
 	}
 	foreach(const Profile *profile, profiles) {
-		stream << indent << "[profile]" << endl;
+		stream << indent << "[profile]" << ENDL;
 		profile->print(stream, indent + "\t");
 	}
 	foreach(const Item *item, items) {
-		stream << indent << "[item]" << endl;
+		stream << indent << "[item]" << ENDL;
 		item->print(stream, indent + "\t");
 	}
 	foreach(const Target *target, targets) {
-		stream << indent << "[target]" << endl;
+		stream << indent << "[target]" << ENDL;
 		target->print(stream, indent + "\t");
 	}
 	foreach(const MotionValue *motion_value, motionValues) {
-		stream << indent << "[motion value]" << endl;
+		stream << indent << "[motion value]" << ENDL;
 		motion_value->print(stream, indent + "\t");
 	}
 	foreach(const Song *song, songs) {
-		stream << indent << "[song]" << endl;
+		stream << indent << "[song]" << ENDL;
 		song->print(stream, indent + "\t");
 	}
 }
